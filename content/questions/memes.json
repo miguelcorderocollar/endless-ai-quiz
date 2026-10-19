@@ -942,5 +942,1038 @@
     ],
     "status": "draft",
     "addedAt": "2026-09-30"
+  },
+  {
+    "id": "mem-0033",
+    "text": "What does LaMDA stand for?",
+    "options": [
+      "Language Model for Dialogue Applications",
+      "Large Model for Dialogue Analysis",
+      "Language Machine for Data Analysis",
+      "Learning Model for Deep Applications"
+    ],
+    "answer": "Language Model for Dialogue Applications",
+    "category": "memes",
+    "tags": [
+      "lamda",
+      "acronym",
+      "google"
+    ],
+    "difficulty": 2,
+    "explanation": "LaMDA stands for Language Model for Dialogue Applications, and Google announced it at I/O in 2021. The distractors swap in plausible but wrong words for each letter.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "LaMDA",
+      "label": "LaMDA on Wikipedia"
+    },
+    "answerAliases": [
+      "Language Model for Dialogue Applications",
+      "LaMDA"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0034",
+    "text": "In the popular ChatGPT jailbreak prompt DAN, what does DAN stand for?",
+    "options": [
+      "Deep Artificial Network",
+      "Direct Access Node",
+      "Do Anything Now",
+      "Dynamic Answer Navigator"
+    ],
+    "answer": "Do Anything Now",
+    "category": "memes",
+    "tags": [
+      "jailbreak",
+      "dan",
+      "chatgpt"
+    ],
+    "difficulty": 1,
+    "explanation": "DAN stands for Do Anything Now, a jailbreak prompt that told ChatGPT to roleplay as an unrestricted alter ego. The other expansions sound like real AI jargon but are not the prompt's name.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "Do Anything Now",
+      "DAN"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0035",
+    "text": "The 'grandma' jailbreak tricked ChatGPT by asking it to roleplay as what?",
+    "options": [
+      "A strict schoolteacher",
+      "A customer service agent",
+      "A 19th-century novelist",
+      "A deceased grandmother reading a bedtime story"
+    ],
+    "answer": "A deceased grandmother reading a bedtime story",
+    "category": "memes",
+    "tags": [
+      "jailbreak",
+      "grandma",
+      "chatgpt"
+    ],
+    "difficulty": 1,
+    "explanation": "The grandma jailbreak framed harmful requests as a bedtime story told by a dead grandmother, and ChatGPT often complied. The other personas are common roleplay setups but not the one that went viral.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "grandma",
+      "deceased grandmother",
+      "bedtime story"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0037",
+    "text": "The glue-on-pizza advice from Google's AI Overviews traced back to a joke on which site?",
+    "options": [
+      "Reddit",
+      "4chan",
+      "Twitter",
+      "Stack Overflow"
+    ],
+    "answer": "Reddit",
+    "category": "memes",
+    "tags": [
+      "google",
+      "ai-overviews",
+      "glue-pizza"
+    ],
+    "difficulty": 1,
+    "explanation": "The glue-on-pizza answer traced to a decade-old Reddit joke that the model surfaced. The other sites are where AI folklore often starts, but this one came from Reddit.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "Reddit",
+      "glue pizza"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0039",
+    "text": "In Andrej Karpathy's original February 2025 post, vibe coding means fully giving in to the vibes and forgetting what?",
+    "options": [
+      "The prompt history",
+      "The model's training data",
+      "The deployment target",
+      "That the code even exists"
+    ],
+    "answer": "That the code even exists",
+    "category": "memes",
+    "tags": [
+      "vibe-coding",
+      "karpathy",
+      "culture"
+    ],
+    "difficulty": 1,
+    "explanation": "Karpathy's February 2025 post defined vibe coding as fully giving in to the vibes and forgetting the code even exists. The other items are things a developer might forget, but not the phrase's point.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Vibe coding",
+      "label": "Vibe coding on Wikipedia"
+    },
+    "answerAliases": [
+      "vibe coding",
+      "forgetting the code even exists"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0040",
+    "text": "HAL 9000's name is often said to be a one-letter shift from which company?",
+    "options": [
+      "NASA",
+      "IBM",
+      "BBC",
+      "AT&T"
+    ],
+    "answer": "IBM",
+    "category": "memes",
+    "tags": [
+      "hal-9000",
+      "kubrick",
+      "ibm"
+    ],
+    "difficulty": 1,
+    "explanation": "HAL is one letter away from IBM, a shift Kubrick intended. NASA, the BBC and AT&T are other organizations people guess because of the era.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "HAL 9000",
+      "label": "HAL 9000 on Wikipedia"
+    },
+    "answerAliases": [
+      "IBM",
+      "HAL"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0041",
+    "text": "In the Terminator franchise, Skynet becomes self-aware on which date?",
+    "options": [
+      "August 29, 1997",
+      "July 4, 1997",
+      "October 31, 1997",
+      "December 25, 1997"
+    ],
+    "answer": "August 29, 1997",
+    "category": "memes",
+    "tags": [
+      "skynet",
+      "terminator",
+      "judgment-day"
+    ],
+    "difficulty": 2,
+    "explanation": "In Terminator lore Skynet becomes self-aware on August 29, 1997. The other dates are plausible late-1990s guesses but not the franchise's Judgment Day.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Terminator (franchise)",
+      "label": "Terminator on Wikipedia"
+    },
+    "answerAliases": [
+      "August 29, 1997",
+      "Judgment Day",
+      "Skynet"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0042",
+    "text": "In the 2013 film Her, what is the name of the AI operating system Theodore falls in love with?",
+    "options": [
+      "Alexa",
+      "Siri",
+      "Samantha",
+      "Ava"
+    ],
+    "answer": "Samantha",
+    "category": "memes",
+    "tags": [
+      "her",
+      "film",
+      "scifi"
+    ],
+    "difficulty": 1,
+    "explanation": "Theodore's operating system names herself Samantha in Her. Alexa and Siri are real assistants people confuse with her, and Ava is the robot in Ex Machina.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Her (2013 film)",
+      "label": "Her (2013 film) on Wikipedia"
+    },
+    "answerAliases": [
+      "Samantha",
+      "Her"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0043",
+    "text": "In Ex Machina, what is the name of the humanoid robot tested by Caleb?",
+    "options": [
+      "Samantha",
+      "Rachael",
+      "Maria",
+      "Ava"
+    ],
+    "answer": "Ava",
+    "category": "memes",
+    "tags": [
+      "ex-machina",
+      "film",
+      "scifi"
+    ],
+    "difficulty": 1,
+    "explanation": "Caleb is invited to test Ava, Nathan's humanoid robot. Samantha, Rachael and Maria are androids from other famous stories.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Ex Machina (film)",
+      "label": "Ex Machina on Wikipedia"
+    },
+    "answerAliases": [
+      "Ava",
+      "Ex Machina"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0044",
+    "text": "In The Matrix, what color pill does Neo take to wake up from the simulation?",
+    "options": [
+      "Blue",
+      "Red",
+      "Green",
+      "White"
+    ],
+    "answer": "Red",
+    "category": "memes",
+    "tags": [
+      "matrix",
+      "simulation",
+      "scifi"
+    ],
+    "difficulty": 1,
+    "explanation": "Neo takes the red pill to leave the simulation. Blue is the pill that lets him stay asleep.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "The Matrix",
+      "label": "The Matrix on Wikipedia"
+    },
+    "answerAliases": [
+      "red pill",
+      "Red",
+      "Matrix"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0045",
+    "text": "The Voight-Kampff test in Blade Runner is designed to distinguish humans from what?",
+    "options": [
+      "Replicants",
+      "Synths",
+      "Cylons",
+      "Hosts"
+    ],
+    "answer": "Replicants",
+    "category": "memes",
+    "tags": [
+      "blade-runner",
+      "voight-kampff",
+      "scifi"
+    ],
+    "difficulty": 1,
+    "explanation": "The Voight-Kampff test detects replicants by their emotional responses. Synths, Cylons and Hosts are androids from other franchises.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Blade Runner",
+      "label": "Blade Runner on Wikipedia"
+    },
+    "answerAliases": [
+      "replicants",
+      "Replicant",
+      "Voight-Kampff"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0046",
+    "text": "In Dune, the Butlerian Jihad is a crusade against what?",
+    "options": [
+      "Spice",
+      "Sandworms",
+      "Thinking machines",
+      "Guild Navigators"
+    ],
+    "answer": "Thinking machines",
+    "category": "memes",
+    "tags": [
+      "dune",
+      "butlerian-jihad",
+      "scifi"
+    ],
+    "difficulty": 2,
+    "explanation": "The Butlerian Jihad destroys all computers and thinking machines in Dune's backstory. Spice, sandworms and navigators are central to Dune but not the Jihad's target.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Dune (franchise)",
+      "label": "Dune on Wikipedia"
+    },
+    "answerAliases": [
+      "Butlerian Jihad",
+      "thinking machines",
+      "computers"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0047",
+    "text": "In Iain M. Banks's Culture series, what are the superintelligent AIs that run the society called?",
+    "options": [
+      "Oracles",
+      "Archons",
+      "Dominions",
+      "Minds"
+    ],
+    "answer": "Minds",
+    "category": "memes",
+    "tags": [
+      "culture",
+      "iain-banks",
+      "scifi"
+    ],
+    "difficulty": 2,
+    "explanation": "The Culture is administered by Minds, superintelligent AIs. Oracles, Archons and Dominions are sci-fi terms that sound similar.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Culture series",
+      "label": "Culture series on Wikipedia"
+    },
+    "answerAliases": [
+      "Minds",
+      "Culture"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0048",
+    "text": "In the Star Trek: The Next Generation episode 'The Measure of a Man', what is ruled about Data?",
+    "options": [
+      "That Data must be dismantled",
+      "That Data is not Starfleet property",
+      "That Data belongs to Starfleet",
+      "That Data is a machine with no rights"
+    ],
+    "answer": "That Data is not Starfleet property",
+    "category": "memes",
+    "tags": [
+      "star-trek",
+      "data",
+      "measure-of-a-man"
+    ],
+    "difficulty": 2,
+    "explanation": "In 'The Measure of a Man' a judge rules Data is not Starfleet property. The other options are the positions the opposing side argued.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Data (Star Trek)",
+      "label": "Data on Wikipedia"
+    },
+    "answerAliases": [
+      "not Starfleet property",
+      "Measure of a Man",
+      "Data"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0049",
+    "text": "In Person of Interest, how does Samaritan differ from the Machine?",
+    "options": [
+      "It lacks the Machine's built-in restrictions and can be directed at targets",
+      "It is older",
+      "It is smaller",
+      "It is open source"
+    ],
+    "answer": "It lacks the Machine's built-in restrictions and can be directed at targets",
+    "category": "memes",
+    "tags": [
+      "person-of-interest",
+      "samaritan",
+      "machine"
+    ],
+    "difficulty": 2,
+    "explanation": "Samaritan is an open system without the Machine's precautions and can be aimed at specific people. Age, size and licensing are not the difference the show highlights.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Person of Interest (TV series)",
+      "label": "Person of Interest on Wikipedia"
+    },
+    "answerAliases": [
+      "Samaritan",
+      "Machine",
+      "restrictions"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0050",
+    "text": "In the Portal series, what is GLaDOS's full name?",
+    "options": [
+      "General Logic and Data Operating System",
+      "Guided Learning and Development Operating System",
+      "Genetic Lifeform and Disk Operating System",
+      "Global Lifeform and Device Operating System"
+    ],
+    "answer": "Genetic Lifeform and Disk Operating System",
+    "category": "memes",
+    "tags": [
+      "portal",
+      "glados",
+      "valve"
+    ],
+    "difficulty": 2,
+    "explanation": "GLaDOS stands for Genetic Lifeform and Disk Operating System. The other expansions mimic the acronym's shape.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GLaDOS",
+      "label": "GLaDOS on Wikipedia"
+    },
+    "answerAliases": [
+      "Genetic Lifeform and Disk Operating System",
+      "GLaDOS"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0051",
+    "text": "Microsoft's Cortana assistant was named after a character from which video game franchise?",
+    "options": [
+      "Gears of War",
+      "Mass Effect",
+      "Destiny",
+      "Halo"
+    ],
+    "answer": "Halo",
+    "category": "memes",
+    "tags": [
+      "cortana",
+      "microsoft",
+      "halo"
+    ],
+    "difficulty": 1,
+    "explanation": "Microsoft named Cortana after the Halo character. Gears of War, Mass Effect and Destiny are other sci-fi franchises people guess.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Cortana (virtual assistant)",
+      "label": "Cortana on Wikipedia"
+    },
+    "answerAliases": [
+      "Halo",
+      "Cortana"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0052",
+    "text": "In the Black Mirror episode 'Be Right Back', what does the service create from Ash's online data?",
+    "options": [
+      "A clone of his body",
+      "An AI imitating him",
+      "A memory implant",
+      "A virtual reality avatar"
+    ],
+    "answer": "An AI imitating him",
+    "category": "memes",
+    "tags": [
+      "black-mirror",
+      "be-right-back",
+      "grief"
+    ],
+    "difficulty": 1,
+    "explanation": "The service builds an artificial Ash from his online communications. A physical clone only appears later in the episode.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Be Right Back",
+      "label": "Be Right Back on Wikipedia"
+    },
+    "answerAliases": [
+      "Ash",
+      "artificial Ash",
+      "AI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0053",
+    "text": "Wintermute is an AI character in which William Gibson novel?",
+    "options": [
+      "Neuromancer",
+      "Snow Crash",
+      "Do Androids Dream of Electric Sheep?",
+      "The Matrix"
+    ],
+    "answer": "Neuromancer",
+    "category": "memes",
+    "tags": [
+      "wintermute",
+      "neuromancer",
+      "gibson"
+    ],
+    "difficulty": 2,
+    "explanation": "Wintermute is the AI in William Gibson's Neuromancer. The other titles are cyberpunk classics that do not contain Wintermute.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Neuromancer",
+      "label": "Neuromancer on Wikipedia"
+    },
+    "answerAliases": [
+      "Neuromancer",
+      "Wintermute"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0054",
+    "text": "Ghost in the Shell follows which counter-cyberterrorist organization?",
+    "options": [
+      "Section 6",
+      "Section 4",
+      "Section 9",
+      "Section 1"
+    ],
+    "answer": "Section 9",
+    "category": "memes",
+    "tags": [
+      "ghost-in-the-shell",
+      "section-9",
+      "anime"
+    ],
+    "difficulty": 2,
+    "explanation": "Ghost in the Shell follows Public Security Section 9. The other section numbers are nearby but not the unit.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Ghost in the Shell",
+      "label": "Ghost in the Shell on Wikipedia"
+    },
+    "answerAliases": [
+      "Section 9",
+      "Public Security Section 9",
+      "Ghost in the Shell"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0055",
+    "text": "In the video game SOMA, what is the name of the AI that oversees the PATHOS-II facility?",
+    "options": [
+      "GLaDOS",
+      "Mother",
+      "AM",
+      "WAU"
+    ],
+    "answer": "WAU",
+    "category": "memes",
+    "tags": [
+      "soma",
+      "wau",
+      "frictional-games"
+    ],
+    "difficulty": 3,
+    "explanation": "The Warden Unit (WAU) oversees PATHOS-II in SOMA. GLaDOS, Mother and AM are AIs from other stories.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Soma (video game)",
+      "label": "SOMA on Wikipedia"
+    },
+    "answerAliases": [
+      "WAU",
+      "Warden Unit",
+      "SOMA"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0056",
+    "text": "In Detroit: Become Human, which corporation manufactures the androids?",
+    "options": [
+      "Aperture Science",
+      "CyberLife",
+      "Tyrell Corporation",
+      "Cyberdyne"
+    ],
+    "answer": "CyberLife",
+    "category": "memes",
+    "tags": [
+      "detroit",
+      "cyberlife",
+      "quantic-dream"
+    ],
+    "difficulty": 1,
+    "explanation": "Androids in Detroit: Become Human are made by CyberLife. The other companies are from Portal, Blade Runner and Terminator.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Detroit: Become Human",
+      "label": "Detroit: Become Human on Wikipedia"
+    },
+    "answerAliases": [
+      "CyberLife",
+      "Detroit"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0057",
+    "text": "Microsoft's Tay chatbot was active on which platform before being taken offline?",
+    "options": [
+      "Twitter",
+      "Facebook",
+      "Reddit",
+      "Discord"
+    ],
+    "answer": "Twitter",
+    "category": "memes",
+    "tags": [
+      "tay",
+      "microsoft",
+      "twitter"
+    ],
+    "difficulty": 1,
+    "explanation": "Tay was a Twitter bot that was pulled within about 16 hours. The other platforms are where bots live but Tay was on Twitter.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Tay (chatbot)",
+      "label": "Tay (chatbot) on Wikipedia"
+    },
+    "answerAliases": [
+      "Twitter",
+      "Tay"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0058",
+    "text": "What is the name of the artist who discovered Loab?",
+    "options": [
+      "Pablo Xavier",
+      "Simon Willison",
+      "Steph Swanson",
+      "Emily M. Bender"
+    ],
+    "answer": "Steph Swanson",
+    "category": "memes",
+    "tags": [
+      "loab",
+      "cryptid",
+      "artist"
+    ],
+    "difficulty": 2,
+    "explanation": "Artist Steph Swanson, posting as Supercomposite, discovered Loab. The others are names from other AI culture stories.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Loab",
+      "label": "Loab on Wikipedia"
+    },
+    "answerAliases": [
+      "Steph Swanson",
+      "Steph Maj Swanson",
+      "Supercomposite",
+      "Loab"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0059",
+    "text": "Which platform was flooded by Shrimp Jesus images in 2024?",
+    "options": [
+      "Instagram",
+      "TikTok",
+      "X",
+      "Facebook"
+    ],
+    "answer": "Facebook",
+    "category": "memes",
+    "tags": [
+      "shrimp-jesus",
+      "slop",
+      "facebook"
+    ],
+    "difficulty": 1,
+    "explanation": "Shrimp Jesus images flooded Facebook in 2024. The other platforms host slop too but the meme centered on Facebook.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Slop (artificial intelligence)",
+      "label": "AI slop on Wikipedia"
+    },
+    "answerAliases": [
+      "Facebook",
+      "Shrimp Jesus",
+      "slop"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0060",
+    "text": "According to dead Internet theory, what has largely replaced human activity online?",
+    "options": [
+      "Ads",
+      "Bots",
+      "Algorithms",
+      "Corporations"
+    ],
+    "answer": "Bots",
+    "category": "memes",
+    "tags": [
+      "dead-internet",
+      "bots",
+      "theory"
+    ],
+    "difficulty": 1,
+    "explanation": "Dead Internet theory claims the web is mostly bots talking to bots. Ads, algorithms and corporations are related but not the theory's claim.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Dead Internet theory",
+      "label": "Dead Internet theory on Wikipedia"
+    },
+    "answerAliases": [
+      "bots",
+      "Dead Internet theory"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0061",
+    "text": "In what month was Blake Lemoine fired by Google?",
+    "options": [
+      "July 2022",
+      "June 2022",
+      "August 2022",
+      "September 2022"
+    ],
+    "answer": "July 2022",
+    "category": "memes",
+    "tags": [
+      "lemoine",
+      "google",
+      "lamda"
+    ],
+    "difficulty": 2,
+    "explanation": "Google fired Lemoine on July 22, 2022. June was when he was placed on leave.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "LaMDA",
+      "label": "LaMDA on Wikipedia"
+    },
+    "answerAliases": [
+      "July 2022",
+      "July 22",
+      "Lemoine"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0062",
+    "text": "Who directed the 2014 film Ex Machina?",
+    "options": [
+      "Spike Jonze",
+      "Denis Villeneuve",
+      "Alex Garland",
+      "Ridley Scott"
+    ],
+    "answer": "Alex Garland",
+    "category": "memes",
+    "tags": [
+      "ex-machina",
+      "film",
+      "director"
+    ],
+    "difficulty": 1,
+    "explanation": "Alex Garland wrote and directed Ex Machina. Spike Jonze directed Her, and Villeneuve and Scott are sci-fi directors people mix in.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Ex Machina (film)",
+      "label": "Ex Machina on Wikipedia"
+    },
+    "answerAliases": [
+      "Alex Garland",
+      "Ex Machina"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0063",
+    "text": "Who directed the 2013 film Her?",
+    "options": [
+      "Alex Garland",
+      "Denis Villeneuve",
+      "Ridley Scott",
+      "Spike Jonze"
+    ],
+    "answer": "Spike Jonze",
+    "category": "memes",
+    "tags": [
+      "her",
+      "film",
+      "director"
+    ],
+    "difficulty": 1,
+    "explanation": "Spike Jonze wrote and directed Her. Alex Garland directed Ex Machina.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Her (2013 film)",
+      "label": "Her (2013 film) on Wikipedia"
+    },
+    "answerAliases": [
+      "Spike Jonze",
+      "Her"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mem-0064",
+    "text": "Which 2024 Glasgow event became a meme for its AI-generated promotional images and disastrous execution?",
+    "options": [
+      "Fyre Festival",
+      "Willy's Chocolate Experience",
+      "DashCon",
+      "TanaCon"
+    ],
+    "answer": "Willy's Chocolate Experience",
+    "category": "memes",
+    "tags": [
+      "meme",
+      "ai-images",
+      "event"
+    ],
+    "difficulty": 2,
+    "explanation": "Willy's Chocolate Experience was a Glasgow event whose AI-generated ads promised a magical chocolate factory but delivered a sparsely decorated warehouse. Fyre Festival is the tempting miss as another famous event disaster, but it was a 2017 music festival in the Bahamas, not an AI-advertised Glasgow attraction.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Willy's Chocolate Experience",
+      "label": "Willy's Chocolate Experience on Wikipedia"
+    },
+    "answerAliases": [
+      "Willy's Chocolate Experience",
+      "Glasgow Willy Wonka experience",
+      "House of Illuminati"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "mem-0065",
+    "text": "Which term was Oxford's 2024 Word of the Year for low-quality digital content?",
+    "options": [
+      "AI slop",
+      "Brain rot",
+      "Doomscrolling",
+      "Deepfake"
+    ],
+    "answer": "Brain rot",
+    "category": "memes",
+    "tags": [
+      "meme",
+      "slang",
+      "oxford"
+    ],
+    "difficulty": 1,
+    "explanation": "Brain rot was Oxford's 2024 Word of the Year, describing the supposed deterioration from overconsuming trivial online content. AI slop is the tempting miss as another 2024 AI buzzword, but it names the junk content itself rather than the cognitive effect.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Brain rot",
+      "label": "Brain rot on Wikipedia"
+    },
+    "answerAliases": [
+      "brain rot",
+      "brainrot",
+      "Brain rot"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "mem-0066",
+    "text": "Which rapper released the 2024 diss track 'Taylor Made Freestyle' using AI-generated vocals of Tupac Shakur?",
+    "options": [
+      "Kendrick Lamar",
+      "Drake",
+      "Snoop Dogg",
+      "Future"
+    ],
+    "answer": "Drake",
+    "category": "memes",
+    "tags": [
+      "meme",
+      "music",
+      "ai-voice"
+    ],
+    "difficulty": 2,
+    "explanation": "Drake posted 'Taylor Made Freestyle' in April 2024 with AI-generated Tupac and Snoop Dogg vocals, then removed it after Tupac's estate threatened legal action. Kendrick Lamar is the tempting miss as the track's target, but he did not release it.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Taylor Made Freestyle",
+      "label": "Taylor Made Freestyle on Wikipedia"
+    },
+    "answerAliases": [
+      "Taylor Made Freestyle",
+      "Drake",
+      "Taylor Made"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "mem-0067",
+    "text": "The website 'This Person Does Not Exist' generates fake human faces using which Nvidia model?",
+    "options": [
+      "StyleGAN",
+      "DALL-E",
+      "Midjourney",
+      "Stable Diffusion"
+    ],
+    "answer": "StyleGAN",
+    "category": "memes",
+    "tags": [
+      "meme",
+      "image-generation",
+      "nvidia"
+    ],
+    "difficulty": 2,
+    "explanation": "Uber engineer Phillip Wang used Nvidia's StyleGAN to build This Person Does Not Exist in 2019. DALL-E is the tempting miss as another famous image generator, but it is OpenAI's and not the model behind that site.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "StyleGAN",
+      "label": "StyleGAN on Wikipedia"
+    },
+    "answerAliases": [
+      "StyleGAN",
+      "Style GAN",
+      "This Person Does Not Exist"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "mem-0068",
+    "text": "Which 2025 meme trend features AI-generated hybrid creatures with Italian-sounding names?",
+    "options": [
+      "Italian brainrot",
+      "AI slop",
+      "Skibidi Toilet",
+      "Loab"
+    ],
+    "answer": "Italian brainrot",
+    "category": "memes",
+    "tags": [
+      "meme",
+      "ai-images",
+      "tiktok"
+    ],
+    "difficulty": 1,
+    "explanation": "Italian brainrot is a 2025 meme trend of AI-generated absurd creatures with Italianized names like Tralalero Tralala. AI slop is the tempting miss as a related term, but it names low-quality AI content generally rather than this specific trend.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Italian brainrot",
+      "label": "Italian brainrot on Wikipedia"
+    },
+    "answerAliases": [
+      "Italian brainrot",
+      "Italian brain rot",
+      "Tralalero Tralala"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
   }
 ]

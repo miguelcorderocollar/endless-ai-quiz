@@ -586,8 +586,8 @@
     "explanation": "Fidler ran Nvidia's Toronto spatial intelligence lab and was part of the team behind its Cosmos world model before announcing her departure. Her co-founders are Zan Gojcic, the former Nvidia research director in Zurich who is now CTO, and Huan Ling, her former doctoral student who is chief scientist. David Silver is the tempting wrong answer because he is the other ex-DeepMind founder with a billion-dollar lab, but his company is Ineffable Intelligence.",
     "source": {
       "kind": "url",
-      "url": "https://www.therecursive.com/ex-nvidia-stars-from-slovenia-raise-90m-to-build-the-matrix-for-robots/",
-      "label": "The Recursive on Veeda AI's founding round"
+      "url": "https://www.unite.ai/veeda-ai-raises-90m-seed-backed-by-khosla-and-radical-to-build-world-models-for-physical-ai",
+      "label": "Unite.AI on Veeda AI launch (Aug 2026)"
     },
     "answerAliases": [
       "Sanja Fidler",
@@ -750,5 +750,1403 @@
     ],
     "status": "draft",
     "addedAt": "2026-09-30"
+  },
+  {
+    "id": "lab-0027",
+    "text": "Sakana AI, the Tokyo lab co-founded by Transformer paper co-author Llion Jones, takes its name from the Japanese word for what?",
+    "options": [
+      "Fish",
+      "Crane",
+      "Blossom",
+      "Wave"
+    ],
+    "answer": "Fish",
+    "category": "labs",
+    "tags": [
+      "sakana",
+      "naming",
+      "japan"
+    ],
+    "difficulty": 2,
+    "explanation": "Sakana AI's name is simply the Japanese word for fish, chosen by founders David Ha, Llion Jones and Ren Ito in 2023. Crane and blossom are the classic Japanese symbols a Tokyo lab might have picked for its brand, but the actual namesake is the fish.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Sakana AI",
+      "label": "Sakana AI on Wikipedia"
+    },
+    "answerAliases": [
+      "fish",
+      "sakana"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0028",
+    "text": "In April 2016, OpenAI released a public beta of which platform for developing and comparing reinforcement-learning algorithms?",
+    "options": [
+      "OpenAI Universe",
+      "Stable Baselines",
+      "OpenAI Gym",
+      "Ray RLlib"
+    ],
+    "answer": "OpenAI Gym",
+    "category": "labs",
+    "tags": [
+      "openai",
+      "reinforcement-learning",
+      "gym"
+    ],
+    "difficulty": 3,
+    "explanation": "OpenAI Gym was the April 2016 public beta, a toolkit of environments and benchmarks that became the standard interface for reinforcement-learning research. Universe is the trap because OpenAI did ship that games platform too, but it arrived in December 2016, and Stable Baselines and RLlib are libraries built on top of the Gym ecosystem rather than OpenAI's own beta.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenAI",
+      "label": "OpenAI on Wikipedia"
+    },
+    "answerAliases": [
+      "OpenAI Gym",
+      "Gym",
+      "openai gym"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0029",
+    "text": "Baidu's chatbot, built on its ERNIE models and launched to the public in 2023, was originally released under which Chinese name?",
+    "options": [
+      "Tongyi Qianwen",
+      "Wenxiaoyan",
+      "Hunyuan",
+      "Wenxin Yiyan"
+    ],
+    "answer": "Wenxin Yiyan",
+    "category": "labs",
+    "tags": [
+      "baidu",
+      "ernie",
+      "naming"
+    ],
+    "difficulty": 3,
+    "explanation": "Ernie Bot launched as Wenxin Yiyan (文心一言), which translates roughly as 'a word from the heart', and Baidu later shortened the name to Wenxiaoyan in September 2024. Tongyi Qianwen is the trap because that is the Chinese name of Alibaba's Qwen family, and Hunyuan belongs to Tencent.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Ernie Bot",
+      "label": "Ernie Bot on Wikipedia"
+    },
+    "answerAliases": [
+      "Wenxin Yiyan",
+      "Wénxīn Yīyán",
+      "文心一言"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0030",
+    "text": "AI21 Labs, the Israeli maker of the Jurassic language models, was founded in which city in 2017?",
+    "options": [
+      "Jerusalem",
+      "Tel Aviv",
+      "Haifa",
+      "Ramat Gan"
+    ],
+    "answer": "Tel Aviv",
+    "category": "labs",
+    "tags": [
+      "ai21",
+      "israel",
+      "founding"
+    ],
+    "difficulty": 2,
+    "explanation": "Amnon Shashua, Yoav Shoham and Ori Goshen founded AI21 Labs in Tel Aviv in November 2017 and later opened a US office while keeping the Israeli base. Jerusalem is the tempting miss because Shashua is a Hebrew University professor, but the company itself is Tel Aviv's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI21 Labs",
+      "label": "AI21 Labs on Wikipedia"
+    },
+    "answerAliases": [
+      "Tel Aviv",
+      "Tel Aviv-Yafo"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0031",
+    "text": "Which Beijing lab's Kimi assistant became famous for very long context windows?",
+    "options": [
+      "Moonshot AI",
+      "Zhipu AI",
+      "01.AI",
+      "Baichuan"
+    ],
+    "answer": "Moonshot AI",
+    "category": "labs",
+    "tags": [
+      "kimi",
+      "moonshot",
+      "china"
+    ],
+    "difficulty": 2,
+    "explanation": "Moonshot AI, founded in 2023, marketed Kimi on context windows reaching into the hundreds of thousands of tokens when rivals offered far less. Zhipu AI is the natural confusion because it is another Beijing lab shipping open-weight models, but its family is GLM, not Kimi. Founder Yang Zhilin came from Tsinghua by way of CMU.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Moonshot AI",
+      "label": "Moonshot AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Moonshot AI",
+      "Moonshot",
+      "Kimi"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0032",
+    "text": "Which lab, spun out of Tsinghua University, develops the GLM model family starting with ChatGLM?",
+    "options": [
+      "MiniMax",
+      "Zhipu AI",
+      "Moonshot AI",
+      "Baichuan"
+    ],
+    "answer": "Zhipu AI",
+    "category": "labs",
+    "tags": [
+      "zhipu",
+      "glm",
+      "china"
+    ],
+    "difficulty": 3,
+    "explanation": "Zhipu grew out of Tsinghua's knowledge-engineering group and released ChatGLM as one of China's first strong open bilingual models. Moonshot AI is the tempting answer as the other famous Beijing open-weight lab, but Kimi is theirs and GLM is Zhipu's. The Wikipedia article lives under the company's newer name, Z.ai.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Z.ai",
+      "label": "Z.ai on Wikipedia"
+    },
+    "answerAliases": [
+      "Zhipu AI",
+      "Zhipu",
+      "Z.ai",
+      "ChatGLM",
+      "GLM"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0033",
+    "text": "The Allen Institute for AI, the open-model nonprofit abbreviated Ai2, is headquartered in which US city?",
+    "options": [
+      "San Francisco",
+      "Boston",
+      "Seattle",
+      "Pittsburgh"
+    ],
+    "answer": "Seattle",
+    "category": "labs",
+    "tags": [
+      "ai2",
+      "nonprofit",
+      "seattle"
+    ],
+    "difficulty": 2,
+    "explanation": "Paul Allen founded the institute in 2014 and it has been based in Seattle ever since, later adding an office in Tel Aviv. San Francisco is the tempting answer because that is where most AI labs cluster, but Ai2 stayed in Allen's home city of Seattle.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Allen Institute for AI",
+      "label": "Allen Institute for AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Seattle"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0034",
+    "text": "Which company's enterprise model family is called Command, including Command R?",
+    "options": [
+      "AI21 Labs",
+      "Aleph Alpha",
+      "Mistral AI",
+      "Cohere"
+    ],
+    "answer": "Cohere",
+    "category": "labs",
+    "tags": [
+      "cohere",
+      "enterprise"
+    ],
+    "difficulty": 3,
+    "explanation": "Cohere, co-founded by transformer paper co-author Aidan Gomez, sells the Command family for retrieval-augmented enterprise work rather than running a consumer chatbot. Mistral AI is the tempting answer as the other open-weight enterprise lab, but its family is Mistral and Mixtral. Command R was built for grounding answers in company documents.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Cohere",
+      "label": "Cohere on Wikipedia"
+    },
+    "answerAliases": [
+      "Cohere",
+      "Cohere Inc.",
+      "Command R",
+      "Command-R"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0035",
+    "text": "Which pair of siblings co-founded Anthropic in 2021 after leaving OpenAI?",
+    "options": [
+      "Dario and Daniela Amodei",
+      "Sam Altman and Greg Brockman",
+      "Demis Hassabis and Shane Legg",
+      "Larry Page and Sergey Brin"
+    ],
+    "answer": "Dario and Daniela Amodei",
+    "category": "labs",
+    "tags": [
+      "anthropic",
+      "founders",
+      "exodus"
+    ],
+    "difficulty": 2,
+    "explanation": "Dario and Daniela Amodei left OpenAI in 2020 over safety disagreements and founded Anthropic as a public benefit corporation the next January. Altman and Brockman are the tempting answer because they stayed behind to run OpenAI, which is exactly the split that defines the frontier-lab rivalry. Claude is named for Claude Shannon, not for either founder.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Anthropic",
+      "label": "Anthropic on Wikipedia"
+    },
+    "answerAliases": [
+      "Dario Amodei",
+      "Daniela Amodei",
+      "Amodei",
+      "Anthropic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0036",
+    "text": "DeepSeek, the company behind the DeepSeek-R1 model, became an independent business in which month and year?",
+    "options": [
+      "April 2023",
+      "June 2015",
+      "July 2023",
+      "January 2025"
+    ],
+    "answer": "July 2023",
+    "category": "labs",
+    "tags": [
+      "deepseek",
+      "founding",
+      "china"
+    ],
+    "difficulty": 3,
+    "explanation": "High-Flyer, the quantitative hedge fund, announced an AGI research lab in April 2023 and spun it off as the independent company DeepSeek on 17 July 2023. April 2023 is the trap because that is when the lab was announced inside High-Flyer, and January 2025 is when the R1 model arrived, not the company.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DeepSeek",
+      "label": "DeepSeek on Wikipedia"
+    },
+    "answerAliases": [
+      "July 2023",
+      "17 July 2023",
+      "2023"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0037",
+    "text": "In which year did Elon Musk found xAI, the lab behind Grok?",
+    "options": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "answer": "2023",
+    "category": "labs",
+    "tags": [
+      "xai",
+      "founding"
+    ],
+    "difficulty": 1,
+    "explanation": "Musk announced xAI in July 2023, five years after leaving OpenAI's board, and released Grok months later. 2022 is the tempting answer because that was the ChatGPT shockwave year, but xAI came the summer after. Grok takes its name from Heinlein's Stranger in a Strange Land.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "SpaceXAI",
+      "label": "SpaceXAI on Wikipedia"
+    },
+    "answerAliases": [
+      "2023",
+      "July 2023",
+      "xAI",
+      "Grok"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0038",
+    "text": "Which lab's co-founder Mustafa Suleyman left in 2024 to run Microsoft AI, taking most of the staff with him?",
+    "options": [
+      "Adept AI",
+      "Imbue",
+      "Character.ai",
+      "Inflection AI"
+    ],
+    "answer": "Inflection AI",
+    "category": "labs",
+    "tags": [
+      "inflection",
+      "microsoft",
+      "exodus"
+    ],
+    "difficulty": 3,
+    "explanation": "Suleyman co-founded Inflection in 2022 after leaving DeepMind, then Microsoft hired him along with most of the team in what everyone called an acquihire. Character.ai is the tempting answer because Google did a similar reverse-acquihire of its founders months later, but Suleyman's lab was Inflection. Its chatbot Pi played the friendly companion, not the search box.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Inflection AI",
+      "label": "Inflection AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Inflection AI",
+      "Inflection",
+      "Mustafa Suleyman",
+      "Pi"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0039",
+    "text": "Which AI search lab was founded in 2022 by former OpenAI researcher Aravind Srinivas?",
+    "options": [
+      "Perplexity AI",
+      "You.com",
+      "Elicit",
+      "Phind"
+    ],
+    "answer": "Perplexity AI",
+    "category": "labs",
+    "tags": [
+      "perplexity",
+      "search",
+      "founders"
+    ],
+    "difficulty": 2,
+    "explanation": "Srinivas started Perplexity to answer questions with cited sources instead of ten blue links, and it became the defining AI search product. You.com is the tempting answer because it also wraps search in AI answers, but it was founded earlier by Richard Socher. Srinivas previously worked on transformers at OpenAI and Google.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Perplexity AI",
+      "label": "Perplexity AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Perplexity AI",
+      "Perplexity",
+      "Aravind Srinivas"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0040",
+    "text": "Which company was founded in 2016 by Clement Delangue, Julien Chaumond and Thomas Wolf?",
+    "options": [
+      "Replicate",
+      "Hugging Face",
+      "Weights and Biases",
+      "LangChain"
+    ],
+    "answer": "Hugging Face",
+    "category": "labs",
+    "tags": [
+      "hugging-face",
+      "founders",
+      "open-source"
+    ],
+    "difficulty": 2,
+    "explanation": "The trio started Hugging Face as a chatbot app, then pivoted to the Transformers library and model hub that now hosts millions of models. Weights and Biases is the tempting answer as another beloved ML tooling company, but it does experiment tracking, not model hosting. The name and logo come from the hugging-face emoji.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hugging Face",
+      "label": "Hugging Face on Wikipedia"
+    },
+    "answerAliases": [
+      "Hugging Face",
+      "Delangue",
+      "Clement Delangue",
+      "Chaumond",
+      "Thomas Wolf"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0041",
+    "text": "Which Beijing lab did investor and former Google China chief Kai-Fu Lee found in 2023?",
+    "options": [
+      "Baichuan",
+      "Moonshot AI",
+      "01.AI",
+      "MiniMax"
+    ],
+    "answer": "01.AI",
+    "category": "labs",
+    "tags": [
+      "01-ai",
+      "china",
+      "founders"
+    ],
+    "difficulty": 3,
+    "explanation": "Lee launched 01.AI in March 2023 and reached unicorn valuation within months on the strength of his name alone. Moonshot AI is the tempting answer as the other famous 2023 Beijing lab, but that was Yang Zhilin's, not Lee's. Lee previously ran Google China and wrote the book AI Superpowers.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Kai-Fu Lee",
+      "label": "Kai-Fu Lee on Wikipedia"
+    },
+    "answerAliases": [
+      "01.AI",
+      "01 AI",
+      "Lingyi Wanwu",
+      "Kai-Fu Lee",
+      "Kaifu Lee"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0042",
+    "text": "DeepSeek and Alibaba are both headquartered in which Chinese city?",
+    "options": [
+      "Beijing",
+      "Shenzhen",
+      "Shanghai",
+      "Hangzhou"
+    ],
+    "answer": "Hangzhou",
+    "category": "labs",
+    "tags": [
+      "deepseek",
+      "alibaba",
+      "china"
+    ],
+    "difficulty": 3,
+    "explanation": "Both the hedge-fund-backed DeepSeek and the e-commerce giant Alibaba sit in Hangzhou, home of deep Zhejiang University talent. Beijing is the tempting answer because Baidu, ByteDance and 01.AI cluster there, but Hangzhou is China's other AI pole. Alibaba's Xixi campus anchors the city's west side.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DeepSeek",
+      "label": "DeepSeek on Wikipedia"
+    },
+    "answerAliases": [
+      "Hangzhou",
+      "DeepSeek",
+      "Alibaba"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0043",
+    "text": "Who co-founded DeepMind in 2010 alongside Shane Legg and Mustafa Suleyman?",
+    "options": [
+      "Demis Hassabis",
+      "Geoffrey Hinton",
+      "Yann LeCun",
+      "Andrew Ng"
+    ],
+    "answer": "Demis Hassabis",
+    "category": "labs",
+    "tags": [
+      "deepmind",
+      "founders"
+    ],
+    "difficulty": 1,
+    "explanation": "Hassabis, a former chess prodigy and game designer, founded DeepMind to solve general intelligence and sold it to Google in 2014. Geoffrey Hinton is the tempting answer as the other giant of deep learning, but he stayed in academia until joining Google separately. Hassabis later shared the 2024 Nobel Prize in Chemistry for AlphaFold.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Google DeepMind",
+      "label": "Google DeepMind on Wikipedia"
+    },
+    "answerAliases": [
+      "Demis Hassabis",
+      "Hassabis",
+      "DeepMind"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0044",
+    "text": "Tencent, developer of the Hunyuan models, is headquartered in which city?",
+    "options": [
+      "Beijing",
+      "Shenzhen",
+      "Guangzhou",
+      "Shanghai"
+    ],
+    "answer": "Shenzhen",
+    "category": "labs",
+    "tags": [
+      "tencent",
+      "hunyuan",
+      "china"
+    ],
+    "difficulty": 2,
+    "explanation": "Tencent has sat in Shenzhen, just across the border from Hong Kong, since its 1998 founding around the QQ messenger. Guangzhou is the tempting answer as the nearby provincial capital, but Tencent's towers define Shenzhen's Nanshan district. Its WeChat app now serves over a billion users from that same city.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Tencent",
+      "label": "Tencent on Wikipedia"
+    },
+    "answerAliases": [
+      "Shenzhen",
+      "Tencent",
+      "Hunyuan"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0045",
+    "text": "Which Beijing company founded by Zhang Yiming runs the Seed team behind the Doubao models?",
+    "options": [
+      "Xiaomi",
+      "Baidu",
+      "ByteDance",
+      "Meituan"
+    ],
+    "answer": "ByteDance",
+    "category": "labs",
+    "tags": [
+      "bytedance",
+      "doubao",
+      "china"
+    ],
+    "difficulty": 3,
+    "explanation": "Zhang Yiming founded ByteDance in 2012, and its Seed team builds Doubao, one of China's most-used AI assistants. Baidu is the tempting answer as Beijing's other AI giant, but its family is ERNIE. Doubao is little known abroad despite its enormous domestic user base.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ByteDance",
+      "label": "ByteDance on Wikipedia"
+    },
+    "answerAliases": [
+      "ByteDance",
+      "Zhang Yiming",
+      "Doubao",
+      "Seed"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0046",
+    "text": "In which year was OpenAI founded?",
+    "options": [
+      "2012",
+      "2017",
+      "2019",
+      "2015"
+    ],
+    "answer": "2015",
+    "category": "labs",
+    "tags": [
+      "openai",
+      "founding"
+    ],
+    "difficulty": 1,
+    "explanation": "OpenAI was founded in December 2015 as a nonprofit by Altman, Musk, Sutskever and others pledging a billion dollars. 2019 is the tempting answer because that is when it created the capped-profit arm, but the lab itself dates to 2015. Musk left the board three years later, in 2018.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenAI",
+      "label": "OpenAI on Wikipedia"
+    },
+    "answerAliases": [
+      "2015",
+      "December 2015",
+      "OpenAI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0047",
+    "text": "In which year was Safe Superintelligence Inc. founded by Ilya Sutskever?",
+    "options": [
+      "2024",
+      "2022",
+      "2023",
+      "2025"
+    ],
+    "answer": "2024",
+    "category": "labs",
+    "tags": [
+      "ssi",
+      "founding",
+      "safety"
+    ],
+    "difficulty": 1,
+    "explanation": "Sutskever founded SSI in June 2024, weeks after leaving OpenAI, with Daniel Gross and Daniel Levy. 2023 is the tempting answer because that was the year of the OpenAI board crisis, but SSI came the following summer. The startup announced a single goal, safe superintelligence, with no product roadmap at all.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Safe Superintelligence Inc.",
+      "label": "Safe Superintelligence Inc. on Wikipedia"
+    },
+    "answerAliases": [
+      "2024",
+      "June 2024",
+      "Safe Superintelligence",
+      "SSI",
+      "Sutskever"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0048",
+    "text": "In February 2026, which company acquired Elon Musk's xAI in an all-stock deal?",
+    "options": [
+      "Tesla",
+      "SpaceX",
+      "X Corp.",
+      "Oracle"
+    ],
+    "answer": "SpaceX",
+    "category": "labs",
+    "tags": [
+      "xai",
+      "spacex",
+      "acquisition"
+    ],
+    "difficulty": 2,
+    "explanation": "SpaceX acquired xAI on 2 February 2026 in an all-stock deal that valued xAI at $250 billion and folded it in as a wholly owned subsidiary, later rebranded SpaceXAI. Tesla is the tempting answer because Musk also runs it, but the buyer was SpaceX. X Corp. is the same pair in the reverse direction: xAI acquired the social media company in 2025.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "SpaceXAI",
+      "label": "SpaceXAI on Wikipedia"
+    },
+    "answerAliases": [
+      "SpaceX",
+      "SpaceXAI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0049",
+    "text": "Which company announced an agreement in 2026 to acquire Hugging Face for about $12.9 billion?",
+    "options": [
+      "Nvidia",
+      "Google",
+      "Microsoft",
+      "Meta"
+    ],
+    "answer": "Nvidia",
+    "category": "labs",
+    "tags": [
+      "hugging-face",
+      "nvidia",
+      "acquisition"
+    ],
+    "difficulty": 2,
+    "explanation": "Nvidia announced the roughly $12.9 billion agreement to buy Hugging Face in September 2026, promising to keep the platform open and its brand intact. Google is the tempting miss because it joined Hugging Face's 2023 funding round, but the acquirer is the GPU maker whose hardware trains most of the models the Hub hosts.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hugging Face",
+      "label": "Hugging Face on Wikipedia"
+    },
+    "answerAliases": [
+      "Nvidia",
+      "NVIDIA"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0050",
+    "text": "Which independent San Francisco lab founded by David Holz builds the Midjourney image generator?",
+    "options": [
+      "Ideogram",
+      "Midjourney",
+      "Leonardo AI",
+      "Pika"
+    ],
+    "answer": "Midjourney",
+    "category": "labs",
+    "tags": [
+      "midjourney",
+      "image",
+      "founders"
+    ],
+    "difficulty": 2,
+    "explanation": "Holz, who previously founded the Leap Motion startup, bootstrapped Midjourney with no venture funding and runs it through Discord. Ideogram is the tempting answer because it was also founded by ex-Google image researchers, but Midjourney is Holz's independent lab. Its self-funded profits made it the rare AI lab that never needed a giant's money.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Midjourney",
+      "label": "Midjourney on Wikipedia"
+    },
+    "answerAliases": [
+      "Midjourney",
+      "David Holz"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0051",
+    "text": "Which volunteer research collective released the open GPT-Neo and GPT-J models in 2021?",
+    "options": [
+      "BigScience",
+      "LAION",
+      "EleutherAI",
+      "Mozilla"
+    ],
+    "answer": "EleutherAI",
+    "category": "labs",
+    "tags": [
+      "eleutherai",
+      "open-source",
+      "open-weights"
+    ],
+    "difficulty": 3,
+    "explanation": "EleutherAI organized on Discord to replicate GPT-3 in the open, releasing GPT-Neo and the 6-billion-parameter GPT-J. BigScience is the tempting answer as another open collective, but its model was BLOOM, built with Hugging Face. The name nods to the Greek word for freedom.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "EleutherAI",
+      "label": "EleutherAI on Wikipedia"
+    },
+    "answerAliases": [
+      "EleutherAI",
+      "GPT-Neo",
+      "GPT-J",
+      "GPT-NeoX"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0052",
+    "text": "Which company's researchers created the StyleGAN family of image generators?",
+    "options": [
+      "Adobe",
+      "Google",
+      "OpenAI",
+      "Nvidia"
+    ],
+    "answer": "Nvidia",
+    "category": "labs",
+    "tags": [
+      "nvidia",
+      "stylegan",
+      "research"
+    ],
+    "difficulty": 3,
+    "explanation": "Nvidia's Tero Karras and colleagues released StyleGAN in 2018, and its synthetic faces powered the viral This Person Does Not Exist site. Adobe is the tempting answer because it owns image editing, but StyleGAN came from the GPU maker's research lab. Karras built it on the progressive-growing technique his team had published the year before.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "StyleGAN",
+      "label": "StyleGAN on Wikipedia"
+    },
+    "answerAliases": [
+      "Nvidia",
+      "NVIDIA",
+      "StyleGAN",
+      "Karras"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0053",
+    "text": "Who founded Meta's Fundamental AI Research (FAIR) lab in 2013?",
+    "options": [
+      "Yann LeCun",
+      "Geoffrey Hinton",
+      "Yoshua Bengio",
+      "Andrew Ng"
+    ],
+    "answer": "Yann LeCun",
+    "category": "labs",
+    "tags": [
+      "fair",
+      "meta",
+      "founders"
+    ],
+    "difficulty": 2,
+    "explanation": "LeCun joined Meta, then Facebook, in 2013 to start FAIR while keeping his NYU post, and the lab later produced PyTorch and Llama. Hinton is the tempting answer as the other great convnet pioneer, but he went to Google, not Meta. Bengio stayed at MILA in Montreal while his two co-laureates picked sides.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Yann LeCun",
+      "label": "Yann LeCun on Wikipedia"
+    },
+    "answerAliases": [
+      "Yann LeCun",
+      "Yann André Le Cun",
+      "LeCun",
+      "FAIR",
+      "2013"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0054",
+    "text": "In 2012, which Google research team trained a neural network on 10 million YouTube images that learned to recognize cats without being taught?",
+    "options": [
+      "Google X",
+      "DeepMind",
+      "Google Brain",
+      "Google Research"
+    ],
+    "answer": "Google Brain",
+    "category": "labs",
+    "tags": [
+      "google-brain",
+      "cats",
+      "history"
+    ],
+    "difficulty": 3,
+    "explanation": "The Brain project, then working inside Google X before becoming a named division, trained the network on 10 million YouTube frames and it learned cats on its own, an early landmark of unsupervised learning. Google X is the trap because the project started there, but the team and the result belong to Brain. Google did not acquire DeepMind until 2014.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Google Brain",
+      "label": "Google Brain on Wikipedia"
+    },
+    "answerAliases": [
+      "Google Brain",
+      "Brain",
+      "Project Brain"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0055",
+    "text": "Which Cologne-based company's neural translation service launched as DeepL Translator in 2017?",
+    "options": [
+      "Aleph Alpha",
+      "SAP",
+      "DeepL",
+      "Siemens"
+    ],
+    "answer": "DeepL",
+    "category": "labs",
+    "tags": [
+      "deepl",
+      "translation",
+      "europe"
+    ],
+    "difficulty": 2,
+    "explanation": "DeepL grew out of the Linguee dictionary team, and its 2017 translator beat Google on blind tests, funded by a wave of press buzz. SAP is the tempting answer as Germany's other software giant, but translation is Cologne's DeepL, not Walldorf's SAP. The company later expanded from translation into its own language models.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DeepL Translator",
+      "label": "DeepL Translator on Wikipedia"
+    },
+    "answerAliases": [
+      "DeepL",
+      "DeepL Translator",
+      "DeepL SE",
+      "Linguee",
+      "Cologne"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0056",
+    "text": "Which company's 2024 personal-intelligence system splits work between on-device models and Private Cloud Compute?",
+    "options": [
+      "Samsung",
+      "Google",
+      "Microsoft",
+      "Apple"
+    ],
+    "answer": "Apple",
+    "category": "labs",
+    "tags": [
+      "apple",
+      "on-device"
+    ],
+    "difficulty": 1,
+    "explanation": "Apple announced Apple Intelligence at WWDC 2024, splitting work between on-device models and Private Cloud Compute. Samsung is the tempting answer because Galaxy AI shipped on phones first, but Apple's system is the one with the Private Cloud name. The long-awaited Siri overhaul was the headline feature.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Apple Intelligence",
+      "label": "Apple Intelligence on Wikipedia"
+    },
+    "answerAliases": [
+      "Apple",
+      "Apple Intelligence",
+      "Apple Inc."
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "lab-0057",
+    "text": "Which company develops the Phi family of small language models?",
+    "options": [
+      "Apple",
+      "Microsoft",
+      "Google",
+      "Meta"
+    ],
+    "answer": "Microsoft",
+    "category": "labs",
+    "tags": [
+      "phi",
+      "microsoft",
+      "small-models"
+    ],
+    "difficulty": 2,
+    "explanation": "Microsoft's Phi models are open-weight and designed to run on phones and laptops, with Phi-1 arriving in June 2023. Google is the tempting answer because it ships Gemma, another open-weight family, but Phi is Microsoft's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Phi (language model)",
+      "label": "Phi (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "Microsoft",
+      "Phi",
+      "Phi-1",
+      "Phi-3"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0058",
+    "text": "Which lab develops the Gemma family of open models?",
+    "options": [
+      "Meta AI",
+      "Google DeepMind",
+      "Mistral AI",
+      "Cohere"
+    ],
+    "answer": "Google DeepMind",
+    "category": "labs",
+    "tags": [
+      "gemma",
+      "google",
+      "open-weights"
+    ],
+    "difficulty": 1,
+    "explanation": "Gemma is Google DeepMind's family of source-available models, first released in February 2024 as a lightweight sibling of Gemini. Meta AI is the tempting answer because it also publishes open-weight models, but Llama is Meta's family.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Gemma (language model)",
+      "label": "Gemma (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "Google DeepMind",
+      "DeepMind",
+      "Gemma"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0059",
+    "text": "Which company created the Granite family of foundation models?",
+    "options": [
+      "Intel",
+      "IBM",
+      "Oracle",
+      "SAP"
+    ],
+    "answer": "IBM",
+    "category": "labs",
+    "tags": [
+      "granite",
+      "ibm",
+      "enterprise"
+    ],
+    "difficulty": 2,
+    "explanation": "IBM Research announced Granite in September 2023 for the Watsonx platform, later open-sourcing the code models under Apache 2.0. Oracle is the tempting answer as another enterprise software giant, but Granite is IBM's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "IBM Granite",
+      "label": "IBM Granite on Wikipedia"
+    },
+    "answerAliases": [
+      "IBM",
+      "IBM Research",
+      "Granite"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0060",
+    "text": "Which lab developed the Jamba model family?",
+    "options": [
+      "Mistral AI",
+      "AI21 Labs",
+      "Aleph Alpha",
+      "Cohere"
+    ],
+    "answer": "AI21 Labs",
+    "category": "labs",
+    "tags": [
+      "jamba",
+      "ai21",
+      "mamba"
+    ],
+    "difficulty": 3,
+    "explanation": "AI21 Labs released Jamba in March 2024 as a hybrid Mamba-transformer mixture-of-experts model with context up to 256,000 tokens. Cohere is the tempting answer as another enterprise-focused lab, but its family is Command.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI21 Labs",
+      "label": "AI21 Labs on Wikipedia"
+    },
+    "answerAliases": [
+      "AI21 Labs",
+      "AI21",
+      "Jamba"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0061",
+    "text": "Which lab released the Mixtral mixture-of-experts model?",
+    "options": [
+      "Alibaba",
+      "Mistral AI",
+      "Meta AI",
+      "DeepSeek"
+    ],
+    "answer": "Mistral AI",
+    "category": "labs",
+    "tags": [
+      "mixtral",
+      "mistral",
+      "moe"
+    ],
+    "difficulty": 2,
+    "explanation": "Mistral AI released Mixtral 8x7B in December 2023 via a BitTorrent link, a sparse model that beat Llama 70B on many benchmarks. DeepSeek is the tempting answer as another open-weight lab, but its family is DeepSeek.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mistral AI",
+      "label": "Mistral AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Mistral AI",
+      "Mistral",
+      "Mixtral"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0062",
+    "text": "Which lab released the reasoning model DeepSeek-R1?",
+    "options": [
+      "Moonshot AI",
+      "01.AI",
+      "DeepSeek",
+      "Alibaba"
+    ],
+    "answer": "DeepSeek",
+    "category": "labs",
+    "tags": [
+      "deepseek",
+      "reasoning",
+      "r1"
+    ],
+    "difficulty": 2,
+    "explanation": "DeepSeek, funded by the High-Flyer hedge fund in Hangzhou, released DeepSeek-R1 as an open-weights reasoning model. Alibaba is the tempting answer as another Chinese AI giant, but its family is Qwen.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DeepSeek",
+      "label": "DeepSeek on Wikipedia"
+    },
+    "answerAliases": [
+      "DeepSeek",
+      "Hangzhou DeepSeek"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0063",
+    "text": "Which Shanghai-based lab is one of China's six AI Tigers and builds the Step models?",
+    "options": [
+      "Moonshot AI",
+      "Baichuan",
+      "StepFun",
+      "MiniMax"
+    ],
+    "answer": "StepFun",
+    "category": "labs",
+    "tags": [
+      "stepfun",
+      "china",
+      "ai-tiger"
+    ],
+    "difficulty": 3,
+    "explanation": "StepFun was founded in Shanghai in April 2023 by former Microsoft engineers and released Step-2, a trillion-parameter model, in 2024. MiniMax is the tempting answer as another Shanghai AI Tiger, but its family is MiniMax.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "StepFun",
+      "label": "StepFun on Wikipedia"
+    },
+    "answerAliases": [
+      "StepFun",
+      "Shanghai Jieyue Xingchen"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0064",
+    "text": "Which Shanghai-based company develops the abab models and the Talkie app?",
+    "options": [
+      "Baichuan",
+      "Moonshot AI",
+      "MiniMax",
+      "StepFun"
+    ],
+    "answer": "MiniMax",
+    "category": "labs",
+    "tags": [
+      "minimax",
+      "china",
+      "abab"
+    ],
+    "difficulty": 3,
+    "explanation": "MiniMax was founded in December 2021 in Shanghai and built the abab model line plus the Talkie and Hailuo AI apps. StepFun is the tempting answer as another Shanghai lab, but its family is Step.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "MiniMax Group",
+      "label": "MiniMax Group on Wikipedia"
+    },
+    "answerAliases": [
+      "MiniMax",
+      "MiniMax Group",
+      "abab"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0065",
+    "text": "Which Beijing lab was founded by Sogou's former CEO Wang Xiaochuan?",
+    "options": [
+      "Zhipu AI",
+      "Moonshot AI",
+      "Baichuan",
+      "01.AI"
+    ],
+    "answer": "Baichuan",
+    "category": "labs",
+    "tags": [
+      "baichuan",
+      "china",
+      "founders"
+    ],
+    "difficulty": 3,
+    "explanation": "Wang Xiaochuan founded Baichuan in April 2023 after leaving Sogou, naming it after the phrase 'A Hundred Rivers'. 01.AI is the tempting answer as another Beijing AI Tiger, but that was Kai-Fu Lee's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Baichuan",
+      "label": "Baichuan on Wikipedia"
+    },
+    "answerAliases": [
+      "Baichuan",
+      "Baichuan AI",
+      "Wang Xiaochuan"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0066",
+    "text": "Which Tokyo-based lab was co-founded by transformer paper co-author Llion Jones?",
+    "options": [
+      "Preferred Networks",
+      "RIKEN",
+      "Fujitsu",
+      "Sakana AI"
+    ],
+    "answer": "Sakana AI",
+    "category": "labs",
+    "tags": [
+      "sakana",
+      "japan",
+      "founders"
+    ],
+    "difficulty": 3,
+    "explanation": "Sakana AI was founded in Tokyo in July 2023 by David Ha, Llion Jones and Ren Ito, with Jones being a co-author of Attention Is All You Need. Preferred Networks is the tempting answer as another Japanese AI company, but it is not Sakana's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Sakana AI",
+      "label": "Sakana AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Sakana AI",
+      "Sakana",
+      "Llion Jones"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0068",
+    "text": "Which German non-profit created the LAION image datasets used to train Stable Diffusion?",
+    "options": [
+      "EleutherAI",
+      "BigScience",
+      "Mozilla",
+      "LAION"
+    ],
+    "answer": "LAION",
+    "category": "labs",
+    "tags": [
+      "laion",
+      "datasets",
+      "open-source"
+    ],
+    "difficulty": 3,
+    "explanation": "LAION, short for Large-scale Artificial Intelligence Open Network, is a German non-profit that released LAION-400M and LAION-5B scraped from Common Crawl. EleutherAI is the tempting answer as another open collective, but its focus was language models, not image datasets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "LAION",
+      "label": "LAION on Wikipedia"
+    },
+    "answerAliases": [
+      "LAION",
+      "Large-scale Artificial Intelligence Open Network"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0069",
+    "text": "Which company acquired the generative AI startup MosaicML in 2023?",
+    "options": [
+      "Snowflake",
+      "Microsoft",
+      "Amazon",
+      "Databricks"
+    ],
+    "answer": "Databricks",
+    "category": "labs",
+    "tags": [
+      "databricks",
+      "mosaicml",
+      "acquisition"
+    ],
+    "difficulty": 2,
+    "explanation": "Databricks bought MosaicML for $1.4 billion in June 2023 and folded it into its Data Intelligence Platform. Snowflake is the tempting answer as a rival data platform, but it did not buy MosaicML.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Databricks",
+      "label": "Databricks on Wikipedia"
+    },
+    "answerAliases": [
+      "Databricks",
+      "MosaicML"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0072",
+    "text": "DeepSeek is funded by which Chinese hedge fund?",
+    "options": [
+      "High-Flyer",
+      "Citadel",
+      "Renaissance",
+      "Two Sigma"
+    ],
+    "answer": "High-Flyer",
+    "category": "labs",
+    "tags": [
+      "deepseek",
+      "funding",
+      "china"
+    ],
+    "difficulty": 3,
+    "explanation": "DeepSeek is unusual in being backed by High-Flyer, a quantitative hedge fund, rather than venture capital. Citadel is the tempting answer as a famous hedge fund, but it has no link to DeepSeek.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DeepSeek",
+      "label": "DeepSeek on Wikipedia"
+    },
+    "answerAliases": [
+      "High-Flyer",
+      "High Flyer",
+      "DeepSeek"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0073",
+    "text": "Mistral AI takes its name from a wind blowing in which country?",
+    "options": [
+      "France",
+      "Italy",
+      "Spain",
+      "Greece"
+    ],
+    "answer": "France",
+    "category": "labs",
+    "tags": [
+      "mistral",
+      "naming",
+      "france"
+    ],
+    "difficulty": 2,
+    "explanation": "Mistral is named after the mistral, a cold northwesterly wind that blows in southern France. Italy is the tempting answer because the wind also reaches there, but the namesake is French.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mistral AI",
+      "label": "Mistral AI on Wikipedia"
+    },
+    "answerAliases": [
+      "France",
+      "southern France",
+      "mistral"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "lab-0074",
+    "text": "Which company develops the Hunyuan family of models?",
+    "options": [
+      "Tencent",
+      "Baidu",
+      "ByteDance",
+      "Alibaba"
+    ],
+    "answer": "Tencent",
+    "category": "labs",
+    "tags": [
+      "hunyuan",
+      "tencent",
+      "china"
+    ],
+    "difficulty": 2,
+    "explanation": "Tencent, headquartered in Shenzhen, develops the Hunyuan models alongside WeChat and its other products. Baidu is the tempting answer as another Chinese AI giant, but its family is ERNIE.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Tencent",
+      "label": "Tencent on Wikipedia"
+    },
+    "answerAliases": [
+      "Tencent",
+      "Hunyuan"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
   }
 ]

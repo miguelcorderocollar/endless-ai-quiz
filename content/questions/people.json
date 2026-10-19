@@ -818,10 +818,10 @@
     "id": "ppl-0029",
     "text": "Jensen Huang co-founded Nvidia in 1993, and the meetings where the business plan was written happened in a roadside diner in East San Jose. Which restaurant chain was it?",
     "options": [
+      "Wendy's",
       "Denny's",
       "McDonald's",
-      "In-N-Out Burger",
-      "Wendy's"
+      "In-N-Out Burger"
     ],
     "answer": "Denny's",
     "category": "people",
@@ -848,10 +848,10 @@
     "id": "ppl-0030",
     "text": "Lisa Su led AMD's largest-ever purchase, announced in 2020 and completed in February 2022, to bring programmable logic into the chip lineup. Which company did AMD buy?",
     "options": [
+      "SiFive",
       "Xilinx",
       "Altera",
-      "Arm Holdings",
-      "SiFive"
+      "Arm Holdings"
     ],
     "answer": "Xilinx",
     "category": "people",
@@ -878,10 +878,10 @@
     "id": "ppl-0031",
     "text": "Microsoft's AI bet began with a $1 billion investment in 2019, made under the CEO who had taken over that year, and the total has since passed $13 billion. Which company has taken the money?",
     "options": [
+      "Cohere",
       "OpenAI",
       "Anthropic",
-      "Mistral AI",
-      "Cohere"
+      "Mistral AI"
     ],
     "answer": "OpenAI",
     "category": "people",
@@ -907,10 +907,10 @@
     "id": "ppl-0032",
     "text": "Meta bought a 49% stake in Scale AI for more than $14 billion in 2025 and hired the company's founder to run Meta Superintelligence Labs as its Chief AI Officer. Who is he?",
     "options": [
-      "Alexandr Wang",
-      "Nat Friedman",
       "Emad Mostaque",
-      "Clement Delangue"
+      "Clement Delangue",
+      "Alexandr Wang",
+      "Nat Friedman"
     ],
     "answer": "Alexandr Wang",
     "category": "people",
@@ -937,10 +937,10 @@
     "id": "ppl-0033",
     "text": "After the Nobel Prize, Hassabis turned DeepMind's protein work into a separate Alphabet company that uses AlphaFold to hunt for drug targets. What is that company called?",
     "options": [
-      "Isomorphic Labs",
-      "Insilico Medicine",
       "Recursion",
-      "Exscientia"
+      "Exscientia",
+      "Isomorphic Labs",
+      "Insilico Medicine"
     ],
     "answer": "Isomorphic Labs",
     "category": "people",
@@ -966,10 +966,10 @@
     "id": "ppl-0034",
     "text": "Which researcher behind AlphaFold was named one of Nature's ten 'people who mattered' in science in 2021?",
     "options": [
-      "John M. Jumper",
       "Richard Evans",
       "David Baker",
-      "Susan Lindquist"
+      "Susan Lindquist",
+      "John M. Jumper"
     ],
     "answer": "John M. Jumper",
     "category": "people",
@@ -996,10 +996,10 @@
     "id": "ppl-0035",
     "text": "The image generator that spent its 2022 open beta inside Discord is run by a founder who had previously co-founded Leap Motion, the gesture-control hardware company. Who is he?",
     "options": [
-      "David Holz",
       "Emad Mostaque",
       "Nat Friedman",
-      "Jason Allen"
+      "Jason Allen",
+      "David Holz"
     ],
     "answer": "David Holz",
     "category": "people",
@@ -1111,5 +1111,1109 @@
     ],
     "status": "draft",
     "addedAt": "2026-09-30"
+  },
+  {
+    "id": "ppl-0039",
+    "text": "Which CEO personally delivered the first Nvidia DGX-1 supercomputer to OpenAI in August 2016?",
+    "options": [
+      "Jensen Huang",
+      "Lisa Su",
+      "Satya Nadella",
+      "Sundar Pichai"
+    ],
+    "answer": "Jensen Huang",
+    "category": "people",
+    "tags": [
+      "nvidia",
+      "openai",
+      "dgx"
+    ],
+    "difficulty": 2,
+    "explanation": "Huang showed up at OpenAI's office in 2016 with the first DGX-1, built for deep learning, and Elon Musk posted the photo of the handover. Lisa Su is the tempting miss because she runs AMD, Nvidia's closest rival, but in 2016 she had only just started AMD's turnaround and had no DGX to deliver.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Jensen Huang",
+      "label": "Jensen Huang on Wikipedia"
+    },
+    "answerAliases": [
+      "Jensen Huang",
+      "Jen-Hsun Huang",
+      "Huang"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0040",
+    "text": "Lisa Su, who became AMD CEO in 2014, is reported to be what to Nvidia CEO Jensen Huang?",
+    "options": [
+      "His sister",
+      "His distant cousin",
+      "His wife",
+      "His daughter"
+    ],
+    "answer": "His distant cousin",
+    "category": "people",
+    "tags": [
+      "amd",
+      "nvidia",
+      "family"
+    ],
+    "difficulty": 2,
+    "explanation": "Multiple profiles report Su and Huang are relatives through Taiwanese families: Su's mother and Huang are first cousins, so Su and Huang are first cousins once removed. His sister is the tempting miss because the family link is real, but the reported relationship is a cousin link, not a sibling one.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Lisa Su",
+      "label": "Lisa Su on Wikipedia"
+    },
+    "answerAliases": [
+      "cousin",
+      "distant cousin",
+      "relative",
+      "Lisa Su",
+      "Jensen Huang",
+      "Lisa Tzwu-Fang Su"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0041",
+    "text": "Which Microsoft CEO published the memoir Hit Refresh in 2017 about transforming the company?",
+    "options": [
+      "Steve Ballmer",
+      "Bill Gates",
+      "Satya Nadella",
+      "Brad Smith"
+    ],
+    "answer": "Satya Nadella",
+    "category": "people",
+    "tags": [
+      "microsoft",
+      "leadership",
+      "books"
+    ],
+    "difficulty": 1,
+    "explanation": "Nadella wrote Hit Refresh in 2017, three years after succeeding Ballmer, describing the shift to cloud and empathy in leadership. Ballmer is the tempting miss because he was CEO just before, but he left in 2014 and never wrote about the cloud turnaround.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Satya Nadella",
+      "label": "Satya Nadella on Wikipedia"
+    },
+    "answerAliases": [
+      "Satya Nadella",
+      "Nadella"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0042",
+    "text": "Which company grew out of the online bank X.com that Elon Musk co-founded in 1999?",
+    "options": [
+      "Tesla",
+      "SpaceX",
+      "OpenAI",
+      "PayPal"
+    ],
+    "answer": "PayPal",
+    "category": "people",
+    "tags": [
+      "musk",
+      "paypal",
+      "founders"
+    ],
+    "difficulty": 1,
+    "explanation": "Musk founded X.com in 1999, it merged with Confinity in 2000 and was renamed PayPal in 2001 before eBay bought it. Tesla is the tempting miss because Musk is its public face, but he joined Tesla in 2004 as an investor, long after X.com became PayPal.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Elon Musk",
+      "label": "Elon Musk on Wikipedia"
+    },
+    "answerAliases": [
+      "Elon Musk",
+      "Musk",
+      "PayPal",
+      "X.com"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0043",
+    "text": "Who co-founded Facebook in a Harvard dorm room in 2004?",
+    "options": [
+      "Mark Zuckerberg",
+      "Jack Dorsey",
+      "Evan Spiegel",
+      "Kevin Systrom"
+    ],
+    "answer": "Mark Zuckerberg",
+    "category": "people",
+    "tags": [
+      "meta",
+      "founders",
+      "social"
+    ],
+    "difficulty": 1,
+    "explanation": "Zuckerberg launched thefacebook.com in February 2004 with Dustin Moskovitz, Eduardo Saverin and others before dropping out. Jack Dorsey is the tempting miss because he founded another social network, but his was Twitter in 2006, not Facebook.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mark Zuckerberg",
+      "label": "Mark Zuckerberg on Wikipedia"
+    },
+    "answerAliases": [
+      "Mark Zuckerberg",
+      "Zuckerberg",
+      "Mark Elliot Zuckerberg"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0044",
+    "text": "Who led the DeepMind team behind AlphaGo's 2016 victory over Lee Sedol?",
+    "options": [
+      "Demis Hassabis",
+      "David Silver",
+      "Mustafa Suleyman",
+      "Shane Legg"
+    ],
+    "answer": "David Silver",
+    "category": "people",
+    "tags": [
+      "deepmind",
+      "alphago",
+      "reinforcement-learning"
+    ],
+    "difficulty": 3,
+    "explanation": "Silver led the reinforcement learning work behind AlphaGo and later AlphaZero, combining search with deep networks trained by self-play. Hassabis is the tempting miss because he co-founded DeepMind and was the public face of the match, but the AlphaGo papers list Silver as the lead researcher.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "David Silver (computer scientist)",
+      "label": "David Silver (computer scientist) on Wikipedia"
+    },
+    "answerAliases": [
+      "David Silver",
+      "Silver"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0045",
+    "text": "Who was the first author of OpenAI's 2021 CLIP paper on learning vision from language?",
+    "options": [
+      "Ilya Sutskever",
+      "John Schulman",
+      "Alec Radford",
+      "Dario Amodei"
+    ],
+    "answer": "Alec Radford",
+    "category": "people",
+    "tags": [
+      "clip",
+      "vision",
+      "openai"
+    ],
+    "difficulty": 3,
+    "explanation": "Radford led CLIP, which trained on 400 million image-text pairs and enabled zero-shot image classification without labeled data. Sutskever is the tempting miss because he led much of OpenAI's early research, but by 2021 he was focused on alignment and was not on the CLIP author list.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Alec Radford",
+      "label": "Alec Radford on Wikipedia"
+    },
+    "answerAliases": [
+      "Alec Radford",
+      "Radford"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0048",
+    "text": "Who created the Keras deep-learning library in 2015 while working at Google?",
+    "options": [
+      "Jeremy Howard",
+      "François Chollet",
+      "Thomas Wolf",
+      "Clement Delangue"
+    ],
+    "answer": "François Chollet",
+    "category": "people",
+    "tags": [
+      "keras",
+      "libraries",
+      "google"
+    ],
+    "difficulty": 2,
+    "explanation": "Chollet released Keras in 2015 as a friendly front end for neural nets, and it later became the high-level API inside TensorFlow. Howard is the tempting miss because he built fast.ai on top of similar ideas, but his library came later and was aimed at courses, not as a TensorFlow API.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "François Chollet",
+      "label": "François Chollet on Wikipedia"
+    },
+    "answerAliases": [
+      "François Chollet",
+      "Francois Chollet",
+      "Chollet"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0049",
+    "text": "Who co-founded fast.ai with Rachel Thomas in 2016 to make deep learning accessible?",
+    "options": [
+      "Andrew Ng",
+      "Andrej Karpathy",
+      "Jeremy Howard",
+      "Yann LeCun"
+    ],
+    "answer": "Jeremy Howard",
+    "category": "people",
+    "tags": [
+      "fast-ai",
+      "education",
+      "founders"
+    ],
+    "difficulty": 2,
+    "explanation": "Howard and Thomas launched fast.ai in 2016 with free courses and software that put practical training ahead of theory. Ng is the tempting miss because his Coursera courses taught millions, but his platform was Deeplearning.ai, not fast.ai.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Fast.ai",
+      "label": "Fast.ai on Wikipedia"
+    },
+    "answerAliases": [
+      "Jeremy Howard",
+      "Howard",
+      "fast.ai"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0050",
+    "text": "Who was the first author of OpenAI's 2020 Scaling Laws for Neural Language Models paper?",
+    "options": [
+      "Dario Amodei",
+      "Tom Brown",
+      "Sam McCandlish",
+      "Jared Kaplan"
+    ],
+    "answer": "Jared Kaplan",
+    "category": "people",
+    "tags": [
+      "scaling-laws",
+      "openai",
+      "papers"
+    ],
+    "difficulty": 3,
+    "explanation": "Kaplan's 2020 paper showed loss falls predictably with model size, data and compute, which set off the race to scale. Amodei is the tempting miss because he was a senior author and later cited the laws when founding Anthropic, but Kaplan led the analysis.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2001.08361",
+      "label": "Scaling Laws for Neural Language Models on arXiv"
+    },
+    "answerAliases": [
+      "Jared Kaplan",
+      "Kaplan"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0051",
+    "text": "Which Anthropic researcher led early work on model character and the 2022 Constitutional AI approach?",
+    "options": [
+      "Amanda Askell",
+      "Jan Leike",
+      "John Schulman",
+      "Dario Amodei"
+    ],
+    "answer": "Amanda Askell",
+    "category": "people",
+    "tags": [
+      "anthropic",
+      "alignment",
+      "constitutional-ai"
+    ],
+    "difficulty": 3,
+    "explanation": "Askell drove Anthropic's work on shaping Claude's character and co-authored the Constitutional AI paper that replaced some human feedback with AI feedback. Leike is the tempting miss because he later led superalignment work, but in 2022 he was still at OpenAI, not on the Constitutional AI team.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2212.08073",
+      "label": "Constitutional AI on arXiv"
+    },
+    "answerAliases": [
+      "Amanda Askell",
+      "Askell"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0052",
+    "text": "Who co-led OpenAI's Superalignment team with Ilya Sutskever in 2023 and resigned in May 2024 to join Anthropic?",
+    "options": [
+      "John Schulman",
+      "Jan Leike",
+      "Greg Brockman",
+      "Mira Murati"
+    ],
+    "answer": "Jan Leike",
+    "category": "people",
+    "tags": [
+      "superalignment",
+      "openai",
+      "anthropic"
+    ],
+    "difficulty": 2,
+    "explanation": "Leike ran Superalignment with Sutskever to study how to control future superintelligent systems, then left saying he disagreed with OpenAI's priorities. Schulman is the tempting miss because he was another senior alignment researcher who later moved to Anthropic, but he never led Superalignment.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Jan Leike",
+      "label": "Jan Leike on Wikipedia"
+    },
+    "answerAliases": [
+      "Jan Leike",
+      "Leike"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0053",
+    "text": "Which OpenAI co-founder led post-training for ChatGPT and left OpenAI in August 2024 for Anthropic?",
+    "options": [
+      "Greg Brockman",
+      "Ilya Sutskever",
+      "John Schulman",
+      "Sam Altman"
+    ],
+    "answer": "John Schulman",
+    "category": "people",
+    "tags": [
+      "openai",
+      "chatgpt",
+      "alignment"
+    ],
+    "difficulty": 2,
+    "explanation": "Schulman co-founded OpenAI in 2015 and ran the reinforcement learning work that turned GPT into ChatGPT. Brockman is the tempting miss because he is the other co-founder who stayed visible as president, but he never led ChatGPT post-training and did not leave for Anthropic.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "John Schulman",
+      "label": "John Schulman on Wikipedia"
+    },
+    "answerAliases": [
+      "John Schulman",
+      "Schulman"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0054",
+    "text": "Which OpenAI president and co-founder had previously been CTO of Stripe?",
+    "options": [
+      "Sam Altman",
+      "Ilya Sutskever",
+      "Wojciech Zaremba",
+      "Greg Brockman"
+    ],
+    "answer": "Greg Brockman",
+    "category": "people",
+    "tags": [
+      "openai",
+      "stripe",
+      "founders"
+    ],
+    "difficulty": 2,
+    "explanation": "Brockman joined Stripe as CTO in 2013, then left to co-found OpenAI in 2015 and run its engineering as president. Altman is the tempting miss because he is the public CEO, but he came from Y Combinator, not Stripe.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Greg Brockman",
+      "label": "Greg Brockman on Wikipedia"
+    },
+    "answerAliases": [
+      "Greg Brockman",
+      "Gregory Brockman",
+      "Brockman"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0055",
+    "text": "Who co-founded the Future of Life Institute in 2014 and wrote Life 3.0 in 2017?",
+    "options": [
+      "Max Tegmark",
+      "Nick Bostrom",
+      "Eliezer Yudkowsky",
+      "Stuart Russell"
+    ],
+    "answer": "Max Tegmark",
+    "category": "people",
+    "tags": [
+      "safety",
+      "fli",
+      "books"
+    ],
+    "difficulty": 2,
+    "explanation": "Tegmark, an MIT cosmologist, started FLI with Jaan Tallinn and wrote Life 3.0 about stages of life with AI. Bostrom is the tempting miss because his 2014 book Superintelligence defined the same debate, but he never founded FLI.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Max Tegmark",
+      "label": "Max Tegmark on Wikipedia"
+    },
+    "answerAliases": [
+      "Max Tegmark",
+      "Tegmark"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0056",
+    "text": "Which Skype co-founder co-founded the Future of Life Institute and Cambridge's Centre for the Study of Existential Risk?",
+    "options": [
+      "Niklas Zennstrom",
+      "Jaan Tallinn",
+      "Janus Friis",
+      "Priit Kasesalu"
+    ],
+    "answer": "Jaan Tallinn",
+    "category": "people",
+    "tags": [
+      "skype",
+      "safety",
+      "founders"
+    ],
+    "difficulty": 3,
+    "explanation": "Tallinn helped build Skype, then used the proceeds to fund FLI in 2014 and CSER with Huw Price and others. Zennstrom is the tempting miss because he was the better-known Skype co-founder, but the safety institutes were Tallinn's project.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Jaan Tallinn",
+      "label": "Jaan Tallinn on Wikipedia"
+    },
+    "answerAliases": [
+      "Jaan Tallinn",
+      "Tallinn"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0057",
+    "text": "Which researcher, with Andrew Barto, won the 2024 Turing Award for reinforcement learning?",
+    "options": [
+      "David Silver",
+      "Andrew Barto",
+      "Richard Sutton",
+      "Demis Hassabis"
+    ],
+    "answer": "Richard Sutton",
+    "category": "people",
+    "tags": [
+      "reinforcement-learning",
+      "turing-award",
+      "textbooks"
+    ],
+    "difficulty": 2,
+    "explanation": "Sutton and Barto wrote Reinforcement Learning: An Introduction in 1998 and shared the 2024 Turing Award for the field. Barto is the tempting miss because he shares the prize and the book, but the question asks for his co-author, and Silver was their intellectual successor at DeepMind, not the co-winner.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Richard S. Sutton",
+      "label": "Richard S. Sutton on Wikipedia"
+    },
+    "answerAliases": [
+      "Richard S. Sutton",
+      "Richard Sutton",
+      "Sutton"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0058",
+    "text": "Who won the 2011 Turing Award for work on Bayesian networks and causal reasoning?",
+    "options": [
+      "Geoffrey Hinton",
+      "Yoshua Bengio",
+      "Yann LeCun",
+      "Judea Pearl"
+    ],
+    "answer": "Judea Pearl",
+    "category": "people",
+    "tags": [
+      "causality",
+      "turing-award",
+      "reasoning"
+    ],
+    "difficulty": 3,
+    "explanation": "Pearl's work on probabilistic reasoning and do-calculus gave AI a formal language for cause and effect, recognized by the 2011 Turing Award. Hinton is the tempting miss because he later won the same prize in 2018 for deep learning, but his award was seven years after Pearl's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Judea Pearl",
+      "label": "Judea Pearl on Wikipedia"
+    },
+    "answerAliases": [
+      "Judea Pearl",
+      "Pearl"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0059",
+    "text": "Who co-authored the 1969 book Perceptrons with Seymour Papert?",
+    "options": [
+      "Marvin Minsky",
+      "John McCarthy",
+      "Herbert Simon",
+      "Allen Newell"
+    ],
+    "answer": "Marvin Minsky",
+    "category": "people",
+    "tags": [
+      "perceptrons",
+      "history",
+      "mit"
+    ],
+    "difficulty": 2,
+    "explanation": "Minsky and Papert's 1969 book showed limits of single-layer perceptrons, which helped freeze neural-net funding for a decade. McCarthy is the tempting miss because he co-organized Dartmouth with Minsky, but Perceptrons was Minsky and Papert's critique, not his.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Marvin Minsky",
+      "label": "Marvin Minsky on Wikipedia"
+    },
+    "answerAliases": [
+      "Marvin Minsky",
+      "Minsky"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0060",
+    "text": "Who founded Stability AI in 2019 and released Stable Diffusion in 2022?",
+    "options": [
+      "David Holz",
+      "Emad Mostaque",
+      "Cristobal Valenzuela",
+      "Jason Allen"
+    ],
+    "answer": "Emad Mostaque",
+    "category": "people",
+    "tags": [
+      "stability-ai",
+      "image",
+      "founders"
+    ],
+    "difficulty": 2,
+    "explanation": "Mostaque founded Stability AI in London in 2019 and funded the Stable Diffusion release that made open image models mainstream in 2022. Holz is the tempting miss because he founded Midjourney the same year image models broke out, but his tool stayed closed while Stability open-sourced its weights.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Emad Mostaque",
+      "label": "Emad Mostaque on Wikipedia"
+    },
+    "answerAliases": [
+      "Emad Mostaque",
+      "Mostaque"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0061",
+    "text": "Which Runway co-founder has served as its CEO since its founding in 2018?",
+    "options": [
+      "Anastasis Germanidis",
+      "Alejandro Matamala",
+      "Cristóbal Valenzuela",
+      "David Holz"
+    ],
+    "answer": "Cristóbal Valenzuela",
+    "category": "people",
+    "tags": [
+      "runway",
+      "video",
+      "founders"
+    ],
+    "difficulty": 3,
+    "explanation": "Valenzuela co-founded Runway in New York in 2018 with Germanidis and Matamala and stayed as CEO through the Gen-2 video push. Germanidis is the tempting miss because he is also a co-founder, but he serves in a research role rather than as CEO.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Runway (company)",
+      "label": "Runway (company) on Wikipedia"
+    },
+    "answerAliases": [
+      "Cristóbal Valenzuela",
+      "Cristobal Valenzuela",
+      "Valenzuela",
+      "Runway"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0062",
+    "text": "Which artist won the 2022 Colorado State Fair digital-art prize with the Midjourney work Theatre d'Opera Spatial?",
+    "options": [
+      "David Holz",
+      "Emad Mostaque",
+      "Boris Eldagsen",
+      "Jason Allen"
+    ],
+    "answer": "Jason Allen",
+    "category": "people",
+    "tags": [
+      "midjourney",
+      "art",
+      "controversy"
+    ],
+    "difficulty": 2,
+    "explanation": "Allen entered the Midjourney image in 2022 and the win sparked the first mainstream debate over whether AI art counts as art. Eldagsen is the tempting miss because he also made headlines for AI art in 2023, but he refused the Sony prize rather than winning in Colorado.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Théâtre d'Opéra Spatial",
+      "label": "Théâtre d'Opéra Spatial on Wikipedia"
+    },
+    "answerAliases": [
+      "Jason Allen",
+      "Allen",
+      "Théâtre d'Opéra Spatial",
+      "Theatre d'Opera Spatial"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0063",
+    "text": "Which 2023 viral track used AI-cloned voices of Drake and The Weeknd and was pulled from streaming?",
+    "options": [
+      "Heart on My Sleeve",
+      "Taylor Made Freestyle",
+      "BBL Drizzy",
+      "Now and Then"
+    ],
+    "answer": "Heart on My Sleeve",
+    "category": "people",
+    "tags": [
+      "music",
+      "ghostwriter",
+      "voice-clones"
+    ],
+    "difficulty": 2,
+    "explanation": "The anonymous ghostwriter released Heart on My Sleeve in April 2023 with cloned Drake and Weeknd vocals, and labels had it removed within days. Taylor Made Freestyle is the tempting miss because Drake himself used AI Tupac and Snoop voices on it in 2024, but that was an official diss track, not the 2023 clone stunt. Grimes responded by offering 50 percent royalties to anyone cloning her voice.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Heart on My Sleeve (Ghostwriter977 song)",
+      "label": "Heart on My Sleeve (Ghostwriter977 song) on Wikipedia"
+    },
+    "answerAliases": [
+      "Heart on My Sleeve",
+      "ghostwriter",
+      "Heart on My Sleeve (ghostwriter song)",
+      "Ghostwriter977"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0064",
+    "text": "Which former MIT researcher has hosted the Lex Fridman Podcast since 2018 with long interviews of AI scientists?",
+    "options": [
+      "Dwarkesh Patel",
+      "Lex Fridman",
+      "Joe Rogan",
+      "Tim Ferriss"
+    ],
+    "answer": "Lex Fridman",
+    "category": "people",
+    "tags": [
+      "podcasts",
+      "interviews",
+      "media"
+    ],
+    "difficulty": 1,
+    "explanation": "Fridman, who worked on autonomous vehicles at MIT, started the podcast in 2018 and became the default long-form interviewer for AI leaders. Dwarkesh Patel is the tempting miss because he also interviews the same researchers at length, but his show started later and grew out of his blog, not MIT research.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Lex Fridman",
+      "label": "Lex Fridman on Wikipedia"
+    },
+    "answerAliases": [
+      "Lex Fridman",
+      "Fridman",
+      "Alexey (Lex) Fridman"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0065",
+    "text": "Who became president of the Signal Foundation in 2022 after researching AI and labor?",
+    "options": [
+      "Kate Crawford",
+      "Timnit Gebru",
+      "Meredith Whittaker",
+      "Joy Buolamwini"
+    ],
+    "answer": "Meredith Whittaker",
+    "category": "people",
+    "tags": [
+      "signal",
+      "activism",
+      "labor"
+    ],
+    "difficulty": 2,
+    "explanation": "Whittaker organized against Project Maven at Google, then took over Signal in 2022 to run private messaging at scale. Crawford is the tempting miss because she wrote Atlas of AI in 2021 about the same extractive costs, but she stayed in research rather than running Signal.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Meredith Whittaker",
+      "label": "Meredith Whittaker on Wikipedia"
+    },
+    "answerAliases": [
+      "Meredith Whittaker",
+      "Whittaker"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0066",
+    "text": "Who founded the Chinese AI startup 01.AI in 2023 after leading Google China?",
+    "options": [
+      "Andrew Ng",
+      "Fei-Fei Li",
+      "Liang Wenfeng",
+      "Kai-Fu Lee"
+    ],
+    "answer": "Kai-Fu Lee",
+    "category": "people",
+    "tags": [
+      "china",
+      "founders",
+      "01-ai"
+    ],
+    "difficulty": 2,
+    "explanation": "Lee ran Google China and later Sinovation Ventures before founding 01.AI in 2023 to build open Chinese language models. Liang Wenfeng is the tempting miss because he founded the other famous Chinese open-weights lab, but his company is DeepSeek, not 01.AI.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Kai-Fu Lee",
+      "label": "Kai-Fu Lee on Wikipedia"
+    },
+    "answerAliases": [
+      "Kai-Fu Lee",
+      "Kaifu Lee",
+      "Lee"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0067",
+    "text": "Who founded TSMC in Taiwan in 1987 and pioneered the foundry model of making chips for others?",
+    "options": [
+      "Morris Chang",
+      "Jensen Huang",
+      "Lisa Su",
+      "Pat Gelsinger"
+    ],
+    "answer": "Morris Chang",
+    "category": "people",
+    "tags": [
+      "tsmc",
+      "chips",
+      "founders"
+    ],
+    "difficulty": 2,
+    "explanation": "Chang founded TSMC in 1987 after decades at Texas Instruments, betting that design and manufacturing should split. Huang is the tempting miss because Nvidia is TSMC's most famous customer, but he buys wafers from Chang's company rather than founding it.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Morris Chang",
+      "label": "Morris Chang on Wikipedia"
+    },
+    "answerAliases": [
+      "Morris Chang",
+      "Chang"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0068",
+    "text": "Which chip architect led development of AMD's Zen, Apple's A4 and A5, and Tesla's self-driving chip?",
+    "options": [
+      "Federico Faggin",
+      "Jim Keller",
+      "Marcian Hoff",
+      "Stanley Mazor"
+    ],
+    "answer": "Jim Keller",
+    "category": "people",
+    "tags": [
+      "chips",
+      "zen",
+      "architects"
+    ],
+    "difficulty": 3,
+    "explanation": "Keller led AMD's K8 and later Zen teams, did two stints at Apple on the A4 and A5, then ran Tesla Autopilot hardware before moving to Intel and Tenstorrent. Faggin is the tempting miss because he designed the Intel 4004, but his landmark work was fifty years before Keller's Zen comeback.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Jim Keller",
+      "label": "Jim Keller on Wikipedia"
+    },
+    "answerAliases": [
+      "Jim Keller",
+      "James Keller",
+      "Keller"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ppl-0069",
+    "text": "Who was the first PhD student of AI researcher Andrew Ng?",
+    "options": [
+      "Fei-Fei Li",
+      "Pieter Abbeel",
+      "Yann LeCun",
+      "Jeff Dean"
+    ],
+    "answer": "Pieter Abbeel",
+    "category": "people",
+    "tags": [
+      "robotics",
+      "phd",
+      "lineage"
+    ],
+    "difficulty": 2,
+    "explanation": "Abbeel earned his PhD at Stanford under Andrew Ng, who was then a first-year professor, and later became a Berkeley professor and co-founded Covariant. Fei-Fei Li is the tempting miss because she is also a Stanford AI professor who worked with Ng, but she was not his first doctoral student.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Pieter Abbeel",
+      "label": "Pieter Abbeel on Wikipedia"
+    },
+    "answerAliases": [
+      "Pieter Abbeel",
+      "Abbeel"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ppl-0070",
+    "text": "Which UC Berkeley professor developed guided policy search for robotic control?",
+    "options": [
+      "Pieter Abbeel",
+      "Chelsea Finn",
+      "Sergey Levine",
+      "Percy Liang"
+    ],
+    "answer": "Sergey Levine",
+    "category": "people",
+    "tags": [
+      "robotics",
+      "reinforcement-learning",
+      "berkeley"
+    ],
+    "difficulty": 2,
+    "explanation": "Levine, a Berkeley professor, developed guided policy search to train deep networks for complex robotic tasks. Abbeel is the tempting miss because he advised Levine's postdoc and also works on robot learning, but guided policy search is Levine's contribution.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Sergey Levine",
+      "label": "Sergey Levine on Wikipedia"
+    },
+    "answerAliases": [
+      "Sergey Levine",
+      "Levine"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ppl-0071",
+    "text": "Which researcher introduced Model-Agnostic Meta-Learning (MAML) in 2017?",
+    "options": [
+      "Pieter Abbeel",
+      "Sergey Levine",
+      "Percy Liang",
+      "Chelsea Finn"
+    ],
+    "answer": "Chelsea Finn",
+    "category": "people",
+    "tags": [
+      "meta-learning",
+      "maml",
+      "berkeley"
+    ],
+    "difficulty": 3,
+    "explanation": "Finn and colleagues at Berkeley introduced MAML, which trains models to adapt quickly to new tasks with few examples. Abbeel is the tempting miss as a co-author and her doctoral advisor, but Finn led the work.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Chelsea Finn",
+      "label": "Chelsea Finn on Wikipedia"
+    },
+    "answerAliases": [
+      "Chelsea Finn",
+      "Finn",
+      "MAML"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ppl-0072",
+    "text": "Which Stanford professor founded the Center for Research on Foundation Models (CRFM)?",
+    "options": [
+      "Christopher Ré",
+      "Percy Liang",
+      "Fei-Fei Li",
+      "Chelsea Finn"
+    ],
+    "answer": "Percy Liang",
+    "category": "people",
+    "tags": [
+      "foundation-models",
+      "stanford",
+      "crfm"
+    ],
+    "difficulty": 2,
+    "explanation": "Liang founded CRFM at Stanford to study the development and evaluation of foundation models. Fei-Fei Li is the tempting miss as a famous Stanford AI professor, but CRFM is Liang's initiative.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Percy Liang",
+      "label": "Percy Liang on Wikipedia"
+    },
+    "answerAliases": [
+      "Percy Liang",
+      "Liang"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ppl-0073",
+    "text": "Which Stanford computer scientist won a MacArthur 'genius' grant in 2015?",
+    "options": [
+      "Percy Liang",
+      "Fei-Fei Li",
+      "Christopher Ré",
+      "Chelsea Finn"
+    ],
+    "answer": "Christopher Ré",
+    "category": "people",
+    "tags": [
+      "macarthur",
+      "stanford",
+      "data"
+    ],
+    "difficulty": 2,
+    "explanation": "Ré won the MacArthur Fellowship in 2015 for work on big data analysis and co-founded Lattice.io, later acquired by Apple. Liang is the tempting miss as another Stanford professor, but the MacArthur went to Ré.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Christopher Ré",
+      "label": "Christopher Ré on Wikipedia"
+    },
+    "answerAliases": [
+      "Christopher Ré",
+      "Chris Ré",
+      "Ré"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ppl-0074",
+    "text": "Who created the Apache Spark data processing engine?",
+    "options": [
+      "Ion Stoica",
+      "Jeff Dean",
+      "Andrew Ng",
+      "Matei Zaharia"
+    ],
+    "answer": "Matei Zaharia",
+    "category": "people",
+    "tags": [
+      "spark",
+      "databricks",
+      "data"
+    ],
+    "difficulty": 2,
+    "explanation": "Zaharia created Apache Spark while at UC Berkeley as a faster alternative to MapReduce. Stoica is the tempting miss because he co-founded Databricks with Zaharia, but Spark itself was Zaharia's project.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Matei Zaharia",
+      "label": "Matei Zaharia on Wikipedia"
+    },
+    "answerAliases": [
+      "Matei Zaharia",
+      "Zaharia"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ppl-0075",
+    "text": "Which UC Berkeley professor co-founded Anyscale, the company behind the Ray framework?",
+    "options": [
+      "Ion Stoica",
+      "Matei Zaharia",
+      "Pieter Abbeel",
+      "Sergey Levine"
+    ],
+    "answer": "Ion Stoica",
+    "category": "people",
+    "tags": [
+      "anyscale",
+      "ray",
+      "berkeley"
+    ],
+    "difficulty": 3,
+    "explanation": "Stoica co-founded Anyscale with the original developers of Ray. Zaharia is the tempting miss because he also co-founded Databricks with Stoica, but Anyscale and Ray are Stoica's venture.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Ion Stoica",
+      "label": "Ion Stoica on Wikipedia"
+    },
+    "answerAliases": [
+      "Ion Stoica",
+      "Stoica"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ppl-0076",
+    "text": "Who created the Python programming language?",
+    "options": [
+      "Travis Oliphant",
+      "Guido van Rossum",
+      "Wes McKinney",
+      "Jeff Dean"
+    ],
+    "answer": "Guido van Rossum",
+    "category": "people",
+    "tags": [
+      "python",
+      "programming-languages",
+      "founders"
+    ],
+    "difficulty": 1,
+    "explanation": "Van Rossum created Python in 1989 as a hobby project over Christmas. Oliphant is the tempting miss because he created NumPy, a core Python library, but not the language itself.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Guido van Rossum",
+      "label": "Guido van Rossum on Wikipedia"
+    },
+    "answerAliases": [
+      "Guido van Rossum",
+      "van Rossum",
+      "GvR"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
   }
 ]

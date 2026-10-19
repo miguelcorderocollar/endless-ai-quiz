@@ -1,186 +1,1042 @@
 {
-  "_comment": [
-    "Manually adjudicated duplicate pairs. This is the test set the threshold is tuned",
-    "against, so it has to be human labels, not model output. Hand-written ground truth",
-    "was wrong twice while developing this, which is why it lives in its own file.",
-    "",
-    "verdict: 'duplicate' means the two questions test the same fact and one should be",
-    "reworded or deleted. 'distinct' means a false positive worth recording. 'related'",
-    "means they share a topic or person but ask genuinely different questions.",
-    "",
-    "resolution: set only when a human has ACTED on the pair (reworded or deleted one",
-    "side). Resolved pairs are excluded from scoring, because the tool should not be",
-    "penalised for flagging something already fixed. Pairs confirmed NOT duplicates",
-    "keep no resolution and stay in the score: they measure false-positive rate.",
-    "",
-    "As of the last pass, all 6 confirmed duplicates are resolved. The 6 live pairs",
-    "are confirmed false positives, which is why dupe:score reports 0% precision",
-    "against them: at threshold 0.7 every remaining flagged pair is a lookalike, not",
-    "a real duplicate. The 0.7 threshold is doing its job by surfacing pairs that a",
-    "person must judge, not pairs that are automatically wrong.",
-    "Pass 4 adjudicated the remaining flags with AI judgement rather than human hands, since the pairs are unambiguous once read. noul is null where the pair was resolved by rewording, because the verdict that mattered was the second run, not the one that flagged it."
-  ],
-  "reviewedAt": "2026-09-30 (110-draft batch: 2 new flags adjudicated, both related/keep)",
-  "pairs": [
-    {
-      "a": "mem-0011",
-      "b": "ppl-0012",
-      "noul": 0.93,
-      "verdict": "duplicate",
-      "note": "Same fact: Nick Bostrom wrote Superintelligence (2014). mem-0011 adds the paperclip frame. Keep ppl-0012 (people, on-topic), reword or drop mem-0011. RESOLVED: reworded to ask what instrumental convergence claims, not who wrote the book",
-      "resolution": "fixed"
-    },
-    {
-      "a": "lab-0012",
-      "b": "mod-0020",
-      "noul": 0.89,
-      "verdict": "duplicate",
-      "note": "Identical question about xAI's Grok family, in two categories. Keep one; labs is the natural home for a lab-mapping question. RESOLVED: lab-0012 DELETED, mod-0020 kept.",
-      "resolution": "fixed"
-    },
-    {
-      "a": "ppl-0009",
-      "b": "ppl-0027",
-      "noul": 0.89,
-      "verdict": "distinct",
-      "note": "FALSE POSITIVE, and a good one to record: different answers (Andrew Ng vs Jeff Dean). Both co-founded Google Brain, so they look alike but test different people. Jev was wrong here."
-    },
-    {
-      "a": "lab-0003",
-      "b": "mod-0038",
-      "noul": 0.86,
-      "verdict": "duplicate",
-      "note": "Both identify Mistral AI as the Paris lab founded 2023. mod-0038 was added in the 39-question batch and duplicates lab-0003. RESOLVED: kept as-is",
-      "resolution": "fixed"
-    },
-    {
-      "a": "con-0019",
-      "b": "mod-0046",
-      "noul": 0.83,
-      "verdict": "duplicate",
-      "note": "Both are the GPT-3 few-shot result. mod-0046 was added in the 39-question batch and duplicates con-0019, which is the better question because it asks what the paper showed. RESOLVED: kept as-is",
-      "resolution": "fixed"
-    },
-    {
-      "a": "mod-0017",
-      "b": "pro-0004",
-      "noul": 0.83,
-      "verdict": "duplicate",
-      "note": "Both ask what Sora generates. Shipped before this tool existed. RESOLVED: kept as-is",
-      "resolution": "fixed"
-    },
-    {
-      "a": "ppl-0007",
-      "b": "ppl-0022",
-      "noul": 0.83,
-      "verdict": "related",
-      "note": "FALSE POSITIVE. OpenAI CEO questions in the same week: Sam Altman (since 2019) vs Emmett Shear (interim after the Nov 2023 crisis). Different facts about a turbulent period."
-    },
-    {
-      "a": "ppl-0016",
-      "b": "ppl-0022",
-      "noul": 0.82,
-      "verdict": "related",
-      "note": "FALSE POSITIVE. Mira Murati became interim CEO, then Emmett Shear succeeded her. Adjacent steps in one sequence, genuinely different answers."
-    },
-    {
-      "a": "bus-0001",
-      "b": "ppl-0023",
-      "noul": 0.82,
-      "verdict": "related",
-      "note": "FALSE POSITIVE. bus-0001 asks the three Nvidia co-founders; ppl-0023 asks about the CEO and his leather jacket. Overlap on Jensen Huang only."
-    },
-    {
-      "a": "lab-0013",
-      "b": "ppl-0010",
-      "noul": 0.78,
-      "verdict": "distinct",
-      "note": "FALSE POSITIVE. Ilya Sutskever (SSI) vs Dario Amodei (Anthropic). Both are OpenAI alumni who founded a lab, different people entirely."
-    },
-    {
-      "a": "lab-0004",
-      "b": "mod-0019",
-      "noul": 0.74,
-      "verdict": "distinct",
-      "note": "FALSE POSITIVE. DeepSeek vs Alibaba's Qwen. Similar shape, different companies."
-    },
-    {
-      "a": "pap-0007",
-      "b": "ppl-0002",
-      "noul": 0.7,
-      "verdict": "duplicate",
-      "note": "Both credit Fei-Fei Li with ImageNet. Keep ppl-0002 in people; reword pap-0007 toward the AlexNet/ImageNet causal story, which is the distinct value there. RESOLVED: reworded to ask what dataset AlexNet needed, not who led ImageNet",
-      "resolution": "fixed"
-    },
-    {
-      "a": "mod-0011",
-      "b": "mod-0049",
-      "noul": 0.7,
-      "verdict": "related",
-      "note": "FALSE POSITIVE, resolved by rewording. Both originally answered 'OpenAI' but asked about different releases (GPT-4 vs ChatGPT). A shared answer is not a shared fact. mod-0049 reworded to ask what changed in public perception. Recorded because 'same answer' is the most tempting way to write a bad distractor."
-    },
-    {
-      "a": "lab-0010",
-      "b": "mod-0040",
-      "noul": 0.77,
-      "verdict": "related",
-      "note": "FALSE POSITIVE. labs says 'Google DeepMind', models says 'Google'. Same organisation at two levels of granularity, and a player who knows the answer could argue both. Left as-is: the labs category asks which lab, the models category asks which company announced the family, and the answer strings differ enough to keep them distinguishable."
-    },
-    {
-      "a": "ppl-0009",
-      "b": "ppl-0027",
-      "noul": null,
-      "verdict": "related",
-      "note": "ADJUDICATED AND ACTED ON. Both were 'co-founded Google Brain' with different answers (Andrew Ng, Jeff Dean) \u2014 not a shared fact, but near-identical wording for two different people reads as one question. ppl-0027 reworded to ask about MapReduce, which removes the surface overlap and adds a real difficulty-3 question.",
-      "adjudicated": "2026-09-29 (pass 4: AI adjudicated and acted on, no human review)"
-    },
-    {
-      "a": "bus-0001",
-      "b": "ppl-0023",
-      "noul": null,
-      "verdict": "related",
-      "note": "ADJUDICATED AND ACTED ON. bus-0001's answer literally contained ppl-0023's answer (Jensen Huang). Kept ppl-0023 (people, d1) and reworded bus-0001 to ask what Nvidia sold before GPUs mattered, which is the business story rather than a repeat of the founder.",
-      "adjudicated": "2026-09-29 (pass 4: AI adjudicated and acted on, no human review)"
-    },
-    {
-      "a": "lab-0010",
-      "b": "mod-0040",
-      "noul": null,
-      "verdict": "duplicate",
-      "note": "ADJUDICATED AND ACTED ON. 'Which lab develops Gemini' and 'which company does Gemini come from' are one fact wearing two hats: Google DeepMind versus Google, and a player who knows one gets the other. mod-0040 reworded to ask which two model lines Gemini succeeded, which is distinct lineage.",
-      "adjudicated": "2026-09-29 (pass 4: AI adjudicated and acted on, no human review)"
-    },
-    {
-      "a": "ppl-0016",
-      "b": "ppl-0022",
-      "noul": null,
-      "verdict": "related",
-      "note": "KEEP BOTH. Adjacent steps in one sequence: Mira Murati became interim CEO, then Emmett Shear succeeded her. Different answers, and a player meeting both learns the order. This is the canonical example of a pair that looks like a duplicate and is not.",
-      "adjudicated": "2026-09-29 (pass 4: AI adjudicated and acted on, no human review)"
-    },
-    {
-      "a": "lab-0013",
-      "b": "ppl-0010",
-      "noul": null,
-      "verdict": "distinct",
-      "note": "KEEP BOTH. Ilya Sutskever founded SSI, Dario Amodei founded Anthropic. Both are OpenAI alumni who founded a lab, which is exactly the surface similarity a lexical detector cannot separate. Clear false positive.",
-      "adjudicated": "2026-09-29 (pass 4: AI adjudicated and acted on, no human review)"
-    },
-    {
-      "a": "pap-0009",
-      "b": "tec-0001",
-      "noul": 0.85,
-      "verdict": "related",
-      "note": "Same paper, complementary facts: tec-0001 asks what Attention removed (recurrent/conv stack), pap-0009 asks what it built instead (self-attention + position). Different answers, different option sets. Keep both; reword if a reviewer finds them samey back-to-back.",
-      "resolution": ""
-    },
-    {
-      "a": "hwr-0001",
-      "b": "tec-0021",
-      "noul": 0.74,
-      "verdict": "related",
-      "note": "Shared territory (why GPUs/Nvidia), different facts: hwr-0001 asks why GPUs suit training (linear algebra), tec-0021 asks why the field landed on Nvidia (CUDA software ecosystem). Different answers. Keep both.",
-      "resolution": ""
-    }
-  ]
+ "_comment": [
+  "Manually adjudicated duplicate pairs. This is the test set the threshold is tuned",
+  "against, so it has to be human labels, not model output. Hand-written ground truth",
+  "was wrong twice while developing this, which is why it lives in its own file.",
+  "",
+  "verdict: 'duplicate' means the two questions test the same fact and one should be",
+  "reworded or deleted. 'distinct' means a false positive worth recording. 'related'",
+  "means they share a topic or person but ask genuinely different questions.",
+  "",
+  "resolution: set only when a human has ACTED on the pair (reworded or deleted one",
+  "side). Resolved pairs are excluded from scoring, because the tool should not be",
+  "penalised for flagging something already fixed. Pairs confirmed NOT duplicates",
+  "keep no resolution and stay in the score: they measure false-positive rate.",
+  "",
+  "As of the last pass, all 6 confirmed duplicates are resolved. The 6 live pairs",
+  "are confirmed false positives, which is why dupe:score reports 0% precision",
+  "against them: at threshold 0.7 every remaining flagged pair is a lookalike, not",
+  "a real duplicate. The 0.7 threshold is doing its job by surfacing pairs that a",
+  "person must judge, not pairs that are automatically wrong.",
+  "Pass 4 adjudicated the remaining flags with AI judgement rather than human hands, since the pairs are unambiguous once read. noul is null where the pair was resolved by rewording, because the verdict that mattered was the second run, not the one that flagged it."
+ ],
+ "reviewedAt": "2026-09-30 (110-draft batch: 2 new flags adjudicated, both related/keep)",
+ "pairs": [
+  {
+   "a": "mem-0011",
+   "b": "ppl-0012",
+   "noul": 0.93,
+   "verdict": "duplicate",
+   "note": "Same fact: Nick Bostrom wrote Superintelligence (2014). mem-0011 adds the paperclip frame. Keep ppl-0012 (people, on-topic), reword or drop mem-0011. RESOLVED: reworded to ask what instrumental convergence claims, not who wrote the book",
+   "resolution": "fixed"
+  },
+  {
+   "a": "lab-0012",
+   "b": "mod-0020",
+   "noul": 0.89,
+   "verdict": "duplicate",
+   "note": "Identical question about xAI's Grok family, in two categories. Keep one; labs is the natural home for a lab-mapping question. RESOLVED: lab-0012 DELETED, mod-0020 kept.",
+   "resolution": "fixed"
+  },
+  {
+   "a": "ppl-0009",
+   "b": "ppl-0027",
+   "noul": 0.89,
+   "verdict": "distinct",
+   "note": "FALSE POSITIVE, and a good one to record: different answers (Andrew Ng vs Jeff Dean). Both co-founded Google Brain, so they look alike but test different people. Jev was wrong here."
+  },
+  {
+   "a": "lab-0003",
+   "b": "mod-0038",
+   "noul": 0.86,
+   "verdict": "duplicate",
+   "note": "Both identify Mistral AI as the Paris lab founded 2023. mod-0038 was added in the 39-question batch and duplicates lab-0003. RESOLVED: kept as-is",
+   "resolution": "fixed"
+  },
+  {
+   "a": "con-0019",
+   "b": "mod-0046",
+   "noul": 0.83,
+   "verdict": "duplicate",
+   "note": "Both are the GPT-3 few-shot result. mod-0046 was added in the 39-question batch and duplicates con-0019, which is the better question because it asks what the paper showed. RESOLVED: kept as-is",
+   "resolution": "fixed"
+  },
+  {
+   "a": "mod-0017",
+   "b": "pro-0004",
+   "noul": 0.83,
+   "verdict": "duplicate",
+   "note": "Both ask what Sora generates. Shipped before this tool existed. RESOLVED: kept as-is",
+   "resolution": "fixed"
+  },
+  {
+   "a": "ppl-0007",
+   "b": "ppl-0022",
+   "noul": 0.83,
+   "verdict": "related",
+   "note": "FALSE POSITIVE. OpenAI CEO questions in the same week: Sam Altman (since 2019) vs Emmett Shear (interim after the Nov 2023 crisis). Different facts about a turbulent period."
+  },
+  {
+   "a": "ppl-0016",
+   "b": "ppl-0022",
+   "noul": 0.82,
+   "verdict": "related",
+   "note": "FALSE POSITIVE. Mira Murati became interim CEO, then Emmett Shear succeeded her. Adjacent steps in one sequence, genuinely different answers."
+  },
+  {
+   "a": "bus-0001",
+   "b": "ppl-0023",
+   "noul": 0.82,
+   "verdict": "related",
+   "note": "FALSE POSITIVE. bus-0001 asks the three Nvidia co-founders; ppl-0023 asks about the CEO and his leather jacket. Overlap on Jensen Huang only."
+  },
+  {
+   "a": "lab-0013",
+   "b": "ppl-0010",
+   "noul": 0.78,
+   "verdict": "distinct",
+   "note": "FALSE POSITIVE. Ilya Sutskever (SSI) vs Dario Amodei (Anthropic). Both are OpenAI alumni who founded a lab, different people entirely."
+  },
+  {
+   "a": "lab-0004",
+   "b": "mod-0019",
+   "noul": 0.74,
+   "verdict": "distinct",
+   "note": "FALSE POSITIVE. DeepSeek vs Alibaba's Qwen. Similar shape, different companies."
+  },
+  {
+   "a": "pap-0007",
+   "b": "ppl-0002",
+   "noul": 0.7,
+   "verdict": "duplicate",
+   "note": "Both credit Fei-Fei Li with ImageNet. Keep ppl-0002 in people; reword pap-0007 toward the AlexNet/ImageNet causal story, which is the distinct value there. RESOLVED: reworded to ask what dataset AlexNet needed, not who led ImageNet",
+   "resolution": "fixed"
+  },
+  {
+   "a": "mod-0011",
+   "b": "mod-0049",
+   "noul": 0.7,
+   "verdict": "related",
+   "note": "FALSE POSITIVE, resolved by rewording. Both originally answered 'OpenAI' but asked about different releases (GPT-4 vs ChatGPT). A shared answer is not a shared fact. mod-0049 reworded to ask what changed in public perception. Recorded because 'same answer' is the most tempting way to write a bad distractor."
+  },
+  {
+   "a": "lab-0010",
+   "b": "mod-0040",
+   "noul": 0.77,
+   "verdict": "related",
+   "note": "FALSE POSITIVE. labs says 'Google DeepMind', models says 'Google'. Same organisation at two levels of granularity, and a player who knows the answer could argue both. Left as-is: the labs category asks which lab, the models category asks which company announced the family, and the answer strings differ enough to keep them distinguishable."
+  },
+  {
+   "a": "ppl-0009",
+   "b": "ppl-0027",
+   "noul": null,
+   "verdict": "related",
+   "note": "ADJUDICATED AND ACTED ON. Both were 'co-founded Google Brain' with different answers (Andrew Ng, Jeff Dean) — not a shared fact, but near-identical wording for two different people reads as one question. ppl-0027 reworded to ask about MapReduce, which removes the surface overlap and adds a real difficulty-3 question.",
+   "adjudicated": "2026-09-29 (pass 4: AI adjudicated and acted on, no human review)"
+  },
+  {
+   "a": "bus-0001",
+   "b": "ppl-0023",
+   "noul": null,
+   "verdict": "related",
+   "note": "ADJUDICATED AND ACTED ON. bus-0001's answer literally contained ppl-0023's answer (Jensen Huang). Kept ppl-0023 (people, d1) and reworded bus-0001 to ask what Nvidia sold before GPUs mattered, which is the business story rather than a repeat of the founder.",
+   "adjudicated": "2026-09-29 (pass 4: AI adjudicated and acted on, no human review)"
+  },
+  {
+   "a": "lab-0010",
+   "b": "mod-0040",
+   "noul": null,
+   "verdict": "duplicate",
+   "note": "ADJUDICATED AND ACTED ON. 'Which lab develops Gemini' and 'which company does Gemini come from' are one fact wearing two hats: Google DeepMind versus Google, and a player who knows one gets the other. mod-0040 reworded to ask which two model lines Gemini succeeded, which is distinct lineage.",
+   "adjudicated": "2026-09-29 (pass 4: AI adjudicated and acted on, no human review)"
+  },
+  {
+   "a": "ppl-0016",
+   "b": "ppl-0022",
+   "noul": null,
+   "verdict": "related",
+   "note": "KEEP BOTH. Adjacent steps in one sequence: Mira Murati became interim CEO, then Emmett Shear succeeded her. Different answers, and a player meeting both learns the order. This is the canonical example of a pair that looks like a duplicate and is not.",
+   "adjudicated": "2026-09-29 (pass 4: AI adjudicated and acted on, no human review)"
+  },
+  {
+   "a": "lab-0013",
+   "b": "ppl-0010",
+   "noul": null,
+   "verdict": "distinct",
+   "note": "KEEP BOTH. Ilya Sutskever founded SSI, Dario Amodei founded Anthropic. Both are OpenAI alumni who founded a lab, which is exactly the surface similarity a lexical detector cannot separate. Clear false positive.",
+   "adjudicated": "2026-09-29 (pass 4: AI adjudicated and acted on, no human review)"
+  },
+  {
+   "a": "pap-0009",
+   "b": "tec-0001",
+   "noul": 0.85,
+   "verdict": "related",
+   "note": "Same paper, complementary facts: tec-0001 asks what Attention removed (recurrent/conv stack), pap-0009 asks what it built instead (self-attention + position). Different answers, different option sets. Keep both; reword if a reviewer finds them samey back-to-back.",
+   "resolution": ""
+  },
+  {
+   "a": "hwr-0001",
+   "b": "tec-0021",
+   "noul": 0.74,
+   "verdict": "related",
+   "note": "Shared territory (why GPUs/Nvidia), different facts: hwr-0001 asks why GPUs suit training (linear algebra), tec-0021 asks why the field landed on Nvidia (CUDA software ecosystem). Different answers. Keep both.",
+   "resolution": ""
+  },
+  {
+   "a": "hst-0044",
+   "b": "bus-0047",
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Identical question text (xAI founding year -> 2023), only answer slot differed. Genuinely interchangeable. RESOLVED: hst-0044 DELETED, bus-0047 kept (business lineage).",
+   "noul": 1.0
+  },
+  {
+   "a": "hst-0038",
+   "b": "eth-0035",
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same fact (EO 14110 signer -> Biden), near-identical wording. RESOLVED: hst-0038 DELETED, eth-0035 kept (regulation is ethics core).",
+   "noul": 0.92
+  },
+  {
+   "a": "hst-0045",
+   "b": "bus-0051",
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same fact (Mistral founded in Paris), near-identical wording. RESOLVED: hst-0045 DELETED, bus-0051 kept.",
+   "noul": 0.89
+  },
+  {
+   "a": "pro-0025",
+   "b": "bus-0046",
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same fact (Claude named after Claude Shannon), different wording/distractor order. RESOLVED: bus-0046 DELETED, pro-0025 kept (naming-origin fits products).",
+   "noul": 0.55
+  },
+  {
+   "a": "pro-0059",
+   "b": "pro-0060",
+   "verdict": "related",
+   "resolution": "",
+   "note": "Shared answer (Video generation) is NOT a shared fact: Runway vs Pika, distinct questions/options. Keep both.",
+   "noul": 0.07
+  },
+  {
+   "a": "hst-0015",
+   "b": "hst-0022",
+   "verdict": "related",
+   "resolution": "",
+   "note": "Shared answer (Game 2) is NOT a shared fact: Kasparov 1997 cheating row vs AlphaGo move 37. Same Game 1-4 option shape is natural for which-game questions. Keep both.",
+   "noul": 0.22
+  },
+  {
+   "a": "hst-0070",
+   "b": "hst-0019",
+   "noul": 0.8,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same fact (AlexNet won ImageNet 2012), complementary phrasing (year vs which network). R1 review. RESOLVED: hst-0070 DELETED, hst-0019 kept."
+  },
+  {
+   "a": "hst-0073",
+   "b": "hst-0024",
+   "noul": 0.85,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same fact (Google released BERT in 2018), complementary phrasing. R1 review. RESOLVED: hst-0073 DELETED, hst-0024 kept."
+  },
+  {
+   "a": "hst-0074",
+   "b": "pro-0023",
+   "noul": 0.8,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same fact (ChatGPT release), month vs exact date. pro-0023 is the better question. R1 review. RESOLVED: hst-0074 DELETED."
+  },
+  {
+   "a": "hst-0075",
+   "b": "hst-0031",
+   "noul": 0.75,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same fact (Stable Diffusion 2022 release), year-framed vs org-framed. R1 review. RESOLVED: hst-0075 DELETED, hst-0031 kept."
+  },
+  {
+   "a": "bus-0045",
+   "b": "hst-0043",
+   "noul": 0.9,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Near-identical year-founded-Anthropic questions across batches. R1 review. RESOLVED: bus-0045 DELETED, hst-0043 kept."
+  },
+  {
+   "a": "eth-0034",
+   "b": "eth-0025",
+   "noul": 0.85,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "eth-0025 stem already states the veto, eth-0034 only asks the bare event. R2 review. RESOLVED: eth-0034 DELETED."
+  },
+  {
+   "a": "eth-0073",
+   "b": "eth-0037",
+   "noul": 0.8,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same EO 14110 red-team reporting fact, eth-0073 generalized to the government. R2 review. RESOLVED: eth-0073 DELETED, eth-0037 kept."
+  },
+  {
+   "a": "con-0038",
+   "b": "con-0037",
+   "noul": 0.9,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Few-shot vs in-context with the same answer (examples in the prompt). R2 review. RESOLVED: con-0038 DELETED."
+  },
+  {
+   "a": "con-0062",
+   "b": "con-0041",
+   "noul": 0.85,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same positional-encoding/order fact. R2 review. RESOLVED: con-0062 DELETED."
+  },
+  {
+   "a": "con-0064",
+   "b": "con-0047",
+   "noul": 0.85,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same Chinchilla compute-optimal fact. R2 review. RESOLVED: con-0064 DELETED."
+  },
+  {
+   "a": "oss-0042",
+   "b": "oss-0043",
+   "noul": 0.95,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Identical options and answer (Apache 2.0), only project differs (Chroma vs Qdrant). Reads as one repeated question. RESOLVED: oss-0043 DELETED; Qdrant needs a non-license question in wave 2."
+  },
+  {
+   "a": "oss-0069",
+   "b": "oss-0070",
+   "noul": 0.9,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same licence-question shape, mirrored options, same answer (MIT). RESOLVED: oss-0069 (Ollama) DELETED, oss-0070 (llama.cpp, more foundational) kept; Ollama needs a non-license question in wave 2."
+  },
+  {
+   "a": "pap-0014",
+   "b": "hst-0023",
+   "noul": 0.88,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same fact (Attention Is All You Need, 2017), near-identical phrasing. RESOLVED: hst-0023 DELETED, pap-0014 kept (papers is the natural home)."
+  },
+  {
+   "a": "hwr-0071",
+   "b": "hwr-0072",
+   "noul": 0.7,
+   "verdict": "related",
+   "resolution": "",
+   "note": "Shared shape (transistor counts) but different facts, answers, options (H100 80B vs B200 208B). Anchored numbers framed as history — allowed. Keep both."
+  },
+  {
+   "a": "tec-0054",
+   "b": "oss-0060",
+   "noul": 0.67,
+   "verdict": "related",
+   "resolution": "",
+   "note": "Shared acronym-expansion shape, different entities/answers (JEPA vs FAISS). Keep both."
+  },
+  {
+   "a": "tec-0043",
+   "b": "oss-0036",
+   "noul": 0.67,
+   "verdict": "related",
+   "resolution": "",
+   "note": "Shared what-is-X-for shape, different facts/answers (GGUF vs ONNX). Keep both."
+  },
+  {
+   "a": "oss-0019",
+   "b": "pap-0042",
+   "noul": 0.85,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same Mixtral 8-expert-MoE fact in different wording. R3 review. RESOLVED: oss-0019 DELETED, pap-0042 kept."
+  },
+  {
+   "a": "oss-0031",
+   "b": "oss-0011",
+   "noul": 0.8,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same Hub-hosts-models fact, oss-0031 has throwaway distractors. R3 review. RESOLVED: oss-0031 DELETED."
+  },
+  {
+   "a": "oss-0062",
+   "b": "oss-0044",
+   "noul": 0.9,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same Weaviate-BSD fact asked both directions. R3 review. RESOLVED: oss-0062 DELETED."
+  },
+  {
+   "a": "oss-0064",
+   "b": "oss-0050",
+   "noul": 0.85,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Same model-card-documents-performance fact. R3 review. RESOLVED: oss-0064 DELETED."
+  },
+  {
+   "a": "oss-0018",
+   "b": "oss-0042",
+   "noul": 0.7,
+   "verdict": "related",
+   "resolution": "",
+   "note": "Shared licence+shape, different facts (Mistral 7B vs Chroma). R3: keep."
+  },
+  {
+   "a": "oss-0024",
+   "b": "oss-0070",
+   "noul": 0.7,
+   "verdict": "related",
+   "resolution": "",
+   "note": "Shared licence+shape, different facts (Whisper vs llama.cpp). R3: keep."
+  },
+  {
+   "a": "oss-0041",
+   "b": "oss-0060",
+   "noul": 0.6,
+   "verdict": "related",
+   "resolution": "",
+   "note": "Builder vs acronym, different facts. R3: keep."
+  },
+  {
+   "a": "oss-0037",
+   "b": "oss-0038",
+   "noul": 0.71,
+   "verdict": "related",
+   "resolution": "",
+   "note": "Different tools purposes (LangChain vs LlamaIndex). R3: keep."
+  },
+  {
+   "a": "pro-0027",
+   "b": "mod-0026",
+   "noul": 0.96,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Bard->Gemini rename; kept published mod-0026. RESOLVED: pro-0027 DELETED."
+  },
+  {
+   "a": "hst-0040",
+   "b": "lab-0046",
+   "noul": 0.95,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. OpenAI founding year; kept lab-0046 (labs needs founding facts). RESOLVED: hst-0040 DELETED."
+  },
+  {
+   "a": "pro-0028",
+   "b": "bus-0008",
+   "noul": 0.95,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Bard JWST demo error; kept published bus-0008. RESOLVED: pro-0028 DELETED."
+  },
+  {
+   "a": "bus-0050",
+   "b": "mod-0024",
+   "noul": 0.95,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Grok novel origin; kept published mod-0024. RESOLVED: bus-0050 DELETED."
+  },
+  {
+   "a": "hst-0022",
+   "b": "mem-0015",
+   "noul": 0.95,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Move-37 game; kept published mem-0015. RESOLVED: hst-0022 DELETED."
+  },
+  {
+   "a": "pap-0030",
+   "b": "ppl-0047",
+   "noul": 0.95,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. FlashAttention Tri Dao; kept pap-0030 (papers natural home). RESOLVED: pap-0030 DELETED."
+  },
+  {
+   "a": "hst-0068",
+   "b": "mod-0053",
+   "noul": 0.94,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Deep Blue 1997; kept published mod-0053. RESOLVED: hst-0068 DELETED."
+  },
+  {
+   "a": "bus-0047",
+   "b": "lab-0037",
+   "noul": 0.94,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. xAI founding; kept lab-0037 (lab-mapping). RESOLVED: bus-0047 DELETED."
+  },
+  {
+   "a": "hst-0024",
+   "b": "pap-0006",
+   "noul": 0.94,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. BERT/Google 2018; kept published pap-0006. RESOLVED: hst-0024 DELETED."
+  },
+  {
+   "a": "pap-0015",
+   "b": "ppl-0046",
+   "noul": 0.94,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Vaswani first author; kept pap-0015. RESOLVED: pap-0015 DELETED."
+  },
+  {
+   "a": "lab-0029",
+   "b": "mod-0019",
+   "noul": 0.92,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Qwen/Alibaba; kept published mod-0019. RESOLVED: lab-0029 DELETED."
+  },
+  {
+   "a": "pro-0023",
+   "b": "mod-0009",
+   "noul": 0.91,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. ChatGPT launch date; kept published mod-0009. RESOLVED: pro-0023 DELETED."
+  },
+  {
+   "a": "pro-0045",
+   "b": "ppl-0020",
+   "noul": 0.91,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Shazeer/Character.ai; kept published ppl-0020. RESOLVED: pro-0045 DELETED."
+  },
+  {
+   "a": "bus-0071",
+   "b": "ppl-0067",
+   "noul": 0.91,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Morris Chang TSMC; kept ppl-0067 (people natural). RESOLVED: bus-0071 DELETED."
+  },
+  {
+   "a": "mem-0032",
+   "b": "eth-0015",
+   "noul": 0.89,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Lemoine/LaMDA; kept published eth-0015. RESOLVED: mem-0032 DELETED."
+  },
+  {
+   "a": "lab-0036",
+   "b": "ppl-0018",
+   "noul": 0.89,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. DeepSeek/Liang; kept published ppl-0018. RESOLVED: lab-0036 DELETED."
+  },
+  {
+   "a": "pap-0047",
+   "b": "mod-0010",
+   "noul": 0.89,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. AlphaGo Zero self-play; kept published mod-0010. RESOLVED: pap-0047 DELETED."
+  },
+  {
+   "a": "pro-0037",
+   "b": "mod-0017",
+   "noul": 0.89,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Sora video; kept published mod-0017. RESOLVED: pro-0037 DELETED."
+  },
+  {
+   "a": "mod-0086",
+   "b": "mem-0033",
+   "noul": 0.89,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. LaMDA acronym; kept mem-0033 (memes need easy wins). RESOLVED: mod-0086 DELETED."
+  },
+  {
+   "a": "bus-0056",
+   "b": "lab-0014",
+   "noul": 0.88,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Thinking Machines/Murati; kept older draft lab-0014. RESOLVED: bus-0056 DELETED."
+  },
+  {
+   "a": "pap-0031",
+   "b": "tec-0015",
+   "noul": 0.88,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. FlashAttention problem; kept tec-0015. RESOLVED: pap-0031 DELETED."
+  },
+  {
+   "a": "lab-0033",
+   "b": "oss-0054",
+   "noul": 0.88,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. OLMo/Ai2; kept oss-0054 (oss coverage). RESOLVED: lab-0033 DELETED."
+  },
+  {
+   "a": "lab-0030",
+   "b": "mod-0039",
+   "noul": 0.86,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Ernie/Baidu; kept published mod-0039. RESOLVED: lab-0030 DELETED."
+  },
+  {
+   "a": "pro-0035",
+   "b": "mod-0006",
+   "noul": 0.86,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. DALL-E/OpenAI; kept published mod-0006. RESOLVED: pro-0035 DELETED."
+  },
+  {
+   "a": "pap-0042",
+   "b": "mod-0016",
+   "noul": 0.86,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Mixtral MoE org; kept published mod-0016. RESOLVED: pap-0042 DELETED."
+  },
+  {
+   "a": "pro-0047",
+   "b": "mod-0020",
+   "noul": 0.86,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Grok/xAI; kept published mod-0020. RESOLVED: pro-0047 DELETED."
+  },
+  {
+   "a": "pro-0025",
+   "b": "mod-0023",
+   "noul": 0.85,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Claude/Shannon; kept published mod-0023. RESOLVED: pro-0025 DELETED."
+  },
+  {
+   "a": "mem-0036",
+   "b": "mem-0014",
+   "noul": 0.85,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Sydney codename; kept published mem-0014. RESOLVED: mem-0036 DELETED."
+  },
+  {
+   "a": "pap-0028",
+   "b": "tec-0017",
+   "noul": 0.85,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. LoRA trick; kept tec-0017. RESOLVED: pap-0028 DELETED."
+  },
+  {
+   "a": "hst-0031",
+   "b": "oss-0055",
+   "noul": 0.85,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. SD/Stability AI; kept oss-0055. RESOLVED: hst-0031 DELETED."
+  },
+  {
+   "a": "tec-0057",
+   "b": "ben-0019",
+   "noul": 0.83,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. needle test; kept ben-0019 (benchmarks home). RESOLVED: tec-0057 DELETED."
+  },
+  {
+   "a": "pap-0017",
+   "b": "mod-0007",
+   "noul": 0.83,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. BERT bidirectional; kept published mod-0007. RESOLVED: pap-0017 DELETED."
+  },
+  {
+   "a": "pap-0040",
+   "b": "mod-0015",
+   "noul": 0.83,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Llama2 commercial licence; kept published mod-0015. RESOLVED: pap-0040 DELETED."
+  },
+  {
+   "a": "bus-0054",
+   "b": "lab-0013",
+   "noul": 0.82,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. SSI/Sutskever; kept older draft lab-0013. RESOLVED: bus-0054 DELETED."
+  },
+  {
+   "a": "hst-0034",
+   "b": "mem-0017",
+   "noul": 0.82,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Tay/Microsoft; kept published mem-0017. RESOLVED: hst-0034 DELETED."
+  },
+  {
+   "a": "pap-0045",
+   "b": "mod-0029",
+   "noul": 0.82,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. AlphaFold proteins; kept published mod-0029. RESOLVED: pap-0045 DELETED."
+  },
+  {
+   "a": "pro-0070",
+   "b": "pro-0082",
+   "noul": 0.81,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Johansson voice saga; kept pro-0082 (cleaner). RESOLVED: pro-0070 DELETED."
+  },
+  {
+   "a": "pap-0032",
+   "b": "tec-0018",
+   "noul": 0.81,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. DPO vs RLHF; kept older draft tec-0018. RESOLVED: pap-0032 DELETED."
+  },
+  {
+   "a": "oss-0023",
+   "b": "mod-0036",
+   "noul": 0.81,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. SD open release; kept published mod-0036. RESOLVED: oss-0023 DELETED."
+  },
+  {
+   "a": "pap-0018",
+   "b": "mod-0002",
+   "noul": 0.8,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. GPT-3 175B; kept published mod-0002. RESOLVED: pap-0018 DELETED."
+  },
+  {
+   "a": "mod-0068",
+   "b": "oss-0020",
+   "noul": 0.8,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Falcon/TII; kept oss-0020. RESOLVED: mod-0068 DELETED."
+  },
+  {
+   "a": "eth-0076",
+   "b": "mod-0014",
+   "noul": 0.78,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Constitutional AI; kept published mod-0014. RESOLVED: eth-0076 DELETED."
+  },
+  {
+   "a": "lab-0027",
+   "b": "mod-0020",
+   "noul": 0.78,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Grok lab; kept published mod-0020. RESOLVED: lab-0027 DELETED."
+  },
+  {
+   "a": "mem-0038",
+   "b": "pro-0010",
+   "noul": 0.77,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. NotebookLM Audio Overviews; kept published pro-0010. RESOLVED: mem-0038 DELETED."
+  },
+  {
+   "a": "bus-0034",
+   "b": "hwr-0043",
+   "noul": 0.77,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. CHIPS Act; kept hwr-0043 (hardware home). RESOLVED: bus-0034 DELETED."
+  },
+  {
+   "a": "lab-0049",
+   "b": "oss-0055",
+   "noul": 0.77,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Stability AI; kept oss-0055. RESOLVED: lab-0049 DELETED."
+  },
+  {
+   "a": "lab-0054",
+   "b": "ppl-0009",
+   "noul": 0.75,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Ng/Brain; kept published ppl-0009. RESOLVED: lab-0054 DELETED."
+  },
+  {
+   "a": "tec-0050",
+   "b": "oss-0040",
+   "noul": 0.74,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. vector-DB use; kept oss-0040. RESOLVED: tec-0050 DELETED."
+  },
+  {
+   "a": "pro-0034",
+   "b": "mod-0025",
+   "noul": 0.73,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. DALL-E naming; kept published mod-0025. RESOLVED: pro-0034 DELETED."
+  },
+  {
+   "a": "con-0046",
+   "b": "con-0015",
+   "noul": 0.73,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. scaling laws; kept published con-0015. RESOLVED: con-0046 DELETED."
+  },
+  {
+   "a": "oss-0049",
+   "b": "eth-0054",
+   "noul": 0.73,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. datasheets; kept eth-0054. RESOLVED: oss-0049 DELETED."
+  },
+  {
+   "a": "lab-0028",
+   "b": "lab-0003",
+   "noul": 0.73,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Mistral Paris; kept published lab-0003. RESOLVED: lab-0028 DELETED."
+  },
+  {
+   "a": "tec-0041",
+   "b": "tec-0018",
+   "noul": 0.71,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. DPO reward model; kept older draft tec-0018. RESOLVED: tec-0041 DELETED."
+  },
+  {
+   "a": "bus-0062",
+   "b": "ppl-0032",
+   "noul": 0.7,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Wang/Scale; kept ppl-0032 (people natural). RESOLVED: bus-0062 DELETED."
+  },
+  {
+   "a": "pro-0051",
+   "b": "eth-0070",
+   "noul": 0.7,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass. Air Canada chatbot; kept eth-0070. RESOLVED: pro-0051 DELETED."
+  },
+  {
+   "a": "pap-0012",
+   "b": "pap-0036",
+   "noul": 0.91,
+   "verdict": "distinct",
+   "resolution": "",
+   "note": "Wave-1 dupe pass: few-shot CoT vs zero-shot CoT are different papers/facts. Keep both."
+  },
+  {
+   "a": "hst-0021",
+   "b": "hst-0022",
+   "noul": 0.89,
+   "verdict": "distinct",
+   "resolution": "",
+   "note": "Wave-1 dupe pass: Seoul venue vs Game 2 are different facts. Keep both."
+  },
+  {
+   "a": "hwr-0082",
+   "b": "hwr-0083",
+   "noul": 0.85,
+   "verdict": "distinct",
+   "resolution": "",
+   "note": "Wave-1 dupe pass: Nervana vs Movidius are different acquisitions. Keep both."
+  },
+  {
+   "a": "eth-0047",
+   "b": "pro-0071",
+   "noul": 0.78,
+   "verdict": "related",
+   "resolution": "",
+   "note": "Wave-1 dupe pass: pause-which-voice vs named-what; R1 judged distinct angles. Keep both."
+  },
+  {
+   "a": "bus-0031",
+   "b": "bus-0078",
+   "noul": 0.78,
+   "verdict": "distinct",
+   "resolution": "",
+   "note": "Wave-1 dupe pass: Kairos/Google vs X-energy/Amazon are different deals. Keep both."
+  },
+  {
+   "a": "lab-0050",
+   "b": "ppl-0035",
+   "noul": 0.78,
+   "verdict": "related",
+   "resolution": "",
+   "note": "Wave-1 dupe pass: which-lab vs who-is-he are complementary angles. Keep both."
+  },
+  {
+   "a": "ppl-0016",
+   "b": "ppl-0022",
+   "noul": 0.77,
+   "verdict": "distinct",
+   "resolution": "",
+   "note": "Wave-1 dupe pass: Murati vs Shear are successive interim CEOs. Keep both."
+  },
+  {
+   "a": "bus-0037",
+   "b": "ppl-0016",
+   "noul": 0.77,
+   "verdict": "distinct",
+   "resolution": "",
+   "note": "Wave-1 dupe pass: Shear vs Murati are different people. Keep both."
+  },
+  {
+   "a": "lab-0013",
+   "b": "ppl-0010",
+   "noul": 0.73,
+   "verdict": "distinct",
+   "resolution": "",
+   "note": "Wave-1 dupe pass: Sutskever/SSI vs Amodei/Anthropic are different people. Jev false positive. Keep both."
+  },
+  {
+   "a": "oss-0046",
+   "b": "oss-0074",
+   "noul": 0.75,
+   "verdict": "distinct",
+   "resolution": "",
+   "note": "Wave-1 dupe pass: source-available description vs RAIL name are different facts. Keep both."
+  },
+  {
+   "a": "con-0015",
+   "b": "con-0046",
+   "noul": 0.73,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass: con-0015 is published, con-0046 new, same scaling-laws fact. RESOLVED: con-0046 DELETED."
+  },
+  {
+   "a": "eth-0019",
+   "b": "pro-0070",
+   "noul": 0.77,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-1 dupe pass: pro-0070 deleted in favour of pro-0082; eth-0019 kept. Pair moot."
+  },
+  {
+   "a": "lab-0074",
+   "b": "mod-0065",
+   "noul": 0.96,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-2 dupe pass. Same fact. RESOLVED: mod-0065 DELETED; kept lab-0074 (labs home)."
+  },
+  {
+   "a": "bus-0049",
+   "b": "lab-0070",
+   "noul": 0.94,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-2 dupe pass. Same fact. RESOLVED: lab-0070 DELETED; kept older bus-0049."
+  },
+  {
+   "a": "lab-0041",
+   "b": "lab-0071",
+   "noul": 0.92,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-2 dupe pass. Same fact. RESOLVED: lab-0071 DELETED; kept older lab-0041."
+  },
+  {
+   "a": "lab-0067",
+   "b": "oss-0020",
+   "noul": 0.89,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-2 dupe pass. Same fact. RESOLVED: oss-0020 DELETED; kept oss-0020 (oss coverage)."
+  },
+  {
+   "a": "mem-0069",
+   "b": "pro-0007",
+   "noul": 0.88,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-2 dupe pass. Same fact. RESOLVED: pro-0007 DELETED; kept published pro-0007."
+  },
+  {
+   "a": "hst-0025",
+   "b": "pap-0070",
+   "noul": 0.88,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-2 dupe pass. Same fact. RESOLVED: pap-0070 DELETED; kept pap-0070 (papers home)."
+  },
+  {
+   "a": "eth-0074",
+   "b": "tec-0064",
+   "noul": 0.84,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-2 dupe pass. Same fact. RESOLVED: tec-0064 DELETED; kept tec-0064 (tech home)."
+  },
+  {
+   "a": "mod-0011",
+   "b": "pro-0024",
+   "noul": 0.83,
+   "verdict": "related",
+   "resolution": "",
+   "note": "Wave-2 dupe pass: GPT-4-releaser vs ChatGPT-operator are different facts. Keep both."
+  },
+  {
+   "a": "bus-0009",
+   "b": "lab-0069",
+   "noul": 0.72,
+   "verdict": "related",
+   "resolution": "",
+   "note": "Wave-2 dupe pass: which-startup vs which-acquirer are complementary angles. Keep both."
+  },
+  {
+   "a": "lab-0067",
+   "b": "oss-0053",
+   "noul": 0.7,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Wave-2 dupe pass: moot — lab-0067 deleted (dup of oss-0020); oss-0053 (UAE) kept."
+  }
+ ]
 }

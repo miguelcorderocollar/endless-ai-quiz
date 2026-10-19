@@ -449,5 +449,1692 @@
     ],
     "status": "draft",
     "addedAt": "2026-09-30"
+  },
+  {
+    "id": "oss-0016",
+    "text": "How were the original Llama model's weights distributed in 2023?",
+    "options": [
+      "As a paid API only",
+      "On a case-by-case basis to researchers under a non-commercial licence",
+      "Under the MIT Licence with no restrictions",
+      "Under the Apache Licence 2.0 to anyone"
+    ],
+    "answer": "On a case-by-case basis to researchers under a non-commercial licence",
+    "category": "open-source",
+    "tags": [
+      "llama",
+      "licensing",
+      "meta"
+    ],
+    "difficulty": 2,
+    "explanation": "The first Llama release in February 2023 gave weights only to approved researchers under a non-commercial restriction, while the inference code shipped under GPLv3. Llama 2, released in July 2023, broadened access but still carried an acceptable use policy. Apache 2.0 and MIT are tempting misses because later open models use them, but the original did not.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Llama (language model)",
+      "label": "Llama (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "non-commercial license",
+      "case-by-case",
+      "Llama 1"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0017",
+    "text": "Why is Llama 2 not considered open source by the Open Source Initiative?",
+    "options": [
+      "Its licence includes an acceptable use policy and user restrictions",
+      "It requires a licence fee for commercial use",
+      "Its weights are not publicly available",
+      "It is released only as an API"
+    ],
+    "answer": "Its licence includes an acceptable use policy and user restrictions",
+    "category": "open-source",
+    "tags": [
+      "llama",
+      "licensing",
+      "osi"
+    ],
+    "difficulty": 3,
+    "explanation": "Llama 2's licence restricts use by very large services and by certain fields, and the OSI argues those terms violate the Open Source Definition. Meta still calls Llama open source, which is the openwashing debate. The weights are public and there is no API-only release, so the restriction is the crux.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Llama (language model)",
+      "label": "Llama (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "acceptable use policy",
+      "Llama 2 license",
+      "openwashing"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0018",
+    "text": "Under which licence was Mistral 7B released in 2023?",
+    "options": [
+      "Apache Licence 2.0",
+      "MIT Licence",
+      "Responsible AI Licence (RAIL)",
+      "GPLv3"
+    ],
+    "answer": "Apache Licence 2.0",
+    "category": "open-source",
+    "tags": [
+      "mistral",
+      "licensing"
+    ],
+    "difficulty": 2,
+    "explanation": "Mistral 7B shipped in September 2023 under Apache 2.0, which is why it could be adopted commercially without a special agreement. MIT and RAIL are tempting misses: RAIL is what BLOOM used, and Apache is the common choice for these releases. The Apache grant also includes a patent licence.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mistral AI",
+      "label": "Mistral AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Apache 2.0",
+      "Apache License 2.0"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0020",
+    "text": "Which organisation developed the Falcon family of language models?",
+    "options": [
+      "Mistral AI in Paris",
+      "Meta AI in Menlo Park",
+      "Technology Innovation Institute in Abu Dhabi",
+      "EleutherAI"
+    ],
+    "answer": "Technology Innovation Institute in Abu Dhabi",
+    "category": "open-source",
+    "tags": [
+      "falcon",
+      "tii",
+      "uae"
+    ],
+    "difficulty": 2,
+    "explanation": "Falcon came out of the Technology Innovation Institute, part of Abu Dhabi's Advanced Technology Research Council, starting in 2023. TII also runs the Noor Arabic model. Mistral and Meta are tempting misses because they are the other big open-weight labs of the same period.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Technology Innovation Institute",
+      "label": "Technology Innovation Institute on Wikipedia"
+    },
+    "answerAliases": [
+      "Technology Innovation Institute",
+      "TII",
+      "Falcon"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0021",
+    "text": "What did Ai2 release alongside the OLMo model weights?",
+    "options": [
+      "A mobile app",
+      "The training data, code, logs and intermediate checkpoints",
+      "Only a hosted inference API",
+      "A closed-source fine-tune"
+    ],
+    "answer": "The training data, code, logs and intermediate checkpoints",
+    "category": "open-source",
+    "tags": [
+      "olmo",
+      "ai2",
+      "reproducibility"
+    ],
+    "difficulty": 2,
+    "explanation": "OLMo's stated goal was reproducibility: Ai2 published the weights plus the data, training and evaluation code, logs, metrics and intermediate checkpoints. That is unusual, since most open-weight releases stop at the weights. The hosted-API option is the tempting miss because it describes a proprietary release.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OLMo (language model)",
+      "label": "OLMo (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "OLMo",
+      "Allen Institute for AI",
+      "Ai2"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0022",
+    "text": "How many parameters did the BLOOM model have?",
+    "options": [
+      "7 billion",
+      "13 billion",
+      "176 billion",
+      "405 billion"
+    ],
+    "answer": "176 billion",
+    "category": "open-source",
+    "tags": [
+      "bloom",
+      "bigscience",
+      "parameters"
+    ],
+    "difficulty": 2,
+    "explanation": "BLOOM, released in 2022 by the BigScience workshop, has 176 billion parameters and covers 46 natural languages plus 13 programming languages. The smaller figures are tempting misses because they match other open models of the era, and 405 billion matches Llama 3.1.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "BLOOM (language model)",
+      "label": "BLOOM (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "176 billion",
+      "BLOOM",
+      "BigScience"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0024",
+    "text": "Under which licence is OpenAI's Whisper released?",
+    "options": [
+      "Responsible AI Licence (RAIL)",
+      "MIT Licence",
+      "Apache Licence 2.0",
+      "GPLv3"
+    ],
+    "answer": "MIT Licence",
+    "category": "open-source",
+    "tags": [
+      "whisper",
+      "openai",
+      "licensing"
+    ],
+    "difficulty": 2,
+    "explanation": "Whisper was released as open-source software in September 2022 under the MIT licence, so it can be used and modified freely, including commercially. Apache 2.0 and RAIL are tempting misses because other open models use them, but Whisper's repo carries MIT.",
+    "source": {
+      "kind": "url",
+      "url": "https://github.com/openai/whisper",
+      "label": "OpenAI Whisper on GitHub"
+    },
+    "answerAliases": [
+      "MIT License",
+      "Whisper"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0025",
+    "text": "What does llama.cpp let you do with a Llama model?",
+    "options": [
+      "Host it as a paid API",
+      "Run inference locally, even on a CPU",
+      "Train it from scratch on your own data",
+      "Fine-tune it in the cloud only"
+    ],
+    "answer": "Run inference locally, even on a CPU",
+    "category": "open-source",
+    "tags": [
+      "llamacpp",
+      "local-llm",
+      "inference"
+    ],
+    "difficulty": 1,
+    "explanation": "llama.cpp is an open-source C and C++ reimplementation of Llama inference, and it gained traction because it runs on ordinary CPUs without a GPU. Training and cloud-only fine-tuning are tempting misses because they describe other stages of the pipeline.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Llama.cpp",
+      "label": "Llama.cpp on Wikipedia"
+    },
+    "answerAliases": [
+      "llama.cpp",
+      "Georgi Gerganov",
+      "local inference"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0026",
+    "text": "What is GGUF?",
+    "options": [
+      "A benchmark suite",
+      "A binary file format for storing tensors and metadata",
+      "A model training framework",
+      "A GPU driver"
+    ],
+    "answer": "A binary file format for storing tensors and metadata",
+    "category": "open-source",
+    "tags": [
+      "gguf",
+      "file-format",
+      "quantization"
+    ],
+    "difficulty": 2,
+    "explanation": "GGUF is the binary format introduced by llama.cpp in August 2023 to store both tensors and metadata in one file, and it superseded the older GGML format. It is now the standard way to distribute quantized models for local inference. The training-framework option is the tempting miss because the name sounds like a library.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GGUF",
+      "label": "GGUF on Wikipedia"
+    },
+    "answerAliases": [
+      "GGUF",
+      "GGML Universal File",
+      "llama.cpp"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0027",
+    "text": "Which statement about GGUF and GGML is correct?",
+    "options": [
+      "GGML superseded GGUF in 2024",
+      "They are the same format with different names",
+      "GGML is a GPU driver and GGUF is a CPU driver",
+      "GGUF superseded GGML in 2023"
+    ],
+    "answer": "GGUF superseded GGML in 2023",
+    "category": "open-source",
+    "tags": [
+      "gguf",
+      "ggml",
+      "quantization"
+    ],
+    "difficulty": 2,
+    "explanation": "GGUF was introduced in August 2023 by the llama.cpp project to replace the older GGML format and keep backward compatibility as new architectures were added. GGML was the original tensor library format. The reversed-order option is the common confusion.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GGUF",
+      "label": "GGUF on Wikipedia"
+    },
+    "answerAliases": [
+      "GGUF superseded GGML",
+      "GGML"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0028",
+    "text": "What does quantization do to a model?",
+    "options": [
+      "Increases the number of parameters",
+      "Adds new training data",
+      "Converts it to a different programming language",
+      "Reduces the precision of the weights to save memory"
+    ],
+    "answer": "Reduces the precision of the weights to save memory",
+    "category": "open-source",
+    "tags": [
+      "quantization",
+      "inference",
+      "local-llm"
+    ],
+    "difficulty": 2,
+    "explanation": "Quantization stores weights with fewer bits, which cuts memory use and speeds up inference at the cost of some accuracy. It is what makes a 70-billion-parameter model fit on a laptop. It does not add parameters or data.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Llama.cpp",
+      "label": "Llama.cpp on Wikipedia"
+    },
+    "answerAliases": [
+      "quantization",
+      "Quantization (signal processing)"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0029",
+    "text": "On which default port does Ollama's local REST API listen?",
+    "options": [
+      "8080",
+      "3000",
+      "11434",
+      "5000"
+    ],
+    "answer": "11434",
+    "category": "open-source",
+    "tags": [
+      "ollama",
+      "api",
+      "networking"
+    ],
+    "difficulty": 2,
+    "explanation": "Ollama exposes its local REST API on port 11434 by default, which is why client libraries and tools know where to connect. 8080 and 3000 are common web defaults but not Ollama's. The port is configurable but 11434 is the out-of-the-box value.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Ollama",
+      "label": "Ollama on Wikipedia"
+    },
+    "answerAliases": [
+      "11434",
+      "port 11434",
+      "Ollama"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0030",
+    "text": "What technique is vLLM built around?",
+    "options": [
+      "FlashAttention for training",
+      "Quantization-aware training",
+      "PagedAttention for the key-value cache",
+      "Model parallelism across CPUs"
+    ],
+    "answer": "PagedAttention for the key-value cache",
+    "category": "open-source",
+    "tags": [
+      "vllm",
+      "pagedattention",
+      "inference"
+    ],
+    "difficulty": 3,
+    "explanation": "vLLM's central idea is PagedAttention, which manages the transformer key-value cache in pages like virtual memory, reducing waste and enabling continuous batching. FlashAttention is a tempting miss because it also speeds up attention, but it is a different technique.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "vLLM",
+      "label": "vLLM on Wikipedia"
+    },
+    "answerAliases": [
+      "PagedAttention",
+      "vLLM",
+      "KV cache"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0032",
+    "text": "Which library is the default way most people load a pretrained model?",
+    "options": [
+      "TensorFlow",
+      "PyTorch",
+      "Transformers",
+      "scikit-learn"
+    ],
+    "answer": "Transformers",
+    "category": "open-source",
+    "tags": [
+      "hugging-face",
+      "transformers",
+      "library"
+    ],
+    "difficulty": 1,
+    "explanation": "The Transformers library from Hugging Face is the standard interface for loading and running pretrained models across frameworks. TensorFlow and PyTorch are the underlying frameworks, not the model-loading layer, which is the common confusion.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hugging Face",
+      "label": "Hugging Face on Wikipedia"
+    },
+    "answerAliases": [
+      "Transformers",
+      "Hugging Face Transformers"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0033",
+    "text": "Which Hugging Face library is used for loading and sharing datasets?",
+    "options": [
+      "tokenizers",
+      "accelerate",
+      "datasets",
+      "peft"
+    ],
+    "answer": "datasets",
+    "category": "open-source",
+    "tags": [
+      "hugging-face",
+      "datasets",
+      "library"
+    ],
+    "difficulty": 2,
+    "explanation": "The datasets library provides a standard way to load, process and share datasets, and it is the companion to Transformers. tokenizers, accelerate and peft are real Hugging Face libraries but they handle other parts of the stack.",
+    "source": {
+      "kind": "url",
+      "url": "https://github.com/huggingface/datasets",
+      "label": "Hugging Face datasets on GitHub"
+    },
+    "answerAliases": [
+      "datasets",
+      "Hugging Face datasets"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0034",
+    "text": "PyTorch is the successor to which earlier framework?",
+    "options": [
+      "Caffe",
+      "Theano",
+      "Torch",
+      "Chainer"
+    ],
+    "answer": "Torch",
+    "category": "open-source",
+    "tags": [
+      "pytorch",
+      "lineage",
+      "framework"
+    ],
+    "difficulty": 2,
+    "explanation": "PyTorch grew out of Torch, the Lua-based framework, and kept its name as a nod. Caffe, Theano and Chainer are real frameworks of the same era but they are separate lineages.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "PyTorch",
+      "label": "PyTorch on Wikipedia"
+    },
+    "answerAliases": [
+      "Torch",
+      "Torch (machine learning)"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0035",
+    "text": "TensorFlow was originally developed at which company?",
+    "options": [
+      "Meta",
+      "Microsoft",
+      "Apple",
+      "Google"
+    ],
+    "answer": "Google",
+    "category": "open-source",
+    "tags": [
+      "tensorflow",
+      "lineage",
+      "google"
+    ],
+    "difficulty": 1,
+    "explanation": "TensorFlow was created at Google Brain and released in 2015. Meta is the tempting miss because PyTorch is Meta's, and the two frameworks dominate the field.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "TensorFlow",
+      "label": "TensorFlow on Wikipedia"
+    },
+    "answerAliases": [
+      "Google",
+      "Google Brain"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0036",
+    "text": "What is ONNX used for?",
+    "options": [
+      "Training models from scratch",
+      "A GPU architecture",
+      "A dataset of images",
+      "A standard format for representing machine learning models"
+    ],
+    "answer": "A standard format for representing machine learning models",
+    "category": "open-source",
+    "tags": [
+      "onnx",
+      "interoperability",
+      "format"
+    ],
+    "difficulty": 2,
+    "explanation": "ONNX defines an open standard for representing trained models so they can move between frameworks and runtimes. Training from scratch and GPU architecture are tempting misses because they describe other layers of the stack.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Open Neural Network Exchange",
+      "label": "Open Neural Network Exchange on Wikipedia"
+    },
+    "answerAliases": [
+      "ONNX",
+      "Open Neural Network Exchange"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0037",
+    "text": "What is LangChain mainly used for?",
+    "options": [
+      "Training foundation models",
+      "Designing GPU hardware",
+      "Collecting web crawl data",
+      "Building applications around language models"
+    ],
+    "answer": "Building applications around language models",
+    "category": "open-source",
+    "tags": [
+      "langchain",
+      "framework",
+      "applications"
+    ],
+    "difficulty": 2,
+    "explanation": "LangChain is a framework that helps integrate language models into applications such as chatbots and document analysis tools. It does not train models or build hardware, which are tempting misses by association.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "LangChain",
+      "label": "LangChain on Wikipedia"
+    },
+    "answerAliases": [
+      "LangChain"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0038",
+    "text": "What is LlamaIndex mainly used for?",
+    "options": [
+      "Training vision models",
+      "Manufacturing chips",
+      "Hosting email",
+      "Ingesting, indexing and querying data for language models"
+    ],
+    "answer": "Ingesting, indexing and querying data for language models",
+    "category": "open-source",
+    "tags": [
+      "llamaindex",
+      "rag",
+      "data"
+    ],
+    "difficulty": 2,
+    "explanation": "LlamaIndex provides tools and frameworks that let language models ingest, index and query structured and unstructured data. It is often used as the data layer in RAG applications. Vision training and chip manufacturing are tempting misses by shape.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "LlamaIndex",
+      "label": "LlamaIndex on Wikipedia"
+    },
+    "answerAliases": [
+      "LlamaIndex"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0039",
+    "text": "What does retrieval-augmented generation (RAG) add to a language model?",
+    "options": [
+      "More parameters",
+      "A new training algorithm",
+      "A faster GPU",
+      "External documents retrieved at inference time"
+    ],
+    "answer": "External documents retrieved at inference time",
+    "category": "open-source",
+    "tags": [
+      "rag",
+      "retrieval",
+      "inference"
+    ],
+    "difficulty": 2,
+    "explanation": "RAG retrieves relevant documents and adds them to the prompt before generation, so the model can use domain-specific or updated information without retraining. It reduces hallucinations and avoids costly retraining. More parameters and new algorithms are tempting misses.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Retrieval-augmented generation",
+      "label": "Retrieval-augmented generation on Wikipedia"
+    },
+    "answerAliases": [
+      "RAG",
+      "retrieval-augmented generation"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0040",
+    "text": "What is a vector database used for?",
+    "options": [
+      "Storing rows and columns of numbers",
+      "Running SQL joins on text",
+      "Hosting static websites",
+      "Storing embeddings and retrieving similar ones"
+    ],
+    "answer": "Storing embeddings and retrieving similar ones",
+    "category": "open-source",
+    "tags": [
+      "vector-db",
+      "embeddings",
+      "rag"
+    ],
+    "difficulty": 1,
+    "explanation": "A vector database stores embeddings in vector space and implements approximate nearest-neighbour search, so it can find semantically similar records rather than exact matches. That is why it is the usual retrieval layer in RAG. Relational storage and static hosting are tempting misses.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Vector database",
+      "label": "Vector database on Wikipedia"
+    },
+    "answerAliases": [
+      "vector database",
+      "vector store"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0041",
+    "text": "FAISS was originally developed by which organisation?",
+    "options": [
+      "Google",
+      "Microsoft",
+      "OpenAI",
+      "Meta"
+    ],
+    "answer": "Meta",
+    "category": "open-source",
+    "tags": [
+      "faiss",
+      "meta",
+      "similarity-search"
+    ],
+    "difficulty": 2,
+    "explanation": "FAISS stands for Facebook AI Similarity Search, so it was built at Meta (Facebook) AI. Google and Microsoft are tempting misses because they also publish similarity-search tools, but FAISS is Meta's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "FAISS",
+      "label": "FAISS on Wikipedia"
+    },
+    "answerAliases": [
+      "FAISS",
+      "Facebook AI Similarity Search",
+      "Meta"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0042",
+    "text": "Under which licence is Chroma released?",
+    "options": [
+      "MIT Licence",
+      "GPLv3",
+      "Apache Licence 2.0",
+      "BSD 3-Clause"
+    ],
+    "answer": "Apache Licence 2.0",
+    "category": "open-source",
+    "tags": [
+      "chroma",
+      "vector-db",
+      "licensing"
+    ],
+    "difficulty": 2,
+    "explanation": "Chroma is an open-source vector database released under Apache 2.0. The article notes its headquarters are in San Francisco and that it has been used in RAG studies. MIT and BSD are tempting misses because other vector databases use them.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ChromaDB",
+      "label": "ChromaDB on Wikipedia"
+    },
+    "answerAliases": [
+      "Chroma",
+      "ChromaDB",
+      "Apache 2.0"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0044",
+    "text": "Under which licence is Weaviate released?",
+    "options": [
+      "Apache Licence 2.0",
+      "MIT Licence",
+      "BSD 3-Clause Licence",
+      "GPLv3"
+    ],
+    "answer": "BSD 3-Clause Licence",
+    "category": "open-source",
+    "tags": [
+      "weaviate",
+      "vector-db",
+      "licensing"
+    ],
+    "difficulty": 2,
+    "explanation": "The comparison table lists Weaviate under the BSD 3-Clause licence. Apache 2.0 is the tempting miss because most vector databases in the same table use it, but Weaviate is one of the exceptions.",
+    "source": {
+      "kind": "url",
+      "url": "https://github.com/weaviate/weaviate",
+      "label": "Weaviate on GitHub (BSD-3-Clause license)"
+    },
+    "answerAliases": [
+      "Weaviate",
+      "BSD 3-Clause"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0045",
+    "text": "Milvus is a distributed vector database developed by which company?",
+    "options": [
+      "Meta",
+      "Google",
+      "Zilliz",
+      "Microsoft"
+    ],
+    "answer": "Zilliz",
+    "category": "open-source",
+    "tags": [
+      "milvus",
+      "vector-db",
+      "zilliz"
+    ],
+    "difficulty": 2,
+    "explanation": "Milvus is developed by Zilliz and is an open-source project under the LF AI and Data Foundation, released under Apache 2.0. Meta and Google are tempting misses because they publish other database and AI tools.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Milvus (vector database)",
+      "label": "Milvus (vector database) on Wikipedia"
+    },
+    "answerAliases": [
+      "Milvus",
+      "Zilliz"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0046",
+    "text": "A model released with open weights but a restrictive licence is best described as what?",
+    "options": [
+      "Open source",
+      "Proprietary",
+      "Abandonware",
+      "Source-available"
+    ],
+    "answer": "Source-available",
+    "category": "open-source",
+    "tags": [
+      "open-weights",
+      "licensing",
+      "open-source"
+    ],
+    "difficulty": 2,
+    "explanation": "When weights are public but the licence restricts use, the model is source-available rather than open source, which is how Ars Technica re-described Llama. Open source requires the freedoms to use, study, modify and share. Proprietary is too strong because the weights are public.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Llama (language model)",
+      "label": "Llama (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "source-available",
+      "open weights"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0047",
+    "text": "What does the Open Source AI Definition 1.0 require about training data?",
+    "options": [
+      "That it be deleted after training",
+      "That it be licensed under GPL",
+      "That it remain private",
+      "That information about it be disclosed"
+    ],
+    "answer": "That information about it be disclosed",
+    "category": "open-source",
+    "tags": [
+      "osi",
+      "definition",
+      "training-data"
+    ],
+    "difficulty": 3,
+    "explanation": "The OSI's Open Source AI Definition 1.0 requires disclosure of training-data information, which is why Llama is argued not to qualify. Deletion and GPL licensing are tempting misses because they confuse data handling with software licences.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Open-source artificial intelligence",
+      "label": "Open-source artificial intelligence on Wikipedia"
+    },
+    "answerAliases": [
+      "training data",
+      "disclosure",
+      "Open Source AI Definition"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0048",
+    "text": "Who introduced the idea of Model Cards for model reporting?",
+    "options": [
+      "Timnit Gebru and colleagues",
+      "Yann LeCun and colleagues",
+      "Jeff Dean and colleagues",
+      "Margaret Mitchell and colleagues"
+    ],
+    "answer": "Margaret Mitchell and colleagues",
+    "category": "open-source",
+    "tags": [
+      "model-cards",
+      "documentation",
+      "ethics"
+    ],
+    "difficulty": 3,
+    "explanation": "Model Cards were proposed in a 2019 paper by Mitchell and colleagues to document model performance, intended use and limitations. Timnit Gebru is the tempting miss because she led the related Datasheets for Datasets work.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1810.03993",
+      "label": "Model Cards for Model Reporting on arXiv"
+    },
+    "answerAliases": [
+      "Model Cards",
+      "Mitchell et al."
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0050",
+    "text": "A model card typically documents which of the following?",
+    "options": [
+      "The model's training electricity bill",
+      "The developer's salary",
+      "The number of GitHub stars",
+      "Performance, intended use and limitations"
+    ],
+    "answer": "Performance, intended use and limitations",
+    "category": "open-source",
+    "tags": [
+      "model-cards",
+      "documentation"
+    ],
+    "difficulty": 2,
+    "explanation": "A model card records how the model performs, what it is intended for and where it can fail, so users can decide whether it fits their use. Training bills and star counts are tempting misses because they are easy to measure but not part of the card.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1810.03993",
+      "label": "Model Cards for Model Reporting on arXiv"
+    },
+    "answerAliases": [
+      "model card",
+      "performance",
+      "intended use"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0051",
+    "text": "Groq's LPU is best described as what?",
+    "options": [
+      "A chatbot made by xAI",
+      "An AI accelerator chip for inference",
+      "A large language model",
+      "A vector database"
+    ],
+    "answer": "An AI accelerator chip for inference",
+    "category": "open-source",
+    "tags": [
+      "groq",
+      "lpu",
+      "hardware"
+    ],
+    "difficulty": 2,
+    "explanation": "Groq builds an AI accelerator originally called a Tensor Streaming Processor and later rebranded as a Language Processing Unit for inference. The xAI chatbot Grok is the name-collision trap, since the two are unrelated companies.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Groq",
+      "label": "Groq on Wikipedia"
+    },
+    "answerAliases": [
+      "Groq",
+      "LPU",
+      "Language Processing Unit"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0052",
+    "text": "BLOOM was created by which research effort?",
+    "options": [
+      "EleutherAI",
+      "Meta AI",
+      "BigScience",
+      "Google Brain"
+    ],
+    "answer": "BigScience",
+    "category": "open-source",
+    "tags": [
+      "bloom",
+      "bigscience"
+    ],
+    "difficulty": 2,
+    "explanation": "BLOOM came out of the BigScience workshop, a volunteer-driven research effort to build a transparent alternative to proprietary models. EleutherAI is the tempting miss because it ran a similar open effort, but BLOOM is BigScience's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "BLOOM (language model)",
+      "label": "BLOOM (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "BigScience",
+      "BLOOM"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0053",
+    "text": "The Falcon language models were developed in which country?",
+    "options": [
+      "France",
+      "United Arab Emirates",
+      "United States",
+      "China"
+    ],
+    "answer": "United Arab Emirates",
+    "category": "open-source",
+    "tags": [
+      "falcon",
+      "tii",
+      "uae"
+    ],
+    "difficulty": 1,
+    "explanation": "Falcon came out of the Technology Innovation Institute in Abu Dhabi, in the United Arab Emirates. France and the United States are tempting misses because other open-weight labs are based there.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Technology Innovation Institute",
+      "label": "Technology Innovation Institute on Wikipedia"
+    },
+    "answerAliases": [
+      "United Arab Emirates",
+      "UAE",
+      "Abu Dhabi"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0054",
+    "text": "OLMo was developed by which organisation?",
+    "options": [
+      "OpenAI",
+      "Meta AI",
+      "Allen Institute for AI",
+      "Google DeepMind"
+    ],
+    "answer": "Allen Institute for AI",
+    "category": "open-source",
+    "tags": [
+      "olmo",
+      "ai2"
+    ],
+    "difficulty": 2,
+    "explanation": "OLMo is built by the Allen Institute for AI, abbreviated Ai2, as an open and reproducible language model. OpenAI and Meta are tempting misses because they dominate the model landscape, but OLMo is Ai2's project.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OLMo (language model)",
+      "label": "OLMo (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "Allen Institute for AI",
+      "Ai2",
+      "OLMo"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0055",
+    "text": "Stable Diffusion is the premier product of which company?",
+    "options": [
+      "OpenAI",
+      "Stability AI",
+      "Midjourney",
+      "Runway"
+    ],
+    "answer": "Stability AI",
+    "category": "open-source",
+    "tags": [
+      "stable-diffusion",
+      "stability-ai"
+    ],
+    "difficulty": 1,
+    "explanation": "Stable Diffusion is the premier product of Stability AI, developed with researchers from LMU Munich and Runway. OpenAI and Midjourney are tempting misses because they are the other image-generation names people remember.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Stable Diffusion",
+      "label": "Stable Diffusion on Wikipedia"
+    },
+    "answerAliases": [
+      "Stability AI",
+      "Stable Diffusion"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0056",
+    "text": "Whisper was created by which organisation?",
+    "options": [
+      "Meta",
+      "OpenAI",
+      "Google",
+      "Microsoft"
+    ],
+    "answer": "OpenAI",
+    "category": "open-source",
+    "tags": [
+      "whisper",
+      "openai"
+    ],
+    "difficulty": 1,
+    "explanation": "Whisper is a speech recognition model created by OpenAI and first released as open-source software in September 2022. Meta and Google are tempting misses because they also publish speech models, but Whisper is OpenAI's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Whisper (speech recognition system)",
+      "label": "Whisper (speech recognition system) on Wikipedia"
+    },
+    "answerAliases": [
+      "OpenAI",
+      "Whisper"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0057",
+    "text": "vLLM was originally developed at which lab?",
+    "options": [
+      "UC Berkeley's Sky Computing Lab",
+      "Stanford HAI",
+      "MIT CSAIL",
+      "Carnegie Mellon"
+    ],
+    "answer": "UC Berkeley's Sky Computing Lab",
+    "category": "open-source",
+    "tags": [
+      "vllm",
+      "berkeley",
+      "origin"
+    ],
+    "difficulty": 3,
+    "explanation": "vLLM started at UC Berkeley's Sky Computing Lab, built around PagedAttention. Stanford and MIT are tempting misses because they are associated with other inference and systems work, but vLLM is Berkeley's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "vLLM",
+      "label": "vLLM on Wikipedia"
+    },
+    "answerAliases": [
+      "vLLM",
+      "UC Berkeley",
+      "Sky Computing Lab"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0058",
+    "text": "Which statement best distinguishes LangChain from LlamaIndex?",
+    "options": [
+      "LangChain is for hardware design, LlamaIndex is for datasets",
+      "LangChain builds applications around models, LlamaIndex focuses on ingesting and querying data",
+      "They are identical products",
+      "LangChain is a database, LlamaIndex is a model"
+    ],
+    "answer": "LangChain builds applications around models, LlamaIndex focuses on ingesting and querying data",
+    "category": "open-source",
+    "tags": [
+      "langchain",
+      "llamaindex",
+      "distinction"
+    ],
+    "difficulty": 3,
+    "explanation": "LangChain is a general framework for wiring language models into applications, while LlamaIndex specialises in connecting models to data sources. They are often used together. Calling one a database or the other identical are the common confusions.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "LangChain",
+      "label": "LangChain on Wikipedia"
+    },
+    "answerAliases": [
+      "LangChain",
+      "LlamaIndex"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0059",
+    "text": "When was the term retrieval-augmented generation (RAG) introduced?",
+    "options": [
+      "2017",
+      "2018",
+      "2020",
+      "2022"
+    ],
+    "answer": "2020",
+    "category": "open-source",
+    "tags": [
+      "rag",
+      "history"
+    ],
+    "difficulty": 2,
+    "explanation": "RAG was introduced in a 2020 paper combining a parametric language model with a non-parametric external memory. 2017 is the tempting miss because that is the transformer year, and 2022 is when RAG became widely adopted.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Retrieval-augmented generation",
+      "label": "Retrieval-augmented generation on Wikipedia"
+    },
+    "answerAliases": [
+      "2020",
+      "retrieval-augmented generation"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0060",
+    "text": "What does FAISS stand for?",
+    "options": [
+      "Facebook AI Similarity Search",
+      "Fast Approximate Index for Semantic Search",
+      "Framework for AI Software Systems",
+      "Federated AI Inference and Storage"
+    ],
+    "answer": "Facebook AI Similarity Search",
+    "category": "open-source",
+    "tags": [
+      "faiss",
+      "acronym"
+    ],
+    "difficulty": 2,
+    "explanation": "FAISS stands for Facebook AI Similarity Search, which is why it is often associated with Meta. The other expansions sound plausible but are invented distractors shaped like real acronyms.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "FAISS",
+      "label": "FAISS on Wikipedia"
+    },
+    "answerAliases": [
+      "Facebook AI Similarity Search",
+      "FAISS"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0061",
+    "text": "Chroma is headquartered in which city?",
+    "options": [
+      "San Francisco",
+      "New York",
+      "London",
+      "Paris"
+    ],
+    "answer": "San Francisco",
+    "category": "open-source",
+    "tags": [
+      "chroma",
+      "location"
+    ],
+    "difficulty": 2,
+    "explanation": "Chroma's headquarters are in San Francisco. New York and London are tempting misses because other AI infrastructure companies are based there, but Chroma is a San Francisco company.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ChromaDB",
+      "label": "ChromaDB on Wikipedia"
+    },
+    "answerAliases": [
+      "San Francisco",
+      "Chroma"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0063",
+    "text": "The Open Source Definition prohibits open-source licences from discriminating against what?",
+    "options": [
+      "Persons or groups and fields of endeavour",
+      "Companies by size",
+      "Countries",
+      "Data formats"
+    ],
+    "answer": "Persons or groups and fields of endeavour",
+    "category": "open-source",
+    "tags": [
+      "osi",
+      "open-source",
+      "definition"
+    ],
+    "difficulty": 3,
+    "explanation": "The OSI's Open Source Definition bars licences that discriminate against persons or groups or fields of endeavour, which is why Llama's acceptable use policy is disputed. Company size and country are tempting misses because Llama's policy restricts those, but they are not the OSD's categories.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Llama (language model)",
+      "label": "Llama (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "fields of endeavor",
+      "persons or groups",
+      "Open Source Definition"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0065",
+    "text": "Who introduced the GGUF file format?",
+    "options": [
+      "Georgi Gerganov and the llama.cpp community",
+      "OpenAI",
+      "Google",
+      "Meta"
+    ],
+    "answer": "Georgi Gerganov and the llama.cpp community",
+    "category": "open-source",
+    "tags": [
+      "gguf",
+      "origin"
+    ],
+    "difficulty": 2,
+    "explanation": "GGUF was introduced in August 2023 by the llama.cpp project, led by Georgi Gerganov, to replace the older GGML format. OpenAI, Google and Meta are tempting misses because they are the big model labs, but GGUF came from the local-inference community.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GGUF",
+      "label": "GGUF on Wikipedia"
+    },
+    "answerAliases": [
+      "Georgi Gerganov",
+      "llama.cpp",
+      "GGUF"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0066",
+    "text": "What is the trade-off when quantizing a model?",
+    "options": [
+      "Higher memory use for better accuracy",
+      "Lower memory use but some loss of accuracy",
+      "More parameters for faster training",
+      "A larger context window"
+    ],
+    "answer": "Lower memory use but some loss of accuracy",
+    "category": "open-source",
+    "tags": [
+      "quantization",
+      "tradeoff"
+    ],
+    "difficulty": 2,
+    "explanation": "Quantization reduces precision in the weights, which cuts memory use and speeds up inference at the cost of some accuracy. Higher memory use is the reverse of what happens, and more parameters are not involved.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Llama.cpp",
+      "label": "Llama.cpp on Wikipedia"
+    },
+    "answerAliases": [
+      "quantization",
+      "accuracy"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0067",
+    "text": "Which of these is a Hugging Face library for tokenization?",
+    "options": [
+      "tokenizers",
+      "transformers",
+      "datasets",
+      "accelerate"
+    ],
+    "answer": "tokenizers",
+    "category": "open-source",
+    "tags": [
+      "hugging-face",
+      "tokenizers"
+    ],
+    "difficulty": 2,
+    "explanation": "The tokenizers library provides fast text tokenization and is one of Hugging Face's core tools. transformers, datasets and accelerate are real companion libraries but they handle model loading, data and training speed respectively.",
+    "source": {
+      "kind": "url",
+      "url": "https://github.com/huggingface/tokenizers",
+      "label": "Hugging Face tokenizers on GitHub"
+    },
+    "answerAliases": [
+      "tokenizers"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0068",
+    "text": "Which feature does vLLM support for serving many requests?",
+    "options": [
+      "Continuous batching",
+      "Manual request queuing only",
+      "Single-request mode only",
+      "Offline training"
+    ],
+    "answer": "Continuous batching",
+    "category": "open-source",
+    "tags": [
+      "vllm",
+      "batching",
+      "serving"
+    ],
+    "difficulty": 3,
+    "explanation": "vLLM supports continuous batching, which adds new requests to a batch as slots free up, improving throughput. Single-request mode and offline training are tempting misses because they describe other workloads.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "vLLM",
+      "label": "vLLM on Wikipedia"
+    },
+    "answerAliases": [
+      "continuous batching",
+      "vLLM"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0070",
+    "text": "Under which licence is llama.cpp released?",
+    "options": [
+      "MIT Licence",
+      "Apache Licence 2.0",
+      "GPLv3",
+      "BSD 3-Clause"
+    ],
+    "answer": "MIT Licence",
+    "category": "open-source",
+    "tags": [
+      "llamacpp",
+      "licensing"
+    ],
+    "difficulty": 2,
+    "explanation": "llama.cpp is released under the MIT licence. Apache 2.0 is the tempting miss because the models it runs often use Apache, but the inference library itself is MIT.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Llama.cpp",
+      "label": "Llama.cpp on Wikipedia"
+    },
+    "answerAliases": [
+      "MIT License",
+      "llama.cpp"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0071",
+    "text": "ONNX was originally named what?",
+    "options": [
+      "Toffee",
+      "Caffe",
+      "Tensor",
+      "ProtoNet"
+    ],
+    "answer": "Toffee",
+    "category": "open-source",
+    "tags": [
+      "onnx",
+      "history"
+    ],
+    "difficulty": 3,
+    "explanation": "ONNX was originally called Toffee before being renamed in September 2017. Caffe and Tensor are tempting misses because they are real machine-learning names, but neither was ONNX's first name.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Open Neural Network Exchange",
+      "label": "Open Neural Network Exchange on Wikipedia"
+    },
+    "answerAliases": [
+      "Toffee",
+      "ONNX"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0072",
+    "text": "ONNX's container format is what?",
+    "options": [
+      "JSON",
+      "Protocol Buffers",
+      "XML",
+      "YAML"
+    ],
+    "answer": "Protocol Buffers",
+    "category": "open-source",
+    "tags": [
+      "onnx",
+      "format"
+    ],
+    "difficulty": 3,
+    "explanation": "ONNX uses Protocol Buffers as its container format. JSON and XML are tempting misses because they are common serialisation formats, but ONNX's graphs are stored as protobuf.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Open Neural Network Exchange",
+      "label": "Open Neural Network Exchange on Wikipedia"
+    },
+    "answerAliases": [
+      "Protocol Buffers",
+      "protobuf"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0073",
+    "text": "Which vector database listed in the comparison table is a proprietary managed service?",
+    "options": [
+      "Pinecone",
+      "Milvus",
+      "Qdrant",
+      "Chroma"
+    ],
+    "answer": "Pinecone",
+    "category": "open-source",
+    "tags": [
+      "vector-db",
+      "licensing"
+    ],
+    "difficulty": 2,
+    "explanation": "The comparison table lists Pinecone as proprietary (managed service), while Milvus, Qdrant and Chroma are open source. Milvus is the tempting miss because it sounds like a managed cloud product, but it is open source.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.pinecone.io/",
+      "label": "Pinecone official site (fully-managed platform)"
+    },
+    "answerAliases": [
+      "Pinecone"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0074",
+    "text": "Which licence is often associated with open weights models that are not open source?",
+    "options": [
+      "Responsible AI Licence (RAIL)",
+      "MIT Licence",
+      "Apache Licence 2.0",
+      "BSD 2-Clause"
+    ],
+    "answer": "Responsible AI Licence (RAIL)",
+    "category": "open-source",
+    "tags": [
+      "licensing",
+      "rail",
+      "open-weights"
+    ],
+    "difficulty": 2,
+    "explanation": "RAIL licences grant access to weights but restrict harmful uses, which is why BLOOM is open access but not open source by the OSI's definition. MIT and Apache are tempting misses because they are the permissive licences used by fully open source projects.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "BLOOM (language model)",
+      "label": "BLOOM (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "RAIL",
+      "Responsible AI License"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0075",
+    "text": "What is the difference between open weights and open source?",
+    "options": [
+      "Open weights releases the learned parameters; open source also grants the freedoms to use, study, modify and share",
+      "Open weights requires a paid licence; open source is free",
+      "Open weights includes the training data; open source does not",
+      "They are identical concepts"
+    ],
+    "answer": "Open weights releases the learned parameters; open source also grants the freedoms to use, study, modify and share",
+    "category": "open-source",
+    "tags": [
+      "open-weights",
+      "open-source",
+      "licensing"
+    ],
+    "difficulty": 2,
+    "explanation": "Open weights means the parameters are public, but whether you can modify, fine-tune or redistribute them depends on the licence. Open source adds the freedoms to use, study, modify and share. The training-data and paid-licence options are tempting misses because they confuse weights with data and cost.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Open weights",
+      "label": "Open weights on Wikipedia"
+    },
+    "answerAliases": [
+      "open weights",
+      "open source"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "oss-0076",
+    "text": "Qdrant, the open-source vector search engine, is written in which programming language?",
+    "options": [
+      "Rust",
+      "Go",
+      "Python",
+      "TypeScript"
+    ],
+    "answer": "Rust",
+    "category": "open-source",
+    "tags": [
+      "qdrant",
+      "vector-db",
+      "rust"
+    ],
+    "difficulty": 2,
+    "explanation": "Qdrant's own README says it is written in Rust, which is what keeps it fast and reliable under high load. Go, Python and TypeScript are the tempting misses because Qdrant ships official clients in all three, but clients are not the engine.",
+    "source": {
+      "kind": "url",
+      "url": "https://github.com/qdrant/qdrant",
+      "label": "Qdrant on GitHub (written in Rust)"
+    },
+    "answerAliases": [
+      "Rust",
+      "Qdrant",
+      "written in Rust",
+      "vector similarity search engine"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "oss-0077",
+    "text": "In Ollama, what is a Modelfile?",
+    "options": [
+      "The GGUF weight file downloaded from the model library",
+      "The blueprint file for creating and sharing customized models",
+      "The local REST API listening on port 11434",
+      "The llama.cpp backend that runs local inference"
+    ],
+    "answer": "The blueprint file for creating and sharing customized models",
+    "category": "open-source",
+    "tags": [
+      "ollama",
+      "modelfile",
+      "customization"
+    ],
+    "difficulty": 2,
+    "explanation": "A Modelfile holds FROM, PARAMETER, SYSTEM and similar instructions that define how a model is built and run, so sharing the file shares the customization. The GGUF weights, the port-11434 API and the llama.cpp backend are all real parts of Ollama's stack, which is exactly why they tempt, but none of them is the Modelfile.",
+    "source": {
+      "kind": "url",
+      "url": "https://docs.ollama.com/modelfile/",
+      "label": "Ollama docs on the Modelfile"
+    },
+    "answerAliases": [
+      "Modelfile",
+      "blueprint",
+      "create and share",
+      "FROM"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "oss-0078",
+    "text": "vLLM is an open-source framework for what?",
+    "options": [
+      "Distributed training of foundation models from scratch",
+      "Versioning datasets for machine learning pipelines",
+      "Inference and serving of large language models",
+      "Scraping web text for pretraining corpora"
+    ],
+    "answer": "Inference and serving of large language models",
+    "category": "open-source",
+    "tags": [
+      "vllm",
+      "serving",
+      "inference"
+    ],
+    "difficulty": 1,
+    "explanation": "vLLM is a serving engine built around PagedAttention and continuous batching, designed for high-throughput inference. Training from scratch is the tempting miss because that is what frameworks in the DeepSpeed family do, while dataset versioning and web scraping belong to other tools entirely.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "vLLM",
+      "label": "vLLM on Wikipedia"
+    },
+    "answerAliases": [
+      "inference and serving of large language models",
+      "inference and serving",
+      "serving engine",
+      "vLLM"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "oss-0079",
+    "text": "When llama.cpp began in March 2023, whose inference code was it implementing?",
+    "options": [
+      "OpenAI's GPT",
+      "Google's PaLM",
+      "Anthropic's Claude",
+      "Meta's Llama"
+    ],
+    "answer": "Meta's Llama",
+    "category": "open-source",
+    "tags": [
+      "llamacpp",
+      "llama",
+      "origin"
+    ],
+    "difficulty": 2,
+    "explanation": "Gerganov wrote llama.cpp as a pure C and C++ reimplementation of the Llama inference code so the model could run on an ordinary CPU with no GPU. GPT, PaLM and Claude tempt because every lab has a flagship model, but in March 2023 only Meta's weights were available to build a local runner around.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Llama.cpp",
+      "label": "Llama.cpp on Wikipedia"
+    },
+    "answerAliases": [
+      "Meta's Llama",
+      "Meta",
+      "LLaMA",
+      "Llama"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
   }
 ]

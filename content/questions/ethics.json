@@ -498,7 +498,7 @@
       "liability"
     ],
     "difficulty": 3,
-    "explanation": "A 2024 tribunal ruled Air Canada had to honor a chatbot-invented bereavement policy and pay the affected passenger. The tempting miss is that the chatbot's quote binds no one, but the tribunal held the airline liable for its own agent's errors. The case is now the standard warning that companies own what their bots say.",
+    "explanation": "A 2024 tribunal ruled Air Canada had to honor a chatbot-invented fare exception and pay the affected passenger. The tempting miss is that the chatbot's quote binds no one, but the tribunal held the airline liable for its own agent's errors. The case is now the standard warning that companies own what their bots say.",
     "source": {
       "kind": "wikipedia",
       "title": "Air Canada",
@@ -766,5 +766,1747 @@
     ],
     "status": "draft",
     "addedAt": "2026-09-30"
+  },
+  {
+    "id": "eth-0026",
+    "text": "The Asilomar AI Principles came out of a 2017 conference organized by the Future of Life Institute. Where was that conference held?",
+    "options": [
+      "Bletchley Park in England",
+      "Asilomar in California",
+      "Seoul in South Korea",
+      "Buenos Aires in Argentina"
+    ],
+    "answer": "Asilomar in California",
+    "category": "ethics",
+    "tags": [
+      "asilomar",
+      "principles",
+      "governance"
+    ],
+    "difficulty": 2,
+    "explanation": "About a hundred researchers met at the Asilomar conference grounds in Pacific Grove, California, in January 2017 and signed a set of principles covering research, ethics and the long-term future. Bletchley Park is the tempting miss, but that hosted the UK safety summit six years later, while Buenos Aires hosted the 2015 autonomous-weapons letter.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Asilomar Conference on Beneficial AI",
+      "label": "Asilomar Conference on Beneficial AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Asilomar",
+      "Asilomar Conference Grounds",
+      "Pacific Grove",
+      "Future of Life Institute"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0027",
+    "text": "How many principles did the 2017 Asilomar conference publish?",
+    "options": [
+      "13 principles",
+      "17 principles",
+      "23 principles",
+      "31 principles"
+    ],
+    "answer": "23 principles",
+    "category": "ethics",
+    "tags": [
+      "asilomar",
+      "principles"
+    ],
+    "difficulty": 3,
+    "explanation": "The list runs to 23, grouped into research issues, ethics and values, and longer-term concerns such as superintelligence. Seventeen is close enough to tempt anyone half-remembering the list, but the full published set is 23.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Asilomar Conference on Beneficial AI",
+      "label": "Asilomar Conference on Beneficial AI on Wikipedia"
+    },
+    "answerAliases": [
+      "23 principles",
+      "twenty-three principles",
+      "23"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0028",
+    "text": "Which government hosted the AI Safety Summit at Bletchley Park in November 2023?",
+    "options": [
+      "The United Kingdom",
+      "The United States",
+      "France",
+      "South Korea"
+    ],
+    "answer": "The United Kingdom",
+    "category": "ethics",
+    "tags": [
+      "bletchley",
+      "summit",
+      "governance"
+    ],
+    "difficulty": 1,
+    "explanation": "Rishi Sunak's government convened it at Bletchley Park, the wartime codebreaking site, on 1-2 November 2023. South Korea is the tempting miss because it co-hosted the follow-up Seoul summit, but Bletchley was a British production.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI Safety Summit 2023",
+      "label": "AI Safety Summit 2023 on Wikipedia"
+    },
+    "answerAliases": [
+      "United Kingdom",
+      "UK",
+      "Britain",
+      "Rishi Sunak",
+      "Bletchley Park"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0029",
+    "text": "How many countries signed the Bletchley Declaration on frontier AI risks in November 2023?",
+    "options": [
+      "12 countries",
+      "18 countries",
+      "22 countries",
+      "28 countries"
+    ],
+    "answer": "28 countries",
+    "category": "ethics",
+    "tags": [
+      "bletchley",
+      "declaration",
+      "governance"
+    ],
+    "difficulty": 3,
+    "explanation": "Twenty-eight countries plus the EU signed the short declaration, including the US, China, the UK and EU members. It committed them only to shared risk assessment and risk-based policies at home, which is why critics called it long on symbolism.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Bletchley Declaration",
+      "label": "Bletchley Declaration on Wikipedia"
+    },
+    "answerAliases": [
+      "28 countries",
+      "28 nations",
+      "twenty-eight"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0030",
+    "text": "At the Seoul summit in May 2024, sixteen AI companies signed a set of voluntary pledges. What were those pledges called?",
+    "options": [
+      "The Asilomar AI Principles",
+      "The Frontier AI Safety Commitments",
+      "The Montreal Declaration",
+      "The Bletchley Declaration"
+    ],
+    "answer": "The Frontier AI Safety Commitments",
+    "category": "ethics",
+    "tags": [
+      "seoul",
+      "frontier-commitments",
+      "governance"
+    ],
+    "difficulty": 3,
+    "explanation": "Sixteen companies, including the leading US, Chinese and Gulf labs, promised to publish safety frameworks with risk thresholds and to halt work if those thresholds were breached. The Bletchley Declaration is the tempting miss, but that was the government-level text from six months earlier, not the company pledges.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI Seoul Summit 2024",
+      "label": "AI Seoul Summit 2024 on Wikipedia"
+    },
+    "answerAliases": [
+      "Frontier AI Safety Commitments",
+      "Frontier AI Safety",
+      "Seoul"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0031",
+    "text": "Which two countries co-hosted the AI Seoul Summit in May 2024?",
+    "options": [
+      "The United States and Japan",
+      "France and Canada",
+      "The United Kingdom and South Korea",
+      "Germany and Singapore"
+    ],
+    "answer": "The United Kingdom and South Korea",
+    "category": "ethics",
+    "tags": [
+      "seoul",
+      "summit",
+      "governance"
+    ],
+    "difficulty": 1,
+    "explanation": "Britain co-hosted with South Korea on 21-22 May 2024, deliberately chaining the meeting to Bletchley six months before. The US-Japan pairing is plausible because both run AI Safety Institutes, but neither hosted this summit.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI Seoul Summit 2024",
+      "label": "AI Seoul Summit 2024 on Wikipedia"
+    },
+    "answerAliases": [
+      "United Kingdom",
+      "South Korea",
+      "UK",
+      "Korea"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0032",
+    "text": "Which California state senator authored SB 1047, the frontier-model safety bill of 2024?",
+    "options": [
+      "Scott Wiener",
+      "Alex Padilla",
+      "Gavin Newsom",
+      "Nancy Pelosi"
+    ],
+    "answer": "Scott Wiener",
+    "category": "ethics",
+    "tags": [
+      "sb1047",
+      "regulation",
+      "california"
+    ],
+    "difficulty": 3,
+    "explanation": "San Francisco Democrat Scott Wiener wrote the bill, which cleared both chambers before the veto. Newsom is the tempting miss because he dominated the story, but he was the governor who killed it, not its author.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Safe and Secure Innovation for Frontier Artificial Intelligence Models Act",
+      "label": "SB 1047 on Wikipedia"
+    },
+    "answerAliases": [
+      "Scott Wiener",
+      "Wiener"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0033",
+    "text": "Which tech figure publicly backed SB 1047 in 2024 while Meta and OpenAI lobbied against it?",
+    "options": [
+      "Mark Zuckerberg",
+      "Sam Altman",
+      "Sundar Pichai",
+      "Elon Musk"
+    ],
+    "answer": "Elon Musk",
+    "category": "ethics",
+    "tags": [
+      "sb1047",
+      "regulation",
+      "musk"
+    ],
+    "difficulty": 2,
+    "explanation": "Musk endorsed the bill in August 2024, saying California should pass it, which split Silicon Valley since his own xAI would have been covered. Altman and Zuckerberg are the tempting misses because their companies opposed it, arguing it would burden open weights and startups.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Safe and Secure Innovation for Frontier Artificial Intelligence Models Act",
+      "label": "SB 1047 on Wikipedia"
+    },
+    "answerAliases": [
+      "Elon Musk",
+      "Musk",
+      "xAI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0035",
+    "text": "Which US president signed Executive Order 14110 on AI safety in October 2023?",
+    "options": [
+      "Donald Trump",
+      "Joe Biden",
+      "Barack Obama",
+      "George W. Bush"
+    ],
+    "answer": "Joe Biden",
+    "category": "ethics",
+    "tags": [
+      "executive-order",
+      "regulation",
+      "biden"
+    ],
+    "difficulty": 1,
+    "explanation": "Biden signed it on 30 October 2023, using emergency production powers to force reporting on the largest training runs. Trump is the tempting miss because his administration later revoked parts of it, but the order itself is Biden's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Executive Order 14110",
+      "label": "Executive Order 14110 on Wikipedia"
+    },
+    "answerAliases": [
+      "Joe Biden",
+      "Biden"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0036",
+    "text": "Under EO 14110, models trained with more than what compute count as reportable dual-use foundation models?",
+    "options": [
+      "More than 10^26 FLOPS",
+      "More than 10^23 FLOPS",
+      "More than 10^20 FLOPS",
+      "More than 10^29 FLOPS"
+    ],
+    "answer": "More than 10^26 FLOPS",
+    "category": "ethics",
+    "tags": [
+      "executive-order",
+      "compute-threshold",
+      "regulation"
+    ],
+    "difficulty": 3,
+    "explanation": "The line sits above 10^26 floating-point operations, with a lower 10^23 bar for models trained mostly on biological sequence data. The 10^23 option is the tempting miss because it is a real threshold in the order, but it applies only to the biological-data carve-out.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "10^26",
+      "10^26 FLOPS",
+      "dual-use foundation models",
+      "floating point operations"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0037",
+    "text": "Under EO 14110, developers of the largest models must share red-team safety results with which department?",
+    "options": [
+      "The Department of Defense",
+      "The Department of Energy",
+      "The Department of the Treasury",
+      "The Department of Commerce"
+    ],
+    "answer": "The Department of Commerce",
+    "category": "ethics",
+    "tags": [
+      "executive-order",
+      "red-teaming",
+      "reporting"
+    ],
+    "difficulty": 3,
+    "explanation": "Reports go to Commerce, which houses NIST and the Bureau of Industry and Security that enforce the reporting rule. Defense is the tempting miss, since the results concern national security, but the order deliberately routed them through the civilian standards agency.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Executive Order 14110",
+      "label": "Executive Order 14110 on Wikipedia"
+    },
+    "answerAliases": [
+      "Department of Commerce",
+      "Commerce",
+      "NIST",
+      "Bureau of Industry and Security"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0038",
+    "text": "How does the EU Artificial Intelligence Act structure its rules?",
+    "options": [
+      "By licensing every model above a compute limit",
+      "By taxing company revenue from AI products",
+      "By risk level, from minimal risk to banned uses",
+      "By capping the size of training datasets"
+    ],
+    "answer": "By risk level, from minimal risk to banned uses",
+    "category": "ethics",
+    "tags": [
+      "eu-ai-act",
+      "regulation",
+      "risk"
+    ],
+    "difficulty": 2,
+    "explanation": "The Act is risk-based: minimal-risk systems face almost nothing, high-risk uses face testing and documentation, and a short list of unacceptable uses is banned outright. The compute-limit option is the tempting miss because California's SB 1047 worked that way, but Brussels chose risk tiers instead.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Artificial Intelligence Act",
+      "label": "The EU AI Act on Wikipedia"
+    },
+    "answerAliases": [
+      "risk-based",
+      "risk based",
+      "risk levels",
+      "unacceptable risk"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0039",
+    "text": "Which of these did the EU AI Act place in its banned, unacceptable-risk category?",
+    "options": [
+      "AI-assisted medical imaging",
+      "Social scoring of citizens",
+      "Spam filtering for email",
+      "Product recommendations for shoppers"
+    ],
+    "answer": "Social scoring of citizens",
+    "category": "ethics",
+    "tags": [
+      "eu-ai-act",
+      "prohibited",
+      "regulation"
+    ],
+    "difficulty": 3,
+    "explanation": "Social scoring, like systems that rank citizens for access to public benefits, is banned outright, alongside real-time remote biometric identification for policing. Medical imaging is the tempting miss, but it lands in high-risk, meaning regulated and documented rather than forbidden.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Artificial Intelligence Act",
+      "label": "The EU AI Act on Wikipedia"
+    },
+    "answerAliases": [
+      "social scoring",
+      "unacceptable risk",
+      "prohibited"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0040",
+    "text": "In December 2023 The New York Times sued Microsoft and OpenAI. What did it allege?",
+    "options": [
+      "Training on millions of its articles without permission",
+      "Copying the design of its printing presses",
+      "Poaching its entire editorial staff",
+      "Blocking its site from search results"
+    ],
+    "answer": "Training on millions of its articles without permission",
+    "category": "ethics",
+    "tags": [
+      "copyright",
+      "nyt",
+      "lawsuit"
+    ],
+    "difficulty": 1,
+    "explanation": "The Times said millions of its articles were used to train models that now compete with it, and showed outputs reproducing its text nearly verbatim. The poaching option is the tempting miss in an industry full of talent raids, but this suit was always about training data, not hiring.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Copyright and artificial intelligence",
+      "label": "Copyright and artificial intelligence on Wikipedia"
+    },
+    "answerAliases": [
+      "The New York Times",
+      "New York Times",
+      "Microsoft",
+      "OpenAI",
+      "copyright infringement"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0041",
+    "text": "What evidence did the Times offer that chatbots had memorized its reporting?",
+    "options": [
+      "Leaked emails from OpenAI engineers",
+      "Testimony from data-labelling contractors",
+      "Hidden watermarks found in GPT-4 output",
+      "Near-verbatim reproductions of its articles"
+    ],
+    "answer": "Near-verbatim reproductions of its articles",
+    "category": "ethics",
+    "tags": [
+      "copyright",
+      "nyt",
+      "memorization"
+    ],
+    "difficulty": 3,
+    "explanation": "The complaint exhibited model outputs that repeated Times investigations almost word for word, including paywalled passages. The watermark option is the tempting miss because watermarking is a real proposed fix for provenance, but the Times relied on plain regurgitation anyone could reproduce.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Copyright and artificial intelligence",
+      "label": "Copyright and artificial intelligence on Wikipedia"
+    },
+    "answerAliases": [
+      "verbatim",
+      "memorization",
+      "memorized"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0042",
+    "text": "In 2023 Getty Images sued Stability AI in London. What was the core complaint?",
+    "options": [
+      "Copying the layout of its website",
+      "Hacking its customer photo archives",
+      "Training on its watermarked photos without a licence",
+      "Bribing its contributing photographers"
+    ],
+    "answer": "Training on its watermarked photos without a licence",
+    "category": "ethics",
+    "tags": [
+      "copyright",
+      "getty",
+      "lawsuit"
+    ],
+    "difficulty": 2,
+    "explanation": "Getty said Stability AI scraped millions of its images, watermarks included, to train Stable Diffusion, and pointed to outputs that still carried a distorted Getty watermark. The hacking option is the tempting miss, but nothing was breached; the photos were scraped from the open web.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Copyright and artificial intelligence",
+      "label": "Copyright and artificial intelligence on Wikipedia"
+    },
+    "answerAliases": [
+      "Getty Images",
+      "Getty",
+      "Stability AI",
+      "watermark"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0043",
+    "text": "In January 2023 three artists sued Stability AI, Midjourney and DeviantArt in San Francisco. What did they allege?",
+    "options": [
+      "The companies claimed copyright over the artists' styles",
+      "Their art was used to train image models without consent",
+      "The models forged their signatures onto new works",
+      "Their portfolios were deleted from art websites"
+    ],
+    "answer": "Their art was used to train image models without consent",
+    "category": "ethics",
+    "tags": [
+      "copyright",
+      "artists",
+      "lawsuit"
+    ],
+    "difficulty": 2,
+    "explanation": "Sarah Andersen, Kelly McKernan and Karla Ortiz said their copyrighted work was scraped into training sets like LAION without consent, compensation or credit. The style-copyright option is the tempting miss, since style mimicry was the cultural grievance, but the legal claim was about copying works into training data.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Copyright and artificial intelligence",
+      "label": "Copyright and artificial intelligence on Wikipedia"
+    },
+    "answerAliases": [
+      "Midjourney",
+      "DeviantArt",
+      "Stability AI",
+      "Andersen"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0044",
+    "text": "How long did the 2023 SAG-AFTRA actors' strike last?",
+    "options": [
+      "43 days",
+      "89 days",
+      "148 days",
+      "118 days"
+    ],
+    "answer": "118 days",
+    "category": "ethics",
+    "tags": [
+      "sag-aftra",
+      "strike",
+      "labour"
+    ],
+    "difficulty": 2,
+    "explanation": "Actors walked out from 14 July to 9 November 2023, 118 days, the longest actors' strike in Hollywood history. The 148-day option is the tempting miss because that was the writers' strike the same year; the actors were out a month less.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "2023 SAG-AFTRA strike",
+      "label": "2023 SAG-AFTRA strike on Wikipedia"
+    },
+    "answerAliases": [
+      "118 days",
+      "118-day",
+      "July 14 to November 9"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0045",
+    "text": "What did the 2023 Writers Guild deal say about AI and screenwriting credit?",
+    "options": [
+      "AI cannot be credited as a writer and studios must disclose AI use",
+      "Studios may credit AI tools as co-writers",
+      "Writers must use studio-provided AI for all drafts",
+      "AI scripts enter the public domain immediately"
+    ],
+    "answer": "AI cannot be credited as a writer and studios must disclose AI use",
+    "category": "ethics",
+    "tags": [
+      "wga",
+      "strike",
+      "labour"
+    ],
+    "difficulty": 2,
+    "explanation": "AI is not a writer under the contract, studios must tell writers when material is AI-generated, and they cannot force writers to use it. The co-writer option is the tempting miss because it sounds like a compromise Hollywood would offer, but the guild won the opposite: AI gets no credit at all.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "2023 Writers Guild of America strike",
+      "label": "2023 Writers Guild of America strike on Wikipedia"
+    },
+    "answerAliases": [
+      "Writers Guild",
+      "WGA",
+      "cannot be credited",
+      "disclose"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0046",
+    "text": "In the 2013 film Her, who voiced the AI operating system Samantha?",
+    "options": [
+      "Emma Stone",
+      "Natalie Portman",
+      "Scarlett Johansson",
+      "Anne Hathaway"
+    ],
+    "answer": "Scarlett Johansson",
+    "category": "ethics",
+    "tags": [
+      "her",
+      "voice",
+      "johansson"
+    ],
+    "difficulty": 1,
+    "explanation": "Johansson replaced Samantha Morton late in production and voiced the OS Theodore falls for, which is why her later dispute with OpenAI over a ChatGPT voice carried extra charge. Portman is the tempting miss as another A-list voice, but she was never attached to the role.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Her (2013 film)",
+      "label": "Her (2013 film) on Wikipedia"
+    },
+    "answerAliases": [
+      "Scarlett Johansson",
+      "Johansson",
+      "Samantha"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0047",
+    "text": "In May 2024 OpenAI paused which ChatGPT voice after comparisons to Scarlett Johansson?",
+    "options": [
+      "Breeze",
+      "Sky",
+      "Cove",
+      "Ember"
+    ],
+    "answer": "Sky",
+    "category": "ethics",
+    "tags": [
+      "sky",
+      "voice",
+      "openai"
+    ],
+    "difficulty": 1,
+    "explanation": "Sky was pulled days after the GPT-4o demo because listeners, including Johansson's family, heard her in it, and Altman had primed the comparison with a one-word post, her. Breeze, Cove and Ember are real ChatGPT voices too, which is why the question only works if you remember which one sounded like Samantha.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GPT-4o",
+      "label": "GPT-4o on Wikipedia"
+    },
+    "answerAliases": [
+      "Sky",
+      "Johansson",
+      "paused"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0048",
+    "text": "Who co-authored the 2018 Gender Shades study of commercial face classifiers?",
+    "options": [
+      "Fei-Fei Li and Kate Crawford",
+      "Yann LeCun and Emily Bender",
+      "Andrew Ng and Meredith Whittaker",
+      "Joy Buolamwini and Timnit Gebru"
+    ],
+    "answer": "Joy Buolamwini and Timnit Gebru",
+    "category": "ethics",
+    "tags": [
+      "gender-shades",
+      "bias",
+      "audit"
+    ],
+    "difficulty": 3,
+    "explanation": "Buolamwini and Gebru, then at the MIT Media Lab, tested systems from IBM, Microsoft and Face++ and found the worst accuracy on darker-skinned women. The Li-Crawford pairing is the tempting miss because both are prominent critics of biased data, but neither ran this audit.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Joy Buolamwini",
+      "label": "Joy Buolamwini on Wikipedia"
+    },
+    "answerAliases": [
+      "Buolamwini",
+      "Timnit Gebru",
+      "Gebru",
+      "Gender Shades"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0049",
+    "text": "Which group did Gender Shades find commercial face classifiers failed most often?",
+    "options": [
+      "Darker-skinned women",
+      "Lighter-skinned men",
+      "Darker-skinned men",
+      "Lighter-skinned women"
+    ],
+    "answer": "Darker-skinned women",
+    "category": "ethics",
+    "tags": [
+      "gender-shades",
+      "bias",
+      "fairness"
+    ],
+    "difficulty": 2,
+    "explanation": "Error rates peaked near 35 percent for darker-skinned women and fell below 1 percent for lighter-skinned men, showing the disparity was intersectional rather than about race or gender alone. Darker-skinned men are the tempting miss, but their error rates sat well below the worst group.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Joy Buolamwini",
+      "label": "Joy Buolamwini on Wikipedia"
+    },
+    "answerAliases": [
+      "darker-skinned",
+      "darker skinned",
+      "34.7",
+      "error rates"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0050",
+    "text": "What is COMPAS, the software ProPublica investigated in 2016?",
+    "options": [
+      "A hiring algorithm used by tech firms",
+      "A credit scoring app for landlords",
+      "A recidivism risk score used in US courts",
+      "A face recognition system for police"
+    ],
+    "answer": "A recidivism risk score used in US courts",
+    "category": "ethics",
+    "tags": [
+      "compas",
+      "bias",
+      "justice"
+    ],
+    "difficulty": 2,
+    "explanation": "COMPAS, built by Northpointe, scores defendants' likelihood of reoffending and is used in sentencing and bail decisions across US states. The hiring-algorithm option is the tempting miss because biased hiring tools are the other classic case, but COMPAS decides liberty, not jobs.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "COMPAS (software)",
+      "label": "COMPAS (software) on Wikipedia"
+    },
+    "answerAliases": [
+      "recidivism",
+      "Northpointe",
+      "risk assessment"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0051",
+    "text": "What did ProPublica's 2016 Machine Bias analysis find about COMPAS?",
+    "options": [
+      "It ignored criminal history entirely",
+      "Black defendants were far more likely to be wrongly labelled high risk",
+      "White defendants received systematically harsher scores",
+      "Judges overrode its scores in nearly every case"
+    ],
+    "answer": "Black defendants were far more likely to be wrongly labelled high risk",
+    "category": "ethics",
+    "tags": [
+      "compas",
+      "bias",
+      "propublica"
+    ],
+    "difficulty": 3,
+    "explanation": "Black defendants who did not reoffend were nearly twice as likely as white ones to be misclassified as high risk, while white reoffenders were more often mislabelled low risk. The mirrored option is the tempting miss, but the study's whole point was the asymmetry, not equal harshness.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "COMPAS (software)",
+      "label": "COMPAS (software) on Wikipedia"
+    },
+    "answerAliases": [
+      "false positive",
+      "Black defendants",
+      "Machine Bias"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0052",
+    "text": "Margaret Mitchell and colleagues proposed Model Cards in 2019. What is a model card?",
+    "options": [
+      "A licence for commercial use of open weights",
+      "A leaderboard ranking benchmark scores",
+      "A diagram of a neural architecture",
+      "A report of a model's intended uses, limits and test results"
+    ],
+    "answer": "A report of a model's intended uses, limits and test results",
+    "category": "ethics",
+    "tags": [
+      "model-cards",
+      "documentation",
+      "mitchell"
+    ],
+    "difficulty": 2,
+    "explanation": "A model card is short documentation shipped with a model: what it is for, what it is not for, how it was evaluated and where it fails. The leaderboard option is the tempting miss, but a card reports one model's limits rather than ranking many.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Margaret Mitchell (scientist)",
+      "label": "Margaret Mitchell on Wikipedia"
+    },
+    "answerAliases": [
+      "Model Cards",
+      "Model Cards for Model Reporting",
+      "intended use",
+      "limitations"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0053",
+    "text": "The Model Cards paper came out of research at which company in 2019?",
+    "options": [
+      "Google",
+      "Microsoft",
+      "Meta",
+      "IBM"
+    ],
+    "answer": "Google",
+    "category": "ethics",
+    "tags": [
+      "model-cards",
+      "google",
+      "documentation"
+    ],
+    "difficulty": 2,
+    "explanation": "Mitchell wrote it with Google colleagues including Timnit Gebru, months before both women's exits became ethics flashpoints of their own. Microsoft is the tempting miss because its later responsible-AI reports look similar, but Model Cards is a Google paper.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Margaret Mitchell (scientist)",
+      "label": "Margaret Mitchell on Wikipedia"
+    },
+    "answerAliases": [
+      "Google"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0054",
+    "text": "Timnit Gebru and colleagues proposed Datasheets for Datasets in 2018. What does a datasheet document?",
+    "options": [
+      "A model's benchmark scores across tasks",
+      "A lab's funding sources and sponsors",
+      "A dataset's origins, contents and collection process",
+      "A regulator's inspection history"
+    ],
+    "answer": "A dataset's origins, contents and collection process",
+    "category": "ethics",
+    "tags": [
+      "datasheets",
+      "documentation",
+      "gebru"
+    ],
+    "difficulty": 3,
+    "explanation": "Modelled on electronics component datasheets, it asks creators to record why a dataset was built, what is in it, how it was collected and what it should not be used for. The benchmark option is the tempting miss, but that is what Model Cards cover; datasheets are about the data underneath.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1803.09010",
+      "label": "Datasheets for Datasets on arXiv"
+    },
+    "answerAliases": [
+      "Datasheets for Datasets",
+      "Datasheets",
+      "dataset"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0055",
+    "text": "The 2021 paper co-authored by Timnit Gebru warning about ever-larger language models is known by what phrase?",
+    "options": [
+      "Attention Is All You Need",
+      "Stochastic Parrots",
+      "Constitutional AI",
+      "Scaling Laws"
+    ],
+    "answer": "Stochastic Parrots",
+    "category": "ethics",
+    "tags": [
+      "stochastic-parrots",
+      "gebru",
+      "critique"
+    ],
+    "difficulty": 3,
+    "explanation": "On the Dangers of Stochastic Parrots argued giant models parrot patterns without understanding while concentrating environmental and social costs, and its internal review dispute led to Gebru's exit from Google. The scaling-laws option is the tempting miss, since the paper is a direct reply to that mindset, not an instance of it.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Timnit Gebru",
+      "label": "Timnit Gebru on Wikipedia"
+    },
+    "answerAliases": [
+      "Stochastic Parrots",
+      "stochastic parrots",
+      "On the Dangers of Stochastic Parrots"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0056",
+    "text": "Why did thousands of Google employees protest Project Maven in 2018?",
+    "options": [
+      "It censored search results for foreign governments",
+      "It sold user emails to advertisers",
+      "It automated layoffs across Google offices",
+      "It analysed drone surveillance footage for the US military"
+    ],
+    "answer": "It analysed drone surveillance footage for the US military",
+    "category": "ethics",
+    "tags": [
+      "maven",
+      "google",
+      "military"
+    ],
+    "difficulty": 2,
+    "explanation": "Maven used Google vision models to flag objects in Pentagon drone footage, and the 2018 reveal triggered petitions and resignations. The censorship option is the tempting miss because that was the separate Dragonfly controversy, also 2018, also Google.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Project Maven",
+      "label": "Project Maven on Wikipedia"
+    },
+    "answerAliases": [
+      "drone",
+      "Department of Defense",
+      "military",
+      "surveillance"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0057",
+    "text": "What did Google announce about the Maven contract after the 2018 protests?",
+    "options": [
+      "It would not seek to renew it",
+      "It would expand it to all combat drones",
+      "It would transfer it to Microsoft",
+      "It would classify every detail of it"
+    ],
+    "answer": "It would not seek to renew it",
+    "category": "ethics",
+    "tags": [
+      "maven",
+      "google",
+      "military"
+    ],
+    "difficulty": 2,
+    "explanation": "Google told the Pentagon it would let the contract lapse in 2019, then published a set of AI Principles. The transfer option is the tempting miss, since Microsoft did pick up later military cloud work, but Maven itself simply wound down at Google.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Project Maven",
+      "label": "Project Maven on Wikipedia"
+    },
+    "answerAliases": [
+      "renew",
+      "contract",
+      "did not renew"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0058",
+    "text": "Google's June 2018 AI Principles, written after Maven, rule out which application?",
+    "options": [
+      "Search engines in new languages",
+      "Cloud tools for hospitals",
+      "Weapons that injure people",
+      "Translation for low-resource languages"
+    ],
+    "answer": "Weapons that injure people",
+    "category": "ethics",
+    "tags": [
+      "ai-principles",
+      "google",
+      "weapons"
+    ],
+    "difficulty": 3,
+    "explanation": "The principles ban weapons, surveillance violating international norms, and work contravening human rights, while explicitly blessing safety, science and medicine. Hospital tools are the tempting miss, but medical AI is on the approved list, not the banned one.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Project Maven",
+      "label": "Project Maven on Wikipedia"
+    },
+    "answerAliases": [
+      "AI Principles",
+      "weapons",
+      "injure"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0059",
+    "text": "The 2015 open letter calling for a ban on offensive autonomous weapons was launched at which conference?",
+    "options": [
+      "NeurIPS in Montreal",
+      "IJCAI in Buenos Aires",
+      "ICML in Lille",
+      "AAAI in Austin"
+    ],
+    "answer": "IJCAI in Buenos Aires",
+    "category": "ethics",
+    "tags": [
+      "autonomous-weapons",
+      "open-letter",
+      "ban"
+    ],
+    "difficulty": 3,
+    "explanation": "It was presented at IJCAI-15 in Buenos Aires with signatures from Hawking, Musk, Wozniak and Hassabis, framing killer robots as a third revolution in warfare. NeurIPS Montreal is the tempting miss as the famous Canadian venue, but the letter belongs to the Buenos Aires meeting.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Lethal autonomous weapon",
+      "label": "Lethal autonomous weapon on Wikipedia"
+    },
+    "answerAliases": [
+      "IJCAI",
+      "Buenos Aires",
+      "2015",
+      "open letter",
+      "ban"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0060",
+    "text": "The 2017 short film Slaughterbots depicts what fictional weapon?",
+    "options": [
+      "Giant piloted battle mechas",
+      "Orbital laser satellites",
+      "Self-replicating nanobot swarms",
+      "Palm-sized autonomous killer drones"
+    ],
+    "answer": "Palm-sized autonomous killer drones",
+    "category": "ethics",
+    "tags": [
+      "slaughterbots",
+      "autonomous-weapons",
+      "film"
+    ],
+    "difficulty": 1,
+    "explanation": "The seven-minute film shows swarms of tiny face-recognizing drones assassinating opponents, and was made to push the campaign against lethal autonomous weapons. The nanobot option is the tempting miss, but its killers are palm-sized and conventionally explosive, not self-replicating.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Slaughterbots",
+      "label": "Slaughterbots on Wikipedia"
+    },
+    "answerAliases": [
+      "drones",
+      "microdrones",
+      "autonomous",
+      "killer robots"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0061",
+    "text": "Which city became the first major US city to ban government use of face recognition in 2019?",
+    "options": [
+      "San Francisco",
+      "New York City",
+      "Seattle",
+      "Boston"
+    ],
+    "answer": "San Francisco",
+    "category": "ethics",
+    "tags": [
+      "facial-recognition",
+      "ban",
+      "cities"
+    ],
+    "difficulty": 2,
+    "explanation": "San Francisco's supervisors voted in May 2019 to bar city agencies, including police, from acquiring or using the technology. Boston is the tempting miss because it passed its own ban, but a year later, in 2020.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Facial recognition system",
+      "label": "Facial recognition system on Wikipedia"
+    },
+    "answerAliases": [
+      "San Francisco",
+      "ban",
+      "2019"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0062",
+    "text": "Which state's 2008 biometric privacy law became the main US tool for suing over face data?",
+    "options": [
+      "California",
+      "Texas",
+      "Illinois",
+      "New York"
+    ],
+    "answer": "Illinois",
+    "category": "ethics",
+    "tags": [
+      "bipa",
+      "facial-recognition",
+      "law"
+    ],
+    "difficulty": 3,
+    "explanation": "Illinois' BIPA requires written consent before collecting biometrics and lets people sue directly, which produced the $650 million Facebook face-tagging settlement. California is the tempting miss because of the CCPA, but that law lacks BIPA's private right of action for biometrics.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Biometric Information Privacy Act",
+      "label": "Biometric Information Privacy Act on Wikipedia"
+    },
+    "answerAliases": [
+      "Illinois",
+      "Biometric Information Privacy Act",
+      "BIPA"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0063",
+    "text": "Where did the term deepfake come from in 2017?",
+    "options": [
+      "A Stanford course on synthetic media",
+      "A Reddit user posting AI face-swap porn",
+      "A marketing campaign for a sci-fi film",
+      "A Pentagon report on disinformation"
+    ],
+    "answer": "A Reddit user posting AI face-swap porn",
+    "category": "ethics",
+    "tags": [
+      "deepfake",
+      "origin",
+      "culture"
+    ],
+    "difficulty": 2,
+    "explanation": "A Reddit user called deepfakes posted non-consensual celebrity face-swap porn built with deep learning, and the handle became the generic noun. The Pentagon option is the tempting miss because the military studied the threat early, but the word was born on Reddit.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Deepfake",
+      "label": "Deepfake on Wikipedia"
+    },
+    "answerAliases": [
+      "Reddit",
+      "deepfakes",
+      "face-swap"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0064",
+    "text": "Which 2024 election incident involved AI robocalls imitating President Biden?",
+    "options": [
+      "The Iowa caucus livestream",
+      "The Ohio Senate debate",
+      "The Texas ballot-measure ads",
+      "The New Hampshire primary robocalls"
+    ],
+    "answer": "The New Hampshire primary robocalls",
+    "category": "ethics",
+    "tags": [
+      "deepfake",
+      "election",
+      "robocall"
+    ],
+    "difficulty": 3,
+    "explanation": "Days before the January 2024 New Hampshire primary, voters got calls in a faked Biden voice urging them to skip voting; the FCC then banned AI voices in robocalls and fined the operator millions. The Iowa option is the tempting miss from the same primary season, but the fake calls hit New Hampshire.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Audio deepfake",
+      "label": "Audio deepfake on Wikipedia"
+    },
+    "answerAliases": [
+      "New Hampshire",
+      "robocall",
+      "Biden"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0065",
+    "text": "What was Books3, the dataset exposed in 2023 reporting on AI training data?",
+    "options": [
+      "A collection of pirated e-books",
+      "A set of 3D scans of libraries",
+      "A benchmark of book-review sentiment",
+      "A library of public-domain audiobooks"
+    ],
+    "answer": "A collection of pirated e-books",
+    "category": "ethics",
+    "tags": [
+      "books3",
+      "copyright",
+      "training-data"
+    ],
+    "difficulty": 2,
+    "explanation": "Books3 held the text of nearly 200,000 published books scraped from pirate sites, and turned up in training-data recreations for models in the LLaMA family. The public-domain option is the tempting miss, but these were in-copyright bestsellers, which is why authors sued.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "Books3",
+      "pirated books"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0066",
+    "text": "What did the 2019 art project ImageNet Roulette reveal?",
+    "options": [
+      "That image models could not recognize any faces",
+      "That its website leaked visitors' photos",
+      "That ImageNet labels included racist and offensive categories",
+      "That the dataset contained only American faces"
+    ],
+    "answer": "That ImageNet labels included racist and offensive categories",
+    "category": "ethics",
+    "tags": [
+      "imagenet-roulette",
+      "bias",
+      "art"
+    ],
+    "difficulty": 3,
+    "explanation": "Crawford and Trevor Paglen let anyone upload a selfie and be classified with raw ImageNet labels, exposing slurs baked into the taxonomy. The leak option is the tempting miss, but the scandal was what the labels said, not where photos went.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Kate Crawford",
+      "label": "Kate Crawford on Wikipedia"
+    },
+    "answerAliases": [
+      "ImageNet Roulette",
+      "Paglen",
+      "ImageNet",
+      "labels"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0067",
+    "text": "Why did MIT withdraw the 80 Million Tiny Images dataset in 2020?",
+    "options": [
+      "It had grown too large to distribute",
+      "An audit found slurs and offensive labels in it",
+      "Its images were all under strict copyright",
+      "A company bought exclusive rights to it"
+    ],
+    "answer": "An audit found slurs and offensive labels in it",
+    "category": "ethics",
+    "tags": [
+      "tiny-images",
+      "bias",
+      "deletion"
+    ],
+    "difficulty": 2,
+    "explanation": "An audit prompted by the ImageNet Roulette fallout found racist and sexist slurs among its WordNet-derived labels, so MIT took the dataset offline and asked researchers to delete copies. The size option is the tempting miss, but 80 million images was the point of it, not the problem.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "80 Million Tiny Images",
+      "label": "80 Million Tiny Images on Wikipedia"
+    },
+    "answerAliases": [
+      "withdrawn",
+      "removed",
+      "offensive",
+      "slurs",
+      "audit"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0068",
+    "text": "Which country launched the first state-backed AI Safety Institute in November 2023?",
+    "options": [
+      "The United States",
+      "France",
+      "Japan",
+      "The United Kingdom"
+    ],
+    "answer": "The United Kingdom",
+    "category": "ethics",
+    "tags": [
+      "ai-safety-institute",
+      "uk",
+      "governance"
+    ],
+    "difficulty": 1,
+    "explanation": "Britain stood up its AI Safety Institute ahead of the Bletchley summit, the first government body dedicated to testing frontier models. The US is the tempting miss because it opened its own institute days later, inside its national standards body.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI Safety Institute",
+      "label": "AI Safety Institute on Wikipedia"
+    },
+    "answerAliases": [
+      "United Kingdom",
+      "UK",
+      "first",
+      "November 2023"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0069",
+    "text": "The US AI Safety Institute was set up in 2023 inside which agency?",
+    "options": [
+      "The National Institute of Standards and Technology",
+      "NASA",
+      "DARPA",
+      "The National Science Foundation"
+    ],
+    "answer": "The National Institute of Standards and Technology",
+    "category": "ethics",
+    "tags": [
+      "ai-safety-institute",
+      "us",
+      "nist"
+    ],
+    "difficulty": 3,
+    "explanation": "It sits in NIST, the Commerce Department lab that already writes measurement standards, under founding director Elizabeth Kelly. DARPA is the tempting miss as the famous research funder, but the institute is a standards body, not a grant-maker.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI Safety Institute",
+      "label": "AI Safety Institute on Wikipedia"
+    },
+    "answerAliases": [
+      "NIST",
+      "National Institute of Standards and Technology"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0070",
+    "text": "What did Air Canada's chatbot invent that the airline was ordered to honour in 2024?",
+    "options": [
+      "A free first-class upgrade rule",
+      "A lifetime companion pass",
+      "A bereavement discount policy",
+      "A same-day cash refund guarantee"
+    ],
+    "answer": "A bereavement discount policy",
+    "category": "ethics",
+    "tags": [
+      "air-canada",
+      "chatbot",
+      "liability"
+    ],
+    "difficulty": 3,
+    "explanation": "The bot told a grieving passenger he could buy a full fare and claim a bereavement discount within 90 days, a policy that did not exist, and the tribunal made the airline pay the difference. The refund option is the tempting miss, but the case turned on the invented discount, not a refund promise.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Moffatt v. Air Canada",
+      "label": "Moffatt v. Air Canada on Wikipedia"
+    },
+    "answerAliases": [
+      "bereavement",
+      "chatbot",
+      "refund",
+      "bereavement fare"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0071",
+    "text": "US courts weighing AI training-data cases apply which legal doctrine?",
+    "options": [
+      "Double jeopardy",
+      "Fair use",
+      "Eminent domain",
+      "Attorney-client privilege"
+    ],
+    "answer": "Fair use",
+    "category": "ethics",
+    "tags": [
+      "fair-use",
+      "copyright",
+      "law"
+    ],
+    "difficulty": 1,
+    "explanation": "Fair use lets courts excuse copying after weighing purpose, nature, amount and market effect, and the fight is over whether training is transformative. Eminent domain is the tempting miss as another takings doctrine, but it governs seizing property, not copying expression.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Fair use",
+      "label": "Fair use on Wikipedia"
+    },
+    "answerAliases": [
+      "fair use",
+      "Fair use"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0072",
+    "text": "Which earlier ruling do AI companies cite to defend training on copyrighted books?",
+    "options": [
+      "Sony v. Universal over the Betamax",
+      "A and M v. Napster over file sharing",
+      "Eldred v. Ashcroft over term extension",
+      "Authors Guild v. Google over Google Books"
+    ],
+    "answer": "Authors Guild v. Google over Google Books",
+    "category": "ethics",
+    "tags": [
+      "fair-use",
+      "copyright",
+      "precedent"
+    ],
+    "difficulty": 4,
+    "explanation": "The Second Circuit held in 2015 that scanning books to build a searchable index was transformative fair use, and AI labs argue training is the same kind of non-expressive use. Napster is the tempting miss as the famous copying case, but it lost, so no defendant wants to cite it.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Fair use",
+      "label": "Fair use on Wikipedia"
+    },
+    "answerAliases": [
+      "Google Books",
+      "Authors Guild",
+      "transformative"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0075",
+    "text": "Which lab introduced Constitutional AI in 2022?",
+    "options": [
+      "OpenAI",
+      "Anthropic",
+      "DeepMind",
+      "Meta"
+    ],
+    "answer": "Anthropic",
+    "category": "ethics",
+    "tags": [
+      "constitutional-ai",
+      "anthropic",
+      "alignment"
+    ],
+    "difficulty": 1,
+    "explanation": "Anthropic's Bai and colleagues published it in December 2022 and used it to train Claude with far less human harm-labelling. OpenAI is the tempting miss because RLHF is associated with ChatGPT, but the constitution idea is Anthropic's.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2212.08073",
+      "label": "Constitutional AI paper on arXiv"
+    },
+    "answerAliases": [
+      "Anthropic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0077",
+    "text": "The 2019 paper Risks from Learned Optimization warned about which scenario?",
+    "options": [
+      "A learned optimizer pursuing its own inner goals",
+      "GPUs overheating during very long runs",
+      "Duplicate examples contaminating datasets",
+      "Benchmarks leaking into training data"
+    ],
+    "answer": "A learned optimizer pursuing its own inner goals",
+    "category": "ethics",
+    "tags": [
+      "mesa-optimization",
+      "inner-alignment",
+      "paper"
+    ],
+    "difficulty": 4,
+    "explanation": "Hubinger and colleagues argued training can produce a mesa-optimizer: a model that optimizes for an inner objective that diverges from the training loss once deployed. The benchmark-leak option is the tempting miss as a real evaluation hazard, but this paper is about goals forming inside the model, not data hygiene.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1906.01820",
+      "label": "Risks from Learned Optimization on arXiv"
+    },
+    "answerAliases": [
+      "mesa-optimizer",
+      "inner goals",
+      "Risks from Learned Optimization"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0078",
+    "text": "Bostrom's Superintelligence (2014) illustrates rogue optimization with which thought experiment?",
+    "options": [
+      "A trolley problem",
+      "A prisoner's dilemma",
+      "A paperclip maximizer",
+      "A Chinese room"
+    ],
+    "answer": "A paperclip maximizer",
+    "category": "ethics",
+    "tags": [
+      "paperclip",
+      "bostrom",
+      "thought-experiment"
+    ],
+    "difficulty": 2,
+    "explanation": "An AI told to maximize paperclips converts the planet into paperclips, showing intelligence and goals are independent, the orthogonality thesis in miniature. The Chinese room is the tempting miss as another famous AI thought experiment, but Searle's is about understanding, not runaway goals.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Existential risk from artificial intelligence",
+      "label": "Existential risk from artificial intelligence on Wikipedia"
+    },
+    "answerAliases": [
+      "paperclip",
+      "Bostrom",
+      "paperclip maximizer"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0079",
+    "text": "What problem does ELK name in AI safety?",
+    "options": [
+      "Erasing leaked knowledge from open weights",
+      "Getting a model to report what it internally believes",
+      "Estimating legal knowledge for compliance bots",
+      "Encrypting latent keys in model servers"
+    ],
+    "answer": "Getting a model to report what it internally believes",
+    "category": "ethics",
+    "tags": [
+      "elk",
+      "honesty",
+      "safety"
+    ],
+    "difficulty": 4,
+    "explanation": "Eliciting Latent Knowledge, posed by Christiano and colleagues in 2021, asks how to train a model to say what it actually believes rather than what earns reward, since a capable liar passes every behavioral test. Interpretability is the tempting nearby field, but it reverse-engineers weights, while ELK wants truthful reports from the model itself.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "Eliciting Latent Knowledge",
+      "ELK"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0080",
+    "text": "The 2023 Statement on AI Risk compared mitigating AI extinction risk to what?",
+    "options": [
+      "Asteroids and volcanoes",
+      "Recessions and inflation",
+      "Droughts and famines",
+      "Pandemics and nuclear war"
+    ],
+    "answer": "Pandemics and nuclear war",
+    "category": "ethics",
+    "tags": [
+      "cais",
+      "statement",
+      "existential-risk"
+    ],
+    "difficulty": 2,
+    "explanation": "The 22-word CAIS statement said AI extinction risk should be a global priority alongside pandemics and nuclear war, and was signed by Altman, Hassabis, Bengio and others. The asteroid option is the tempting miss as another extinction cliche, but the statement named human-made catastrophes.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Statement on AI risk",
+      "label": "Statement on AI risk on Wikipedia"
+    },
+    "answerAliases": [
+      "pandemics",
+      "nuclear war",
+      "extinction"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0081",
+    "text": "The March 2023 Future of Life letter asked labs to pause training for how long?",
+    "options": [
+      "At least six months",
+      "At least six weeks",
+      "At least one year",
+      "At least ninety days"
+    ],
+    "answer": "At least six months",
+    "category": "ethics",
+    "tags": [
+      "pause-letter",
+      "fli",
+      "governance"
+    ],
+    "difficulty": 1,
+    "explanation": "It asked for at least six months before training anything more powerful than GPT-4, to let safety work catch up. A year is the tempting miss, since the debate dragged on that long, but the letter itself named six months.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Pause Giant AI Experiments: An Open Letter",
+      "label": "Pause Giant AI Experiments: An Open Letter on Wikipedia"
+    },
+    "answerAliases": [
+      "six months",
+      "6-month",
+      "pause"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0082",
+    "text": "In July 2023 seven AI companies made voluntary safety pledges at which venue?",
+    "options": [
+      "The UN General Assembly",
+      "The Davos forum",
+      "The White House",
+      "The European Parliament"
+    ],
+    "answer": "The White House",
+    "category": "ethics",
+    "tags": [
+      "voluntary-commitments",
+      "white-house",
+      "governance"
+    ],
+    "difficulty": 3,
+    "explanation": "Amazon, Anthropic, Google, Inflection, Meta, Microsoft and OpenAI pledged watermarking, red-teaming and public safety reports at the White House. Davos is the tempting miss as the classic pledge venue, but Biden's team hosted this one.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Artificial intelligence safety",
+      "label": "Artificial intelligence safety on Wikipedia"
+    },
+    "answerAliases": [
+      "White House",
+      "voluntary commitments",
+      "July 2023"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0083",
+    "text": "Which four companies founded the Frontier Model Forum in July 2023?",
+    "options": [
+      "Meta, Apple, Amazon and Nvidia",
+      "Anthropic, Google, Microsoft and OpenAI",
+      "IBM, Intel, Oracle and Samsung",
+      "xAI, Mistral, Cohere and Inflection"
+    ],
+    "answer": "Anthropic, Google, Microsoft and OpenAI",
+    "category": "ethics",
+    "tags": [
+      "frontier-model-forum",
+      "industry",
+      "safety"
+    ],
+    "difficulty": 2,
+    "explanation": "The four labs behind the biggest 2023 models set up the Forum to share safety standards and fund evaluation research. The xAI-Mistral set is the tempting miss because those labs joined the conversation later, but the founders were the incumbents.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Artificial intelligence safety",
+      "label": "Artificial intelligence safety on Wikipedia"
+    },
+    "answerAliases": [
+      "Frontier Model Forum",
+      "Anthropic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0084",
+    "text": "Why did the US Copyright Office deny copyright for the images in Zarya of the Dawn?",
+    "options": [
+      "The comic was published outside the US",
+      "The author refused to register the work",
+      "The images were traced from photographs",
+      "They were generated by Midjourney, not a human author"
+    ],
+    "answer": "They were generated by Midjourney, not a human author",
+    "category": "ethics",
+    "tags": [
+      "copyright",
+      "zarya",
+      "authorship"
+    ],
+    "difficulty": 3,
+    "explanation": "The Office ruled in February 2023 that Midjourney's images lacked human authorship, though Kashtanova kept copyright in her text and arrangement. The tracing option is the tempting miss, but the issue was never copying; it was that no human made the pictures.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Zarya of the Dawn",
+      "label": "Zarya of the Dawn on Wikipedia"
+    },
+    "answerAliases": [
+      "Midjourney",
+      "Kristina Kashtanova",
+      "human authorship"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "eth-0085",
+    "text": "In 2024 a Hong Kong finance worker transferred $25 million after a video call with whom?",
+    "options": [
+      "Deepfaked copies of colleagues including the CFO",
+      "Actors hired by a rival bank",
+      "A ransomware gang reading a script",
+      "An AI assistant built into the meeting app"
+    ],
+    "answer": "Deepfaked copies of colleagues including the CFO",
+    "category": "ethics",
+    "tags": [
+      "deepfake",
+      "fraud",
+      "scam"
+    ],
+    "difficulty": 2,
+    "explanation": "Everyone else on the call, CFO included, was a real-time deepfake, and the worker only learned it when he checked with headquarters. The ransomware option is the tempting miss, but no malware or threats were involved, just faces that were never there.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Deepfake",
+      "label": "Deepfake on Wikipedia"
+    },
+    "answerAliases": [
+      "Hong Kong",
+      "CFO",
+      "video call"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
   }
 ]

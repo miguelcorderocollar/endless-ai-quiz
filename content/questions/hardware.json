@@ -941,5 +941,1875 @@
     ],
     "status": "draft",
     "addedAt": "2026-09-30"
+  },
+  {
+    "id": "hwr-0032",
+    "text": "What are tensor cores in Nvidia GPUs specially designed to speed up?",
+    "options": [
+      "The rendering of 3D graphics scenes",
+      "The encoding of video streams",
+      "The training of neural networks",
+      "The encryption of data at rest"
+    ],
+    "answer": "The training of neural networks",
+    "category": "hardware",
+    "tags": [
+      "tensor-core",
+      "nvidia",
+      "volta"
+    ],
+    "difficulty": 2,
+    "explanation": "Tensor cores are units that multiply small matrices and are intended to speed up the training of neural networks, which is why every datacenter Nvidia GPU since Volta has carried them. Rendering, video encoding and encryption are real GPU workloads, but they run on the CUDA cores, the RT and NVENC engines, or the host, not on tensor cores.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Volta (microarchitecture)",
+      "label": "Volta (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "tensor cores",
+      "Tensor Cores",
+      "training of neural networks"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0033",
+    "text": "Which Nvidia microarchitecture was the first to feature tensor cores?",
+    "options": [
+      "Volta",
+      "Kepler",
+      "Pascal",
+      "Maxwell"
+    ],
+    "answer": "Volta",
+    "category": "hardware",
+    "tags": [
+      "tensor-core",
+      "nvidia",
+      "volta"
+    ],
+    "difficulty": 1,
+    "explanation": "Volta, announced in May 2017 and first shipped in the Tesla V100, was Nvidia's first chip to feature tensor cores. Pascal is the tempting miss because it powered the DGX-1 that Jensen Huang hand-delivered to OpenAI in 2016, but it had no tensor cores.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Volta (microarchitecture)",
+      "label": "Volta (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "Volta",
+      "Volta microarchitecture"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0034",
+    "text": "Which Nvidia microarchitecture introduced dedicated ray tracing cores, or RT cores?",
+    "options": [
+      "Pascal",
+      "Turing",
+      "Kepler",
+      "Ampere"
+    ],
+    "answer": "Turing",
+    "category": "hardware",
+    "tags": [
+      "rt-core",
+      "nvidia",
+      "turing"
+    ],
+    "difficulty": 1,
+    "explanation": "Turing, introduced in August 2018, was the first architecture with dedicated RT cores for real-time ray tracing, alongside second-generation tensor cores. Ampere is the tempting miss because it refined ray tracing performance, but the dedicated hardware arrived with Turing.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Turing (microarchitecture)",
+      "label": "Turing (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "Turing",
+      "Turing microarchitecture",
+      "RT cores"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0035",
+    "text": "Which A100 feature lets a single GPU be split into up to seven independent instances?",
+    "options": [
+      "NVLink 3.0",
+      "TF32 tensor cores",
+      "Sparsity acceleration",
+      "Multi-instance GPU (MIG)"
+    ],
+    "answer": "Multi-instance GPU (MIG)",
+    "category": "hardware",
+    "tags": [
+      "a100",
+      "nvidia",
+      "mig"
+    ],
+    "difficulty": 2,
+    "explanation": "MIG partitions one A100 into up to seven separate instances, each with its own memory and compute, so a cloud can sell fractional GPUs without one tenant seeing another. NVLink 3.0 is the GPU-to-GPU interconnect, and TF32 and sparsity are tensor core features, none of which split the card.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Ampere (microarchitecture)",
+      "label": "Ampere (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "Multi-instance GPU",
+      "MIG",
+      "multi-instance GPU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0036",
+    "text": "Nvidia created NVLink to beat the bandwidth limits of which older interconnect?",
+    "options": [
+      "USB 3.0",
+      "PCI Express",
+      "SATA",
+      "Thunderbolt"
+    ],
+    "answer": "PCI Express",
+    "category": "hardware",
+    "tags": [
+      "nvlink",
+      "nvidia",
+      "interconnect"
+    ],
+    "difficulty": 2,
+    "explanation": "NVLink was built because PCI Express could not move data fast enough between CPUs and GPUs or between GPUs themselves; the first NVLink offered 20 GB/s per link against PCIe 3.0's 8 GT/s per lane. USB, SATA and Thunderbolt are peripheral buses that never carried GPU traffic at all.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "NVLink",
+      "label": "NVLink on Wikipedia"
+    },
+    "answerAliases": [
+      "PCI Express",
+      "PCIe",
+      "PCI Express"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0037",
+    "text": "Which company launched the MI300 series as its flagship generative AI accelerator?",
+    "options": [
+      "Intel",
+      "Qualcomm",
+      "Samsung",
+      "AMD"
+    ],
+    "answer": "AMD",
+    "category": "hardware",
+    "tags": [
+      "amd",
+      "mi300",
+      "accelerator"
+    ],
+    "difficulty": 1,
+    "explanation": "AMD announced the MI300A and MI300X in 2023 as its answer to Nvidia's H100, building them on the CDNA 3 architecture with chiplets and HBM3. Intel sells the Gaudi line, and Qualcomm and Samsung have not shipped a datacenter GPU of this class.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AMD Instinct",
+      "label": "AMD Instinct on Wikipedia"
+    },
+    "answerAliases": [
+      "AMD",
+      "Advanced Micro Devices"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0038",
+    "text": "Which Apple chip was the first to include a Neural Engine?",
+    "options": [
+      "Apple A11 Bionic",
+      "Apple A9",
+      "Apple A10",
+      "Apple M1"
+    ],
+    "answer": "Apple A11 Bionic",
+    "category": "hardware",
+    "tags": [
+      "neural-engine",
+      "apple",
+      "npu"
+    ],
+    "difficulty": 1,
+    "explanation": "The A11 Bionic, shipped in the iPhone 8 and iPhone X in 2017, was Apple's first chip with a Neural Engine, rated at 600 billion operations per second for Face ID and Animoji. The M1 is the tempting miss because it is Apple's most famous AI chip, but the Neural Engine debuted four years earlier in the A11.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Apple A11",
+      "label": "Apple A11 on Wikipedia"
+    },
+    "answerAliases": [
+      "Apple A11 Bionic",
+      "A11 Bionic",
+      "A11",
+      "Neural Engine"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0039",
+    "text": "Google's first-generation TPU, shipped in 2016, was built mainly for which kind of workload?",
+    "options": [
+      "Training large models",
+      "Graphics rendering",
+      "Inference",
+      "Database storage"
+    ],
+    "answer": "Inference",
+    "category": "hardware",
+    "tags": [
+      "tpu",
+      "google",
+      "inference"
+    ],
+    "difficulty": 2,
+    "explanation": "The first TPU was an 8-bit matrix multiplication engine for inference, running search ranking, photo processing and Street View text recognition, and Google was still using CPUs and GPUs for training. The second-generation TPU in 2017 was the first Google chip built for both training and inference.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Tensor Processing Unit",
+      "label": "Tensor Processing Unit on Wikipedia"
+    },
+    "answerAliases": [
+      "inference",
+      "neural network inference",
+      "first-generation TPU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0040",
+    "text": "Which generation of Google's TPU added training support alongside inference?",
+    "options": [
+      "First-generation TPU",
+      "Third-generation TPU",
+      "Fourth-generation TPU",
+      "Second-generation TPU"
+    ],
+    "answer": "Second-generation TPU",
+    "category": "hardware",
+    "tags": [
+      "tpu",
+      "google",
+      "training"
+    ],
+    "difficulty": 2,
+    "explanation": "The second-generation TPU, announced in May 2017, added floating point and the bfloat16 format, which made it useful for both training and inference, and Google called it the industry's first production deep-learning training chip. The first generation was integer-only and inference-bound, and the later generations refined performance rather than adding the training capability.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Tensor Processing Unit",
+      "label": "Tensor Processing Unit on Wikipedia"
+    },
+    "answerAliases": [
+      "TPUv2",
+      "second-generation TPU",
+      "second generation TPU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0041",
+    "text": "Which British semiconductor company builds the Intelligence Processing Unit, or IPU?",
+    "options": [
+      "Graphcore",
+      "Cerebras",
+      "SambaNova",
+      "Groq"
+    ],
+    "answer": "Graphcore",
+    "category": "hardware",
+    "tags": [
+      "graphcore",
+      "ipu",
+      "uk"
+    ],
+    "difficulty": 1,
+    "explanation": "Graphcore, founded in Bristol in 2016 by Simon Knowles and Nigel Toon, introduced the massively parallel Intelligence Processing Unit that holds the whole model on-chip. Cerebras builds a wafer-scale chip, Groq builds the LPU, and SambaNova builds the RDU, none of which is called an IPU.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Graphcore",
+      "label": "Graphcore on Wikipedia"
+    },
+    "answerAliases": [
+      "Graphcore",
+      "Graphcore Limited",
+      "Intelligence Processing Unit",
+      "IPU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0042",
+    "text": "Why did Nvidia create the H800 and A800 variants of its Hopper GPUs in 2022?",
+    "options": [
+      "To replace the H100 with a faster part",
+      "To comply with US export restrictions on chips to China",
+      "To enter the gaming GPU market",
+      "To switch to a cheaper Samsung process"
+    ],
+    "answer": "To comply with US export restrictions on chips to China",
+    "category": "hardware",
+    "tags": [
+      "export-controls",
+      "h800",
+      "a800",
+      "nvidia"
+    ],
+    "difficulty": 2,
+    "explanation": "In late 2022, US regulations limited exports of advanced chips to China, so Nvidia adapted the H100 into the H800 with lower interconnect bandwidth, and the A800 was the Ampere equivalent; both were later swept up in new US restrictions in 2023. They were cut-down parts, not faster or cheaper ones, and Nvidia's gaming line was never the point.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hopper (microarchitecture)",
+      "label": "Hopper (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "H800",
+      "A800",
+      "US export controls",
+      "export restrictions"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0043",
+    "text": "What was the main goal of the 2022 CHIPS and Science Act?",
+    "options": [
+      "To ban AI exports to China",
+      "To fund semiconductor manufacturing subsidies in the United States",
+      "To create a national social media company",
+      "To fund space tourism research"
+    ],
+    "answer": "To fund semiconductor manufacturing subsidies in the United States",
+    "category": "hardware",
+    "tags": [
+      "chips-act",
+      "policy",
+      "manufacturing"
+    ],
+    "difficulty": 1,
+    "explanation": "Signed by President Biden in August 2022, the act appropriated $52.7 billion, including $39 billion in subsidies for chip manufacturing on US soil, to reduce dependence on overseas fabs. It was about building plants at home, not about export bans, social media or space.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "CHIPS and Science Act",
+      "label": "CHIPS and Science Act on Wikipedia"
+    },
+    "answerAliases": [
+      "CHIPS and Science Act",
+      "CHIPS Act",
+      "$52.7 billion",
+      "chip manufacturing subsidies"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0044",
+    "text": "In 2024 Amazon agreed to buy a 960-megawatt nuclear-powered data center campus from which company?",
+    "options": [
+      "Talen Energy",
+      "Constellation Energy",
+      "NextEra Energy",
+      "Exelon"
+    ],
+    "answer": "Talen Energy",
+    "category": "hardware",
+    "tags": [
+      "nuclear",
+      "amazon",
+      "talen",
+      "energy"
+    ],
+    "difficulty": 3,
+    "explanation": "Amazon bought the data center campus next to Talen's Susquehanna nuclear plant in Pennsylvania for $650 million, with a power purchase agreement for up to 1,920 MW through 2042. Constellation is the tempting miss because it is the company restarting Three Mile Island for Microsoft, but the Susquehanna deal belongs to Talen.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162828025030559/a20250611pressreleasebusin.htm",
+      "label": "Talen Energy press release via SEC EDGAR"
+    },
+    "answerAliases": [
+      "Talen Energy",
+      "Talen Energy Corporation",
+      "Susquehanna"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0045",
+    "text": "Jim Keller was the lead architect of which AMD microarchitecture?",
+    "options": [
+      "K6",
+      "Zen",
+      "K8",
+      "Bulldozer"
+    ],
+    "answer": "K8",
+    "category": "hardware",
+    "tags": [
+      "jim-keller",
+      "amd",
+      "k8"
+    ],
+    "difficulty": 3,
+    "explanation": "Keller led the AMD K8 microarchitecture, which became the original Athlon 64 and introduced the x86-64 instruction set. Zen is the tempting miss because Keller returned to AMD in 2012 to work on Zen's early design, but the K8 was his defining AMD work.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Jim Keller (engineer)",
+      "label": "Jim Keller (engineer) on Wikipedia"
+    },
+    "answerAliases": [
+      "K8",
+      "AMD K8",
+      "K8 microarchitecture",
+      "Athlon 64"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0046",
+    "text": "Jim Keller became CEO of which AI chip startup in 2023?",
+    "options": [
+      "Cerebras",
+      "Tenstorrent",
+      "d-Matrix",
+      "Etched"
+    ],
+    "answer": "Tenstorrent",
+    "category": "hardware",
+    "tags": [
+      "jim-keller",
+      "tenstorrent",
+      "startup"
+    ],
+    "difficulty": 3,
+    "explanation": "Keller joined Tenstorrent as CTO in 2020 and became CEO in January 2023, leading the company that builds AI chips based on RISC-V. Cerebras, d-Matrix and Etched are real AI chip startups, but none of them is run by Keller.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Jim Keller (engineer)",
+      "label": "Jim Keller (engineer) on Wikipedia"
+    },
+    "answerAliases": [
+      "Tenstorrent",
+      "Tenstorrent, Inc."
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0047",
+    "text": "Who became Intel's CEO in February 2021?",
+    "options": [
+      "Bob Swan",
+      "Andy Grove",
+      "Lip-Bu Tan",
+      "Pat Gelsinger"
+    ],
+    "answer": "Pat Gelsinger",
+    "category": "hardware",
+    "tags": [
+      "intel",
+      "gelsinger",
+      "ceo"
+    ],
+    "difficulty": 1,
+    "explanation": "Gelsinger rejoined Intel as CEO on February 15, 2021, after 30 years at the company including a stint as CTO. Lip-Bu Tan is the tempting miss because he later succeeded Gelsinger as Intel's CEO, but he took over in 2025, not 2021.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Pat Gelsinger",
+      "label": "Pat Gelsinger on Wikipedia"
+    },
+    "answerAliases": [
+      "Pat Gelsinger",
+      "Patrick Gelsinger",
+      "Patrick Paul Gelsinger"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0048",
+    "text": "Before co-founding Nvidia, Jensen Huang worked at AMD and which other company?",
+    "options": [
+      "Texas Instruments",
+      "Cisco",
+      "Intel",
+      "Sun Microsystems"
+    ],
+    "answer": "Sun Microsystems",
+    "category": "hardware",
+    "tags": [
+      "jensen-huang",
+      "nvidia",
+      "career"
+    ],
+    "difficulty": 1,
+    "explanation": "Huang left AMD for LSI Logic and then worked with Sun Microsystems, where he met Chris Malachowsky and Curtis Priem; the three founded Nvidia together in 1993. Texas Instruments and Intel were places he was recruited to, but he chose AMD first, and Sun is where the Nvidia founding team met.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Jensen Huang",
+      "label": "Jensen Huang on Wikipedia"
+    },
+    "answerAliases": [
+      "Sun Microsystems",
+      "LSI Logic",
+      "LSI Corporation"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0049",
+    "text": "Which company abandoned its attempted $40 billion acquisition of Arm in February 2022?",
+    "options": [
+      "AMD",
+      "Nvidia",
+      "Microsoft",
+      "Intel"
+    ],
+    "answer": "Nvidia",
+    "category": "hardware",
+    "tags": [
+      "arm",
+      "nvidia",
+      "acquisition"
+    ],
+    "difficulty": 2,
+    "explanation": "Nvidia announced the Arm acquisition in September 2020 for $40 billion in stock and cash, but regulators in the UK, EU and US raised competition and national security concerns, and the deal collapsed in February 2022. Microsoft, AMD and Intel were all reported as interested parties at various points, but only Nvidia signed and then abandoned the deal.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Arm Holdings",
+      "label": "Arm Holdings on Wikipedia"
+    },
+    "answerAliases": [
+      "Nvidia",
+      "Arm",
+      "Arm Holdings",
+      "$40 billion"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0050",
+    "text": "Nvidia's Grace datacenter CPU is named after which computer scientist?",
+    "options": [
+      "Ada Lovelace",
+      "Katherine Johnson",
+      "Grace Hopper",
+      "Margaret Hamilton"
+    ],
+    "answer": "Grace Hopper",
+    "category": "hardware",
+    "tags": [
+      "nvidia",
+      "grace",
+      "naming"
+    ],
+    "difficulty": 1,
+    "explanation": "Nvidia has said it named both its 2024 CPU generation Grace and its GPU generation Hopper after Grace Hopper, the Navy rear admiral and COBOL pioneer. Ada Lovelace is the tempting miss because Nvidia's consumer architecture also bears her name, but the datacenter CPU honors Hopper.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Grace Hopper",
+      "label": "Grace Hopper on Wikipedia"
+    },
+    "answerAliases": [
+      "Grace Hopper",
+      "Grace Brewster Hopper"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0051",
+    "text": "What is the name of Nvidia's module that combines a Grace CPU with a Hopper GPU?",
+    "options": [
+      "GH200",
+      "DGX-1",
+      "HGX H100",
+      "GB200"
+    ],
+    "answer": "GH200",
+    "category": "hardware",
+    "tags": [
+      "nvidia",
+      "gh200",
+      "grace-hopper"
+    ],
+    "difficulty": 3,
+    "explanation": "The GH200 Grace Hopper Superchip pairs a Hopper-based H100 GPU with a Grace-based 72-core CPU on a single module, connected by NVLink for memory coherence. GB200 is the Blackwell successor, and DGX-1 and HGX H100 are systems rather than the CPU-GPU module.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hopper (microarchitecture)",
+      "label": "Hopper (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "GH200",
+      "Grace Hopper Superchip",
+      "GH200 Grace Hopper Superchip"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0052",
+    "text": "Which GPU cloud company was created in 2024 from the restructuring of Yandex?",
+    "options": [
+      "CoreWeave",
+      "Nebius Group",
+      "Lambda Labs",
+      "Crusoe"
+    ],
+    "answer": "Nebius Group",
+    "category": "hardware",
+    "tags": [
+      "neocloud",
+      "nebius",
+      "yandex"
+    ],
+    "difficulty": 2,
+    "explanation": "Yandex N.V. sold its Russian assets in July 2024 and renamed itself Nebius Group, keeping the cloud and AI infrastructure business with CEO Arkady Volozh. CoreWeave, Lambda and Crusoe are all real neoclouds, but none of them came out of Yandex.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Nebius Group",
+      "label": "Nebius Group on Wikipedia"
+    },
+    "answerAliases": [
+      "Nebius Group",
+      "Nebius Group N.V.",
+      "Nebius",
+      "Yandex"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0053",
+    "text": "How many INT8 operations per clock can one Nvidia tensor core perform?",
+    "options": [
+      "64",
+      "256",
+      "1024",
+      "128"
+    ],
+    "answer": "128",
+    "category": "hardware",
+    "tags": [
+      "tensor-core",
+      "int8",
+      "quantization"
+    ],
+    "difficulty": 3,
+    "explanation": "Each tensor core does 128 INT8 operations per clock, twice the 64 FP16 operations, because one FP16 multiply-accumulate maps to two INT8 ones at the same width. The 1024 figure is the INT1 rate and 256 is INT4, which is why INT8 is the sweet spot for inference speed on the same silicon.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Deep Learning Super Sampling",
+      "label": "Deep Learning Super Sampling on Wikipedia"
+    },
+    "answerAliases": [
+      "128 INT8",
+      "128",
+      "128 operations per clock",
+      "INT8"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0054",
+    "text": "Nvidia's platform of edge AI computers for robotics is called?",
+    "options": [
+      "Drive",
+      "Jetson",
+      "BlueField",
+      "EGX"
+    ],
+    "answer": "Jetson",
+    "category": "hardware",
+    "tags": [
+      "jetson",
+      "edge",
+      "robotics"
+    ],
+    "difficulty": 2,
+    "explanation": "Jetson is Nvidia's family of compact edge AI modules, from the Nano to the Thor, built for robots and on-device inference. Drive is the automotive platform, BlueField is the networking DPU, and EGX is the enterprise edge server line, none of which is the robotics module brand.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/",
+      "label": "NVIDIA Jetson embedded systems page"
+    },
+    "answerAliases": [
+      "Jetson",
+      "NVIDIA Jetson",
+      "Jetson series"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0055",
+    "text": "Which Stanford spinout builds the Reconfigurable Dataflow Unit, or RDU?",
+    "options": [
+      "SambaNova",
+      "Graphcore",
+      "Cerebras",
+      "Groq"
+    ],
+    "answer": "SambaNova",
+    "category": "hardware",
+    "tags": [
+      "sambanova",
+      "rdu",
+      "stanford"
+    ],
+    "difficulty": 3,
+    "explanation": "SambaNova, founded by Kunle Olukotun and others from Stanford, builds the RDU, a dataflow processor designed so models are compiled into the hardware's reconfigurable fabric. Graphcore builds the IPU, Groq builds the LPU, and Cerebras builds a wafer-scale engine, none of which is the RDU.",
+    "source": {
+      "kind": "url",
+      "url": "https://sambanova.ai/",
+      "label": "SambaNova Systems homepage"
+    },
+    "answerAliases": [
+      "SambaNova",
+      "SambaNova Systems",
+      "SambaNova, Inc.",
+      "RDU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0056",
+    "text": "Tesla designed which custom supercomputer around its D1 chip to train Full Self-Driving networks?",
+    "options": [
+      "FSD Computer",
+      "HW3",
+      "Dojo",
+      "Autopilot cluster"
+    ],
+    "answer": "Dojo",
+    "category": "hardware",
+    "tags": [
+      "tesla",
+      "dojo",
+      "d1"
+    ],
+    "difficulty": 1,
+    "explanation": "Dojo, announced at Tesla's AI Day in August 2021, is built from D1 chips on training tiles and went into production in 2023. The FSD Computer and HW3 are the inference chips in customer cars, and the Autopilot cluster is the older Nvidia A100-based training fleet, not the custom D1 machine.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Tesla Dojo",
+      "label": "Tesla Dojo on Wikipedia"
+    },
+    "answerAliases": [
+      "Dojo",
+      "Tesla Dojo",
+      "Project Dojo",
+      "D1"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0057",
+    "text": "Which H100 form factor is the standard for training clusters?",
+    "options": [
+      "PCIe",
+      "MXM",
+      "LGA",
+      "SXM5"
+    ],
+    "answer": "SXM5",
+    "category": "hardware",
+    "tags": [
+      "h100",
+      "sxm",
+      "form-factor"
+    ],
+    "difficulty": 3,
+    "explanation": "The H100 SXM5 is the socketed module used in DGX and HGX systems, and Nvidia says it offers better performance than the PCIe variant because of the higher power budget and NVLink bandwidth. PCIe is the tempting miss because it is the familiar plug-in card format, but training clusters run SXM5.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hopper (microarchitecture)",
+      "label": "Hopper (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "SXM5",
+      "SXM",
+      "H100 SXM5"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0058",
+    "text": "What does an NVSwitch add to an NVLink system?",
+    "options": [
+      "A central switch connecting many GPUs",
+      "A faster clock for each GPU",
+      "Extra VRAM on the bridge",
+      "A redundant power supply"
+    ],
+    "answer": "A central switch connecting many GPUs",
+    "category": "hardware",
+    "tags": [
+      "nvswitch",
+      "nvlink",
+      "interconnect"
+    ],
+    "difficulty": 2,
+    "explanation": "A few GPUs can mesh directly over NVLink, but beyond that a central NVSwitch serves up to 32 ports so every GPU can talk to every other at full bandwidth. It does not change clocks, add memory or carry power, which is why the switch is about connectivity, not compute.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "NVLink",
+      "label": "NVLink on Wikipedia"
+    },
+    "answerAliases": [
+      "NVSwitch",
+      "central switch",
+      "32 ports"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0059",
+    "text": "The DGX H100 and DGX GH200 systems include which Nvidia data processing unit?",
+    "options": [
+      "ConnectX-7",
+      "BlueField-3",
+      "Quantum-2",
+      "Spectrum-X"
+    ],
+    "answer": "BlueField-3",
+    "category": "hardware",
+    "tags": [
+      "bluefield",
+      "dpu",
+      "nvidia"
+    ],
+    "difficulty": 3,
+    "explanation": "DGX systems ship with BlueField-3 DPUs to offload networking, storage and security from the CPUs and GPUs. ConnectX-7 is the InfiniBand NIC, Quantum-2 is the InfiniBand switch, and Spectrum-X is the Ethernet platform, none of which is the DPU.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Nvidia DGX",
+      "label": "Nvidia DGX on Wikipedia"
+    },
+    "answerAliases": [
+      "BlueField-3",
+      "BlueField 3",
+      "BlueField-3 DPU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0060",
+    "text": "Which Nvidia datacenter GPU was the first to support HBM3?",
+    "options": [
+      "H100",
+      "V100",
+      "A100",
+      "B200"
+    ],
+    "answer": "H100",
+    "category": "hardware",
+    "tags": [
+      "h100",
+      "hbm3",
+      "nvidia"
+    ],
+    "difficulty": 3,
+    "explanation": "The Hopper H100 supports HBM3 and HBM2e, raising memory bandwidth 50 percent over the A100's HBM2. The A100 is the tempting miss because it was the previous workhorse, but it shipped with HBM2, and the V100 before it used HBM2 as well.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hopper (microarchitecture)",
+      "label": "Hopper (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "H100",
+      "Nvidia H100",
+      "HBM3"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0061",
+    "text": "Which TSMC node was the first commercially available extreme ultraviolet lithography process?",
+    "options": [
+      "N5",
+      "N3",
+      "N2",
+      "N7+"
+    ],
+    "answer": "N7+",
+    "category": "hardware",
+    "tags": [
+      "tsmc",
+      "euv",
+      "process-node"
+    ],
+    "difficulty": 3,
+    "explanation": "TSMC's N7+ was the first commercially available EUV process, used in 2020, before N5, N3 and N2 added more EUV layers. N5 is the tempting miss because it is the most famous EUV node, but N7+ was the first to bring EUV into high-volume production.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "TSMC",
+      "label": "TSMC on Wikipedia"
+    },
+    "answerAliases": [
+      "N7+",
+      "TSMC N7+",
+      "N7 Plus"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0062",
+    "text": "How much HBM memory does the H100 support?",
+    "options": [
+      "40 GB",
+      "80 GB",
+      "141 GB",
+      "192 GB"
+    ],
+    "answer": "80 GB",
+    "category": "hardware",
+    "tags": [
+      "h100",
+      "hbm",
+      "memory"
+    ],
+    "difficulty": 2,
+    "explanation": "The H100 ships with up to 80 GB of HBM3 across five stacks, delivering 3.35 TB/s of bandwidth. The 192 GB figure belongs to the later B200, and 141 GB is the H200, so the H100's 80 GB is the number to remember for the 2022 generation.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hopper (microarchitecture)",
+      "label": "Hopper (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "80 GB",
+      "80GB",
+      "80 GB of HBM3"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0063",
+    "text": "What is the name of Nvidia's 72-GPU Blackwell rack-scale system announced at GTC 2024?",
+    "options": [
+      "HGX B200",
+      "DGX GB200",
+      "GB200 NVL72",
+      "DGX SuperPOD"
+    ],
+    "answer": "GB200 NVL72",
+    "category": "hardware",
+    "tags": [
+      "blackwell",
+      "nvl72",
+      "rack"
+    ],
+    "difficulty": 3,
+    "explanation": "The GB200 NVL72 connects 36 Grace CPUs and 72 B200 GPUs in one liquid-cooled rack that acts as a single giant GPU. HGX B200 is the 8-GPU board, DGX SuperPOD is the multi-rack system, and DGX GB200 is the server, none of which is the 72-GPU rack.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Blackwell (microarchitecture)",
+      "label": "Blackwell (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "GB200 NVL72",
+      "NVL72",
+      "GB200 NVL72 rack"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0064",
+    "text": "Nvidia's Rubin microarchitecture, announced in 2024, is named after which astrophysicist?",
+    "options": [
+      "Grace Hopper",
+      "Ada Lovelace",
+      "David Blackwell",
+      "Vera Rubin"
+    ],
+    "answer": "Vera Rubin",
+    "category": "hardware",
+    "tags": [
+      "rubin",
+      "nvidia",
+      "naming"
+    ],
+    "difficulty": 3,
+    "explanation": "Rubin is named after the astrophysicist Vera Rubin, whose dark matter work made her one of the most famous astronomers of the 20th century. Grace Hopper and Ada Lovelace are the tempting misses because Nvidia names architectures after pioneers, but the preceding Blackwell was named for David Blackwell and Rubin is the next generation.",
+    "source": {
+      "kind": "url",
+      "url": "https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer",
+      "label": "NVIDIA Newsroom on the Rubin platform (named for Vera Rubin)"
+    },
+    "answerAliases": [
+      "Vera Rubin",
+      "Rubin"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0065",
+    "text": "The MI300 series accelerators are built on which AMD architecture?",
+    "options": [
+      "RDNA 3",
+      "CDNA 3",
+      "GCN 5",
+      "CDNA 2"
+    ],
+    "answer": "CDNA 3",
+    "category": "hardware",
+    "tags": [
+      "mi300",
+      "cdna",
+      "amd"
+    ],
+    "difficulty": 3,
+    "explanation": "The MI300A and MI300X use the CDNA 3 architecture, AMD's datacenter GPU lineage with chiplets and HBM3. RDNA 3 is the consumer Radeon architecture, and GCN 5 is the older Instinct line, so CDNA 3 is the correct family for the MI300.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AMD Instinct",
+      "label": "AMD Instinct on Wikipedia"
+    },
+    "answerAliases": [
+      "CDNA 3",
+      "CDNA3"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0066",
+    "text": "How much HBM3 memory does the MI300X carry?",
+    "options": [
+      "96 GB",
+      "128 GB",
+      "192 GB",
+      "288 GB"
+    ],
+    "answer": "192 GB",
+    "category": "hardware",
+    "tags": [
+      "mi300",
+      "hbm",
+      "memory"
+    ],
+    "difficulty": 3,
+    "explanation": "The MI300X packs 192 GB of HBM3 with 5.3 TB/s of bandwidth, which was the largest memory footprint of any GPU at launch in 2023. The 288 GB figure belongs to the later MI350X, and 128 GB is the MI300A's smaller allocation.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AMD Instinct",
+      "label": "AMD Instinct on Wikipedia"
+    },
+    "answerAliases": [
+      "192 GB",
+      "192GB",
+      "192 GB of HBM3"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0067",
+    "text": "AMD's Zen 2 moved to which physical design that separated core dies from the I/O die?",
+    "options": [
+      "Chiplets",
+      "Monolithic die",
+      "Wafer stacking",
+      "System-in-package"
+    ],
+    "answer": "Chiplets",
+    "category": "hardware",
+    "tags": [
+      "zen-2",
+      "chiplet",
+      "amd"
+    ],
+    "difficulty": 3,
+    "explanation": "Zen 2 combined up to eight 7 nm core chiplets with a single 14 nm I/O die, letting AMD put the expensive cores on the small node and the I/O on a mature one. A monolithic die puts everything on one piece, wafer stacking bonds whole wafers, and system-in-package is a broader term, but the design that defined Zen 2 was the chiplet.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Zen 2",
+      "label": "Zen 2 on Wikipedia"
+    },
+    "answerAliases": [
+      "chiplets",
+      "multi-chip module",
+      "MCM",
+      "chiplet design"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0068",
+    "text": "How many cores per socket did the Epyc Rome server processors carry?",
+    "options": [
+      "32 cores",
+      "64 cores",
+      "96 cores",
+      "128 cores"
+    ],
+    "answer": "64 cores",
+    "category": "hardware",
+    "tags": [
+      "epyc",
+      "amd",
+      "server"
+    ],
+    "difficulty": 3,
+    "explanation": "Epyc Rome, launched in August 2019 on Zen 2, doubled the core count per socket to 64 cores with 128 threads. The 32 cores figure belongs to the first-generation Naples, and 96 cores is the later Genoa, so 64 is the Rome number.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Epyc",
+      "label": "Epyc on Wikipedia"
+    },
+    "answerAliases": [
+      "64 cores",
+      "64",
+      "64 cores per socket"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0069",
+    "text": "In 2021 Intel renamed its 10 nm Enhanced SuperFin process to what?",
+    "options": [
+      "Intel 4",
+      "Intel 3",
+      "Intel 7",
+      "Intel 18A"
+    ],
+    "answer": "Intel 7",
+    "category": "hardware",
+    "tags": [
+      "intel",
+      "process-node",
+      "naming"
+    ],
+    "difficulty": 3,
+    "explanation": "At its July 2021 Intel Accelerated event, Intel introduced a new naming structure and rebranded 10 nm SuperFin as Intel 7, aligning its names with how TSMC and Samsung label nodes. Intel 4, Intel 3 and Intel 18A are all later nodes in the same roadmap, not the renamed 10 nm process.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.intc.com/news-events/press-releases/detail/1486/intel-accelerates-process-and-packaging-innovations",
+      "label": "Intel Accelerates Process and Packaging Innovations press release"
+    },
+    "answerAliases": [
+      "Intel 7",
+      "Intel 7 process"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0070",
+    "text": "When did Pat Gelsinger step down as Intel's CEO?",
+    "options": [
+      "June 2023",
+      "August 2022",
+      "January 2025",
+      "December 2024"
+    ],
+    "answer": "December 2024",
+    "category": "hardware",
+    "tags": [
+      "intel",
+      "gelsinger",
+      "ceo"
+    ],
+    "difficulty": 1,
+    "explanation": "Gelsinger stepped down on December 1, 2024, after 3 years and 10 months as CEO, with David Zinsser and Michelle Johnston Holthaus named interim co-CEOs. Intel's troubles continued after his departure, which is why the 2024 date, not 2025, is the one to remember.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Pat Gelsinger",
+      "label": "Pat Gelsinger on Wikipedia"
+    },
+    "answerAliases": [
+      "December 2024",
+      "December 1, 2024",
+      "December 2024"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0071",
+    "text": "How many transistors does the Nvidia H100 contain?",
+    "options": [
+      "80 billion",
+      "54 billion",
+      "104 billion",
+      "208 billion"
+    ],
+    "answer": "80 billion",
+    "category": "hardware",
+    "tags": [
+      "h100",
+      "transistors",
+      "nvidia"
+    ],
+    "difficulty": 3,
+    "explanation": "The H100 is built on TSMC's N4 process with 80 billion transistors. The 208 billion figure belongs to the B200's dual-die package, 104 billion is the GB100 die, and 54 billion is the A100, so 80 billion is the H100's count.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hopper (microarchitecture)",
+      "label": "Hopper (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "80 billion",
+      "80 billion transistors",
+      "80B"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0072",
+    "text": "How many transistors does the Nvidia B200 package contain?",
+    "options": [
+      "104 billion",
+      "150 billion",
+      "208 billion",
+      "256 billion"
+    ],
+    "answer": "208 billion",
+    "category": "hardware",
+    "tags": [
+      "blackwell",
+      "b200",
+      "transistors"
+    ],
+    "difficulty": 4,
+    "explanation": "The B200 combines two GB100 dies of 104 billion transistors each in a single package for a total of 208 billion, connected by a 10 TB/s link called NV-HBI. The 104 billion figure is one die, which is the tempting miss, but the package total is 208 billion.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Blackwell (microarchitecture)",
+      "label": "Blackwell (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "208 billion",
+      "208 billion transistors",
+      "208B"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0073",
+    "text": "Which numeric format, introduced with Ampere's tensor cores, gives FP32 range at tensor core speed?",
+    "options": [
+      "FP8",
+      "BF16",
+      "INT4",
+      "TF32"
+    ],
+    "answer": "TF32",
+    "category": "hardware",
+    "tags": [
+      "a100",
+      "tf32",
+      "tensor-core"
+    ],
+    "difficulty": 3,
+    "explanation": "TensorFloat-32, or TF32, keeps the 8-bit exponent of FP32 but shortens the mantissa, letting tensor cores handle training math with FP32's dynamic range. BF16 is the tempting miss because it is also a training format, but it was introduced on Google's TPU, not with Ampere, and FP8 and INT4 came later.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Ampere (microarchitecture)",
+      "label": "Ampere (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "TF32",
+      "TensorFloat-32",
+      "TensorFloat 32"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0074",
+    "text": "Which CPU cores does AMD's MI300A integrate alongside its GPU chiplets?",
+    "options": [
+      "Zen 4",
+      "Zen 2",
+      "Zen 3",
+      "Zen 5"
+    ],
+    "answer": "Zen 4",
+    "category": "hardware",
+    "tags": [
+      "mi300",
+      "zen",
+      "amd"
+    ],
+    "difficulty": 3,
+    "explanation": "The MI300A is an APU that pairs 24 Zen 4 CPU cores with four CDNA 3 GPU chiplets and 128 GB of HBM3. Zen 2 and Zen 3 are the tempting misses because they powered the earlier Epyc generations, but the MI300A moved to Zen 4 on the 5 nm node.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AMD Instinct",
+      "label": "AMD Instinct on Wikipedia"
+    },
+    "answerAliases": [
+      "Zen 4",
+      "24 Zen 4 CPU cores",
+      "Zen4"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0075",
+    "text": "Which Apple chip was the first widely available SoC built on a 3 nm process?",
+    "options": [
+      "Apple A15 Bionic",
+      "Apple A17 Pro",
+      "Apple A16 Bionic",
+      "Apple M1"
+    ],
+    "answer": "Apple A17 Pro",
+    "category": "hardware",
+    "tags": [
+      "apple",
+      "3nm",
+      "a17"
+    ],
+    "difficulty": 3,
+    "explanation": "The A17 Pro, in the iPhone 15 Pro and iPad Mini 7 in 2023, was the first widely available 3 nm SoC, fabbed by TSMC on its N3 process with 19 billion transistors. The A15 and A16 are the tempting misses because they are the immediately preceding chips, but both were built on 5 nm, and the M1 was 5 nm as well.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Apple A17 Pro",
+      "label": "Apple A17 Pro on Wikipedia"
+    },
+    "answerAliases": [
+      "Apple A17 Pro",
+      "A17 Pro",
+      "A17"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0076",
+    "text": "Which Nvidia architecture was the first to implement the Transformer Engine?",
+    "options": [
+      "Ampere",
+      "Ada Lovelace",
+      "Blackwell",
+      "Hopper"
+    ],
+    "answer": "Hopper",
+    "category": "hardware",
+    "tags": [
+      "hopper",
+      "transformer-engine",
+      "nvidia"
+    ],
+    "difficulty": 3,
+    "explanation": "Hopper's Transformer Engine dynamically lowers precision from FP16 to FP8 during inference when the accuracy loss is acceptable, which is why the H100 became the transformer training chip. Ampere is the tempting miss because it introduced TF32 and sparsity, but the Transformer Engine itself arrived with Hopper.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hopper (microarchitecture)",
+      "label": "Hopper (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "Hopper",
+      "Hopper architecture",
+      "Transformer Engine"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0077",
+    "text": "Nvidia's Grace datacenter CPU is based on which instruction set architecture?",
+    "options": [
+      "ARM",
+      "x86-64",
+      "RISC-V",
+      "MIPS"
+    ],
+    "answer": "ARM",
+    "category": "hardware",
+    "tags": [
+      "grace",
+      "arm",
+      "nvidia"
+    ],
+    "difficulty": 2,
+    "explanation": "Grace is built on ARM's Neoverse V2 cores, which is why the GH200 pairs it with Hopper over NVLink for memory coherence. x86-64 is the tempting miss because Nvidia's DGX systems had long used Intel and AMD CPUs, but Grace marked Nvidia's move to ARM.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Blackwell (microarchitecture)",
+      "label": "Blackwell (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "ARM",
+      "Arm",
+      "ARM architecture",
+      "Neoverse"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0078",
+    "text": "The GH200 Grace Hopper Superchip module has a total power draw of up to?",
+    "options": [
+      "700 W",
+      "1000 W",
+      "850 W",
+      "1200 W"
+    ],
+    "answer": "1000 W",
+    "category": "hardware",
+    "tags": [
+      "gh200",
+      "power",
+      "nvidia"
+    ],
+    "difficulty": 3,
+    "explanation": "The GH200 module, with a Grace CPU and an H100 GPU, can draw up to 1000 W. The 700 W figure is the H100 SXM5 GPU alone, which is the tempting miss, but the full CPU-GPU module pushes past it.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hopper (microarchitecture)",
+      "label": "Hopper (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "1000 W",
+      "1000W",
+      "up to 1000 W"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0079",
+    "text": "Which Amazon Web Services chip line is custom-built for AI training?",
+    "options": [
+      "Nitro",
+      "Graviton",
+      "Trainium",
+      "Inferentia"
+    ],
+    "answer": "Trainium",
+    "category": "hardware",
+    "tags": [
+      "aws",
+      "trainium",
+      "annapurna"
+    ],
+    "difficulty": 1,
+    "explanation": "AWS's Annapurna Labs builds the Trainium line of AI training ASICs, with Trainium2 powering large training jobs for Anthropic's Claude. Inferentia is the inference counterpart, Graviton is the general-purpose CPU, and Nitro handles networking and storage offload, so Trainium is the training answer.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Annapurna Labs",
+      "label": "Annapurna Labs on Wikipedia"
+    },
+    "answerAliases": [
+      "Trainium",
+      "AWS Trainium",
+      "Amazon Trainium"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0080",
+    "text": "Google's purpose-built edge AI chip, announced in 2018, is called?",
+    "options": [
+      "Edge TPU",
+      "Pixel Neural Core",
+      "Tensor G2",
+      "Coral TPU"
+    ],
+    "answer": "Edge TPU",
+    "category": "hardware",
+    "tags": [
+      "edge-tpu",
+      "google",
+      "edge"
+    ],
+    "difficulty": 1,
+    "explanation": "The Edge TPU, announced in July 2018, is Google's ASIC for running ML models on-device in the Coral products, at 4 trillion operations per second on 2 watts. The Pixel Neural Core is the Edge TPU's name inside the Pixel 4 phone, Tensor G2 is the phone SoC, and Coral is the product brand, not the chip.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Tensor Processing Unit",
+      "label": "Tensor Processing Unit on Wikipedia"
+    },
+    "answerAliases": [
+      "Edge TPU",
+      "EdgeTPU",
+      "Coral"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0081",
+    "text": "Which company launched the Gaudi 3 AI accelerator in April 2024?",
+    "options": [
+      "AMD",
+      "Intel",
+      "Nvidia",
+      "Qualcomm"
+    ],
+    "answer": "Intel",
+    "category": "hardware",
+    "tags": [
+      "gaudi",
+      "intel",
+      "accelerator"
+    ],
+    "difficulty": 2,
+    "explanation": "Intel launched Gaudi 3 at its Intel Vision event in April 2024, building on the Gaudi 2 it inherited with the Habana Labs acquisition. AMD's answer is the MI300, Nvidia's is the H100, and Qualcomm's is the Cloud AI 100, so Gaudi 3 belongs to Intel.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.intel.com/content/www/us/en/newsroom/news/vision-2024-gaudi-3-ai-accelerator.html",
+      "label": "Intel Vision 2024 Gaudi 3 press release"
+    },
+    "answerAliases": [
+      "Gaudi 3",
+      "Intel Gaudi 3",
+      "Gaudi"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0082",
+    "text": "Which AI startup did Intel acquire in 2016 for about $408 million?",
+    "options": [
+      "Movidius",
+      "Habana Labs",
+      "Nervana Systems",
+      "Altera"
+    ],
+    "answer": "Nervana Systems",
+    "category": "hardware",
+    "tags": [
+      "nervana",
+      "intel",
+      "acquisition"
+    ],
+    "difficulty": 3,
+    "explanation": "Intel acquired Nervana Systems on August 9, 2016, for an estimated $408 million, and later shut down its chip development in 2020 in favor of Habana Labs. Movidius is the tempting miss because Intel also bought it in 2016, but for computer vision chips, and Altera was a much larger $16.7 billion deal in 2015.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Nervana Systems",
+      "label": "Nervana Systems on Wikipedia"
+    },
+    "answerAliases": [
+      "Nervana Systems",
+      "Nervana",
+      "$408 million"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0083",
+    "text": "Intel's Neural Compute Stick was built around chips from which 2016 acquisition?",
+    "options": [
+      "Nervana",
+      "Altera",
+      "Mobileye",
+      "Movidius"
+    ],
+    "answer": "Movidius",
+    "category": "hardware",
+    "tags": [
+      "movidius",
+      "intel",
+      "edge"
+    ],
+    "difficulty": 3,
+    "explanation": "The Intel Movidius Neural Compute Stick used the Myriad 2 vision processing unit that Intel acquired with Movidius in September 2016, and the NCS 2 used the Myriad X. Nervana was a software and datacenter AI startup, Altera made FPGAs, and Mobileye makes autonomous driving chips, none of which powered the stick.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Movidius",
+      "label": "Movidius on Wikipedia"
+    },
+    "answerAliases": [
+      "Movidius",
+      "Movidius Ltd.",
+      "Myriad 2",
+      "Neural Compute Stick"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0084",
+    "text": "IBM's 2014 neuromorphic chip with just over a million simulated neurons is called?",
+    "options": [
+      "NorthPole",
+      "TrueNorth",
+      "SyNAPSE",
+      "Watson"
+    ],
+    "answer": "TrueNorth",
+    "category": "hardware",
+    "tags": [
+      "truenorth",
+      "ibm",
+      "neuromorphic"
+    ],
+    "difficulty": 3,
+    "explanation": "TrueNorth, produced by IBM in 2014, packed 4096 cores with just over a million neurons and 268 million synapses on a 70 mW chip. NorthPole is the tempting miss because it is IBM's 2023 follow-up, but the million-neuron 2014 chip was TrueNorth, and SyNAPSE was the research program name.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Cognitive computer",
+      "label": "Cognitive computer on Wikipedia"
+    },
+    "answerAliases": [
+      "TrueNorth",
+      "IBM TrueNorth",
+      "TrueNorth chip"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0085",
+    "text": "Which AWS chip offloads networking and storage from the main server?",
+    "options": [
+      "Graviton",
+      "Trainium",
+      "Inferentia",
+      "Nitro"
+    ],
+    "answer": "Nitro",
+    "category": "hardware",
+    "tags": [
+      "aws",
+      "nitro",
+      "annapurna"
+    ],
+    "difficulty": 2,
+    "explanation": "AWS Nitro is the hardware that handles networking, storage and security offload in every AWS server since 2015, letting the main CPUs run customer workloads. Graviton is the CPU, Trainium is the training ASIC, and Inferentia is the inference ASIC, so Nitro is the offload answer.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Annapurna Labs",
+      "label": "Annapurna Labs on Wikipedia"
+    },
+    "answerAliases": [
+      "Nitro",
+      "AWS Nitro",
+      "Nitro system"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0086",
+    "text": "Which company shipped the first 3 nm gate-all-around process in 2022?",
+    "options": [
+      "TSMC",
+      "Intel",
+      "Samsung",
+      "GlobalFoundries"
+    ],
+    "answer": "Samsung",
+    "category": "hardware",
+    "tags": [
+      "3nm",
+      "gaa",
+      "samsung"
+    ],
+    "difficulty": 1,
+    "explanation": "Samsung started shipping its 3 nm gate-all-around process, called 3GAA, in mid-2022, beating TSMC's 3 nm to market with a different transistor structure. TSMC is the tempting miss because it dominates advanced nodes, but its 3 nm kept FinFET and arrived later that year.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "3 nm process",
+      "label": "3 nm process on Wikipedia"
+    },
+    "answerAliases": [
+      "Samsung",
+      "Samsung Electronics",
+      "3GAA",
+      "gate-all-around"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0087",
+    "text": "Nvidia's GB100 Blackwell die sits at what manufacturing limit?",
+    "options": [
+      "The reticle limit",
+      "The thermal limit",
+      "The yield limit",
+      "The wafer limit"
+    ],
+    "answer": "The reticle limit",
+    "category": "hardware",
+    "tags": [
+      "blackwell",
+      "reticle",
+      "manufacturing"
+    ],
+    "difficulty": 3,
+    "explanation": "The GB100 die is at the reticle limit, the maximum area a lithography machine can expose in one shot, which is why Nvidia pairs two dies in one package instead of making a bigger one. Thermal, yield and wafer limits are real constraints, but the single-die ceiling that shaped Blackwell is the reticle limit.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Blackwell (microarchitecture)",
+      "label": "Blackwell (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "reticle limit",
+      "the reticle limit",
+      "reticle"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0088",
+    "text": "Qualcomm's first custom digital signal processor in Snapdragon was called?",
+    "options": [
+      "Adreno",
+      "Kryo",
+      "Hexagon",
+      "Spectra"
+    ],
+    "answer": "Hexagon",
+    "category": "hardware",
+    "tags": [
+      "qualcomm",
+      "hexagon",
+      "snapdragon"
+    ],
+    "difficulty": 2,
+    "explanation": "The Snapdragon SoC, announced in 2006, included Qualcomm's first custom Hexagon DSP. Adreno is the GPU, Kryo is the CPU core, and Spectra is the image signal processor, so Hexagon is the DSP that has carried Snapdragon's signal processing for two decades.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Qualcomm Snapdragon",
+      "label": "Qualcomm Snapdragon on Wikipedia"
+    },
+    "answerAliases": [
+      "Hexagon",
+      "Hexagon DSP",
+      "Qualcomm Hexagon"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0089",
+    "text": "Which transistor architecture does Intel's 18A process node introduce?",
+    "options": [
+      "FinFET",
+      "Tri-Gate",
+      "SuperFin",
+      "RibbonFET"
+    ],
+    "answer": "RibbonFET",
+    "category": "hardware",
+    "tags": [
+      "intel",
+      "18a",
+      "ribbonfet"
+    ],
+    "difficulty": 3,
+    "explanation": "Intel 18A combines RibbonFET, Intel's gate-all-around transistor, with PowerVia backside power delivery, and the first products powered on in 2024. FinFET is the tempting miss because it powered Intel's previous nodes, but 18A is the first Intel node with the new transistor architecture.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-foundry-achieves-major-milestones.html",
+      "label": "Intel Foundry Achieves Major Milestones press release"
+    },
+    "answerAliases": [
+      "RibbonFET",
+      "gate-all-around",
+      "RibbonFET gate-all-around"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0090",
+    "text": "Which Nvidia consumer GPU family was fabbed on Samsung's custom 8 nm process?",
+    "options": [
+      "GeForce RTX 30 series",
+      "GeForce RTX 20 series",
+      "GeForce RTX 40 series",
+      "GeForce RTX 50 series"
+    ],
+    "answer": "GeForce RTX 30 series",
+    "category": "hardware",
+    "tags": [
+      "samsung",
+      "8nm",
+      "rtx30"
+    ],
+    "difficulty": 1,
+    "explanation": "Ampere's consumer GeForce RTX 30 series used a custom Samsung 8 nm process called 8N, while the datacenter A100 was fabbed on TSMC's 7 nm. The RTX 40 series is the tempting miss because it is the next consumer generation, but it moved to TSMC's 4 nm.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Ampere (microarchitecture)",
+      "label": "Ampere (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "GeForce RTX 30 series",
+      "RTX 30 series",
+      "GeForce 30 series",
+      "Samsung 8N"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hwr-0091",
+    "text": "The SpiNNaker neuromorphic supercomputer architecture was designed at which university?",
+    "options": [
+      "ETH Zurich",
+      "University of Manchester",
+      "University of Cambridge",
+      "TU Munich"
+    ],
+    "answer": "University of Manchester",
+    "category": "hardware",
+    "tags": [
+      "spinnaker",
+      "neuromorphic",
+      "manchester"
+    ],
+    "difficulty": 3,
+    "explanation": "SpiNNaker was designed by the Advanced Processor Technologies Research Group at the University of Manchester, as a manycore machine for simulating spiking neural networks. ETH, Cambridge and Munich all have neuromorphic research groups, but the SpiNNaker architecture itself is Manchester's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Cognitive computer",
+      "label": "Cognitive computer on Wikipedia"
+    },
+    "answerAliases": [
+      "University of Manchester",
+      "Manchester",
+      "SpiNNaker"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
   }
 ]
