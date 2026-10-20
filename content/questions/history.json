@@ -269,5 +269,1751 @@
     "answerAliases": [],
     "status": "published",
     "addedAt": "2026-09-28"
+  },
+  {
+    "id": "hst-0011",
+    "text": "The 1956 workshop that launched AI as a field was hosted by which college?",
+    "options": [
+      "Stanford University",
+      "Carnegie Mellon University",
+      "Dartmouth College",
+      "Massachusetts Institute of Technology"
+    ],
+    "answer": "Dartmouth College",
+    "category": "history",
+    "tags": [
+      "foundational",
+      "dartmouth"
+    ],
+    "difficulty": 1,
+    "explanation": "The Dartmouth Summer Research Project was held at Dartmouth College in Hanover, New Hampshire. MIT and Stanford are tempting because both became major AI centers later, but neither hosted the 1956 workshop.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Dartmouth workshop",
+      "label": "Dartmouth workshop on Wikipedia"
+    },
+    "answerAliases": [
+      "Dartmouth College",
+      "Dartmouth"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0012",
+    "text": "Before Deep Blue, IBM's chess computer was known by which name?",
+    "options": [
+      "ChipTest",
+      "Deep Blue II",
+      "Watson",
+      "Deep Thought"
+    ],
+    "answer": "Deep Thought",
+    "category": "history",
+    "tags": [
+      "chess",
+      "deep-blue"
+    ],
+    "difficulty": 2,
+    "explanation": "Deep Thought was developed at Carnegie Mellon and later at IBM, and it was the direct predecessor of Deep Blue. ChipTest was an even earlier machine from the same lineage, which is why it tempts people who know the story but not the order.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Deep Thought (chess computer)",
+      "label": "Deep Thought (chess computer) on Wikipedia"
+    },
+    "answerAliases": [
+      "Deep Thought"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0013",
+    "text": "In which year did Garry Kasparov and Deep Blue play their first six-game match?",
+    "options": [
+      "1996",
+      "1997",
+      "1998",
+      "1995"
+    ],
+    "answer": "1996",
+    "category": "history",
+    "tags": [
+      "chess",
+      "deep-blue"
+    ],
+    "difficulty": 1,
+    "explanation": "The first match was played in Philadelphia in February 1996, and Kasparov won it 4 to 2. 1997 is the year of the rematch that Deep Blue won, which is the result most people remember.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Deep Blue versus Garry Kasparov",
+      "label": "Deep Blue versus Garry Kasparov on Wikipedia"
+    },
+    "answerAliases": [
+      "1996",
+      "February 1996"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0014",
+    "text": "Where was the 1997 rematch between Deep Blue and Garry Kasparov held?",
+    "options": [
+      "Philadelphia",
+      "New York City",
+      "London",
+      "Moscow"
+    ],
+    "answer": "New York City",
+    "category": "history",
+    "tags": [
+      "chess",
+      "deep-blue"
+    ],
+    "difficulty": 2,
+    "explanation": "The rematch took place at the Equitable Center in New York City in May 1997, and Deep Blue won 3.5 to 2.5. Philadelphia hosted the first match in 1996, which is the mix-up the question is built on.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Deep Blue versus Garry Kasparov",
+      "label": "Deep Blue versus Garry Kasparov on Wikipedia"
+    },
+    "answerAliases": [
+      "New York City",
+      "New York"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0015",
+    "text": "After which game of the 1997 rematch did Kasparov accuse IBM of cheating?",
+    "options": [
+      "Game 4",
+      "Game 1",
+      "Game 2",
+      "Game 3"
+    ],
+    "answer": "Game 2",
+    "category": "history",
+    "tags": [
+      "chess",
+      "deep-blue"
+    ],
+    "difficulty": 2,
+    "explanation": "Kasparov made the accusation after Game 2, whose move 37 (Be4) he thought was too sophisticated for a machine. IBM denied any human intervention, and Kasparov later said he had overreacted.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Deep Blue versus Garry Kasparov",
+      "label": "Deep Blue versus Garry Kasparov on Wikipedia"
+    },
+    "answerAliases": [
+      "Game 2",
+      "second game"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0016",
+    "text": "Which two human champions did IBM Watson defeat on Jeopardy in 2011?",
+    "options": [
+      "Garry Kasparov and Viswanathan Anand",
+      "Lee Sedol and Ke Jie",
+      "Gary Marcus and Douglas Hofstadter",
+      "Ken Jennings and Brad Rutter"
+    ],
+    "answer": "Ken Jennings and Brad Rutter",
+    "category": "history",
+    "tags": [
+      "watson",
+      "jeopardy",
+      "ibm"
+    ],
+    "difficulty": 2,
+    "explanation": "Watson beat Ken Jennings and Brad Rutter in February 2011. The chess and Go names are the usual cross-sport confusion, since both are famous human-versus-machine matches but from different games.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "IBM Watson",
+      "label": "IBM Watson on Wikipedia"
+    },
+    "answerAliases": [
+      "Ken Jennings and Brad Rutter",
+      "Ken Jennings",
+      "Brad Rutter"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0017",
+    "text": "IBM's Watson system, which won Jeopardy in 2011, was named after whom?",
+    "options": [
+      "Thomas J. Watson",
+      "John von Neumann",
+      "Claude Shannon",
+      "Alan Turing"
+    ],
+    "answer": "Thomas J. Watson",
+    "category": "history",
+    "tags": [
+      "watson",
+      "ibm"
+    ],
+    "difficulty": 2,
+    "explanation": "Watson is named after Thomas J. Watson, IBM's founder, not after the scientist. Alan Turing and Claude Shannon are tempting because they are famous computing pioneers, but neither gave the system its name.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "IBM Watson",
+      "label": "IBM Watson on Wikipedia"
+    },
+    "answerAliases": [
+      "Thomas J. Watson",
+      "Thomas Watson"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0018",
+    "text": "In what year did Fei-Fei Li begin building the ImageNet dataset?",
+    "options": [
+      "2005",
+      "2007",
+      "2009",
+      "2011"
+    ],
+    "answer": "2007",
+    "category": "history",
+    "tags": [
+      "imagenet",
+      "datasets"
+    ],
+    "difficulty": 2,
+    "explanation": "Li started ImageNet in 2007, and the paper presenting it appeared in 2009. 2009 and 2012 are the years people most often confuse with the start, because those are when the dataset and the famous competition results were published.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ImageNet",
+      "label": "ImageNet on Wikipedia"
+    },
+    "answerAliases": [
+      "2007"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0019",
+    "text": "Which neural network's 2012 victory in the ImageNet competition is often cited as the start of the deep learning boom?",
+    "options": [
+      "VGG",
+      "LeNet",
+      "AlexNet",
+      "ResNet"
+    ],
+    "answer": "AlexNet",
+    "category": "history",
+    "tags": [
+      "alexnet",
+      "imagenet",
+      "deep-learning"
+    ],
+    "difficulty": 2,
+    "explanation": "AlexNet won the ImageNet challenge in 2012 with a top-5 error far below the runner-up, and Yann LeCun called it an unequivocal turning point. ResNet and VGG came later and improved on it, which is why they tempt people who know the timeline only loosely.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AlexNet",
+      "label": "AlexNet on Wikipedia"
+    },
+    "answerAliases": [
+      "AlexNet"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0020",
+    "text": "Who introduced generative adversarial networks (GANs) in 2014?",
+    "options": [
+      "Geoffrey Hinton",
+      "Yann LeCun",
+      "Yoshua Bengio",
+      "Ian Goodfellow"
+    ],
+    "answer": "Ian Goodfellow",
+    "category": "history",
+    "tags": [
+      "gans",
+      "generative"
+    ],
+    "difficulty": 2,
+    "explanation": "Goodfellow introduced GANs in a 2014 paper written with colleagues at the Universite de Montreal. Hinton, LeCun and Bengio are the tempting wrong answers because they are the other famous deep learning pioneers of the same era.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Generative adversarial network",
+      "label": "Generative adversarial network on Wikipedia"
+    },
+    "answerAliases": [
+      "Ian Goodfellow",
+      "Goodfellow"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0021",
+    "text": "Where was the 2016 match in which AlphaGo defeated Lee Sedol held?",
+    "options": [
+      "Seoul",
+      "Beijing",
+      "Tokyo",
+      "London"
+    ],
+    "answer": "Seoul",
+    "category": "history",
+    "tags": [
+      "alphago",
+      "deepmind"
+    ],
+    "difficulty": 2,
+    "explanation": "AlphaGo beat Lee Sedol 4 to 1 in Seoul in March 2016. Beijing is the tempting miss because DeepMind later played Ke Jie there, but the Lee Sedol match was in Seoul.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AlphaGo",
+      "label": "AlphaGo on Wikipedia"
+    },
+    "answerAliases": [
+      "Seoul"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0026",
+    "text": "In which year did OpenAI release GPT-3?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2018"
+    ],
+    "answer": "2020",
+    "category": "history",
+    "tags": [
+      "gpt-3",
+      "openai"
+    ],
+    "difficulty": 1,
+    "explanation": "GPT-3 was released in 2020 with 175 billion parameters, a hundred times larger than GPT-2. 2019 is the GPT-2 year and 2021 is when DALL-E arrived, which is why both tempt people.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GPT-3",
+      "label": "GPT-3 on Wikipedia"
+    },
+    "answerAliases": [
+      "2020"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0027",
+    "text": "Which model family underpinned ChatGPT at its November 2022 launch?",
+    "options": [
+      "PaLM",
+      "InstructGPT",
+      "GPT-3.5",
+      "GPT-4"
+    ],
+    "answer": "GPT-3.5",
+    "category": "history",
+    "tags": [
+      "chatgpt",
+      "openai"
+    ],
+    "difficulty": 2,
+    "explanation": "ChatGPT launched on top of a GPT-3.5 fine-tune, not a new frontier model. GPT-4 arrived in March 2023, which is why people often assume it was there from the start.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ChatGPT",
+      "label": "ChatGPT on Wikipedia"
+    },
+    "answerAliases": [
+      "GPT-3.5",
+      "GPT 3.5"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0028",
+    "text": "Which technique did OpenAI describe in its 2022 InstructGPT work for making language models follow instructions?",
+    "options": [
+      "Constitutional AI",
+      "DPO",
+      "LoRA",
+      "RLHF"
+    ],
+    "answer": "RLHF",
+    "category": "history",
+    "tags": [
+      "rlhf",
+      "instructgpt",
+      "openai"
+    ],
+    "difficulty": 3,
+    "explanation": "InstructGPT used reinforcement learning from human feedback to train a smaller model that humans preferred over the much larger GPT-3. Constitutional AI is Anthropic's separate method, which is the confusion the distractor is built on.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Reinforcement learning from human feedback",
+      "label": "Reinforcement learning from human feedback on Wikipedia"
+    },
+    "answerAliases": [
+      "RLHF",
+      "reinforcement learning from human feedback"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0029",
+    "text": "In which month and year did Anthropic publish the Constitutional AI paper?",
+    "options": [
+      "December 2022",
+      "June 2023",
+      "March 2024",
+      "December 2021"
+    ],
+    "answer": "December 2022",
+    "category": "history",
+    "tags": [
+      "constitutional-ai",
+      "anthropic"
+    ],
+    "difficulty": 2,
+    "explanation": "Anthropic published Constitutional AI in December 2022 as a method for training a harmless assistant from a written constitution plus AI feedback. June 2023 is when Claude became publicly available, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2212.08073",
+      "label": "Constitutional AI paper on arXiv"
+    },
+    "answerAliases": [
+      "December 2022",
+      "2022"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0030",
+    "text": "Which 2020 paper popularized denoising diffusion probabilistic models for image generation?",
+    "options": [
+      "Variational Autoencoders",
+      "Denoising Diffusion Probabilistic Models (Ho et al.)",
+      "Attention Is All You Need",
+      "Generative Adversarial Networks"
+    ],
+    "answer": "Denoising Diffusion Probabilistic Models (Ho et al.)",
+    "category": "history",
+    "tags": [
+      "diffusion",
+      "image-generation"
+    ],
+    "difficulty": 3,
+    "explanation": "Jonathan Ho, Ajay Jain and Pieter Abbeel published DDPM in 2020, which is what made diffusion models practical for images. The GAN option is the technique diffusion displaced, and Attention Is All You Need is the transformer paper, so neither fits.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Diffusion model",
+      "label": "Diffusion model on Wikipedia"
+    },
+    "answerAliases": [
+      "DDPM",
+      "Denoising Diffusion Probabilistic Models",
+      "Ho et al."
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0032",
+    "text": "In which year did OpenAI first announce DALL-E?",
+    "options": [
+      "2022",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "answer": "2021",
+    "category": "history",
+    "tags": [
+      "dall-e",
+      "openai"
+    ],
+    "difficulty": 2,
+    "explanation": "OpenAI revealed DALL-E in a blog post on January 5, 2021, using a modified GPT-3 to generate images from text. 2022 is when DALL-E 2 arrived, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DALL-E",
+      "label": "DALL-E on Wikipedia"
+    },
+    "answerAliases": [
+      "2021",
+      "January 2021"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0033",
+    "text": "In which year did Midjourney enter open beta?",
+    "options": [
+      "2022",
+      "2023",
+      "2020",
+      "2021"
+    ],
+    "answer": "2022",
+    "category": "history",
+    "tags": [
+      "midjourney",
+      "images"
+    ],
+    "difficulty": 1,
+    "explanation": "Midjourney entered open beta on July 12, 2022, and the company was already profitable by its August 2022 open beta. 2023 is the year of its V5 release, which is the confusion the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Midjourney",
+      "label": "Midjourney on Wikipedia"
+    },
+    "answerAliases": [
+      "2022",
+      "July 2022"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0035",
+    "text": "The first global AI Safety Summit in November 2023 was hosted at which historic site?",
+    "options": [
+      "Windsor Castle",
+      "Stonehenge",
+      "Bletchley Park",
+      "10 Downing Street"
+    ],
+    "answer": "Bletchley Park",
+    "category": "history",
+    "tags": [
+      "regulation",
+      "bletchley"
+    ],
+    "difficulty": 2,
+    "explanation": "The UK hosted the first global AI Safety Summit at Bletchley Park, the wartime codebreaking site, on November 1 and 2, 2023. It produced the Bletchley Declaration signed by 28 countries. Windsor Castle is the tempting distractor because it is another famous British site.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI Safety Summit 2023",
+      "label": "AI Safety Summit 2023 on Wikipedia"
+    },
+    "answerAliases": [
+      "Bletchley Park"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0036",
+    "text": "Which city hosted the second global AI Safety Summit in May 2024?",
+    "options": [
+      "Paris",
+      "Tokyo",
+      "Geneva",
+      "Seoul"
+    ],
+    "answer": "Seoul",
+    "category": "history",
+    "tags": [
+      "regulation",
+      "seoul"
+    ],
+    "difficulty": 1,
+    "explanation": "The AI Seoul Summit in May 2024 was co-hosted by South Korea and the UK, following the 2023 Bletchley Park summit. Paris hosted the 2025 AI Action Summit, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI Seoul Summit 2024",
+      "label": "AI Seoul Summit 2024 on Wikipedia"
+    },
+    "answerAliases": [
+      "Seoul"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0037",
+    "text": "In which year did the European Parliament adopt the EU AI Act?",
+    "options": [
+      "2024",
+      "2025",
+      "2022",
+      "2023"
+    ],
+    "answer": "2024",
+    "category": "history",
+    "tags": [
+      "regulation",
+      "eu-ai-act"
+    ],
+    "difficulty": 1,
+    "explanation": "MEPs adopted the EU AI Act on March 13, 2024, and it entered into force on August 1, 2024. 2023 is when the European Parliament reached its negotiating position, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Artificial Intelligence Act",
+      "label": "Artificial Intelligence Act on Wikipedia"
+    },
+    "answerAliases": [
+      "2024",
+      "March 2024"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0039",
+    "text": "The Asilomar AI Principles were published in which year?",
+    "options": [
+      "2015",
+      "2017",
+      "2019",
+      "2021"
+    ],
+    "answer": "2017",
+    "category": "history",
+    "tags": [
+      "principles",
+      "asilomar"
+    ],
+    "difficulty": 2,
+    "explanation": "The Future of Life Institute sponsored the Asilomar Conference on Beneficial AI in January 2017, where more than 100 leaders formulated 23 principles for beneficial AI. 2015 is the year the open letter on autonomous weapons was published, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Asilomar Conference on Beneficial AI",
+      "label": "Asilomar Conference on Beneficial AI on Wikipedia"
+    },
+    "answerAliases": [
+      "2017",
+      "January 2017"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0041",
+    "text": "In which city was DeepMind founded in 2010?",
+    "options": [
+      "Mountain View",
+      "Seattle",
+      "Zurich",
+      "London"
+    ],
+    "answer": "London",
+    "category": "history",
+    "tags": [
+      "deepmind",
+      "founding"
+    ],
+    "difficulty": 1,
+    "explanation": "DeepMind was founded in London in 2010 by Demis Hassabis, Shane Legg and Mustafa Suleyman. Mountain View is where Google is headquartered, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DeepMind",
+      "label": "DeepMind on Wikipedia"
+    },
+    "answerAliases": [
+      "London"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0042",
+    "text": "In which year did Google acquire DeepMind?",
+    "options": [
+      "2014",
+      "2016",
+      "2018",
+      "2012"
+    ],
+    "answer": "2014",
+    "category": "history",
+    "tags": [
+      "deepmind",
+      "google",
+      "acquisition"
+    ],
+    "difficulty": 2,
+    "explanation": "Google acquired DeepMind in 2014 for a reported 400 to 650 million dollars. 2016 is when AlphaGo beat Lee Sedol, which is the event people most often confuse with the acquisition year.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DeepMind",
+      "label": "DeepMind on Wikipedia"
+    },
+    "answerAliases": [
+      "2014"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0043",
+    "text": "In which year was Anthropic founded?",
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2019"
+    ],
+    "answer": "2021",
+    "category": "history",
+    "tags": [
+      "anthropic",
+      "founding"
+    ],
+    "difficulty": 1,
+    "explanation": "Dario and Daniela Amodei founded Anthropic in 2021 after leaving OpenAI. 2022 is when Claude was trained and the Constitutional AI paper appeared, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Anthropic",
+      "label": "Anthropic on Wikipedia"
+    },
+    "answerAliases": [
+      "2021"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0046",
+    "text": "In which year was Hugging Face founded?",
+    "options": [
+      "2020",
+      "2014",
+      "2016",
+      "2018"
+    ],
+    "answer": "2016",
+    "category": "history",
+    "tags": [
+      "hugging-face",
+      "founding"
+    ],
+    "difficulty": 1,
+    "explanation": "Hugging Face was founded in New York in 2016 as a chatbot for teenagers and later pivoted into the model hub. 2018 is when it open-sourced the model behind its chatbot, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hugging Face",
+      "label": "Hugging Face on Wikipedia"
+    },
+    "answerAliases": [
+      "2016"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0047",
+    "text": "At which university was AlexNet developed?",
+    "options": [
+      "Stanford University",
+      "Massachusetts Institute of Technology",
+      "Carnegie Mellon University",
+      "University of Toronto"
+    ],
+    "answer": "University of Toronto",
+    "category": "history",
+    "tags": [
+      "alexnet",
+      "toronto"
+    ],
+    "difficulty": 2,
+    "explanation": "Alex Krizhevsky, Ilya Sutskever and Geoffrey Hinton built AlexNet at the University of Toronto. Stanford is the tempting miss because Fei-Fei Li, who created ImageNet, is based there.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AlexNet",
+      "label": "AlexNet on Wikipedia"
+    },
+    "answerAliases": [
+      "University of Toronto",
+      "Toronto"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0048",
+    "text": "In which year did Frank Rosenblatt first describe the perceptron?",
+    "options": [
+      "1958",
+      "1969",
+      "1975",
+      "1950"
+    ],
+    "answer": "1958",
+    "category": "history",
+    "tags": [
+      "perceptron",
+      "rosenblatt"
+    ],
+    "difficulty": 2,
+    "explanation": "Rosenblatt described the perceptron in 1958 while at Cornell, and IBM built a machine to run it. 1969 is the year of the Minsky and Papert book that criticized it, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Frank Rosenblatt",
+      "label": "Frank Rosenblatt on Wikipedia"
+    },
+    "answerAliases": [
+      "1958"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0049",
+    "text": "What was the name of ELIZA's most famous script that simulated a Rogerian psychotherapist?",
+    "options": [
+      "MYCIN",
+      "DOCTOR",
+      "PARRY",
+      "SHRDLU"
+    ],
+    "answer": "DOCTOR",
+    "category": "history",
+    "tags": [
+      "eliza",
+      "chatbot"
+    ],
+    "difficulty": 2,
+    "explanation": "ELIZA's best-known script was called DOCTOR, which echoed user statements back as questions in the style of a Rogerian therapist. PARRY and SHRDLU are other classic programs, which is why they tempt people who know the era but not the names.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ELIZA",
+      "label": "ELIZA on Wikipedia"
+    },
+    "answerAliases": [
+      "DOCTOR"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0050",
+    "text": "Which program did Terry Winograd create in 1970 to demonstrate natural language understanding in a blocks world?",
+    "options": [
+      "MYCIN",
+      "DENDRAL",
+      "SHRDLU",
+      "ELIZA"
+    ],
+    "answer": "SHRDLU",
+    "category": "history",
+    "tags": [
+      "shrdlu",
+      "nlp"
+    ],
+    "difficulty": 3,
+    "explanation": "Winograd built SHRDLU at MIT in 1970 to manipulate blocks in a virtual world using natural language. ELIZA is the chatbot from the same era, which is why it tempts people who know the period but not the specific program.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "SHRDLU",
+      "label": "SHRDLU on Wikipedia"
+    },
+    "answerAliases": [
+      "SHRDLU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0051",
+    "text": "In which year did the Cyc project begin?",
+    "options": [
+      "1990",
+      "1995",
+      "1978",
+      "1984"
+    ],
+    "answer": "1984",
+    "category": "history",
+    "tags": [
+      "cyc",
+      "knowledge-base"
+    ],
+    "difficulty": 2,
+    "explanation": "Cyc started at MCC in July 1984 and later became Cycorp, and it is still running. 1990 is when the company was spun out, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Cyc",
+      "label": "Cyc on Wikipedia"
+    },
+    "answerAliases": [
+      "1984",
+      "July 1984"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0052",
+    "text": "Which 1973 report criticized AI progress and contributed to the first AI winter in the UK?",
+    "options": [
+      "The Lighthill report",
+      "The Turing report",
+      "The Lovelace report",
+      "The Shannon report"
+    ],
+    "answer": "The Lighthill report",
+    "category": "history",
+    "tags": [
+      "ai-winter",
+      "lighthill"
+    ],
+    "difficulty": 3,
+    "explanation": "James Lighthill's 1973 survey, now called the Lighthill report, criticized AI's failure to achieve its grandiose objectives and helped trigger funding cuts. The other reports are plausible-sounding inventions, which is why the question tests whether you know the actual name.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Lighthill report",
+      "label": "Lighthill report on Wikipedia"
+    },
+    "answerAliases": [
+      "Lighthill report",
+      "Artificial Intelligence: A General Survey"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0053",
+    "text": "Which country launched the Fifth Generation Computer Systems project in the 1980s?",
+    "options": [
+      "Soviet Union",
+      "Japan",
+      "United States",
+      "United Kingdom"
+    ],
+    "answer": "Japan",
+    "category": "history",
+    "tags": [
+      "fifth-generation",
+      "japan"
+    ],
+    "difficulty": 2,
+    "explanation": "Japan's Ministry of International Trade and Industry launched the Fifth Generation Computer Systems project in 1982 to develop parallel computers and logic programming. The United States is the tempting miss because it funded most other AI research of the era.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Fifth Generation Computer Systems",
+      "label": "Fifth Generation Computer Systems on Wikipedia"
+    },
+    "answerAliases": [
+      "Japan"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0054",
+    "text": "Which company's expert system XCON configured computer orders and became a famous AI success of the 1980s?",
+    "options": [
+      "Xerox",
+      "Apple",
+      "Digital Equipment Corporation",
+      "IBM"
+    ],
+    "answer": "Digital Equipment Corporation",
+    "category": "history",
+    "tags": [
+      "expert-systems",
+      "xcon"
+    ],
+    "difficulty": 3,
+    "explanation": "XCON, originally called R1, was built at Carnegie Mellon for Digital Equipment Corporation to configure computer orders, and it became the canonical expert-system success story. IBM is the tempting miss because it built most other famous AI systems of the era.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Xcon",
+      "label": "Xcon on Wikipedia"
+    },
+    "answerAliases": [
+      "Digital Equipment Corporation",
+      "DEC"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0055",
+    "text": "Which 1986 paper popularized backpropagation for training neural networks?",
+    "options": [
+      "Attention Is All You Need",
+      "ImageNet Classification with Deep CNNs",
+      "Playing Atari with Deep Reinforcement Learning",
+      "Learning representations by back-propagating errors"
+    ],
+    "answer": "Learning representations by back-propagating errors",
+    "category": "history",
+    "tags": [
+      "backpropagation",
+      "neural-networks"
+    ],
+    "difficulty": 3,
+    "explanation": "Rumelhart, Hinton and Williams published Learning representations by back-propagating errors in Nature in 1986 and popularized the algorithm. Attention Is All You Need is the transformer paper, which is why it tempts people who know the modern era but not the 1980s.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Backpropagation",
+      "label": "Backpropagation on Wikipedia"
+    },
+    "answerAliases": [
+      "Learning representations by back-propagating errors",
+      "Rumelhart, Hinton and Williams",
+      "Rumelhart",
+      "1986 Nature paper"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0056",
+    "text": "In November 2020, AlphaFold 2 won which competition by a wide margin?",
+    "options": [
+      "CASP14",
+      "CASP13",
+      "ImageNet",
+      "Kaggle"
+    ],
+    "answer": "CASP14",
+    "category": "history",
+    "tags": [
+      "alphafold",
+      "protein-folding"
+    ],
+    "difficulty": 3,
+    "explanation": "AlphaFold 2 won CASP14 in November 2020, scoring above 90 on the global distance test for about two-thirds of proteins. CASP13 is the previous competition where AlphaFold 1 placed first but far less impressively, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AlphaFold",
+      "label": "AlphaFold on Wikipedia"
+    },
+    "answerAliases": [
+      "CASP14",
+      "CASP 14"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0057",
+    "text": "In which 1950 paper did Alan Turing propose the imitation game?",
+    "options": [
+      "The Chemical Basis of Morphogenesis",
+      "Computing Machinery and Intelligence",
+      "On Computable Numbers",
+      "Systems of Logic Based on Ordinals"
+    ],
+    "answer": "Computing Machinery and Intelligence",
+    "category": "history",
+    "tags": [
+      "turing",
+      "turing-test"
+    ],
+    "difficulty": 2,
+    "explanation": "Turing's 1950 paper Computing Machinery and Intelligence introduced the imitation game that became known as the Turing test. On Computable Numbers is his 1936 paper on computability, which is the tempting wrong answer for people who know Turing but not the AI paper.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Computing Machinery and Intelligence",
+      "label": "Computing Machinery and Intelligence on Wikipedia"
+    },
+    "answerAliases": [
+      "Computing Machinery and Intelligence"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0058",
+    "text": "In which year did McCulloch and Pitts publish their mathematical model of a neuron?",
+    "options": [
+      "1956",
+      "1936",
+      "1943",
+      "1950"
+    ],
+    "answer": "1943",
+    "category": "history",
+    "tags": [
+      "neuron",
+      "foundational"
+    ],
+    "difficulty": 4,
+    "explanation": "Warren McCulloch and Walter Pitts published A Logical Calculus of the Ideas Immanent in Nervous Activity in 1943, the first mathematical model of a neuron. 1956 is the Dartmouth year, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Artificial neuron",
+      "label": "Artificial neuron on Wikipedia"
+    },
+    "answerAliases": [
+      "1943"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0059",
+    "text": "Which 1969 book by Marvin Minsky and Seymour Papert criticized single-layer perceptrons and contributed to the first AI winter?",
+    "options": [
+      "The Society of Mind",
+      "The Emotion Machine",
+      "Godel, Escher, Bach",
+      "Perceptrons"
+    ],
+    "answer": "Perceptrons",
+    "category": "history",
+    "tags": [
+      "perceptrons",
+      "ai-winter"
+    ],
+    "difficulty": 4,
+    "explanation": "Minsky and Papert's 1969 book Perceptrons showed the limitations of single-layer perceptrons and is often blamed for chilling neural network research for a decade. The Society of Mind and The Emotion Machine are Minsky's later books, which is why they tempt people who know the author but not the title.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Perceptrons (book)",
+      "label": "Perceptrons (book) on Wikipedia"
+    },
+    "answerAliases": [
+      "Perceptrons",
+      "Perceptrons: An Introduction to Computational Geometry"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0060",
+    "text": "Which company, founded in 1980, became the leading maker of Lisp machines in the 1980s?",
+    "options": [
+      "Symbolics",
+      "Xerox",
+      "Apple",
+      "Sun Microsystems"
+    ],
+    "answer": "Symbolics",
+    "category": "history",
+    "tags": [
+      "lisp",
+      "lisp-machines"
+    ],
+    "difficulty": 5,
+    "explanation": "Symbolics was spun out of the MIT AI Lab and became the leading maker of Lisp machines in the 1980s. Xerox is the tempting miss because it also built Lisp workstations, but Symbolics was the dominant vendor.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Symbolics",
+      "label": "Symbolics on Wikipedia"
+    },
+    "answerAliases": [
+      "Symbolics"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0061",
+    "text": "Which university developed MYCIN in the 1970s?",
+    "options": [
+      "University of Edinburgh",
+      "Stanford University",
+      "Massachusetts Institute of Technology",
+      "Carnegie Mellon University"
+    ],
+    "answer": "Stanford University",
+    "category": "history",
+    "tags": [
+      "mycin",
+      "expert-systems"
+    ],
+    "difficulty": 2,
+    "explanation": "MYCIN was developed over five or six years in the early 1970s at Stanford University. MIT is the tempting miss because ELIZA and SHRDLU came from there, but MYCIN was Stanford's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mycin",
+      "label": "Mycin on Wikipedia"
+    },
+    "answerAliases": [
+      "Stanford University",
+      "Stanford"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0062",
+    "text": "Which expert system, developed at Stanford in the 1960s, identified molecular structures from mass spectra?",
+    "options": [
+      "XCON",
+      "SHRDLU",
+      "DENDRAL",
+      "MYCIN"
+    ],
+    "answer": "DENDRAL",
+    "category": "history",
+    "tags": [
+      "dendral",
+      "expert-systems"
+    ],
+    "difficulty": 3,
+    "explanation": "DENDRAL, built at Stanford in the 1960s, was the first expert system and identified molecular structures from mass spectrometry data. MYCIN is the tempting miss because it is the other famous Stanford expert system, but it diagnosed blood infections instead.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Dendral",
+      "label": "Dendral on Wikipedia"
+    },
+    "answerAliases": [
+      "DENDRAL",
+      "Dendral"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0063",
+    "text": "Which robot, built at SRI in the late 1960s, was the first mobile robot to reason about its own actions?",
+    "options": [
+      "ASIMO",
+      "BigDog",
+      "Atlas",
+      "Shakey"
+    ],
+    "answer": "Shakey",
+    "category": "history",
+    "tags": [
+      "shakey",
+      "robotics"
+    ],
+    "difficulty": 2,
+    "explanation": "Shakey was built at SRI International from 1966 to 1972 and was the first general-purpose mobile robot able to reason about its own actions. ASIMO and BigDog are much later robots, which is why they tempt people who know robotics but not the history.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Shakey the robot",
+      "label": "Shakey the robot on Wikipedia"
+    },
+    "answerAliases": [
+      "Shakey"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0064",
+    "text": "Which 1989 Carnegie Mellon project trained a neural network to drive a vehicle autonomously?",
+    "options": [
+      "ALVINN",
+      "Stanley",
+      "Boss",
+      "Junior"
+    ],
+    "answer": "ALVINN",
+    "category": "history",
+    "tags": [
+      "alvinn",
+      "autonomous-driving"
+    ],
+    "difficulty": 4,
+    "explanation": "ALVINN, an Autonomous Land Vehicle in a Neural Network, was developed by Dean Pomerleau at Carnegie Mellon in 1989 and drove at up to 19 miles per hour. Stanley, Boss and Junior are later Darpa Grand Challenge vehicles, which is why they tempt people who know self-driving history but not the 1980s.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Navlab",
+      "label": "Navlab on Wikipedia"
+    },
+    "answerAliases": [
+      "ALVINN",
+      "Autonomous Land Vehicle in a Neural Network"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0065",
+    "text": "Which four-legged robot, developed by Boston Dynamics in 2005, became an internet sensation?",
+    "options": [
+      "ASIMO",
+      "BigDog",
+      "Spot",
+      "Atlas"
+    ],
+    "answer": "BigDog",
+    "category": "history",
+    "tags": [
+      "bigdog",
+      "robotics"
+    ],
+    "difficulty": 1,
+    "explanation": "Boston Dynamics developed BigDog in 2005, and its uncanny walking videos made it an early internet sensation. Spot and Atlas are later Boston Dynamics robots, which is why they tempt people who know the company but not the dates.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "BigDog",
+      "label": "BigDog on Wikipedia"
+    },
+    "answerAliases": [
+      "BigDog"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0066",
+    "text": "Which humanoid robot did Honda unveil in 2000?",
+    "options": [
+      "Pepper",
+      "Nao",
+      "ASIMO",
+      "Atlas"
+    ],
+    "answer": "ASIMO",
+    "category": "history",
+    "tags": [
+      "asimo",
+      "robotics"
+    ],
+    "difficulty": 1,
+    "explanation": "Honda unveiled ASIMO in 2000 as a humanoid robot that could walk and climb stairs. Atlas and Pepper are later robots from Boston Dynamics and SoftBank, which is why they tempt people who know humanoid robots but not the dates.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ASIMO",
+      "label": "ASIMO on Wikipedia"
+    },
+    "answerAliases": [
+      "ASIMO"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0067",
+    "text": "In which year did IBM's Watson compete on Jeopardy?",
+    "options": [
+      "2013",
+      "2015",
+      "2009",
+      "2011"
+    ],
+    "answer": "2011",
+    "category": "history",
+    "tags": [
+      "watson",
+      "jeopardy"
+    ],
+    "difficulty": 1,
+    "explanation": "Watson competed on Jeopardy in February 2011 against Ken Jennings and Brad Rutter. 2009 is when the system was first demonstrated internally, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "IBM Watson",
+      "label": "IBM Watson on Wikipedia"
+    },
+    "answerAliases": [
+      "2011",
+      "February 2011"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0069",
+    "text": "In which year was the ImageNet dataset first published?",
+    "options": [
+      "2007",
+      "2009",
+      "2011",
+      "2012"
+    ],
+    "answer": "2009",
+    "category": "history",
+    "tags": [
+      "imagenet",
+      "datasets"
+    ],
+    "difficulty": 2,
+    "explanation": "The ImageNet paper was presented at CVPR in 2009, although Fei-Fei Li began building it in 2007. 2012 is when AlexNet won the competition, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ImageNet",
+      "label": "ImageNet on Wikipedia"
+    },
+    "answerAliases": [
+      "2009"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0071",
+    "text": "In which year did Ian Goodfellow introduce GANs?",
+    "options": [
+      "2016",
+      "2018",
+      "2012",
+      "2014"
+    ],
+    "answer": "2014",
+    "category": "history",
+    "tags": [
+      "gans",
+      "generative"
+    ],
+    "difficulty": 1,
+    "explanation": "Goodfellow introduced GANs in a 2014 paper, and the idea spread quickly through image generation research. 2012 is the AlexNet year, which is the mix-up the distractor targets.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Generative adversarial network",
+      "label": "Generative adversarial network on Wikipedia"
+    },
+    "answerAliases": [
+      "2014"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0072",
+    "text": "At which conference was Attention Is All You Need presented in 2017?",
+    "options": [
+      "NeurIPS",
+      "ICML",
+      "ICLR",
+      "CVPR"
+    ],
+    "answer": "NeurIPS",
+    "category": "history",
+    "tags": [
+      "transformer",
+      "conference"
+    ],
+    "difficulty": 2,
+    "explanation": "The paper was presented at the 31st Conference on Neural Information Processing Systems (NeurIPS) in 2017. ICLR is the tempting miss because many transformer follow-ups appeared there, but the original was at NeurIPS.",
+    "source": {
+      "kind": "url",
+      "url": "https://papers.nips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+      "label": "Attention Is All You Need on NeurIPS"
+    },
+    "answerAliases": [
+      "NeurIPS",
+      "NIPS"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "hst-0076",
+    "text": "DeepMind released WaveNet, which generates raw audio waveforms, in which year?",
+    "options": [
+      "2014",
+      "2016",
+      "2018",
+      "2020"
+    ],
+    "answer": "2016",
+    "category": "history",
+    "tags": [
+      "wavenet",
+      "deepmind",
+      "audio"
+    ],
+    "difficulty": 2,
+    "explanation": "DeepMind released WaveNet in September 2016, showing that deep learning could model raw audio directly. 2018 is the tempting answer because Tacotron 2 arrived then, but WaveNet itself dates to 2016.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "WaveNet",
+      "label": "WaveNet on Wikipedia"
+    },
+    "answerAliases": [
+      "2016",
+      "September 2016",
+      "WaveNet"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "hst-0077",
+    "text": "Who published the first neural style transfer paper in 2015?",
+    "options": [
+      "Yann LeCun",
+      "Leon Gatys",
+      "Ian Goodfellow",
+      "Andrej Karpathy"
+    ],
+    "answer": "Leon Gatys",
+    "category": "history",
+    "tags": [
+      "style-transfer",
+      "gatys",
+      "images"
+    ],
+    "difficulty": 3,
+    "explanation": "Leon Gatys and colleagues released 'A Neural Algorithm of Artistic Style' on arXiv in 2015, applying a trained convolutional network to repaint photos in another image's style. Ian Goodfellow is the tempting answer as another famous generative-AI pioneer, but GANs are his, not style transfer.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Neural style transfer",
+      "label": "Neural style transfer on Wikipedia"
+    },
+    "answerAliases": [
+      "Leon Gatys",
+      "Gatys",
+      "A Neural Algorithm of Artistic Style"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "hst-0078",
+    "text": "Which open-source project launched in March 2023 kicked off the autonomous-agent craze?",
+    "options": [
+      "BabyAGI",
+      "CrewAI",
+      "AutoGPT",
+      "LangChain"
+    ],
+    "answer": "AutoGPT",
+    "category": "history",
+    "tags": [
+      "autogpt",
+      "agents",
+      "2023"
+    ],
+    "difficulty": 2,
+    "explanation": "AutoGPT, released in March 2023, let a GPT-4 model loop over its own outputs and tool calls with no human in the loop, which is what started the agent gold rush. LangChain is the tempting answer as the most-used agent framework, but it is a library, not the project that sparked the craze.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AutoGPT",
+      "label": "AutoGPT on Wikipedia"
+    },
+    "answerAliases": [
+      "AutoGPT",
+      "Auto-GPT",
+      "March 2023"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "hst-0079",
+    "text": "OpenAI announced GPT-4 in which month of 2023?",
+    "options": [
+      "January",
+      "March",
+      "June",
+      "November"
+    ],
+    "answer": "March",
+    "category": "history",
+    "tags": [
+      "gpt-4",
+      "openai",
+      "2023"
+    ],
+    "difficulty": 1,
+    "explanation": "OpenAI announced GPT-4 on March 14, 2023, and it powered the paid tier of ChatGPT from launch. January is the tempting answer because ChatGPT itself had just gone viral, but GPT-4 came two months later.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GPT-4",
+      "label": "GPT-4 on Wikipedia"
+    },
+    "answerAliases": [
+      "March",
+      "March 2023",
+      "March 14, 2023",
+      "GPT-4"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "hst-0080",
+    "text": "Google announced Bard in which month of 2023?",
+    "options": [
+      "April",
+      "July",
+      "October",
+      "February"
+    ],
+    "answer": "February",
+    "category": "history",
+    "tags": [
+      "bard",
+      "google",
+      "2023"
+    ],
+    "difficulty": 1,
+    "explanation": "Google announced Bard on February 6, 2023, the week before Microsoft's Bing Chat event, as a direct response to ChatGPT. April is the tempting answer because that is when early access opened, but the announcement came in February.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Google Gemini",
+      "label": "Google Gemini on Wikipedia"
+    },
+    "answerAliases": [
+      "February",
+      "February 2023",
+      "February 6, 2023",
+      "Bard"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "hst-0081",
+    "text": "In which year did Meta release the first LLaMA model?",
+    "options": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "answer": "2023",
+    "category": "history",
+    "tags": [
+      "llama",
+      "meta",
+      "release"
+    ],
+    "difficulty": 1,
+    "explanation": "Meta released LLaMA on February 24, 2023, initially to researchers under a non-commercial license. 2022 is the tempting answer because that was the ChatGPT shockwave year, but LLaMA came the following February.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Llama (language model)",
+      "label": "Llama (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "2023",
+      "February 2023",
+      "LLaMA"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "hst-0082",
+    "text": "DeepMind's AlphaStar beat professional players at which game?",
+    "options": [
+      "Dota 2",
+      "Go",
+      "Chess",
+      "StarCraft II"
+    ],
+    "answer": "StarCraft II",
+    "category": "history",
+    "tags": [
+      "alphastar",
+      "deepmind",
+      "games"
+    ],
+    "difficulty": 2,
+    "explanation": "AlphaStar defeated professional StarCraft II players in 2019 using a multi-agent reinforcement learning setup. Dota 2 is the tempting answer because OpenAI Five played that game the same year, but AlphaStar's game was StarCraft.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AlphaStar (software)",
+      "label": "AlphaStar (software) on Wikipedia"
+    },
+    "answerAliases": [
+      "StarCraft II",
+      "StarCraft",
+      "AlphaStar"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "hst-0083",
+    "text": "Which DeepMind model learned to plan without knowing the rules of the game?",
+    "options": [
+      "MuZero",
+      "AlphaZero",
+      "AlphaGo",
+      "AlphaStar"
+    ],
+    "answer": "MuZero",
+    "category": "history",
+    "tags": [
+      "muzero",
+      "deepmind",
+      "planning"
+    ],
+    "difficulty": 3,
+    "explanation": "MuZero, published in 2019, learned its own model of the environment and planned with it, mastering Go, chess, shogi and Atari without being given the rules. AlphaZero is the tempting answer because it also masters games from scratch, but it was given the rules.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "MuZero",
+      "label": "MuZero on Wikipedia"
+    },
+    "answerAliases": [
+      "MuZero",
+      "MuZero (2019)"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "hst-0084",
+    "text": "OpenAI Five competed in which esport?",
+    "options": [
+      "Dota 2",
+      "StarCraft II",
+      "League of Legends",
+      "Counter-Strike"
+    ],
+    "answer": "Dota 2",
+    "category": "history",
+    "tags": [
+      "openai-five",
+      "dota",
+      "2019"
+    ],
+    "difficulty": 2,
+    "explanation": "OpenAI Five played Dota 2 and beat the reigning world champions OG in 2019. StarCraft II is the tempting answer because AlphaStar played that the same year, but OpenAI Five's game was Dota.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenAI Five",
+      "label": "OpenAI Five on Wikipedia"
+    },
+    "answerAliases": [
+      "Dota 2",
+      "Dota",
+      "OpenAI Five"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "hst-0085",
+    "text": "Which 2022 DeepMind study argued that models were undertrained relative to data?",
+    "options": [
+      "Chinchilla",
+      "PaLM",
+      "Flamingo",
+      "Gato"
+    ],
+    "answer": "Chinchilla",
+    "category": "history",
+    "tags": [
+      "chinchilla",
+      "scaling",
+      "2022"
+    ],
+    "difficulty": 3,
+    "explanation": "DeepMind's Chinchilla paper in March 2022 argued that for a given compute budget, smaller models trained on more data outperform larger ones trained on less. PaLM is the tempting answer as another 2022 DeepMind model, but PaLM was the large model Chinchilla critiqued.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Chinchilla (language model)",
+      "label": "Chinchilla (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "Chinchilla",
+      "March 2022",
+      "Chinchilla (language model)"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
   }
 ]

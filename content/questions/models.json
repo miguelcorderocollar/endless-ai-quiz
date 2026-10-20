@@ -1820,5 +1820,1002 @@
     ],
     "status": "published",
     "addedAt": "2026-09-29"
+  },
+  {
+    "id": "mod-0062",
+    "text": "Qwen, Alibaba's model family, is also known by what Chinese name meaning 'comprehend the meaning and answer a thousand questions'?",
+    "options": [
+      "Tongyi Wanxiang",
+      "Tongyi Qianwen",
+      "Wenxin Yiyan",
+      "Hunyuan"
+    ],
+    "answer": "Tongyi Qianwen",
+    "category": "models",
+    "tags": [
+      "qwen",
+      "alibaba",
+      "naming"
+    ],
+    "difficulty": 2,
+    "explanation": "Qwen's Chinese name Tongyi Qianwen translates roughly to 'comprehend the meaning and answer a thousand questions', and the family is built by Alibaba Cloud. Wenxin Yiyan is Baidu's Ernie Bot, so it is the natural confusion, but it belongs to a different company.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Qwen",
+      "label": "Qwen on Wikipedia"
+    },
+    "answerAliases": [
+      "Tongyi Qianwen",
+      "Qwen",
+      "通义千问"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0063",
+    "text": "Ernie Bot's full name, ERNIE, expands to what?",
+    "options": [
+      "Electronic Random Number Indicator Equipment",
+      "Enhanced Representation through Knowledge Integration",
+      "Efficient Retrieval of Neural Information Embeddings",
+      "Extended Reasoning Network for Intelligent Engines"
+    ],
+    "answer": "Enhanced Representation through Knowledge Integration",
+    "category": "models",
+    "tags": [
+      "baidu",
+      "ernie",
+      "naming"
+    ],
+    "difficulty": 3,
+    "explanation": "Baidu's Ernie Bot is built on the ERNIE series, whose name expands to Enhanced Representation through Knowledge Integration. The electronic random number option names the British Premium Bonds machine, a famous unrelated ERNIE, which is why the acronym gets confused.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Ernie Bot",
+      "label": "Ernie Bot on Wikipedia"
+    },
+    "answerAliases": [
+      "Enhanced Representation through Knowledge Integration",
+      "ERNIE",
+      "Ernie Bot"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0064",
+    "text": "Hugging Face's own family of small language models, first released in 2024 for running on limited compute, is called what?",
+    "options": [
+      "Phi",
+      "SmolLM",
+      "Gemma",
+      "Granite"
+    ],
+    "answer": "SmolLM",
+    "category": "models",
+    "tags": [
+      "hugging-face",
+      "small-models",
+      "lineage"
+    ],
+    "difficulty": 2,
+    "explanation": "SmolLM is Hugging Face's own family of tiny models, starting in 2024 at 135 million to 1.7 billion parameters for devices with little compute. Phi is the trap because it is Microsoft's small-model family with the same pitch, Gemma is Google's, and Granite is IBM's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hugging Face",
+      "label": "Hugging Face on Wikipedia"
+    },
+    "answerAliases": [
+      "SmolLM",
+      "Smol LM",
+      "SmolLM2",
+      "SmolLM3"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0065",
+    "text": "BERT, the language model Google introduced in October 2018, is an acronym for what?",
+    "options": [
+      "Batch Encoding of Recurrent Transformers",
+      "Bayesian Embedding of Raw Text",
+      "Bold Encoder of Recursive Translation",
+      "Bidirectional Encoder Representations from Transformers"
+    ],
+    "answer": "Bidirectional Encoder Representations from Transformers",
+    "category": "models",
+    "tags": [
+      "bert",
+      "google",
+      "naming"
+    ],
+    "difficulty": 2,
+    "explanation": "BERT stands for Bidirectional Encoder Representations from Transformers, named for reading text in both directions at once. The batch-encoding option describes tokenization rather than the model, and the Bayesian option has nothing to do with Google's 2018 release; only the full phrase names the acronym correctly.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "BERT (language model)",
+      "label": "BERT on Wikipedia"
+    },
+    "answerAliases": [
+      "Bidirectional Encoder Representations from Transformers",
+      "bidirectional encoder representations"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0066",
+    "text": "MiniMax, developer of the abab models, is headquartered in which city?",
+    "options": [
+      "Hangzhou",
+      "Shanghai",
+      "Beijing",
+      "Shenzhen"
+    ],
+    "answer": "Shanghai",
+    "category": "models",
+    "tags": [
+      "minimax",
+      "china",
+      "lineage"
+    ],
+    "difficulty": 1,
+    "explanation": "MiniMax is based in Shanghai and is one of China's 'six AI tigers'. Beijing is the tempting answer because several other Chinese model labs are based there, but MiniMax chose Shanghai.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "MiniMax Group",
+      "label": "MiniMax Group on Wikipedia"
+    },
+    "answerAliases": [
+      "Shanghai",
+      "MiniMax"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0067",
+    "text": "Cohere, the company behind the Command model family, is headquartered in which city?",
+    "options": [
+      "San Francisco",
+      "Toronto",
+      "London",
+      "Paris"
+    ],
+    "answer": "Toronto",
+    "category": "models",
+    "tags": [
+      "cohere",
+      "command",
+      "lineage"
+    ],
+    "difficulty": 1,
+    "explanation": "Cohere is a Canadian company headquartered in Toronto, founded in 2019 by Aidan Gomez and others from Google Brain. San Francisco is the tempting answer because so many AI labs are based there, but Cohere is not one of them.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Cohere",
+      "label": "Cohere on Wikipedia"
+    },
+    "answerAliases": [
+      "Toronto",
+      "Cohere",
+      "Command"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0068",
+    "text": "Llama 4 Scout, one of Meta's April 2025 Llama 4 releases, supports a context window of roughly how many tokens?",
+    "options": [
+      "10 million",
+      "1 million",
+      "128 thousand",
+      "200 thousand"
+    ],
+    "answer": "10 million",
+    "category": "models",
+    "tags": [
+      "llama",
+      "meta",
+      "context-window"
+    ],
+    "difficulty": 3,
+    "explanation": "Llama 4 Scout shipped with a 10-million-token context window, far beyond any earlier open model. One million is the trap because Gemini 1.5 Pro advertised that figure in 2024, and 128 thousand was the standard frontier window of the previous era.",
+    "source": {
+      "kind": "url",
+      "url": "https://models.dev/models/meta/llama-4-scout-17b-instruct/",
+      "label": "models.dev specs for Llama 4 Scout 17B Instruct"
+    },
+    "answerAliases": [
+      "10 million",
+      "10,000,000",
+      "ten million",
+      "10M"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0069",
+    "text": "OLMo, the fully open model from the Allen Institute for AI, is short for what?",
+    "options": [
+      "Optimized Learning Model",
+      "Online Language Machine",
+      "Open Large Model",
+      "Open Language Model"
+    ],
+    "answer": "Open Language Model",
+    "category": "models",
+    "tags": [
+      "olmo",
+      "ai2",
+      "naming"
+    ],
+    "difficulty": 2,
+    "explanation": "OLMo stands for Open Language Model, and Ai2 released not just the weights but the training data, code, and logs. The 'Open Large Model' distractor sounds plausible because of the LLM abbreviation, but the actual name is Open Language Model.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OLMo (language model)",
+      "label": "OLMo (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "Open Language Model",
+      "OLMo",
+      "Ai2"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0070",
+    "text": "Meta released Llama 4 in which month of 2025?",
+    "options": [
+      "April 2025",
+      "February 2023",
+      "July 2023",
+      "April 2024"
+    ],
+    "answer": "April 2025",
+    "category": "models",
+    "tags": [
+      "llama",
+      "meta",
+      "release-date"
+    ],
+    "difficulty": 2,
+    "explanation": "Llama 4 shipped in April 2025, the latest in Meta's open-weight family. April 2024 is the trap because that is when Llama 3 arrived, and the two releases are easy to swap.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Llama (language model)",
+      "label": "Llama (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "April 2025",
+      "Llama 4",
+      "Meta"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0071",
+    "text": "Mistral Large was launched by Mistral AI in which month of 2024?",
+    "options": [
+      "February 2024",
+      "December 2023",
+      "May 2024",
+      "July 2023"
+    ],
+    "answer": "February 2024",
+    "category": "models",
+    "tags": [
+      "mistral",
+      "mistral-large",
+      "release-date"
+    ],
+    "difficulty": 3,
+    "explanation": "Mistral Large arrived on February 26, 2024, as Mistral's first proprietary frontier model. December 2023 is the trap because that is when Mixtral 8x7B shipped, and the two are easy to conflate.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mistral AI",
+      "label": "Mistral AI on Wikipedia"
+    },
+    "answerAliases": [
+      "February 2024",
+      "Mistral Large",
+      "Mistral AI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0072",
+    "text": "Mixtral 8x7B was released by Mistral AI in which month of 2023?",
+    "options": [
+      "October 2023",
+      "April 2024",
+      "December 2023",
+      "September 2023"
+    ],
+    "answer": "December 2023",
+    "category": "models",
+    "tags": [
+      "mistral",
+      "mixtral",
+      "release-date"
+    ],
+    "difficulty": 3,
+    "explanation": "Mixtral 8x7B shipped in December 2023, posted first as a BitTorrent link before a Hugging Face release. April 2024 is the trap because that is when the larger Mixtral 8x22B arrived.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mistral AI",
+      "label": "Mistral AI on Wikipedia"
+    },
+    "answerAliases": [
+      "December 2023",
+      "Mixtral",
+      "Mixtral 8x7B"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0073",
+    "text": "DeepSeek-V3 was released in which month of 2024?",
+    "options": [
+      "August 2025",
+      "January 2025",
+      "May 2024",
+      "December 2024"
+    ],
+    "answer": "December 2024",
+    "category": "models",
+    "tags": [
+      "deepseek",
+      "deepseek-v3",
+      "release-date"
+    ],
+    "difficulty": 2,
+    "explanation": "DeepSeek-V3 landed in December 2024, the dense-to-MoE successor to DeepSeek-V2. January 2025 is the trap because that is when DeepSeek-R1 arrived and drew most of the attention.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DeepSeek",
+      "label": "DeepSeek on Wikipedia"
+    },
+    "answerAliases": [
+      "December 2024",
+      "DeepSeek-V3",
+      "DeepSeek V3"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0074",
+    "text": "DeepSeek-R1 was released under which license?",
+    "options": [
+      "MIT",
+      "Apache 2.0",
+      "GNU GPL",
+      "Proprietary"
+    ],
+    "answer": "MIT",
+    "category": "models",
+    "tags": [
+      "deepseek",
+      "deepseek-r1",
+      "open-weights"
+    ],
+    "difficulty": 2,
+    "explanation": "DeepSeek-R1 shipped in January 2025 under the MIT license, which is why it could be reused and distilled so quickly. Apache 2.0 is the trap because many of DeepSeek's later variants and Qwen use it, but R1 itself used MIT.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DeepSeek",
+      "label": "DeepSeek on Wikipedia"
+    },
+    "answerAliases": [
+      "MIT",
+      "MIT License",
+      "DeepSeek-R1"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0075",
+    "text": "When did OpenAI release the o1 preview, its first reasoning model?",
+    "options": [
+      "December 5, 2024",
+      "September 12, 2024",
+      "January 31, 2025",
+      "April 16, 2025"
+    ],
+    "answer": "September 12, 2024",
+    "category": "models",
+    "tags": [
+      "openai",
+      "o1",
+      "reasoning"
+    ],
+    "difficulty": 2,
+    "explanation": "OpenAI released the o1 preview on September 12, 2024, the first model in its new reasoning series. December 5, 2024 is the trap because that is when the full o1 model reached ChatGPT users.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenAI o1",
+      "label": "OpenAI o1 on Wikipedia"
+    },
+    "answerAliases": [
+      "September 12, 2024",
+      "o1",
+      "o1-preview",
+      "OpenAI o1"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0076",
+    "text": "OpenAI called its model o3 rather than o2 to avoid a trademark conflict with which brand?",
+    "options": [
+      "Oracle's database brand",
+      "OpenAI's own 2023 trademark",
+      "O2, the mobile carrier brand",
+      "O3, a French perfume house"
+    ],
+    "answer": "O2, the mobile carrier brand",
+    "category": "models",
+    "tags": [
+      "openai",
+      "o3",
+      "naming"
+    ],
+    "difficulty": 3,
+    "explanation": "OpenAI skipped o2 because of a trademark conflict with the mobile carrier brand O2. Oracle is the tempting wrong answer because it is a famous tech brand with a similar short name, but the conflict was with the telecom, not the database company.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenAI o3",
+      "label": "OpenAI o3 on Wikipedia"
+    },
+    "answerAliases": [
+      "O2",
+      "O2 (brand)",
+      "mobile carrier",
+      "OpenAI o3"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0077",
+    "text": "GPT-4o mini was released on which date?",
+    "options": [
+      "May 13, 2024",
+      "March 14, 2023",
+      "November 30, 2022",
+      "July 18, 2024"
+    ],
+    "answer": "July 18, 2024",
+    "category": "models",
+    "tags": [
+      "openai",
+      "gpt-4o",
+      "release-date"
+    ],
+    "difficulty": 2,
+    "explanation": "OpenAI released GPT-4o mini on July 18, 2024, a smaller model that replaced GPT-3.5 Turbo in ChatGPT. May 13, 2024 is the trap because that is when the full GPT-4o launched, and the two dates are easy to swap.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GPT-4o",
+      "label": "GPT-4o on Wikipedia"
+    },
+    "answerAliases": [
+      "July 18, 2024",
+      "GPT-4o mini",
+      "GPT-4o"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0078",
+    "text": "Claude 3, released in March 2024, came in three sizes named what?",
+    "options": [
+      "Haiku, Sonnet, and Opus",
+      "Nano, Pro, and Ultra",
+      "Mini, Flash, and Pro",
+      "Small, Medium, and Large"
+    ],
+    "answer": "Haiku, Sonnet, and Opus",
+    "category": "models",
+    "tags": [
+      "anthropic",
+      "claude",
+      "naming"
+    ],
+    "difficulty": 2,
+    "explanation": "Since Claude 3, Anthropic has released each generation in three sizes: Haiku (smallest), Sonnet, and Opus (largest). Nano, Pro, and Ultra is the trap because that is Google's Gemini naming scheme, not Anthropic's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Claude (AI)",
+      "label": "Claude (AI) on Wikipedia"
+    },
+    "answerAliases": [
+      "Haiku, Sonnet, and Opus",
+      "Claude 3",
+      "Anthropic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0079",
+    "text": "Google announced Gemini 2.0 Flash in which month of 2024?",
+    "options": [
+      "December 2024",
+      "February 2024",
+      "May 2024",
+      "December 2023"
+    ],
+    "answer": "December 2024",
+    "category": "models",
+    "tags": [
+      "google",
+      "gemini",
+      "release-date"
+    ],
+    "difficulty": 3,
+    "explanation": "Gemini 2.0 Flash was announced in December 2024, focused on multimodality, agentic capabilities, and speed. February 2024 is the trap because that is when Gemini 1.5 launched with its one-million-token context window.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Gemini (language model)",
+      "label": "Gemini (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "December 2024",
+      "Gemini 2.0",
+      "Gemini 2.0 Flash"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0080",
+    "text": "In which year did xAI open-source Grok-1?",
+    "options": [
+      "2023",
+      "2022",
+      "2024",
+      "2025"
+    ],
+    "answer": "2024",
+    "category": "models",
+    "tags": [
+      "xai",
+      "grok",
+      "open-weights"
+    ],
+    "difficulty": 3,
+    "explanation": "xAI open-sourced Grok-1 in 2024, after launching the model in November 2023. 2023 is the trap because that is when Grok first appeared as a chatbot, not when its weights were released.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Grok (chatbot)",
+      "label": "Grok (chatbot) on Wikipedia"
+    },
+    "answerAliases": [
+      "2024",
+      "Grok-1",
+      "xAI",
+      "Grok"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0081",
+    "text": "Sora's first generation was released publicly in which month of 2024?",
+    "options": [
+      "February 2024",
+      "September 2025",
+      "August 2024",
+      "December 2024"
+    ],
+    "answer": "December 2024",
+    "category": "models",
+    "tags": [
+      "openai",
+      "sora",
+      "release-date"
+    ],
+    "difficulty": 2,
+    "explanation": "Sora's first generation reached ChatGPT Plus and Pro users in the US and Canada in December 2024. February 2024 is the trap because that is when OpenAI first previewed Sora's output, months before the public release.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Sora (text-to-video model)",
+      "label": "Sora (text-to-video model) on Wikipedia"
+    },
+    "answerAliases": [
+      "December 2024",
+      "Sora",
+      "OpenAI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0082",
+    "text": "Whisper, OpenAI's speech recognition model, is built on which architecture?",
+    "options": [
+      "Encoder-decoder transformer",
+      "Encoder-only bidirectional transformer",
+      "Diffusion model",
+      "Mixture of experts"
+    ],
+    "answer": "Encoder-decoder transformer",
+    "category": "models",
+    "tags": [
+      "openai",
+      "whisper",
+      "architecture"
+    ],
+    "difficulty": 2,
+    "explanation": "Whisper is a weakly supervised model built on an encoder-decoder transformer architecture. The encoder-only option describes BERT-style models, which read text in both directions rather than transcribing audio.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Whisper (speech recognition system)",
+      "label": "Whisper (speech recognition system) on Wikipedia"
+    },
+    "answerAliases": [
+      "encoder-decoder transformer",
+      "Whisper",
+      "OpenAI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0083",
+    "text": "OpenAI named its Sora video model after the Japanese word for what?",
+    "options": [
+      "Cloud",
+      "Wave",
+      "Sky",
+      "Dream"
+    ],
+    "answer": "Sky",
+    "category": "models",
+    "tags": [
+      "sora",
+      "openai",
+      "naming"
+    ],
+    "difficulty": 2,
+    "explanation": "The Sora team chose the Japanese word for sky to suggest limitless creative potential. Cloud is the tempting miss because video generation sounds like a cloud product, and wave fits the Japanese imagery, but the name is sky.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Sora (text-to-video model)",
+      "label": "Sora (text-to-video model) on Wikipedia"
+    },
+    "answerAliases": [
+      "Sky",
+      "sky",
+      "sora"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0084",
+    "text": "AlphaZero, DeepMind's 2017 system, mastered which games starting from random play?",
+    "options": [
+      "Atari, chess, and Go",
+      "Go, poker, and shogi",
+      "Chess, shogi, and Go",
+      "Chess, checkers, and backgammon"
+    ],
+    "answer": "Chess, shogi, and Go",
+    "category": "models",
+    "tags": [
+      "alphazero",
+      "deepmind",
+      "games"
+    ],
+    "difficulty": 2,
+    "explanation": "AlphaZero learned chess, shogi, and Go by self-play alone, with no human data or opening books. Atari is the trap because MuZero, its 2019 successor, also handled Atari games, but AlphaZero itself did not.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AlphaZero",
+      "label": "AlphaZero on Wikipedia"
+    },
+    "answerAliases": [
+      "chess, shogi, and Go",
+      "AlphaZero",
+      "DeepMind"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0085",
+    "text": "PaLM, Google's 2022 model, is short for what?",
+    "options": [
+      "Parallel Language Model",
+      "Probabilistic Language Model",
+      "Pretrained Adaptive Language Model",
+      "Pathways Language Model"
+    ],
+    "answer": "Pathways Language Model",
+    "category": "models",
+    "tags": [
+      "palm",
+      "google",
+      "naming"
+    ],
+    "difficulty": 2,
+    "explanation": "PaLM stands for Pathways Language Model, the system Google built on its Pathways infrastructure. 'Parallel Language Model' sounds right because of the parallelism involved, but the actual name uses Pathways.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "PaLM",
+      "label": "PaLM on Wikipedia"
+    },
+    "answerAliases": [
+      "Pathways Language Model",
+      "PaLM",
+      "Google"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0086",
+    "text": "Moonshot AI's Kimi K2, open-sourced in July 2025, has roughly how many parameters in total?",
+    "options": [
+      "1 trillion",
+      "100 billion",
+      "405 billion",
+      "671 billion"
+    ],
+    "answer": "1 trillion",
+    "category": "models",
+    "tags": [
+      "kimi",
+      "moonshot",
+      "parameters"
+    ],
+    "difficulty": 2,
+    "explanation": "Kimi K2 is a one-trillion-parameter mixture-of-experts model with 32 billion active per token, released with open weights in July 2025. 405 billion is the trap because that is Llama's flagship size, and 671 billion is the total of DeepSeek-V3, another large open Chinese mixture-of-experts model.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Kimi (AI)",
+      "label": "Kimi (AI) on Wikipedia"
+    },
+    "answerAliases": [
+      "1 trillion",
+      "one trillion",
+      "1T",
+      "1,000,000,000,000"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0087",
+    "text": "OpenAI Codex, the model behind the first GitHub Copilot, was a modified version of which model?",
+    "options": [
+      "GPT-2",
+      "GPT-3",
+      "BERT",
+      "T5"
+    ],
+    "answer": "GPT-3",
+    "category": "models",
+    "tags": [
+      "openai",
+      "codex",
+      "lineage"
+    ],
+    "difficulty": 3,
+    "explanation": "OpenAI Codex was GPT-3 fine-tuned on source code in many programming languages. GPT-2 is the trap because it is the earlier OpenAI model, but Copilot's original engine was built on GPT-3.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenAI Codex (language model)",
+      "label": "OpenAI Codex (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "GPT-3",
+      "OpenAI Codex",
+      "GitHub Copilot"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0088",
+    "text": "Mixtral 8x7B sends each token to how many of its eight experts?",
+    "options": [
+      "4 of 8",
+      "8 of 8",
+      "2 of 8",
+      "1 of 8"
+    ],
+    "answer": "2 of 8",
+    "category": "models",
+    "tags": [
+      "mistral",
+      "mixtral",
+      "architecture"
+    ],
+    "difficulty": 4,
+    "explanation": "Mixtral is a sparse mixture-of-experts model where a router sends each token to two of the eight expert groups, giving 46.7 billion parameters at a fraction of the active cost. Routing to all eight would defeat the purpose of a sparse model, which is why that option is wrong.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mistral AI",
+      "label": "Mistral AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Mixtral 8x7B",
+      "2 of 8",
+      "mixture of experts",
+      "Mixtral"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0089",
+    "text": "Mistral 7B, Mistral AI's first model, was released in which month of 2023?",
+    "options": [
+      "December 2023",
+      "February 2024",
+      "June 2023",
+      "September 2023"
+    ],
+    "answer": "September 2023",
+    "category": "models",
+    "tags": [
+      "mistral",
+      "mistral-7b",
+      "release-date"
+    ],
+    "difficulty": 2,
+    "explanation": "Mistral 7B shipped on September 27, 2023, posted first via a BitTorrent magnet link before Hugging Face. December 2023 is the trap because that is when Mixtral 8x7B arrived, and the two releases blur together.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mistral AI",
+      "label": "Mistral AI on Wikipedia"
+    },
+    "answerAliases": [
+      "September 2023",
+      "Mistral 7B",
+      "Mistral AI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0090",
+    "text": "DeepSeek-R1 was released in which month of 2025?",
+    "options": [
+      "January 2025",
+      "December 2024",
+      "November 2024",
+      "May 2025"
+    ],
+    "answer": "January 2025",
+    "category": "models",
+    "tags": [
+      "deepseek",
+      "deepseek-r1",
+      "release-date"
+    ],
+    "difficulty": 2,
+    "explanation": "DeepSeek-R1 launched in January 2025 and became the most downloaded free app on the US iOS App Store within days. December 2024 is the trap because that is when DeepSeek-V3 shipped, and R1 built on it.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DeepSeek",
+      "label": "DeepSeek on Wikipedia"
+    },
+    "answerAliases": [
+      "January 2025",
+      "DeepSeek-R1",
+      "DeepSeek R1"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0091",
+    "text": "GPT-4o was released by OpenAI in which month of 2024?",
+    "options": [
+      "March 2023",
+      "May 2024",
+      "November 2022",
+      "July 2024"
+    ],
+    "answer": "May 2024",
+    "category": "models",
+    "tags": [
+      "openai",
+      "gpt-4o",
+      "release-date"
+    ],
+    "difficulty": 1,
+    "explanation": "GPT-4o launched in May 2024 as a natively multimodal model, and the 'o' stands for 'omni'. March 2023 is the trap because that is when GPT-4 arrived, and the two names are easy to confuse.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GPT-4o",
+      "label": "GPT-4o on Wikipedia"
+    },
+    "answerAliases": [
+      "May 2024",
+      "GPT-4o",
+      "OpenAI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0092",
+    "text": "Anthropic's Claude was first released as a chatbot in which month of 2023?",
+    "options": [
+      "November 2022",
+      "February 2024",
+      "March 2023",
+      "May 2024"
+    ],
+    "answer": "March 2023",
+    "category": "models",
+    "tags": [
+      "anthropic",
+      "claude",
+      "release-date"
+    ],
+    "difficulty": 1,
+    "explanation": "Claude debuted as a chatbot in March 2023, built by Anthropic. November 2022 is the trap because that is when ChatGPT launched and kicked off the chatbot boom, making every later release feel like it happened then.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Claude (AI)",
+      "label": "Claude (AI) on Wikipedia"
+    },
+    "answerAliases": [
+      "March 2023",
+      "Claude",
+      "Anthropic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "mod-0093",
+    "text": "Grok, xAI's chatbot, was first launched in which month of 2023?",
+    "options": [
+      "March 2023",
+      "May 2024",
+      "February 2024",
+      "November 2023"
+    ],
+    "answer": "November 2023",
+    "category": "models",
+    "tags": [
+      "xai",
+      "grok",
+      "release-date"
+    ],
+    "difficulty": 2,
+    "explanation": "Grok debuted in November 2023 as xAI's chatbot with live knowledge from X. March 2023 is the trap because that is when Claude launched, and the two chatbots are often grouped together as the 2023 wave.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Grok (chatbot)",
+      "label": "Grok (chatbot) on Wikipedia"
+    },
+    "answerAliases": [
+      "November 2023",
+      "Grok",
+      "xAI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
   }
 ]

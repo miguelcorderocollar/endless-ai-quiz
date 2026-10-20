@@ -232,5 +232,1741 @@
     ],
     "status": "published",
     "addedAt": "2026-09-28"
+  },
+  {
+    "id": "pap-0009",
+    "text": "The 2017 paper Attention Is All You Need threw out the recurrent encoder-decoder setup that had dominated machine translation. What did it build in its place?",
+    "options": [
+      "Self-attention layers, with position added to the input",
+      "Long short-term memory cells chained one token at a time",
+      "Convolutional filters with a wider receptive field each layer",
+      "Gated recurrent units, with attention between the encoder and decoder"
+    ],
+    "answer": "Self-attention layers, with position added to the input",
+    "category": "papers",
+    "tags": [
+      "transformer",
+      "attention",
+      "foundational"
+    ],
+    "difficulty": 2,
+    "explanation": "The paper describes its architecture as based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. What that bought was parallelism, because no position has to wait for the one before it, which is why a Transformer trained in days where the recurrent models it replaced took weeks.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "label": "Attention Is All You Need on arXiv"
+    },
+    "answerAliases": [
+      "self-attention",
+      "attention mechanisms",
+      "dispensing with recurrence and convolutions entirely",
+      "Transformer"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pap-0010",
+    "text": "The 2012 AlexNet paper said its depth was what made it accurate, and that the same depth was computationally expensive. What did it name as the thing that made that depth affordable?",
+    "options": [
+      "Buying a much smaller set of images to train on",
+      "Replacing the depth with a much wider shallow network",
+      "Training the network on graphics processing units",
+      "Training the network on a large cluster of server CPUs"
+    ],
+    "answer": "Training the network on graphics processing units",
+    "category": "papers",
+    "tags": [
+      "alexnet",
+      "gpu",
+      "deep-learning"
+    ],
+    "difficulty": 2,
+    "explanation": "It ran on two consumer Nvidia GTX 580 graphics cards, in a bedroom, with hand-written C++ and CUDA because no GPU machine-learning framework existed yet. The hardware half of the story is the one that usually gets left out, and it is why deep learning looked practical a year before most of the field believed it was.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AlexNet",
+      "label": "AlexNet on Wikipedia"
+    },
+    "answerAliases": [
+      "graphics processing units",
+      "GPUs",
+      "utilization of graphics processing units (GPUs) during training",
+      "GPU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pap-0011",
+    "text": "In the 2022 InstructGPT work, reinforcement learning from human feedback rests on one step where people do the actual work. What were they asked to do?",
+    "options": [
+      "Rewrite each answer by hand so the model could copy it",
+      "Rank several candidate answers the model wrote, best to worst",
+      "Write a long critique of every answer the model gave",
+      "Approve or reject each answer as a simple pass or fail"
+    ],
+    "answer": "Rank several candidate answers the model wrote, best to worst",
+    "category": "papers",
+    "tags": [
+      "rlhf",
+      "instructgpt",
+      "alignment"
+    ],
+    "difficulty": 2,
+    "explanation": "The paper collects a dataset of rankings of model outputs, and those rankings train a separate model to predict which answer a person would prefer. Comparing candidates against each other is fast and consistent work for a person to do, which is exactly why this one label is so cheap and so load-bearing.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2203.02155",
+      "label": "InstructGPT paper on arXiv"
+    },
+    "answerAliases": [
+      "rankings of model outputs",
+      "rankings",
+      "human feedback",
+      "reinforcement learning from human feedback"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pap-0012",
+    "text": "The 2022 chain-of-thought paper got models reasoning step by step without any fine-tuning. What did it put in the prompt to do it?",
+    "options": [
+      "A few worked examples with the reasoning steps written out",
+      "A few worked examples that give only the final answer",
+      "A short list of the facts the question is known to depend on",
+      "A score for how badly the earlier attempt was graded"
+    ],
+    "answer": "A few worked examples with the reasoning steps written out",
+    "category": "papers",
+    "tags": [
+      "chain-of-thought",
+      "prompting",
+      "reasoning"
+    ],
+    "difficulty": 2,
+    "explanation": "The method is a handful of chain of thought demonstrations supplied as exemplars, and the model copies their shape when it answers. The paper's sharpest finding is that this only pays off on sufficiently large models, which is why the same prompt helps a frontier model and does nothing for a small one.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2201.11903",
+      "label": "Chain-of-Thought Prompting on arXiv"
+    },
+    "answerAliases": [
+      "chain of thought demonstrations",
+      "exemplars",
+      "chain-of-thought demonstrations",
+      "intermediate reasoning steps"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pap-0013",
+    "text": "Diffusion image models are described as denoising models. What is the model actually doing when it generates a picture?",
+    "options": [
+      "Starting from a blank canvas and drawing the subject in one pass",
+      "Starting from a finished image and adding detail and colour back",
+      "Starting from a rough sketch and sharpening the outlines",
+      "Starting from pure static, removing a little noise each step"
+    ],
+    "answer": "Starting from pure static, removing a little noise each step",
+    "category": "papers",
+    "tags": [
+      "diffusion",
+      "ddpm",
+      "image-generation"
+    ],
+    "difficulty": 1,
+    "explanation": "Training corrupts real images by adding a little more noise at every step until only static is left, and the model learns to run that backwards, peeling a small amount of noise off at a time. Because each step is a simple prediction rather than a fight between two networks, diffusion displaced GANs for image generation within a couple of years.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2006.11239",
+      "label": "Denoising Diffusion Probabilistic Models on arXiv"
+    },
+    "answerAliases": [
+      "denoising",
+      "denoising score matching",
+      "diffusion probabilistic models",
+      "reverse the diffusion process"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pap-0014",
+    "text": "In which year was the paper \"Attention Is All You Need\" first published on arXiv?",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2019"
+    ],
+    "answer": "2017",
+    "category": "papers",
+    "tags": [
+      "transformer",
+      "attention",
+      "foundational"
+    ],
+    "difficulty": 1,
+    "explanation": "The paper appeared on arXiv in June 2017, and its number 1706.03762 encodes that month. The 2015 distractor tempts people who remember the sequence-to-sequence era, but that work still used recurrence, which is exactly what the 2017 paper threw out.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "label": "Attention Is All You Need on arXiv"
+    },
+    "answerAliases": [
+      "2017",
+      "June 2017"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0015",
+    "text": "Who is credited as the first author of \"Attention Is All You Need\"?",
+    "options": [
+      "Ashish Vaswani",
+      "Illia Polosukhin",
+      "Jakob Uszkoreit",
+      "Niki Parmar"
+    ],
+    "answer": "Ashish Vaswani",
+    "category": "papers",
+    "tags": [
+      "transformer",
+      "authors"
+    ],
+    "difficulty": 3,
+    "explanation": "Ashish Vaswani led the eight-author Google team, and his name comes first on the paper. The distractors are all genuine co-authors, which is why this is hard: Illia Polosukhin and Jakob Uszkoreit are the names people remember from later interviews, but neither was first author.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "label": "Attention Is All You Need on arXiv"
+    },
+    "answerAliases": [
+      "Ashish Vaswani",
+      "Vaswani"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0016",
+    "text": "In BERT pretraining, what happens to some input tokens under masked language modeling?",
+    "options": [
+      "They are translated into another language for alignment",
+      "They are hidden and the model must predict them from surrounding context",
+      "They are deleted from the vocabulary permanently",
+      "They are shuffled into random order to test robustness"
+    ],
+    "answer": "They are hidden and the model must predict them from surrounding context",
+    "category": "papers",
+    "tags": [
+      "bert",
+      "pretraining"
+    ],
+    "difficulty": 2,
+    "explanation": "About 15 percent of tokens are masked and the model predicts them using both left and right context, which is what makes BERT bidirectional. Translation is the tempting wrong answer because multilingual BERT does handle many languages, but it never translates tokens as a training objective.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1810.04805",
+      "label": "BERT paper on arXiv"
+    },
+    "answerAliases": [
+      "masked language modeling",
+      "mask",
+      "masked LM"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0019",
+    "text": "What capability did the GPT-3 paper of 2020 most famously demonstrate at scale?",
+    "options": [
+      "Performing new tasks from a few examples given in the prompt",
+      "Updating its weights from user corrections during a chat",
+      "Browsing the live web to verify facts before answering",
+      "Running compiled code in a sandbox to check its own math"
+    ],
+    "answer": "Performing new tasks from a few examples given in the prompt",
+    "category": "papers",
+    "tags": [
+      "gpt-3",
+      "few-shot"
+    ],
+    "difficulty": 2,
+    "explanation": "GPT-3 showed that a large enough model can do few-shot in-context learning, adapting to a task from examples in the prompt with no weight updates. The weight-update distractor is wrong in an important way: the whole point was that adaptation happened without any gradient steps at all.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2005.14165",
+      "label": "GPT-3 paper on arXiv"
+    },
+    "answerAliases": [
+      "few-shot learning",
+      "in-context learning",
+      "few-shot"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0020",
+    "text": "What did the RoBERTa paper change relative to BERT's original recipe?",
+    "options": [
+      "It replaced the transformer with a recurrent encoder for longer contexts",
+      "It shrank the model to run on a single mobile phone processor",
+      "It dropped next-sentence prediction and trained longer on more data",
+      "It trained only on labelled sentiment data for sharper classifiers"
+    ],
+    "answer": "It dropped next-sentence prediction and trained longer on more data",
+    "category": "papers",
+    "tags": [
+      "roberta",
+      "bert",
+      "pretraining"
+    ],
+    "difficulty": 4,
+    "explanation": "RoBERTa found BERT was undertrained, so it removed the next-sentence-prediction objective, switched to dynamic masking, and trained on an order of magnitude more data. The result matched or beat BERT on GLUE without any architectural change, which is the paper's sticky lesson: the recipe mattered more than the model.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1907.11692",
+      "label": "RoBERTa paper on arXiv"
+    },
+    "answerAliases": [
+      "RoBERTa",
+      "robustly optimized BERT"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0021",
+    "text": "What unifying framing did the T5 paper introduce for NLP tasks?",
+    "options": [
+      "Every task as reinforcement learning with a hand-shaped reward",
+      "Every task as retrieval from a frozen knowledge index",
+      "Every task as graph traversal over a syntax tree",
+      "Every task as text in and text out with a task prefix"
+    ],
+    "answer": "Every task as text in and text out with a task prefix",
+    "category": "papers",
+    "tags": [
+      "t5",
+      "multitask"
+    ],
+    "difficulty": 3,
+    "explanation": "T5 cast translation, summarization, classification and question answering as text-to-text problems distinguished by a short prefix like translate or summarize. That single interface let one model train on many tasks at once, which is why the retrieval distractor misses the point: nothing is looked up, everything is generated.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1910.10683",
+      "label": "T5 paper on arXiv"
+    },
+    "answerAliases": [
+      "text-to-text",
+      "Text-to-Text Transfer Transformer",
+      "T5"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0022",
+    "text": "How does ELECTRA's pretraining objective differ from BERT's masked language modeling?",
+    "options": [
+      "A discriminator judges every token as original or replaced by a generator",
+      "A decoder reconstructs whole documents from a single summary vector",
+      "A classifier predicts the publication year of each paragraph",
+      "A ranker orders shuffled sentences back into their true sequence"
+    ],
+    "answer": "A discriminator judges every token as original or replaced by a generator",
+    "category": "papers",
+    "tags": [
+      "electra",
+      "pretraining"
+    ],
+    "difficulty": 4,
+    "explanation": "ELECTRA trains a small generator to replace some tokens and a discriminator to flag every replaced token, so the loss applies to all positions instead of just the masked 15 percent. That denser signal is why ELECTRA matched BERT-quality results with far less compute, and the sentence-ordering distractor describes ALBERT's objective instead.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2003.10555",
+      "label": "ELECTRA paper on arXiv"
+    },
+    "answerAliases": [
+      "replaced token detection",
+      "ELECTRA"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0023",
+    "text": "How does the Vision Transformer feed an image into a transformer?",
+    "options": [
+      "Compressing the whole image into one average color vector",
+      "Splitting the image into fixed patches embedded as a token sequence",
+      "Tracing object outlines into vector graphics before encoding",
+      "Stacking video frames so motion predicts the missing pixels"
+    ],
+    "answer": "Splitting the image into fixed patches embedded as a token sequence",
+    "category": "papers",
+    "tags": [
+      "vit",
+      "vision"
+    ],
+    "difficulty": 3,
+    "explanation": "ViT chops the image into patches such as 16x16 pixels, linearly embeds each one, and processes the resulting sequence exactly like word tokens. The single-vector distractor is wrong because it would discard all spatial structure, which is precisely what the patch sequence preserves.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2010.11929",
+      "label": "Vision Transformer paper on arXiv"
+    },
+    "answerAliases": [
+      "image patches",
+      "patches",
+      "An Image is Worth 16x16 Words"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0024",
+    "text": "The Vision Transformer paper's title says an image is worth words of what size?",
+    "options": [
+      "8x8 Words",
+      "32x32 Words",
+      "16x16 Words",
+      "64x64 Words"
+    ],
+    "answer": "16x16 Words",
+    "category": "papers",
+    "tags": [
+      "vit",
+      "vision"
+    ],
+    "difficulty": 4,
+    "explanation": "The paper is titled An Image is Worth 16x16 Words, after its default patch size of 16 by 16 pixels. The 32x32 option is the trap because the paper also reports results at that coarser patch size, where accuracy drops exactly as you would expect from blurrier tokens.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2010.11929",
+      "label": "Vision Transformer paper on arXiv"
+    },
+    "answerAliases": [
+      "16x16 Words",
+      "16x16"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0025",
+    "text": "What training signal did the CLIP paper use to connect images and text?",
+    "options": [
+      "Human-written captions scored one image at a time for grammar",
+      "Pixel-level masks drawn by annotators around every named object",
+      "Depth sensors recording the distance of each photographed subject",
+      "Matching which of many captions belongs with which image"
+    ],
+    "answer": "Matching which of many captions belongs with which image",
+    "category": "papers",
+    "tags": [
+      "clip",
+      "multimodal"
+    ],
+    "difficulty": 3,
+    "explanation": "CLIP learns from 400 million image-text pairs with a contrastive objective: given a batch, predict which caption goes with which image. The pixel-mask distractor describes supervised segmentation datasets, which need expensive human labels, while CLIP's trick was learning from captions scraped from the web.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2103.00020",
+      "label": "CLIP paper on arXiv"
+    },
+    "answerAliases": [
+      "contrastive",
+      "contrastive learning",
+      "Contrastive Language-Image Pre-training",
+      "CLIP"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0026",
+    "text": "Which team introduced Denoising Diffusion Probabilistic Models in 2020?",
+    "options": [
+      "Jonathan Ho, Ajay Jain and Pieter Abbeel",
+      "Ian Goodfellow and colleagues with adversarial nets",
+      "Diederik Kingma and Max Welling with variational autoencoders",
+      "Yang Song and Stefano Ermon with score matching"
+    ],
+    "answer": "Jonathan Ho, Ajay Jain and Pieter Abbeel",
+    "category": "papers",
+    "tags": [
+      "ddpm",
+      "diffusion"
+    ],
+    "difficulty": 4,
+    "explanation": "Ho, Jain and Abbeel at Berkeley showed diffusion models could generate high-quality images, kicking off the line of work behind Stable Diffusion. The Goodfellow distractor names the GAN inventors, whose adversarial training diffusion replaced, and Song and Ermon built the parallel score-based line that later merged with it.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2006.11239",
+      "label": "Denoising Diffusion Probabilistic Models on arXiv"
+    },
+    "answerAliases": [
+      "Ho",
+      "Jain",
+      "Abbeel",
+      "Denoising Diffusion Probabilistic Models"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0027",
+    "text": "What did the DDIM paper change about diffusion sampling?",
+    "options": [
+      "It required thousands more steps for measurably sharper fur texture",
+      "It made sampling deterministic and work in tens of steps instead of hundreds",
+      "It replaced the neural network with a lookup of stored training images",
+      "It generated images at ten times the resolution of the training data"
+    ],
+    "answer": "It made sampling deterministic and work in tens of steps instead of hundreds",
+    "category": "papers",
+    "tags": [
+      "ddim",
+      "diffusion"
+    ],
+    "difficulty": 4,
+    "explanation": "Denoising Diffusion Implicit Models generalized the sampling process so it no longer had to be Markovian, giving the same trained model a fast deterministic sampler. Cutting hundreds of network evaluations down to tens is what made diffusion practical for interactive tools, and the lookup distractor would just be memorization rather than generation.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2010.02502",
+      "label": "DDIM paper on arXiv"
+    },
+    "answerAliases": [
+      "DDIM",
+      "Denoising Diffusion Implicit Models"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0029",
+    "text": "At what weight precision does QLoRA store the frozen base model?",
+    "options": [
+      "32-bit float",
+      "16-bit float",
+      "8-bit integer",
+      "4-bit NormalFloat"
+    ],
+    "answer": "4-bit NormalFloat",
+    "category": "papers",
+    "tags": [
+      "qlora",
+      "quantization"
+    ],
+    "difficulty": 4,
+    "explanation": "QLoRA compresses the frozen model to a 4-bit NormalFloat format tuned to the bell-shaped distribution of neural weights, then trains LoRA adapters on top. That combination famously allowed fine-tuning a 65-billion-parameter model on a single 48GB GPU, where the 8-bit distractor describes the earlier LLM.int8 approach.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2305.14314",
+      "label": "QLoRA paper on arXiv"
+    },
+    "answerAliases": [
+      "4-bit",
+      "NormalFloat",
+      "NF4"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0030",
+    "text": "Who introduced FlashAttention in 2022?",
+    "options": [
+      "Ashish Vaswani",
+      "Tri Dao",
+      "Noam Shazeer",
+      "Llion Jones"
+    ],
+    "answer": "Tri Dao",
+    "category": "papers",
+    "tags": [
+      "flashattention",
+      "efficiency"
+    ],
+    "difficulty": 3,
+    "explanation": "Tri Dao, then at Stanford, wrote FlashAttention as an IO-aware exact attention algorithm that quickly became standard in training stacks. The distractors are all transformer-paper co-authors, which catches people who assume every attention advance came from that same team.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2205.14135",
+      "label": "FlashAttention paper on arXiv"
+    },
+    "answerAliases": [
+      "Tri Dao",
+      "Dao"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0033",
+    "text": "Which reinforcement learning algorithm fine-tuned the policy in the InstructGPT pipeline?",
+    "options": [
+      "Q-learning",
+      "REINFORCE with human demonstrations",
+      "Deep deterministic policy gradients",
+      "Proximal Policy Optimization"
+    ],
+    "answer": "Proximal Policy Optimization",
+    "category": "papers",
+    "tags": [
+      "rlhf",
+      "instructgpt"
+    ],
+    "difficulty": 4,
+    "explanation": "After supervised fine-tuning and reward-model training, InstructGPT optimized the policy against the reward model with PPO. Q-learning is the trap for readers from the games era, but it is a value-based method for discrete control, not the policy-gradient workhorse used for language models.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2203.02155",
+      "label": "InstructGPT paper on arXiv"
+    },
+    "answerAliases": [
+      "Proximal Policy Optimization",
+      "PPO"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0034",
+    "text": "In Constitutional AI, what supplies the feedback that trains the harmlessness preference model?",
+    "options": [
+      "Paid crowdworkers ranking thousands of answer pairs by taste",
+      "The model critiquing and revising itself against a written constitution",
+      "Classifiers trained on government content-moderation logs",
+      "Live user thumbs-down clicks collected from a public demo"
+    ],
+    "answer": "The model critiquing and revising itself against a written constitution",
+    "category": "papers",
+    "tags": [
+      "constitutional-ai",
+      "alignment"
+    ],
+    "difficulty": 3,
+    "explanation": "The model generates responses, critiques them against a written list of principles, revises them, and those self-revisions become the preference data, a setup later called RLAIF. Crowdworker rankings are the RLHF baseline this replaced, which is exactly why that distractor feels right but describes the old method.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2212.08073",
+      "label": "Constitutional AI paper on arXiv"
+    },
+    "answerAliases": [
+      "constitution",
+      "AI feedback",
+      "RLAIF"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0035",
+    "text": "What loop does the ReAct paper have the language model repeat?",
+    "options": [
+      "Compress, encrypt, transmit and acknowledge each message",
+      "Draft, cite, peer-review and retract candidate claims",
+      "Write a reasoning trace, take an action, then read the observation",
+      "Sample, cluster, prune and distill a population of prompts"
+    ],
+    "answer": "Write a reasoning trace, take an action, then read the observation",
+    "category": "papers",
+    "tags": [
+      "react",
+      "agents"
+    ],
+    "difficulty": 3,
+    "explanation": "ReAct interleaves verbal reasoning traces with tool actions such as search or lookup, feeding each observation back into the next thought. Pure chain-of-thought only reasons and pure tool use only acts, and the paper showed that alternating the two beats either alone on question-answering benchmarks.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2210.03629",
+      "label": "ReAct paper on arXiv"
+    },
+    "answerAliases": [
+      "reasoning and acting",
+      "Thought, Action, Observation",
+      "ReAct"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0036",
+    "text": "Which prompt did the 2022 zero-shot chain-of-thought paper append to unlock step-by-step reasoning?",
+    "options": [
+      "Let's think step by step",
+      "Answer quickly with no explanation",
+      "Repeat the question before answering",
+      "List every fact you memorized first"
+    ],
+    "answer": "Let's think step by step",
+    "category": "papers",
+    "tags": [
+      "chain-of-thought",
+      "prompting"
+    ],
+    "difficulty": 2,
+    "explanation": "Kojima and colleagues showed that appending this single sentence lets large models reason through problems with no worked examples at all. It is the zero-shot cousin of the few-shot demonstrations paper, and the no-explanation distractor is its exact opposite: rushing the model is what suppresses reasoning.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2205.11916",
+      "label": "Zero-shot chain-of-thought paper on arXiv"
+    },
+    "answerAliases": [
+      "Let's think step by step",
+      "step by step",
+      "Kojima"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0037",
+    "text": "What does Toolformer teach a language model to do with APIs?",
+    "options": [
+      "Hard-code one fixed call template chosen by its developers",
+      "Refuse every tool call to keep all reasoning in plain text",
+      "Download larger tools to replace its own decoder layers",
+      "Decide for itself when a call helps and which API to use"
+    ],
+    "answer": "Decide for itself when a call helps and which API to use",
+    "category": "papers",
+    "tags": [
+      "toolformer",
+      "tools"
+    ],
+    "difficulty": 3,
+    "explanation": "Toolformer annotates its own training text with candidate API calls in a self-supervised way, keeping only the calls that reduce its loss, so it learns when tools like calculators and search genuinely help. The fixed-template distractor describes ordinary function calling, which came later and hands that decision to the developer instead.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2302.04761",
+      "label": "Toolformer paper on arXiv"
+    },
+    "answerAliases": [
+      "Toolformer",
+      "API calls"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0038",
+    "text": "What kind of sequence model is Mamba?",
+    "options": [
+      "A pure quadratic self-attention transformer variant",
+      "A selective state-space model with linear-time scanning",
+      "A diffusion sampler running noise removal over tokens",
+      "A retrieval index with no learned sequence weights"
+    ],
+    "answer": "A selective state-space model with linear-time scanning",
+    "category": "papers",
+    "tags": [
+      "mamba",
+      "architecture"
+    ],
+    "difficulty": 4,
+    "explanation": "Mamba makes classic state-space models input-dependent so they can select what to remember, giving transformer-quality results with compute that grows linearly in sequence length. The attention-variant distractor is the key confusion to kill: Mamba's whole point is competitive modeling with no attention at all.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2312.00752",
+      "label": "Mamba paper on arXiv"
+    },
+    "answerAliases": [
+      "state-space",
+      "selective state spaces",
+      "Mamba"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0039",
+    "text": "Which lab released the original LLaMA weights to researchers in February 2023?",
+    "options": [
+      "Google",
+      "OpenAI",
+      "Meta",
+      "Mistral AI"
+    ],
+    "answer": "Meta",
+    "category": "papers",
+    "tags": [
+      "llama",
+      "open-weights"
+    ],
+    "difficulty": 1,
+    "explanation": "Meta released LLaMA under a research-only license in February 2023, and its leak onto torrent sites days later effectively open-sourced the weights. Mistral is the trap because it later became the open-weights champion, but the company did not exist until months after LLaMA shipped.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2302.13971",
+      "label": "LLaMA paper on arXiv"
+    },
+    "answerAliases": [
+      "Meta",
+      "Meta AI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0041",
+    "text": "What attention trick did the Mistral 7B report credit for handling long sequences cheaply?",
+    "options": [
+      "Full attention over a million tokens on every layer",
+      "Attention replaced entirely by fixed random projections",
+      "One shared attention head for the whole network",
+      "Sliding-window attention with a rolling cache"
+    ],
+    "answer": "Sliding-window attention with a rolling cache",
+    "category": "papers",
+    "tags": [
+      "mistral",
+      "efficiency"
+    ],
+    "difficulty": 4,
+    "explanation": "Mistral 7B lets each token attend to a sliding window of recent tokens, and stacking layers gives an effectively much larger receptive field at a fraction of the cost. The million-token distractor describes later long-context flagships, not this 2023 efficiency play that beat Llama 2 13B with 7 billion parameters.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2310.06825",
+      "label": "Mistral 7B report on arXiv"
+    },
+    "answerAliases": [
+      "sliding-window attention",
+      "sliding window",
+      "Mistral 7B"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0043",
+    "text": "What did the DeepSeek-R1 report claim produced its reasoning behavior?",
+    "options": [
+      "Distilling answers from a much larger proprietary teacher",
+      "Hand-written rule books covering each tested science subject",
+      "Large-scale reinforcement learning that let reasoning emerge",
+      "Human annotators rewriting every wrong chain by hand"
+    ],
+    "answer": "Large-scale reinforcement learning that let reasoning emerge",
+    "category": "papers",
+    "tags": [
+      "deepseek",
+      "reasoning"
+    ],
+    "difficulty": 3,
+    "explanation": "The January 2025 report showed reasoning behaviors like self-verification emerging from large-scale reinforcement learning starting from the base model, with minimal supervised data. The distillation distractor is backwards: R1 was the model everyone else rushed to distill, not the product of it.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2501.12948",
+      "label": "DeepSeek-R1 report on arXiv"
+    },
+    "answerAliases": [
+      "DeepSeek-R1",
+      "reinforcement learning",
+      "GRPO"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0044",
+    "text": "What scale did the DeepSeek-V3 report of December 2024 describe?",
+    "options": [
+      "671 billion total parameters with 37 billion active",
+      "46 billion total parameters with 13 billion active",
+      "96 billion total parameters with 12 billion active",
+      "8 billion total parameters with 2 billion active"
+    ],
+    "answer": "671 billion total parameters with 37 billion active",
+    "category": "papers",
+    "tags": [
+      "deepseek",
+      "moe",
+      "scale"
+    ],
+    "difficulty": 4,
+    "explanation": "V3 is a 671-billion-parameter mixture-of-experts model that activates only 37 billion parameters per token, trained for a fraction of the cost of comparable dense flagships. The 46-billion figure is the Mixtral trap, and the active-versus-total split is the detail to remember about every MoE scale claim.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2412.19478",
+      "label": "DeepSeek-V3 report on arXiv"
+    },
+    "answerAliases": [
+      "671 billion",
+      "671B",
+      "DeepSeek-V3"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0046",
+    "text": "Which Nobel prize recognized the AlphaFold work in 2024?",
+    "options": [
+      "The Nobel Prize in Physics",
+      "The Nobel Prize in Chemistry",
+      "The Nobel Prize in Physiology or Medicine",
+      "The Nobel Peace Prize"
+    ],
+    "answer": "The Nobel Prize in Chemistry",
+    "category": "papers",
+    "tags": [
+      "alphafold",
+      "nobel"
+    ],
+    "difficulty": 2,
+    "explanation": "Demis Hassabis and John Jumper shared half of the 2024 chemistry prize for protein structure prediction, with the other half going to David Baker for computational protein design. Medicine is the natural wrong guess since proteins mean drugs, but the committee framed it as solving a chemistry problem.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AlphaFold",
+      "label": "AlphaFold on Wikipedia"
+    },
+    "answerAliases": [
+      "Nobel Prize in Chemistry",
+      "2024 Nobel Prize in Chemistry"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0048",
+    "text": "What does MuZero learn that earlier game-playing systems were given up front?",
+    "options": [
+      "A model of the environment dynamics for planning ahead",
+      "A database of every grandmaster opening ever recorded",
+      "A hand-coded scoring function written by game designers",
+      "A chat interface for asking humans for the next move"
+    ],
+    "answer": "A model of the environment dynamics for planning ahead",
+    "category": "papers",
+    "tags": [
+      "muzero",
+      "planning"
+    ],
+    "difficulty": 3,
+    "explanation": "MuZero learns its own latent model of how the environment responds and plans with it, so unlike AlphaZero it needs no simulator or knowledge of the rules. That is why the same algorithm could play Go, chess, shogi and Atari: the dynamics model is learned from experience in each new world.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1911.08265",
+      "label": "MuZero paper on arXiv"
+    },
+    "answerAliases": [
+      "MuZero",
+      "environment dynamics",
+      "learned model"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pap-0049",
+    "text": "The 2021 Perceiver paper set out to handle images, audio and text with one architecture. How did it dodge the quadratic cost of attending over huge inputs?",
+    "options": [
+      "It cross-attends the raw input into a small fixed-size latent array, then applies self-attention there",
+      "It runs full self-attention directly over the raw input bytes of every modality",
+      "It trains a separate transformer encoder from scratch for each modality",
+      "It downsamples every input to a tiny thumbnail before doing anything else"
+    ],
+    "answer": "It cross-attends the raw input into a small fixed-size latent array, then applies self-attention there",
+    "category": "papers",
+    "tags": [
+      "perceiver",
+      "multimodal",
+      "efficiency"
+    ],
+    "difficulty": 3,
+    "explanation": "The input cross-attends into a few hundred latent vectors, and all the heavy self-attention happens in that small space, so cost grows with input size only through the cheap cross-attention step. Full self-attention over raw bytes is exactly the quadratic trap the paper set out to escape, which is why that option describes the problem rather than the fix.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2103.03206",
+      "label": "Perceiver paper on arXiv"
+    },
+    "answerAliases": [
+      "Perceiver",
+      "latent bottleneck",
+      "cross-attention",
+      "iterative attention"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0050",
+    "text": "What did the 2022 Perceiver IO paper add on top of the original Perceiver?",
+    "options": [
+      "A contrastive loss that aligns image and text encoders",
+      "A retrieval index that fetches text chunks during generation",
+      "A flexible output query so one model can emit labels, text, pixels or flow fields",
+      "A mixture-of-experts layer that routes tokens to separate specialists"
+    ],
+    "answer": "A flexible output query so one model can emit labels, text, pixels or flow fields",
+    "category": "papers",
+    "tags": [
+      "perceiver",
+      "multimodal",
+      "decoding"
+    ],
+    "difficulty": 3,
+    "explanation": "Perceiver IO adds an output query array that cross-attends the latents, so the same encoder can produce a class label, a sentence, optical flow or raw pixels depending on the query. The mixture-of-experts distractor belongs to Switch Transformer, a different scaling story from the year before.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2107.14795",
+      "label": "Perceiver IO paper on arXiv"
+    },
+    "answerAliases": [
+      "Perceiver IO",
+      "output query",
+      "general-purpose outputs"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0051",
+    "text": "How does the 2021 RETRO model use its two-trillion-token retrieval database when generating text?",
+    "options": [
+      "It copies the single closest document verbatim as its answer",
+      "It retrieves relevant chunks and cross-attends to them while predicting the next tokens",
+      "It fine-tunes its weights on the retrieved chunks before each reply",
+      "It uses retrieval only to rerank answers after generation finishes"
+    ],
+    "answer": "It retrieves relevant chunks and cross-attends to them while predicting the next tokens",
+    "category": "papers",
+    "tags": [
+      "retro",
+      "retrieval",
+      "rag"
+    ],
+    "difficulty": 3,
+    "explanation": "RETRO splits both the input and its giant corpus into chunks, retrieves neighbours of each chunk, and fuses them with chunked cross-attention as it predicts. It never retrains per query, which rules out the fine-tuning distractor, and retrieval happens during generation rather than as a post-hoc rerank.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2112.04426",
+      "label": "RETRO paper on arXiv"
+    },
+    "answerAliases": [
+      "RETRO",
+      "Retrieval-Enhanced Transformer",
+      "retrieval",
+      "chunked cross-attention"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0052",
+    "text": "DeepMind's 2021 Gopher model was notable at release mainly for what?",
+    "options": [
+      "Beating grandmasters at StarCraft II with no prior games",
+      "Generating images from text better than rival generators",
+      "Running on a single consumer graphics card",
+      "Its enormous dense scale, hundreds of billions of parameters, then near the frontier of model size"
+    ],
+    "answer": "Its enormous dense scale, hundreds of billions of parameters, then near the frontier of model size",
+    "category": "papers",
+    "tags": [
+      "gopher",
+      "scale",
+      "deepmind"
+    ],
+    "difficulty": 2,
+    "explanation": "Gopher packed 280 billion parameters into a dense transformer and matched or beat rivals on reading, fact-checking and reasoning tests. StarCraft belongs to AlphaStar, a different DeepMind project, and image generation was never Gopher's job.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2112.11446",
+      "label": "Gopher paper on arXiv"
+    },
+    "answerAliases": [
+      "Gopher",
+      "280B",
+      "280 billion",
+      "DeepMind"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0053",
+    "text": "Google's 2022 PaLM paper trained a 540-billion-parameter model on two TPU v4 pods. What system made that training setup possible?",
+    "options": [
+      "Pathways, which orchestrates training across thousands of accelerator chips",
+      "A single giant graphics card holding all the weights at once",
+      "Volunteer laptops donating idle compute over the internet",
+      "A purely CPU cluster with no accelerators at all"
+    ],
+    "answer": "Pathways, which orchestrates training across thousands of accelerator chips",
+    "category": "papers",
+    "tags": [
+      "palm",
+      "scale",
+      "infrastructure"
+    ],
+    "difficulty": 3,
+    "explanation": "Pathways let a single system spread one model across thousands of TPU chips with clever sharding, and the 540-billion-parameter PaLM run was its showcase. No single card could hold those weights, which is what makes the lone-GPU distractor physically impossible rather than merely unlikely.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2204.02311",
+      "label": "PaLM paper on arXiv"
+    },
+    "answerAliases": [
+      "PaLM",
+      "Pathways",
+      "540B",
+      "540 billion"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0054",
+    "text": "The 2022 UL2 paper unified pretraining objectives with a Mixture-of-Denoisers. What does that mixture combine?",
+    "options": [
+      "Three separate models that vote on each answer at test time",
+      "Several span-corruption styles, from short masked spans to long aggressive ones",
+      "Human rankings mixed with AI-written critiques",
+      "Translation pairs mixed with image-caption pairs"
+    ],
+    "answer": "Several span-corruption styles, from short masked spans to long aggressive ones",
+    "category": "papers",
+    "tags": [
+      "ul2",
+      "pretraining",
+      "denoising"
+    ],
+    "difficulty": 4,
+    "explanation": "UL2 frames every objective as corrupting spans and reconstructing them, mixing short regular gaps, longer aggressive ones and full-prefix generation so one model learns them all. The three-voting-models distractor is an ensemble, a test-time trick, while UL2 is a single pretraining recipe.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2205.05131",
+      "label": "UL2 paper on arXiv"
+    },
+    "answerAliases": [
+      "UL2",
+      "Mixture-of-Denoisers",
+      "denoisers",
+      "span corruption"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0055",
+    "text": "The 2021 T0 paper showed strong zero-shot results on unseen tasks. What fine-tuning recipe produced that?",
+    "options": [
+      "Training only on labelled sentiment reviews for sharper classifiers",
+      "Reinforcement learning from live user thumbs-down clicks",
+      "Multitask training on a large collection of prompted datasets with natural-language instructions",
+      "Distilling answers from a much larger proprietary teacher model"
+    ],
+    "answer": "Multitask training on a large collection of prompted datasets with natural-language instructions",
+    "category": "papers",
+    "tags": [
+      "t0",
+      "instruction-tuning",
+      "zero-shot"
+    ],
+    "difficulty": 3,
+    "explanation": "T0 fine-tuned an encoder-decoder on dozens of datasets, each wrapped in many natural-language prompts, so new tasks arrive as just another instruction to read. The teacher-distillation distractor describes how smaller models later copied giants, not how T0 itself learned to follow instructions.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2110.08207",
+      "label": "T0 paper on arXiv"
+    },
+    "answerAliases": [
+      "T0",
+      "multitask prompted fine-tuning",
+      "BigScience",
+      "prompted datasets"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0056",
+    "text": "The 176-billion-parameter BLOOM model was trained on ROOTS, a corpus built for the project. What made ROOTS distinctive?",
+    "options": [
+      "It contained only English Wikipedia articles from a single year",
+      "It was generated entirely by an earlier language model",
+      "It held only Python code with no natural language",
+      "Web text gathered across dozens of natural and programming languages by hundreds of researchers"
+    ],
+    "answer": "Web text gathered across dozens of natural and programming languages by hundreds of researchers",
+    "category": "papers",
+    "tags": [
+      "bloom",
+      "datasets",
+      "multilingual"
+    ],
+    "difficulty": 3,
+    "explanation": "ROOTS gathered web text across dozens of natural and programming languages through workshops of researchers who could document consent and provenance. An English-only Wikipedia scrape would have defeated BLOOM's whole multilingual purpose, and nothing in the corpus was machine-generated.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2211.05100",
+      "label": "BLOOM paper on arXiv"
+    },
+    "answerAliases": [
+      "BLOOM",
+      "ROOTS",
+      "BigScience",
+      "multilingual corpus"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0057",
+    "text": "OpenAI's 2022 Whisper paper took an unusual approach to speech-recognition data. What did it train on?",
+    "options": [
+      "Hundreds of thousands of hours of audio with transcripts scraped from the web, used with minimal cleaning",
+      "A few hundred hours of studio recordings read by voice actors",
+      "Only synthetic speech generated by a text-to-speech system",
+      "Silent video clips with no audio track at all"
+    ],
+    "answer": "Hundreds of thousands of hours of audio with transcripts scraped from the web, used with minimal cleaning",
+    "category": "papers",
+    "tags": [
+      "whisper",
+      "speech",
+      "weak-supervision"
+    ],
+    "difficulty": 2,
+    "explanation": "Whisper learned from a vast haul of weakly labelled web audio, trading curation for scale, and that robustness is why it transcribes accents and background noise so well. Studio recordings are the old supervised recipe Whisper deliberately abandoned.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2212.04356",
+      "label": "Whisper paper on arXiv"
+    },
+    "answerAliases": [
+      "Whisper",
+      "680,000 hours",
+      "weakly supervised",
+      "web audio"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0058",
+    "text": "The 2020 NeRF paper represents a 3D scene as what, so that new views can be rendered from any angle?",
+    "options": [
+      "A hand-modelled mesh sculpted by artists in editing software",
+      "A neural network mapping 3D positions and viewing directions to color and density",
+      "A stack of photographs stapled together in angle order",
+      "A point cloud captured by an expensive laser scanner"
+    ],
+    "answer": "A neural network mapping 3D positions and viewing directions to color and density",
+    "category": "papers",
+    "tags": [
+      "nerf",
+      "vision",
+      "rendering"
+    ],
+    "difficulty": 3,
+    "explanation": "NeRF fits a small neural network that outputs color and density for any 3D point seen from any direction, then renders views by marching rays through it. A hand-modelled mesh needs artists, which is exactly the labour NeRF removes.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2003.08934",
+      "label": "NeRF paper on arXiv"
+    },
+    "answerAliases": [
+      "NeRF",
+      "Neural Radiance Fields",
+      "radiance field",
+      "view synthesis"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0059",
+    "text": "The 2021 Masked Autoencoders paper found vision transformers learn best when pretraining hides how much of each image?",
+    "options": [
+      "Masking only one pixel in twenty",
+      "Masking one pixel in four",
+      "Masking three of every four patches",
+      "Masking everything but a thin border"
+    ],
+    "answer": "Masking three of every four patches",
+    "category": "papers",
+    "tags": [
+      "mae",
+      "vision",
+      "pretraining"
+    ],
+    "difficulty": 3,
+    "explanation": "Masking three quarters of the patches forces the model to reason about whole objects from slivers, and the paper showed accuracy climbs as masking rises far past the small fractions used in language. Masking almost nothing would make reconstruction trivial copying, which teaches the encoder nothing.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2111.06377",
+      "label": "Masked Autoencoders paper on arXiv"
+    },
+    "answerAliases": [
+      "MAE",
+      "Masked Autoencoders",
+      "masking ratio",
+      "75 percent"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0060",
+    "text": "The 2020 SimCLR paper learns image representations without labels. What is its core training signal?",
+    "options": [
+      "Predicting the publication year stamped on each photograph",
+      "Reconstructing every pixel of the input image exactly",
+      "Classifying each image into one of a thousand fixed categories",
+      "Pulling two augmented views of the same image together while pushing different images apart"
+    ],
+    "answer": "Pulling two augmented views of the same image together while pushing different images apart",
+    "category": "papers",
+    "tags": [
+      "simclr",
+      "contrastive",
+      "vision"
+    ],
+    "difficulty": 3,
+    "explanation": "Two random crops, color jitters and blurs of one image must land near each other in embedding space while other images are pushed away, and that tug-of-war alone learns features that rival supervised ones. The thousand-categories distractor is ImageNet classification, the labelled paradigm SimCLR was built to escape.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2002.05709",
+      "label": "SimCLR paper on arXiv"
+    },
+    "answerAliases": [
+      "SimCLR",
+      "contrastive learning",
+      "augmented views",
+      "self-supervised"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0061",
+    "text": "The 2019 DistilBERT paper compressed BERT by knowledge distillation. What was the headline trade-off it reported?",
+    "options": [
+      "Ten times larger than BERT with slightly better accuracy",
+      "About forty percent smaller and sixty percent faster while keeping most of BERT's accuracy",
+      "Identical size to BERT but trained on ten times more data",
+      "A vision model that replaced BERT for image tasks"
+    ],
+    "answer": "About forty percent smaller and sixty percent faster while keeping most of BERT's accuracy",
+    "category": "papers",
+    "tags": [
+      "distilbert",
+      "distillation",
+      "compression"
+    ],
+    "difficulty": 3,
+    "explanation": "A student network trained to mimic BERT's soft outputs kept nearly all of its benchmark performance at a fraction of the size and latency. A larger model would be the opposite of compression, which rules out the ten-times-larger distractor immediately.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1910.01108",
+      "label": "DistilBERT paper on arXiv"
+    },
+    "answerAliases": [
+      "DistilBERT",
+      "knowledge distillation",
+      "distilled",
+      "student model"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0062",
+    "text": "The 2019 ALBERT paper shrank BERT-style models with two tricks. Which pair did it introduce?",
+    "options": [
+      "Factorized embeddings plus cross-layer sharing, with sentence-order prediction",
+      "Full attention replaced by fixed random projections in every layer",
+      "Removing all normalization layers and doubling the vocabulary",
+      "Training only on labelled sentiment data for sharper classifiers"
+    ],
+    "answer": "Factorized embeddings plus cross-layer sharing, with sentence-order prediction",
+    "category": "papers",
+    "tags": [
+      "albert",
+      "pretraining",
+      "efficiency"
+    ],
+    "difficulty": 4,
+    "explanation": "ALBERT factorizes the embedding matrix and reuses the same weights across layers, then replaces next-sentence prediction with ordering two consecutive sentences correctly. Random projections describe a different efficiency family, not learned sharing.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1909.11942",
+      "label": "ALBERT paper on arXiv"
+    },
+    "answerAliases": [
+      "ALBERT",
+      "parameter sharing",
+      "sentence-order prediction",
+      "factorized embeddings"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0063",
+    "text": "The 2021 Switch Transformer paper scaled past a trillion parameters efficiently. What routing rule defines it?",
+    "options": [
+      "Every token is processed by every expert in parallel",
+      "Tokens are routed by a human-written rulebook per subject",
+      "A dense feedforward layer replaces all experts at test time",
+      "Each token is routed to exactly one expert chosen by a learned switch"
+    ],
+    "answer": "Each token is routed to exactly one expert chosen by a learned switch",
+    "category": "papers",
+    "tags": [
+      "switch-transformer",
+      "moe",
+      "scaling"
+    ],
+    "difficulty": 3,
+    "explanation": "A router sends each token to its single best expert, so capacity grows with expert count while compute per token stays flat, and the paper reached past a trillion parameters that way. Sending every token everywhere would cost as much as a dense model of that size, defeating the design.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2101.03961",
+      "label": "Switch Transformer paper on arXiv"
+    },
+    "answerAliases": [
+      "Switch Transformer",
+      "mixture of experts",
+      "routing",
+      "one expert"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0064",
+    "text": "Google's 2021 GLaM model held over a trillion parameters across dozens of experts per layer. Why did it cost less energy to serve than a dense model of that size?",
+    "options": [
+      "It deleted its largest layers before serving",
+      "It ran entirely on volunteer laptop CPUs",
+      "Only a small subset of experts activates for each token, so most weights sit idle per prediction",
+      "It answered every query from a cache of past responses"
+    ],
+    "answer": "Only a small subset of experts activates for each token, so most weights sit idle per prediction",
+    "category": "papers",
+    "tags": [
+      "glam",
+      "moe",
+      "efficiency"
+    ],
+    "difficulty": 3,
+    "explanation": "GLaM holds over a trillion weights but wakes only a couple of experts per token, so each prediction costs a fraction of a dense giant's. The deleted-layers distractor confuses sparsity with amputation: the weights stay, they just take turns.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2112.06905",
+      "label": "GLaM paper on arXiv"
+    },
+    "answerAliases": [
+      "GLaM",
+      "mixture of experts",
+      "sparse activation",
+      "trillion parameters"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0065",
+    "text": "Besides sensibleness, specificity and interestingness, the 2022 LaMDA paper scored replies against external knowledge sources. What was that metric called?",
+    "options": [
+      "Parameter count of the serving model",
+      "Groundedness, whether replies stay consistent with known sources",
+      "Tokens generated per second on a phone",
+      "Number of languages the model can translate"
+    ],
+    "answer": "Groundedness, whether replies stay consistent with known sources",
+    "category": "papers",
+    "tags": [
+      "lamda",
+      "dialogue",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "Alongside sensibleness and specificity, the paper scored groundedness against known sources, because a chatbot that sounds right but invents facts fails exactly where dialogue matters. Parameter count is a property of the model, not a grade of any reply.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2201.08239",
+      "label": "LaMDA paper on arXiv"
+    },
+    "answerAliases": [
+      "LaMDA",
+      "groundedness",
+      "sensibleness",
+      "specificity"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0066",
+    "text": "DeepMind's 2022 Sparrow paper built a dialogue agent that cites evidence. How did it ground its answers?",
+    "options": [
+      "Live web search queries whose results the model must quote as supporting evidence",
+      "A hand-coded rulebook covering every tested science subject",
+      "Memorized passages with no live lookup at all",
+      "Paid crowdworkers rewriting every wrong answer by hand"
+    ],
+    "answer": "Live web search queries whose results the model must quote as supporting evidence",
+    "category": "papers",
+    "tags": [
+      "sparrow",
+      "dialogue",
+      "search"
+    ],
+    "difficulty": 3,
+    "explanation": "Sparrow issues live search queries and must support its claims with quotes from the results, with human rules shaping the ranking. Memorized passages would go stale and cannot be checked, which is why the paper insisted on browsing.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2209.14375",
+      "label": "Sparrow paper on arXiv"
+    },
+    "answerAliases": [
+      "Sparrow",
+      "search",
+      "evidence",
+      "citations"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0067",
+    "text": "The 2022 InstructGPT paper reported a striking preference result. What did human labelers prefer?",
+    "options": [
+      "The giant base model over the fine-tuned models in every test",
+      "A model trained only on code over every dialogue model",
+      "Random outputs over any fine-tuned model for creativity",
+      "The small fine-tuned InstructGPT model over the base GPT-3, despite having far fewer parameters"
+    ],
+    "answer": "The small fine-tuned InstructGPT model over the base GPT-3, despite having far fewer parameters",
+    "category": "papers",
+    "tags": [
+      "instructgpt",
+      "rlhf",
+      "alignment"
+    ],
+    "difficulty": 3,
+    "explanation": "Labelers preferred the small aligned model's answers to the giant base model's, the result that sold the field on alignment over raw scale. The code-only distractor is backwards: general helpfulness won, not a narrow specialty.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2203.02155",
+      "label": "InstructGPT paper on arXiv"
+    },
+    "answerAliases": [
+      "InstructGPT",
+      "1.3B",
+      "175B",
+      "human feedback",
+      "preferred"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0068",
+    "text": "The 2022 Constitutional AI paper trains a harmless assistant in two stages. What are they?",
+    "options": [
+      "Pretraining on books, then deleting the safety filter",
+      "Training a chatbot, then replacing it with a search engine",
+      "Supervised learning from self-revisions, then reinforcement learning on AI-generated preference labels",
+      "Collecting user thumbs-downs, then banning those users"
+    ],
+    "answer": "Supervised learning from self-revisions, then reinforcement learning on AI-generated preference labels",
+    "category": "papers",
+    "tags": [
+      "constitutional-ai",
+      "alignment",
+      "rlaif"
+    ],
+    "difficulty": 4,
+    "explanation": "First the model revises its own answers against the constitution and learns from those revisions, then a preference model trained on AI-labelled comparisons steers it with reinforcement learning. User thumbs-downs are the human-feedback loop this pipeline was designed to replace.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2212.08073",
+      "label": "Constitutional AI paper on arXiv"
+    },
+    "answerAliases": [
+      "Constitutional AI",
+      "RLAIF",
+      "AI feedback",
+      "self-critique"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0069",
+    "text": "Besides masked language modeling, BERT's original pretraining used a second objective on sentence pairs. What was it?",
+    "options": [
+      "Translating each sentence into twelve new languages",
+      "Next-sentence prediction, deciding whether the second sentence follows the first",
+      "Counting how many nouns appear in each paragraph",
+      "Reconstructing whole documents from a single summary vector"
+    ],
+    "answer": "Next-sentence prediction, deciding whether the second sentence follows the first",
+    "category": "papers",
+    "tags": [
+      "bert",
+      "pretraining",
+      "nlp"
+    ],
+    "difficulty": 2,
+    "explanation": "BERT learned whether sentence B actually follows sentence A, which taught it relationships between sentences rather than just words inside them. Translation is the multilingual-BERT association people reach for, but it was never a pretraining objective.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1810.04805",
+      "label": "BERT paper on arXiv"
+    },
+    "answerAliases": [
+      "next-sentence prediction",
+      "NSP",
+      "BERT",
+      "sentence pairs"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0070",
+    "text": "Why did OpenAI release GPT-2 in stages in 2019, starting with a small model?",
+    "options": [
+      "Concerns about malicious uses such as disinformation, so larger versions followed months later",
+      "The larger models had failed every benchmark and were abandoned",
+      "A court order banned language models above a fixed size",
+      "The team had lost the training code and rebuilt it slowly"
+    ],
+    "answer": "Concerns about malicious uses such as disinformation, so larger versions followed months later",
+    "category": "papers",
+    "tags": [
+      "gpt-2",
+      "release",
+      "safety"
+    ],
+    "difficulty": 2,
+    "explanation": "OpenAI cited misuse worries including disinformation and released progressively larger versions as the expected harms failed to materialize. Failed benchmarks would have killed the project, not staged it, which is why that distractor reverses the story.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GPT-2",
+      "label": "GPT-2 on Wikipedia"
+    },
+    "answerAliases": [
+      "staged release",
+      "malicious",
+      "disinformation",
+      "gradual release",
+      "GPT-2"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0071",
+    "text": "The 2016 AlphaGo Nature paper combined deep neural networks with Monte Carlo tree search. What did the neural networks first learn from?",
+    "options": [
+      "Only games AlphaGo played against itself from random moves",
+      "Hand-coded Go proverbs written by game designers",
+      "A database of grandmaster chess openings",
+      "Millions of positions from human expert games, before reinforcement learning self-play refined them"
+    ],
+    "answer": "Millions of positions from human expert games, before reinforcement learning self-play refined them",
+    "category": "papers",
+    "tags": [
+      "alphago",
+      "games",
+      "deepmind"
+    ],
+    "difficulty": 3,
+    "explanation": "The networks first imitated millions of human expert positions, then improved through self-play reinforcement learning, with tree search guiding both training and play. Pure self-play from scratch was the later AlphaGo Zero breakthrough, not the 2016 system.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AlphaGo",
+      "label": "AlphaGo on Wikipedia"
+    },
+    "answerAliases": [
+      "AlphaGo",
+      "supervised learning",
+      "human expert games",
+      "self-play",
+      "Monte Carlo tree search"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0072",
+    "text": "The 2021 DALL-E paper generated images from text with a two-stage recipe. What did it do?",
+    "options": [
+      "Diffusing pure noise into pictures over hundreds of steps",
+      "Copying the closest training image for each prompt",
+      "Compressing images into discrete tokens, then training a transformer to predict them from text",
+      "Rendering 3D meshes with a physics engine, then photographing them"
+    ],
+    "answer": "Compressing images into discrete tokens, then training a transformer to predict them from text",
+    "category": "papers",
+    "tags": [
+      "dall-e",
+      "text-to-image",
+      "tokens"
+    ],
+    "difficulty": 4,
+    "explanation": "A discrete autoencoder compresses each image to a grid of tokens, and the transformer learns to emit that grid conditioned on text, unifying vision and language as one sequence problem. Diffusion over noise is the rival family that later overtook this recipe for image quality.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2102.12092",
+      "label": "DALL-E paper on arXiv"
+    },
+    "answerAliases": [
+      "DALL-E",
+      "VQ-VAE",
+      "discrete tokens",
+      "autoregressive"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pap-0073",
+    "text": "DeepMind's 2022 Flamingo paper gave a frozen language model visual understanding. How did images feed into the language model?",
+    "options": [
+      "By converting every picture into a long English caption first",
+      "Through a Perceiver-style resampler whose visual tokens plug into gated cross-attention layers",
+      "By retraining the whole language model from scratch on pixels",
+      "Through a retrieval index that pastes in similar photos"
+    ],
+    "answer": "Through a Perceiver-style resampler whose visual tokens plug into gated cross-attention layers",
+    "category": "papers",
+    "tags": [
+      "flamingo",
+      "multimodal",
+      "few-shot"
+    ],
+    "difficulty": 4,
+    "explanation": "A Perceiver-style resampler squeezes each image into a few visual tokens that enter the frozen language model through gated cross-attention, preserving its few-shot abilities. Retraining everything from scratch would destroy the language priors the whole trick relies on.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2204.14198",
+      "label": "Flamingo paper on arXiv"
+    },
+    "answerAliases": [
+      "Flamingo",
+      "Perceiver Resampler",
+      "cross-attention",
+      "frozen language model"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
   }
 ]

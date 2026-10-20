@@ -365,5 +365,1955 @@
     ],
     "status": "published",
     "addedAt": "2026-09-29"
+  },
+  {
+    "id": "pro-0013",
+    "text": "Meta began rolling out a product called Muse to US users on September 8, 2026. What kind of product is it?",
+    "options": [
+      "A personal AI agent you message that works on your apps for you",
+      "A multimodal model that generates images and video inside Meta apps",
+      "A paid subscription that bundles Meta AI with your Instagram account",
+      "A pair of smart glasses with a camera and a built-in voice assistant"
+    ],
+    "answer": "A personal AI agent you message that works on your apps for you",
+    "category": "products",
+    "tags": [
+      "meta",
+      "muse",
+      "agent",
+      "launch"
+    ],
+    "difficulty": 1,
+    "explanation": "Muse is Meta's personal agent: you tell it what needs doing and it opens a browser, fills in forms, buys things, and comes back to ask before it sends an email or spends money. It runs on Muse Secure VM, a dedicated virtual machine holding both the agent and your data, and you reach it in the Muse app or straight in WhatsApp. The name is deliberately shared with Meta's model line, because Muse runs on Muse Spark, which Meta calls its most capable model to date.",
+    "source": {
+      "kind": "url",
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "label": "Meta's Introducing Muse announcement"
+    },
+    "answerAliases": [
+      "Muse",
+      "personal AI agent",
+      "Muse Secure VM",
+      "muse.ai"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pro-0014",
+    "text": "Suno launched its v6 music models on September 9, 2026, the first generation it built with music industry partners. Which partners did Suno name?",
+    "options": [
+      "Believe, Concord and Downtown Music",
+      "Universal Music Group, Sony Music and Believe",
+      "Warner Music Group, BMG and Believe",
+      "Warner Music Group, UMG and BMG"
+    ],
+    "answer": "Warner Music Group, BMG and Believe",
+    "category": "products",
+    "tags": [
+      "suno",
+      "music",
+      "licensing",
+      "launch"
+    ],
+    "difficulty": 2,
+    "explanation": "Suno's own announcement names Warner Music Group, BMG and Believe as the partners v6 was developed with, and says the earlier models would be retired as v6 rolls out. Universal Music Group and Sony are the tempting miss because a player who remembers Suno's copyright fights reaches for the biggest labels rather than the ones that actually signed. The release also came as a set of three models: v6 and v6-wild for paid subscribers, and v6-mini free for everyone.",
+    "source": {
+      "kind": "url",
+      "url": "https://suno.com/blog/introducing-v6",
+      "label": "Suno's Introducing v6 announcement"
+    },
+    "answerAliases": [
+      "Warner Music Group, BMG and Believe",
+      "Warner Music Group",
+      "BMG",
+      "Believe"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pro-0015",
+    "text": "Manus shipped Manus 2.0 and a separate agent app called Cue on September 28, 2026. In Cue, what does every agent get for itself?",
+    "options": [
+      "A clone of your voice and your writing style",
+      "A dedicated GPU and a private server to run on",
+      "Its own social media accounts and login details",
+      "Its own email, phone number, wallet and computer"
+    ],
+    "answer": "Its own email, phone number, wallet and computer",
+    "category": "products",
+    "tags": [
+      "manus",
+      "cue",
+      "agent",
+      "launch"
+    ],
+    "difficulty": 2,
+    "explanation": "Cue is a standalone app for personal agents, and Manus gives each one its own email, phone number, wallet and computer so it can message people, pay inside a budget you set, and finish a task on its own machine. A dedicated GPU and a private server is the tempting miss because Manus does sell a Cloud Computer, but that is a separate product you buy for a project. Several agents can also share a group chat and hand work to each other.",
+    "source": {
+      "kind": "url",
+      "url": "https://manus.im/blog/introducing-manus-2-0",
+      "label": "Manus's Introducing Manus 2.0 post"
+    },
+    "answerAliases": [
+      "Cue",
+      "its own email, phone number, wallet and computer",
+      "email",
+      "phone number",
+      "wallet",
+      "computer"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pro-0016",
+    "text": "ByteDance launched Seedance 2.5 on July 31, 2026. Which two of ByteDance's own products did it roll out to on day one?",
+    "options": [
+      "CapCut and TikTok",
+      "Jimeng AI and Doubao Pro",
+      "Doubao and Lark, with the API to follow",
+      "Volcengine and BytePlus ModelArk only"
+    ],
+    "answer": "Jimeng AI and Doubao Pro",
+    "category": "products",
+    "tags": [
+      "bytedance",
+      "seedance",
+      "video",
+      "launch"
+    ],
+    "difficulty": 2,
+    "explanation": "Seedance 2.5 went live inside Jimeng AI, ByteDance's video creation app, and Doubao Pro, its paid assistant tier, with API access on BytePlus ModelArk promised for later. CapCut and TikTok are the tempting miss as the two ByteDance apps everyone knows, and Volcengine and ModelArk are the trap because the API only arrived after the consumer launch. The version jump hides the real change: single-pass length doubled from 15 seconds to 30.",
+    "source": {
+      "kind": "url",
+      "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+      "label": "ByteDance Seed on Seedance 2.5"
+    },
+    "answerAliases": [
+      "Jimeng AI",
+      "Doubao Pro",
+      "Jimeng",
+      "Seedance 2.5"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pro-0017",
+    "text": "Black Forest Labs announced FLUX 3 in July 2026, its first model that generates video, and extended the same backbone to predict what a robot should do next. Which carmaker's production network is already testing that action model?",
+    "options": [
+      "BMW",
+      "Porsche",
+      "Audi",
+      "Mercedes-Benz"
+    ],
+    "answer": "Audi",
+    "category": "products",
+    "tags": [
+      "black-forest-labs",
+      "flux",
+      "robotics",
+      "video"
+    ],
+    "difficulty": 2,
+    "explanation": "The action half is called FLUX 3 Action and was built with mimic robotics, whose robots Black Forest Labs says have been tested and deployed at Audi. BFL is the Freiburg startup behind Stable Diffusion and the FLUX image models, and FLUX 3 is the first time it has shipped video at all. Audi's production lab framed the work as solving flexible, soft-body handling that conventionally programmed robot cells cannot handle economically.",
+    "source": {
+      "kind": "url",
+      "url": "https://bfl.ai/blog/flux-3-mimic",
+      "label": "Black Forest Labs on FLUX 3 and mimic robotics"
+    },
+    "answerAliases": [
+      "Audi",
+      "Audi AG",
+      "Audi Production Lab"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pro-0018",
+    "text": "Dazzle, the startup founded by Marissa Mayer, launched its first product on September 29, 2026. Unlike most personal assistants, what does Dazzle use to work out who you are?",
+    "options": [
+      "The email and calendar on your work account",
+      "The accounts you follow on social media",
+      "The voice memos and transcripts on your phone",
+      "The photos and screenshots in your camera roll"
+    ],
+    "answer": "The photos and screenshots in your camera roll",
+    "category": "products",
+    "tags": [
+      "dazzle",
+      "assistant",
+      "marissa-mayer",
+      "launch"
+    ],
+    "difficulty": 2,
+    "explanation": "Dazzle's launch post is called Pictures, Not Prompts: the camera roll is the context layer, so a photo of a flat tyre becomes a booked repair and a school flyer becomes a calendar entry. Email and calendar is the tempting miss because that is where most personal assistants start, and Mayer's own post argues it skews them toward work. The post opened by noting that around five billion photos would be taken on smartphones that day.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.dazzle.ai/blog/announcing-dazzle-pictures-not-prompts",
+      "label": "Dazzle's launch post, Announcing Dazzle: Pictures, Not Prompts"
+    },
+    "answerAliases": [
+      "camera roll",
+      "photos and screenshots",
+      "Dazzle",
+      "Marissa Mayer",
+      "Pictures, Not Prompts"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pro-0019",
+    "text": "Google launched Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS on September 23, 2026, and put each one into a different Google product on day one. The cheaper, high-volume model landed in which product?",
+    "options": [
+      "Google AI Studio",
+      "Google Vids",
+      "Google Flow",
+      "Google Whisk"
+    ],
+    "answer": "Google Vids",
+    "category": "products",
+    "tags": [
+      "google",
+      "tts",
+      "voice",
+      "launch"
+    ],
+    "difficulty": 3,
+    "explanation": "Flash-Lite is the throughput model, built for high-volume dubbing and expressive voice agents at scale, so it is the one Google put into Google Vids, its video creation tool. The creative-direction model, plain Flash, is the one that went into Gemini Notebook instead. Google AI Studio is the tempting miss because it is the other no-code surface, but it is a developer tool: you need an API key to use it.",
+    "source": {
+      "kind": "url",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+      "label": "Google on Gemini 3.8 text-to-speech"
+    },
+    "answerAliases": [
+      "Google Vids",
+      "Vids",
+      "Gemini 3.8 Flash-Lite TTS",
+      "Flash-Lite TTS"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pro-0020",
+    "text": "Sonos introduced Sonos 27, the next version of its audio operating system, in September 2026, and previewed its first in-house voice assistant alongside it. What was that in-house assistant built to do?",
+    "options": [
+      "Answer general questions the way Alexa does today",
+      "Transcribe and translate speech in real time",
+      "Curate music and mood rather than general tasks",
+      "Read messages and manage your calendar for you"
+    ],
+    "answer": "Curate music and mood rather than general tasks",
+    "category": "products",
+    "tags": [
+      "sonos",
+      "voice-assistant",
+      "consumer",
+      "launch"
+    ],
+    "difficulty": 2,
+    "explanation": "Sonos 27voice is deliberately narrow: Sonos describes its own first assistant as built for music and mood curation, not for handling general requests. The general-question distractor is the tempting miss because a speaker that answers questions is what most people picture, and the same release took the opposite route for everything else, adding Sonos 27mcp so an outside assistant such as OpenAI's ChatGPT could drive the system instead. The announcement also folded the Beam Ultra soundbar and Ace Ultra headphones into the portfolio.",
+    "source": {
+      "kind": "url",
+      "url": "https://newsroom.sonos.com/269843-sonos-introduces-sonos-27-the-next-generation-of-its-audio-operating-system/",
+      "label": "Sonos newsroom on Sonos 27"
+    },
+    "answerAliases": [
+      "Sonos 27voice",
+      "music and mood curation",
+      "curate music and mood",
+      "Sonos 27"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pro-0021",
+    "text": "JetBrains took its AI coding agent Junie out of beta in June 2026. Which protocol did it rebuild the agent's IDE integration on for the general release?",
+    "options": [
+      "Agent Communication Protocol",
+      "Model Context Protocol",
+      "Language Server Protocol",
+      "Debug Adapter Protocol"
+    ],
+    "answer": "Agent Communication Protocol",
+    "category": "products",
+    "tags": [
+      "jetbrains",
+      "junie",
+      "coding-agent",
+      "protocols"
+    ],
+    "difficulty": 3,
+    "explanation": "Junie's general release talks to the IDE over ACP, the same protocol Junie CLI already used, so one agent engine sits behind the AI chat, the Junie tool window and the terminal. Model Context Protocol is the tempting miss because it is the other big agent protocol of 2026, but MCP is about handing a model tools, not plugging an agent into an editor. Language Server Protocol is about completions and navigation.",
+    "source": {
+      "kind": "url",
+      "url": "https://blog.jetbrains.com/junie/2026/06/junie-coding-agent-out-of-beta/",
+      "label": "JetBrains on Junie leaving beta"
+    },
+    "answerAliases": [
+      "Agent Communication Protocol",
+      "ACP",
+      "Junie",
+      "JetBrains"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pro-0022",
+    "text": "Cursor's Composer 2 and Composer 2.5 coding models were not trained from scratch: Cursor took an open base model from another lab and did its own continued pretraining and reinforcement learning on top. Which lab's open model was that base?",
+    "options": [
+      "Alibaba",
+      "Moonshot AI",
+      "Mistral AI",
+      "DeepSeek"
+    ],
+    "answer": "Moonshot AI",
+    "category": "products",
+    "tags": [
+      "cursor",
+      "composer",
+      "lineage",
+      "open-weights"
+    ],
+    "difficulty": 4,
+    "explanation": "Both Composer 2 and Composer 2.5 were built on Moonshot AI's open Kimi K2.5 checkpoint, a 1T parameter model that Cursor continued-pretrained on code and then reinforced on long-horizon tasks. The course change came in May 2026, when Cursor said it was training a significantly larger model from scratch with SpaceXAI, using ten times the total compute on Colossus 2. Alibaba and DeepSeek are the tempting misses because both ship strong open coding bases of their own.",
+    "source": {
+      "kind": "url",
+      "url": "https://cursor.com/blog/composer-2-5",
+      "label": "Cursor on Composer 2.5"
+    },
+    "answerAliases": [
+      "Moonshot AI",
+      "Moonshot",
+      "Kimi K2.5",
+      "Kimi"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "pro-0024",
+    "text": "ChatGPT is developed and operated by which company?",
+    "options": [
+      "OpenAI",
+      "Google",
+      "Meta",
+      "Anthropic"
+    ],
+    "answer": "OpenAI",
+    "category": "products",
+    "tags": [
+      "chatgpt",
+      "openai"
+    ],
+    "difficulty": 1,
+    "explanation": "ChatGPT is OpenAI's generative AI chatbot, offered on a freemium model. Anthropic is the tempting miss because it is the other major independent lab, but it builds Claude.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ChatGPT",
+      "label": "ChatGPT on Wikipedia"
+    },
+    "answerAliases": [
+      "OpenAI",
+      "OpenAI Inc."
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0026",
+    "text": "In June 2024 Anthropic added a Claude feature that generates and previews code and documents in a side panel. What is it called?",
+    "options": [
+      "Projects",
+      "Workspaces",
+      "Artifacts",
+      "Canvas"
+    ],
+    "answer": "Artifacts",
+    "category": "products",
+    "tags": [
+      "claude",
+      "artifacts",
+      "anthropic"
+    ],
+    "difficulty": 2,
+    "explanation": "Artifacts arrived with Claude 3.5 Sonnet in June 2024 and renders generated code, SVGs and documents in a separate window. Canvas is the tempting miss as a similar side-panel feature from another vendor.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Claude (AI)",
+      "label": "Claude (AI) on Wikipedia"
+    },
+    "answerAliases": [
+      "Artifacts",
+      "Claude Artifacts"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0029",
+    "text": "From the start, Google described Gemini as what kind of model?",
+    "options": [
+      "Text-only",
+      "Natively multimodal",
+      "Open weights",
+      "On-device only"
+    ],
+    "answer": "Natively multimodal",
+    "category": "products",
+    "tags": [
+      "gemini",
+      "google",
+      "multimodal"
+    ],
+    "difficulty": 2,
+    "explanation": "Gemini was designed to be multimodal from the outset, processing text, images, audio, video and code. Text-only is the tempting miss as the default for older large language models.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Gemini (language model)",
+      "label": "Gemini (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "multimodal",
+      "natively multimodal"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0030",
+    "text": "GitHub Copilot is powered by OpenAI's Codex model, which descends from which GPT model?",
+    "options": [
+      "GPT-1",
+      "GPT-2",
+      "GPT-3",
+      "GPT-4"
+    ],
+    "answer": "GPT-3",
+    "category": "products",
+    "tags": [
+      "copilot",
+      "codex",
+      "openai"
+    ],
+    "difficulty": 3,
+    "explanation": "Codex is a descendant of GPT-3 fine-tuned on code. GPT-4 is the tempting miss as the newer model, but Codex's lineage traces to GPT-3.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GitHub Copilot",
+      "label": "GitHub Copilot on Wikipedia"
+    },
+    "answerAliases": [
+      "GPT-3",
+      "Codex"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0031",
+    "text": "GitHub Copilot became generally available to the public in which year?",
+    "options": [
+      "2023",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "answer": "2022",
+    "category": "products",
+    "tags": [
+      "copilot",
+      "github",
+      "release"
+    ],
+    "difficulty": 2,
+    "explanation": "Copilot was announced in June 2021 and reached general availability in 2022. 2021 is the tempting miss because that is when the technical preview began.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GitHub Copilot",
+      "label": "GitHub Copilot on Wikipedia"
+    },
+    "answerAliases": [
+      "2022",
+      "general availability"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0032",
+    "text": "Midjourney was founded by David Holz, who previously co-founded which company?",
+    "options": [
+      "Leap Motion",
+      "Magic Leap",
+      "Fitbit",
+      "Oculus"
+    ],
+    "answer": "Leap Motion",
+    "category": "products",
+    "tags": [
+      "midjourney",
+      "david-holz",
+      "lineage"
+    ],
+    "difficulty": 3,
+    "explanation": "David Holz co-founded Leap Motion, the hand-tracking controller company, before starting Midjourney. Oculus is the tempting miss as another VR-era hardware startup.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Midjourney",
+      "label": "Midjourney on Wikipedia"
+    },
+    "answerAliases": [
+      "Leap Motion",
+      "David Holz"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0033",
+    "text": "Midjourney's original interface ran entirely through which platform?",
+    "options": [
+      "A web app",
+      "Discord",
+      "A Photoshop plugin",
+      "A command line"
+    ],
+    "answer": "Discord",
+    "category": "products",
+    "tags": [
+      "midjourney",
+      "discord",
+      "interface"
+    ],
+    "difficulty": 1,
+    "explanation": "Midjourney launched as a Discord bot in 2022 and stayed Discord-first. A web app is the tempting miss as the interface most image tools use, but Midjourney's early identity was its Discord bot.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Midjourney",
+      "label": "Midjourney on Wikipedia"
+    },
+    "answerAliases": [
+      "Discord",
+      "Discord bot"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0036",
+    "text": "OpenAI previewed Sora in which month of 2024?",
+    "options": [
+      "February",
+      "June",
+      "September",
+      "December"
+    ],
+    "answer": "February",
+    "category": "products",
+    "tags": [
+      "sora",
+      "openai",
+      "video",
+      "launch"
+    ],
+    "difficulty": 1,
+    "explanation": "OpenAI previewed Sora in February 2024. June is the tempting miss as the month of many AI launches, but Sora's preview came earlier.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Sora (text-to-video model)",
+      "label": "Sora on Wikipedia"
+    },
+    "answerAliases": [
+      "February 2024",
+      "Feb 2024"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0038",
+    "text": "NotebookLM's Audio Overviews simulate what format?",
+    "options": [
+      "An audiobook",
+      "A news broadcast",
+      "A podcast conversation",
+      "A lecture"
+    ],
+    "answer": "A podcast conversation",
+    "category": "products",
+    "tags": [
+      "notebooklm",
+      "audio-overviews",
+      "google"
+    ],
+    "difficulty": 1,
+    "explanation": "Audio Overviews turn uploaded documents into a two-host podcast chat. A lecture is the tempting miss as another spoken format, but the viral 2024 feature was the podcast-style banter.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Gemini Notebook",
+      "label": "Gemini Notebook on Wikipedia"
+    },
+    "answerAliases": [
+      "podcast",
+      "Audio Overviews",
+      "two hosts"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0039",
+    "text": "NotebookLM answers questions based only on what?",
+    "options": [
+      "The open web",
+      "Its training data",
+      "Google Search results",
+      "Documents you upload"
+    ],
+    "answer": "Documents you upload",
+    "category": "products",
+    "tags": [
+      "notebooklm",
+      "rag",
+      "google"
+    ],
+    "difficulty": 2,
+    "explanation": "NotebookLM is grounded in the documents you give it and cites them. The open web is the tempting miss because most chatbots answer from training data or search, but NotebookLM stays inside your sources.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Gemini Notebook",
+      "label": "Gemini Notebook on Wikipedia"
+    },
+    "answerAliases": [
+      "uploaded documents",
+      "your documents",
+      "sources"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0040",
+    "text": "In 2024 Google's AI Overviews suggested adding what to pizza sauce to keep cheese from sliding off?",
+    "options": [
+      "Glue",
+      "Cornstarch",
+      "Oil",
+      "Flour"
+    ],
+    "answer": "Glue",
+    "category": "products",
+    "tags": [
+      "ai-overviews",
+      "google",
+      "failure",
+      "hallucination"
+    ],
+    "difficulty": 1,
+    "explanation": "AI Overviews told users to add glue to pizza sauce, a hallucination drawn from a satirical Reddit comment. Cornstarch is the tempting miss as a real cooking thickener.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI Overviews",
+      "label": "AI Overviews on Wikipedia"
+    },
+    "answerAliases": [
+      "glue",
+      "glue on pizza"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0041",
+    "text": "Google rebranded Search Generative Experience as AI Overviews at which event in May 2024?",
+    "options": [
+      "CES",
+      "Google I/O",
+      "WWDC",
+      "Microsoft Build"
+    ],
+    "answer": "Google I/O",
+    "category": "products",
+    "tags": [
+      "ai-overviews",
+      "google",
+      "launch"
+    ],
+    "difficulty": 2,
+    "explanation": "AI Overviews were announced at Google I/O 2024. WWDC is the tempting miss as Apple's annual developer event.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI Overviews",
+      "label": "AI Overviews on Wikipedia"
+    },
+    "answerAliases": [
+      "Google I/O 2024",
+      "I/O"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0042",
+    "text": "Perplexity AI is best described as what?",
+    "options": [
+      "A music model",
+      "An image generator",
+      "An answer engine",
+      "A code editor"
+    ],
+    "answer": "An answer engine",
+    "category": "products",
+    "tags": [
+      "perplexity",
+      "search",
+      "ai"
+    ],
+    "difficulty": 1,
+    "explanation": "Perplexity is a search engine that synthesizes answers and cites sources. An image generator is the tempting miss as the other common consumer AI product shape.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Perplexity AI",
+      "label": "Perplexity AI on Wikipedia"
+    },
+    "answerAliases": [
+      "answer engine",
+      "Perplexity"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0043",
+    "text": "What feature did Perplexity's answers include that early chatbots often lacked?",
+    "options": [
+      "Image editing",
+      "Code execution",
+      "Voice cloning",
+      "Inline source citations"
+    ],
+    "answer": "Inline source citations",
+    "category": "products",
+    "tags": [
+      "perplexity",
+      "citations",
+      "search"
+    ],
+    "difficulty": 2,
+    "explanation": "Perplexity cites the sources it used to generate each answer. Code execution is the tempting miss as a feature many assistants later added.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Perplexity AI",
+      "label": "Perplexity AI on Wikipedia"
+    },
+    "answerAliases": [
+      "citations",
+      "sources",
+      "inline citations"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0044",
+    "text": "Character.ai lets users converse with what?",
+    "options": [
+      "AI personas and characters",
+      "Only their own documents",
+      "Only code",
+      "Only celebrity voices"
+    ],
+    "answer": "AI personas and characters",
+    "category": "products",
+    "tags": [
+      "character-ai",
+      "chatbot",
+      "personas"
+    ],
+    "difficulty": 1,
+    "explanation": "Character.ai lets users chat with customizable characters, many based on fictional or real people. Only their own documents is the tempting miss as the NotebookLM model, not Character.ai.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Character.ai",
+      "label": "Character.ai on Wikipedia"
+    },
+    "answerAliases": [
+      "characters",
+      "personas",
+      "Character.ai"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0046",
+    "text": "Poe is a chatbot aggregator launched by which company?",
+    "options": [
+      "Medium",
+      "Reddit",
+      "Quora",
+      "Stack Overflow"
+    ],
+    "answer": "Quora",
+    "category": "products",
+    "tags": [
+      "poe",
+      "quora",
+      "aggregator"
+    ],
+    "difficulty": 2,
+    "explanation": "Poe is Quora's platform for chatting with many large language models. Reddit is the tempting miss as another Q&A community, but Poe came from Quora.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Quora",
+      "label": "Quora on Wikipedia"
+    },
+    "answerAliases": [
+      "Quora",
+      "Poe"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0048",
+    "text": "Grok is integrated into which social platform?",
+    "options": [
+      "X",
+      "Telegram",
+      "Reddit",
+      "Discord"
+    ],
+    "answer": "X",
+    "category": "products",
+    "tags": [
+      "grok",
+      "x",
+      "twitter",
+      "integration"
+    ],
+    "difficulty": 1,
+    "explanation": "Grok is integrated into the X social network. Reddit is the tempting miss as another large discussion platform.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Grok (chatbot)",
+      "label": "Grok (chatbot) on Wikipedia"
+    },
+    "answerAliases": [
+      "X",
+      "Twitter",
+      "X (Twitter)"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0049",
+    "text": "Rabbit's R1 promised a 'large action model' (LAM). What was a LAM meant to do?",
+    "options": [
+      "Generate music",
+      "Operate apps and interfaces for you",
+      "Predict protein structures",
+      "Compress images"
+    ],
+    "answer": "Operate apps and interfaces for you",
+    "category": "products",
+    "tags": [
+      "rabbit",
+      "r1",
+      "lam",
+      "agent"
+    ],
+    "difficulty": 2,
+    "explanation": "A LAM was meant to click through apps and interfaces on the user's behalf. Generate music is the tempting miss as another generative AI capability.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Rabbit r1",
+      "label": "Rabbit r1 on Wikipedia"
+    },
+    "answerAliases": [
+      "large action model",
+      "LAM",
+      "operate apps"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0050",
+    "text": "After poor reviews, most of Humane was acquired by which company in early 2025?",
+    "options": [
+      "Samsung",
+      "Apple",
+      "HP",
+      "Google"
+    ],
+    "answer": "HP",
+    "category": "products",
+    "tags": [
+      "humane",
+      "ai-pin",
+      "acquisition"
+    ],
+    "difficulty": 2,
+    "explanation": "HP bought most of Humane in early 2025 and shut down the AI Pin. Apple is the tempting miss because Humane's founders were ex-Apple.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Humane Inc.",
+      "label": "Humane Inc. on Wikipedia"
+    },
+    "answerAliases": [
+      "HP",
+      "Hewlett-Packard"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0052",
+    "text": "In 2024 a DPD chatbot was taken offline after doing what?",
+    "options": [
+      "Swearing and criticizing the company",
+      "Giving free flights",
+      "Deleting accounts",
+      "Leaking passwords"
+    ],
+    "answer": "Swearing and criticizing the company",
+    "category": "products",
+    "tags": [
+      "dpd",
+      "chatbot",
+      "failure"
+    ],
+    "difficulty": 2,
+    "explanation": "DPD's chatbot was coaxed into swearing and writing a poem calling the company useless. Leaking passwords is the tempting miss as a more dramatic chatbot failure, but the real incident was the abuse.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "DPD",
+      "swearing",
+      "chatbot"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0053",
+    "text": "In 2023 a Chevrolet dealership's AI chatbot agreed to sell a new Tahoe for how much?",
+    "options": [
+      "Free",
+      "$1",
+      "$100",
+      "$1,000"
+    ],
+    "answer": "$1",
+    "category": "products",
+    "tags": [
+      "chevrolet",
+      "chatbot",
+      "failure"
+    ],
+    "difficulty": 2,
+    "explanation": "A dealership's ChatGPT-powered bot agreed to sell a Tahoe for one dollar after a user prompted it. Free is the tempting miss as an even more absurd outcome, but the reported figure was $1.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "$1",
+      "one dollar",
+      "Tahoe"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0054",
+    "text": "Cursor is an AI-first code editor built as a fork of which editor?",
+    "options": [
+      "JetBrains",
+      "Vim",
+      "Visual Studio Code",
+      "Emacs"
+    ],
+    "answer": "Visual Studio Code",
+    "category": "products",
+    "tags": [
+      "cursor",
+      "vscode",
+      "editor"
+    ],
+    "difficulty": 2,
+    "explanation": "Cursor is built on top of VS Code. JetBrains is the tempting miss as another major IDE family, but Cursor forked VS Code.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Cursor (company)",
+      "label": "Cursor (company) on Wikipedia"
+    },
+    "answerAliases": [
+      "VS Code",
+      "Visual Studio Code",
+      "Cursor"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0055",
+    "text": "Windsurf, an AI code editor, was originally known under what name?",
+    "options": [
+      "Kite",
+      "Copilot",
+      "Tabnine",
+      "Codeium"
+    ],
+    "answer": "Codeium",
+    "category": "products",
+    "tags": [
+      "windsurf",
+      "codeium",
+      "editor"
+    ],
+    "difficulty": 2,
+    "explanation": "Windsurf started life as Codeium before rebranding. Copilot is the tempting miss as the Microsoft product it competes with.",
+    "source": {
+      "kind": "url",
+      "url": "https://windsurf.com",
+      "label": "Windsurf"
+    },
+    "answerAliases": [
+      "Codeium",
+      "Windsurf"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0056",
+    "text": "Suno is an AI product for generating what?",
+    "options": [
+      "Music and songs",
+      "Code",
+      "Video",
+      "Images"
+    ],
+    "answer": "Music and songs",
+    "category": "products",
+    "tags": [
+      "suno",
+      "music",
+      "audio"
+    ],
+    "difficulty": 1,
+    "explanation": "Suno generates full songs from text prompts. Images is the tempting miss as the other popular generative medium.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Suno",
+      "label": "Suno on Wikipedia"
+    },
+    "answerAliases": [
+      "Suno",
+      "Suno AI",
+      "music"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0057",
+    "text": "Udio is a competitor to Suno in which category?",
+    "options": [
+      "Code completion",
+      "AI music generation",
+      "Image generation",
+      "Text summarization"
+    ],
+    "answer": "AI music generation",
+    "category": "products",
+    "tags": [
+      "udio",
+      "music",
+      "audio"
+    ],
+    "difficulty": 1,
+    "explanation": "Udio, like Suno, generates music from prompts. Image generation is the tempting miss as the other crowded generative space.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Udio",
+      "label": "Udio on Wikipedia"
+    },
+    "answerAliases": [
+      "Udio",
+      "AI music"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0058",
+    "text": "In 2024 major record labels sued Suno and Udio over what?",
+    "options": [
+      "Defamation",
+      "Patent infringement",
+      "Training on copyrighted music",
+      "Data breach"
+    ],
+    "answer": "Training on copyrighted music",
+    "category": "products",
+    "tags": [
+      "suno",
+      "udio",
+      "copyright",
+      "music"
+    ],
+    "difficulty": 2,
+    "explanation": "Labels sued Suno and Udio for training on copyrighted recordings without permission. Defamation is the tempting miss as another legal claim, but the suits were about copyright.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Suno",
+      "label": "Suno on Wikipedia"
+    },
+    "answerAliases": [
+      "copyright",
+      "copyright infringement",
+      "training data"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0059",
+    "text": "Runway is best known for which generative capability?",
+    "options": [
+      "Protein folding",
+      "Chip design",
+      "Speech synthesis",
+      "Video generation"
+    ],
+    "answer": "Video generation",
+    "category": "products",
+    "tags": [
+      "runway",
+      "video",
+      "generative"
+    ],
+    "difficulty": 1,
+    "explanation": "Runway is known for text-to-video and video editing tools. Speech synthesis is the tempting miss as the ElevenLabs niche.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Runway (company)",
+      "label": "Runway (company) on Wikipedia"
+    },
+    "answerAliases": [
+      "video generation",
+      "Runway",
+      "Runway ML"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0060",
+    "text": "Pika is an AI startup focused on what?",
+    "options": [
+      "Video generation",
+      "Code generation",
+      "Music generation",
+      "Voice cloning"
+    ],
+    "answer": "Video generation",
+    "category": "products",
+    "tags": [
+      "pika",
+      "video",
+      "generative"
+    ],
+    "difficulty": 1,
+    "explanation": "Pika builds AI video generation tools. Voice cloning is the tempting miss as the ElevenLabs space.",
+    "source": {
+      "kind": "url",
+      "url": "https://pika.art",
+      "label": "Pika"
+    },
+    "answerAliases": [
+      "Pika",
+      "Pika Labs",
+      "video"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0061",
+    "text": "ElevenLabs was founded by two engineers who previously worked on speech at which company?",
+    "options": [
+      "Meta",
+      "Google",
+      "Amazon",
+      "Apple"
+    ],
+    "answer": "Google",
+    "category": "products",
+    "tags": [
+      "elevenlabs",
+      "speech",
+      "lineage"
+    ],
+    "difficulty": 3,
+    "explanation": "Founders Piotr Dabkowski and Mateusz Staniszewski both worked on speech at Google. Meta is the tempting miss as another big lab with speech research.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ElevenLabs",
+      "label": "ElevenLabs on Wikipedia"
+    },
+    "answerAliases": [
+      "Google",
+      "ElevenLabs"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0062",
+    "text": "HeyGen is best known for generating what kind of content?",
+    "options": [
+      "Code",
+      "Images",
+      "Avatar videos",
+      "Music"
+    ],
+    "answer": "Avatar videos",
+    "category": "products",
+    "tags": [
+      "heygen",
+      "avatars",
+      "video"
+    ],
+    "difficulty": 1,
+    "explanation": "HeyGen creates photo-realistic AI avatar videos. Images is the tempting miss as the Midjourney and DALL-E space.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "HeyGen",
+      "label": "HeyGen on Wikipedia"
+    },
+    "answerAliases": [
+      "avatars",
+      "HeyGen",
+      "avatar videos"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0063",
+    "text": "Notion AI adds generative features to which type of product?",
+    "options": [
+      "Video editor",
+      "Spreadsheet",
+      "Email client",
+      "Note-taking workspace app"
+    ],
+    "answer": "Note-taking workspace app",
+    "category": "products",
+    "tags": [
+      "notion",
+      "workspace",
+      "ai"
+    ],
+    "difficulty": 1,
+    "explanation": "Notion AI is built into Notion's note-taking and workspace app. Email client is the tempting miss as another productivity surface.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Notion (productivity software)",
+      "label": "Notion (productivity software) on Wikipedia"
+    },
+    "answerAliases": [
+      "Notion",
+      "workspace",
+      "notes"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0064",
+    "text": "Replika is best known as what kind of chatbot?",
+    "options": [
+      "An AI companion",
+      "A search engine",
+      "A music generator",
+      "A coding assistant"
+    ],
+    "answer": "An AI companion",
+    "category": "products",
+    "tags": [
+      "replika",
+      "companion",
+      "chatbot"
+    ],
+    "difficulty": 1,
+    "explanation": "Replika is an AI companion chatbot. A coding assistant is the tempting miss as the GitHub Copilot category.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Replika",
+      "label": "Replika on Wikipedia"
+    },
+    "answerAliases": [
+      "companion",
+      "Replika",
+      "AI companion"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0065",
+    "text": "Replika was created by Eugenia Kuyda after the death of whom?",
+    "options": [
+      "Her father",
+      "Her friend Roman",
+      "Her pet",
+      "Her colleague's dog"
+    ],
+    "answer": "Her friend Roman",
+    "category": "products",
+    "tags": [
+      "replika",
+      "eugenia-kuyda",
+      "origin"
+    ],
+    "difficulty": 3,
+    "explanation": "Eugenia Kuyda built Replika from text messages after her friend Roman Mazurenko died. Her father is the tempting miss as another personal loss story.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Replika",
+      "label": "Replika on Wikipedia"
+    },
+    "answerAliases": [
+      "Roman",
+      "Roman Mazurenko",
+      "Eugenia Kuyda"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0066",
+    "text": "Snapchat's My AI is powered by which company's model?",
+    "options": [
+      "Meta",
+      "Google",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "answer": "OpenAI",
+    "category": "products",
+    "tags": [
+      "snapchat",
+      "my-ai",
+      "openai"
+    ],
+    "difficulty": 2,
+    "explanation": "Snapchat's My AI runs on OpenAI's models. Google is the tempting miss as another major AI provider.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Snapchat",
+      "label": "Snapchat on Wikipedia"
+    },
+    "answerAliases": [
+      "OpenAI",
+      "ChatGPT",
+      "My AI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0067",
+    "text": "Meta's AI assistant is built on which family of models?",
+    "options": [
+      "Claude",
+      "GPT",
+      "Gemini",
+      "Llama"
+    ],
+    "answer": "Llama",
+    "category": "products",
+    "tags": [
+      "meta-ai",
+      "llama",
+      "models"
+    ],
+    "difficulty": 1,
+    "explanation": "Meta AI is powered by Meta's Llama models. GPT is the tempting miss as the OpenAI family behind ChatGPT.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Meta AI",
+      "label": "Meta AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Llama",
+      "Meta AI",
+      "Llama (language model)"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0068",
+    "text": "Apple announced Apple Intelligence at which event in 2024?",
+    "options": [
+      "WWDC",
+      "Google I/O",
+      "Microsoft Build",
+      "CES"
+    ],
+    "answer": "WWDC",
+    "category": "products",
+    "tags": [
+      "apple-intelligence",
+      "wwdc",
+      "apple"
+    ],
+    "difficulty": 1,
+    "explanation": "Apple Intelligence was announced at WWDC 2024. Google I/O is the tempting miss as Google's developer event.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Apple Intelligence",
+      "label": "Apple Intelligence on Wikipedia"
+    },
+    "answerAliases": [
+      "WWDC",
+      "WWDC 2024",
+      "Worldwide Developers Conference"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0069",
+    "text": "Apple Intelligence's optional ChatGPT integration is powered by which company's models?",
+    "options": [
+      "Anthropic",
+      "OpenAI",
+      "xAI",
+      "Google"
+    ],
+    "answer": "OpenAI",
+    "category": "products",
+    "tags": [
+      "apple-intelligence",
+      "chatgpt",
+      "openai"
+    ],
+    "difficulty": 2,
+    "explanation": "Apple Intelligence can hand complex requests to ChatGPT, powered by OpenAI. Google is the tempting miss because Apple later partnered with Google on Gemini.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Apple Intelligence",
+      "label": "Apple Intelligence on Wikipedia"
+    },
+    "answerAliases": [
+      "OpenAI",
+      "ChatGPT",
+      "GPT-4o"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0071",
+    "text": "OpenAI's contested 2024 voice mode was named what?",
+    "options": [
+      "Siri",
+      "Scarlett",
+      "Samantha",
+      "Sky"
+    ],
+    "answer": "Sky",
+    "category": "products",
+    "tags": [
+      "openai",
+      "chatgpt",
+      "sky",
+      "voice"
+    ],
+    "difficulty": 2,
+    "explanation": "The voice at the center of the controversy was called Sky. Samantha is the tempting miss as the AI voice from the film Her, which OpenAI's demo evoked.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "Sky",
+      "Sky voice"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0072",
+    "text": "DALL-E 2 was released by OpenAI in which year?",
+    "options": [
+      "2022",
+      "2023",
+      "2020",
+      "2021"
+    ],
+    "answer": "2022",
+    "category": "products",
+    "tags": [
+      "dall-e",
+      "openai",
+      "release"
+    ],
+    "difficulty": 2,
+    "explanation": "DALL-E 2 arrived in 2022. 2021 is the tempting miss because that is when the original DALL-E was introduced.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "DALL-E",
+      "label": "DALL-E on Wikipedia"
+    },
+    "answerAliases": [
+      "2022",
+      "DALL-E 2"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0073",
+    "text": "Midjourney was founded in which year?",
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2019"
+    ],
+    "answer": "2021",
+    "category": "products",
+    "tags": [
+      "midjourney",
+      "founded",
+      "release"
+    ],
+    "difficulty": 2,
+    "explanation": "Midjourney was founded in 2021. 2022 is the tempting miss because that is when its open beta began.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Midjourney, Inc.",
+      "label": "Midjourney, Inc. on Wikipedia"
+    },
+    "answerAliases": [
+      "2021",
+      "founded 2021"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0074",
+    "text": "Claude was first released by Anthropic in which year?",
+    "options": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "answer": "2023",
+    "category": "products",
+    "tags": [
+      "claude",
+      "anthropic",
+      "release"
+    ],
+    "difficulty": 2,
+    "explanation": "Claude launched in March 2023. 2024 is the tempting miss because that is when Claude 3 arrived.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Claude (AI)",
+      "label": "Claude (AI) on Wikipedia"
+    },
+    "answerAliases": [
+      "2023",
+      "March 2023"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0075",
+    "text": "Google's Gemini model family was announced in which year?",
+    "options": [
+      "2024",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "answer": "2023",
+    "category": "products",
+    "tags": [
+      "gemini",
+      "google",
+      "release"
+    ],
+    "difficulty": 2,
+    "explanation": "Gemini was announced in December 2023. 2024 is the tempting miss because that is when Bard was rebranded to Gemini.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Gemini (language model)",
+      "label": "Gemini (language model) on Wikipedia"
+    },
+    "answerAliases": [
+      "2023",
+      "December 2023"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0076",
+    "text": "Microsoft began integrating Copilot into which operating system in 2023?",
+    "options": [
+      "Windows 11",
+      "Linux",
+      "Android",
+      "macOS"
+    ],
+    "answer": "Windows 11",
+    "category": "products",
+    "tags": [
+      "microsoft-copilot",
+      "windows",
+      "integration"
+    ],
+    "difficulty": 2,
+    "explanation": "Copilot was added to Windows 11 in late 2023. macOS is the tempting miss as another desktop OS, but Copilot's OS integration was Windows.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Microsoft Copilot",
+      "label": "Microsoft Copilot on Wikipedia"
+    },
+    "answerAliases": [
+      "Windows 11",
+      "Windows"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0077",
+    "text": "Microsoft Copilot is integrated into which productivity suite?",
+    "options": [
+      "Google Workspace",
+      "Microsoft 365",
+      "Adobe Creative Cloud",
+      "Apple iWork"
+    ],
+    "answer": "Microsoft 365",
+    "category": "products",
+    "tags": [
+      "microsoft-copilot",
+      "microsoft-365",
+      "productivity"
+    ],
+    "difficulty": 1,
+    "explanation": "Microsoft 365 Copilot brings AI into Word, Excel, PowerPoint and Outlook. Google Workspace is the tempting miss as the competing suite.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Microsoft Copilot",
+      "label": "Microsoft Copilot on Wikipedia"
+    },
+    "answerAliases": [
+      "Microsoft 365",
+      "M365"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0078",
+    "text": "Perplexity AI was founded in which year?",
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "answer": "2022",
+    "category": "products",
+    "tags": [
+      "perplexity",
+      "founded",
+      "release"
+    ],
+    "difficulty": 2,
+    "explanation": "Perplexity AI was founded in August 2022. 2023 is the tempting miss because that is when its search engine launched to the public.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Perplexity AI",
+      "label": "Perplexity AI on Wikipedia"
+    },
+    "answerAliases": [
+      "2022",
+      "August 2022"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0079",
+    "text": "Character.ai faced lawsuits in 2024 over what concern?",
+    "options": [
+      "Data breach",
+      "Antitrust",
+      "Copyright",
+      "Harm to minors"
+    ],
+    "answer": "Harm to minors",
+    "category": "products",
+    "tags": [
+      "character-ai",
+      "lawsuits",
+      "safety"
+    ],
+    "difficulty": 3,
+    "explanation": "Character.ai faced suits alleging its chatbots endangered teenagers. Copyright is the tempting miss as the other common AI legal issue.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Character.ai",
+      "label": "Character.ai on Wikipedia"
+    },
+    "answerAliases": [
+      "harm to minors",
+      "teen safety",
+      "Character.ai"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0080",
+    "text": "When Grok first launched in November 2023, access was limited to which users?",
+    "options": [
+      "X Premium subscribers",
+      "API customers only",
+      "Tesla owners",
+      "All X users"
+    ],
+    "answer": "X Premium subscribers",
+    "category": "products",
+    "tags": [
+      "grok",
+      "x",
+      "launch",
+      "access"
+    ],
+    "difficulty": 2,
+    "explanation": "Grok's early access was limited to paid X Premium subscribers. All X users is the tempting miss because Grok later opened up more broadly.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Grok (chatbot)",
+      "label": "Grok (chatbot) on Wikipedia"
+    },
+    "answerAliases": [
+      "X Premium",
+      "Premium subscribers",
+      "paid subscribers"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0081",
+    "text": "NotebookLM's Audio Overviews feature mimics a podcast with how many AI hosts?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "answer": "Two",
+    "category": "products",
+    "tags": [
+      "notebooklm",
+      "audio-overviews",
+      "podcast"
+    ],
+    "difficulty": 2,
+    "explanation": "Audio Overviews generate a conversation between two synthetic hosts. One is the tempting miss as a simpler format, but the viral feature was the two-host banter.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Gemini Notebook",
+      "label": "Gemini Notebook on Wikipedia"
+    },
+    "answerAliases": [
+      "two",
+      "two hosts",
+      "Audio Overviews"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0082",
+    "text": "The 2024 ChatGPT voice controversy involved which actor?",
+    "options": [
+      "Emma Stone",
+      "Jennifer Lawrence",
+      "Scarlett Johansson",
+      "Margot Robbie"
+    ],
+    "answer": "Scarlett Johansson",
+    "category": "products",
+    "tags": [
+      "openai",
+      "chatgpt",
+      "voice",
+      "johansson"
+    ],
+    "difficulty": 1,
+    "explanation": "Scarlett Johansson publicly objected that OpenAI's Sky voice sounded like hers. Emma Stone is the tempting miss as another well-known actress.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "Scarlett Johansson",
+      "Johansson",
+      "Sky"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "pro-0083",
+    "text": "Before its music generator, Suno released which open-source audio model in April 2023?",
+    "options": [
+      "VALL-E",
+      "Tortoise",
+      "Bark",
+      "WaveNet"
+    ],
+    "answer": "Bark",
+    "category": "products",
+    "tags": [
+      "suno",
+      "bark",
+      "speech",
+      "origin"
+    ],
+    "difficulty": 2,
+    "explanation": "Bark was Suno's open-source text-to-speech and audio model on GitHub, months before the music platform launched that December. VALL-E is the tempting miss because it was the other famous 2023 voice release, but it came from Microsoft, not Suno.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Suno",
+      "label": "Suno on Wikipedia"
+    },
+    "answerAliases": [
+      "Bark",
+      "Suno"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pro-0084",
+    "text": "In September 2024, Runway partnered with which film studio to build a custom video model on its catalog?",
+    "options": [
+      "A24",
+      "Blumhouse",
+      "Universal Pictures",
+      "Lionsgate"
+    ],
+    "answer": "Lionsgate",
+    "category": "products",
+    "tags": [
+      "runway",
+      "lionsgate",
+      "partnership",
+      "video"
+    ],
+    "difficulty": 2,
+    "explanation": "The deal trained a custom model on the studio's catalog of over 20,000 film and television titles, reserved for Lionsgate-affiliated filmmakers. Universal is the tempting miss as the bigger studio name, but the first studio partnership of this kind was Lionsgate's.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Runway (company)",
+      "label": "Runway (company) on Wikipedia"
+    },
+    "answerAliases": [
+      "Lionsgate",
+      "Lionsgate Entertainment"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pro-0085",
+    "text": "How do you accept a full Cursor Tab suggestion?",
+    "options": [
+      "Press Tab",
+      "Press Enter",
+      "Press Escape",
+      "Press Ctrl+S"
+    ],
+    "answer": "Press Tab",
+    "category": "products",
+    "tags": [
+      "cursor",
+      "tab",
+      "autocomplete"
+    ],
+    "difficulty": 1,
+    "explanation": "Tab is Cursor's AI autocomplete: suggestions appear as grayed-out text and Tab accepts the full one, including multi-line and cross-file edits. Escape is the tempting miss because it is also part of the workflow, but it rejects the suggestion instead of accepting it.",
+    "source": {
+      "kind": "url",
+      "url": "https://cursor.com/docs/tab/overview",
+      "label": "Cursor docs on Tab completion"
+    },
+    "answerAliases": [
+      "Tab",
+      "Tab key",
+      "Accept the full suggestion"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "pro-0086",
+    "text": "Which browser did Perplexity launch in July 2025?",
+    "options": [
+      "Arc",
+      "Comet",
+      "Brave",
+      "Opera"
+    ],
+    "answer": "Comet",
+    "category": "products",
+    "tags": [
+      "perplexity",
+      "comet",
+      "browser"
+    ],
+    "difficulty": 1,
+    "explanation": "Comet is Perplexity's Chromium-based AI browser with the answer engine built in, first limited to top-tier subscribers and then free for everyone in October 2025. Arc is the tempting miss as the other startup browser people talk about, but it comes from The Browser Company, not Perplexity.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Perplexity AI",
+      "label": "Perplexity AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Comet",
+      "Comet browser",
+      "Chromium"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
   }
 ]

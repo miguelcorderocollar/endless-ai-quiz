@@ -428,5 +428,1597 @@
     ],
     "status": "published",
     "addedAt": "2026-09-29"
+  },
+  {
+    "id": "ben-0015",
+    "text": "The MATH benchmark collects competition mathematics problems. What did each one come with that made it useful for studying reasoning rather than just arithmetic?",
+    "options": [
+      "A list of four possible multiple choice answers",
+      "A full worked solution, written out step by step",
+      "A photograph of the original competition paper",
+      "A grade sheet filled in by a human competition judge"
+    ],
+    "answer": "A full worked solution, written out step by step",
+    "category": "benchmarks",
+    "tags": [
+      "math",
+      "reasoning",
+      "evaluation"
+    ],
+    "difficulty": 1,
+    "explanation": "Every problem in MATH ships with a full step-by-step solution, so a model's answer can be graded on whether the derivation holds and not only on whether the final number matches. The problems are competition level, which is why it stayed hard while GSM8K, built from grade-school word problems, got solved.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2103.03874",
+      "label": "MATH dataset paper on arXiv"
+    },
+    "answerAliases": [
+      "step-by-step solution",
+      "full step-by-step solution",
+      "answer derivations and explanations",
+      "MATH"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "ben-0016",
+    "text": "MT-Bench scores chat assistants by having a strong language model act as the judge. How did the authors show that was a fair stand-in for people?",
+    "options": [
+      "They compared its scores against the scores of a rival model",
+      "They checked it always gave the same score twice in a row",
+      "They compared its scores against scores from human raters",
+      "They checked it scored below the human graders every time"
+    ],
+    "answer": "They compared its scores against scores from human raters",
+    "category": "benchmarks",
+    "tags": [
+      "mt-bench",
+      "llm-as-judge",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "The paper verifies the agreement between LLM judges and human preferences, and reports that a strong judge tracks both controlled and crowdsourced human preferences about as well as people track each other. The known failure modes are position bias, verbosity bias and self-preference, which is why the same paper also proposes ways to blunt them.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2306.05685",
+      "label": "Judging LLM-as-a-Judge with MT-Bench on arXiv"
+    },
+    "answerAliases": [
+      "agreement between LLM judges and human preferences",
+      "human preferences",
+      "LLM-as-a-judge",
+      "MT-Bench"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "ben-0017",
+    "text": "HELM was built around breadth rather than a single test. What does it publish for each model it evaluates?",
+    "options": [
+      "One single headline accuracy number for each model",
+      "A table of results across many scenarios and metrics",
+      "A ranking of all the models tested, from best to worst",
+      "A written critique of each model from its own authors"
+    ],
+    "answer": "A table of results across many scenarios and metrics",
+    "category": "benchmarks",
+    "tags": [
+      "helm",
+      "evaluation",
+      "transparency"
+    ],
+    "difficulty": 2,
+    "explanation": "HELM taxonomises the space of scenarios and metrics, then runs a broad subset of both against every model so trade-offs are exposed instead of averaged away, including things a plain accuracy score hides like calibration, bias and toxicity. It also releases the raw prompts and completions, and is meant to keep growing as a living benchmark.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2211.09110",
+      "label": "Holistic Evaluation of Language Models on arXiv"
+    },
+    "answerAliases": [
+      "multi-metric approach",
+      "trade-offs are clearly exposed",
+      "scenarios",
+      "metrics",
+      "HELM"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "ben-0018",
+    "text": "The Loebner Prize ran a Turing test competition for nearly three decades and was disliked by much of the field. What did Marvin Minsky do about it?",
+    "options": [
+      "He published a proof that no bot had ever fooled anyone",
+      "He chaired the judging panel in its final year",
+      "He donated the prize fund to a rival competition",
+      "He offered a cash prize to anyone who could stop it"
+    ],
+    "answer": "He offered a cash prize to anyone who could stop it",
+    "category": "benchmarks",
+    "tags": [
+      "loebner-prize",
+      "turing-test",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "Minsky called the contest a publicity stunt that did not help the field, so he announced a reward for ending it, and Loebner joked that this made Minsky a co-sponsor. The two big one-time prizes, for a program that passed a full Turing test, were never awarded, and the contest is now defunct.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Loebner Prize",
+      "label": "Loebner Prize on Wikipedia"
+    },
+    "answerAliases": [
+      "Marvin Minsky",
+      "Minsky",
+      "stop the competition",
+      "Annual Minsky Loebner Prize Revocation Prize 1995 Announcement"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "ben-0019",
+    "text": "The needle-in-a-haystack test is a cheap way to check whether a model can really use a long context window. What does it do?",
+    "options": [
+      "Hides one short sentence in a long block of filler text",
+      "Asks the model to summarise a long document in a single line",
+      "Asks the model to count how often a word appears in a page",
+      "Asks the model to list every date mentioned in a document"
+    ],
+    "answer": "Hides one short sentence in a long block of filler text",
+    "category": "benchmarks",
+    "tags": [
+      "long-context",
+      "retrieval",
+      "evaluation"
+    ],
+    "difficulty": 1,
+    "explanation": "You plant a single sentence, such as a made-up magic number, at varying depths inside a long pile of filler text and ask the model to repeat it back. It stopped being hard once frontier models got good at it, but the resulting heatmap is still the fastest way to see that where a fact sits inside the context matters as much as how much context there is.",
+    "source": {
+      "kind": "url",
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack",
+      "label": "Needle In A Haystack test by Greg Kamradt"
+    },
+    "answerAliases": [
+      "needle",
+      "haystack",
+      "in-context retrieval",
+      "Needle In A Haystack"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "ben-0020",
+    "text": "The 2021 HumanEval benchmark introduced the pass@k metric for code generation. What does pass@k measure?",
+    "options": [
+      "The average number of tokens the model generates per problem",
+      "Whether any of k generated samples passes all hidden tests",
+      "The share of hidden tests passed by the model's first sample",
+      "The average runtime of the model's passing solutions"
+    ],
+    "answer": "Whether any of k generated samples passes all hidden tests",
+    "category": "benchmarks",
+    "tags": [
+      "humaneval",
+      "coding",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "Pass@k counts a problem solved if at least one of k independent samples clears every hidden unit test, estimated without brute-force sampling. The closest wrong option about the share of tests passed by one sample describes a partial-credit score HumanEval deliberately avoids. The paper paired the metric with 164 hand-written Python tasks.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2107.03374",
+      "label": "HumanEval paper on arXiv"
+    },
+    "answerAliases": [
+      "pass@k",
+      "pass at k",
+      "HumanEval",
+      "hidden tests"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0021",
+    "text": "OpenAI released the HumanEval coding benchmark in 2021 alongside which code model?",
+    "options": [
+      "Code Llama",
+      "StarCoder",
+      "AlphaCode",
+      "Codex"
+    ],
+    "answer": "Codex",
+    "category": "benchmarks",
+    "tags": [
+      "humaneval",
+      "codex",
+      "coding"
+    ],
+    "difficulty": 1,
+    "explanation": "HumanEval arrived in the Codex paper as the 164-task test for the new Python code model. Code Llama and StarCoder came years later from Meta and BigCode, so they could not have launched with it. Codex itself powered the first version of Copilot.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2107.03374",
+      "label": "HumanEval paper on arXiv"
+    },
+    "answerAliases": [
+      "Codex",
+      "HumanEval",
+      "OpenAI Codex"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0022",
+    "text": "The 2021 GSM8K math benchmark gets the 8K in its name from what?",
+    "options": [
+      "Its set of about 8,500 grade-school word problems",
+      "Its requirement of an 8,000-token context window",
+      "Its bank of 8,000 multiple-choice answer options",
+      "Its training run spread across 8,000 GPUs"
+    ],
+    "answer": "Its set of about 8,500 grade-school word problems",
+    "category": "benchmarks",
+    "tags": [
+      "gsm8k",
+      "math",
+      "evaluation"
+    ],
+    "difficulty": 1,
+    "explanation": "GSM8K ships roughly eight and a half thousand grade-school word problems with step-by-step solutions. The context-window distractor confuses dataset size with model capability. OpenAI built it to study multi-step reasoning where simpler arithmetic tests had saturated.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2110.14168",
+      "label": "GSM8K paper on arXiv"
+    },
+    "answerAliases": [
+      "GSM8K",
+      "8,500",
+      "8500",
+      "grade school math"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0023",
+    "text": "The 2021 MATH benchmark drew its 12,500 problems from which competitions?",
+    "options": [
+      "National spelling bee finals",
+      "Collegiate debate tournaments",
+      "High-school contests such as AMC and AIME",
+      "Undergraduate physics olympiads"
+    ],
+    "answer": "High-school contests such as AMC and AIME",
+    "category": "benchmarks",
+    "tags": [
+      "math",
+      "reasoning",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "MATH collects hard high-school competition problems, including AMC, AIME and similar contests, each with a full worked solution. Physics olympiads test a different subject entirely. The competition origin is why the problems need real derivation rather than one-step arithmetic.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2103.03874",
+      "label": "MATH dataset paper on arXiv"
+    },
+    "answerAliases": [
+      "MATH",
+      "AMC",
+      "AIME",
+      "American Mathematics Competitions"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0024",
+    "text": "The 2020 MMLU benchmark created by Hendrycks and colleagues covers how many subjects?",
+    "options": [
+      "57 subjects",
+      "12 subjects",
+      "150 subjects",
+      "204 subjects"
+    ],
+    "answer": "57 subjects",
+    "category": "benchmarks",
+    "tags": [
+      "mmlu",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "MMLU spans 57 subjects from elementary mathematics to professional law and medicine, testing breadth of absorbed knowledge. The 204-task distractor belongs to BIG-bench, a different suite. The 57-subject spread is why a single MMLU number hides such uneven strengths.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "MMLU",
+      "label": "MMLU on Wikipedia"
+    },
+    "answerAliases": [
+      "57",
+      "fifty-seven",
+      "Measuring Massive Multitask Language Understanding",
+      "MMLU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0025",
+    "text": "In the 2020 MMLU benchmark, what form does almost every question take?",
+    "options": [
+      "An open-ended essay graded by a judge model",
+      "A Python function to complete from a docstring",
+      "A two-turn dialogue needing a follow-up reply",
+      "A multiple-choice question with four answer options"
+    ],
+    "answer": "A multiple-choice question with four answer options",
+    "category": "benchmarks",
+    "tags": [
+      "mmlu",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "MMLU items are four-way multiple choice, which makes scoring automatic across all 57 subjects. The docstring-completion distractor describes HumanEval, not a knowledge test. The fixed format is exactly what later critics blamed for making MMLU easy to saturate and memorize.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "MMLU",
+      "label": "MMLU on Wikipedia"
+    },
+    "answerAliases": [
+      "multiple choice",
+      "multiple-choice",
+      "four answer options",
+      "MMLU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0026",
+    "text": "The 2019 HellaSwag benchmark used adversarial filtering to solve what problem?",
+    "options": [
+      "Models memorizing Wikipedia passages word for word",
+      "Models scoring well by exploiting easy wrong endings",
+      "Models refusing to answer myth-based questions",
+      "Models failing only on very long contexts"
+    ],
+    "answer": "Models scoring well by exploiting easy wrong endings",
+    "category": "benchmarks",
+    "tags": [
+      "hellaswag",
+      "commonsense",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "Early commonsense endings were so stylistically off that models spotted the right answer from artifacts alone, so Zellers and colleagues machine-generated hard negatives and kept only the ones that fooled machines but not people. Memorized Wikipedia passages are a contamination problem, not a distractor-quality problem. The filtering trick is why HellaSwag stayed hard for years.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1905.07830",
+      "label": "HellaSwag paper on arXiv"
+    },
+    "answerAliases": [
+      "HellaSwag",
+      "adversarial filtering",
+      "adversarially filtered",
+      "commonsense"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0027",
+    "text": "The 2021 TruthfulQA paper reported which surprising result about larger models?",
+    "options": [
+      "Larger models were uniformly more truthful",
+      "Model size had no measurable effect on truthfulness",
+      "The largest models were generally the least truthful",
+      "Larger models refused every question instead of answering"
+    ],
+    "answer": "The largest models were generally the least truthful",
+    "category": "benchmarks",
+    "tags": [
+      "truthfulqa",
+      "truthfulness",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "On these 817 adversarial questions about myths and misconceptions, bigger models repeated popular falsehoods more often because they had absorbed more web text. The uniformly-more-truthful distractor states the usual scaling pattern that TruthfulQA inverted. The finding motivated later truthfulness work in RLHF and instruction tuning.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2109.07958",
+      "label": "TruthfulQA paper on arXiv"
+    },
+    "answerAliases": [
+      "TruthfulQA",
+      "least truthful",
+      "imitative falsehoods",
+      "larger models"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0028",
+    "text": "The ARC benchmark released in 2019 was created by which researcher to argue intelligence means efficient skill acquisition?",
+    "options": [
+      "Francois Chollet",
+      "Yann LeCun",
+      "Jurgen Schmidhuber",
+      "Andrew Ng"
+    ],
+    "answer": "Francois Chollet",
+    "category": "benchmarks",
+    "tags": [
+      "arc-agi",
+      "reasoning",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "Francois Chollet introduced ARC alongside his measure-of-intelligence essay, framing each grid puzzle as a test of acquiring a new skill from a few examples. LeCun is the fellow Turing laureate most associated with a rival self-supervised vision of intelligence. Chollet later co-founded the ARC Prize around the same tasks.",
+    "source": {
+      "kind": "url",
+      "url": "https://arcprize.org/arc-agi",
+      "label": "ARC-AGI benchmark"
+    },
+    "answerAliases": [
+      "Chollet",
+      "Francois Chollet",
+      "ARC",
+      "ARC-AGI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0029",
+    "text": "The 2024 ARC Prize competition built around ARC-AGI offered what to spur progress?",
+    "options": [
+      "A 10,000 dollar travel grant for students",
+      "A tenured professorship for the winner",
+      "A prize pool over 1 million dollars for open solutions",
+      "Free API credits with no cash award"
+    ],
+    "answer": "A prize pool over 1 million dollars for open solutions",
+    "category": "benchmarks",
+    "tags": [
+      "arc-agi",
+      "arc-prize",
+      "evaluation"
+    ],
+    "difficulty": 1,
+    "explanation": "Chollet and Mike Knoop launched the ARC Prize with a seven-figure pool rewarding open solutions that beat tough score thresholds. A travel-grant-sized prize would not move frontier teams. The contest required public code so every winning approach taught the field something.",
+    "source": {
+      "kind": "url",
+      "url": "https://arcprize.org/arc-agi",
+      "label": "ARC-AGI benchmark"
+    },
+    "answerAliases": [
+      "ARC Prize",
+      "1 million",
+      "$1M",
+      "ARC-AGI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0030",
+    "text": "The 2022 BIG-bench suite plays on the name of which earlier test of machine intelligence?",
+    "options": [
+      "The Loebner Prize finals",
+      "The Winograd Schema Challenge",
+      "The Elo chess rating",
+      "Turing's Imitation Game"
+    ],
+    "answer": "Turing's Imitation Game",
+    "category": "benchmarks",
+    "tags": [
+      "big-bench",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "BIG-bench stands for Beyond the Imitation Game, signaling hundreds of tasks meant to probe abilities Turing's conversational test misses. The Winograd Schema is a different commonsense test sometimes folded into SuperGLUE. The full name is the sticky clue to its crowd-sourced, everything-including-wordplay design.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2206.04615",
+      "label": "BIG-bench paper on arXiv"
+    },
+    "answerAliases": [
+      "BIG-bench",
+      "Beyond the Imitation Game",
+      "Imitation Game",
+      "Turing"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0031",
+    "text": "The 2022 BIG-bench Hard subset was assembled to fix what problem with the full BIG-bench?",
+    "options": [
+      "Most BIG-bench tasks were already too easy for large models",
+      "The full suite ran only on vision models",
+      "The full suite required live human voters",
+      "The full suite tested only Python code"
+    ],
+    "answer": "Most BIG-bench tasks were already too easy for large models",
+    "category": "benchmarks",
+    "tags": [
+      "big-bench",
+      "reasoning",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "BIG-bench Hard kept the roughly two dozen tasks where the best models still trailed average human raters, filtering out tasks models had already cleared. Live human voting describes Chatbot Arena, not a static suite. The hard slice became the standard reasoning report because the full 200-task average had stopped separating models.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2210.09261",
+      "label": "BIG-bench Hard paper on arXiv"
+    },
+    "answerAliases": [
+      "BIG-bench Hard",
+      "BBH",
+      "BIG-bench",
+      "human raters"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0032",
+    "text": "The 2018 GLUE benchmark bundled nine English tasks to measure what?",
+    "options": [
+      "Speech-to-text transcription accuracy",
+      "General language understanding across entailment, sentiment and similarity",
+      "Image captioning quality",
+      "Robotic arm control success"
+    ],
+    "answer": "General language understanding across entailment, sentiment and similarity",
+    "category": "benchmarks",
+    "tags": [
+      "glue",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "GLUE averages entailment, sentiment, paraphrase and related sentence tasks into one general-understanding score. Speech transcription is a wholly audio problem with different metrics. GLUE's single-number design worked until BERT beat its human baseline within a year.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1804.07461",
+      "label": "GLUE paper on arXiv"
+    },
+    "answerAliases": [
+      "GLUE",
+      "General Language Understanding Evaluation",
+      "language understanding"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0033",
+    "text": "Researchers released SuperGLUE in 2019 largely because of what had happened to GLUE?",
+    "options": [
+      "Its test server had been permanently deleted",
+      "Its tasks had been shown to contain no English",
+      "Models such as BERT had passed its human baseline within a year",
+      "Courts had banned its use for commercial models"
+    ],
+    "answer": "Models such as BERT had passed its human baseline within a year",
+    "category": "benchmarks",
+    "tags": [
+      "superglue",
+      "glue",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "BERT and its successors cleared GLUE's headroom almost immediately, so SuperGLUE assembled harder tasks with trickier reasoning and coreference. A deleted test server would be an infrastructure mishap, not a reason to design harder tasks. SuperGLUE itself then saturated the same way, the classic benchmark lifecycle.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1905.00537",
+      "label": "SuperGLUE paper on arXiv"
+    },
+    "answerAliases": [
+      "SuperGLUE",
+      "GLUE",
+      "BERT",
+      "human baseline"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0034",
+    "text": "The 2018 SQuAD 2.0 update added what kind of question that SQuAD 1.1 lacked?",
+    "options": [
+      "Questions written in twelve new languages",
+      "Spoken questions read aloud by actors",
+      "Questions about images instead of text",
+      "Questions with no answer in the passage"
+    ],
+    "answer": "Questions with no answer in the passage",
+    "category": "benchmarks",
+    "tags": [
+      "squad",
+      "question-answering",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "SQuAD 2.0 added 50,000 plausible-but-unanswerable questions so models must abstain instead of guessing a span. Multilingual questions came later with XQuAD and MLQA, not this update. The abstention requirement is why SQuAD 2.0 scores ran well below the original.",
+    "source": {
+      "kind": "url",
+      "url": "https://rajpurkar.github.io/SQuAD-explorer/",
+      "label": "SQuAD dataset at Stanford"
+    },
+    "answerAliases": [
+      "SQuAD 2.0",
+      "SQuAD",
+      "unanswerable",
+      "no answer"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0035",
+    "text": "The 2016 SQuAD reading-comprehension dataset was released by which university group?",
+    "options": [
+      "The MIT CSAIL language group",
+      "The Stanford NLP group",
+      "The Oxford VGG vision group",
+      "The Toronto Vector Institute team"
+    ],
+    "answer": "The Stanford NLP group",
+    "category": "benchmarks",
+    "tags": [
+      "squad",
+      "stanford",
+      "evaluation"
+    ],
+    "difficulty": 1,
+    "explanation": "Pranav Rajpurkar and colleagues at Stanford released SQuAD with Wikipedia passages and crowd-written span answers. The Oxford VGG group is a vision lab known for image models, not reading comprehension. Stanford's 2016 release kicked off the BERT-era question-answering boom.",
+    "source": {
+      "kind": "url",
+      "url": "https://github.com/rajpurkar/SQuAD-explorer",
+      "label": "SQuAD explorer on GitHub"
+    },
+    "answerAliases": [
+      "Stanford",
+      "Stanford NLP",
+      "Rajpurkar",
+      "SQuAD"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0036",
+    "text": "The 2022 HELM holistic evaluation framework came from which Stanford center?",
+    "options": [
+      "The Center for Research on Foundation Models (CRFM)",
+      "The Stanford Linear Accelerator Center",
+      "The Hoover Institution economics group",
+      "The Stanford Medical School genetics lab"
+    ],
+    "answer": "The Center for Research on Foundation Models (CRFM)",
+    "category": "benchmarks",
+    "tags": [
+      "helm",
+      "evaluation",
+      "transparency"
+    ],
+    "difficulty": 3,
+    "explanation": "Percy Liang's CRFM built HELM to evaluate models across many scenarios and metrics instead of one headline number. The Linear Accelerator Center is a physics facility, not a language-model lab. CRFM's living-benchmark design keeps adding scenarios as older ones saturate.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2211.09110",
+      "label": "Holistic Evaluation of Language Models on arXiv"
+    },
+    "answerAliases": [
+      "HELM",
+      "CRFM",
+      "Center for Research on Foundation Models",
+      "Stanford"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0037",
+    "text": "The 2023 MT-Bench benchmark from UC Berkeley tests chat assistants with how many multi-turn questions?",
+    "options": [
+      "8 questions",
+      "24 questions",
+      "80 questions across 8 categories",
+      "8,000 questions"
+    ],
+    "answer": "80 questions across 8 categories",
+    "category": "benchmarks",
+    "tags": [
+      "mt-bench",
+      "llm-as-judge",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "MT-Bench uses 80 two-turn questions spanning writing, math, coding and reasoning, scored by a strong judge model. The 8,000-question distractor confuses it with a bulk static suite. The small curated size is deliberate: every answer gets judged, so quality matters more than quantity.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2306.05685",
+      "label": "Judging LLM-as-a-Judge with MT-Bench on arXiv"
+    },
+    "answerAliases": [
+      "MT-Bench",
+      "80",
+      "eighty",
+      "8 categories"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0038",
+    "text": "In the 2023 MT-Bench design, what makes the second turn of each item hard?",
+    "options": [
+      "It switches to a completely unrelated language",
+      "It is a follow-up that depends on the model's own first answer",
+      "It asks the model to output only random numbers",
+      "It requires uploading an image file"
+    ],
+    "answer": "It is a follow-up that depends on the model's own first answer",
+    "category": "benchmarks",
+    "tags": [
+      "mt-bench",
+      "multi-turn",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "Each MT-Bench item is two turns where the follow-up refers back, testing whether the assistant tracks conversation state and stays consistent. A language switch would test translation, not dialogue. The follow-up design is why single-turn tests miss failures that MT-Bench catches.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2306.05685",
+      "label": "Judging LLM-as-a-Judge with MT-Bench on arXiv"
+    },
+    "answerAliases": [
+      "MT-Bench",
+      "follow-up",
+      "second turn",
+      "multi-turn"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0039",
+    "text": "The 2025 Humanity's Last Exam benchmark collected roughly how many expert questions?",
+    "options": [
+      "About 300 questions",
+      "About 800 questions",
+      "About 30,000 questions",
+      "About 3,000 questions across a hundred subjects"
+    ],
+    "answer": "About 3,000 questions across a hundred subjects",
+    "category": "benchmarks",
+    "tags": [
+      "hle",
+      "evaluation",
+      "reasoning"
+    ],
+    "difficulty": 2,
+    "explanation": "Humanity's Last Exam gathered around three thousand hard closed-ended questions across mathematics, science and humanities. Thirty thousand would be a bulk web scrape, the opposite of its expert-crafted design. Scale AI and the Center for AI Safety filtered thousands of submissions down to that final set.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2501.14249",
+      "label": "Humanity's Last Exam paper on arXiv"
+    },
+    "answerAliases": [
+      "Humanity's Last Exam",
+      "3000",
+      "3,000",
+      "HLE"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0040",
+    "text": "Humanity's Last Exam was launched in 2025 mainly to solve what problem?",
+    "options": [
+      "Frontier models had saturated older tests such as MMLU and GPQA",
+      "Chat models had become too slow to evaluate",
+      "Open models refused to answer science questions",
+      "Training GPUs had become too cheap to meter"
+    ],
+    "answer": "Frontier models had saturated older tests such as MMLU and GPQA",
+    "category": "benchmarks",
+    "tags": [
+      "hle",
+      "saturation",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "MMLU and GPQA scores had climbed so high they no longer separated frontier systems, so HLE commissioned far harder expert questions with a low-ceiling target. Evaluation speed was never the bottleneck a new benchmark would fix. Its launch scores near zero showed the headroom was real.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2501.14249",
+      "label": "Humanity's Last Exam paper on arXiv"
+    },
+    "answerAliases": [
+      "Humanity's Last Exam",
+      "saturated",
+      "saturation",
+      "MMLU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0041",
+    "text": "Epoch AI's 2024 FrontierMath benchmark keeps its math problems unpublished primarily to prevent what?",
+    "options": [
+      "Crowdworkers solving them too cheaply",
+      "Journals publishing the solutions first",
+      "Models memorizing the problems during web-scale training",
+      "Volunteers translating them into other languages"
+    ],
+    "answer": "Models memorizing the problems during web-scale training",
+    "category": "benchmarks",
+    "tags": [
+      "frontiermath",
+      "contamination",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "FrontierMath commissions brand-new problems and withholds them so they cannot leak into training scrapes and inflate scores. Cheap crowdworker solutions would be a cost issue, not a validity one. The secrecy is the whole defense against the contamination that killed older math tests.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2411.04872",
+      "label": "FrontierMath paper on arXiv"
+    },
+    "answerAliases": [
+      "FrontierMath",
+      "contamination",
+      "unpublished",
+      "Epoch AI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0042",
+    "text": "In Epoch AI's 2024 FrontierMath design, what are the Tier 4 problems meant to be?",
+    "options": [
+      "Quick warm-up arithmetic for calibration",
+      "Exceptionally hard problems taking expert mathematicians hours or days",
+      "Multiple-choice trivia about famous mathematicians",
+      "Python debugging tasks with no math"
+    ],
+    "answer": "Exceptionally hard problems taking expert mathematicians hours or days",
+    "category": "benchmarks",
+    "tags": [
+      "frontiermath",
+      "math",
+      "evaluation"
+    ],
+    "difficulty": 4,
+    "explanation": "Tier 4 holds closed research-level problems that stump working mathematicians for days, guarding headroom long after easier tiers fall. Warm-up arithmetic would defeat a benchmark built for the frontier. The tiered design lets scores climb gradually instead of jumping from zero to saturated.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2411.04872",
+      "label": "FrontierMath paper on arXiv"
+    },
+    "answerAliases": [
+      "FrontierMath",
+      "Tier 4",
+      "tier four",
+      "Epoch AI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0043",
+    "text": "A 2023 SWE-bench task counts as solved only when the model's patch passes which tests?",
+    "options": [
+      "Only a single style check for code formatting",
+      "Only a human vote on code elegance",
+      "Only the model's own self-generated tests",
+      "The previously failing tests plus the previously passing regression tests"
+    ],
+    "answer": "The previously failing tests plus the previously passing regression tests",
+    "category": "benchmarks",
+    "tags": [
+      "swe-bench",
+      "coding",
+      "agents"
+    ],
+    "difficulty": 3,
+    "explanation": "SWE-bench requires the FAIL_TO_PASS tests to flip to passing while the PASS_TO_PASS set stays green, proving the fix works without breaking anything. A style check alone says nothing about correctness. The two-sided gate is why SWE-bench scores run far below HumanEval function-writing scores.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2310.06770",
+      "label": "SWE-bench on arXiv"
+    },
+    "answerAliases": [
+      "SWE-bench",
+      "FAIL_TO_PASS",
+      "PASS_TO_PASS",
+      "regression tests"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0044",
+    "text": "The 2023 SWE-bench dataset built its 2,294 tasks from what raw material?",
+    "options": [
+      "Real GitHub issues and pull requests from popular Python repositories",
+      "Synthetic puzzles written by a language model",
+      "End-of-chapter exercises from programming textbooks",
+      "Anonymized chatbot conversation logs"
+    ],
+    "answer": "Real GitHub issues and pull requests from popular Python repositories",
+    "category": "benchmarks",
+    "tags": [
+      "swe-bench",
+      "coding",
+      "evaluation"
+    ],
+    "difficulty": 1,
+    "explanation": "Each SWE-bench task pairs a genuine repository issue with the merged pull request that fixed it, plus its test patch. Synthetic puzzles would miss the messy cross-file context of real codebases. The Princeton team mined a dozen popular Python projects for the original 2,294 instances.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2310.06770",
+      "label": "SWE-bench on arXiv"
+    },
+    "answerAliases": [
+      "SWE-bench",
+      "GitHub issues",
+      "pull requests",
+      "Python repositories"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0045",
+    "text": "The 2023 GPQA benchmark calls its questions Google-proof to mean what?",
+    "options": [
+      "The questions cannot be viewed in a web browser",
+      "Google paid to keep the questions offline forever",
+      "Domain experts given web access still answer many of them incorrectly",
+      "Only Google employees are allowed to answer them"
+    ],
+    "answer": "Domain experts given web access still answer many of them incorrectly",
+    "category": "benchmarks",
+    "tags": [
+      "gpqa",
+      "reasoning",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "GPQA filtered for questions that PhDs outside their specialty get wrong even with unrestricted search, hence Google-proof. An unviewable web page would make evaluation impossible rather than hard. The validation used paid expert annotators, which is why the surviving 448 Diamond questions stay brutal.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2311.12022",
+      "label": "GPQA on arXiv"
+    },
+    "answerAliases": [
+      "GPQA",
+      "Google-proof",
+      "Google-Proof",
+      "domain experts"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0046",
+    "text": "The 2023 GPQA graduate-level benchmark was led by researchers including David Rein from which kind of team?",
+    "options": [
+      "An OpenAI internal red-team working alone",
+      "A New York University team working with Anthropic researchers",
+      "A Google DeepMind robotics group working alone",
+      "A Meta advertising ranking team working alone"
+    ],
+    "answer": "A New York University team working with Anthropic researchers",
+    "category": "benchmarks",
+    "tags": [
+      "gpqa",
+      "reasoning",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "Rein and colleagues at NYU built GPQA with Anthropic collaborators after finding frontier models had cleared existing science tests. A robotics group would be an odd home for graduate biology and chemistry questions. The academic-lab plus frontier-lab pairing matched the goal of a ceiling-setting science test.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2311.12022",
+      "label": "GPQA on arXiv"
+    },
+    "answerAliases": [
+      "GPQA",
+      "David Rein",
+      "New York University",
+      "Anthropic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0047",
+    "text": "Greg Kamradt's 2023 needle-in-a-haystack test finds models suffer most when the hidden fact is placed where?",
+    "options": [
+      "Buried in the middle of the long context",
+      "Placed as the very first sentence",
+      "Placed as the very last sentence",
+      "Repeated in every paragraph"
+    ],
+    "answer": "Buried in the middle of the long context",
+    "category": "benchmarks",
+    "tags": [
+      "long-context",
+      "retrieval",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "Recall forms a U-shape: facts at the start and end are retrieved well while middle-depth facts are lost, the famous lost-in-the-middle effect. First-sentence placement is the easy case the test uses as a control. The depth heatmap is the sticky visual every long-context launch still gets judged against.",
+    "source": {
+      "kind": "url",
+      "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack",
+      "label": "Needle In A Haystack test by Greg Kamradt"
+    },
+    "answerAliases": [
+      "needle",
+      "haystack",
+      "lost in the middle",
+      "Needle In A Haystack"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0048",
+    "text": "Hugh Loebner's 1990 Loebner Prize competition implemented which format?",
+    "options": [
+      "A chess tournament between programs and grandmasters",
+      "A mathematics olympiad graded by professors",
+      "A robot obstacle course judged on speed",
+      "Panels of judges holding short text conversations with programs and humans"
+    ],
+    "answer": "Panels of judges holding short text conversations with programs and humans",
+    "category": "benchmarks",
+    "tags": [
+      "loebner-prize",
+      "turing-test",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "Loebner staged a restricted Turing test: judges chatted in text with hidden humans and programs, then ranked who seemed most human. A chess tournament would test search, not conversation. The restricted format with set topics is why AI researchers dismissed wins by chatbots such as A.L.I.C.E. as clever evasion.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Loebner Prize",
+      "label": "Loebner Prize on Wikipedia"
+    },
+    "answerAliases": [
+      "Loebner Prize",
+      "Hugh Loebner",
+      "Turing test",
+      "judges"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0049",
+    "text": "Arpad Elo, whose rating system was adopted by the US Chess Federation in 1960, was what by profession?",
+    "options": [
+      "A professional tennis champion",
+      "A television game-show host",
+      "A Hungarian-American physics professor",
+      "A serving US senator"
+    ],
+    "answer": "A Hungarian-American physics professor",
+    "category": "benchmarks",
+    "tags": [
+      "elo",
+      "arena",
+      "evaluation"
+    ],
+    "difficulty": 1,
+    "explanation": "Elo was a Hungarian-American physics professor and strong chess master who devised statistically principled ratings from win probabilities. A tennis champion would point at ranking points, a different system entirely. FIDE adopted his method in 1970, and Chatbot Arena borrows it for pairwise model votes.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Arpad Elo",
+      "label": "Arpad Elo on Wikipedia"
+    },
+    "answerAliases": [
+      "Arpad Elo",
+      "Elo",
+      "physics professor",
+      "chess"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "ben-0050",
+    "text": "The 2024 MMLU-Pro benchmark hardened MMLU in two ways. What changed?",
+    "options": [
+      "It translated every question into twelve new languages",
+      "It replaced text with spoken questions read by actors",
+      "It cut the subject count down to a single topic",
+      "It expanded options from four to ten and filtered out the questions models found easy"
+    ],
+    "answer": "It expanded options from four to ten and filtered out the questions models found easy",
+    "category": "benchmarks",
+    "tags": [
+      "mmlu-pro",
+      "evaluation",
+      "reasoning"
+    ],
+    "difficulty": 2,
+    "explanation": "MMLU-Pro grew the options to ten, which crushes lucky guessing, and pruned the questions models already aced. Translation into new languages is a different project, not this harder successor, which kept the broad subject spread.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2406.01574",
+      "label": "MMLU-Pro paper on arXiv"
+    },
+    "answerAliases": [
+      "MMLU-Pro",
+      "ten options",
+      "harder",
+      "MMLU"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0051",
+    "text": "The 2022 MGSM benchmark extends GSM8K to other languages. What does it contain?",
+    "options": [
+      "The same grade-school problems translated into ten languages, a few hundred per language",
+      "Ten thousand new calculus problems in English only",
+      "Spoken math dictations recorded by voice actors",
+      "University physics exams with no worked solutions"
+    ],
+    "answer": "The same grade-school problems translated into ten languages, a few hundred per language",
+    "category": "benchmarks",
+    "tags": [
+      "mgsm",
+      "math",
+      "multilingual"
+    ],
+    "difficulty": 2,
+    "explanation": "MGSM translates the same grade-school problems into ten languages so reasoning can be compared across tongues. English-only calculus would test harder math, not multilinguality, which is the benchmark's entire point.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2210.03057",
+      "label": "MGSM paper on arXiv"
+    },
+    "answerAliases": [
+      "MGSM",
+      "multilingual",
+      "GSM8K",
+      "grade school math"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0052",
+    "text": "The 2021 MBPP benchmark tests code generation with what kind of problems?",
+    "options": [
+      "Fixing real bugs in decade-old operating-system kernels",
+      "Designing new programming languages from scratch",
+      "Around a thousand short Python tasks solvable by entry-level programmers",
+      "Proving theorems in formal math notation"
+    ],
+    "answer": "Around a thousand short Python tasks solvable by entry-level programmers",
+    "category": "benchmarks",
+    "tags": [
+      "mbpp",
+      "coding",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "MBPP holds around a thousand short Python tasks an entry-level programmer could solve, each with tests. Kernel bugs belong to SWE-bench's world of real repositories, not this fundamentals check.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2108.07732",
+      "label": "MBPP paper on arXiv"
+    },
+    "answerAliases": [
+      "MBPP",
+      "Mostly Basic Python Problems",
+      "basic Python"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0053",
+    "text": "The 2022 DS-1000 benchmark targets data-science code with realistic problems from which libraries?",
+    "options": [
+      "Fifty puzzles using only the standard library",
+      "A thousand problems drawn from libraries such as NumPy, pandas and PyTorch",
+      "Ten million auto-generated one-liners with no tests",
+      "A hundred essay questions about statistics history"
+    ],
+    "answer": "A thousand problems drawn from libraries such as NumPy, pandas and PyTorch",
+    "category": "benchmarks",
+    "tags": [
+      "ds-1000",
+      "coding",
+      "data-science"
+    ],
+    "difficulty": 2,
+    "explanation": "A thousand StackOverflow-style problems across pandas, NumPy and PyTorch test whether models write the glue code data scientists actually run. Essay questions about history would test trivia, not the ability to produce runnable analysis code.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2211.11501",
+      "label": "DS-1000 paper on arXiv"
+    },
+    "answerAliases": [
+      "DS-1000",
+      "data science",
+      "NumPy",
+      "pandas"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0054",
+    "text": "The 2017 SciQ benchmark tests science exam knowledge. What form do its questions take?",
+    "options": [
+      "Open-ended lab reports graded by teachers",
+      "Robot arm control tasks in a simulator",
+      "Spoken questions answered aloud by actors",
+      "Thirteen thousand multiple-choice questions in physics, chemistry and biology"
+    ],
+    "answer": "Thirteen thousand multiple-choice questions in physics, chemistry and biology",
+    "category": "benchmarks",
+    "tags": [
+      "sciq",
+      "science",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "SciQ packages thirteen thousand crowd-written science questions as four-way multiple choice with supporting passages. Lab reports would need human graders, which is why the benchmark sticks to a format machines can score.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1707.06209",
+      "label": "SciQ paper on arXiv"
+    },
+    "answerAliases": [
+      "SciQ",
+      "science exam",
+      "multiple-choice",
+      "crowdsourced"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0055",
+    "text": "The 2019 WinoGrande benchmark scaled up the Winograd Schema Challenge. What makes its items hard?",
+    "options": [
+      "Twin sentences differing by one word that flips which noun a pronoun refers to",
+      "Paragraphs of pure random characters with no meaning",
+      "Questions that require uploading an image file",
+      "Math proofs that take experts hours or days"
+    ],
+    "answer": "Twin sentences differing by one word that flips which noun a pronoun refers to",
+    "category": "benchmarks",
+    "tags": [
+      "winogrande",
+      "commonsense",
+      "coreference"
+    ],
+    "difficulty": 2,
+    "explanation": "Each item is a pair of sentences identical except for a trigger word that flips the pronoun's referent, forcing genuine commonsense over statistics. Random characters would test nothing at all, since there is no meaning to resolve.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1907.10641",
+      "label": "WinoGrande paper on arXiv"
+    },
+    "answerAliases": [
+      "WinoGrande",
+      "Winograd",
+      "pronoun",
+      "coreference"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0056",
+    "text": "The 2019 PIQA benchmark tests physical commonsense. What does each item ask?",
+    "options": [
+      "The exact melting point of an obscure alloy",
+      "A formal proof of a geometry theorem",
+      "Which of two solutions better achieves an everyday physical goal, like separating egg whites",
+      "The publication year of a famous physics paper"
+    ],
+    "answer": "Which of two solutions better achieves an everyday physical goal, like separating egg whites",
+    "category": "benchmarks",
+    "tags": [
+      "piqa",
+      "commonsense",
+      "physical"
+    ],
+    "difficulty": 2,
+    "explanation": "PIQA asks which of two everyday fixes works, like using a fork versus a spoon to separate egg whites, probing physical intuition no textbook states outright. Melting points are lookup facts, the opposite of the reasoning it targets.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1911.11641",
+      "label": "PIQA paper on arXiv"
+    },
+    "answerAliases": [
+      "PIQA",
+      "physical commonsense",
+      "physical intuition"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0057",
+    "text": "The 2016 Story Cloze Test gives a model four sentences of a story and asks what?",
+    "options": [
+      "The author's birthplace and nationality",
+      "Which of two candidate endings correctly finishes the story",
+      "How many words appear in each sentence",
+      "A translation of the story into another language"
+    ],
+    "answer": "Which of two candidate endings correctly finishes the story",
+    "category": "benchmarks",
+    "tags": [
+      "storycloze",
+      "commonsense",
+      "evaluation"
+    ],
+    "difficulty": 2,
+    "explanation": "Given four context sentences, the model must pick the sensible fifth from two candidates, which demands tracking characters' goals rather than word overlap. Counting words is a tokenization chore that reveals nothing about story understanding.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1604.01696",
+      "label": "Story Cloze Test paper on arXiv"
+    },
+    "answerAliases": [
+      "Story Cloze",
+      "story endings",
+      "fifth sentence"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0058",
+    "text": "The 2018 MultiRC benchmark differs from SQuAD-style tests in what way?",
+    "options": [
+      "Its questions need reasoning across several sentences, and more than one answer option can be correct",
+      "It asks models to output only random numbers",
+      "It tests vision models on labeled images",
+      "It ranks chatbots through live human votes"
+    ],
+    "answer": "Its questions need reasoning across several sentences, and more than one answer option can be correct",
+    "category": "benchmarks",
+    "tags": [
+      "multirc",
+      "reading",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "MultiRC questions hinge on several sentences scattered through a paragraph, and crucially several options may be right, so partial credit matters. Single-span SQuAD questions have exactly one answer, which is the format MultiRC deliberately outgrew.",
+    "source": {
+      "kind": "url",
+      "url": "https://aclanthology.org/N18-1023/",
+      "label": "MultiRC paper at ACL Anthology"
+    },
+    "answerAliases": [
+      "MultiRC",
+      "multi-sentence",
+      "multiple correct",
+      "reading comprehension"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0059",
+    "text": "The 2019 DROP benchmark punishes models that only match text spans. What must models do instead?",
+    "options": [
+      "Extracting exact answer spans quoted from the passage",
+      "Translating passages into twelve new languages",
+      "Retrieving evidence and labeling claims supported or refuted",
+      "Perform discrete operations like counting, sorting and arithmetic over the passage"
+    ],
+    "answer": "Perform discrete operations like counting, sorting and arithmetic over the passage",
+    "category": "benchmarks",
+    "tags": [
+      "drop",
+      "reasoning",
+      "reading"
+    ],
+    "difficulty": 3,
+    "explanation": "DROP passages require counting, sorting, adding and comparing numbers found in text, so span-matching models collapse on it. Translation would test language transfer, not the discrete reasoning the benchmark was built to demand.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1903.00161",
+      "label": "DROP paper on arXiv"
+    },
+    "answerAliases": [
+      "DROP",
+      "discrete reasoning",
+      "counting",
+      "arithmetic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0060",
+    "text": "The 2019 CoQA benchmark tests conversational question answering. How is it structured?",
+    "options": [
+      "Single questions about isolated trivia facts",
+      "Chess puzzles with one forced mate",
+      "Free-form dialogue turns where later questions depend on the conversation history",
+      "Python functions to complete from docstrings"
+    ],
+    "answer": "Free-form dialogue turns where later questions depend on the conversation history",
+    "category": "benchmarks",
+    "tags": [
+      "coqa",
+      "dialogue",
+      "reading"
+    ],
+    "difficulty": 2,
+    "explanation": "CoQA chains free-form questions in a conversation, so later ones lean on pronouns and history the model must track. Isolated trivia would need no memory at all, which is precisely the skill CoQA adds over SQuAD.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1808.07042",
+      "label": "CoQA paper on arXiv"
+    },
+    "answerAliases": [
+      "CoQA",
+      "conversational",
+      "dialogue",
+      "coreference"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0061",
+    "text": "The 2017 TriviaQA benchmark is distinctive among reading tests for what?",
+    "options": [
+      "Questions written by models with no human review",
+      "Trivia questions paired with independently gathered evidence documents that share little wording with the questions",
+      "Questions about images instead of text",
+      "A fixed set of eight questions reused every year"
+    ],
+    "answer": "Trivia questions paired with independently gathered evidence documents that share little wording with the questions",
+    "category": "benchmarks",
+    "tags": [
+      "triviaqa",
+      "reading",
+      "evaluation"
+    ],
+    "difficulty": 3,
+    "explanation": "TriviaQA pairs enthusiast-written trivia with evidence documents gathered independently of the questions, so wording rarely overlaps and models must genuinely comprehend. Image questions belong to visual benchmarks like VQA, a different modality entirely.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1705.03551",
+      "label": "TriviaQA paper on arXiv"
+    },
+    "answerAliases": [
+      "TriviaQA",
+      "trivia",
+      "evidence documents",
+      "distant supervision"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0062",
+    "text": "The 2018 FEVER benchmark tests fact verification. What must a model do for each claim?",
+    "options": [
+      "Retrieve Wikipedia evidence and label the claim supported, refuted or not enough info",
+      "Write a poem about the claim's subject",
+      "Generate a photorealistic image of the event",
+      "Predict the claim's stock-market impact"
+    ],
+    "answer": "Retrieve Wikipedia evidence and label the claim supported, refuted or not enough info",
+    "category": "benchmarks",
+    "tags": [
+      "fever",
+      "fact-checking",
+      "retrieval"
+    ],
+    "difficulty": 2,
+    "explanation": "FEVER requires retrieving the right Wikipedia sentences and then judging each claim supported, refuted or undecidable from them. Writing poetry about the subject would dodge both retrieval and judgment, the benchmark's two halves.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1803.05355",
+      "label": "FEVER paper on arXiv"
+    },
+    "answerAliases": [
+      "FEVER",
+      "fact verification",
+      "supported",
+      "refuted"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0063",
+    "text": "The 2018 ARC benchmark from the Allen Institute tests grade-school science, split into Easy and Challenge sets. What defines the Challenge set?",
+    "options": [
+      "Questions written in twelve new languages",
+      "Spoken questions read aloud by actors",
+      "Questions that both retrieval and word-co-occurrence baselines answer incorrectly",
+      "Questions with no correct answer at all"
+    ],
+    "answer": "Questions that both retrieval and word-co-occurrence baselines answer incorrectly",
+    "category": "benchmarks",
+    "tags": [
+      "arc",
+      "science",
+      "reasoning"
+    ],
+    "difficulty": 3,
+    "explanation": "The Challenge set keeps only the science questions that simple retrieval and co-occurrence systems miss, so it measures reasoning rather than search. Note the name clash: unlike ARC-AGI's grid puzzles, this ARC is grade-school science with an Easy sibling set.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1803.05457",
+      "label": "ARC paper on arXiv"
+    },
+    "answerAliases": [
+      "ARC",
+      "AI2 Reasoning Challenge",
+      "Challenge Set",
+      "Allen Institute"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "ben-0064",
+    "text": "The 2022 CodeContests benchmark from DeepMind collects competitive-programming problems. What makes them harder than HumanEval-style tasks?",
+    "options": [
+      "They must be solved without writing any code",
+      "They test only code formatting style",
+      "They are single-line completions with no tests",
+      "They demand full programs that parse input, handle edge cases and pass hidden tests under limits"
+    ],
+    "answer": "They demand full programs that parse input, handle edge cases and pass hidden tests under limits",
+    "category": "benchmarks",
+    "tags": [
+      "codecontests",
+      "coding",
+      "competitions"
+    ],
+    "difficulty": 2,
+    "explanation": "CodeContests problems come from real competitions, demanding full programs with parsing, edge cases and efficiency, far beyond completing a docstring function. Style-only grading would ignore whether the code runs, which is the whole point of hidden tests.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2203.07814",
+      "label": "CodeContests paper on arXiv"
+    },
+    "answerAliases": [
+      "CodeContests",
+      "competitive programming",
+      "AlphaCode",
+      "hidden tests"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
   }
 ]

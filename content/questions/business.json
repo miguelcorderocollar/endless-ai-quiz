@@ -418,5 +418,2134 @@
     ],
     "status": "published",
     "addedAt": "2026-09-29"
+  },
+  {
+    "id": "bus-0015",
+    "text": "In June 2026 the Commerce Department ordered Anthropic to cut off foreign nationals from its two newest Claude models. Why did that leave Fable 5 and Mythos 5 switched off for everybody?",
+    "options": [
+      "Anthropic could not check users' nationality in real time",
+      "The models needed retraining before anyone could run them",
+      "Amazon withdrew the compute both models were running on",
+      "The directive also banned Anthropic's US-based employees"
+    ],
+    "answer": "Anthropic could not check users' nationality in real time",
+    "category": "business",
+    "tags": [
+      "anthropic",
+      "export-controls",
+      "government"
+    ],
+    "difficulty": 3,
+    "explanation": "The directive landed at 5:21pm ET on 12 June 2026 and covered any foreign national anywhere, including Anthropic's own staff, so the only way to comply was to switch both models off for every customer; Commerce lifted it on 30 June. Retraining is the tempting miss because the models were fine, and Amazon is the tempting miss because an Amazon researcher's report about a safeguard bypass is what set the directive off.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "label": "Anthropic on redeploying Claude Fable 5"
+    },
+    "answerAliases": [
+      "no reliable way to verify nationality in real-time",
+      "verify nationality",
+      "nationality",
+      "disable Fable 5 and Mythos 5"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0016",
+    "text": "In September 2026 Oracle sent a force majeure notice about Project Jupiter, a Stargate data center campus in New Mexico. What was Oracle trying to achieve?",
+    "options": [
+      "Delay payments if the campus slips past 2028",
+      "Buy extra capacity once the campus comes online",
+      "Cancel its lease as the campus's main tenant",
+      "Hand the campus to another Stargate partner"
+    ],
+    "answer": "Delay payments if the campus slips past 2028",
+    "category": "business",
+    "tags": [
+      "oracle",
+      "stargate",
+      "data-centers"
+    ],
+    "difficulty": 3,
+    "explanation": "A force majeure notice lets a tenant pause payments if the building is late, so Oracle was buying room on Project Jupiter rather than walking away from a 2.45 gigawatt campus it wants. The site is designed to run on Bloom Energy gas fuel cells, and the Energy Transfer pipeline meant to feed it slipped to February 2027 after regulators repeatedly denied permits.",
+    "source": {
+      "kind": "url",
+      "url": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
+      "label": "TechCrunch on Oracle's force majeure notice for Project Jupiter"
+    },
+    "answerAliases": [
+      "delay payments",
+      "force majeure",
+      "2028",
+      "Project Jupiter"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0017",
+    "text": "In August 2026 Nvidia licensed Poolside's Model Factory and made job offers to 109 of its engineers, in a deal the investor letter insisted was neither an acquisition nor an acquihire. Which open-weight model family would they work on?",
+    "options": [
+      "Llama",
+      "Qwen",
+      "Nemotron",
+      "Grok"
+    ],
+    "answer": "Nemotron",
+    "category": "business",
+    "tags": [
+      "nvidia",
+      "licensing",
+      "talent-deals"
+    ],
+    "difficulty": 3,
+    "explanation": "The engineers had built Poolside's Laguna code model, and Nvidia ships its own open-weight models under the Nemotron name, the same give-away-the-tools play as CUDA. Poolside's three founders stayed on and the investor letter stressed the deal was not an acquisition, which is how this kind of deal avoids the regulatory reviews a real takeover brings.",
+    "source": {
+      "kind": "url",
+      "url": "https://the-decoder.com/nvidia-is-acquiring-poolsides-model-factory-and-109-employees-for-6-billion/",
+      "label": "The Decoder on Nvidia licensing Poolside's Model Factory"
+    },
+    "answerAliases": [
+      "Nemotron",
+      "Nemotron line",
+      "Nemotron open-weight models",
+      "Model Factory"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0018",
+    "text": "In September 2026, which Beijing AI lab confidentially filed for a Hong Kong IPO, aiming to raise $3 billion in the offering?",
+    "options": [
+      "Zhipu AI",
+      "MiniMax",
+      "DeepSeek",
+      "Moonshot AI"
+    ],
+    "answer": "Moonshot AI",
+    "category": "business",
+    "tags": [
+      "china",
+      "ipo",
+      "markets"
+    ],
+    "difficulty": 2,
+    "explanation": "Moonshot AI, the developer of the Kimi models, filed confidentially on 3 September 2026 and is working with Goldman Sachs and CICC on the offering. Z.AI, formerly Zhipu, and MiniMax both listed in Hong Kong earlier in 2026, which makes them the tempting misses, while DeepSeek has never filed.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.businesstimes.com.sg/companies-markets/chinese-ai-firm-moonshot-files-confidentially-hong-kong-ipo-sources-say",
+      "label": "Business Times on Moonshot's confidential Hong Kong IPO filing"
+    },
+    "answerAliases": [
+      "Moonshot AI",
+      "Moonshot",
+      "Kimi",
+      "Moonshot AI (Beijing)"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0019",
+    "text": "In September 2026 AMD agreed to acquire the San Francisco lab behind Fei-Fei Li, which builds models that generate and simulate 3D worlds. Which company is it?",
+    "options": [
+      "Skild AI",
+      "World Labs",
+      "Anysphere",
+      "Cognition"
+    ],
+    "answer": "World Labs",
+    "category": "business",
+    "tags": [
+      "amd",
+      "acquisition",
+      "world-models"
+    ],
+    "difficulty": 2,
+    "explanation": "AMD bought the lab behind spatial-intelligence models that generate and simulate 3D worlds from text and video, and Fei-Fei Li joins as executive vice president and chief scientist reporting to Lisa Su. Cognition and Anysphere are the tempting misses because both sell AI coding agents; Skild AI builds robot foundation models, not world models.",
+    "source": {
+      "kind": "url",
+      "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/",
+      "label": "AMD newsroom on the World Labs acquisition"
+    },
+    "answerAliases": [
+      "World Labs",
+      "WorldLabs",
+      "World Labs Inc"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0020",
+    "text": "In July 2026 Nvidia announced a long-term partnership with Ilya Sutskever's lab SSI, alongside an investment in it. Which Nvidia platform did the deal hand SSI access to?",
+    "options": [
+      "Hopper",
+      "Blackwell",
+      "Vera Rubin",
+      "Rubin CPX"
+    ],
+    "answer": "Vera Rubin",
+    "category": "business",
+    "tags": [
+      "nvidia",
+      "ssi",
+      "compute"
+    ],
+    "difficulty": 2,
+    "explanation": "SSI said access to the Vera Rubin platform would lift its compute by an order of magnitude, and Nvidia got rare access into the lab's research in return, a swap that moves frontier demand onto its own silicon. Hopper is the tempting miss because it is the architecture behind the H100, but SSI had been running on Google TPUs before this.",
+    "source": {
+      "kind": "url",
+      "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
+      "label": "TechCrunch on the SSI and Nvidia partnership"
+    },
+    "answerAliases": [
+      "Vera Rubin",
+      "Vera Rubin platform",
+      "Rubin",
+      "Vera Rubin systems"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0021",
+    "text": "In September 2026 Anthropic signed a seven-year, $11.6 billion cloud contract with Akamai. Unusually for a frontier lab, what was the capacity for?",
+    "options": [
+      "General-purpose CPUs, not GPU clusters",
+      "Nvidia GPUs for large model training",
+      "Google TPU capacity in US regions",
+      "Custom Trainium accelerators"
+    ],
+    "answer": "General-purpose CPUs, not GPU clusters",
+    "category": "business",
+    "tags": [
+      "anthropic",
+      "akamai",
+      "cloud"
+    ],
+    "difficulty": 2,
+    "explanation": "Agent workloads are pulling demand for ordinary processors, which is how a CDN company could land a contract this size, and Akamai even handed Anthropic a warrant for up to about 5 percent of its stock. GPUs are the tempting answer because every earlier AI cloud deal sold accelerators, and Trainium is Amazon silicon, not Akamai's.",
+    "source": {
+      "kind": "url",
+      "url": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
+      "label": "TechCrunch on the Akamai and Anthropic cloud contract"
+    },
+    "answerAliases": [
+      "CPU capacity",
+      "CPUs",
+      "general-purpose chips",
+      "CPU workload"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0022",
+    "text": "In July 2026 Travis Kalanick's industrial AI company Atoms raised $1.7 billion led by Andreessen Horowitz. Which company put money into the round, having forced him out as CEO in 2017?",
+    "options": [
+      "Lyft",
+      "Grab",
+      "DoorDash",
+      "Uber"
+    ],
+    "answer": "Uber",
+    "category": "business",
+    "tags": [
+      "funding",
+      "uber",
+      "robotics"
+    ],
+    "difficulty": 2,
+    "explanation": "Uber ousted Kalanick as CEO in 2017 after harassment and discrimination complaints, then took a cheque in the company he rebuilt out of CloudKitchens and Pronto; he called the round unfinished business, with a16z's Ben Horowitz joining the board. Lyft is the tempting miss because it is the ride-hailing rival a player expects, and Grab is the other founder-oustering story.",
+    "source": {
+      "kind": "url",
+      "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
+      "label": "TechCrunch on Atoms' $1.7B round"
+    },
+    "answerAliases": [
+      "Uber",
+      "Uber Technologies",
+      "Uber Technologies Inc"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0023",
+    "text": "The EU AI Act's duties for general-purpose AI models have applied since August 2025, but for a year no one could be fined for breaking them. From what date in 2026 did the Commission's enforcement powers start?",
+    "options": [
+      "1 August 2026",
+      "2 August 2026",
+      "2 February 2026",
+      "2 July 2026"
+    ],
+    "answer": "2 August 2026",
+    "category": "business",
+    "tags": [
+      "eu-ai-act",
+      "regulation",
+      "compliance"
+    ],
+    "difficulty": 2,
+    "explanation": "The GPAI obligations in Articles 53 to 55 applied from 2 August 2025, and the Commission's enforcement chapter arrived a year later on the same calendar date, so providers got one grace year to assemble documentation, a copyright policy and training-data summaries. The 2026 AI Omnibus pushed the high-risk rules to December 2027 but left this date untouched.",
+    "source": {
+      "kind": "url",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "label": "European Commission on the AI Act framework"
+    },
+    "answerAliases": [
+      "2 August 2026",
+      "August 2, 2026",
+      "2 August",
+      "August 2026"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0024",
+    "text": "In early 2026 the Pentagon designated Anthropic a supply-chain risk, and a federal judge set that designation aside in August 2026. What had Anthropic refused to allow?",
+    "options": [
+      "Any use of Claude by intelligence agencies",
+      "Sales of Claude to defence contractors",
+      "Deployment on allied military networks",
+      "Autonomous weapons and mass surveillance"
+    ],
+    "answer": "Autonomous weapons and mass surveillance",
+    "category": "business",
+    "tags": [
+      "anthropic",
+      "defense",
+      "lawsuit"
+    ],
+    "difficulty": 2,
+    "explanation": "The Defense Secretary wanted Claude for all lawful purposes and Anthropic held out against mass surveillance of Americans and fully autonomous weapons; Hegseth's designation was the first time a US company was publicly labelled a supply-chain risk, and Judge Rita Lin set it aside in August 2026. Intelligence agencies are the tempting miss because the demand was not agency-specific.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.nbcnews.com/business/business-news/anthropic-pentagon-blacklist-claude-judge-rcna594825",
+      "label": "NBC News on the judge blocking the Pentagon's Anthropic blacklisting"
+    },
+    "answerAliases": [
+      "autonomous weapons",
+      "mass surveillance",
+      "fully autonomous weapons",
+      "domestic surveillance"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0030",
+    "text": "Three Mile Island's Unit 1 had been shut since 2019 because cheap natural gas had made it unprofitable. In September 2024 Microsoft signed a deal about it. What did Microsoft actually agree to?",
+    "options": [
+      "A 20-year commitment to buy the plant's power once it restarts",
+      "Ownership of the reactor, which Constellation would run for it",
+      "Most of the $1.6 billion cost of restarting the plant",
+      "A share of Constellation Energy in exchange for the power"
+    ],
+    "answer": "A 20-year commitment to buy the plant's power once it restarts",
+    "category": "business",
+    "tags": [
+      "nuclear",
+      "microsoft",
+      "energy",
+      "power"
+    ],
+    "difficulty": 2,
+    "explanation": "Constellation shut Unit 1 in 2019 and said in September 2024 it would spend $1.6 billion to restart it by 2028, renaming it the Crane Clean Energy Center. Microsoft took no ownership and no equity; it signed a 20-year agreement to take as much of the plant's electricity as possible, because a data center wants power around the clock rather than only when the sun is up. Unit 2, the unit damaged in the 1979 accident, stays dormant.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Three Mile Island Nuclear Generating Station",
+      "label": "Three Mile Island Nuclear Generating Station on Wikipedia"
+    },
+    "answerAliases": [
+      "20-year agreement to purchase as much electricity as possible from the plant",
+      "20-year agreement",
+      "the entirety of the plant's energy output will be sold to Microsoft Corporation",
+      "Crane Clean Energy Center"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0031",
+    "text": "In 2024 Google agreed to take as much as 500 MW of power from Kairos Power, a company building a reactor design that has never yet run commercially. What is Kairos building?",
+    "options": [
+      "A large pressurized water reactor of the standard three-loop design",
+      "A gas-cooled reactor using ordinary light water as its coolant",
+      "A small modular high-temperature reactor cooled by molten fluoride salt",
+      "A molten salt reactor with the uranium dissolved straight into the fuel"
+    ],
+    "answer": "A small modular high-temperature reactor cooled by molten fluoride salt",
+    "category": "business",
+    "tags": [
+      "nuclear",
+      "smr",
+      "google",
+      "energy"
+    ],
+    "difficulty": 2,
+    "explanation": "The salt is a coolant, not the fuel: Kairos burns TRISO particles held in solid graphite pebbles, so what it is not is the classic liquid-fuel molten salt design. Google's 2024 agreement covers up to 500 MW from six or seven units, the first due around 2030, and none of them has Nuclear Regulatory Commission approval yet.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Kairos Power",
+      "label": "Kairos Power on Wikipedia"
+    },
+    "answerAliases": [
+      "fluoride salt-cooled high-temperature reactors",
+      "fluoride salt-cooled high-temperature reactor",
+      "small modular reactor",
+      "500 MW"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0032",
+    "text": "Vertiv has become one of the biggest winners of the AI buildout, even though it never trained a model or made a chip. What does it actually sell?",
+    "options": [
+      "The GPUs that train large models",
+      "Power and cooling gear for data centers",
+      "Ethernet switches that link the racks together",
+      "Lithography machines that print features on chips"
+    ],
+    "answer": "Power and cooling gear for data centers",
+    "category": "business",
+    "tags": [
+      "data-centers",
+      "infrastructure",
+      "cooling"
+    ],
+    "difficulty": 2,
+    "explanation": "Vertiv began in 1946 as Capitol Refrigeration Industries, and Ralph Liebert built the first computer-room precision air conditioner in his garage, so it is really a cooling company that also sells the electrical half of a data center. Its lineup now runs from racks and busbars to uninterruptible power supplies and thermal management, and in 2023 its share price rose 252 percent, more than any other company in the S&P 500.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Vertiv",
+      "label": "Vertiv on Wikipedia"
+    },
+    "answerAliases": [
+      "AC and DC power management, thermal management",
+      "power management",
+      "thermal management",
+      "uninterruptible power supplies (UPS)"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0033",
+    "text": "Arista Networks grew into Cisco's most annoying rival in data-center switches, and in December 2014 Cisco sued it for patent infringement. How did that fight end?",
+    "options": [
+      "Cisco sold Arista the patents outright in the end",
+      "An import ban that blocked Arista's switches in the US",
+      "A cross-licensing deal covering both product lines",
+      "Arista paid Cisco $400 million to settle in 2018"
+    ],
+    "answer": "Arista paid Cisco $400 million to settle in 2018",
+    "category": "business",
+    "tags": [
+      "arista",
+      "cisco",
+      "litigation",
+      "networking"
+    ],
+    "difficulty": 3,
+    "explanation": "The International Trade Commission upheld an import ban on some of Arista's switch features, which was a real threat to a company that had only listed in 2014. The ban came down in 2016 after Arista changed the products and two patents were overturned, but the fight ran on until August 2018, when Arista paid $400 million to end Cisco's claims, drop its own antitrust case and agree to a five-year stand-down.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Arista Networks",
+      "label": "Arista Networks on Wikipedia"
+    },
+    "answerAliases": [
+      "Arista agreed to pay Cisco US$400 million",
+      "Arista agreed to pay Cisco US$400 million as part of a settlement",
+      "US$400 million",
+      "5-year stand-down between the companies"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0025",
+    "text": "By 2025 CoreWeave, Lambda, Crusoe and Nebius were routinely grouped together as neoclouds. What do those companies sell that sets them apart from the hyperscalers they compete with?",
+    "options": [
+      "They sell data center space to other operators to fill",
+      "They sell rented GPU compute as their main product",
+      "They sell custom-designed AI accelerator chips to clouds",
+      "They sell hosted frontier models as a pay-per-token API"
+    ],
+    "answer": "They sell rented GPU compute as their main product",
+    "category": "business",
+    "tags": [
+      "neocloud",
+      "cloud",
+      "infrastructure"
+    ],
+    "difficulty": 2,
+    "explanation": "AWS, Azure and Google Cloud sell dozens of product lines with GPUs as one item among many, while a neocloud sells GPU compute and little else, which is why the Uptime Institute measured an on-demand Nvidia DGX H100 at roughly a third of the hyperscaler price in 2025. CoreWeave even brands itself the AI Hyperscaler in its own press releases, which is the joke. Lambda, the smallest of the four, calls itself the AI developer cloud and sells one-click GPU clusters next to single-GPU instances.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.networkworld.com/article/4011187/neoclouds-roll-in-challenge-hyperscalers-for-ai-workloads.html",
+      "label": "Network World on neoclouds versus hyperscalers"
+    },
+    "answerAliases": [
+      "rented GPU compute",
+      "GPU processing-as-a-service",
+      "GPUaaS",
+      "GPU cloud",
+      "pure-play vendors"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0026",
+    "text": "CoreWeave, the Nvidia-powered GPU cloud, was a different company in 2017. What was it doing then?",
+    "options": [
+      "Renting GPUs to researchers, as a startup called Lambda",
+      "Trading bitcoin for clients, as an exchange called Coinbase",
+      "Trading natural gas futures, as a hedge fund called Hudson Ridge",
+      "Mining ethereum, as a crypto startup called Atlantic Crypto"
+    ],
+    "answer": "Mining ethereum, as a crypto startup called Atlantic Crypto",
+    "category": "business",
+    "tags": [
+      "coreweave",
+      "infrastructure",
+      "crypto"
+    ],
+    "difficulty": 2,
+    "explanation": "Founded in 2017 as Atlantic Crypto, it mined ethereum with the same graphics cards it now rents out, and when the 2018 crash made those cards cheap it renamed itself CoreWeave in 2019 and started leasing that inventory as cloud computing instead. Its founder Michael Intrator had been running Hudson Ridge, a natural gas hedge fund. Lambda is the tempting miss because it was already renting GPUs to researchers years earlier.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "CoreWeave",
+      "label": "CoreWeave on Wikipedia"
+    },
+    "answerAliases": [
+      "Atlantic Crypto",
+      "cryptocurrency mining",
+      "ethereum",
+      "crypto mining company"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0027",
+    "text": "In July 2025 CoreWeave agreed to buy a bitcoin mining company that had pivoted to AI data centers. Which company was it?",
+    "options": [
+      "Cipher Mining",
+      "Applied Digital",
+      "Core Scientific",
+      "Hut 8"
+    ],
+    "answer": "Core Scientific",
+    "category": "business",
+    "tags": [
+      "coreweave",
+      "data-centers",
+      "crypto"
+    ],
+    "difficulty": 2,
+    "explanation": "A Bitcoin miner that filed for Chapter 11 at the end of 2022 and emerged in January 2024, Core Scientific signed about $10 billion of data center contracts in 2025 and was agreed at US$9 billion. Cipher Mining and Hut 8 made the same pivot from bitcoin to AI hosting, which is why they are the tempting misses. What CoreWeave wanted was the buildings and the grid connections somebody else had already paid for.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Core Scientific",
+      "label": "Core Scientific on Wikipedia"
+    },
+    "answerAliases": [
+      "Core Scientific",
+      "Core Scientific, Inc"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0028",
+    "text": "Nebius, the Amsterdam-based AI infrastructure company that also owns Avride and TripleTen, was created by a forced sale in July 2024. Which company did it get separated from?",
+    "options": [
+      "Tinkoff",
+      "Avito",
+      "Yandex",
+      "Rambler"
+    ],
+    "answer": "Yandex",
+    "category": "business",
+    "tags": [
+      "nebius",
+      "yandex",
+      "sanctions"
+    ],
+    "difficulty": 3,
+    "explanation": "Nebius was the Dutch holding company that owned Yandex, the structure Russian law required for foreign ownership, until sanctions forced it to sell the Russian business to a consortium of Russian investors in July 2024 for a discounted US$5.3 billion. What stayed outside Russia, notably the Finland data center, was rebranded Nebius and pointed at AI infrastructure. Tinkoff and Avito are Russian finance and classifieds businesses that stayed inside Russia.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Yandex",
+      "label": "Yandex on Wikipedia"
+    },
+    "answerAliases": [
+      "Yandex",
+      "Yandex LLC"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0029",
+    "text": "Crusoe, one of the neoclouds now building AI data centers, was founded in 2018. What was its original business?",
+    "options": [
+      "Operating a bitcoin mining pool for retail investors",
+      "Selling natural gas to hyperscale data center campuses",
+      "Licensing AI accelerator designs to server makers",
+      "Capturing flared natural gas to power its own computing"
+    ],
+    "answer": "Capturing flared natural gas to power its own computing",
+    "category": "business",
+    "tags": [
+      "crusoe",
+      "data-centers",
+      "energy"
+    ],
+    "difficulty": 2,
+    "explanation": "The founding idea was to capture the natural gas that oil and gas sites burn off at the wellhead and run generators on it, which Crusoe calls Digital Flare Mitigation; bitcoin mining was the first way to spend that cheap power and the AI data centers came later. The mining pool and chip licensing options describe businesses that sit either side of Crusoe's actual one. It sold the bitcoin mining business to NYDIG in 2025 to concentrate on AI infrastructure.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.crusoe.ai/about/company",
+      "label": "Crusoe's company history page"
+    },
+    "answerAliases": [
+      "Digital Flare Mitigation",
+      "wasted natural gas",
+      "flared gas",
+      "flare gas",
+      "energy-first"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "bus-0035",
+    "text": "In which year did Microsoft make its first $1 billion investment in OpenAI?",
+    "options": [
+      "2019",
+      "2017",
+      "2021",
+      "2016"
+    ],
+    "answer": "2019",
+    "category": "business",
+    "tags": [
+      "openai",
+      "microsoft",
+      "funding"
+    ],
+    "difficulty": 1,
+    "explanation": "Microsoft put $1 billion into OpenAI in July 2019 and made Azure its exclusive cloud for a time. The 2017 misses date the partnership too early, before GPT-2 had even shown the scaling bet could pay.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenAI",
+      "label": "OpenAI on Wikipedia"
+    },
+    "answerAliases": [
+      "2019"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0036",
+    "text": "Microsoft extended its OpenAI partnership in January 2023 with a multiyear, multibillion-dollar deal. About how much had Microsoft put in cumulatively by that point, according to contemporaneous reporting?",
+    "options": [
+      "About $10 billion",
+      "About $13 billion",
+      "About $4 billion",
+      "About $30 billion"
+    ],
+    "answer": "About $13 billion",
+    "category": "business",
+    "tags": [
+      "openai",
+      "microsoft",
+      "funding"
+    ],
+    "difficulty": 2,
+    "explanation": "The January 2023 extension was reported as a $10 billion tranche on top of the earlier $1 billion plus $2 billion, totaling about $13 billion. The $4 billion figure belongs to Amazon's Anthropic commitment later that year, not Microsoft.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenAI",
+      "label": "OpenAI on Wikipedia"
+    },
+    "answerAliases": [
+      "$13 billion",
+      "13 billion",
+      "$13B"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0037",
+    "text": "Which Twitch co-founder served briefly as interim CEO of OpenAI during the November 2023 leadership crisis?",
+    "options": [
+      "Elon Musk",
+      "Satya Nadella",
+      "Emmett Shear",
+      "Reid Hoffman"
+    ],
+    "answer": "Emmett Shear",
+    "category": "business",
+    "tags": [
+      "openai",
+      "leadership"
+    ],
+    "difficulty": 2,
+    "explanation": "Emmett Shear took the interim job on November 19 2023 after Mira Murati's brief stint, then left when Altman returned days later. Nadella is the tempting miss because he hired Altman into Microsoft during the same weekend, but he never ran OpenAI.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Emmett Shear",
+      "label": "Emmett Shear on Wikipedia"
+    },
+    "answerAliases": [
+      "Emmett Shear"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0038",
+    "text": "On which date in November 2023 did OpenAI's board remove Sam Altman as CEO?",
+    "options": [
+      "November 10 2023",
+      "November 14 2023",
+      "November 20 2023",
+      "November 17 2023"
+    ],
+    "answer": "November 17 2023",
+    "category": "business",
+    "tags": [
+      "openai",
+      "leadership"
+    ],
+    "difficulty": 2,
+    "explanation": "The board announced Altman's removal on November 17 2023, saying he had not been consistently candid. November 20 is the tempting miss because that was the weekend's chaotic middle, when Microsoft announced Altman would join it, before his reinstatement on November 22.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Sam Altman",
+      "label": "Sam Altman on Wikipedia"
+    },
+    "answerAliases": [
+      "November 17 2023",
+      "17 November 2023",
+      "November 17, 2023"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0039",
+    "text": "Which OpenAI co-founder quit in protest after the November 2023 firing of Sam Altman, then returned days later?",
+    "options": [
+      "Greg Brockman",
+      "Ilya Sutskever",
+      "John Schulman",
+      "Wojciech Zaremba"
+    ],
+    "answer": "Greg Brockman",
+    "category": "business",
+    "tags": [
+      "openai",
+      "leadership"
+    ],
+    "difficulty": 2,
+    "explanation": "President Greg Brockman resigned hours after Altman's removal and came back when Altman was reinstated. Sutskever is the tempting miss because he voted to fire Altman, then publicly regretted it, but he did not quit that weekend.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Greg Brockman",
+      "label": "Greg Brockman on Wikipedia"
+    },
+    "answerAliases": [
+      "Greg Brockman",
+      "Brockman"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0040",
+    "text": "During the November 2023 OpenAI crisis, who announced that Sam Altman and Greg Brockman would join Microsoft to lead a new AI research group?",
+    "options": [
+      "Bill Gates",
+      "Satya Nadella",
+      "Mustafa Suleyman",
+      "Kevin Scott"
+    ],
+    "answer": "Satya Nadella",
+    "category": "business",
+    "tags": [
+      "openai",
+      "microsoft",
+      "leadership"
+    ],
+    "difficulty": 1,
+    "explanation": "Microsoft CEO Satya Nadella announced the move on November 20 2023, before Altman's reinstatement made it moot. Suleyman is the tempting miss because he later led Microsoft AI, but in 2023 he still ran Inflection.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Satya Nadella",
+      "label": "Satya Nadella on Wikipedia"
+    },
+    "answerAliases": [
+      "Satya Nadella",
+      "Nadella"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0041",
+    "text": "After the 2019 restructuring, which body kept ultimate control of OpenAI?",
+    "options": [
+      "The for-profit shareholders",
+      "Microsoft through its board seat",
+      "The nonprofit board",
+      "The employee stock trust"
+    ],
+    "answer": "The nonprofit board",
+    "category": "business",
+    "tags": [
+      "openai",
+      "governance"
+    ],
+    "difficulty": 2,
+    "explanation": "OpenAI added a capped-profit arm in 2019 but left the nonprofit board in charge, which is why that board could fire the CEO in 2023. Microsoft is the tempting miss because it invested billions, but it held no board seat at the time.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenAI",
+      "label": "OpenAI on Wikipedia"
+    },
+    "answerAliases": [
+      "nonprofit board",
+      "OpenAI nonprofit",
+      "board of directors"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0042",
+    "text": "Which company committed up to $4 billion to Anthropic starting in September 2023?",
+    "options": [
+      "Microsoft",
+      "Google",
+      "Meta",
+      "Amazon"
+    ],
+    "answer": "Amazon",
+    "category": "business",
+    "tags": [
+      "anthropic",
+      "funding"
+    ],
+    "difficulty": 1,
+    "explanation": "Amazon started with $1.25 billion in September 2023 with an option up to $4 billion, making AWS Anthropic's primary cloud. Google is the tempting miss because it separately put in $2 billion the next month.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Anthropic",
+      "label": "Anthropic on Wikipedia"
+    },
+    "answerAliases": [
+      "Amazon",
+      "Amazon.com",
+      "AWS"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0043",
+    "text": "Which company committed $2 billion to Anthropic in October 2023, shortly after Amazon's investment?",
+    "options": [
+      "Google",
+      "Amazon",
+      "Nvidia",
+      "Salesforce"
+    ],
+    "answer": "Google",
+    "category": "business",
+    "tags": [
+      "anthropic",
+      "funding"
+    ],
+    "difficulty": 1,
+    "explanation": "Google committed $2 billion in October 2023, split between an upfront payment and a later tranche. Amazon is the tempting miss because its larger $4 billion deal came first the prior month.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Anthropic",
+      "label": "Anthropic on Wikipedia"
+    },
+    "answerAliases": [
+      "Google"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0044",
+    "text": "After the September 2023 deal, which cloud became Anthropic's primary provider for training and deployment?",
+    "options": [
+      "Google Cloud",
+      "Amazon Web Services",
+      "Microsoft Azure",
+      "Oracle Cloud"
+    ],
+    "answer": "Amazon Web Services",
+    "category": "business",
+    "tags": [
+      "anthropic",
+      "cloud"
+    ],
+    "difficulty": 2,
+    "explanation": "The Amazon deal made AWS the primary cloud for Anthropic's training and deployment, including Trainium and Inferentia chip access. Google Cloud is the tempting miss because Anthropic also uses it under its separate Google partnership.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Anthropic",
+      "label": "Anthropic on Wikipedia"
+    },
+    "answerAliases": [
+      "Amazon Web Services",
+      "AWS"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0048",
+    "text": "Which social platform did xAI acquire in an all-stock deal in March 2025?",
+    "options": [
+      "Reddit",
+      "X",
+      "Discord",
+      "Substack"
+    ],
+    "answer": "X",
+    "category": "business",
+    "tags": [
+      "xai",
+      "acquisition"
+    ],
+    "difficulty": 1,
+    "explanation": "xAI acquired X in March 2025, reuniting Grok with its main distribution channel under one Musk company. Reddit is the tempting miss because it also licenses data for AI training, but it was never acquired.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "SpaceXAI",
+      "label": "SpaceXAI on Wikipedia"
+    },
+    "answerAliases": [
+      "X",
+      "Twitter",
+      "X Corp"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0049",
+    "text": "In which city did xAI build its Colossus supercomputer cluster in 2024?",
+    "options": [
+      "Austin Texas",
+      "Reno Nevada",
+      "Memphis Tennessee",
+      "Phoenix Arizona"
+    ],
+    "answer": "Memphis Tennessee",
+    "category": "business",
+    "tags": [
+      "xai",
+      "infrastructure"
+    ],
+    "difficulty": 2,
+    "explanation": "xAI assembled Colossus in Memphis in 2024 with about 100,000 Nvidia H100 GPUs for Grok training. Austin is the tempting miss because Tesla and X have a large presence there, but the flagship cluster went to Memphis.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Colossus (supercomputer)",
+      "label": "Colossus (supercomputer) on Wikipedia"
+    },
+    "answerAliases": [
+      "Memphis",
+      "Memphis Tennessee",
+      "Colossus"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0051",
+    "text": "In which city was Mistral AI founded in April 2023?",
+    "options": [
+      "Paris",
+      "London",
+      "Berlin",
+      "Amsterdam"
+    ],
+    "answer": "Paris",
+    "category": "business",
+    "tags": [
+      "mistral",
+      "founding"
+    ],
+    "difficulty": 1,
+    "explanation": "Arthur Mensch, Guillaume Lample and Timothee Lacroix founded Mistral in Paris in April 2023 after leaving DeepMind and Meta. London is the tempting miss because DeepMind sits there, but the founders chose Paris.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mistral AI",
+      "label": "Mistral AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Paris"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0052",
+    "text": "About how much did Mistral AI raise in its Series B round in June 2024?",
+    "options": [
+      "About 105 million euros",
+      "About 600 million euros",
+      "About 2 billion euros",
+      "About 50 million euros"
+    ],
+    "answer": "About 600 million euros",
+    "category": "business",
+    "tags": [
+      "mistral",
+      "funding"
+    ],
+    "difficulty": 3,
+    "explanation": "Mistral raised about 600 million euros in June 2024 led by General Catalyst, months after a 385 million euro round. The 105 million euro figure was its earlier 2023 seed, Europe's largest at the time.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mistral AI",
+      "label": "Mistral AI on Wikipedia"
+    },
+    "answerAliases": [
+      "600 million euros",
+      "600M euros",
+      "640 million dollars",
+      "€600 million",
+      "$645 million"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0053",
+    "text": "Which Mistral model leaked via a torrent link in December 2023 before its official release?",
+    "options": [
+      "Mistral Small",
+      "Mistral NeMo",
+      "Mixtral 8x7B",
+      "Mistral Large 2"
+    ],
+    "answer": "Mixtral 8x7B",
+    "category": "business",
+    "tags": [
+      "mistral",
+      "launch"
+    ],
+    "difficulty": 3,
+    "explanation": "Mixtral 8x7B, a mixture-of-experts model, appeared through a torrent link in December 2023 and was confirmed days later. Mistral Large 2 is the tempting miss because it was a bigger 2024 launch, but it had a normal announcement.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mistral AI",
+      "label": "Mistral AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Mixtral 8x7B",
+      "Mixtral"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0055",
+    "text": "About how much did Safe Superintelligence raise in September 2024, months after its founding?",
+    "options": [
+      "About $1 billion",
+      "About $300 million",
+      "About $6 billion",
+      "About $50 million"
+    ],
+    "answer": "About $1 billion",
+    "category": "business",
+    "tags": [
+      "ssi",
+      "funding"
+    ],
+    "difficulty": 3,
+    "explanation": "SSI raised about $1 billion in September 2024 from Andreessen Horowitz, Sequoia and others before showing any product. The $6 billion figure belongs to xAI's 2024 Series B, not SSI.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Safe Superintelligence Inc.",
+      "label": "Safe Superintelligence Inc. on Wikipedia"
+    },
+    "answerAliases": [
+      "$1 billion",
+      "1 billion",
+      "$1B"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0057",
+    "text": "About how much did Thinking Machines Lab raise in July 2025 in a round led by Andreessen Horowitz?",
+    "options": [
+      "About $500 million",
+      "About $750 million",
+      "About $2 billion",
+      "About $6 billion"
+    ],
+    "answer": "About $2 billion",
+    "category": "business",
+    "tags": [
+      "thinking-machines",
+      "funding"
+    ],
+    "difficulty": 3,
+    "explanation": "The July 2025 seed round was about $2 billion, an unusually large first raise for a lab with no shipped product. The $6 billion figure belongs to xAI's 2024 rounds, not Thinking Machines.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Thinking Machines Lab",
+      "label": "Thinking Machines Lab on Wikipedia"
+    },
+    "answerAliases": [
+      "$2 billion",
+      "2 billion",
+      "$2B"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0058",
+    "text": "Who founded MosaicML, which Databricks acquired for about $1.3 billion in June 2023?",
+    "options": [
+      "Daniel Han",
+      "Clem Delangue",
+      "Arthur Mensch",
+      "Naveen Rao"
+    ],
+    "answer": "Naveen Rao",
+    "category": "business",
+    "tags": [
+      "mosaicml",
+      "founding"
+    ],
+    "difficulty": 3,
+    "explanation": "Naveen Rao founded MosaicML in 2021 after selling his prior chip startup Nervana to Intel. Delangue is the tempting miss because he co-founded Hugging Face, a different open-model company.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Nervana Systems",
+      "label": "Nervana Systems on Wikipedia"
+    },
+    "answerAliases": [
+      "Naveen Rao",
+      "Rao"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0059",
+    "text": "In which year was Scale AI founded by Alexandr Wang and Lucy Guo?",
+    "options": [
+      "2016",
+      "2019",
+      "2021",
+      "2014"
+    ],
+    "answer": "2016",
+    "category": "business",
+    "tags": [
+      "scale",
+      "founding"
+    ],
+    "difficulty": 2,
+    "explanation": "Wang and Guo founded Scale in 2016 to sell labeled data for training AI. The 2019 options confuse it with later self-driving data deals that made Scale prominent.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Scale AI",
+      "label": "Scale AI on Wikipedia"
+    },
+    "answerAliases": [
+      "2016"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0060",
+    "text": "In June 2025 Meta agreed to invest about how much in Scale AI alongside hiring Alexandr Wang?",
+    "options": [
+      "About $4.4 billion",
+      "About $14.3 billion",
+      "About $1.3 billion",
+      "About $40 billion"
+    ],
+    "answer": "About $14.3 billion",
+    "category": "business",
+    "tags": [
+      "scale",
+      "meta",
+      "funding"
+    ],
+    "difficulty": 2,
+    "explanation": "Meta's June 2025 deal was about $14.3 billion for a 49 percent stake, with Wang joining to run superintelligence work. The $1.3 billion figure belongs to Databricks buying MosaicML in 2023.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Scale AI",
+      "label": "Scale AI on Wikipedia"
+    },
+    "answerAliases": [
+      "$14.3 billion",
+      "14.3 billion",
+      "$14.3B",
+      "more than $14 billion",
+      "14 billion"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0061",
+    "text": "What is Scale AI's core business that made it valuable to Meta and model labs?",
+    "options": [
+      "Cloud GPUs for rent",
+      "Crypto mining rigs",
+      "Data labeling for AI",
+      "Office software suites"
+    ],
+    "answer": "Data labeling for AI",
+    "category": "business",
+    "tags": [
+      "scale",
+      "business-model"
+    ],
+    "difficulty": 1,
+    "explanation": "Scale sells human-labeled data for training and evaluating models, including work for self-driving and defense customers. Cloud GPUs are the tempting miss because neoclouds sell those, while Scale sells the labels that go into training.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Scale AI",
+      "label": "Scale AI on Wikipedia"
+    },
+    "answerAliases": [
+      "data labeling",
+      "data annotation",
+      "data labeling for AI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0063",
+    "text": "Where was the Stargate AI infrastructure venture announced in January 2025?",
+    "options": [
+      "The White House",
+      "The Nasdaq podium",
+      "The Davos forum",
+      "The UN summit"
+    ],
+    "answer": "The White House",
+    "category": "business",
+    "tags": [
+      "stargate",
+      "infrastructure"
+    ],
+    "difficulty": 1,
+    "explanation": "Stargate was announced at the White House on January 21 2025 as a $500 billion four-year buildout by OpenAI, SoftBank and Oracle. Davos is the tempting miss because big funds often announce there, but this one was a White House event.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Stargate LLC",
+      "label": "Stargate LLC on Wikipedia"
+    },
+    "answerAliases": [
+      "White House",
+      "The White House"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0064",
+    "text": "Which Texas city hosts the first Stargate data center campus, under construction from 2025?",
+    "options": [
+      "Dallas",
+      "Abilene",
+      "Houston",
+      "El Paso"
+    ],
+    "answer": "Abilene",
+    "category": "business",
+    "tags": [
+      "stargate",
+      "data-centers"
+    ],
+    "difficulty": 2,
+    "explanation": "The first Stargate campus is in Abilene, Texas, where Oracle and Crusoe-linked builds were already underway. Dallas is the tempting miss because it is Texas's better-known data center hub.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Stargate LLC",
+      "label": "Stargate LLC on Wikipedia"
+    },
+    "answerAliases": [
+      "Abilene",
+      "Abilene Texas"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0065",
+    "text": "Who was named chairman of the Stargate venture at its January 2025 launch?",
+    "options": [
+      "Sam Altman",
+      "Larry Ellison",
+      "Masayoshi Son",
+      "Brad Smith"
+    ],
+    "answer": "Masayoshi Son",
+    "category": "business",
+    "tags": [
+      "stargate",
+      "leadership"
+    ],
+    "difficulty": 2,
+    "explanation": "SoftBank's Masayoshi Son was named Stargate chairman, with OpenAI handling operations. Altman is the tempting miss because he fronted the announcement, but the chair role went to Son.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Stargate LLC",
+      "label": "Stargate LLC on Wikipedia"
+    },
+    "answerAliases": [
+      "Masayoshi Son",
+      "Son"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0066",
+    "text": "In which month and year did Nvidia first pass $1 trillion in market value?",
+    "options": [
+      "May 2022",
+      "January 2024",
+      "October 2023",
+      "May 2023"
+    ],
+    "answer": "May 2023",
+    "category": "business",
+    "tags": [
+      "nvidia",
+      "markets"
+    ],
+    "difficulty": 3,
+    "explanation": "Nvidia crossed $1 trillion in May 2023 on AI chip demand, the first chipmaker to do so. January 2024 is the tempting miss because that was when it passed larger milestones on the way to $3 trillion.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Nvidia",
+      "label": "Nvidia on Wikipedia"
+    },
+    "answerAliases": [
+      "May 2023"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0067",
+    "text": "Which Nvidia supercomputer did Jensen Huang hand-deliver to OpenAI in August 2016?",
+    "options": [
+      "DGX-1",
+      "DGX H100",
+      "DGX Spark",
+      "DGX A100"
+    ],
+    "answer": "DGX-1",
+    "category": "business",
+    "tags": [
+      "nvidia",
+      "openai",
+      "hardware"
+    ],
+    "difficulty": 3,
+    "explanation": "The DGX-1 was Nvidia's first deep-learning supercomputer, delivered to OpenAI in 2016 with Elon Musk present. The H100 and A100 versions are the tempting misses because they power modern clusters, but they came years later.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Nvidia",
+      "label": "Nvidia on Wikipedia"
+    },
+    "answerAliases": [
+      "DGX-1",
+      "DGX 1"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0068",
+    "text": "In what year did Nvidia launch CUDA, the programming platform behind its AI dominance?",
+    "options": [
+      "1999",
+      "2006",
+      "2012",
+      "2016"
+    ],
+    "answer": "2006",
+    "category": "business",
+    "tags": [
+      "nvidia",
+      "cuda",
+      "history"
+    ],
+    "difficulty": 3,
+    "explanation": "Nvidia launched CUDA in 2006, letting researchers program GPUs for general computing well before deep learning took off. The 2012 option marks the AlexNet moment that made CUDA essential, not its launch.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Tesla (microarchitecture)",
+      "label": "Tesla (microarchitecture) on Wikipedia"
+    },
+    "answerAliases": [
+      "2006"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0069",
+    "text": "Which networking company did Nvidia acquire in 2019 for its InfiniBand interconnects?",
+    "options": [
+      "Arista Networks",
+      "Juniper Networks",
+      "Mellanox Technologies",
+      "Broadcom"
+    ],
+    "answer": "Mellanox Technologies",
+    "category": "business",
+    "tags": [
+      "nvidia",
+      "acquisition"
+    ],
+    "difficulty": 3,
+    "explanation": "Nvidia bought Mellanox in 2019, gaining the InfiniBand networking that links GPUs in AI clusters. Arista is the tempting miss because it competes in data-center switches, but the InfiniBand deal was Mellanox.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mellanox Technologies",
+      "label": "Mellanox Technologies on Wikipedia"
+    },
+    "answerAliases": [
+      "Mellanox Technologies",
+      "Mellanox"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0070",
+    "text": "Which chip designer did Nvidia agree to buy in 2020, then abandon the deal for in February 2022?",
+    "options": [
+      "AMD",
+      "Intel",
+      "Qualcomm",
+      "Arm"
+    ],
+    "answer": "Arm",
+    "category": "business",
+    "tags": [
+      "nvidia",
+      "acquisition"
+    ],
+    "difficulty": 1,
+    "explanation": "Nvidia agreed to buy Arm from SoftBank for about $40 billion in 2020 and walked away in February 2022 under regulatory pressure. Qualcomm is the tempting miss because it also licenses Arm designs, but it was never the target.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Arm Holdings",
+      "label": "Arm Holdings on Wikipedia"
+    },
+    "answerAliases": [
+      "Arm",
+      "ARM",
+      "Arm Holdings"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0072",
+    "text": "What is TSMC's business model that distinguishes it from Nvidia and AMD?",
+    "options": [
+      "Designs chips for phones",
+      "Makes chips for others without own brand",
+      "Sells lithography tools",
+      "Sells cloud GPUs"
+    ],
+    "answer": "Makes chips for others without own brand",
+    "category": "business",
+    "tags": [
+      "tsmc",
+      "business-model"
+    ],
+    "difficulty": 1,
+    "explanation": "TSMC is a pure-play foundry that manufactures chips designed by others and sells none under its own brand. Selling lithography tools is ASML's business, which is why that option traps readers who mix up the supply chain.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Taiwan Semiconductor Manufacturing Company",
+      "label": "Taiwan Semiconductor Manufacturing Company on Wikipedia"
+    },
+    "answerAliases": [
+      "pure-play foundry",
+      "foundry",
+      "makes chips for others"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0073",
+    "text": "What does ASML, the Dutch company critical to AI chips, actually sell?",
+    "options": [
+      "DRAM memory",
+      "Phone chips",
+      "Lithography machines",
+      "Cloud servers"
+    ],
+    "answer": "Lithography machines",
+    "category": "business",
+    "tags": [
+      "asml",
+      "hardware"
+    ],
+    "difficulty": 1,
+    "explanation": "ASML is the sole maker of extreme ultraviolet lithography machines that print advanced chips. DRAM is the tempting miss because memory is also a chip business, but ASML sells the machines that make chips, not chips themselves.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ASML Holding",
+      "label": "ASML Holding on Wikipedia"
+    },
+    "answerAliases": [
+      "lithography machines",
+      "lithography",
+      "photomask"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0074",
+    "text": "In which country is ASML, the sole maker of extreme ultraviolet lithography machines, headquartered?",
+    "options": [
+      "Taiwan",
+      "South Korea",
+      "United States",
+      "Netherlands"
+    ],
+    "answer": "Netherlands",
+    "category": "business",
+    "tags": [
+      "asml",
+      "geography"
+    ],
+    "difficulty": 1,
+    "explanation": "ASML is headquartered in Veldhoven in the Netherlands and grew out of a Philips joint venture. Taiwan is the tempting miss because TSMC buys its machines, but the maker is Dutch.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "ASML Holding",
+      "label": "ASML Holding on Wikipedia"
+    },
+    "answerAliases": [
+      "Netherlands",
+      "Dutch"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0075",
+    "text": "In which US state did TSMC announce new chip fabs in 2020?",
+    "options": [
+      "Arizona",
+      "Texas",
+      "Ohio",
+      "New York"
+    ],
+    "answer": "Arizona",
+    "category": "business",
+    "tags": [
+      "tsmc",
+      "manufacturing"
+    ],
+    "difficulty": 2,
+    "explanation": "TSMC announced its Arizona fabs in 2020, later expanded with CHIPS Act support. Texas is the tempting miss because Samsung and others build there, but TSMC's flagship US site is Arizona.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Taiwan Semiconductor Manufacturing Company",
+      "label": "Taiwan Semiconductor Manufacturing Company on Wikipedia"
+    },
+    "answerAliases": [
+      "Arizona"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0076",
+    "text": "Which GPU neocloud listed on Nasdaq in March 2025?",
+    "options": [
+      "Lambda",
+      "CoreWeave",
+      "Crusoe",
+      "Nebius"
+    ],
+    "answer": "CoreWeave",
+    "category": "business",
+    "tags": [
+      "coreweave",
+      "ipo"
+    ],
+    "difficulty": 2,
+    "explanation": "CoreWeave listed on Nasdaq in March 2025 after growing from crypto mining into rented GPU compute. Nebius is the tempting miss because it also trades publicly, but it arrived via the Yandex split, not a 2025 IPO.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "CoreWeave",
+      "label": "CoreWeave on Wikipedia"
+    },
+    "answerAliases": [
+      "CoreWeave"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0077",
+    "text": "To which firm did Crusoe sell its bitcoin mining business in 2025 to focus on AI data centers?",
+    "options": [
+      "Coinbase",
+      "Marathon Digital",
+      "NYDIG",
+      "Riot Platforms"
+    ],
+    "answer": "NYDIG",
+    "category": "business",
+    "tags": [
+      "crusoe",
+      "divestiture"
+    ],
+    "difficulty": 3,
+    "explanation": "Crusoe sold the mining operation to NYDIG in 2025 so it could concentrate on AI infrastructure powered by stranded gas. Marathon and Riot are the tempting misses because they are large miners, but the buyer was NYDIG.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "NYDIG",
+      "New York Digital Investment Group"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0078",
+    "text": "Which small modular reactor developer partnered with Amazon in October 2024 for up to 500 MW of nuclear power?",
+    "options": [
+      "NuScale Power",
+      "TerraPower",
+      "Oklo",
+      "X-energy"
+    ],
+    "answer": "X-energy",
+    "category": "business",
+    "tags": [
+      "nuclear",
+      "amazon",
+      "energy"
+    ],
+    "difficulty": 3,
+    "explanation": "Amazon backed X-energy in October 2024 alongside Energy Northwest projects to power data centers. TerraPower is the tempting miss because Bill Gates backs it, but the Amazon deal was X-energy.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "X-energy",
+      "label": "X-energy on Wikipedia"
+    },
+    "answerAliases": [
+      "X-energy",
+      "X energy"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0079",
+    "text": "Which Illinois nuclear plant did Meta contract with Constellation for 20 years starting in June 2025?",
+    "options": [
+      "Clinton Clean Energy Center",
+      "Braidwood Station",
+      "LaSalle Station",
+      "Quad Cities Station"
+    ],
+    "answer": "Clinton Clean Energy Center",
+    "category": "business",
+    "tags": [
+      "nuclear",
+      "meta",
+      "energy"
+    ],
+    "difficulty": 3,
+    "explanation": "Meta signed a 20-year deal for the Clinton plant's output starting in 2027, mirroring Microsoft's Three Mile Island agreement. Braidwood is the tempting miss because it is also a large Illinois Constellation plant, but the Meta contract names Clinton.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Constellation Energy",
+      "label": "Constellation Energy on Wikipedia"
+    },
+    "answerAliases": [
+      "Clinton Clean Energy Center",
+      "Clinton"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0080",
+    "text": "Who chaired OpenAI's initial new board formed when Sam Altman returned in November 2023?",
+    "options": [
+      "Adam D'Angelo",
+      "Bret Taylor",
+      "Larry Summers",
+      "Satya Nadella"
+    ],
+    "answer": "Bret Taylor",
+    "category": "business",
+    "tags": [
+      "openai",
+      "governance"
+    ],
+    "difficulty": 2,
+    "explanation": "Former Salesforce co-CEO Bret Taylor chaired the new board with Summers and D'Angelo. Summers is the tempting miss because his appointment drew headlines, but the chair was Taylor.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Sam Altman",
+      "label": "Sam Altman on Wikipedia"
+    },
+    "answerAliases": [
+      "Bret Taylor",
+      "Taylor"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0081",
+    "text": "Which Georgetown research center did OpenAI board member Helen Toner direct during the November 2023 ouster?",
+    "options": [
+      "Center for Democracy",
+      "Center for Global Health",
+      "Center for Security and Emerging Technology",
+      "Center for Internet Policy"
+    ],
+    "answer": "Center for Security and Emerging Technology",
+    "category": "business",
+    "tags": [
+      "openai",
+      "governance"
+    ],
+    "difficulty": 3,
+    "explanation": "Toner directed Georgetown's Center for Security and Emerging Technology, whose AI-safety work reportedly strained relations with Altman. The other centers are real Georgetown units, which is why generic-center guessing fails.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Helen Toner",
+      "label": "Helen Toner on Wikipedia"
+    },
+    "answerAliases": [
+      "Center for Security and Emerging Technology",
+      "CSET",
+      "Georgetown CSET"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0082",
+    "text": "Which board member was the only one to remain on OpenAI's board through the November 2023 firing and the reconstituted board?",
+    "options": [
+      "Helen Toner",
+      "Tasha McCauley",
+      "Ilya Sutskever",
+      "Adam D'Angelo"
+    ],
+    "answer": "Adam D'Angelo",
+    "category": "business",
+    "tags": [
+      "openai",
+      "governance"
+    ],
+    "difficulty": 3,
+    "explanation": "Quora CEO Adam D'Angelo stayed on both the board that fired Altman and the Taylor-chaired board that brought him back. Sutskever is the tempting miss because he also survived the weekend, but he left the board in the reset.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Adam D'Angelo",
+      "label": "Adam D'Angelo on Wikipedia"
+    },
+    "answerAliases": [
+      "Adam D'Angelo",
+      "D'Angelo"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0083",
+    "text": "In which month of 2024 did Ilya Sutskever announce his departure from OpenAI?",
+    "options": [
+      "May 2024",
+      "February 2024",
+      "August 2024",
+      "November 2024"
+    ],
+    "answer": "May 2024",
+    "category": "business",
+    "tags": [
+      "openai",
+      "departures"
+    ],
+    "difficulty": 2,
+    "explanation": "Sutskever announced his exit on May 14 2024, a day after the GPT-4o launch, then founded SSI in June. August is the tempting miss because Schulman's departure came then.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Ilya Sutskever",
+      "label": "Ilya Sutskever on Wikipedia"
+    },
+    "answerAliases": [
+      "May 2024"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0084",
+    "text": "What problem was OpenAI's Superalignment team, created in July 2023, set up to solve?",
+    "options": [
+      "Faster GPUs for training",
+      "Aligning superintelligence",
+      "Cheaper inference APIs",
+      "Video generation quality"
+    ],
+    "answer": "Aligning superintelligence",
+    "category": "business",
+    "tags": [
+      "openai",
+      "safety"
+    ],
+    "difficulty": 2,
+    "explanation": "Superalignment was charged with steering AI systems smarter than humans, co-led by Sutskever and Leike until it was disbanded in May 2024. Cheaper inference is the tempting miss because OpenAI also chased that, but it was never Superalignment's mandate.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenAI",
+      "label": "OpenAI on Wikipedia"
+    },
+    "answerAliases": [
+      "superintelligence alignment",
+      "aligning superintelligence",
+      "superalignment"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0085",
+    "text": "Which lab did Jan Leike join after leaving OpenAI in May 2024?",
+    "options": [
+      "Google DeepMind",
+      "xAI",
+      "Anthropic",
+      "Meta"
+    ],
+    "answer": "Anthropic",
+    "category": "business",
+    "tags": [
+      "openai",
+      "anthropic",
+      "moves"
+    ],
+    "difficulty": 2,
+    "explanation": "Superalignment co-lead Jan Leike joined Anthropic in May 2024 to continue alignment work. DeepMind is the tempting miss because Leike had the safety background DeepMind hires, but he chose Anthropic.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Jan Leike",
+      "label": "Jan Leike on Wikipedia"
+    },
+    "answerAliases": [
+      "Anthropic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0086",
+    "text": "Which lab did OpenAI co-founder John Schulman join after leaving OpenAI in August 2024?",
+    "options": [
+      "DeepMind",
+      "Mistral AI",
+      "SSI",
+      "Anthropic"
+    ],
+    "answer": "Anthropic",
+    "category": "business",
+    "tags": [
+      "openai",
+      "anthropic",
+      "moves"
+    ],
+    "difficulty": 2,
+    "explanation": "Schulman joined Anthropic in August 2024 to work on alignment, then moved to Thinking Machines in 2025. SSI is the tempting miss because Sutskever founded it, but Schulman's first stop was Anthropic.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "John Schulman",
+      "label": "John Schulman on Wikipedia"
+    },
+    "answerAliases": [
+      "Anthropic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0087",
+    "text": "Who succeeded Ilya Sutskever as OpenAI chief scientist in June 2024?",
+    "options": [
+      "Jakub Pachocki",
+      "Wojciech Zaremba",
+      "Barret Zoph",
+      "Mark Chen"
+    ],
+    "answer": "Jakub Pachocki",
+    "category": "business",
+    "tags": [
+      "openai",
+      "leadership"
+    ],
+    "difficulty": 3,
+    "explanation": "Jakub Pachocki, who led GPT-4 development, became chief scientist in June 2024. Zaremba is the tempting miss because he is another Polish co-founder, but the promotion went to Pachocki.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Jakub Pachocki",
+      "label": "Jakub Pachocki on Wikipedia"
+    },
+    "answerAliases": [
+      "Jakub Pachocki",
+      "Pachocki"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0088",
+    "text": "What role did Mustafa Suleyman take at Microsoft in March 2024 after leaving Inflection AI?",
+    "options": [
+      "Chief financial officer",
+      "CEO of Microsoft AI",
+      "Head of Azure hardware",
+      "Chief legal officer"
+    ],
+    "answer": "CEO of Microsoft AI",
+    "category": "business",
+    "tags": [
+      "microsoft",
+      "inflection",
+      "leadership"
+    ],
+    "difficulty": 1,
+    "explanation": "Suleyman became CEO of Microsoft AI in March 2024, bringing Karen Simonyan and most of Inflection's staff. Azure hardware is the tempting miss because Microsoft AI also ships Copilot, but Suleyman's title was CEO of the AI division.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mustafa Suleyman",
+      "label": "Mustafa Suleyman on Wikipedia"
+    },
+    "answerAliases": [
+      "CEO of Microsoft AI",
+      "Microsoft AI CEO"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0089",
+    "text": "What was the name of Inflection AI's consumer chatbot released in 2023?",
+    "options": [
+      "Replika",
+      "ChatGPT",
+      "Pi",
+      "Claude"
+    ],
+    "answer": "Pi",
+    "category": "business",
+    "tags": [
+      "inflection",
+      "products"
+    ],
+    "difficulty": 1,
+    "explanation": "Inflection's Pi was pitched as a personal AI companion in 2023 before the team moved to Microsoft. Copilot is the tempting miss because it is Microsoft's assistant, but Inflection's product was Pi.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Inflection AI",
+      "label": "Inflection AI on Wikipedia"
+    },
+    "answerAliases": [
+      "Pi"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0090",
+    "text": "In which month of 2024 did Emad Mostaque resign as CEO of Stability AI?",
+    "options": [
+      "January 2024",
+      "June 2024",
+      "October 2024",
+      "March 2024"
+    ],
+    "answer": "March 2024",
+    "category": "business",
+    "tags": [
+      "stability",
+      "leadership"
+    ],
+    "difficulty": 2,
+    "explanation": "Mostaque resigned in March 2024 to pursue decentralized AI, with Prem Akkaraju succeeding him. June is the tempting miss because leadership churn continued into the summer, but the resignation was March.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Emad Mostaque",
+      "label": "Emad Mostaque on Wikipedia"
+    },
+    "answerAliases": [
+      "March 2024"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0091",
+    "text": "Which company licensed Character.ai's technology for about $2.7 billion in August 2024, with its founders rejoining?",
+    "options": [
+      "Google",
+      "Meta",
+      "Amazon",
+      "Microsoft"
+    ],
+    "answer": "Google",
+    "category": "business",
+    "tags": [
+      "character-ai",
+      "acquihire"
+    ],
+    "difficulty": 2,
+    "explanation": "Google licensed Character.ai's tech in August 2024 and brought back Noam Shazeer and Daniel De Freitas to work on Gemini. Microsoft is the tempting miss because it did the similar Inflection deal, but Character.ai went to Google.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Character.ai",
+      "label": "Character.ai on Wikipedia"
+    },
+    "answerAliases": [
+      "Google"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0092",
+    "text": "Which company licensed Adept AI's technology in June 2024 and hired its CEO David Luan?",
+    "options": [
+      "Google",
+      "Amazon",
+      "Nvidia",
+      "Apple"
+    ],
+    "answer": "Amazon",
+    "category": "business",
+    "tags": [
+      "adept",
+      "acquihire"
+    ],
+    "difficulty": 3,
+    "explanation": "Amazon licensed Adept's agent technology in June 2024 and hired Luan into its AGI organization. Google is the tempting miss because it hired Character.ai and Windsurf talent in similar deals, but Adept went to Amazon.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Amazon (company)",
+      "label": "Amazon (company) on Wikipedia"
+    },
+    "answerAliases": [
+      "Amazon"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0093",
+    "text": "What did Sam Altman's crypto-identity project Worldcoin rebrand itself as in October 2024?",
+    "options": [
+      "Humanness",
+      "Orbcoin",
+      "World",
+      "Personhood"
+    ],
+    "answer": "World",
+    "category": "business",
+    "tags": [
+      "worldcoin",
+      "rebrand"
+    ],
+    "difficulty": 2,
+    "explanation": "Worldcoin rebranded to World in October 2024 as it pushed the Orb-verified World ID beyond crypto. Orbcoin is the tempting miss because the Orb is its famous device, but the project name became simply World.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "World (blockchain)",
+      "label": "World (blockchain) on Wikipedia"
+    },
+    "answerAliases": [
+      "World",
+      "World Network"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "bus-0094",
+    "text": "Which company led OpenAI's $40 billion funding round announced in March 2025?",
+    "options": [
+      "Microsoft",
+      "Amazon",
+      "Nvidia",
+      "SoftBank Group"
+    ],
+    "answer": "SoftBank Group",
+    "category": "business",
+    "tags": [
+      "openai",
+      "funding"
+    ],
+    "difficulty": 2,
+    "explanation": "SoftBank led the March 2025 $40 billion round, then the largest private tech financing, alongside Microsoft and others. Microsoft is the tempting miss because it was already the biggest backer, but this round was led by SoftBank.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenAI",
+      "label": "OpenAI on Wikipedia"
+    },
+    "answerAliases": [
+      "SoftBank Group",
+      "SoftBank",
+      "SoftBank Group Corp."
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
   }
 ]

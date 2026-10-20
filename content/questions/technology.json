@@ -540,5 +540,1538 @@
     ],
     "status": "published",
     "addedAt": "2026-09-29"
+  },
+  {
+    "id": "tec-0019",
+    "text": "Copilot-style coding assistants such as GitHub Copilot live inside your editor. What do they actually do?",
+    "options": [
+      "Autocomplete code in the editor as you type",
+      "Compile the project and report the build errors",
+      "Rewrite the repository in a newer language",
+      "Write unit tests and open the failures as issues"
+    ],
+    "answer": "Autocomplete code in the editor as you type",
+    "category": "technology",
+    "tags": [
+      "copilot",
+      "coding-assistants",
+      "developer-tools"
+    ],
+    "difficulty": 1,
+    "explanation": "GitHub announced Copilot on 29 June 2021 with OpenAI, and it predicts the next lines of code from the file you have open, so well-chosen names make it noticeably better. You accept or reject each suggestion, and Cursor and Windsurf pushed the same autocomplete idea further into editing files and running changes. Building your project and filing issues are jobs your language toolchain and issue tracker already do.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GitHub Copilot",
+      "label": "GitHub Copilot on Wikipedia"
+    },
+    "answerAliases": [
+      "autocompleting code",
+      "code completion",
+      "programming AI-assistant",
+      "GitHub Copilot"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "tec-0020",
+    "text": "Local tools like Ollama and LM Studio can run a big model on a laptop that was trained on racks of servers. How do they fit it in memory?",
+    "options": [
+      "They download a smaller version of the model from the lab",
+      "They re-run the training run at a fraction of the cost",
+      "The weights are stored with fewer bits, so the file shrinks",
+      "They keep only the final layers and drop the earlier ones"
+    ],
+    "answer": "The weights are stored with fewer bits, so the file shrinks",
+    "category": "technology",
+    "tags": [
+      "local-inference",
+      "quantization",
+      "gguf"
+    ],
+    "difficulty": 2,
+    "explanation": "Quantization is the word for it: the same weights kept with fewer bits per number, which cuts memory and speeds up inference at the cost of some accuracy. GGUF, the format llama.cpp introduced in August 2023, is now how those packed models reach Ollama, LM Studio and GPT4All, which is what puts a datacenter-sized model on a desk. Truncating layers is not the trade anyone makes, because the missing layers are most of what the model knows.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GGUF",
+      "label": "GGUF on Wikipedia"
+    },
+    "answerAliases": [
+      "quantized large language models for local inference",
+      "local inference",
+      "reducing precision in the model weights",
+      "quantization"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "tec-0021",
+    "text": "Almost every large AI training run happens on an Nvidia GPU. What is the main reason the field ended up there?",
+    "options": [
+      "Their cards were designed from the start to run neural networks",
+      "Nvidia's parallel computing software is what AI frameworks run on",
+      "Their hardware is the only kind that can hold a large model's weights",
+      "GPUs are manufactured in much larger numbers than CPUs"
+    ],
+    "answer": "Nvidia's parallel computing software is what AI frameworks run on",
+    "category": "technology",
+    "tags": [
+      "cuda",
+      "nvidia",
+      "gpu"
+    ],
+    "difficulty": 2,
+    "explanation": "Nvidia's edge here is CUDA, the platform and API that essentially every deep learning framework was written against, so a rival accelerator has to beat the tooling as well as the silicon. The chips came out of the graphics business, which is why the designed-for-neural-networks option is the tempting miss.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "CUDA",
+      "label": "CUDA on Wikipedia"
+    },
+    "answerAliases": [
+      "CUDA",
+      "parallel computing platform",
+      "application programming interface",
+      "general-purpose processing",
+      "Nvidia"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "tec-0022",
+    "text": "Retrieval is how a chatbot answers questions its training never covered. What does looking things up give it?",
+    "options": [
+      "A larger set of weights downloaded from the model provider",
+      "A second copy of the model, trained again on the same data",
+      "Extra memory for the answer, reserved on the serving machine",
+      "Documents fetched when the question is asked, not at training"
+    ],
+    "answer": "Documents fetched when the question is asked, not at training",
+    "category": "technology",
+    "tags": [
+      "rag",
+      "retrieval",
+      "grounding"
+    ],
+    "difficulty": 1,
+    "explanation": "Retrieval-augmented generation, first proposed in 2020, pulls relevant passages up at question time and answers from them alongside what the model already knows, so it can use facts published after training and show you which document they came from. The bigger-weights option describes scaling the model, which is exactly the bill RAG exists to avoid paying again for every document.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Retrieval-augmented generation",
+      "label": "Retrieval-augmented generation on Wikipedia"
+    },
+    "answerAliases": [
+      "retrieve and incorporate new information from external data sources",
+      "updated information that is not available in the training data",
+      "retrieval",
+      "RAG"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "tec-0023",
+    "text": "Function calling lets a chat model act on your software instead of only talking. What does the model itself produce?",
+    "options": [
+      "A finished script that runs the function and prints the result",
+      "A structured call naming one of your functions and its arguments",
+      "A rewritten copy of its weights with the function inside",
+      "A second model trained on your function's source code"
+    ],
+    "answer": "A structured call naming one of your functions and its arguments",
+    "category": "technology",
+    "tags": [
+      "function-calling",
+      "tools",
+      "agents"
+    ],
+    "difficulty": 2,
+    "explanation": "You hand the model a list of your functions with their names and argument schemas, and it replies with JSON saying which one to call and what to fill in. Nothing runs until your own code executes the call and posts the result back, which is how an assistant can look up the weather without the model ever doing the lookup itself.",
+    "source": {
+      "kind": "url",
+      "url": "https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb",
+      "label": "OpenAI cookbook: calling functions with chat models"
+    },
+    "answerAliases": [
+      "function calling",
+      "tool_calls",
+      "function arguments",
+      "the name of the function and the generated function arguments"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "tec-0024",
+    "text": "Diffusion models turned out to be useful well beyond still images. Which pair of other outputs have they been used to produce?",
+    "options": [
+      "Video clips and audio recordings",
+      "Stock prices and weather forecasts",
+      "Web page layouts and SQL queries",
+      "Spam filters and translation engines"
+    ],
+    "answer": "Video clips and audio recordings",
+    "category": "technology",
+    "tags": [
+      "diffusion",
+      "generative",
+      "multimodal"
+    ],
+    "difficulty": 2,
+    "explanation": "The same denoising recipe works on anything you can noise and denoise again, which is why diffusion turned up in video generation and sound generation, with experiments on text generation and summarization too. Prices, forecasts and schemas are not produced this way at all, they are computed or written by other means.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Diffusion model",
+      "label": "Diffusion model on Wikipedia"
+    },
+    "answerAliases": [
+      "video generation",
+      "sound generation",
+      "diffusion models",
+      "text generation"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "tec-0025",
+    "text": "A voice assistant writes its answer as text first and reads it out afterwards. Which part of the pipeline turns that text into sound?",
+    "options": [
+      "Speech recognition",
+      "Language modelling",
+      "Retrieval augmentation",
+      "Speech synthesis"
+    ],
+    "answer": "Speech synthesis",
+    "category": "technology",
+    "tags": [
+      "voice",
+      "speech",
+      "assistants"
+    ],
+    "difficulty": 1,
+    "explanation": "The pipeline runs speech recognition first, so the language model only ever sees text, and a text-to-speech system converts its written reply back into a waveform at the end. The two get swapped constantly because they are mirror images: speech recognition is the reverse process of speech synthesis.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Speech synthesis",
+      "label": "Speech synthesis on Wikipedia"
+    },
+    "answerAliases": [
+      "text-to-speech",
+      "TTS",
+      "speech synthesizer",
+      "converts normal language text into speech"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "tec-0026",
+    "text": "An AI agent calls a tool and then keeps working. What does it do with the tool's result?",
+    "options": [
+      "Uses it to update the model's weights before continuing",
+      "Reads it and decides the next step on its own",
+      "Ends the run so a person can pick up from there",
+      "Stores it permanently so future chats recall it"
+    ],
+    "answer": "Reads it and decides the next step on its own",
+    "category": "technology",
+    "tags": [
+      "agents",
+      "tools",
+      "loops"
+    ],
+    "difficulty": 2,
+    "explanation": "The agent loop is call a tool, feed the result back into the conversation, decide whether the goal is met, and repeat, with the control flow usually driven by the language model. Weights do not change mid-run, so updating them describes training rather than tool use, and durable memory is a separate component rather than something the loop writes into the model.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI agent",
+      "label": "AI agent on Wikipedia"
+    },
+    "answerAliases": [
+      "use of external tools",
+      "autonomously perform multi-step tasks",
+      "goal-directed behavior",
+      "interact with and modify an external environment"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "tec-0027",
+    "text": "A chatbot can be hijacked by text alone, such as an instruction to ignore everything said before it. Why does that work?",
+    "options": [
+      "Its training data was gathered without enough permissions",
+      "Its weights are rewritten by every conversation it has",
+      "It cannot reliably tell instructions apart from ordinary data",
+      "Its system prompt is always shorter than the injected text"
+    ],
+    "answer": "It cannot reliably tell instructions apart from ordinary data",
+    "category": "technology",
+    "tags": [
+      "prompt-injection",
+      "security",
+      "jailbreaks"
+    ],
+    "difficulty": 2,
+    "explanation": "Instructions and data arrive in the same context, with nothing in the input marking which text is the developer's rules and which is payload, so an injected sentence can read as an order. The Bing Chat leak in February 2023 worked exactly that way, and the UK's NCSC said in August 2023 that it may simply be inherent to the technology.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Prompt injection",
+      "label": "Prompt injection on Wikipedia"
+    },
+    "answerAliases": [
+      "inability to distinguish between developer-defined prompts and user inputs",
+      "instructions and data together in the same context",
+      "prompt injection",
+      "bypass safeguards"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "tec-0028",
+    "text": "Distillation trains a new small model to imitate a big one. What is it easy to confuse it with?",
+    "options": [
+      "Fine-tuning, which retrains an existing model further",
+      "Augmentation, which repeats the training examples",
+      "Pruning, which deletes whole layers and channels",
+      "Compression, which shrinks the big model's own weights"
+    ],
+    "answer": "Compression, which shrinks the big model's own weights",
+    "category": "technology",
+    "tags": [
+      "distillation",
+      "compression",
+      "efficiency"
+    ],
+    "difficulty": 2,
+    "explanation": "Compression shrinks one model in place, keeping its architecture and nominal parameter count and spending bits-per-parameter instead, so nothing new is trained. Distillation trains a different, smaller model to behave like the big one, which is why the two get mentioned in the same conversations about fitting models onto a phone.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Knowledge distillation",
+      "label": "Knowledge distillation on Wikipedia"
+    },
+    "answerAliases": [
+      "model compression",
+      "decrease the size of a large model itself",
+      "preserves the architecture and the nominal parameter count"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "tec-0029",
+    "text": "What did Anthropic add to Claude 3.5 Sonnet in October 2024?",
+    "options": [
+      "A larger context window for longer chats",
+      "A feature letting Claude control a computer desktop",
+      "A faster tokenizer for cheaper inference",
+      "A voice mode for spoken conversations"
+    ],
+    "answer": "A feature letting Claude control a computer desktop",
+    "category": "technology",
+    "tags": [
+      "agents",
+      "computer-use",
+      "anthropic"
+    ],
+    "difficulty": 2,
+    "explanation": "Anthropic released a 'computer use' beta in October 2024 that let Claude move the cursor, click and type by interpreting screen content. The context window distractor is a real change in other releases, but it is not what October 2024 added.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Claude (AI)",
+      "label": "Claude (AI) on Wikipedia"
+    },
+    "answerAliases": [
+      "computer use",
+      "computer use feature"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0030",
+    "text": "What kind of tasks do harnesses such as SWE-agent and OpenHands tackle?",
+    "options": [
+      "Translating documents between languages",
+      "Rendering 3D scenes from text",
+      "Diagnosing and fixing issues in a software repository",
+      "Generating marketing copy from a brief"
+    ],
+    "answer": "Diagnosing and fixing issues in a software repository",
+    "category": "technology",
+    "tags": [
+      "agents",
+      "coding",
+      "software-engineering"
+    ],
+    "difficulty": 2,
+    "explanation": "OpenHands is an open-source agent platform for AI-assisted software development, and SWE-agent targets real GitHub issues. The other options are plausible AI tasks, but they are not what these harnesses are built for.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "OpenHands",
+      "label": "OpenHands on Wikipedia"
+    },
+    "answerAliases": [
+      "OpenHands",
+      "software-engineering tasks",
+      "SWE-agent"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0031",
+    "text": "What problem was the Model Context Protocol designed to solve?",
+    "options": [
+      "Compressing model weights for local devices",
+      "Training models with human preference data",
+      "Evaluating models on coding benchmarks",
+      "Standardizing how models connect to tools and data"
+    ],
+    "answer": "Standardizing how models connect to tools and data",
+    "category": "technology",
+    "tags": [
+      "agents",
+      "mcp",
+      "protocols"
+    ],
+    "difficulty": 2,
+    "explanation": "MCP defines hosts, clients and servers so a model can list and call tools through JSON-RPC instead of bespoke integrations. Compression and preference training are different stages of the pipeline, not the protocol's job.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Model Context Protocol",
+      "label": "Model Context Protocol on Wikipedia"
+    },
+    "answerAliases": [
+      "MCP",
+      "Model Context Protocol",
+      "open standard"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0032",
+    "text": "Why is ReAct useful for an AI agent?",
+    "options": [
+      "It lets the model reason between tool calls",
+      "It shrinks the model for mobile devices",
+      "It trains the model on human preferences",
+      "It removes the need for a tokenizer"
+    ],
+    "answer": "It lets the model reason between tool calls",
+    "category": "technology",
+    "tags": [
+      "agents",
+      "react",
+      "reasoning"
+    ],
+    "difficulty": 3,
+    "explanation": "ReAct interleaves thought steps with actions, so the model can decide what to do next from what it observed. The other options describe tokenization, compression and RLHF, none of which ReAct performs.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2210.03629",
+      "label": "ReAct paper on arXiv"
+    },
+    "answerAliases": [
+      "ReAct",
+      "reasoning and acting",
+      "reason and act"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0033",
+    "text": "What does multi-query attention change in a transformer?",
+    "options": [
+      "It retrieves documents before attention",
+      "It shares one key-value head across all query heads",
+      "It removes attention layers entirely",
+      "It adds a reward model to each layer"
+    ],
+    "answer": "It shares one key-value head across all query heads",
+    "category": "technology",
+    "tags": [
+      "attention",
+      "mqa",
+      "efficiency"
+    ],
+    "difficulty": 3,
+    "explanation": "Shazeer's 2019 variant uses a single key-value head for all query heads, cutting the KV cache further than grouped-query attention. Removing attention entirely describes state-space models, not this change.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1911.02150",
+      "label": "Multi-query attention paper on arXiv"
+    },
+    "answerAliases": [
+      "multi-query attention",
+      "MQA"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0034",
+    "text": "What problem does rotary positional embedding solve in transformers?",
+    "options": [
+      "It retrieves relevant documents for a query",
+      "It compresses weights for faster inference",
+      "It encodes token position into the attention computation",
+      "It aligns model outputs with human preferences"
+    ],
+    "answer": "It encodes token position into the attention computation",
+    "category": "technology",
+    "tags": [
+      "attention",
+      "rope",
+      "positional-encoding"
+    ],
+    "difficulty": 3,
+    "explanation": "RoPE rotates query and key vectors by an angle that depends on position, so attention scores carry relative position information. Compression, alignment and retrieval are separate concerns handled by other techniques.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Transformer (deep learning)",
+      "label": "Transformer (deep learning) on Wikipedia"
+    },
+    "answerAliases": [
+      "rotary positional embedding",
+      "RoPE",
+      "rotary"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0035",
+    "text": "What is SwiGLU in a transformer feed-forward block?",
+    "options": [
+      "A sparse routing mechanism for experts",
+      "A positional encoding scheme",
+      "A weight quantization format",
+      "A gated activation function"
+    ],
+    "answer": "A gated activation function",
+    "category": "technology",
+    "tags": [
+      "transformer",
+      "swiglu",
+      "activation"
+    ],
+    "difficulty": 3,
+    "explanation": "SwiGLU multiplies a swish-activated branch by a linear gate, which is a gated linear unit variant. Routing, positional encoding and quantization are unrelated mechanisms that happen elsewhere in the stack.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Gating mechanism",
+      "label": "Gating mechanism on Wikipedia"
+    },
+    "answerAliases": [
+      "SwiGLU",
+      "gated linear unit",
+      "swish"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0036",
+    "text": "What does the KV cache store during autoregressive generation?",
+    "options": [
+      "Key and value vectors for previous tokens",
+      "The final answer tokens only",
+      "The model's training dataset",
+      "The user's conversation history on disk"
+    ],
+    "answer": "Key and value vectors for previous tokens",
+    "category": "technology",
+    "tags": [
+      "attention",
+      "kv-cache",
+      "inference"
+    ],
+    "difficulty": 2,
+    "explanation": "The cache keeps the key and value tensors for tokens already processed, so each new token does not recompute attention over the whole prefix. It is not the training data or a transcript stored on disk.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Transformer (deep learning)",
+      "label": "Transformer (deep learning) on Wikipedia"
+    },
+    "answerAliases": [
+      "KV cache",
+      "key-value cache",
+      "KV"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0037",
+    "text": "What large intermediate object does FlashAttention avoid materializing?",
+    "options": [
+      "The token embedding table",
+      "The full attention matrix in slow memory",
+      "The model's weight gradients",
+      "The retrieval index"
+    ],
+    "answer": "The full attention matrix in slow memory",
+    "category": "technology",
+    "tags": [
+      "attention",
+      "flashattention",
+      "efficiency"
+    ],
+    "difficulty": 3,
+    "explanation": "FlashAttention tiles the computation so the n-by-n attention matrix is never written to high-bandwidth memory, while the result stays exact. The embedding table and gradients are not what it eliminates.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2205.14135",
+      "label": "FlashAttention on arXiv"
+    },
+    "answerAliases": [
+      "FlashAttention",
+      "IO-aware",
+      "Tri Dao"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0038",
+    "text": "Why is standard self-attention quadratic in sequence length?",
+    "options": [
+      "The vocabulary grows with the sequence",
+      "Gradients are computed twice per layer",
+      "Every token attends to every other token",
+      "Each token is embedded twice"
+    ],
+    "answer": "Every token attends to every other token",
+    "category": "technology",
+    "tags": [
+      "attention",
+      "complexity",
+      "transformer"
+    ],
+    "difficulty": 2,
+    "explanation": "The attention matrix has one row per token and one column per token, so its size grows with the square of the sequence length. Embeddings, vocabulary and gradients do not cause that quadratic cost.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Transformer (deep learning)",
+      "label": "Transformer (deep learning) on Wikipedia"
+    },
+    "answerAliases": [
+      "self-attention",
+      "quadratic",
+      "O(n^2)"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0039",
+    "text": "What does supervised fine-tuning do to a base model?",
+    "options": [
+      "It removes layers to make it smaller",
+      "It retrieves documents at question time",
+      "It quantizes weights for local devices",
+      "It trains the model on input-output examples"
+    ],
+    "answer": "It trains the model on input-output examples",
+    "category": "technology",
+    "tags": [
+      "post-training",
+      "sft",
+      "fine-tuning"
+    ],
+    "difficulty": 2,
+    "explanation": "Supervised fine-tuning adjusts weights using curated prompt-response pairs, which is how a base model learns to follow instructions. Pruning, retrieval and quantization are separate operations.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Post-training of large language models",
+      "label": "Post-training of large language models on Wikipedia"
+    },
+    "answerAliases": [
+      "supervised fine-tuning",
+      "SFT",
+      "instruction tuning"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0040",
+    "text": "What did FLAN experiments investigate?",
+    "options": [
+      "Instruction tuning across many tasks",
+      "Quantizing models to four bits",
+      "Retrieving documents for grounding",
+      "Routing tokens to experts"
+    ],
+    "answer": "Instruction tuning across many tasks",
+    "category": "technology",
+    "tags": [
+      "post-training",
+      "flan",
+      "instruction-tuning"
+    ],
+    "difficulty": 3,
+    "explanation": "FLAN showed that fine-tuning on a large mixture of tasks improves zero-shot generalization to held-out tasks. Quantization, retrieval and expert routing are not what FLAN studied.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Post-training of large language models",
+      "label": "Post-training of large language models on Wikipedia"
+    },
+    "answerAliases": [
+      "FLAN",
+      "instruction tuning",
+      "task mixture"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0042",
+    "text": "What does QLoRA add to LoRA?",
+    "options": [
+      "A reward model for preferences",
+      "A second tokenizer for code",
+      "Quantized base model weights",
+      "A retrieval index over documents"
+    ],
+    "answer": "Quantized base model weights",
+    "category": "technology",
+    "tags": [
+      "fine-tuning",
+      "qlora",
+      "quantization"
+    ],
+    "difficulty": 3,
+    "explanation": "QLoRA keeps the base model in 4-bit and trains LoRA adapters on top, which is what made fine-tuning large models on a single GPU practical. Retrieval, reward models and tokenizers are not part of it.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2305.14314",
+      "label": "QLoRA paper on arXiv"
+    },
+    "answerAliases": [
+      "QLoRA",
+      "quantized LoRA",
+      "4-bit"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0043",
+    "text": "What is GGUF used for?",
+    "options": [
+      "Benchmarking models on coding tasks",
+      "Training models with human feedback",
+      "Aligning models with a constitution",
+      "Storing quantized models for local inference"
+    ],
+    "answer": "Storing quantized models for local inference",
+    "category": "technology",
+    "tags": [
+      "quantization",
+      "gguf",
+      "local-inference"
+    ],
+    "difficulty": 2,
+    "explanation": "GGUF is the format llama.cpp introduced for packed, quantized models that run on laptops through tools like Ollama and LM Studio. Benchmarking, RLHF and constitutional alignment are unrelated uses.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "GGUF",
+      "label": "GGUF on Wikipedia"
+    },
+    "answerAliases": [
+      "GGUF",
+      "llama.cpp",
+      "quantization"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0044",
+    "text": "What does knowledge distillation usually take from the teacher model?",
+    "options": [
+      "Its output distributions or logits",
+      "Its training dataset labels",
+      "Its optimizer state",
+      "Its hardware configuration"
+    ],
+    "answer": "Its output distributions or logits",
+    "category": "technology",
+    "tags": [
+      "distillation",
+      "compression",
+      "training"
+    ],
+    "difficulty": 3,
+    "explanation": "The student learns to match the teacher's softened output distribution, which carries more information than hard labels. Dataset labels alone would be ordinary supervised training, not distillation.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Knowledge distillation",
+      "label": "Knowledge distillation on Wikipedia"
+    },
+    "answerAliases": [
+      "knowledge distillation",
+      "teacher",
+      "student",
+      "logits"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0045",
+    "text": "What kind of algorithm is proximal policy optimization?",
+    "options": [
+      "A quantization algorithm for weights",
+      "A policy gradient reinforcement learning algorithm",
+      "A tokenization algorithm for text",
+      "A retrieval algorithm for documents"
+    ],
+    "answer": "A policy gradient reinforcement learning algorithm",
+    "category": "technology",
+    "tags": [
+      "rl",
+      "ppo",
+      "post-training"
+    ],
+    "difficulty": 2,
+    "explanation": "PPO is a policy gradient method that updates a policy in small, clipped steps, and it is the algorithm behind much of the RLHF stage. Tokenization, retrieval and quantization are different problems.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Proximal policy optimization",
+      "label": "Proximal policy optimization on Wikipedia"
+    },
+    "answerAliases": [
+      "PPO",
+      "proximal policy optimization",
+      "policy gradient"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0046",
+    "text": "What does speculative decoding do during inference?",
+    "options": [
+      "It trains a smaller model on the fly",
+      "It compresses the KV cache",
+      "It proposes and verifies multiple tokens per step",
+      "It retrieves documents before answering"
+    ],
+    "answer": "It proposes and verifies multiple tokens per step",
+    "category": "technology",
+    "tags": [
+      "inference",
+      "speculative-decoding",
+      "efficiency"
+    ],
+    "difficulty": 3,
+    "explanation": "A small draft model proposes candidate tokens and the larger target model verifies them in one forward pass, preserving the target's distribution. Retrieval, online training and cache compression are not involved.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Speculative decoding",
+      "label": "Speculative decoding on Wikipedia"
+    },
+    "answerAliases": [
+      "speculative decoding",
+      "draft model",
+      "target model"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0047",
+    "text": "In speculative decoding, which model checks the proposed tokens?",
+    "options": [
+      "The smaller draft model",
+      "The tokenizer",
+      "The retrieval index",
+      "The larger target model"
+    ],
+    "answer": "The larger target model",
+    "category": "technology",
+    "tags": [
+      "inference",
+      "speculative-decoding",
+      "verification"
+    ],
+    "difficulty": 2,
+    "explanation": "The draft model proposes and the target model verifies, using rejection sampling so the final output matches the target model's distribution. The tokenizer and retrieval index do not verify tokens.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Speculative decoding",
+      "label": "Speculative decoding on Wikipedia"
+    },
+    "answerAliases": [
+      "target model",
+      "draft model",
+      "speculative decoding"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0048",
+    "text": "What does RAG avoid changing in the model?",
+    "options": [
+      "The model weights",
+      "The tokenizer vocabulary",
+      "The attention mechanism",
+      "The context window size"
+    ],
+    "answer": "The model weights",
+    "category": "technology",
+    "tags": [
+      "rag",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "difficulty": 2,
+    "explanation": "Retrieval-augmented generation leaves the weights alone and pulls documents at question time, which is why it can stay current without retraining. The tokenizer, attention and context window are not what RAG protects.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Retrieval-augmented generation",
+      "label": "Retrieval-augmented generation on Wikipedia"
+    },
+    "answerAliases": [
+      "RAG",
+      "retrieval-augmented generation",
+      "retrieval"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0049",
+    "text": "What does fine-tuning change in a model?",
+    "options": [
+      "The tokenizer's language list",
+      "The model weights through further training",
+      "Only the user interface text",
+      "The hardware it runs on"
+    ],
+    "answer": "The model weights through further training",
+    "category": "technology",
+    "tags": [
+      "fine-tuning",
+      "training",
+      "post-training"
+    ],
+    "difficulty": 2,
+    "explanation": "Fine-tuning continues training on new data, updating the weights so the model's behavior changes. The interface, hardware and tokenizer vocabulary are not what it updates.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Fine-tuning (deep learning)",
+      "label": "Fine-tuning (deep learning) on Wikipedia"
+    },
+    "answerAliases": [
+      "fine-tuning",
+      "fine tuning",
+      "training"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0051",
+    "text": "What does CLIP align during training?",
+    "options": [
+      "Audio and video streams",
+      "Model weights and gradients",
+      "User queries and passwords",
+      "Image and text representations"
+    ],
+    "answer": "Image and text representations",
+    "category": "technology",
+    "tags": [
+      "multimodal",
+      "clip",
+      "vision"
+    ],
+    "difficulty": 2,
+    "explanation": "CLIP trains an image encoder and a text encoder with a contrastive objective so matching image-text pairs sit close together. Audio, gradients and passwords are not what it aligns.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Contrastive Language–Image Pre-training",
+      "label": "Contrastive Language–Image Pre-training on Wikipedia"
+    },
+    "answerAliases": [
+      "CLIP",
+      "contrastive language-image pre-training",
+      "image and text"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0052",
+    "text": "What does a multimodal model process?",
+    "options": [
+      "Multiple kinds of input such as text and images",
+      "Only numerical tables",
+      "Only audio waveforms",
+      "Only source code"
+    ],
+    "answer": "Multiple kinds of input such as text and images",
+    "category": "technology",
+    "tags": [
+      "multimodal",
+      "vision",
+      "audio"
+    ],
+    "difficulty": 1,
+    "explanation": "Multimodal learning integrates several data types, such as text, images, audio or video, into one model. Restricting it to tables, audio or code would make it single-modal.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Multimodal learning",
+      "label": "Multimodal learning on Wikipedia"
+    },
+    "answerAliases": [
+      "multimodal",
+      "modalities",
+      "multiple types"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0053",
+    "text": "What is an AI world model used for?",
+    "options": [
+      "Tokenizing text into subwords",
+      "Simulating an environment to predict outcomes",
+      "Compressing model weights",
+      "Retrieving documents from a database"
+    ],
+    "answer": "Simulating an environment to predict outcomes",
+    "category": "technology",
+    "tags": [
+      "world-models",
+      "agents",
+      "simulation"
+    ],
+    "difficulty": 2,
+    "explanation": "A world model builds an internal simulation so an agent can try actions mentally and predict what happens next. Compression, retrieval and tokenization are unrelated jobs.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "World model (artificial intelligence)",
+      "label": "World model (artificial intelligence) on Wikipedia"
+    },
+    "answerAliases": [
+      "world model",
+      "simulation",
+      "predict"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0054",
+    "text": "What does JEPA stand for?",
+    "options": [
+      "Joint Evaluation of Prompt Accuracy",
+      "Java Enhanced Parsing Algorithm",
+      "Joint Embedding Predictive Architecture",
+      "Just Enough Parameters Available"
+    ],
+    "answer": "Joint Embedding Predictive Architecture",
+    "category": "technology",
+    "tags": [
+      "world-models",
+      "jepa",
+      "lecun"
+    ],
+    "difficulty": 2,
+    "explanation": "JEPA is Yann LeCun's proposed architecture that predicts in embedding space rather than pixel space. The other expansions are invented distractors with no connection to the term.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "World model (artificial intelligence)",
+      "label": "World model (artificial intelligence) on Wikipedia"
+    },
+    "answerAliases": [
+      "JEPA",
+      "joint embedding predictive architecture"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0055",
+    "text": "What is a jailbreak in the context of AI models?",
+    "options": [
+      "Compressing a model for mobile use",
+      "Retrieving documents for answers",
+      "Training a model from scratch",
+      "Bypassing a model's safeguards"
+    ],
+    "answer": "Bypassing a model's safeguards",
+    "category": "technology",
+    "tags": [
+      "security",
+      "jailbreaks",
+      "prompt-injection"
+    ],
+    "difficulty": 2,
+    "explanation": "A jailbreak is an input crafted to make a model ignore its safety training and produce disallowed content. Compression, retrieval and training describe unrelated processes.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Prompt injection",
+      "label": "Prompt injection on Wikipedia"
+    },
+    "answerAliases": [
+      "jailbreak",
+      "jailbreaking",
+      "bypass safeguards"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0056",
+    "text": "How does jailbreaking differ from prompt injection?",
+    "options": [
+      "Jailbreaking bypasses safeguards, while injection exploits instruction-data confusion",
+      "Jailbreaking trains weights, injection freezes them",
+      "Jailbreaking retrieves documents, injection stores them",
+      "Jailbreaking needs a GPU, injection needs a CPU"
+    ],
+    "answer": "Jailbreaking bypasses safeguards, while injection exploits instruction-data confusion",
+    "category": "technology",
+    "tags": [
+      "security",
+      "jailbreaks",
+      "prompt-injection"
+    ],
+    "difficulty": 3,
+    "explanation": "Jailbreaking aims to override safety behavior, whereas prompt injection hides instructions inside data the model treats as trusted. The hardware and weight-update distractors are not real distinctions.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Prompt injection",
+      "label": "Prompt injection on Wikipedia"
+    },
+    "answerAliases": [
+      "jailbreak",
+      "prompt injection",
+      "safeguards"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0058",
+    "text": "Why is load balancing needed in a mixture of experts model?",
+    "options": [
+      "To compress the KV cache",
+      "To retrieve documents faster",
+      "To keep tokens spread across experts",
+      "To reduce the vocabulary size"
+    ],
+    "answer": "To keep tokens spread across experts",
+    "category": "technology",
+    "tags": [
+      "moe",
+      "routing",
+      "load-balancing"
+    ],
+    "difficulty": 3,
+    "explanation": "Without load balancing, the router collapses onto a few experts and the rest go unused, wasting capacity. Vocabulary size, KV cache size and retrieval speed are not what load balancing controls.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Mixture of experts",
+      "label": "Mixture of experts on Wikipedia"
+    },
+    "answerAliases": [
+      "load balancing",
+      "mixture of experts",
+      "MoE"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "tec-0059",
+    "text": "What does sliding-window attention do in a model like Mistral 7B?",
+    "options": [
+      "Attends to every token in the full sequence at once",
+      "Attends only to a recent window of tokens in each layer",
+      "Shares one key-value head across all query heads",
+      "Adds a distance penalty to attention scores"
+    ],
+    "answer": "Attends only to a recent window of tokens in each layer",
+    "category": "technology",
+    "tags": [
+      "attention",
+      "sliding-window",
+      "efficiency"
+    ],
+    "difficulty": 3,
+    "explanation": "Each layer looks back only W tokens, which caps the KV cache each step must read, and stacking layers extends the effective reach to roughly W times depth. The shared-head option describes multi-query attention, a different fix that cuts heads rather than range.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2310.06825",
+      "label": "Mistral 7B paper on arXiv"
+    },
+    "answerAliases": [
+      "sliding window attention",
+      "SWA",
+      "Mistral 7B"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "tec-0060",
+    "text": "How does ALiBi handle token position differently from learned embeddings?",
+    "options": [
+      "Rotates query and key vectors by position-dependent angles",
+      "Adds learned absolute vectors to each token embedding",
+      "Adds a linear distance penalty to attention scores",
+      "Shares key-value heads across groups of query heads"
+    ],
+    "answer": "Adds a linear distance penalty to attention scores",
+    "category": "technology",
+    "tags": [
+      "attention",
+      "alibi",
+      "positional-encoding"
+    ],
+    "difficulty": 3,
+    "explanation": "ALiBi adds no position vectors at all and instead biases each attention score down in proportion to distance, which lets a model trained short still extrapolate to longer inputs. Rotation describes RoPE, the method ALiBi was designed to replace.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2108.12409",
+      "label": "ALiBi paper on arXiv"
+    },
+    "answerAliases": [
+      "ALiBi",
+      "attention with linear biases",
+      "Train Short, Test Long"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "tec-0061",
+    "text": "What problem does YaRN solve for RoPE-based models?",
+    "options": [
+      "Retraining the model from scratch on longer sequences",
+      "Caching repeated prompt prefixes across requests",
+      "Routing tokens to a subset of expert layers",
+      "Rescaling RoPE frequencies to stretch the context window"
+    ],
+    "answer": "Rescaling RoPE frequencies to stretch the context window",
+    "category": "technology",
+    "tags": [
+      "context-window",
+      "yarn",
+      "rope"
+    ],
+    "difficulty": 4,
+    "explanation": "YaRN reshapes RoPE frequencies NTK-by-parts with a temperature term so a pretrained model reaches 64K to 128K tokens with little fine-tuning. Caching prefixes is the prompt-caching confusion, which saves serving cost but never changes the window itself.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2309.00071",
+      "label": "YaRN paper on arXiv"
+    },
+    "answerAliases": [
+      "YaRN",
+      "NTK-by-parts",
+      "RoPE",
+      "context window extension"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "tec-0062",
+    "text": "What does multi-token prediction change about language model training?",
+    "options": [
+      "Predicts several future tokens at each position",
+      "Predicts only the single next token at each position",
+      "Predicts a masked token from both directions",
+      "Predicts a reward score for each candidate reply"
+    ],
+    "answer": "Predicts several future tokens at each position",
+    "category": "technology",
+    "tags": [
+      "pretraining",
+      "multi-token",
+      "efficiency"
+    ],
+    "difficulty": 3,
+    "explanation": "Extra output heads predict two to four tokens ahead from one trunk, which improves sample efficiency and code performance and supplies draft tokens for faster inference. Single-token prediction is the standard baseline it replaces, not a variant of it.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2404.19737",
+      "label": "Multi-token prediction paper on arXiv"
+    },
+    "answerAliases": [
+      "multi-token prediction",
+      "Gloeckle",
+      "next-token prediction"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "tec-0063",
+    "text": "What does prompt caching reuse when serving Claude?",
+    "options": [
+      "Stores final answers to repeat questions verbatim",
+      "Reuses the processed prefix of a repeated prompt",
+      "Compresses weights into fewer bits per number",
+      "Splits training across many parallel workers"
+    ],
+    "answer": "Reuses the processed prefix of a repeated prompt",
+    "category": "technology",
+    "tags": [
+      "inference",
+      "prompt-caching",
+      "efficiency"
+    ],
+    "difficulty": 2,
+    "explanation": "A stable prefix such as system instructions is processed once and its state reused, cutting latency and cost on repeated calls. Storing final answers is the semantic-cache confusion, which fails whenever the suffix changes.",
+    "source": {
+      "kind": "url",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+      "label": "Anthropic prompt caching docs"
+    },
+    "answerAliases": [
+      "prompt caching",
+      "Anthropic",
+      "Claude",
+      "cache_control"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "tec-0064",
+    "text": "How does RLAIF differ from RLHF in its source of preference labels?",
+    "options": [
+      "Rankings from paid human annotators",
+      "Hard-coded rules written by engineers",
+      "Preferences judged by another language model",
+      "Scores from a retrieval relevance index"
+    ],
+    "answer": "Preferences judged by another language model",
+    "category": "technology",
+    "tags": [
+      "post-training",
+      "rlaif",
+      "rlhf"
+    ],
+    "difficulty": 3,
+    "explanation": "RLAIF swaps expensive human comparisons for judgments from an off-the-shelf model and still matches RLHF on the studied tasks. Human rankings are the RLHF baseline it is measured against, not the thing it introduces.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2309.00267",
+      "label": "RLAIF paper on arXiv"
+    },
+    "answerAliases": [
+      "RLAIF",
+      "reinforcement learning from AI feedback",
+      "AI feedback"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "tec-0065",
+    "text": "What does ORPO remove from the preference-tuning pipeline?",
+    "options": [
+      "Trains a reward model then runs reinforcement learning",
+      "Tunes directly on preferences with no reward model",
+      "Labels outputs with a stronger AI judge model",
+      "Folds preference alignment into fine-tuning with no reference model"
+    ],
+    "answer": "Folds preference alignment into fine-tuning with no reference model",
+    "category": "technology",
+    "tags": [
+      "post-training",
+      "orpo",
+      "preference-tuning"
+    ],
+    "difficulty": 4,
+    "explanation": "ORPO adds an odds-ratio penalty during supervised fine-tuning itself, so there is no separate alignment phase and no reference policy to anchor to. Tuning on preferences without a reward model is the DPO confusion, and DPO still keeps a reference model where ORPO drops it.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2403.07691",
+      "label": "ORPO paper on arXiv"
+    },
+    "answerAliases": [
+      "ORPO",
+      "Odds Ratio Preference Optimization",
+      "reference model",
+      "monolithic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "tec-0066",
+    "text": "What does self-consistency do at decoding time?",
+    "options": [
+      "Samples many reasoning paths and takes the majority answer",
+      "Picks the single most likely token at every step",
+      "Keeps the beam with the highest total log-probability",
+      "Retrieves passages before generating each token"
+    ],
+    "answer": "Samples many reasoning paths and takes the majority answer",
+    "category": "technology",
+    "tags": [
+      "reasoning",
+      "self-consistency",
+      "decoding"
+    ],
+    "difficulty": 3,
+    "explanation": "Sampling diverse chain-of-thought paths and marginalizing to the most consistent final answer beats greedy decoding on math and reasoning benchmarks. Greedy selection is the tempting default, but one path can derail where the majority stays correct.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2203.11171",
+      "label": "Self-consistency paper on arXiv"
+    },
+    "answerAliases": [
+      "self-consistency",
+      "chain of thought",
+      "majority",
+      "Wang"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "tec-0067",
+    "text": "What problem does PagedAttention solve in LLM serving?",
+    "options": [
+      "Tiles attention to avoid writing the full matrix",
+      "Shares key-value heads across query groups",
+      "Stores the KV cache in fixed-size blocks mapped to non-contiguous memory",
+      "Quantizes cached keys and values to fewer bits"
+    ],
+    "answer": "Stores the KV cache in fixed-size blocks mapped to non-contiguous memory",
+    "category": "technology",
+    "tags": [
+      "inference",
+      "pagedattention",
+      "vllm"
+    ],
+    "difficulty": 3,
+    "explanation": "Borrowing paging from operating systems, vLLM splits each sequence cache into blocks so memory waste drops toward zero and more requests fit on one GPU. Tiling is the FlashAttention confusion, which speeds one computation rather than packing many requests.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "PagedAttention",
+      "label": "PagedAttention on Wikipedia"
+    },
+    "answerAliases": [
+      "PagedAttention",
+      "vLLM",
+      "KV cache",
+      "paged"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "tec-0068",
+    "text": "How does continuous batching schedule inference requests?",
+    "options": [
+      "Waits for the whole batch to finish before admitting new requests",
+      "Admits and retires requests after each decoding iteration",
+      "Sorts requests by prompt length before serving",
+      "Replicates the model on every available GPU"
+    ],
+    "answer": "Admits and retires requests after each decoding iteration",
+    "category": "technology",
+    "tags": [
+      "inference",
+      "batching",
+      "serving"
+    ],
+    "difficulty": 3,
+    "explanation": "Orca schedules at iteration granularity with selective batching, so finished sequences leave and new ones join without waiting for the longest generation. Static batching is the old regime it replaced, where one long output held the whole batch hostage.",
+    "source": {
+      "kind": "url",
+      "url": "https://www.usenix.org/conference/osdi22/presentation/yu",
+      "label": "Orca paper at OSDI 2022"
+    },
+    "answerAliases": [
+      "Orca",
+      "iteration-level scheduling",
+      "continuous batching",
+      "selective batching"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "tec-0069",
+    "text": "What is Triton in the GPU software stack?",
+    "options": [
+      "A cluster scheduler for serving inference jobs",
+      "A file format for quantized model weights",
+      "A wire protocol for connecting models to tools",
+      "A Python-like language for writing GPU kernels"
+    ],
+    "answer": "A Python-like language for writing GPU kernels",
+    "category": "technology",
+    "tags": [
+      "gpu",
+      "triton",
+      "kernels"
+    ],
+    "difficulty": 2,
+    "explanation": "OpenAI released Triton so researchers without CUDA experience can write fast tile-based GPU code that rivals hand-tuned kernels. The quantized-format option is the GGUF confusion, which stores weights rather than expressing computation.",
+    "source": {
+      "kind": "url",
+      "url": "https://github.com/triton-lang/triton",
+      "label": "Triton language and compiler on GitHub"
+    },
+    "answerAliases": [
+      "Triton",
+      "GPU programming",
+      "OpenAI"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "tec-0070",
+    "text": "How does the Kirchenbauer watermark mark LLM text?",
+    "options": [
+      "Boosts a pseudo-random green subset of tokens and tests for over-representation",
+      "Embeds an invisible pixel pattern in generated images",
+      "Checks whether text perplexity is unusually low",
+      "Matches text against a database of known outputs"
+    ],
+    "answer": "Boosts a pseudo-random green subset of tokens and tests for over-representation",
+    "category": "technology",
+    "tags": [
+      "watermarking",
+      "detection",
+      "safety"
+    ],
+    "difficulty": 3,
+    "explanation": "Each step splits the vocabulary into green and red lists from prior tokens and nudges sampling toward green, so a statistical test later detects the surplus. Perplexity checking is the passive-detection confusion, which needs no cooperation from the generator.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2301.10226",
+      "label": "Watermark for LLMs on arXiv"
+    },
+    "answerAliases": [
+      "watermark",
+      "green list",
+      "Kirchenbauer"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
   }
 ]

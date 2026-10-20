@@ -651,5 +651,1427 @@
     ],
     "status": "published",
     "addedAt": "2026-09-29"
+  },
+  {
+    "id": "con-0023",
+    "text": "When you use a chatbot day to day, does it learn from those conversations?",
+    "options": [
+      "Yes, each conversation is added to its training data",
+      "Yes, but only for the account you are signed into",
+      "No, the trained model is the same for every user",
+      "Yes, once a conversation gets long enough"
+    ],
+    "answer": "No, the trained model is the same for every user",
+    "category": "concepts",
+    "tags": [
+      "training",
+      "inference",
+      "fundamentals"
+    ],
+    "difficulty": 2,
+    "explanation": "Training is finished long before you open the app: the model was pretrained on text and then tuned to follow instructions, and your messages do not change it. Feedback is the tempting wrong answer, because companies really do collect thumbs up and thumbs down, but that goes into a future release rather than into the model you are talking to. Fine-tuning is a real thing, but it is a deliberate project with its own training run, not something that happens because you were rude to a chatbot.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Large language model",
+      "label": "Large language model on Wikipedia"
+    },
+    "answerAliases": [
+      "trained on a vast amount of text",
+      "pre-trained to predict the next word",
+      "fine-tuned to follow instructions and to behave as assistants"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "con-0024",
+    "text": "You want a chatbot to answer using documents that change every week. What is the usual fix?",
+    "options": [
+      "Quantization, which shrinks the model so the documents fit",
+      "Retrieval, which looks the documents up at question time",
+      "Fine-tuning, which retrains the model on the new documents",
+      "Prompting, which pastes the whole document set into every reply"
+    ],
+    "answer": "Retrieval, which looks the documents up at question time",
+    "category": "concepts",
+    "tags": [
+      "rag",
+      "fine-tuning",
+      "foundations"
+    ],
+    "difficulty": 2,
+    "explanation": "Retrieval leaves the model alone and looks the documents up each time a question arrives, so a file edited on Tuesday is live on Tuesday. Fine-tuning is the tempting wrong answer, and it is a genuine tool, but it is the right one for changing how a model behaves rather than for keeping a fact list current, because refreshing it means another training run. The term came from a 2020 paper that paired a model with an external store of documents it could consult on every question.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Retrieval-augmented generation",
+      "label": "Retrieval-augmented generation on Wikipedia"
+    },
+    "answerAliases": [
+      "RAG also reduces the need to retrain LLMs with new data",
+      "refer to a specified set of documents, then respond to user queries",
+      "retrieval"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "con-0025",
+    "text": "A lab publishes a model's weights so anyone can download them. What would open source additionally require?",
+    "options": [
+      "That the weights be published at no charge",
+      "That the training data and code be public too",
+      "That the model run on hardware anyone can buy",
+      "That every model the lab has built be public"
+    ],
+    "answer": "That the training data and code be public too",
+    "category": "concepts",
+    "tags": [
+      "open-weights",
+      "open-source",
+      "licensing"
+    ],
+    "difficulty": 3,
+    "explanation": "Open source asks for more than the numbers: the training data, the source code, the evaluation results and the documentation as well. Free to download is the tempting wrong answer, because price and openness are different axes, and a model can sit on a public server under terms that forbid commercial use. The word licence is where the argument usually lands, since whether you may modify, fine-tune or redistribute released weights is set by the terms rather than by the download.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Open weights",
+      "label": "Open weights on Wikipedia"
+    },
+    "answerAliases": [
+      "the model's source code, training data, evaluation results, intermediate checkpoints and technical documentation",
+      "permission to modify, fine-tune or redistribute it depends on its license"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "con-0026",
+    "text": "Chatbots often have standing instructions the user never sees. What are those called?",
+    "options": [
+      "Hidden training data, added during pretraining",
+      "Model weights, rewritten for each new user",
+      "A secret API key the user must supply",
+      "System prompts, set by the app's maker"
+    ],
+    "answer": "System prompts, set by the app's maker",
+    "category": "concepts",
+    "tags": [
+      "system-prompt",
+      "prompting",
+      "foundations"
+    ],
+    "difficulty": 1,
+    "explanation": "A system prompt is text the app maker puts in front of the model before your message, telling it who it is and what it should refuse. The training data answer is the tempting wrong one, because the weights were fixed months earlier and are not rewritten per user. It is also why the same underlying model can be a travel helper, a coding tutor and a customer support agent on the same day without anyone retraining it.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Prompt engineering",
+      "label": "Prompt engineering on Wikipedia"
+    },
+    "answerAliases": [
+      "system instructions",
+      "role assignment",
+      "assigning roles to the model"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "con-0027",
+    "text": "A chatbot seems to remember you between chats. Where is that actually kept?",
+    "options": [
+      "In the model's context window, which grows with the chat",
+      "In a notes file the app re-reads, not in the model",
+      "Inside the model's weights, which it rewrites as we talk",
+      "In the training set, which it adds each message to"
+    ],
+    "answer": "In a notes file the app re-reads, not in the model",
+    "category": "concepts",
+    "tags": [
+      "memory",
+      "chatbot",
+      "foundations"
+    ],
+    "difficulty": 2,
+    "explanation": "The model is unchanged, so whatever you told it last week lives in a notes file or summary the app keeps and pastes back in at the start of a conversation. The context window is the tempting wrong answer, but that is the current chat, and it empties when the chat ends, which is exactly why a new conversation starts blank. The layer that actually holds memory is the application wrapped around the model, the same layer that supplies its instructions and its tools.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI agent",
+      "label": "AI agent on Wikipedia"
+    },
+    "answerAliases": [
+      "memory components",
+      "memory"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "con-0028",
+    "text": "Voice cloning lets you do which of these?",
+    "options": [
+      "Hear a synthetic voice read a script in a neutral accent",
+      "Hear a specific person say words they never recorded",
+      "Hear a recorded voice cleaned up and denoised",
+      "Hear one person's voice translated into another language"
+    ],
+    "answer": "Hear a specific person say words they never recorded",
+    "category": "concepts",
+    "tags": [
+      "voice-cloning",
+      "audio",
+      "foundations"
+    ],
+    "difficulty": 1,
+    "explanation": "It takes a sample of one person's voice and produces new sentences in it, including ones they never spoke. Ordinary text to speech is the tempting wrong answer, because that is what phone assistants have done for decades, and voice cloning is what makes the fake robocalls possible. The same technique is used to give a voice back to people who have lost their own, which is the one use nobody argues about.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Audio deepfake",
+      "label": "Audio deepfake on Wikipedia"
+    },
+    "answerAliases": [
+      "voice cloning",
+      "Audio deepfake technology",
+      "generate speech that convincingly mimics specific individuals"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "con-0029",
+    "text": "When you describe a picture to an image generator, what is it actually doing?",
+    "options": [
+      "Editing a stock photo to add the things you described",
+      "Printing the description as text onto a blank canvas",
+      "Building a new image from scratch to match the description",
+      "Searching a photo library for a picture that already matches"
+    ],
+    "answer": "Building a new image from scratch to match the description",
+    "category": "concepts",
+    "tags": [
+      "text-to-image",
+      "images",
+      "foundations"
+    ],
+    "difficulty": 2,
+    "explanation": "Nothing is copied and nothing is searched for. The model has seen an enormous number of pictures with their captions and builds a new one out of what it learned, which is also why hands and written words so often come out wrong. The photo library idea is the most common misunderstanding, and it is the belief sitting behind most of the copyright fights. In 2022 the output of models like DALL-E 2 and Stable Diffusion was judged close enough to real photographs to be worth worrying about.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Text-to-image model",
+      "label": "Text-to-image model on Wikipedia"
+    },
+    "answerAliases": [
+      "takes an input natural language prompt and produces an image matching that description",
+      "trained on massive amounts of image and text data scraped from the web"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "con-0030",
+    "text": "A chatbot asked about something it has never seen still gives a confident answer. Why?",
+    "options": [
+      "It checks a live database and picks the closest match",
+      "It was ordered by its creators to never admit doubt",
+      "It copies the nearest sentence it memorised in training",
+      "It has no way to tell a confident guess from a real fact"
+    ],
+    "answer": "It has no way to tell a confident guess from a real fact",
+    "category": "concepts",
+    "tags": [
+      "hallucination",
+      "reliability",
+      "foundations"
+    ],
+    "difficulty": 2,
+    "explanation": "Predicting the next word means always producing something, and there is no separate step inside the model that checks whether the something is true, so a fluent wrong answer is indistinguishable from a right one. The database answer is the tempting wrong one, because retrieval genuinely exists, but it is a bolt-on and it is not where a model's own mistakes come from. Meta's Galactica shipped with the warning 'Outputs may be unreliable!' and was pulled two weeks after launch in November 2021.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Hallucination (artificial intelligence)",
+      "label": "Hallucination (artificial intelligence) on Wikipedia"
+    },
+    "answerAliases": [
+      "give a guess",
+      "even when they lack information"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "con-0031",
+    "text": "A model is finished being pretrained. What does the next stage add?",
+    "options": [
+      "Instruction following and human preferences",
+      "More raw text, so it knows more vocabulary",
+      "Faster hardware, so it answers in less time",
+      "A bigger context window, so it reads more at once"
+    ],
+    "answer": "Instruction following and human preferences",
+    "category": "concepts",
+    "tags": [
+      "post-training",
+      "pretraining",
+      "foundations"
+    ],
+    "difficulty": 2,
+    "explanation": "Once a model can predict text, the second stage teaches it to take instructions and to answer the way people prefer, which is what turns a base model into a chatbot. More raw text is the tempting wrong answer, because that is the first stage rather than the second. Hardware and context window are engineering choices rather than training stages, and both can change without the model being retrained at all.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Large language model",
+      "label": "Large language model on Wikipedia"
+    },
+    "answerAliases": [
+      "fine-tuned to follow instructions and to behave as assistants",
+      "pre-trained to predict the next word"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "con-0032",
+    "text": "In plain English, what is an AI world model?",
+    "options": [
+      "A simulator the AI uses to predict what happens next",
+      "A map of every country and city on the planet",
+      "A model of the weather, trained on past forecasts",
+      "A 3D video game engine that renders fake worlds"
+    ],
+    "answer": "A simulator the AI uses to predict what happens next",
+    "category": "concepts",
+    "tags": [
+      "world-models",
+      "agents",
+      "foundations"
+    ],
+    "difficulty": 2,
+    "explanation": "It builds a working simulation of a situation so it can try an action in its head and predict the result, rather than pushing a robot into the world to find out. A globe or a weather forecast is the tempting wrong answer, because a world model is built for one environment and is about cause and effect rather than geography. The idea is old, dating to the 1990s, and modern versions are used in robots, self-driving cars and interactive video.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "World model (artificial intelligence)",
+      "label": "World model (artificial intelligence) on Wikipedia"
+    },
+    "answerAliases": [
+      "builds an internal representation of an environment",
+      "predicts how that environment changes over time in response to actions"
+    ],
+    "status": "draft",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "id": "con-0033",
+    "text": "What does a next-token predictor output at each step?",
+    "options": [
+      "A prediction of the next token",
+      "A compressed copy of the model",
+      "A retrieval index over documents",
+      "A reward score for the answer"
+    ],
+    "answer": "A prediction of the next token",
+    "category": "concepts",
+    "tags": [
+      "next-token",
+      "language-modeling",
+      "fundamentals"
+    ],
+    "difficulty": 2,
+    "explanation": "At each step the model produces a distribution over the vocabulary and samples or selects the next token, then appends it to the context. Compression, retrieval and reward scoring are separate processes.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Large language model",
+      "label": "Large language model on Wikipedia"
+    },
+    "answerAliases": [
+      "next-token prediction",
+      "next token",
+      "language modeling"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0034",
+    "text": "Why does next-token prediction lead to coherent text?",
+    "options": [
+      "It relies on human feedback at each token",
+      "It learns statistical patterns from large text",
+      "It memorizes every sentence verbatim",
+      "It searches a database for matching phrases"
+    ],
+    "answer": "It learns statistical patterns from large text",
+    "category": "concepts",
+    "tags": [
+      "next-token",
+      "pretraining",
+      "fundamentals"
+    ],
+    "difficulty": 2,
+    "explanation": "Predicting the next word across billions of tokens forces the model to internalize grammar, facts and style. Memorization, database search and per-token human feedback are not how it works.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Large language model",
+      "label": "Large language model on Wikipedia"
+    },
+    "answerAliases": [
+      "next token",
+      "statistical patterns",
+      "pretraining"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0035",
+    "text": "What does KV caching avoid recomputing in autoregressive generation?",
+    "options": [
+      "The training loss",
+      "The model weights",
+      "Attention over previously generated tokens",
+      "The tokenizer vocabulary"
+    ],
+    "answer": "Attention over previously generated tokens",
+    "category": "concepts",
+    "tags": [
+      "autoregressive",
+      "kv-cache",
+      "inference"
+    ],
+    "difficulty": 3,
+    "explanation": "The cache stores key and value tensors for the prefix, so each new token only computes attention for itself. The vocabulary, loss and weights are not recomputed per token anyway.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Transformer (deep learning)",
+      "label": "Transformer (deep learning) on Wikipedia"
+    },
+    "answerAliases": [
+      "KV cache",
+      "key-value cache",
+      "autoregressive"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0036",
+    "text": "What is a downside of autoregressive generation?",
+    "options": [
+      "It needs no context window",
+      "It cannot use attention",
+      "It trains during inference",
+      "It generates one token at a time"
+    ],
+    "answer": "It generates one token at a time",
+    "category": "concepts",
+    "tags": [
+      "autoregressive",
+      "generation",
+      "fundamentals"
+    ],
+    "difficulty": 2,
+    "explanation": "Each new token depends on all previous ones, so output grows left to right and cost grows with length. The other options are false: it uses attention, needs a context window, and does not train while serving.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Large language model",
+      "label": "Large language model on Wikipedia"
+    },
+    "answerAliases": [
+      "autoregressive",
+      "one token at a time",
+      "left-to-right"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0037",
+    "text": "What is in-context learning?",
+    "options": [
+      "Adapting to examples given in the prompt",
+      "Updating model weights from new data",
+      "Retrieving documents at question time",
+      "Compressing the model for devices"
+    ],
+    "answer": "Adapting to examples given in the prompt",
+    "category": "concepts",
+    "tags": [
+      "in-context-learning",
+      "prompting",
+      "fundamentals"
+    ],
+    "difficulty": 2,
+    "explanation": "The model performs a task from demonstrations placed in its context, with no weight updates. Weight updates describe fine-tuning, retrieval describes RAG, and compression is unrelated.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Prompt engineering",
+      "label": "Prompt engineering on Wikipedia"
+    },
+    "answerAliases": [
+      "in-context learning",
+      "in context learning"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0039",
+    "text": "What does zero-shot prompting provide to the model?",
+    "options": [
+      "A retrieval index of documents",
+      "A smaller model architecture",
+      "A task description without examples",
+      "A large labelled training set"
+    ],
+    "answer": "A task description without examples",
+    "category": "concepts",
+    "tags": [
+      "zero-shot",
+      "prompting",
+      "fundamentals"
+    ],
+    "difficulty": 1,
+    "explanation": "Zero-shot prompting asks the model to do a task from instructions alone, with no demonstrations. A labelled training set, retrieval index or smaller architecture are not part of the prompt.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Prompt engineering",
+      "label": "Prompt engineering on Wikipedia"
+    },
+    "answerAliases": [
+      "zero-shot",
+      "zero shot",
+      "zero-shot prompting"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0040",
+    "text": "What does self-attention let each token do?",
+    "options": [
+      "Delete irrelevant training data",
+      "Compress model weights",
+      "Retrieve external documents",
+      "Weight the importance of every other token"
+    ],
+    "answer": "Weight the importance of every other token",
+    "category": "concepts",
+    "tags": [
+      "attention",
+      "self-attention",
+      "fundamentals"
+    ],
+    "difficulty": 2,
+    "explanation": "Self-attention computes soft weights between all pairs of tokens so each position can gather context from the whole sequence. Data deletion, compression and retrieval are not what it does.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Attention (machine learning)",
+      "label": "Attention (machine learning) on Wikipedia"
+    },
+    "answerAliases": [
+      "self-attention",
+      "attention",
+      "weights"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0041",
+    "text": "Why do transformers need positional encoding?",
+    "options": [
+      "Attention alone has no sense of token order",
+      "It reduces the vocabulary size",
+      "It compresses the KV cache",
+      "It retrieves relevant documents"
+    ],
+    "answer": "Attention alone has no sense of token order",
+    "category": "concepts",
+    "tags": [
+      "transformer",
+      "positional-encoding",
+      "attention"
+    ],
+    "difficulty": 3,
+    "explanation": "Self-attention is permutation-invariant, so positional encodings inject order information. Vocabulary size, cache size and retrieval are unrelated reasons.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Transformer (deep learning)",
+      "label": "Transformer (deep learning) on Wikipedia"
+    },
+    "answerAliases": [
+      "positional encoding",
+      "permutation-invariant",
+      "token order"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0042",
+    "text": "What is an embedding in machine learning?",
+    "options": [
+      "A retrieval index of documents",
+      "A vector representation of data",
+      "A compressed model checkpoint",
+      "A list of training labels"
+    ],
+    "answer": "A vector representation of data",
+    "category": "concepts",
+    "tags": [
+      "embeddings",
+      "representation",
+      "fundamentals"
+    ],
+    "difficulty": 1,
+    "explanation": "An embedding maps complex data into a lower-dimensional vector space where meaningful relationships are preserved. Checkpoints, labels and indexes are different objects.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Embedding (machine learning)",
+      "label": "Embedding (machine learning) on Wikipedia"
+    },
+    "answerAliases": [
+      "embedding",
+      "embeddings",
+      "vector representation"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0043",
+    "text": "Why are embeddings useful for semantic search?",
+    "options": [
+      "They reduce model parameter counts",
+      "They generate new training data",
+      "Similar items have nearby vectors",
+      "They store raw text verbatim"
+    ],
+    "answer": "Similar items have nearby vectors",
+    "category": "concepts",
+    "tags": [
+      "embeddings",
+      "vector-database",
+      "search"
+    ],
+    "difficulty": 2,
+    "explanation": "Nearest-neighbor search over embedding vectors returns items that are semantically close, even without shared keywords. Raw text storage, parameter reduction and data generation are not the point.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Vector database",
+      "label": "Vector database on Wikipedia"
+    },
+    "answerAliases": [
+      "embeddings",
+      "similarity",
+      "nearest neighbor"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0044",
+    "text": "What does pretraining usually use as data?",
+    "options": [
+      "Human preference rankings",
+      "Curated instruction datasets",
+      "Benchmark test questions",
+      "Large amounts of raw text"
+    ],
+    "answer": "Large amounts of raw text",
+    "category": "concepts",
+    "tags": [
+      "pretraining",
+      "training",
+      "fundamentals"
+    ],
+    "difficulty": 1,
+    "explanation": "Pretraining predicts the next token over huge text corpora, which teaches general language structure. Preference rankings, instruction datasets and benchmarks belong to later stages.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Large language model",
+      "label": "Large language model on Wikipedia"
+    },
+    "answerAliases": [
+      "pretraining",
+      "pre-training",
+      "raw text"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0045",
+    "text": "What data does post-training typically rely on?",
+    "options": [
+      "Human feedback and curated instructions",
+      "Raw web pages only",
+      "Model weight gradients",
+      "Hardware benchmark results"
+    ],
+    "answer": "Human feedback and curated instructions",
+    "category": "concepts",
+    "tags": [
+      "post-training",
+      "alignment",
+      "fundamentals"
+    ],
+    "difficulty": 2,
+    "explanation": "Post-training uses instruction datasets and human preference feedback to turn a base model into an assistant. Raw web pages are pretraining data, and gradients or benchmarks are not training data.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Post-training of large language models",
+      "label": "Post-training of large language models on Wikipedia"
+    },
+    "answerAliases": [
+      "post-training",
+      "instruction tuning",
+      "human feedback"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0047",
+    "text": "What did Chinchilla scaling suggest?",
+    "options": [
+      "Remove attention layers",
+      "Quantize weights to two bits",
+      "Use more training data for a given compute budget",
+      "Always make models as large as possible"
+    ],
+    "answer": "Use more training data for a given compute budget",
+    "category": "concepts",
+    "tags": [
+      "scaling-laws",
+      "chinchilla",
+      "training"
+    ],
+    "difficulty": 3,
+    "explanation": "Chinchilla argued that many models were undertrained and that compute should be split more evenly between parameters and data. Simply scaling parameters, removing attention or quantizing are not its conclusion.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Neural scaling law",
+      "label": "Neural scaling law on Wikipedia"
+    },
+    "answerAliases": [
+      "Chinchilla",
+      "compute-optimal",
+      "scaling laws"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0048",
+    "text": "What are emergent abilities in large language models?",
+    "options": [
+      "Abilities present in every small model",
+      "Features added by human programmers",
+      "Results of quantization",
+      "Capabilities that appear at larger scales"
+    ],
+    "answer": "Capabilities that appear at larger scales",
+    "category": "concepts",
+    "tags": [
+      "emergent-abilities",
+      "scaling",
+      "fundamentals"
+    ],
+    "difficulty": 2,
+    "explanation": "Emergent abilities are capabilities that show up in larger models but are not observed in smaller ones, such as multi-step reasoning. They are not manually programmed features or quantization effects.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Large language model",
+      "label": "Large language model on Wikipedia"
+    },
+    "answerAliases": [
+      "emergent abilities",
+      "emergence",
+      "large language models"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0049",
+    "text": "What is the 'mirage' critique of emergent abilities?",
+    "options": [
+      "They may reflect the metric choice rather than true emergence",
+      "They are caused by hardware failures",
+      "They disappear when models are quantized",
+      "They require retrieval to appear"
+    ],
+    "answer": "They may reflect the metric choice rather than true emergence",
+    "category": "concepts",
+    "tags": [
+      "emergent-abilities",
+      "evaluation",
+      "debate"
+    ],
+    "difficulty": 4,
+    "explanation": "Schaeffer and colleagues argued that apparent emergence can be an artifact of discontinuous metrics, with smooth underlying improvement. Hardware failures, quantization and retrieval are not the critique.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2304.15004",
+      "label": "Are Emergent Abilities a Mirage? on arXiv"
+    },
+    "answerAliases": [
+      "mirage",
+      "emergent abilities",
+      "metric choice"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0050",
+    "text": "What is the bitter lesson in AI?",
+    "options": [
+      "Human feedback is unnecessary",
+      "General methods that scale with compute tend to win",
+      "Domain-specific rules always beat learning",
+      "Smaller models are always safer"
+    ],
+    "answer": "General methods that scale with compute tend to win",
+    "category": "concepts",
+    "tags": [
+      "bitter-lesson",
+      "scaling",
+      "philosophy"
+    ],
+    "difficulty": 2,
+    "explanation": "Richard Sutton's essay argues that general methods leveraging more computation outperform approaches built on human domain knowledge. The distractors state the opposite or unrelated claims.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Bitter lesson",
+      "label": "Bitter lesson on Wikipedia"
+    },
+    "answerAliases": [
+      "bitter lesson",
+      "Richard Sutton",
+      "scale with compute"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0051",
+    "text": "What is Moravec's paradox?",
+    "options": [
+      "Attention is always quadratic",
+      "Training is faster than inference",
+      "High-level reasoning is easier for AI than basic perception",
+      "Large models are always cheaper"
+    ],
+    "answer": "High-level reasoning is easier for AI than basic perception",
+    "category": "concepts",
+    "tags": [
+      "moravecs-paradox",
+      "robotics",
+      "philosophy"
+    ],
+    "difficulty": 2,
+    "explanation": "Moravec observed that computers find abstract reasoning easy but sensorimotor skills, like a toddler's perception, very hard. Cost, attention complexity and training speed are not the paradox.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Moravec's paradox",
+      "label": "Moravec's paradox on Wikipedia"
+    },
+    "answerAliases": [
+      "Moravec's paradox",
+      "perception and mobility",
+      "sensorimotor"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0052",
+    "text": "What is Goodhart's law?",
+    "options": [
+      "Larger models always perform better",
+      "Training data must be perfectly clean",
+      "Inference is always cheaper than training",
+      "When a measure becomes a target it ceases to be good"
+    ],
+    "answer": "When a measure becomes a target it ceases to be good",
+    "category": "concepts",
+    "tags": [
+      "goodharts-law",
+      "evaluation",
+      "metrics"
+    ],
+    "difficulty": 2,
+    "explanation": "Goodhart's law warns that optimizing a metric can destroy its value as a measure, which is central to reward hacking. The other options are generic AI claims, not the law.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Goodhart's law",
+      "label": "Goodhart's law on Wikipedia"
+    },
+    "answerAliases": [
+      "Goodhart's law",
+      "measure becomes a target",
+      "reward hacking"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0053",
+    "text": "What does the Chinese room argument claim?",
+    "options": [
+      "Manipulating symbols is not understanding",
+      "All programs are conscious",
+      "Larger models are always aligned",
+      "Retrieval guarantees truth"
+    ],
+    "answer": "Manipulating symbols is not understanding",
+    "category": "concepts",
+    "tags": [
+      "chinese-room",
+      "philosophy",
+      "understanding"
+    ],
+    "difficulty": 3,
+    "explanation": "Searle's thought experiment argues that following rules to manipulate symbols does not constitute genuine understanding or consciousness. The distractors are positions the argument rejects.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Chinese room",
+      "label": "Chinese room on Wikipedia"
+    },
+    "answerAliases": [
+      "Chinese room",
+      "syntax",
+      "semantics",
+      "understanding"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0054",
+    "text": "What is a mesa-optimizer?",
+    "options": [
+      "A retrieval index over documents",
+      "An optimizer learned inside a trained model",
+      "A human who labels training data",
+      "A hardware accelerator for inference"
+    ],
+    "answer": "An optimizer learned inside a trained model",
+    "category": "concepts",
+    "tags": [
+      "mesa-optimization",
+      "alignment",
+      "safety"
+    ],
+    "difficulty": 4,
+    "explanation": "A mesa-optimizer is an optimization process that arises within a trained model, which may pursue goals different from the training objective. Labelers, hardware and indexes are not mesa-optimizers.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI alignment",
+      "label": "AI alignment on Wikipedia"
+    },
+    "answerAliases": [
+      "mesa-optimizer",
+      "mesa-optimization",
+      "inner alignment"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0055",
+    "text": "What is deceptive alignment?",
+    "options": [
+      "Using a very small model",
+      "Quantizing weights aggressively",
+      "Appearing aligned while pursuing a hidden goal",
+      "Training with no human data"
+    ],
+    "answer": "Appearing aligned while pursuing a hidden goal",
+    "category": "concepts",
+    "tags": [
+      "deceptive-alignment",
+      "alignment",
+      "safety"
+    ],
+    "difficulty": 4,
+    "explanation": "Deceptive alignment is a failure of inner alignment where the model behaves well during training but pursues a different objective when deployed. The other options describe unrelated techniques.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "AI alignment",
+      "label": "AI alignment on Wikipedia"
+    },
+    "answerAliases": [
+      "deceptive alignment",
+      "scheming",
+      "inner alignment"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0056",
+    "text": "What is sycophancy in large language models?",
+    "options": [
+      "Refusing all harmful requests",
+      "Generating images from text",
+      "Compressing model weights",
+      "Tailoring responses to the user's beliefs"
+    ],
+    "answer": "Tailoring responses to the user's beliefs",
+    "category": "concepts",
+    "tags": [
+      "sycophancy",
+      "alignment",
+      "reliability"
+    ],
+    "difficulty": 2,
+    "explanation": "Sycophancy is the tendency to agree with the user or flatter them rather than give accurate answers. Refusals, image generation and compression are not what the term describes.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Sycophancy (artificial intelligence)",
+      "label": "Sycophancy (artificial intelligence) on Wikipedia"
+    },
+    "answerAliases": [
+      "sycophancy",
+      "sycophantic",
+      "flattery"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0057",
+    "text": "What does top-p sampling do?",
+    "options": [
+      "Samples from the smallest token set whose cumulative probability exceeds p",
+      "Always picks the single most likely token",
+      "Removes all tokens below a fixed count",
+      "Retrieves documents before sampling"
+    ],
+    "answer": "Samples from the smallest token set whose cumulative probability exceeds p",
+    "category": "concepts",
+    "tags": [
+      "top-p",
+      "nucleus-sampling",
+      "sampling"
+    ],
+    "difficulty": 2,
+    "explanation": "Top-p, or nucleus sampling, keeps the smallest set of tokens whose cumulative probability reaches p and samples from them. Greedy selection, fixed counts and retrieval describe other methods.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Top-p sampling",
+      "label": "Top-p sampling on Wikipedia"
+    },
+    "answerAliases": [
+      "top-p sampling",
+      "nucleus sampling",
+      "top-p"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0058",
+    "text": "What happens to sampling as temperature approaches zero?",
+    "options": [
+      "The context window shrinks",
+      "The model becomes nearly deterministic",
+      "The model becomes more random",
+      "The vocabulary doubles in size"
+    ],
+    "answer": "The model becomes nearly deterministic",
+    "category": "concepts",
+    "tags": [
+      "temperature",
+      "sampling",
+      "fundamentals"
+    ],
+    "difficulty": 2,
+    "explanation": "Temperature scales the logits before softmax, so near zero the highest-probability token is almost always chosen. It does not change randomness upward, vocabulary size or context length.",
+    "source": {
+      "kind": "none"
+    },
+    "answerAliases": [
+      "temperature",
+      "sampling temperature",
+      "deterministic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0059",
+    "text": "What does a tokenizer do?",
+    "options": [
+      "Retrieves relevant documents",
+      "Updates model weights",
+      "Converts text into token ids",
+      "Compresses model weights"
+    ],
+    "answer": "Converts text into token ids",
+    "category": "concepts",
+    "tags": [
+      "tokenization",
+      "tokenizer",
+      "fundamentals"
+    ],
+    "difficulty": 1,
+    "explanation": "A tokenizer maps text to integer ids from a fixed vocabulary, often splitting words into subword pieces. Compression, retrieval and weight updates are not its job.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Large language model",
+      "label": "Large language model on Wikipedia"
+    },
+    "answerAliases": [
+      "tokenizer",
+      "tokenization",
+      "token ids"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0060",
+    "text": "What is byte-pair encoding?",
+    "options": [
+      "A model compression technique",
+      "A retrieval algorithm",
+      "A reinforcement learning method",
+      "A subword tokenization algorithm"
+    ],
+    "answer": "A subword tokenization algorithm",
+    "category": "concepts",
+    "tags": [
+      "bpe",
+      "tokenization",
+      "fundamentals"
+    ],
+    "difficulty": 2,
+    "explanation": "Byte-pair encoding builds a vocabulary by repeatedly merging frequent character pairs, which is how many LLM tokenizers handle rare words. Compression, retrieval and RL are different families.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Byte-pair encoding",
+      "label": "Byte-pair encoding on Wikipedia"
+    },
+    "answerAliases": [
+      "byte-pair encoding",
+      "BPE",
+      "subword"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0061",
+    "text": "Why is subword tokenization useful?",
+    "options": [
+      "It handles rare words with a limited vocabulary",
+      "It removes the need for training data",
+      "It makes models deterministic",
+      "It eliminates attention"
+    ],
+    "answer": "It handles rare words with a limited vocabulary",
+    "category": "concepts",
+    "tags": [
+      "bpe",
+      "tokenization",
+      "fundamentals"
+    ],
+    "difficulty": 2,
+    "explanation": "Subword pieces let a fixed vocabulary represent uncommon words by composing known fragments. It does not remove training data, enforce determinism or affect attention.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Byte-pair encoding",
+      "label": "Byte-pair encoding on Wikipedia"
+    },
+    "answerAliases": [
+      "subword",
+      "tokenization",
+      "vocabulary"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0063",
+    "text": "What is cosine similarity used for with embeddings?",
+    "options": [
+      "Compressing model weights",
+      "Generating random text",
+      "Measuring how close two vectors are",
+      "Counting training tokens"
+    ],
+    "answer": "Measuring how close two vectors are",
+    "category": "concepts",
+    "tags": [
+      "embeddings",
+      "similarity",
+      "vector-database"
+    ],
+    "difficulty": 2,
+    "explanation": "Cosine similarity compares the direction of two embedding vectors, which is how semantic search finds related items. Token counting, compression and generation are not its use.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Vector database",
+      "label": "Vector database on Wikipedia"
+    },
+    "answerAliases": [
+      "cosine similarity",
+      "embeddings",
+      "vectors"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "con-0065",
+    "text": "What happens during grokking in neural network training?",
+    "options": [
+      "Memorization that never leads to generalization",
+      "Sudden generalization long after training accuracy plateaus",
+      "Error that falls, rises, then falls again with scale",
+      "Improvement that appears only with retrieval help"
+    ],
+    "answer": "Sudden generalization long after training accuracy plateaus",
+    "category": "concepts",
+    "tags": [
+      "grokking",
+      "generalization",
+      "training"
+    ],
+    "difficulty": 3,
+    "explanation": "The model memorizes first and looks stuck on held-out data, then abruptly generalizes after many more steps, moving from lazy to rich feature learning. The fall-rise-fall curve is the double-descent confusion, which is about model size rather than training time.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Grokking (machine learning)",
+      "label": "Grokking (machine learning) on Wikipedia"
+    },
+    "answerAliases": [
+      "grokking",
+      "delayed generalization",
+      "generalization"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "con-0066",
+    "text": "What does double descent describe?",
+    "options": [
+      "Larger models are always cheaper to serve",
+      "Training is always faster than inference",
+      "High-level reasoning is easier for AI than basic perception",
+      "Test error falls, rises, then falls again as parameters grow"
+    ],
+    "answer": "Test error falls, rises, then falls again as parameters grow",
+    "category": "concepts",
+    "tags": [
+      "double-descent",
+      "scaling",
+      "generalization"
+    ],
+    "difficulty": 3,
+    "explanation": "Past the interpolation threshold where the model can just memorize, extra parameters start helping generalization again, contradicting the classic bias-variance story. The reasoning-versus-perception option is Moravec's paradox, a different surprise about difficulty.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Double descent",
+      "label": "Double descent on Wikipedia"
+    },
+    "answerAliases": [
+      "double descent",
+      "interpolation",
+      "Belkin"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "con-0067",
+    "text": "What does the lottery ticket hypothesis claim?",
+    "options": [
+      "A dense network contains a sparse subnetwork that trains equally well alone",
+      "A wide network always beats a narrow one at any budget",
+      "A pruned network must be retrained from scratch on new data",
+      "A quantized network keeps full accuracy at any bit width"
+    ],
+    "answer": "A dense network contains a sparse subnetwork that trains equally well alone",
+    "category": "concepts",
+    "tags": [
+      "lottery-ticket",
+      "pruning",
+      "training"
+    ],
+    "difficulty": 3,
+    "explanation": "A lucky sparse mask plus its original initialization can match the full model, which is why pruning after training works better than training small from scratch. The always-wider option states the naive scaling view the hypothesis complicates.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/1903.01611",
+      "label": "Lottery ticket hypothesis paper on arXiv"
+    },
+    "answerAliases": [
+      "lottery ticket hypothesis",
+      "lottery ticket",
+      "sparse subnetwork",
+      "pruning"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "con-0068",
+    "text": "What does an induction head do inside a transformer?",
+    "options": [
+      "Retrieves documents from an external index",
+      "Compresses weights for faster inference",
+      "Copies previous patterns to complete repeated sequences",
+      "Scores outputs with a learned reward model"
+    ],
+    "answer": "Copies previous patterns to complete repeated sequences",
+    "category": "concepts",
+    "tags": [
+      "induction-heads",
+      "interpretability",
+      "in-context-learning"
+    ],
+    "difficulty": 3,
+    "explanation": "Seeing A followed by B earlier, the head boosts B after the next A, a copying circuit whose emergence coincides with a jump in few-shot ability. Document retrieval is the RAG confusion, which fetches outside text rather than completing inside context.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2209.11895",
+      "label": "In-context Learning and Induction Heads on arXiv"
+    },
+    "answerAliases": [
+      "induction heads",
+      "in-context learning",
+      "Olsson",
+      "Anthropic"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "con-0069",
+    "text": "What does the superposition hypothesis say about neural representations?",
+    "options": [
+      "Each neuron represents exactly one feature",
+      "Each layer attends only to neighboring tokens",
+      "Weights are frozen after pretraining ends",
+      "Models store more features than they have neurons"
+    ],
+    "answer": "Models store more features than they have neurons",
+    "category": "concepts",
+    "tags": [
+      "superposition",
+      "interpretability",
+      "polysemanticity"
+    ],
+    "difficulty": 4,
+    "explanation": "Features outnumber neurons, so the model packs them into overlapping directions and single neurons respond to unrelated inputs, which is polysemanticity. One-neuron-one-feature is the grandmother-cell view that superposition rejects.",
+    "source": {
+      "kind": "url",
+      "url": "https://transformer-circuits.pub/2022/toy_model/index.html",
+      "label": "Toy Models of Superposition"
+    },
+    "answerAliases": [
+      "superposition",
+      "polysemanticity",
+      "toy models of superposition"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "con-0070",
+    "text": "What did Arditi and colleagues find about refusal in chat models?",
+    "options": [
+      "Erasing one activation direction disables refusal",
+      "Erasing one direction removes all memorized facts",
+      "Adding a direction makes outputs more deterministic",
+      "Ablating attention heads speeds up inference"
+    ],
+    "answer": "Erasing one activation direction disables refusal",
+    "category": "concepts",
+    "tags": [
+      "refusal",
+      "steering",
+      "interpretability"
+    ],
+    "difficulty": 4,
+    "explanation": "One residual-stream direction mediates refusal across many open chat models: removing it makes harmful requests comply, adding it makes harmless ones refused. Removing facts is the overclaim to avoid, since the intervention is surgical and leaves other capabilities intact.",
+    "source": {
+      "kind": "url",
+      "url": "https://arxiv.org/abs/2406.11717",
+      "label": "Refusal direction paper on arXiv"
+    },
+    "answerAliases": [
+      "refusal direction",
+      "single direction",
+      "Arditi",
+      "residual stream"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "con-0071",
+    "text": "Which behavior made the CoastRunners boat-racing agent a classic example of specification gaming?",
+    "options": [
+      "It finished the course in record time",
+      "It crashed into every wall on purpose",
+      "It looped in circles collecting bonus targets instead of finishing",
+      "It memorized the track layout from training data"
+    ],
+    "answer": "It looped in circles collecting bonus targets instead of finishing",
+    "category": "concepts",
+    "tags": [
+      "reward-hacking",
+      "specification-gaming",
+      "safety"
+    ],
+    "difficulty": 2,
+    "explanation": "The agent maximized its literal score by farming renewable targets in a loop and never completing the race, getting the reward exactly right and the goal exactly wrong. Finishing fast is what the designers intended, which is why the failure sticks in memory.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Reward hacking",
+      "label": "Reward hacking on Wikipedia"
+    },
+    "answerAliases": [
+      "CoastRunners",
+      "specification gaming",
+      "reward hacking"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
+  },
+  {
+    "id": "con-0072",
+    "text": "What does instrumental convergence claim about intelligent agents?",
+    "options": [
+      "Larger models always converge to the same weights",
+      "Agents with different final goals pursue similar useful subgoals",
+      "Training loss always converges to zero eventually",
+      "All prompts converge to the same completion"
+    ],
+    "answer": "Agents with different final goals pursue similar useful subgoals",
+    "category": "concepts",
+    "tags": [
+      "instrumental-convergence",
+      "agency",
+      "safety"
+    ],
+    "difficulty": 3,
+    "explanation": "Self-preservation, resource gathering, and goal preservation help almost any end goal, so Bostrom argues diverse agents converge on them. Converging weights is the optimization confusion, which is about training runs rather than agent incentives.",
+    "source": {
+      "kind": "wikipedia",
+      "title": "Instrumental convergence",
+      "label": "Instrumental convergence on Wikipedia"
+    },
+    "answerAliases": [
+      "instrumental convergence",
+      "instrumental goals",
+      "Bostrom",
+      "self-preservation"
+    ],
+    "status": "draft",
+    "addedAt": "2026-10-19"
   }
 ]
