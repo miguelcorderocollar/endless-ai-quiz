@@ -203,6 +203,11 @@ export function SignInForm({
         </button>
         {error ? <span className="text-xs leading-snug text-fail">{error}</span> : null}
       </form>
+      <p className="mt-4 text-xs leading-relaxed text-muted">
+        Password recovery and email verification are not available yet. Keep your password safe;
+        if you forget it, you cannot recover your account.
+        {" "}<Link href="/privacy" className="underline hover:text-signal">Privacy notice</Link>
+      </p>
       <span className="mt-3 flex items-center justify-between">
         <button
           type="button"

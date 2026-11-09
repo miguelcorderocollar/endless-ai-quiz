@@ -51,6 +51,7 @@ export default defineSchema({
     role: v.optional(roleValidator),
     tier: v.optional(tierValidator),
     createdAt: v.optional(v.number()),
+    deletionStartedAt: v.optional(v.number()),
   })
     .index("email", ["email"])
     .index("by_handle", ["handle"]),

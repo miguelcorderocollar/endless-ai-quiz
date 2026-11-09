@@ -27,7 +27,10 @@ export async function requireUser(ctx: QueryCtx | MutationCtx) {
   const userId = await getAuthUserId(ctx);
   if (!userId) throw new ConvexError(SIGN_IN_REQUIRED);
   const user = await ctx.db.get(userId);
-  if (!user || user.isAnonymous) throw new ConvexError(SIGN_IN_REQUIRED);
+  if (!user || user.deletionStartedAt !== undefined) {
+    throw new ConvexError("Account unavailable or being deleted.");
+  }
+  if (user.isAnonymous) throw new ConvexError(SIGN_IN_REQUIRED);
   return userId;
 }
 
