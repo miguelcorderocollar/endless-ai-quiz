@@ -24,14 +24,6 @@ export { Shell };
 
 const PAGE = 20;
 
-/**
- * Remembers for the session that the backend predates `ratingHint` (#32), so
- * every draw pays at most one validation failure. Module-level: survives
- * client-side navigation, resets on full reload (by which time the backend
- * may have been synced, so we probe again).
- */
-let hintUnsupported = false;
-
 type DrawArgs = {
   excludeIds: string[];
   count: number;
@@ -39,40 +31,16 @@ type DrawArgs = {
   ratingHint: number;
 };
 
-/**
- * Draws a page, degrading gracefully on an unsynced backend. Convex rejects
- * unknown args, so a backend predating `ratingHint` fails validation — retry
- * once without it (uniform draw, the old behavior) instead of breaking the
- * quiz. Other errors (offline, auth) propagate to the callers' handling.
- */
 async function drawPage(client: ConvexReactClient, args: DrawArgs) {
-  if (!hintUnsupported) {
-    try {
-      return await client.query(api.questions.draw, args);
-    } catch (err) {
-      if (err instanceof Error && /ratingHint|extra field/i.test(err.message)) {
-        hintUnsupported = true;
-      } else {
-        throw err;
-      }
-    }
-  }
-  return await client.query(api.questions.draw, {
-    excludeIds: args.excludeIds,
-    count: args.count,
-    categories: args.categories,
-  });
+  return await client.query(api.questions.drawForPlay, args);
 }
 
 type DrawRow = {
   questionId: string;
   text: string;
   options: string[];
-  answer: string;
   category: string;
   difficulty: number;
-  explanation: string;
-  source: Question["source"];
   tags: string[];
   addedAt: string;
 };
@@ -82,12 +50,13 @@ function toQuestion(q: DrawRow): Question {
     id: q.questionId,
     text: q.text,
     options: [...q.options] as [string, string, string, string],
-    answer: q.answer,
+    // Empty answer marks an online question awaiting server reveal.
+    answer: "",
     category: q.category as Question["category"],
     tags: [...q.tags],
     difficulty: q.difficulty,
-    explanation: q.explanation,
-    source: q.source,
+    explanation: "",
+    source: { kind: "none" },
     answerAliases: [],
     status: "published" as const,
     addedAt: q.addedAt,
@@ -256,7 +225,7 @@ export function QuizFromConvex() {
   // The filter is fixed per mount: picking categories navigates client-side
   // back to `/`, which remounts with the fresh filter (no full reload).
 
-  if (bank === null || initial === null) return <QuizSkeleton />;
+  if (bank === null || (initial === null && bank.length > 0)) return <QuizSkeleton />;
 
   if (bank.length === 0) {
     const completed = readProgress().completed.length;
@@ -310,5 +279,5 @@ export function QuizFromConvex() {
     );
   }
 
-  return <Quiz bank={bank} initial={initial} onNeedMore={topUp} categories={categories} />;
+  return <Quiz bank={bank} initial={initial!} onNeedMore={topUp} categories={categories} />;
 }

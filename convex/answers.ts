@@ -4,9 +4,40 @@ import { mutation, query } from "./_generated/server";
 import type { MutationCtx } from "./_generated/server";
 import type { Id } from "./_generated/dataModel";
 import { rateLimiter } from "./rateLimits";
+import { questionFields } from "./schema";
 import { requireUser } from "./access";
 import { STARTING_ELO, scoreAnswer } from "../src/lib/quiz/elo";
 import { getAuthUserId } from "@convex-dev/auth/server";
+
+/**
+ * Casual online reveal, available to guests too. This does not award Elo:
+ * signed-in attempts still use the existing ordered, idempotent outbox.
+ * A mutation makes this an explicit, nonreactive submission round-trip rather
+ * than a subscribed query. It intentionally writes nothing; score writes stay
+ * in the replayable outbox path. It does not commit a first pick or prevent cheating.
+ * The public offline bank means these results are unsuitable for competition.
+ */
+export const reveal = mutation({
+  args: { questionId: v.string(), picked: v.string() },
+  returns: v.object({
+    correct: v.boolean(), answer: v.string(), explanation: v.string(),
+    source: questionFields.source,
+  }),
+  handler: async (ctx, args) => {
+    const question = await ctx.db.query("questions")
+      .withIndex("by_questionId", (q) => q.eq("questionId", args.questionId)).first();
+    if (!question || question.status !== "published") {
+      throw new ConvexError("Unknown question.");
+    }
+    if (!question.options.includes(args.picked)) {
+      throw new ConvexError("Pick one of the offered options.");
+    }
+    return {
+      correct: args.picked === question.answer, answer: question.answer,
+      explanation: question.explanation, source: question.source,
+    };
+  },
+});
 
 /**
  * Records one answered question and moves Elo — the only writer of both

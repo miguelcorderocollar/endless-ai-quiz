@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { convexTest } from "convex-test";
 
-import { api } from "./_generated/api";
+import { api, internal } from "./_generated/api";
 import schema from "./schema";
 import rateLimiterTest from "@convex-dev/rate-limiter/test";
 
@@ -61,7 +61,7 @@ async function setup() {
           .collect()
       ).length;
     });
-  return { authed, eventCount };
+  return { t, userId, authed, eventCount };
 }
 
 describe("answers.answer eventId replay", () => {
@@ -135,5 +135,67 @@ describe("answers.answer eventId replay", () => {
     expect(corrected.deduped).toBe(false);
     expect(corrected.correct).toBe(true);
     expect(await eventCount()).toBe(2);
+  });
+});
+
+describe("casual question trust boundary", () => {
+  it("draws without teaching content, then reveals after a valid pick without recording", async () => {
+    const { authed, eventCount } = await setup();
+    const rows = await authed.query(api.questions.drawForPlay, { excludeIds: [] });
+    expect(rows).toHaveLength(1);
+    expect(Object.keys(rows[0]!).sort()).toEqual([
+      "addedAt", "category", "difficulty", "options", "questionId", "tags", "text",
+    ]);
+    const revealed = await authed.mutation(api.answers.reveal, {
+      questionId: rows[0]!.questionId, picked: "Robotics",
+    });
+    expect(revealed).toMatchObject({ correct: false, answer: "Machine learning" });
+    expect(revealed.explanation).not.toBe("");
+    expect(revealed.source.kind).toBe("wikipedia");
+    expect(await eventCount()).toBe(0);
+    await authed.mutation(api.answers.answer, {
+      questionId: rows[0]!.questionId, picked: "Robotics", eventId: "revealed-outbox",
+    });
+    await authed.mutation(api.answers.answer, {
+      questionId: rows[0]!.questionId, picked: "Robotics", eventId: "revealed-outbox",
+    });
+    expect(await eventCount()).toBe(1);
+  });
+
+  it("rejects invalid picks and missing questions", async () => {
+    const { authed } = await setup();
+    await expect(authed.mutation(api.answers.reveal, {
+      questionId: "con-9001", picked: "injected option",
+    })).rejects.toThrow("Pick one of the offered options");
+    await expect(authed.mutation(api.answers.reveal, {
+      questionId: "missing", picked: "Robotics",
+    })).rejects.toThrow("Unknown question");
+  });
+
+  it("gates the full bank while retaining the legacy draw", async () => {
+    const { authed } = await setup();
+    expect(await authed.query(api.questions.list, {})).toEqual([]);
+    expect((await authed.query(api.questions.draw, { excludeIds: [] }))[0]!.answer)
+      .toBe("Machine learning");
+  });
+
+  it("lets only admins read the full list and keeps the publish query internal", async () => {
+    const { t, userId, authed } = await setup();
+    expect(await t.query(api.questions.list, {})).toEqual([]);
+    const guestReveal = await t.mutation(api.answers.reveal, {
+      questionId: "con-9001", picked: "Machine learning",
+    });
+    expect(guestReveal.correct).toBe(true);
+    await t.run(async (ctx) => { await ctx.db.patch(userId, { role: "admin" }); });
+    expect((await authed.query(api.questions.list, {}))[0]!.answer).toBe("Machine learning");
+    expect(await t.query(internal.questions.publishedList, {})).toHaveLength(1);
+    await t.run(async (ctx) => {
+      const q = await ctx.db.query("questions").first();
+      await ctx.db.patch(q!._id, { status: "archived" });
+    });
+    expect(await t.query(api.questions.drawForPlay, { excludeIds: [] })).toEqual([]);
+    await expect(t.mutation(api.answers.reveal, {
+      questionId: "con-9001", picked: "Machine learning",
+    })).rejects.toThrow("Unknown question");
   });
 });

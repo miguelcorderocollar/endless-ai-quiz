@@ -33,6 +33,7 @@ import {
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import { clearOutbox } from "@/lib/answers/outbox";
 import type { Question } from "@/lib/questions/schema";
+import { loadFallbackBank } from "@/lib/questions/fallback";
 import { DoneList } from "@/components/DoneList";
 import { InstallRow } from "@/components/InstallPrompt";
 import { Popup } from "@/components/Popup";
@@ -79,7 +80,12 @@ export default function ProfilePage() {
   const { isLoading, isAuthenticated } = useConvexAuth();
   const { signOut } = useAuthActions();
   const me = useQuery(api.users.me, isAuthenticated ? {} : "skip");
-  const bank = useQuery(api.questions.list, {});
+  const [bank, setBank] = useState<Question[] | undefined>();
+  useEffect(() => {
+    let cancelled = false;
+    void loadFallbackBank().then((rows) => { if (!cancelled) setBank(rows); });
+    return () => { cancelled = true; };
+  }, []);
   const stats = useQuery(api.answers.myStats, isAuthenticated ? {} : "skip");
   const ensureStats = useMutation(api.answers.ensureStats);
   const history = useQuery(api.stats.history, isAuthenticated ? {} : "skip");
@@ -159,20 +165,7 @@ export default function ProfilePage() {
   }, [isAuthenticated, stats, ensureStats]);
 
   const questions: Question[] =
-    bank?.map((q) => ({
-      id: q.questionId,
-      text: q.text,
-      options: [...q.options] as [string, string, string, string],
-      answer: q.answer,
-      category: q.category as Question["category"],
-      tags: [...q.tags],
-      difficulty: q.difficulty,
-      explanation: q.explanation,
-      source: q.source as Question["source"],
-      answerAliases: [],
-      status: "published" as const,
-      addedAt: q.addedAt,
-    })) ?? cachedList ?? [];
+    bank && bank.length > 0 ? bank : cachedList ?? [];
   // Offline, Convex auth and every query hang instead of failing — auth never
   // settles and the query hooks stay `undefined` until the socket connects.
   // An unsettled page would park on skeletons forever, so everything below

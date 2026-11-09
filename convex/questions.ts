@@ -1,17 +1,42 @@
 import { v } from "convex/values";
 
-import { internalMutation, query } from "./_generated/server";
+import { internalMutation, internalQuery, query } from "./_generated/server";
 import { matchWeight, weightedSample } from "../src/lib/quiz/engine";
-import { questionFields } from "./schema";
+import schema, { questionFields } from "./schema";
+import { questionDigest } from "../src/lib/questions/digest";
+import { authUserId } from "./access";
+import type { QueryCtx } from "./_generated/server";
 
-/** Published bank for play. Drafts live in git; only `published` ships. */
+/** CLI-only full bank for publishing. */
+async function publishedBank(ctx: QueryCtx) {
+  return await ctx.db.query("questions")
+    .withIndex("by_status", (q) => q.eq("status", "published")).collect();
+}
+
+export const publishedList = internalQuery({
+  args: {},
+  returns: v.array(schema.doc("questions")),
+  handler: publishedBank,
+});
+
+/** Public, answer-free fingerprints so CI can detect bank drift without credentials. */
+export const publishedDigest = query({
+  args: {},
+  returns: v.array(v.object({ questionId: v.string(), digest: v.string() })),
+  handler: async (ctx) => {
+    const rows = await publishedBank(ctx);
+    return await Promise.all(rows.map(async (q) => ({ questionId: q.questionId, digest: await questionDigest(q) })));
+  },
+});
+
+/** Admin-gated compatibility shim. Old profile clients receive an empty list. */
 export const list = query({
   args: {},
+  returns: v.array(schema.doc("questions")),
   handler: async (ctx) => {
-    return await ctx.db
-      .query("questions")
-      .withIndex("by_status", (q) => q.eq("status", "published"))
-      .collect();
+    const userId = await authUserId(ctx);
+    const user = userId ? await ctx.db.get(userId) : null;
+    return user?.role === "admin" ? await publishedBank(ctx) : [];
   },
 });
 
@@ -36,42 +61,63 @@ export const list = query({
  * Past that, swap the collect for aggregate-backed random access and keep
  * this signature.
  */
-export const draw = query({
-  args: {
-    excludeIds: v.array(v.string()),
-    count: v.optional(v.number()),
-    categories: v.optional(v.array(v.string())),
-    ratingHint: v.optional(v.number()),
-  },
-  handler: async (ctx, args) => {
-    const n = Math.min(Math.max(args.count ?? 20, 1), 50);
-    const hint = args.ratingHint;
-    const excluded = new Set(args.excludeIds.slice(-1000));
-    const filter = new Set(args.categories ?? []);
-    const pool = (
-      await ctx.db
-        .query("questions")
-        .withIndex("by_status", (q) => q.eq("status", "published"))
-        .collect()
-    ).filter(
-      (q) =>
-        !excluded.has(q.questionId) &&
-        (filter.size === 0 || filter.has(q.category)),
-    );
+const drawArgs = {
+  excludeIds: v.array(v.string()),
+  count: v.optional(v.number()),
+  categories: v.optional(v.array(v.string())),
+  ratingHint: v.optional(v.number()),
+};
 
-    if (hint === undefined) {
-      for (let i = pool.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [pool[i], pool[j]] = [pool[j]!, pool[i]!];
-      }
-      return pool.slice(0, n);
+async function drawQuestions(ctx: QueryCtx, args: {
+  excludeIds: string[]; count?: number; categories?: string[]; ratingHint?: number;
+}) {
+  const n = Math.min(Math.max(args.count ?? 20, 1), 50);
+  const hint = args.ratingHint;
+  const excluded = new Set(args.excludeIds.slice(-1000));
+  const filter = new Set(args.categories ?? []);
+  const pool = (
+    await ctx.db
+      .query("questions")
+      .withIndex("by_status", (q) => q.eq("status", "published"))
+      .collect()
+  ).filter(
+    (q) =>
+      !excluded.has(q.questionId) &&
+      (filter.size === 0 || filter.has(q.category)),
+  );
+
+  if (hint === undefined) {
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j]!, pool[i]!];
     }
-    return weightedSample(
-      pool,
-      pool.map((q) => matchWeight(q.difficulty, hint)),
-      n,
-    );
-  },
+    return pool.slice(0, n);
+  }
+  return weightedSample(
+    pool,
+    pool.map((q) => matchWeight(q.difficulty, hint)),
+    n,
+  );
+}
+
+
+/** Legacy casual draw retained for installed PWA and native clients. */
+export const draw = query({
+  args: drawArgs,
+  returns: v.array(schema.doc("questions")),
+  handler: drawQuestions,
+});
+
+const playFields = v.object(questionFields).omit("answer", "explanation", "source");
+
+/** Online play gets an explicit allowlist. Teaching content waits for a pick. */
+export const drawForPlay = query({
+  args: drawArgs,
+  returns: v.array(playFields),
+  handler: async (ctx, args) => (await drawQuestions(ctx, args)).map((q) => ({
+    questionId: q.questionId, text: q.text, options: q.options,
+    category: q.category, difficulty: q.difficulty, tags: q.tags, addedAt: q.addedAt,
+  })),
 });
 
 /** Published counts per category for the picker (#12). Tiny table, direct read. */

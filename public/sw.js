@@ -36,7 +36,7 @@
  * close and simply repopulates.
  */
 
-const VERSION = "v1";
+const VERSION = "v2";
 const SHELL_CACHE = `endless-ai:shell:${VERSION}`;
 const ASSET_CACHE = `endless-ai:assets:${VERSION}`;
 const CURRENT_CACHES = [SHELL_CACHE, ASSET_CACHE];

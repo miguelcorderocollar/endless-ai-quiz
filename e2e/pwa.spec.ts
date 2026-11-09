@@ -76,8 +76,8 @@ test.describe("pwa", () => {
     const state = await page.evaluate(async () => {
       const registration = await navigator.serviceWorker.getRegistration();
       const names = await caches.keys();
-      const shell = await caches.open("endless-ai:shell:v1");
-      const assets = await caches.open("endless-ai:assets:v1");
+      const shell = await caches.open("endless-ai:shell:v2");
+      const assets = await caches.open("endless-ai:assets:v2");
       return {
         active: registration?.active?.state ?? null,
         names: names.sort(),
@@ -87,7 +87,7 @@ test.describe("pwa", () => {
     });
 
     expect(state.active).toBe("activated");
-    expect(state.names).toEqual(["endless-ai:assets:v1", "endless-ai:shell:v1"]);
+    expect(state.names).toEqual(["endless-ai:assets:v2", "endless-ai:shell:v2"]);
     expect(state.shell).toEqual(
       expect.arrayContaining(["/", "/categories", "/profile", "/manifest.webmanifest"]),
     );

@@ -97,7 +97,7 @@ if (process.argv.includes("--check")) {
 
 // Fast-path: skip the write when the target already matches.
 try {
-  const raw = convexRun("questions:list", {});
+  const raw = convexRun("questions:publishedList", {});
   const remote = JSON.parse(raw) as {
     questionId: string;
     text: string;

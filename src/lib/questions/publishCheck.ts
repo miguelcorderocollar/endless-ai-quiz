@@ -1,30 +1,30 @@
-import { questionSchema, type Question } from "./schema";
+import { questionDigest } from "./digest";
+import type { Question } from "./schema";
 
-/** Compare only publishable content, excluding Convex metadata and git-only fields. */
-function content(q: Question): string {
-  const source = q.source;
-  return JSON.stringify([
-    q.text, q.options, q.answer, q.category, q.difficulty, q.explanation,
-    [source.kind, "title" in source ? source.title : null,
-      "url" in source ? source.url : null, "label" in source ? source.label : null],
-    q.tags, q.addedAt,
-  ]);
-}
-
-export function diffPublishedBank(local: Question[], remote: unknown) {
+/**
+ * Compares git against answer-free remote digests. Answer changes are not
+ * visible here by design (see digest.ts).
+ */
+export async function diffPublishedBank(local: Question[], remote: unknown) {
   if (!Array.isArray(remote)) throw new Error("Published query did not return an array");
-  const byId = new Map<string, Question>();
+  const byId = new Map<string, string>();
   for (const row of remote) {
-    const q = questionSchema.parse({ ...row, id: row.questionId, status: "published" });
-    if (byId.has(q.id)) throw new Error(`Duplicate remote questionId: ${q.id}`);
-    byId.set(q.id, q);
+    if (typeof row?.questionId !== "string" || typeof row?.digest !== "string") {
+      throw new Error("Malformed published digest row");
+    }
+    if (byId.has(row.questionId)) throw new Error(`Duplicate remote questionId: ${row.questionId}`);
+    byId.set(row.questionId, row.digest);
   }
   const localIds = new Set(local.map((q) => q.id));
+  const changed: string[] = [];
+  for (const q of local) {
+    const digest = byId.get(q.id);
+    if (digest !== undefined && digest !== (await questionDigest(q))) changed.push(q.id);
+  }
   return {
     missing: local.filter((q) => !byId.has(q.id)).map((q) => q.id).sort(),
     extra: [...byId.keys()].filter((id) => !localIds.has(id)).sort(),
-    changed: local.filter((q) => byId.has(q.id) && content(q) !== content(byId.get(q.id)!))
-      .map((q) => q.id).sort(),
+    changed: changed.sort(),
   };
 }
 
@@ -33,7 +33,7 @@ export async function checkPublishedBank(local: Question[], url: string) {
   const response = await fetch(new URL("/api/query", url), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ path: "questions:list", args: {}, format: "json" }),
+    body: JSON.stringify({ path: "questions:publishedDigest", args: {}, format: "json" }),
     signal: AbortSignal.timeout(30_000),
   });
   if (!response.ok) throw new Error(`Published query HTTP ${response.status}`);

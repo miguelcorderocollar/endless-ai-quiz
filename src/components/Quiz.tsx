@@ -30,6 +30,9 @@ import {
   newEventId,
   shouldReconcile,
 } from "@/lib/answers/outbox";
+import { resolvePick } from "@/lib/questions/resolvePick";
+import { loadFallbackBank } from "@/lib/questions/fallback";
+import { getNetworkSnapshot, subscribeNetwork } from "@/lib/pwa/network";
 import { readProfileCache } from "@/lib/quiz/bankCache";
 
 type Phase = "question" | "revealed";
@@ -50,6 +53,7 @@ type QuizSession = {
   phase: Phase;
   picked: string | null;
   exhausted: boolean;
+  revealedQuestion?: Question;
 };
 
 let quizSession: QuizSession | null = null;
@@ -81,7 +85,8 @@ export function Quiz({
   if (session !== null && session.filterKey === filterKey) {
     const found = bank.find((q) => q.id === session.currentId) ?? null;
     if (found !== null && (categories.size === 0 || categories.has(found.category))) {
-      restoredQuestion = found;
+      restoredQuestion = session.revealedQuestion?.id === found.id
+        ? session.revealedQuestion : found;
       restoredSession = session;
     }
   }
@@ -113,6 +118,10 @@ export function Quiz({
   );
   const [exhausted, setExhausted] = useState(() => restoredSession?.exhausted ?? false);
   const { isAuthenticated } = useConvexAuth();
+  const reveal = useMutation(api.answers.reveal);
+  const pending = useRef(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [answerError, setAnswerError] = useState<string | null>(null);
   const recordAnswer = useMutation(api.answers.answer);
   const nextRef = useRef<HTMLButtonElement | null>(null);
   const optionRefs = useRef<(HTMLButtonElement | null)[]>([]);
@@ -130,10 +139,12 @@ export function Quiz({
       phase,
       picked,
       exhausted,
+      revealedQuestion: phase === "revealed" && current ? current : undefined,
     };
   }, [filterKey, current, seen, phase, picked, exhausted, initial.id]);
 
   const nextQuestion = useCallback(() => {
+    setAnswerError(null);
     const next = pickNext(bank, seen, categories, Math.random, progress.rating);
     if (!next) {
       // Current page exhausted: ask the server for more unseen questions.
@@ -164,9 +175,32 @@ export function Quiz({
   }, [bank, seen, onNeedMore, categories, progress.rating]);
 
   const answer = useCallback(
-    (option: string) => {
-      if (phase !== "question" || !current) return;
-      const correct = option === current.answer;
+    async (option: string) => {
+      if (phase !== "question" || !current || pending.current) return;
+      pending.current = true;
+      setSubmitting(true);
+      setAnswerError(null);
+      let question: Question;
+      try {
+        question = await resolvePick(
+          current, option, getNetworkSnapshot().online, reveal, loadFallbackBank,
+          (onOffline) => {
+            const check = () => { if (!getNetworkSnapshot().online) onOffline(); };
+            const unsubscribe = subscribeNetwork(check);
+            check();
+            return unsubscribe;
+          },
+        );
+      } catch {
+        setAnswerError("Could not check your answer. Try again or skip this question.");
+        return;
+      } finally {
+        pending.current = false;
+        setSubmitting(false);
+      }
+      const correct = option === question.answer;
+      const progress = readProgress();
+      setCurrent(question);
       const { rating: nextRating } = scoreAnswer(progress.rating, current.difficulty, correct);
 
       setPicked(option);
@@ -219,7 +253,7 @@ export function Quiz({
         );
       }
     },
-    [current, phase, progress, isAuthenticated, recordAnswer],
+    [current, phase, isAuthenticated, recordAnswer, reveal],
   );
 
   // Move focus to Next on reveal so Tab+Enter works; preventScroll avoids
@@ -347,7 +381,7 @@ export function Quiz({
                           optionRefs.current[index] = el;
                         }}
                         type="button"
-                        disabled={revealed}
+                        disabled={revealed || submitting}
                         onClick={() => answer(option)}
                         aria-keyshortcuts={`${letter.toLowerCase()} ${index + 1}`}
                         className={`group flex w-full items-start gap-4 border px-4 py-3.5 text-left transition-colors duration-150 ${tone} ${
@@ -367,6 +401,16 @@ export function Quiz({
                 })}
               </ul>
 
+              {submitting ? <p role="status" className="mt-4 text-muted">Checking answer…</p> : null}
+              {answerError ? (
+                <div className="mt-4 text-muted">
+                  <p role="alert">{answerError}</p>
+                  <button type="button" onClick={nextQuestion}
+                    className="label mt-3 cursor-pointer border border-ink-line px-4 py-2 hover:text-signal">
+                    skip this question
+                  </button>
+                </div>
+              ) : null}
               {phase === "revealed" ? (
                 <Reveal
                   key={`reveal-${current.id}`}
