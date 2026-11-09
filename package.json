@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "packageManager": "npm@11.19.0",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -27,28 +30,28 @@
     "assets:grain": "tsx scripts/grain.mts"
   },
   "dependencies": {
-    "@auth/core": "^0.41.1",
-    "@convex-dev/auth": "^0.0.95",
+    "@auth/core": "^0.41.3",
+    "@convex-dev/auth": "^0.0.96",
     "clsx": "2.1.1",
-    "convex": "1.46.0",
-    "next": "16.3.6",
-    "react": "19.3.0",
-    "react-dom": "19.3.0",
-    "zod": "4.6.5"
+    "convex": "1.49.0",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
   },
   "devDependencies": {
-    "@playwright/test": "^1.63.0",
-    "@tailwindcss/postcss": "4.3.3",
+    "@playwright/test": "^1.65.0",
+    "@tailwindcss/postcss": "4.3.5",
     "@types/node": "26.6.3",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
-    "convex-test": "^0.0.60",
-    "eslint": "9.0.0",
-    "eslint-config-next": "16.3.6",
-    "tailwindcss": "4.3.3",
+    "convex-test": "^0.0.67",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.5",
+    "tailwindcss": "4.3.5",
     "tsx": "4.23.15",
     "typescript": "5.9.3",
-    "vitest": "3.2.4"
+    "vitest": "3.2.7"
   },
   "allowScripts": {
     "esbuild@0.27.0": true,
