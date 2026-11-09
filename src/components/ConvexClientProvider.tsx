@@ -4,6 +4,7 @@ import { ConvexAuthProvider } from "@convex-dev/auth/react";
 import { ConvexReactClient } from "convex/react";
 import { useMemo } from "react";
 
+import { AccountLifecycle } from "./AccountLifecycle";
 import { Shell } from "./QuizFromConvex";
 
 // Module-level singleton (#31): one client across client-side navigations so
@@ -40,5 +41,5 @@ export function ConvexClientProvider({ children }: { children: React.ReactNode }
       </Shell>
     );
   }
-  return <ConvexAuthProvider client={client}>{children}</ConvexAuthProvider>;
+  return <ConvexAuthProvider client={client}><AccountLifecycle />{children}</ConvexAuthProvider>;
 }
