@@ -84,8 +84,8 @@ function writeOutbox(pending: readonly QueuedAnswer[]): void {
 
 const listeners = new Set<() => void>();
 
-function set(pending: readonly QueuedAnswer[]) {
-  current = { pending };
+function set(pending: readonly QueuedAnswer[], retryAt?: number) {
+  current = { pending, ...(retryAt === undefined ? {} : { retryAt }) };
   writeOutbox([...pending]);
   for (const listener of listeners) listener();
 }
@@ -142,7 +142,7 @@ export function getOutboxServerSnapshot(): OutboxState {
 }
 
 export function enqueueAnswer(event: QueuedAnswer): void {
-  set(appendQueued(getOutboxSnapshot().pending, event));
+  set(appendQueued(getOutboxSnapshot().pending, event), current.retryAt);
 }
 
 /**
@@ -161,12 +161,6 @@ export function clearOutbox(): void {
   set([]);
 }
 
-function dropSettled(ids: Set<string>): void {
-  const before = getOutboxSnapshot().pending;
-  const pending = withoutSent(before, ids);
-  if (pending.length !== before.length) set(pending);
-}
-
 /**
  * Sends the queue for the given account and reports how many left the device.
  * See `runDrain` for permanent drops and transient retries. This adapter
@@ -178,13 +172,17 @@ export async function drainOutbox(
 ): Promise<{ sent: number; lastRating: number | null; maxAt: number | null }> {
   const before = getOutboxSnapshot().pending;
   const gen = generation;
-  const { sent, lastRating, maxAt, settledIds } = await runDrain(
+  const { sent, lastRating, maxAt, settledIds, retryAfter } = await runDrain(
     before,
     send,
     account,
     () => gen === generation,
   );
-  if (settledIds.size > 0) dropSettled(settledIds);
+  if (gen === generation) {
+    const pending = withoutSent(getOutboxSnapshot().pending, settledIds);
+    const retryAt = retryAfter === undefined ? undefined : Date.now() + retryAfter;
+    if (pending.length !== current.pending.length || current.retryAt !== retryAt) set(pending, retryAt);
+  }
   return { sent, lastRating, maxAt };
 }
 

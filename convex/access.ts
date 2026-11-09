@@ -1,3 +1,4 @@
+import { SIGN_IN_REQUIRED } from "../src/lib/answers/errors";
 import { ConvexError } from "convex/values";
 import { getAuthUserId } from "@convex-dev/auth/server";
 
@@ -24,9 +25,9 @@ export async function authUserId(ctx: QueryCtx | MutationCtx) {
 /** Throws unless the caller is signed in. Returns the user id. */
 export async function requireUser(ctx: QueryCtx | MutationCtx) {
   const userId = await getAuthUserId(ctx);
-  if (!userId) throw new ConvexError("Sign in required.");
+  if (!userId) throw new ConvexError(SIGN_IN_REQUIRED);
   const user = await ctx.db.get(userId);
-  if (!user || user.isAnonymous) throw new ConvexError("Sign in required.");
+  if (!user || user.isAnonymous) throw new ConvexError(SIGN_IN_REQUIRED);
   return userId;
 }
 

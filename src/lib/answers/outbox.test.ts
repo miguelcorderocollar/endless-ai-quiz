@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 /**
  * The answer outbox (#17, #57). Events retain record order across transient
@@ -353,4 +353,41 @@ describe("shouldReconcile", () => {
     // rating.
     expect(shouldReconcile("atlas", 100)).toBe(true);
   });
+});
+
+
+afterEach(() => vi.useRealTimers());
+
+it("retries a quota-retained queue on its deadline without another answer, and cancels on cleanup", async () => {
+  vi.useFakeTimers();
+  const { drainOutbox, enqueueAnswer, getOutboxSnapshot, subscribeOutbox, clearOutbox } = await load();
+  const { watchOutboxRetries } = await import("@/lib/answers/outboxCore");
+  const { ConvexError } = await import("convex/values");
+  enqueueAnswer(event({ eventId: "q1" }));
+  enqueueAnswer(event({ eventId: "q2" }));
+  const send = vi.fn()
+    .mockRejectedValueOnce(new ConvexError({ kind: "RateLimited", retryAfter: 500 }))
+    .mockResolvedValue({ ratingAfter: 1010 });
+  const flush = () => drainOutbox(send, "atlas");
+  const stop = watchOutboxRetries(subscribeOutbox, getOutboxSnapshot, flush);
+  await flush();
+  expect(getOutboxSnapshot().pending).toHaveLength(2);
+  expect(getOutboxSnapshot().retryAt).toBe(Date.now() + 500);
+  await vi.advanceTimersByTimeAsync(499);
+  expect(send).toHaveBeenCalledTimes(1);
+  await vi.advanceTimersByTimeAsync(1);
+  expect(send).toHaveBeenCalledTimes(3);
+  expect(getOutboxSnapshot().pending).toHaveLength(0);
+  expect(getOutboxSnapshot().retryAt).toBeUndefined();
+  enqueueAnswer(event({ eventId: "cancelled" }));
+  send.mockRejectedValue(new ConvexError({ kind: "RateLimited", retryAfter: 500 }));
+  await flush();
+  clearOutbox();
+  expect(vi.getTimerCount()).toBe(0);
+  enqueueAnswer(event({ eventId: "signed-out" }));
+  await flush();
+  const calls = send.mock.calls.length;
+  stop();
+  await vi.advanceTimersByTimeAsync(1000);
+  expect(send).toHaveBeenCalledTimes(calls);
 });

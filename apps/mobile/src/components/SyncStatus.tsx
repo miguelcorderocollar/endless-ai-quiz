@@ -1,3 +1,4 @@
+import { watchOutboxRetries } from "@shared/lib/answers/outboxCore";
 import { useConvexAuth, useQuery } from "convex/react";
 import { useEffect, useRef, useSyncExternalStore } from "react";
 import { StyleSheet, Text } from "react-native";
@@ -51,13 +52,16 @@ export function OutboxFlusher() {
   useEffect(() => {
     if (!isAuthenticated || !network.online || !client) return;
     const account = readProfileCache()?.handle ?? null;
-    void drainOutbox((args) => client.mutation(answerRef, args), account).then(
+    const flush = () => drainOutbox((args) => client.mutation(answerRef, args), account).then(
       ({ sent, lastRating, maxAt }) => {
         if (sent > 0 && lastRating !== null && shouldReconcile(account, maxAt)) {
           updateProgress({ ...getProgress(), rating: lastRating });
         }
       },
     );
+    const stop = watchOutboxRetries(subscribeOutbox, getOutboxSnapshot, flush);
+    void flush();
+    return stop;
   }, [isAuthenticated, network.online, client]);
 
   return null;

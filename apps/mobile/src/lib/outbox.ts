@@ -68,8 +68,8 @@ function notify(): void {
   for (const listener of listeners) listener();
 }
 
-function set(pending: readonly QueuedAnswer[]): void {
-  current = { pending };
+function set(pending: readonly QueuedAnswer[], retryAt?: number): void {
+  current = { pending, ...(retryAt === undefined ? {} : { retryAt }) };
   void AsyncStorage.setItem(KEY, JSON.stringify([...pending])).catch(() => {
     /* a full disk costs a sync, not the answer the player just gave */
   });
@@ -117,7 +117,7 @@ export async function hydrateOutbox(): Promise<void> {
 }
 
 export function enqueueAnswer(event: QueuedAnswer): void {
-  set(appendQueued(current.pending, event));
+  set(appendQueued(current.pending, event), current.retryAt);
 }
 
 /**
@@ -145,19 +145,16 @@ export async function drainOutbox(
   account: string | null,
 ): Promise<{ sent: number; lastRating: number | null; maxAt: number | null }> {
   const gen = generation;
-  const { sent, lastRating, maxAt, settledIds } = await runDrain(
+  const { sent, lastRating, maxAt, settledIds, retryAfter } = await runDrain(
     current.pending,
     send,
     account,
     () => gen === generation,
   );
-  if (settledIds.size > 0) {
-    // Re-read the mirror rather than dropping from the list we drained: the
-    // drain awaits, so an answer can be enqueued behind it in the meantime and
-    // a removal computed from the old list would delete it.
-    const before = current.pending;
-    const pending = withoutSent(before, settledIds);
-    if (pending.length !== before.length) set(pending);
+  if (gen === generation) {
+    const pending = withoutSent(current.pending, settledIds);
+    const retryAt = retryAfter === undefined ? undefined : Date.now() + retryAfter;
+    if (pending.length !== current.pending.length || current.retryAt !== retryAt) set(pending, retryAt);
   }
   return { sent, lastRating, maxAt };
 }

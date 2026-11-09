@@ -80,13 +80,13 @@ export const ensureProfile = mutation({
 });
 
 export function normalizeDisplayName(value: string): string {
-  const name = value.normalize("NFKC")
-    .replace(/[\u061c\u200e\u200f\u202a-\u202e\u2066-\u2069]/g, "")
-    .replace(/\s+/gu, " ").trim().slice(0, 40).trim();
+  const name = Array.from(value.normalize("NFKC")
+    .replace(/\p{Cf}/gu, "")
+    .replace(/\s+/gu, " ").trim()).slice(0, 40).join("").trim();
   if (!name) throw new ConvexError("Display name cannot be empty.");
   // Handles identify accounts. Reserve their namespace, including fullwidth
   // forms after normalization and names prefixed by @.
-  if (/^@|^player[\s_-]/iu.test(name)) {
+  if (/^@?player-(?:[abcdefghjkmnpqrstuvwxyz23456789]{4}|[a-z0-9]{6})$/iu.test(name)) {
     throw new ConvexError("Display name cannot look like an account handle.");
   }
   return name;
@@ -106,8 +106,8 @@ export const setDisplayName = mutation({
 });
 
 /**
- * Initializes an empty rollup at signup (#59, lazy guests). Client totals
- * cannot prove a rating or category breakdown, so none are imported.
+ * Imports capped guest counts at signup (#59), retaining STARTING_ELO.
+ * The imported category records counts with no trusted category breakdown.
  * Only when the user has neither stats nor events — i.e. the account is brand
  * new. An existing account (stats or events present) keeps its server history:
  * local totals are ignored and nothing is overwritten, so logging into an
@@ -146,15 +146,13 @@ export const claimProgress = mutation({
       return { seeded: false };
     }
 
-    // Old clients still send all three args. None prove a category breakdown
-    // or a rating, so choose the zero-count import allowed by #59.
-    const answered = 0;
-    const correct = 0;
+    // Preserve bounded guest totals, but never import a client-chosen rating.
+    const answered = Number.isFinite(args.answered)
+      ? Math.min(1000, Math.max(0, Math.floor(args.answered))) : 0;
+    const correct = Number.isFinite(args.correct)
+      ? Math.min(answered, Math.max(0, Math.floor(args.correct))) : 0;
     const rating = STARTING_ELO;
-
-    // Nothing played locally: leave the account stat-free so it does not show
-    // up in population stats until it has real answers.
-    if (!Number.isFinite(args.answered) || args.answered <= 0) return { seeded: false };
+    if (answered === 0) return { seeded: false };
 
     await ctx.db.insert("userStats", {
       userId,
@@ -163,13 +161,12 @@ export const claimProgress = mutation({
       correct,
       streak: 0,
       bestStreak: 0,
-      byCategory: [],
+      byCategory: [{ category: "imported", answered, correct }],
       seeded: true,
       serverAnswered: 0,
       updatedAt: Date.now(),
     });
-    // Older clients reconcile server stats when seeded is false.
-    return { seeded: false };
+    return { seeded: true };
   },
 });
 

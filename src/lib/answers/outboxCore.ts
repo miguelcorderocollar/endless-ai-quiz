@@ -1,3 +1,5 @@
+import { rateLimitData, SIGN_IN_REQUIRED } from "./errors";
+
 /**
  * The storage-agnostic half of the answer-event outbox (#17), shared by the
  * web app and the native app (#18).
@@ -31,7 +33,7 @@ export type QueuedAnswer = {
   at: number;
 };
 
-export type OutboxState = { pending: readonly QueuedAnswer[] };
+export type OutboxState = { pending: readonly QueuedAnswer[]; retryAt?: number };
 
 export const EMPTY_OUTBOX: OutboxState = { pending: [] };
 
@@ -138,8 +140,9 @@ export async function runDrain(
   send: SendAnswer,
   account: string | null,
   shouldContinue: () => boolean = () => true,
-): Promise<DrainResult & { settledIds: Set<string> }> {
+): Promise<DrainResult & { settledIds: Set<string>; retryAfter?: number }> {
   const settledIds = new Set<string>();
+  let retryAfter: number | undefined;
   let sent = 0;
   let lastRating: number | null = null;
   let maxAt: number | null = null;
@@ -165,18 +168,15 @@ export async function runDrain(
         error !== null &&
         Symbol.for("ConvexError") in error &&
         "data" in error;
-      const isRateLimited = isApplicationError &&
-        typeof error.data === "object" && error.data !== null &&
-        "kind" in error.data && error.data.kind === "RateLimited";
-      // Backend quotas are temporary. Preserve this event and its successors
-      // until the bucket refills, just as for transport/auth-not-ready errors.
-      if (!isApplicationError || error.data === "Sign in required." || isRateLimited) {
+      const limit = rateLimitData(error);
+      if (limit) retryAfter = limit.retryAfter;
+      if (!isApplicationError || error.data === SIGN_IN_REQUIRED || limit) {
         break;
       }
       settledIds.add(event.eventId);
     }
   }
-  return { sent, lastRating, maxAt, settledIds };
+  return { sent, lastRating, maxAt, settledIds, ...(retryAfter === undefined ? {} : { retryAfter }) };
 }
 
 /**
@@ -214,4 +214,23 @@ export function shouldReconcile(
  */
 export function resetReconcile(): void {
   reconciledAt.clear();
+}
+
+/** Subscribe once per mounted/authenticated flusher; cancel timers on cleanup. */
+export function watchOutboxRetries(
+  subscribe: (listener: () => void) => () => void,
+  snapshot: () => OutboxState,
+  drain: () => Promise<unknown>,
+): () => void {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const schedule = () => {
+    clearTimeout(timer);
+    const { retryAt } = snapshot();
+    if (retryAt !== undefined) {
+      timer = setTimeout(() => { void drain(); }, Math.max(1, retryAt - Date.now()));
+    }
+  };
+  const unsubscribe = subscribe(schedule);
+  schedule();
+  return () => { unsubscribe(); clearTimeout(timer); };
 }

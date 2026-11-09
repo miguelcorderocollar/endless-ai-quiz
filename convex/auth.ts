@@ -35,12 +35,10 @@ const PasswordWithRole = Password<DataModel>({
 });
 
 export const authCallbacks: NonNullable<ConvexAuthConfig["callbacks"]> = {
-  async afterUserCreatedOrUpdated(ctx, { existingUserId, profile }) {
+  async afterUserCreatedOrUpdated(ctx, { existingUserId }) {
     if (existingUserId !== null) return;
-    const email = EmailSchema.parse(profile).email;
     // This callback and account creation share a transaction. A refusal rolls
     // back the user, account and quota consumption together.
-    await rateLimiter.limit(ctx, "signUpEmail", { key: email, throws: true });
     await rateLimiter.limit(ctx, "signUpGlobal", { throws: true });
   },
 };

@@ -1,3 +1,4 @@
+import { rateLimitMessage } from "@shared/lib/answers/errors";
 import { useAuthActions } from "@convex-dev/auth/react";
 import { useConvexAuth, useQuery } from "convex/react";
 import { router } from "expo-router";
@@ -604,7 +605,7 @@ function DisplayNameForm({
             (cause: unknown) => {
               setBusy(false);
               setError(
-                cause instanceof Error ? cause.message : "Could not save.",
+                rateLimitMessage(cause) ?? (cause instanceof Error ? cause.message : "Could not save."),
               );
             },
           );

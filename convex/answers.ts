@@ -88,7 +88,10 @@ export const answer = mutation({
       .withIndex("by_user", (q) => q.eq("userId", userId))
       .take(1)
       .then((rows) => rows[0]);
-    const ratingBefore = stats?.rating ?? last?.ratingAfter ?? STARTING_ELO;
+    // Legacy imports could choose their Elo. Reset that untrusted baseline
+    // once, before scoring the first answer that initializes serverAnswered.
+    const legacySeed = stats?.seeded && stats.serverAnswered === undefined;
+    const ratingBefore = legacySeed ? STARTING_ELO : stats?.rating ?? last?.ratingAfter ?? STARTING_ELO;
 
     const lastSame =
       last && last.questionId === question._id

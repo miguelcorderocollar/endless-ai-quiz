@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { rateLimitMessage } from "@/lib/answers/errors";
 import { useAuthActions } from "@convex-dev/auth/react";
 import { useConvex, useConvexAuth, useMutation, useQuery } from "convex/react";
 import { useEffect, useRef, useState } from "react";
@@ -116,6 +117,8 @@ function interpretAuthError(
   err: unknown,
   flow: "signIn" | "signUp",
 ): { message: string; flipToSignUp: boolean } {
+  const limited = rateLimitMessage(err);
+  if (limited) return { message: limited, flipToSignUp: false };
   const raw = err instanceof Error ? err.message : String(err);
   const serverMessage = raw.match(/(?:Uncaught (?:Convex)?Error|ConvexError):\s*([^]+?)(?:\s+at\s|\s*$)/)?.[1]?.trim();
 
