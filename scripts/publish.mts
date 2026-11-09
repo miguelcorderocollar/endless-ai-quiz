@@ -1,6 +1,7 @@
 import { createHash } from "crypto";
 import { execFileSync, execSync } from "child_process";
 
+import { checkPublishedBank } from "../src/lib/questions/publishCheck";
 import { loadBank, publishedOnly } from "../src/lib/questions/load";
 
 /**
@@ -9,6 +10,7 @@ import { loadBank, publishedOnly } from "../src/lib/questions/load";
  * Usage:
  *   `npx tsx scripts/publish.mts`          # dev deployment (from `.env.local`)
  *   `npx tsx scripts/publish.mts --prod`   # production deployment
+ *   `npx tsx scripts/publish.mts --check --prod` # read-only drift warning
  *
  * 1. Loads `content/questions/*.json`, fails on any file error.
  * 2. Fast-path: compares the full-content fingerprint against the target's
@@ -76,6 +78,22 @@ const rows = published.map((q) => ({
     addedAt: q.addedAt,
   },
 }));
+
+// Check mode exits before any CLI invocation or mutation, including on errors.
+if (process.argv.includes("--check")) {
+  const url = toProd
+    ? "https://moonlit-blackbird-812.convex.cloud"
+    : process.env.CONVEX_CHECK_URL;
+  if (!url) throw new Error("--check needs --prod or CONVEX_CHECK_URL (explicit read target).");
+  console.log(`Checking published bank at ${url}`);
+  const diff = await checkPublishedBank(published, url);
+  if (diff.missing.length || diff.extra.length || diff.changed.length) {
+    console.warn(`${process.env.GITHUB_ACTIONS ? "::warning::" : "warning: "}Published bank drift: ${JSON.stringify(diff)}`);
+  } else {
+    console.log(`Published bank matches git (${published.length} questions).`);
+  }
+  process.exit(0);
+}
 
 // Fast-path: skip the write when the target already matches.
 try {
