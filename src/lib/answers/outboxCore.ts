@@ -4,8 +4,8 @@
  *
  * Why the split: the rules that make the outbox correct are not about storage.
  * They are that every send carries an `eventId` the server can dedupe on, that
- * events drain in record order, that the drain stops at the first failure so
- * nothing behind it is skipped, and that events tagged with another account are
+ * events drain in record order, that transient failures park the rest for retry,
+ * and that events tagged with another account are
  * never sent under this one. Those four are what `convex/answers.ts` relies on,
  * and reimplementing them in `apps/mobile` would have been a second place to get
  * them wrong. They live here, and the two adapters (`outbox.ts` for
@@ -117,11 +117,11 @@ export function withoutSent(
 }
 
 /**
- * Sends the queue for the given account, head-first, and stops at the first
- * failure, leaving the rest — and everything behind it — parked.
+ * Sends head-first, dropping permanently rejected events and continuing.
+ * Transport and auth-not-ready failures park the event and everything behind it.
  *
- * The caller applies `withoutSent` with the returned ids and persists, so this
- * stays free of both storage and subscriptions.
+ * The caller removes the returned settled ids and persists. Both successful
+ * sends and permanent rejections settle an event; only sends count in `sent`.
  *
  * `shouldContinue` is checked before every send. A progress reset wipes the
  * queue while a drain is in flight; without this, the drain keeps sending what
@@ -138,8 +138,9 @@ export async function runDrain(
   send: SendAnswer,
   account: string | null,
   shouldContinue: () => boolean = () => true,
-): Promise<DrainResult & { sentIds: Set<string> }> {
-  const sentIds = new Set<string>();
+): Promise<DrainResult & { settledIds: Set<string> }> {
+  const settledIds = new Set<string>();
+  let sent = 0;
   let lastRating: number | null = null;
   let maxAt: number | null = null;
   for (const event of sendableEvents(pending, account)) {
@@ -152,12 +153,25 @@ export async function runDrain(
       });
       lastRating = result.ratingAfter;
       maxAt = maxAt === null ? event.at : Math.max(maxAt, event.at);
-      sentIds.add(event.eventId);
-    } catch {
-      break;
+      sent += 1;
+      settledIds.add(event.eventId);
+    } catch (error) {
+      // requireUser uses this application error while auth is still loading.
+      // Keep it retryable; dropping it would lose valid offline answers.
+      // Use the SDK's brand instead of instanceof: the native app and shared
+      // code can resolve separate copies of convex/values.
+      const isApplicationError =
+        typeof error === "object" &&
+        error !== null &&
+        Symbol.for("ConvexError") in error &&
+        "data" in error;
+      if (!isApplicationError || error.data === "Sign in required.") {
+        break;
+      }
+      settledIds.add(event.eventId);
     }
   }
-  return { sent: sentIds.size, lastRating, maxAt, sentIds };
+  return { sent, lastRating, maxAt, settledIds };
 }
 
 /**

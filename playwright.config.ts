@@ -13,7 +13,7 @@ import { defineConfig, devices } from "@playwright/test";
  * tests worth having. Add a firefox/webkit project here when something needs
  * to be proven on more than one engine.
  */
-const PORT = 3210;
+const PORT = Number(process.env.E2E_PORT ?? 3210);
 const BASE_URL = `http://127.0.0.1:${PORT}`;
 
 export default defineConfig({

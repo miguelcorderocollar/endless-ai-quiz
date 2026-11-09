@@ -18,7 +18,7 @@ import {
  * (`src/lib/answers/outboxCore.ts`).
  *
  * The split is deliberate and it is the point. The rules the *server* depends
- * on — order, cap, sanitising, stop-at-first-failure, per-account attribution,
+ * on — order, cap, sanitising, transient retries, per-account attribution,
  * `eventId` on every send — are in the core, imported, and the web app drains
  * through the same functions. What differs here is only the two things that
  * genuinely differ between a browser and a phone:
@@ -145,18 +145,18 @@ export async function drainOutbox(
   account: string | null,
 ): Promise<{ sent: number; lastRating: number | null; maxAt: number | null }> {
   const gen = generation;
-  const { sent, lastRating, maxAt, sentIds } = await runDrain(
+  const { sent, lastRating, maxAt, settledIds } = await runDrain(
     current.pending,
     send,
     account,
     () => gen === generation,
   );
-  if (sentIds.size > 0) {
+  if (settledIds.size > 0) {
     // Re-read the mirror rather than dropping from the list we drained: the
     // drain awaits, so an answer can be enqueued behind it in the meantime and
     // a removal computed from the old list would delete it.
     const before = current.pending;
-    const pending = withoutSent(before, sentIds);
+    const pending = withoutSent(before, settledIds);
     if (pending.length !== before.length) set(pending);
   }
   return { sent, lastRating, maxAt };
