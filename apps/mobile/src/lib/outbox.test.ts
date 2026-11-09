@@ -86,7 +86,7 @@ describe("hydrateOutbox", () => {
 });
 
 describe("drainOutbox on AsyncStorage", () => {
-  it("sends in record order, stops at the first failure and parks the rest", async () => {
+  it("sends in record order, stops at the first transient failure and parks the rest", async () => {
     const { drainOutbox, enqueueAnswer, getOutboxSnapshot } = await load();
     enqueueAnswer(event({ eventId: "e1", at: 1 }));
     enqueueAnswer(event({ eventId: "e2", at: 2 }));
@@ -110,6 +110,28 @@ describe("drainOutbox on AsyncStorage", () => {
     expect(second.getOutboxSnapshot().pending.map((e) => e.eventId)).toEqual([
       "e2",
       "e3",
+    ]);
+  });
+
+  it("persists removal of a permanent rejection and sends the next event", async () => {
+    const { drainOutbox, enqueueAnswer, getOutboxSnapshot } = await load();
+    const { ConvexError } = await import("convex/values");
+    enqueueAnswer(event({ eventId: "bad", at: 1 }));
+    enqueueAnswer(event({ eventId: "ok", at: 2 }));
+    const attempts: string[] = [];
+    const result = await drainOutbox(async ({ eventId }) => {
+      attempts.push(eventId);
+      if (eventId === "bad") throw new ConvexError("Unknown question.");
+      // A new event must survive removal based on the drain snapshot.
+      enqueueAnswer(event({ eventId: "new", at: 3 }));
+      return { ratingAfter: 1010 };
+    }, "atlas");
+    expect(attempts).toEqual(["bad", "ok"]);
+    expect(result).toEqual({ sent: 1, lastRating: 1010, maxAt: 2 });
+    expect(getOutboxSnapshot().pending.map((e) => e.eventId)).toEqual(["new"]);
+    const reloaded = await load();
+    expect(reloaded.getOutboxSnapshot().pending.map((e) => e.eventId)).toEqual([
+      "new",
     ]);
   });
 

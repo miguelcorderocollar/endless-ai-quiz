@@ -22,7 +22,7 @@
  * identity regardless.
  *
  * This module is the localStorage adapter. The rules — order, cap, sanitising,
- * stop-at-first-failure, per-account attribution — are in `outboxCore.ts`,
+ * transient retries, per-account attribution — are in `outboxCore.ts`,
  * shared verbatim with the native app (`apps/mobile/src/lib/outbox.ts`), so
  * the two stores cannot drift on the part the server actually depends on.
  */
@@ -161,7 +161,7 @@ export function clearOutbox(): void {
   set([]);
 }
 
-function dropSent(ids: Set<string>): void {
+function dropSettled(ids: Set<string>): void {
   const before = getOutboxSnapshot().pending;
   const pending = withoutSent(before, ids);
   if (pending.length !== before.length) set(pending);
@@ -169,8 +169,8 @@ function dropSent(ids: Set<string>): void {
 
 /**
  * Sends the queue for the given account and reports how many left the device.
- * See `runDrain` in the core for what "head-first, stop at first failure" means;
- * this is the localStorage half.
+ * See `runDrain` for permanent drops and transient retries. This adapter
+ * persists both successful sends and dropped rejections.
  */
 export async function drainOutbox(
   send: SendAnswer,
@@ -178,13 +178,13 @@ export async function drainOutbox(
 ): Promise<{ sent: number; lastRating: number | null; maxAt: number | null }> {
   const before = getOutboxSnapshot().pending;
   const gen = generation;
-  const { sent, lastRating, maxAt, sentIds } = await runDrain(
+  const { sent, lastRating, maxAt, settledIds } = await runDrain(
     before,
     send,
     account,
     () => gen === generation,
   );
-  if (sentIds.size > 0) dropSent(sentIds);
+  if (settledIds.size > 0) dropSettled(settledIds);
   return { sent, lastRating, maxAt };
 }
 

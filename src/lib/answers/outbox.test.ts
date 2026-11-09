@@ -1,12 +1,9 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 /**
- * The answer outbox (#17). The drain is the load-bearing piece: it guarantees
- * the server sees events in record order and stops at the first failure, so a
- * broken connection parks the queue instead of scrambling it. The server half
- * (exact `eventId` dedupe, skipping the 5s window for replays) lives in
- * `convex/answers.ts` and cannot be unit-tested from here; it is covered by
- * hand against dev in the PR notes.
+ * The answer outbox (#17, #57). Events retain record order across transient
+ * failures; permanent rejections leave the queue so later events can sync.
+ * Server-side eventId dedupe is covered in `convex/answers.test.ts`.
  *
  * Module state is fresh per test via `vi.resetModules`, the same trick as
  * `install.test.ts`. `localStorage` is a shared Map so a "reload" is just a
@@ -162,7 +159,7 @@ describe("drainOutbox", () => {
     expect(getOutboxSnapshot().pending.map((e) => e.eventId)).toEqual(["theirs"]);
   });
 
-  it("stops at the first failure and keeps everything from there on", async () => {
+  it("stops at the first transient failure and keeps everything from there on", async () => {
     const { drainOutbox, enqueueAnswer } = await load();
     enqueueAnswer(event({ eventId: "e1", at: 1 }));
     enqueueAnswer(event({ eventId: "e2", at: 2 }));
@@ -181,6 +178,88 @@ describe("drainOutbox", () => {
     const { getOutboxSnapshot } = await load();
     expect(getOutboxSnapshot().pending.map((e) => e.eventId)).toEqual(["e2", "e3"]);
   });
+
+  it("drops a permanent failure in the middle and persists later successes", async () => {
+    const { drainOutbox, enqueueAnswer, getOutboxSnapshot } = await load();
+    const { ConvexError } = await import("convex/values");
+    enqueueAnswer(event({ eventId: "e1", at: 1 }));
+    enqueueAnswer(event({ eventId: "bad", at: 2 }));
+    enqueueAnswer(event({ eventId: "e3", at: 3 }));
+    enqueueAnswer(event({ eventId: "theirs", account: "bruno", at: 4 }));
+
+    const attempts: string[] = [];
+    const result = await drainOutbox(async ({ eventId }) => {
+      attempts.push(eventId);
+      if (eventId === "bad") throw new ConvexError("Unknown question.");
+      return { ratingAfter: eventId === "e3" ? 1020 : 1010 };
+    }, "atlas");
+
+    expect(attempts).toEqual(["e1", "bad", "e3"]);
+    expect(result).toEqual({ sent: 2, lastRating: 1020, maxAt: 3 });
+    expect(getOutboxSnapshot().pending.map((e) => e.eventId)).toEqual(["theirs"]);
+    const reloaded = await load();
+    expect(reloaded.getOutboxSnapshot().pending.map((e) => e.eventId)).toEqual([
+      "theirs",
+    ]);
+  });
+
+  it("drops a rejected head but parks a subsequent transient failure", async () => {
+    const { drainOutbox, enqueueAnswer, getOutboxSnapshot } = await load();
+    const { ConvexError } = await import("convex/values");
+    for (const [i, eventId] of ["bad", "offline", "later"].entries()) {
+      enqueueAnswer(event({ eventId, at: i }));
+    }
+    const attempts: string[] = [];
+    const result = await drainOutbox(async ({ eventId }) => {
+      attempts.push(eventId);
+      if (eventId === "bad") throw new ConvexError({ code: "INVALID_ANSWER" });
+      throw new Error("offline");
+    }, "atlas");
+
+    expect(attempts).toEqual(["bad", "offline"]);
+    expect(result).toEqual({ sent: 0, lastRating: null, maxAt: null });
+    expect(getOutboxSnapshot().pending.map((e) => e.eventId)).toEqual([
+      "offline", "later",
+    ]);
+    const retried = await drainOutbox(async () => ({ ratingAfter: 1010 }), "atlas");
+    expect(retried).toEqual({ sent: 2, lastRating: 1010, maxAt: 2 });
+  });
+
+  it("does not reconcile ratings from a dropped final event", async () => {
+    const { drainOutbox, enqueueAnswer, getOutboxSnapshot } = await load();
+    const { ConvexError } = await import("convex/values");
+    enqueueAnswer(event({ eventId: "ok", at: 1 }));
+    enqueueAnswer(event({ eventId: "bad", at: 2 }));
+    const result = await drainOutbox(async ({ eventId }) => {
+      if (eventId === "bad") throw new ConvexError("Unknown question.");
+      return { ratingAfter: 1010 };
+    }, "atlas");
+    expect(result).toEqual({ sent: 1, lastRating: 1010, maxAt: 1 });
+    expect(getOutboxSnapshot().pending).toEqual([]);
+  });
+
+  it.each(["auth", "timeout", "untyped rejection"])(
+    "retains %s failures for retry",
+    async (kind) => {
+      const { drainOutbox, enqueueAnswer, getOutboxSnapshot } = await load();
+      const { ConvexError } = await import("convex/values");
+      const errors = {
+        auth: new ConvexError("Sign in required."),
+        timeout: new Error("Request timed out"),
+        "untyped rejection": "Unknown question.",
+      };
+      enqueueAnswer(event({ eventId: "e1", at: 1 }));
+      enqueueAnswer(event({ eventId: "e2", at: 2 }));
+      const send = vi.fn(async () => {
+        throw errors[kind as keyof typeof errors];
+      });
+      expect(await drainOutbox(send, "atlas")).toEqual({
+        sent: 0, lastRating: null, maxAt: null,
+      });
+      expect(send).toHaveBeenCalledTimes(1);
+      expect(getOutboxSnapshot().pending.map((e) => e.eventId)).toEqual(["e1", "e2"]);
+    },
+  );
 
   it("treats a deduped server reply as delivered, not as a retry", async () => {
     const { drainOutbox, enqueueAnswer } = await load();
