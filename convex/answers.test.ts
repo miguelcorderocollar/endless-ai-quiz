@@ -3,6 +3,7 @@ import { convexTest } from "convex-test";
 
 import { api } from "./_generated/api";
 import schema from "./schema";
+import rateLimiterTest from "@convex-dev/rate-limiter/test";
 
 /**
  * The server half of the offline outbox (#17): `eventId` makes replayed
@@ -28,6 +29,7 @@ async function setup() {
   // through it. The test file itself matches the glob too, which is harmless
   // — modules load lazily, on reference.
   const t = convexTest(schema, import.meta.glob("./**/*.*s"));
+  rateLimiterTest.register(t);
   const userId = await t.run(async (ctx) => {
     return await ctx.db.insert("users", {});
   });

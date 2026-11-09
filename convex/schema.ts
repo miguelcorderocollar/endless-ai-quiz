@@ -9,7 +9,7 @@ import { authTables } from "@convex-dev/auth/server";
  *
  * Auth (#2): Convex Auth owns identity. The `users` table below extends the
  * auth `users` table — every custom field stays optional because auth creates
- * rows (anonymous + password signup) without them; `ensureProfile`
+ * rows (including legacy anonymous users) without them; `ensureProfile`
  * (`convex/users.ts`) backfills handle/role/tier/createdAt. Never take `role`
  * from client params; it is assigned server-side from ADMIN_EMAILS.
  */
@@ -108,8 +108,11 @@ export default defineSchema({
       }),
     ),
     seeded: v.optional(v.boolean()),
+    // Only answers recorded by the server qualify for population statistics.
+    serverAnswered: v.optional(v.number()),
     updatedAt: v.number(),
   })
     .index("by_user", ["userId"])
-    .index("by_rating", ["rating"]),
+    .index("by_rating", ["rating"])
+    .index("by_serverAnswered", ["serverAnswered"]),
 });

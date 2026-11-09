@@ -1,11 +1,11 @@
-import { Anonymous } from "@convex-dev/auth/providers/Anonymous";
 import { Password } from "@convex-dev/auth/providers/Password";
-import { convexAuth } from "@convex-dev/auth/server";
+import { convexAuth, type ConvexAuthConfig } from "@convex-dev/auth/server";
 import { ConvexError } from "convex/values";
 import { z } from "zod";
 
 import type { DataModel } from "./_generated/dataModel";
 import { isAdminEmail } from "./access";
+import { rateLimiter } from "./rateLimits";
 
 const EmailSchema = z.object({ email: z.string().trim().toLowerCase().email() });
 
@@ -34,6 +34,16 @@ const PasswordWithRole = Password<DataModel>({
   },
 });
 
+export const authCallbacks: NonNullable<ConvexAuthConfig["callbacks"]> = {
+  async afterUserCreatedOrUpdated(ctx, { existingUserId }) {
+    if (existingUserId !== null) return;
+    // This callback and account creation share a transaction. A refusal rolls
+    // back the user, account and quota consumption together.
+    await rateLimiter.limit(ctx, "signUpGlobal", { throws: true });
+  },
+};
+
 export const { auth, signIn, signOut, store, isAuthenticated } = convexAuth({
-  providers: [PasswordWithRole, Anonymous],
+  providers: [PasswordWithRole],
+  callbacks: authCallbacks,
 });

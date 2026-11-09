@@ -1,5 +1,7 @@
 "use client";
 
+import { watchOutboxRetries } from "@/lib/answers/outboxCore";
+
 import { useEffect, useSyncExternalStore } from "react";
 import { useConvexAuth, useMutation } from "convex/react";
 
@@ -42,11 +44,14 @@ export function OutboxFlusher() {
   useEffect(() => {
     if (!isAuthenticated || !network.online) return;
     const account = readProfileCache()?.handle ?? null;
-    void drainOutbox(recordAnswer, account).then(({ sent, lastRating, maxAt }) => {
+    const flush = () => drainOutbox(recordAnswer, account).then(({ sent, lastRating, maxAt }) => {
       if (sent > 0 && lastRating !== null && shouldReconcile(account, maxAt)) {
         updateProgress({ ...readProgress(), rating: lastRating });
       }
     });
+    const stop = watchOutboxRetries(subscribeOutbox, getOutboxSnapshot, flush);
+    void flush();
+    return stop;
   }, [isAuthenticated, network.online, recordAnswer]);
 
   return null;

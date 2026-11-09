@@ -1,6 +1,7 @@
 /// <reference types="vite/client" />
 import { generateKeyPairSync } from "node:crypto";
 import { convexTest } from "convex-test";
+import rateLimiterTest from "@convex-dev/rate-limiter/test";
 import { afterEach, expect, it, vi } from "vitest";
 
 import { api } from "./_generated/api";
@@ -25,6 +26,7 @@ it("keeps password sign-up, sign-in and refresh working after auth upgrades", as
   vi.stubEnv("CONVEX_SITE_URL", "https://auth-test.invalid");
   vi.stubEnv("ADMIN_EMAILS", "");
   const t = convexTest(schema, import.meta.glob("./**/*.*s"));
+  rateLimiterTest.register(t);
   const credentials = {
     email: "dependency-test@example.com",
     password: "test-password-60",

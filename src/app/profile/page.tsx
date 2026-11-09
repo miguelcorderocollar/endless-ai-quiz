@@ -1,5 +1,7 @@
 "use client";
 
+import { rateLimitMessage } from "@/lib/answers/errors";
+
 import Link from "next/link";
 import { useAuthActions } from "@convex-dev/auth/react";
 import { useConvexAuth, useConvex, useMutation, useQuery } from "convex/react";
@@ -496,7 +498,7 @@ function DisplayNameForm({
         void setDisplayName({ displayName: name }).then(
           () => onSaved(),
           (err: unknown) =>
-            setError(err instanceof Error ? err.message : "Could not save."),
+            setError(rateLimitMessage(err) ?? (err instanceof Error ? err.message : "Could not save.")),
         );
       }}
       className="flex flex-col gap-4"
