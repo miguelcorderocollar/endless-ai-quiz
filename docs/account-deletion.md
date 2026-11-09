@@ -55,3 +55,12 @@ multiple answer/token batches, seed pagination, authentication freshness,
 repeat requests, old-token write rejection and preservation of another user.
 The local cleanup test checks unknown app keys and unrelated storage. The
 browser privacy test runs with Convex blocked, like the existing suite.
+
+## A stalled deletion
+
+Once a user is marked (`deletionStartedAt` set) and the device has signed out,
+new sessions are refused, so the user cannot restart deletion themselves. If a
+continuation stalls, resume it with `cleanupSeed` (or another `deleteAccount`
+call from a still-valid session). Both go through `beginUserDeletion`, which
+re-schedules `continueDeletion` for an already-marked user; batches are
+idempotent.

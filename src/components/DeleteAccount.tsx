@@ -6,7 +6,7 @@ import { useMutation } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { Popup } from "./Popup";
 import { deletionErrorMessage } from "./deletionError";
-import { clearLocalAccountState } from "@/lib/accountState";
+import { clearLocalAccountState, clearLocalAuthTokens } from "@/lib/accountState";
 
 export function DeleteAccount() {
   const deleteAccount = useMutation(api.users.deleteAccount);
@@ -40,13 +40,16 @@ export function DeleteAccount() {
             try {
               await signOut();
             } catch {
-              // The server may already have removed this session.
+              // The server may already have removed this session. Drop the
+              // local tokens anyway so /signin doesn't refresh a deleted one.
+              try { clearLocalAuthTokens(process.env.NEXT_PUBLIC_CONVEX_URL!); } catch { /* storage unavailable */ }
             }
             try {
               // null drops every queued answer: the account is gone, so none can sync.
               clearLocalAccountState({ reason: "deletion", account: null });
             } catch {
               setError("Deletion has started. This browser could not clear local data. Clear this site's data in browser settings before sharing this device.");
+              setBusy(false);
               return;
             }
             // Discard in-memory progress, pending requests and query caches.
