@@ -21,7 +21,9 @@ it("reports missing, extra and changed publishable content", () => {
   expect(diffPublishedBank([q, other], [remote({ ...q, answer: "changed" }), remote({ ...q, id: "hst-9998" })]))
     .toEqual({ missing: ["hst-9999"], extra: ["hst-9998"], changed: [q.id] });
   for (const field of ["text", "answer", "category", "difficulty", "explanation", "source", "tags", "addedAt", "options"] as const) {
-    const changed = { ...q, [field]: questions.find((row) => JSON.stringify(row[field]) !== JSON.stringify(q[field]))![field] };
+    const alternative = questions.find((row) => JSON.stringify(row[field]) !== JSON.stringify(q[field]));
+    if (!alternative) throw new Error(`No distinct fixture for ${field}`);
+    const changed = { ...q, [field]: alternative[field] };
     expect(diffPublishedBank([q], [remote(changed)]).changed).toEqual([q.id]);
   }
 });
@@ -57,14 +59,15 @@ it("CLI check exits on drift and on query failure without invoking the Convex CL
   await new Promise<void>((resolve) => server.listen(0, "127.0.0.1", resolve));
   const address = server.address() as { port: number };
   try {
-    const run = () => promisify(execFile)(process.execPath, ["--import", "tsx", "scripts/publish.mts", "--check"], {
+    const run = (githubActions = false) => promisify(execFile)(process.execPath, ["--import", "tsx", "scripts/publish.mts", "--check"], {
       // No npx on PATH. Any fall-through to the publish path must fail.
-      env: { ...process.env, PATH: "/nonexistent", CONVEX_CHECK_URL: `http://127.0.0.1:${address.port}` },
+      env: { ...process.env, GITHUB_ACTIONS: githubActions ? "true" : "", PATH: "/nonexistent", CONVEX_CHECK_URL: `http://127.0.0.1:${address.port}` },
     });
     expect((await run()).stderr).toContain("Published bank drift");
+    expect((await run(true)).stderr).toContain("::warning::Published bank drift:");
     failure = true;
     await expect(run()).rejects.toMatchObject({ code: 1 });
-    expect(requests).toEqual(["/api/query", "/api/query"]);
+    expect(requests).toEqual(["/api/query", "/api/query", "/api/query"]);
   } finally {
     server.close();
   }

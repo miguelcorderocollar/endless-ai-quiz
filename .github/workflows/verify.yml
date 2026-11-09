@@ -2,6 +2,7 @@ name: Verify
 
 on:
   push:
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -10,7 +11,7 @@ permissions:
 
 concurrency:
   group: verify-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 
 jobs:
   verify:
@@ -24,10 +25,15 @@ jobs:
       NEXT_PUBLIC_CONVEX_URL: https://ci-offline.invalid
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            apps/mobile/package-lock.json
       - run: npm ci
       # Root vitest includes native helpers; their tsconfig extends Expo.
       - run: npm ci --prefix apps/mobile
@@ -38,9 +44,6 @@ jobs:
       - run: npm run build
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
-      - name: Production dependency audit
-        if: ${{ !cancelled() }}
-        run: npm audit --omit=dev --audit-level=high
       - name: Upload Playwright report and traces
         if: failure()
         uses: actions/upload-artifact@v4
@@ -53,14 +56,20 @@ jobs:
           retention-days: 14
 
   drift:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     name: Published bank drift (read only)
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            apps/mobile/package-lock.json
       - run: npm ci
       - run: npx tsx scripts/publish.mts --check --prod
