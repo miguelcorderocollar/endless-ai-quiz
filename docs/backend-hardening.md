@@ -14,6 +14,8 @@ The rate-limiter component is mounted as `rateLimiter`. Token buckets allow:
 
 - 60 new answer events per minute per user, with a burst of 60. Exact event-ID
   replays and legacy five-second retries return before consuming quota.
+  The shared outbox retains structured `RateLimited` errors for retry after
+  refill, including when combined with #57 permanent-error handling.
 - 5 display-name changes per minute per user, with a burst of 5.
 - 1 successful account creation per hour per normalized email, plus a global
   budget of 100 per hour. Refusals roll back the account creation transaction.

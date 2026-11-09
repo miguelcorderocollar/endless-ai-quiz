@@ -165,7 +165,12 @@ export async function runDrain(
         error !== null &&
         Symbol.for("ConvexError") in error &&
         "data" in error;
-      if (!isApplicationError || error.data === "Sign in required.") {
+      const isRateLimited = isApplicationError &&
+        typeof error.data === "object" && error.data !== null &&
+        "kind" in error.data && error.data.kind === "RateLimited";
+      // Backend quotas are temporary. Preserve this event and its successors
+      // until the bucket refills, just as for transport/auth-not-ready errors.
+      if (!isApplicationError || error.data === "Sign in required." || isRateLimited) {
         break;
       }
       settledIds.add(event.eventId);

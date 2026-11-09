@@ -238,7 +238,7 @@ describe("drainOutbox", () => {
     expect(getOutboxSnapshot().pending).toEqual([]);
   });
 
-  it.each(["auth", "timeout", "untyped rejection"])(
+  it.each(["auth", "timeout", "rate limit", "untyped rejection"])(
     "retains %s failures for retry",
     async (kind) => {
       const { drainOutbox, enqueueAnswer, getOutboxSnapshot } = await load();
@@ -246,6 +246,7 @@ describe("drainOutbox", () => {
       const errors = {
         auth: new ConvexError("Sign in required."),
         timeout: new Error("Request timed out"),
+        "rate limit": new ConvexError({ kind: "RateLimited", name: "answer", retryAfter: 1000 }),
         "untyped rejection": "Unknown question.",
       };
       enqueueAnswer(event({ eventId: "e1", at: 1 }));

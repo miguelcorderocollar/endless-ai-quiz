@@ -7,6 +7,7 @@ import { api } from "./_generated/api";
 import schema from "./schema";
 import { authCallbacks } from "./auth";
 import { STARTING_ELO } from "../src/lib/quiz/elo";
+import { runDrain } from "../src/lib/answers/outboxCore";
 
 const modules = import.meta.glob("./**/*.*s");
 afterEach(() => vi.useRealTimers());
@@ -85,6 +86,13 @@ it("limits new answers per user, allows retries at capacity, and refills", async
   // Legacy retry also bypasses quota consumption.
   expect(await user.mutation(api.answers.answer, { questionId: "con-test", picked: "yes" })).toMatchObject({ deduped: true });
   await expect(answer("over-limit")).rejects.toThrow();
+  const queued = ["queued-1", "queued-2"].map((eventId, at) => ({
+    eventId, at, questionId: "con-test", picked: "yes", account: "tester",
+  }));
+  const drain = () => runDrain(queued, args => user.mutation(api.answers.answer, args), "tester");
+  const blocked = await drain();
+  expect(blocked.sent).toBe(0);
+  expect(blocked.settledIds.size).toBe(0);
   expect(await user.query(api.answers.myStats)).toMatchObject({ answered: 60, serverAnswered: 60 });
   const otherId = await t.run(ctx => ctx.db.insert("users", {}));
   await t.withIdentity({ subject: otherId }).mutation(api.answers.answer, {
@@ -93,6 +101,10 @@ it("limits new answers per user, allows retries at capacity, and refills", async
   vi.advanceTimersByTime(1000);
   await answer("after-refill");
   expect(await user.query(api.answers.myStats)).toMatchObject({ answered: 61 });
+  vi.advanceTimersByTime(2001);
+  const retried = await drain();
+  expect(retried.sent).toBe(2);
+  expect([...retried.settledIds]).toEqual(["queued-1", "queued-2"]);
 });
 
 it("normalizes names, reserves handles, and limits renames without changing the last name", async () => {
