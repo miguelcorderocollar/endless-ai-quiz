@@ -1,5 +1,6 @@
 import { ConvexHttpClient } from "convex/browser";
 
+import { loadBank, publishedOnly } from "../src/lib/questions/load.js";
 import { api } from "../convex/_generated/api.js";
 
 /**
@@ -27,7 +28,8 @@ const PASSWORD = "Seedtest123!";
 const rand = (min: number, max: number) => min + Math.random() * (max - min);
 const pick = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)]!;
 
-const bank = await new ConvexHttpClient(url).query(api.questions.list, {});
+// Seeding is local tooling; the full-bank endpoint is now admin-only.
+const bank = publishedOnly(loadBank().questions).map((q) => ({ ...q, questionId: q.id }));
 if (bank.length === 0) throw new Error("Bank is empty, publish first.");
 const categories = [...new Set(bank.map((q) => q.category))];
 console.log(`bank: ${bank.length} questions, ${categories.length} categories`);

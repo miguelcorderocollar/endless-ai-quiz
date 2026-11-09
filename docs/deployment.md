@@ -22,7 +22,7 @@ read-only command that lists deployments, so confirm with a harmless call before
 acting:
 
 ```bash
-npx convex run questions:list '{}' --prod   # read-only
+npx convex run questions:publishedList '{}' --prod   # read-only
 ```
 
 ## Mental model

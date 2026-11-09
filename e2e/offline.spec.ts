@@ -73,7 +73,7 @@ test.describe("offline", () => {
     await installApp(page);
 
     const shell = await page.evaluate(async () => {
-      const cache = await caches.open("endless-ai:shell:v1");
+      const cache = await caches.open("endless-ai:shell:v2");
       return (await cache.keys()).map((request) => new URL(request.url).pathname);
     });
     expect(shell).toContain("/bank.json");

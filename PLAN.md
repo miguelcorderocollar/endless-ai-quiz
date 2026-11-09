@@ -7,6 +7,42 @@ This is a direct homage to [Endless Quiz](https://apps.apple.com/us/app/endless-
 by Christopher Masser. Same loop, same simplicity, same Learn button, different subject
 matter.
 
+## Trust model, decided for #58
+
+Endless and category runs are casual practice. Their Elo, answer history and
+population statistics are untrusted learning progress, including signed-in
+progress. They must never seed a leaderboard, weekly result or match score.
+The public PWA bank and the native APK contain answers so offline play can
+keep immediate feedback. No client-side concealment can make that bank secret.
+
+New web draws use `questions.drawForPlay`, which returns only question text,
+options and selection metadata. `answers.reveal` validates a submitted option
+and returns the verdict, answer, explanation and source. The web waits for this
+round-trip before showing feedback. Cached full questions and offline fallback
+remain local practice. After reveal, signed-in picks still travel through
+`answers.answer` via the ordered outbox, with its existing eventId dedupe.
+Reveal itself awards no rating and is available to guests.
+
+`questions.list` is admin-gated. Its empty-array response for other callers
+keeps old installed profile clients from throwing. CLI publishing uses the
+internal `questions.publishedList`. New web profiles read the public practice
+bank, so their bank view follows the app build rather than live publication.
+Native profiles already fall back to their bundled bank when the list is empty.
+
+Before #8, #9, #13 or competitive #41 stats can ship, they need a separate,
+server-held question pool that is never in the public bank, legacy draw, APK,
+profile or offline cache. The server must issue an authenticated attempt,
+commit its first pick once, grade it, and keep competitive scores separate
+from casual Elo and imported/offline progress. The casual reveal endpoint is
+not an attempt protocol and must not award competitive scores.
+
+Staged cleanup: migrate the native quiz to server reveal, allow installed PWAs
+to update, then remove the legacy `questions.draw` answer-bearing path and
+`questions.list` shim in a later release. No schema or existing mutation args
+change in this stage. Until that cleanup, legacy clients intentionally retain
+the existing casual experience. This decision is in place before competitive
+work starts; server reveal alone does not make published practice content secure.
+
 ## What we are copying, and why
 
 Endless Quiz works because it is three screens and it never nags you. That is the whole
