@@ -3,6 +3,7 @@ import { v } from "convex/values";
 import { internalMutation, internalQuery, query } from "./_generated/server";
 import { matchWeight, weightedSample } from "../src/lib/quiz/engine";
 import schema, { questionFields } from "./schema";
+import { questionDigest } from "../src/lib/questions/digest";
 import { authUserId } from "./access";
 import type { QueryCtx } from "./_generated/server";
 
@@ -16,6 +17,16 @@ export const publishedList = internalQuery({
   args: {},
   returns: v.array(schema.doc("questions")),
   handler: publishedBank,
+});
+
+/** Public, answer-free fingerprints so CI can detect bank drift without credentials. */
+export const publishedDigest = query({
+  args: {},
+  returns: v.array(v.object({ questionId: v.string(), digest: v.string() })),
+  handler: async (ctx) => {
+    const rows = await publishedBank(ctx);
+    return await Promise.all(rows.map(async (q) => ({ questionId: q.questionId, digest: await questionDigest(q) })));
+  },
 });
 
 /** Admin-gated compatibility shim. Old profile clients receive an empty list. */
