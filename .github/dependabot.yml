@@ -1,9 +1,8 @@
 version: 2
 updates:
+  # Web app and Convex backend.
   - package-ecosystem: npm
-    directories:
-      - /
-      - /apps/mobile
+    directory: /
     schedule:
       interval: weekly
       day: monday
@@ -16,4 +15,45 @@ updates:
         update-types: [minor, patch]
       security-dependencies:
         applies-to: security-updates
+        patterns: ["*"]
+
+  # Expo app. Its React Native and Expo packages are pinned to what the Expo SDK
+  # expects, so those move with `npx expo install --fix` during an SDK upgrade,
+  # never through a routine grouped bump. Security updates still come through.
+  - package-ecosystem: npm
+    directory: /apps/mobile
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: Europe/Madrid
+    open-pull-requests-limit: 3
+    ignore:
+      - dependency-name: "expo"
+      - dependency-name: "expo-*"
+      - dependency-name: "@expo/*"
+      - dependency-name: "react"
+      - dependency-name: "react-dom"
+      - dependency-name: "react-native"
+      - dependency-name: "react-native-*"
+      - dependency-name: "@react-native/*"
+      - dependency-name: "@react-native-async-storage/*"
+      - dependency-name: "@react-native-community/*"
+    groups:
+      mobile-routine-dependencies:
+        patterns: ["*"]
+        update-types: [minor, patch]
+      mobile-security-dependencies:
+        applies-to: security-updates
+        patterns: ["*"]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: Europe/Madrid
+    groups:
+      actions:
         patterns: ["*"]
