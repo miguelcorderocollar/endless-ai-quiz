@@ -3,6 +3,7 @@ import { ConvexError, v } from "convex/values";
 import { mutation, query } from "./_generated/server";
 import type { MutationCtx } from "./_generated/server";
 import type { Id } from "./_generated/dataModel";
+import { rateLimiter } from "./rateLimits";
 import { requireUser } from "./access";
 import { STARTING_ELO, scoreAnswer } from "../src/lib/quiz/elo";
 import { getAuthUserId } from "@convex-dev/auth/server";
@@ -38,6 +39,10 @@ export const answer = mutation({
     picked: v.string(),
     eventId: v.optional(v.string()),
   },
+  returns: v.object({
+    correct: v.boolean(), ratingBefore: v.number(), ratingAfter: v.number(),
+    delta: v.number(), deduped: v.boolean(),
+  }),
   handler: async (ctx, args) => {
     const userId = await requireUser(ctx);
 
@@ -120,6 +125,8 @@ export const answer = mutation({
       };
     }
 
+    await rateLimiter.limit(ctx, "answer", { key: userId, throws: true });
+
     const { delta, rating } = scoreAnswer(ratingBefore, question.difficulty, correct);
     const now = Date.now();
 
@@ -201,6 +208,7 @@ export const ensureStats = mutation({
       userId,
       rating: last[0]?.ratingAfter ?? STARTING_ELO,
       answered: folded.answered,
+      serverAnswered: folded.answered,
       correct: folded.correct,
       streak: folded.trailingStreak,
       bestStreak: folded.bestStreak,
@@ -304,6 +312,7 @@ async function upsertStats(
       userId,
       rating: answer.rating,
       answered: folded.answered + 1,
+      serverAnswered: folded.answered + 1,
       correct: folded.correct + (answer.correct ? 1 : 0),
       streak: answer.correct ? folded.trailingStreak + 1 : 0,
       bestStreak: Math.max(
@@ -320,6 +329,7 @@ async function upsertStats(
   await ctx.db.patch(existing._id, {
     rating: answer.rating,
     answered: existing.answered + 1,
+    serverAnswered: (existing.serverAnswered ?? (existing.seeded ? 0 : existing.answered)) + 1,
     correct: existing.correct + (answer.correct ? 1 : 0),
     streak,
     bestStreak: Math.max(existing.bestStreak, streak),

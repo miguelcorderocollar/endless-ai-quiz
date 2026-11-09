@@ -1,3 +1,4 @@
+import { v } from "convex/values";
 import { query } from "./_generated/server";
 import { getAuthUserId } from "@convex-dev/auth/server";
 
@@ -15,6 +16,7 @@ import { bucketForRating, HISTOGRAM_BINS } from "../src/lib/quiz/histogram";
 
 const HISTORY_POINTS = 500;
 const POPULATION_CAP = 5000;
+export const MIN_POPULATION_ANSWERS = 20;
 
 /** Caller's rating series for the Elo-over-time chart, downsampled. */
 export const history = query({
@@ -54,16 +56,20 @@ export type Population = {
  */
 export const population = query({
   args: {},
+  returns: v.object({
+    count: v.number(), median: v.union(v.number(), v.null()),
+    buckets: v.array(v.number()), percentile: v.union(v.number(), v.null()),
+    capped: v.boolean(),
+  }),
   handler: async (ctx): Promise<Population> => {
     const rows = await ctx.db
       .query("userStats")
-      .withIndex("by_rating")
+      .withIndex("by_serverAnswered", (q) => q.gte("serverAnswered", MIN_POPULATION_ANSWERS))
       .order("desc")
       .take(POPULATION_CAP + 1);
     const capped = rows.length > POPULATION_CAP;
     const ratings = rows
       .slice(0, POPULATION_CAP)
-      .filter((r) => r.answered > 0)
       .map((r) => r.rating);
     if (ratings.length === 0) {
       return { count: 0, median: null, buckets: new Array(HISTOGRAM_BINS).fill(0), percentile: null, capped };
@@ -86,7 +92,7 @@ export const population = query({
         .withIndex("by_user", (q) => q.eq("userId", userId))
         .take(1)
         .then((r) => r[0]);
-      if (mine) {
+      if (mine && (mine.serverAnswered ?? 0) >= MIN_POPULATION_ANSWERS) {
         const below = sorted.filter((r) => r < mine.rating).length;
         percentile = Math.round((below / sorted.length) * 100);
       }

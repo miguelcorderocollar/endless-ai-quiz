@@ -5,6 +5,7 @@ import { mutation, query } from "./_generated/server";
 import type { MutationCtx } from "./_generated/server";
 import type { Id } from "./_generated/dataModel";
 import { isAdminEmail, requireAdmin, requireUser } from "./access";
+import { rateLimiter } from "./rateLimits";
 import { STARTING_ELO } from "../src/lib/quiz/elo";
 
 const HANDLE_ALPHABET = "abcdefghjkmnpqrstuvwxyz23456789";
@@ -78,20 +79,35 @@ export const ensureProfile = mutation({
   },
 });
 
+export function normalizeDisplayName(value: string): string {
+  const name = value.normalize("NFKC")
+    .replace(/[\u061c\u200e\u200f\u202a-\u202e\u2066-\u2069]/g, "")
+    .replace(/\s+/gu, " ").trim().slice(0, 40).trim();
+  if (!name) throw new ConvexError("Display name cannot be empty.");
+  // Handles identify accounts. Reserve their namespace, including fullwidth
+  // forms after normalization and names prefixed by @.
+  if (/^@|^player[\s_-]/iu.test(name)) {
+    throw new ConvexError("Display name cannot look like an account handle.");
+  }
+  return name;
+}
+
 /** Rename yourself. */
 export const setDisplayName = mutation({
   args: { displayName: v.string() },
+  returns: v.object({ ok: v.boolean() }),
   handler: async (ctx, args) => {
     const userId = await requireUser(ctx);
-    const name = args.displayName.trim().slice(0, 40);
-    if (name.length === 0) throw new ConvexError("Display name cannot be empty.");
+    const name = normalizeDisplayName(args.displayName);
+    await rateLimiter.limit(ctx, "displayName", { key: userId, throws: true });
     await ctx.db.patch(userId, { displayName: name });
     return { ok: true };
   },
 });
 
 /**
- * Seeds the rollup from device-local progress at signup (#34, lazy guests).
+ * Initializes an empty rollup at signup (#59, lazy guests). Client totals
+ * cannot prove a rating or category breakdown, so none are imported.
  * Only when the user has neither stats nor events — i.e. the account is brand
  * new. An existing account (stats or events present) keeps its server history:
  * local totals are ignored and nothing is overwritten, so logging into an
@@ -108,6 +124,7 @@ export const claimProgress = mutation({
     answered: v.number(),
     correct: v.number(),
   },
+  returns: v.object({ seeded: v.boolean() }),
   handler: async (ctx, args) => {
     const userId = await requireUser(ctx);
 
@@ -129,13 +146,15 @@ export const claimProgress = mutation({
       return { seeded: false };
     }
 
-    const answered = Math.max(0, Math.floor(args.answered));
-    const correct = Math.min(Math.max(0, Math.floor(args.correct)), answered);
-    const rating = Math.min(Math.max(Math.round(args.rating) || 1000, 0), 3000);
+    // Old clients still send all three args. None prove a category breakdown
+    // or a rating, so choose the zero-count import allowed by #59.
+    const answered = 0;
+    const correct = 0;
+    const rating = STARTING_ELO;
 
     // Nothing played locally: leave the account stat-free so it does not show
     // up in population stats until it has real answers.
-    if (answered === 0) return { seeded: false };
+    if (!Number.isFinite(args.answered) || args.answered <= 0) return { seeded: false };
 
     await ctx.db.insert("userStats", {
       userId,
@@ -146,9 +165,11 @@ export const claimProgress = mutation({
       bestStreak: 0,
       byCategory: [],
       seeded: true,
+      serverAnswered: 0,
       updatedAt: Date.now(),
     });
-    return { seeded: true };
+    // Older clients reconcile server stats when seeded is false.
+    return { seeded: false };
   },
 });
 
@@ -201,6 +222,7 @@ async function rebuildStatsFromOwnEvents(ctx: MutationCtx, userId: Id<"users">) 
     userId,
     rating,
     answered,
+    serverAnswered: answered,
     correct,
     streak: trailingStreak,
     bestStreak,

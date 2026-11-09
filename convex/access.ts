@@ -25,6 +25,8 @@ export async function authUserId(ctx: QueryCtx | MutationCtx) {
 export async function requireUser(ctx: QueryCtx | MutationCtx) {
   const userId = await getAuthUserId(ctx);
   if (!userId) throw new ConvexError("Sign in required.");
+  const user = await ctx.db.get(userId);
+  if (!user || user.isAnonymous) throw new ConvexError("Sign in required.");
   return userId;
 }
 

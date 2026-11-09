@@ -1,0 +1,168 @@
+import { afterEach, describe, expect, it, vi } from "vitest";
+import { convexTest } from "convex-test";
+import rateLimiterTest from "@convex-dev/rate-limiter/test";
+import { Password } from "@convex-dev/auth/providers/Password";
+
+import { api } from "./_generated/api";
+import schema from "./schema";
+import { authCallbacks } from "./auth";
+import { STARTING_ELO } from "../src/lib/quiz/elo";
+
+const modules = import.meta.glob("./**/*.*s");
+afterEach(() => vi.useRealTimers());
+
+async function setup(isAnonymous = false) {
+  const t = convexTest(schema, modules);
+  rateLimiterTest.register(t);
+  const userId = await t.run((ctx) => ctx.db.insert("users", { isAnonymous }));
+  const questionId = await t.run((ctx) => ctx.db.insert("questions", {
+    questionId: "con-test", text: "Test?", options: ["yes", "no"], answer: "yes",
+    category: "concepts", difficulty: 1, explanation: "Test fixture",
+    source: { kind: "none" }, tags: [], addedAt: "2026-01-01",
+    status: "published", updatedAt: Date.now(),
+  }));
+  const user = t.withIdentity({ subject: userId });
+  const answer = (eventId: string) => user.mutation(api.answers.answer, {
+    questionId: "con-test", picked: "yes", eventId,
+  });
+  return { t, userId, user, answer, questionId };
+}
+
+describe("claimProgress", () => {
+  it.each([3000, 1e100, NaN, Infinity, -100])("ignores untrusted rating %s and totals", async (rating) => {
+    const { user } = await setup();
+    expect(await user.mutation(api.users.claimProgress, {
+      rating, answered: 1e100, correct: Infinity,
+    })).toEqual({ seeded: false });
+    expect(await user.query(api.answers.myStats)).toMatchObject({
+      rating: STARTING_ELO, answered: 0, correct: 0, byCategory: [],
+      streak: 0, bestStreak: 0, serverAnswered: 0, seeded: true,
+    });
+    expect(await user.mutation(api.users.claimProgress, {
+      rating: 3000, answered: 500, correct: 500,
+    })).toEqual({ seeded: false });
+  });
+
+  it.each([0, -1, NaN, Infinity])("does not create stats for invalid/empty count %s", async (answered) => {
+    const { user } = await setup();
+    await user.mutation(api.users.claimProgress, { rating: 3000, answered, correct: 1 });
+    expect(await user.query(api.answers.myStats)).toBeNull();
+  });
+
+  it("preserves existing server stats and rebuilds missing ones from events", async () => {
+    const { t, user, userId, answer } = await setup();
+    await answer("first");
+    const before = await user.query(api.answers.myStats);
+    const claim = { rating: 3000, answered: 999999, correct: 999999 };
+    await user.mutation(api.users.claimProgress, claim);
+    expect(await user.query(api.answers.myStats)).toEqual(before);
+    await t.run(async (ctx) => {
+      const stats = await ctx.db.query("userStats").withIndex("by_user", q => q.eq("userId", userId)).unique();
+      await ctx.db.delete(stats!._id);
+    });
+    expect(await user.mutation(api.users.claimProgress, claim)).toEqual({ seeded: false });
+    expect(await user.query(api.answers.myStats)).toMatchObject({
+      rating: before!.rating, answered: 1, correct: 1, serverAnswered: 1,
+      byCategory: [{ category: "concepts", answered: 1, correct: 1 }],
+    });
+  });
+});
+
+it("rejects new anonymous sign-ins and writes from legacy anonymous sessions", async () => {
+  const { t, user, answer } = await setup(true);
+  await expect(t.action(api.auth.signIn, { provider: "anonymous" })).rejects.toThrow();
+  await expect(answer("anonymous")).rejects.toThrow("Sign in required.");
+  await expect(user.mutation(api.users.claimProgress, { rating: 3000, answered: 100, correct: 100 })).rejects.toThrow("Sign in required.");
+  await expect(user.mutation(api.users.setDisplayName, { displayName: "Guest" })).rejects.toThrow("Sign in required.");
+  expect(await t.query(api.stats.population)).toMatchObject({ count: 0 });
+});
+
+it("limits new answers per user, allows retries at capacity, and refills", async () => {
+  vi.useFakeTimers({ toFake: ["Date"] });
+  const { t, user, answer } = await setup();
+  for (let i = 0; i < 60; i++) await answer(`answer-${i}`);
+  expect(await answer("answer-0")).toMatchObject({ deduped: true });
+  // Legacy retry also bypasses quota consumption.
+  expect(await user.mutation(api.answers.answer, { questionId: "con-test", picked: "yes" })).toMatchObject({ deduped: true });
+  await expect(answer("over-limit")).rejects.toThrow();
+  expect(await user.query(api.answers.myStats)).toMatchObject({ answered: 60, serverAnswered: 60 });
+  const otherId = await t.run(ctx => ctx.db.insert("users", {}));
+  await t.withIdentity({ subject: otherId }).mutation(api.answers.answer, {
+    questionId: "con-test", picked: "yes", eventId: "other-user",
+  });
+  vi.advanceTimersByTime(1000);
+  await answer("after-refill");
+  expect(await user.query(api.answers.myStats)).toMatchObject({ answered: 61 });
+});
+
+it("normalizes names, reserves handles, and limits renames without changing the last name", async () => {
+  vi.useFakeTimers({ toFake: ["Date"] });
+  const { t, user, userId } = await setup();
+  await user.mutation(api.users.setDisplayName, { displayName: "  Ａlice\u202e\u2066\u061c\u200f\n  Smith  " });
+  expect(await user.query(api.users.me)).toMatchObject({ displayName: "Alice Smith" });
+  for (const displayName of ["\u202e  ", "＠person", "ｐｌａｙｅｒ-abc2", "PLAYER_abc2", "player abc2"]) {
+    await expect(user.mutation(api.users.setDisplayName, { displayName })).rejects.toThrow();
+  }
+  for (let i = 0; i < 4; i++) await user.mutation(api.users.setDisplayName, { displayName: `Name ${i}` });
+  await expect(user.mutation(api.users.setDisplayName, { displayName: "Too fast" })).rejects.toThrow();
+  expect(await t.run(ctx => ctx.db.get(userId))).toMatchObject({ displayName: "Name 3" });
+  vi.advanceTimersByTime(12000);
+  await user.mutation(api.users.setDisplayName, { displayName: "After refill" });
+});
+
+it("limits account creation by normalized email and globally, with transactional refusal", async () => {
+  vi.useFakeTimers({ toFake: ["Date"] });
+  const { t } = await setup();
+  const create = (email: string) => t.run(async ctx => {
+    const userId = await ctx.db.insert("users", { email });
+    await authCallbacks.afterUserCreatedOrUpdated!(ctx, {
+      userId, existingUserId: null, type: "credentials", provider: Password(), profile: { email },
+    });
+    return userId;
+  });
+  await create(" Alice@example.com ");
+  await expect(create("alice@example.com")).rejects.toThrow();
+  for (let i = 0; i < 99; i++) await create(`user${i}@example.com`);
+  await expect(create("over-global@example.com")).rejects.toThrow();
+  expect(await t.run(ctx => ctx.db.query("users").collect())).toHaveLength(101);
+  vi.advanceTimersByTime(3600001);
+  await create("alice@example.com");
+});
+
+it("counts only the cohort with 20 server answers, with no percentile for an ineligible caller", async () => {
+  const { t, user, userId, answer } = await setup();
+  await user.mutation(api.users.claimProgress, { rating: 3000, answered: 1000000, correct: 1000000 });
+  // Existing seed-only and legacy stats have no new eligibility field.
+  await t.run(async ctx => {
+    for (const seeded of [true, false]) {
+      const id = await ctx.db.insert("users", {});
+      await ctx.db.insert("userStats", {
+        userId: id, rating: 3000, answered: 1000000, correct: 1000000,
+        streak: 0, bestStreak: 0, byCategory: [], seeded, updatedAt: Date.now(),
+      });
+    }
+  });
+  for (let i = 0; i < 19; i++) await answer(`cohort-${i}`);
+  expect(await user.query(api.stats.population)).toMatchObject({ count: 0, median: null, percentile: null });
+  await answer("twentieth");
+  const stats = await user.query(api.answers.myStats);
+  const population = await user.query(api.stats.population);
+  expect(population).toMatchObject({ count: 1, median: stats!.rating, percentile: 0, capped: false });
+  expect(population.buckets.reduce((a, b) => a + b, 0)).toBe(1);
+  const otherId = await t.run(ctx => ctx.db.insert("users", {}));
+  expect(await t.withIdentity({ subject: otherId }).query(api.stats.population)).toMatchObject({ count: 1, percentile: null });
+  expect(await t.run(ctx => ctx.db.query("answerEvents").withIndex("by_user", q => q.eq("userId", userId)).collect())).toHaveLength(20);
+});
+
+it("conservatively initializes eligibility on legacy stats without counting imported totals", async () => {
+  for (const seeded of [true, false]) {
+    const { t, user, userId, answer } = await setup();
+    await t.run(ctx => ctx.db.insert("userStats", {
+      userId, rating: 1000, answered: 100, correct: 50, byCategory: [],
+      streak: 0, bestStreak: 0, seeded, updatedAt: Date.now(),
+    }));
+    await answer("legacy-next");
+    expect(await user.query(api.answers.myStats)).toMatchObject({ serverAnswered: seeded ? 1 : 101 });
+    expect(await user.query(api.stats.population)).toMatchObject({ count: seeded ? 0 : 1 });
+  }
+});
