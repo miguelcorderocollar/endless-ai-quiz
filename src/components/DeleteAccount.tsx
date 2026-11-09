@@ -5,6 +5,7 @@ import { useAuthActions } from "@convex-dev/auth/react";
 import { useMutation } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { Popup } from "./Popup";
+import { deletionErrorMessage } from "./deletionError";
 import { clearDeletedAccountStorage } from "./deletionLocal";
 
 export function DeleteAccount() {
@@ -31,8 +32,8 @@ export function DeleteAccount() {
             setError(null);
             try {
               await deleteAccount({});
-            } catch {
-              setError("Could not start deletion. Check your connection. If you signed in over five minutes ago, sign out and sign in again.");
+            } catch (err) {
+              setError(deletionErrorMessage(err));
               setBusy(false);
               return;
             }

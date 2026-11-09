@@ -1,3 +1,4 @@
+import { resetUserRateLimits } from "../rateLimits";
 import { internal } from "../_generated/api";
 import type { Id } from "../_generated/dataModel";
 import type { MutationCtx } from "../_generated/server";
@@ -7,8 +8,11 @@ const BATCH_SIZE = 100;
 /** Block old clients' writes before scheduling any destructive work. */
 export async function beginUserDeletion(ctx: MutationCtx, userId: Id<"users">) {
   const user = await ctx.db.get(userId);
-  if (!user || user.deletionStartedAt !== undefined) return;
-  await ctx.db.patch(userId, { deletionStartedAt: Date.now() });
+  if (!user) return;
+  if (user.deletionStartedAt === undefined) {
+    await ctx.db.patch(userId, { deletionStartedAt: Date.now() });
+  }
+  // A previous scheduled batch may have failed. Repeated requests resume it.
   await ctx.scheduler.runAfter(0, internal.users.continueDeletion, { userId });
 }
 
@@ -61,6 +65,7 @@ export async function deleteUserBatch(ctx: MutationCtx, userId: Id<"users">) {
     await again();
     return;
   }
-  // authVerifiers are OAuth-only, never created by the password/anonymous app.
+  await resetUserRateLimits(ctx, userId);
+  // authVerifiers are OAuth-only, never created by this password-only app.
   await ctx.db.delete(userId);
 }

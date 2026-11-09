@@ -1,4 +1,7 @@
 /// <reference types="vite/client" />
+import rateLimiterTest from "@convex-dev/rate-limiter/test";
+import { authCallbacks } from "./auth";
+import { rateLimiter } from "./rateLimits";
 import { convexTest } from "convex-test";
 import { afterEach, expect, it, vi } from "vitest";
 import { api, internal } from "./_generated/api";
@@ -9,6 +12,7 @@ afterEach(() => vi.useRealTimers());
 
 async function setup() {
   const t = convexTest(schema, modules);
+  rateLimiterTest.register(t);
   const ids = await t.run(async ctx => {
     const userId = await ctx.db.insert("users", { email: "delete@example.com" });
     const otherId = await ctx.db.insert("users", { email: "keep@example.com" });
@@ -105,4 +109,53 @@ it("seed cleanup schedules subsequent user pages and uses the shared cascade", a
   const users = await t.run(ctx => ctx.db.query("users").collect());
   expect(users).toHaveLength(2);
   expect(users.some(u => u._id === otherId)).toBe(true);
+});
+
+
+it("refuses session creation for a user marked for deletion", async () => {
+  const { t, userId } = await setup();
+  const createSession = () => t.run(async ctx => {
+    await authCallbacks.beforeSessionCreation!(ctx, { userId });
+    return ctx.db.insert("authSessions", { userId, expirationTime: Date.now() + 1000 });
+  });
+  await expect(createSession()).resolves.toBeTruthy();
+  await t.run(ctx => ctx.db.patch(userId, { deletionStartedAt: Date.now() }));
+  await expect(createSession()).rejects.toThrow("Account unavailable or being deleted.");
+  expect(await t.run(ctx => ctx.db.query("authSessions").collect())).toHaveLength(2);
+});
+
+it.each(["account", "seed"])("resumes a marked user with no running continuation through %s deletion", async source => {
+  vi.useFakeTimers();
+  const { t, authed, userId } = await setup();
+  // Simulate the state left when a batch fails: the marker committed earlier,
+  // and there is no queued continuation. A stale session can resume this work.
+  await t.run(ctx => ctx.db.patch(userId, {
+    deletionStartedAt: Date.now(), email: "stalled@seed.endless-ai.test",
+  }));
+  vi.advanceTimersByTime(6 * 60 * 1000);
+  if (source === "account") await authed.mutation(api.users.deleteAccount, {});
+  else await t.mutation(internal.seed.cleanupSeed, {});
+  await t.finishAllScheduledFunctions(vi.runAllTimers);
+  expect(await t.run(ctx => ctx.db.get(userId))).toBeNull();
+});
+
+it("removes component rate limits for the deleted user while retaining other quotas", async () => {
+  vi.useFakeTimers();
+  const { t, authed, userId, otherId } = await setup();
+  await t.run(async ctx => {
+    for (const key of [userId, otherId]) {
+      await rateLimiter.limit(ctx, "answer", { key });
+      await rateLimiter.limit(ctx, "displayName", { key });
+    }
+    await rateLimiter.limit(ctx, "signUpGlobal");
+  });
+  await authed.mutation(api.users.deleteAccount, {});
+  await t.finishAllScheduledFunctions(vi.runAllTimers);
+  await t.run(async ctx => {
+    for (const name of ["answer", "displayName"] as const) {
+      expect((await rateLimiter.getValue(ctx, name, { key: userId })).ts).toBe(0);
+      expect((await rateLimiter.getValue(ctx, name, { key: otherId })).ts).toBeGreaterThan(0);
+    }
+    expect((await rateLimiter.getValue(ctx, "signUpGlobal")).ts).toBeGreaterThan(0);
+  });
 });

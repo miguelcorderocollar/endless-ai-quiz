@@ -297,9 +297,13 @@ export const deleteAccount = mutation({
     const userId = await getAuthUserId(ctx);
     if (!userId) throw new ConvexError("Sign in required.");
     const user = await ctx.db.get(userId);
-    // A retried request after a lost response must still let the client clear
-    // local data. No further destructive work is initiated by this branch.
-    if (!user || user.deletionStartedAt !== undefined) return null;
+    if (!user) return null;
+    // Resume a stalled chain without requiring a fresh session for a deletion
+    // this identity already authorized. Batches are safe to repeat.
+    if (user.deletionStartedAt !== undefined) {
+      await beginUserDeletion(ctx, userId);
+      return null;
+    }
     const sessionId = await getAuthSessionId(ctx);
     const session = sessionId ? await ctx.db.get(sessionId) : null;
     if (!session || session.userId !== userId ||
