@@ -1,0 +1,52 @@
+name: Weekly source and dependency checks
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            apps/mobile/package-lock.json
+      - run: npm ci
+      # No validator cache: recheck sources instead of trusting last week's text.
+      - run: npm run validate
+
+  audit:
+    name: Dependency audit (informational)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            apps/mobile/package-lock.json
+      - run: npm ci
+      - run: npm ci --prefix apps/mobile
+      - name: Audit web production dependencies
+        continue-on-error: true
+        run: npm audit --omit=dev --audit-level=high
+      - name: Audit native production dependencies
+        continue-on-error: true
+        run: npm audit --prefix apps/mobile --omit=dev --audit-level=high

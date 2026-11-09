@@ -235,3 +235,84 @@ data safety forms, and none of that is set up yet.
 2. `npm run typecheck && npm run lint`
 3. `npx convex deploy --dry-run` if backend changed
 4. Push; watch Vercel deployment + Convex dashboard logs
+
+## GitHub verification gate (#61)
+
+`.github/workflows/verify.yml` runs on pull requests, pushes to main, and manual
+dispatch, with no path filters. PR branch pushes use the pull-request run rather
+than triggering a second push run. New PR commits cancel superseded runs; main
+runs finish even when another merge arrives.
+
+The required `Verify` job runs offline bank validation, TypeScript, lint, all
+unit tests, a production build and Chromium browser tests. CI installs both
+lockfiles because root Vitest includes native helper tests whose config extends
+Expo. setup-node caches dependencies using both lockfiles; checkout does not
+persist credentials. Verification uses a nonexistent Convex URL and no secrets.
+E2E fixtures seed local data and block backend traffic. Failed runs retain the
+HTML report and retry traces for 14 days. The browser suite builds again as its
+own stale-build safeguard.
+
+Offline validation checks grounding against cached Wikipedia leads when present
+and skips uncached titles. A cached lead missing the answer produces a warning,
+since checking the full article needs the network. Schema and answer integrity
+checks still run without a cache.
+
+`.github/workflows/sources.yml` runs every Monday at 06:17 UTC and supports manual
+dispatch. Its live source validation job starts without a source cache. Wikipedia
+rate limits and URL outages should alert maintainers, not block an unrelated PR.
+Content authors must still run live validation before publishing. A separate
+informational audit job checks production dependencies in both the root and
+apps/mobile packages. Findings appear in the logs; audit steps continue on error.
+Neither the audit nor source-validation job belongs in branch protection, so a
+new advisory without a fix cannot block all merges.
+
+The drift job runs only on pushes to main, never on pull requests or manual
+verification runs. It runs `npx tsx scripts/publish.mts --check --prod` against
+**moonlit-blackbird-812**. Check mode issues only a public `questions:list`
+query through `/api/query`, compares all fields sent by publishing and exits
+before any Convex CLI call. Missing, extra or changed ids produce a GitHub warning;
+unreachable, malformed or duplicate data fails this separate monitoring job
+rather than claiming a match. The drift job is not a required merge check. A
+warning is not a request to automatically publish the bank.
+
+No key is needed because this read query is already public. Convex deploy keys
+grant write/deploy access and must not be added to verification CI. If #58 removes
+or redacts this query, replace the drift reader with a narrowly scoped published
+content fingerprint query in that change; never compensate with a prod admin key.
+For a different explicit read target, use `--check` with `CONVEX_CHECK_URL`.
+Ordinary publishing remains unchanged.
+
+After the first successful `Verify` run, the coordinator can enable protection
+on main. This PR does not change settings. The following command requires an
+up-to-date passing GitHub Actions `Verify` check and a PR, with zero required
+approvals because the sole collaborator cannot approve their own PR. Admins
+retain an emergency bypass. Force pushes and branch deletion are disabled for
+users subject to these rules:
+
+```bash
+gh api --method PUT repos/miguelcorderocollar/endless-ai-quiz/branches/main/protection --input - <<'JSON'
+{
+  "required_status_checks": {
+    "strict": true,
+    "checks": [{ "context": "Verify", "app_id": 15368 }]
+  },
+  "enforce_admins": false,
+  "required_pull_request_reviews": {
+    "dismiss_stale_reviews": true,
+    "require_code_owner_reviews": false,
+    "required_approving_review_count": 0
+  },
+  "restrictions": null,
+  "required_conversation_resolution": true,
+  "allow_force_pushes": false,
+  "allow_deletions": false
+}
+JSON
+gh api repos/miguelcorderocollar/endless-ai-quiz/branches/main/protection
+```
+
+Review existing protection first, since PUT replaces the configuration. Until the
+coordinator applies it, a direct push still deploys without waiting for Actions.
+The push workflow itself cannot delay Vercel; normal releases should use PRs and
+reserve the admin bypass for emergencies. Optional isolated Convex previews
+remain the separate Vercel setup described above and are not part of verification CI.
