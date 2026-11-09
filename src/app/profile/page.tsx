@@ -26,7 +26,7 @@ import {
   subscribeNetwork,
 } from "@/lib/pwa/network";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
-import { clearLocalAccountState } from "@/lib/accountState";
+import { resetProgressAndClear } from "@/lib/accountState";
 import { useLocalSignOut } from "@/lib/useLocalSignOut";
 import type { Question } from "@/lib/questions/schema";
 import { loadFallbackBank } from "@/lib/questions/fallback";
@@ -398,9 +398,9 @@ export default function ProfilePage() {
       {popup === "reset" && !guest ? (
         <Popup label="danger zone" title="Reset progress?" onClose={() => setPopup(null)}>
           <ResetConfirm
+            account={displayMe?.handle ?? null}
             onCancel={() => setPopup(null)}
             onDone={() => {
-              clearLocalAccountState({ reason: "reset", account: displayMe?.handle ?? null });
               // eslint-disable-next-line @next/next/no-location-assign-relative-destination -- discard mounted account state after reset
               window.location.assign("/");
             }}
@@ -412,9 +412,11 @@ export default function ProfilePage() {
 }
 
 function ResetConfirm({
+  account,
   onCancel,
   onDone,
 }: {
+  account: string | null;
   onCancel: () => void;
   onDone: () => void;
 }) {
@@ -437,7 +439,7 @@ function ResetConfirm({
           onClick={() => {
             setBusy(true);
             setError(null);
-            void resetProgress({}).then(
+            void resetProgressAndClear(() => resetProgress({}), account).then(
               () => onDone(),
               (err: unknown) => {
                 setBusy(false);

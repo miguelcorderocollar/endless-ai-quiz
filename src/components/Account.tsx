@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { api } from "../../convex/_generated/api";
 import { readProgress, updateProgress } from "@/lib/progress";
+import { writeProfileCache } from "@/lib/quiz/bankCache";
 import { snapshotGuestProgress } from "@/lib/accountState";
 import { useLocalSignOut } from "@/lib/useLocalSignOut";
 import { AccountSlotSkeleton } from "./Skeletons";
@@ -31,6 +32,10 @@ export function Account() {
   const claim = useMutation(api.users.claimProgress);
 
   const profileEnsured = useRef(false);
+
+  useEffect(() => {
+    if (me) writeProfileCache(me);
+  }, [me]);
 
   useEffect(() => {
     if (isAuthenticated && !profileEnsured.current) {
@@ -147,7 +152,7 @@ export function SignInForm({
   layout?: "panel" | "page" | "dialog";
 }) {
   const { signIn } = useAuthActions();
-  const { isAuthenticated } = useConvexAuth();
+  const { isAuthenticated, isLoading } = useConvexAuth();
   const [flow, setFlow] = useState<"signIn" | "signUp">("signIn");
   const [error, setError] = useState<string | null>(null);
 
@@ -165,7 +170,7 @@ export function SignInForm({
           event.preventDefault();
           setError(null);
           const formData = new FormData(event.currentTarget);
-          if (!isAuthenticated) snapshotGuestProgress();
+          if (!isLoading && !isAuthenticated) snapshotGuestProgress();
           void signIn("password", formData).then(
             () => onDone(),
             (err: unknown) => {

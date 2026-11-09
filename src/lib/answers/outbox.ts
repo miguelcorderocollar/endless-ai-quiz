@@ -164,6 +164,11 @@ export function clearOutbox(account?: string | null): void {
   ));
 }
 
+/** Untagged legacy events have no safe owner after an account boundary. */
+export function discardUntaggedAnswers(): void {
+  set(readOutbox().filter((event) => event.account !== null));
+}
+
 /** Park queued events while preventing a late drain from reconciling progress. */
 export function invalidateOutboxDrains(): void {
   generation += 1;
@@ -187,11 +192,13 @@ export async function drainOutbox(
     account,
     () => gen === generation,
   );
-  if (gen === generation) {
-    const pending = withoutSent(getOutboxSnapshot().pending, settledIds);
-    const retryAt = retryAfter === undefined ? undefined : Date.now() + retryAfter;
-    if (pending.length !== current.pending.length || current.retryAt !== retryAt) set(pending, retryAt);
-  }
+  const pending = withoutSent(getOutboxSnapshot().pending, settledIds);
+  // An old drain still settles its IDs, but cannot change a newer retry deadline.
+  const retryAt = gen === generation
+    ? (retryAfter === undefined ? undefined : Date.now() + retryAfter)
+    : current.retryAt;
+  if (pending.length !== current.pending.length || current.retryAt !== retryAt) set(pending, retryAt);
+  if (gen !== generation) return { sent, lastRating: null, maxAt: null };
   return { sent, lastRating, maxAt };
 }
 
