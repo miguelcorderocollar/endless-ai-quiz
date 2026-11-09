@@ -30,6 +30,7 @@ import { resetProgressAndClear } from "@/lib/accountState";
 import { useLocalSignOut } from "@/lib/useLocalSignOut";
 import type { Question } from "@/lib/questions/schema";
 import { loadFallbackBank } from "@/lib/questions/fallback";
+import { DeleteAccount } from "@/components/DeleteAccount";
 import { DoneList } from "@/components/DoneList";
 import { InstallRow } from "@/components/InstallPrompt";
 import { Popup } from "@/components/Popup";
@@ -366,6 +367,16 @@ export default function ProfilePage() {
         </div>
 
         {signOutError ? <p role="alert">{signOutError}</p> : null}
+        {!guest ? (
+          <section aria-label="danger zone" className="mt-8 border-t border-ink-line pt-6">
+            <p className="label mb-4 text-muted">danger zone</p>
+            <div className="flex items-center gap-6">
+              <button type="button" onClick={() => setPopup("reset")} className="label cursor-pointer text-fail">reset progress</button>
+              <DeleteAccount />
+            </div>
+          </section>
+        ) : null}
+        <Link href="/privacy" className="label mt-8 w-fit text-muted hover:text-signal">privacy notice</Link>
         <InstallRow />
 
         <Link

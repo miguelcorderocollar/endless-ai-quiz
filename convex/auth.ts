@@ -35,6 +35,12 @@ const PasswordWithRole = Password<DataModel>({
 });
 
 export const authCallbacks: NonNullable<ConvexAuthConfig["callbacks"]> = {
+  async beforeSessionCreation(ctx, { userId }) {
+    const user = await ctx.db.get(userId);
+    if (!user || user.deletionStartedAt !== undefined) {
+      throw new ConvexError("Account unavailable or being deleted.");
+    }
+  },
   async afterUserCreatedOrUpdated(ctx, { existingUserId }) {
     if (existingUserId !== null) return;
     // This callback and account creation share a transaction. A refusal rolls

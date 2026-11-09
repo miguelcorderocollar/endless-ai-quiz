@@ -1,12 +1,14 @@
 import { ConvexError, v } from "convex/values";
-import { getAuthUserId } from "@convex-dev/auth/server";
+import { getAuthSessionId, getAuthUserId } from "@convex-dev/auth/server";
 
-import { mutation, query } from "./_generated/server";
+import { internalMutation, mutation, query } from "./_generated/server";
 import type { MutationCtx } from "./_generated/server";
 import type { Id } from "./_generated/dataModel";
 import { isAdminEmail, requireAdmin, requireUser } from "./access";
 import { rateLimiter } from "./rateLimits";
 import { STARTING_ELO } from "../src/lib/quiz/elo";
+
+import { beginUserDeletion, deleteUserBatch } from "./lib/deleteUser";
 
 const HANDLE_ALPHABET = "abcdefghjkmnpqrstuvwxyz23456789";
 
@@ -284,5 +286,37 @@ export const adminStats = query({
       questions: questions.length,
       admins: users.filter((u) => u.role === "admin").length,
     };
+  },
+});
+
+/** Recent means a new authenticated session, never a refreshed access token. */
+export const deleteAccount = mutation({
+  args: {},
+  returns: v.null(),
+  handler: async (ctx) => {
+    const userId = await getAuthUserId(ctx);
+    if (!userId) throw new ConvexError("Sign in required.");
+    const user = await ctx.db.get(userId);
+    // A retried request after a lost response must still let the client clear
+    // local data. No further destructive work is initiated by this branch.
+    if (!user || user.deletionStartedAt !== undefined) return null;
+    const sessionId = await getAuthSessionId(ctx);
+    const session = sessionId ? await ctx.db.get(sessionId) : null;
+    if (!session || session.userId !== userId ||
+        session.expirationTime <= Date.now() ||
+        Date.now() - session._creationTime > 5 * 60 * 1000) {
+      throw new ConvexError("Sign out and sign in again, then delete within five minutes.");
+    }
+    await beginUserDeletion(ctx, userId);
+    return null;
+  },
+});
+
+export const continueDeletion = internalMutation({
+  args: { userId: v.id("users") },
+  returns: v.null(),
+  handler: async (ctx, { userId }) => {
+    await deleteUserBatch(ctx, userId);
+    return null;
   },
 });
