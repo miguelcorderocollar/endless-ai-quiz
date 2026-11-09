@@ -268,17 +268,23 @@ new advisory without a fix cannot block all merges.
 
 The drift job runs only on pushes to main, never on pull requests or manual
 verification runs. It runs `npx tsx scripts/publish.mts --check --prod` against
-**moonlit-blackbird-812**. Check mode issues only a public `questions:list`
-query through `/api/query`, compares all fields sent by publishing and exits
-before any Convex CLI call. Missing, extra or changed ids produce a GitHub warning;
+**moonlit-blackbird-812**. Check mode issues only the public, answer-free
+`questions:publishedDigest` query through `/api/query`. It compares each
+published id with a SHA-256 of its text, options, category, difficulty,
+explanation, source, tags and addedAt, and exits before any Convex CLI call. The
+answer is deliberately left out of the digest so it cannot be brute-forced from
+the options, which means answer-only drift is invisible to this job; check it
+with an authenticated admin `questions:publishedList` run when it matters. Missing, extra or changed ids produce a GitHub warning;
 unreachable, malformed or duplicate data fails this separate monitoring job
 rather than claiming a match. The drift job is not a required merge check. A
 warning is not a request to automatically publish the bank.
 
-No key is needed because this read query is already public. Convex deploy keys
-grant write/deploy access and must not be added to verification CI. If #58 removes
-or redacts this query, replace the drift reader with a narrowly scoped published
-content fingerprint query in that change; never compensate with a prod admin key.
+No key is needed because the digest query is public and carries no answers.
+Convex deploy keys grant write/deploy access and must not be added to
+verification CI; never compensate for a narrower query with a prod admin key.
+The drift job races the Vercel/Convex production deploy on the same push, so the
+first run after a change to the digest query can fail with "Published query
+failed" before the new function is live. Re-run it once the deploy is Ready.
 For a different explicit read target, use `--check` with `CONVEX_CHECK_URL`.
 Ordinary publishing remains unchanged.
 
