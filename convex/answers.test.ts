@@ -178,25 +178,24 @@ describe("casual question trust boundary", () => {
     expect((await authed.query(api.questions.draw, { excludeIds: [] }))[0]!.answer)
       .toBe("Machine learning");
   });
-});
 
-
-it("lets only admins read the full list and keeps the publish query internal", async () => {
-  const { t, userId, authed } = await setup();
-  expect(await t.query(api.questions.list, {})).toEqual([]);
-  const guestReveal = await t.mutation(api.answers.reveal, {
-    questionId: "con-9001", picked: "Machine learning",
+  it("lets only admins read the full list and keeps the publish query internal", async () => {
+    const { t, userId, authed } = await setup();
+    expect(await t.query(api.questions.list, {})).toEqual([]);
+    const guestReveal = await t.mutation(api.answers.reveal, {
+      questionId: "con-9001", picked: "Machine learning",
+    });
+    expect(guestReveal.correct).toBe(true);
+    await t.run(async (ctx) => { await ctx.db.patch(userId, { role: "admin" }); });
+    expect((await authed.query(api.questions.list, {}))[0]!.answer).toBe("Machine learning");
+    expect(await t.query(internal.questions.publishedList, {})).toHaveLength(1);
+    await t.run(async (ctx) => {
+      const q = await ctx.db.query("questions").first();
+      await ctx.db.patch(q!._id, { status: "archived" });
+    });
+    expect(await t.query(api.questions.drawForPlay, { excludeIds: [] })).toEqual([]);
+    await expect(t.mutation(api.answers.reveal, {
+      questionId: "con-9001", picked: "Machine learning",
+    })).rejects.toThrow("Unknown question");
   });
-  expect(guestReveal.correct).toBe(true);
-  await t.run(async (ctx) => { await ctx.db.patch(userId, { role: "admin" }); });
-  expect((await authed.query(api.questions.list, {}))[0]!.answer).toBe("Machine learning");
-  expect(await t.query(internal.questions.publishedList, {})).toHaveLength(1);
-  await t.run(async (ctx) => {
-    const q = await ctx.db.query("questions").first();
-    await ctx.db.patch(q!._id, { status: "archived" });
-  });
-  expect(await t.query(api.questions.drawForPlay, { excludeIds: [] })).toEqual([]);
-  await expect(t.mutation(api.answers.reveal, {
-    questionId: "con-9001", picked: "Machine learning",
-  })).rejects.toThrow("Unknown question");
 });

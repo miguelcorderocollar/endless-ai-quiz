@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import type { Question } from "./schema";
-import { resolvePick } from "./resolvePick";
+import { REVEAL_TIMEOUT_MS, resolvePick } from "./resolvePick";
 
 const local: Question = {
   id: "con-9001", text: "Question?", options: ["a", "b", "c", "d"],
@@ -51,5 +51,18 @@ describe("resolvePick", () => {
     expect(result).toEqual(local);
     expect(unsubscribe).toHaveBeenCalledOnce();
   });
-
+  it("times out a parked reveal even when the browser remains online", async () => {
+    vi.useFakeTimers();
+    try {
+      const fallback = vi.fn();
+      const result = resolvePick(redacted, "a", true, () => new Promise(() => {}), fallback);
+      const assertion = expect(result).rejects.toThrow("timed out");
+      await vi.advanceTimersByTimeAsync(REVEAL_TIMEOUT_MS);
+      await assertion;
+      expect(fallback).not.toHaveBeenCalled();
+      expect(vi.getTimerCount()).toBe(0);
+    } finally {
+      vi.useRealTimers();
+    }
+  });
 });

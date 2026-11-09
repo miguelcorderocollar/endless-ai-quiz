@@ -22,9 +22,13 @@ round-trip before showing feedback. Cached full questions and offline fallback
 remain local practice. After reveal, signed-in picks still travel through
 `answers.answer` via the ordered outbox, with its existing eventId dedupe.
 Reveal itself awards no rating and is available to guests.
+We accept revealing any option, then submitting the correct pick to `answers.answer`, as a cheat path for casual Elo.
+Offline verdicts come from the bundle and can be stale against the server verdict
+at replay. The revision check compares only text and options, not the answer.
 
 `questions.list` is admin-gated. Its empty-array response for other callers
-keeps old installed profile clients from throwing. CLI publishing uses the
+keeps old installed profile clients from throwing, but their empty live list masks
+all cached question-sheet rows until they update. CLI publishing uses the
 internal `questions.publishedList`. New web profiles read the public practice
 bank, so their bank view follows the app build rather than live publication.
 Native profiles already fall back to their bundled bank when the list is empty.

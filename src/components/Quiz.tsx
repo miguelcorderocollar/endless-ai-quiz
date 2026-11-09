@@ -144,6 +144,7 @@ export function Quiz({
   }, [filterKey, current, seen, phase, picked, exhausted, initial.id]);
 
   const nextQuestion = useCallback(() => {
+    setAnswerError(null);
     const next = pickNext(bank, seen, categories, Math.random, progress.rating);
     if (!next) {
       // Current page exhausted: ask the server for more unseen questions.
@@ -191,7 +192,7 @@ export function Quiz({
           },
         );
       } catch {
-        setAnswerError("Could not check your answer. Try again when connected.");
+        setAnswerError("Could not check your answer. Try again or skip this question.");
         return;
       } finally {
         pending.current = false;
@@ -401,7 +402,15 @@ export function Quiz({
               </ul>
 
               {submitting ? <p role="status" className="mt-4 text-muted">Checking answer…</p> : null}
-              {answerError ? <p role="alert" className="mt-4 text-muted">{answerError}</p> : null}
+              {answerError ? (
+                <div className="mt-4 text-muted">
+                  <p role="alert">{answerError}</p>
+                  <button type="button" onClick={nextQuestion}
+                    className="label mt-3 cursor-pointer border border-ink-line px-4 py-2 hover:text-signal">
+                    skip this question
+                  </button>
+                </div>
+              ) : null}
               {phase === "revealed" ? (
                 <Reveal
                   key={`reveal-${current.id}`}

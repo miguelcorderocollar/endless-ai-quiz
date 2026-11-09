@@ -12,6 +12,9 @@ import { getAuthUserId } from "@convex-dev/auth/server";
 /**
  * Casual online reveal, available to guests too. This does not award Elo:
  * signed-in attempts still use the existing ordered, idempotent outbox.
+ * A mutation makes this an explicit, nonreactive submission round-trip rather
+ * than a subscribed query. It intentionally writes nothing; score writes stay
+ * in the replayable outbox path. It does not commit a first pick or prevent cheating.
  * The public offline bank means these results are unsuitable for competition.
  */
 export const reveal = mutation({

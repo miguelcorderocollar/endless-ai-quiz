@@ -165,7 +165,7 @@ export default function ProfilePage() {
   }, [isAuthenticated, stats, ensureStats]);
 
   const questions: Question[] =
-    bank ?? cachedList ?? [];
+    bank && bank.length > 0 ? bank : cachedList ?? [];
   // Offline, Convex auth and every query hang instead of failing — auth never
   // settles and the query hooks stay `undefined` until the socket connects.
   // An unsettled page would park on skeletons forever, so everything below
