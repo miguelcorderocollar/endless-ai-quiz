@@ -36,11 +36,17 @@ it("restores guest progress after account totals, including after a reload", asy
   s.clearLocalAccountState({ reason: "signOut" });
   expect(s.getProgressSnapshot()).toEqual(guest);
   expect(s.readProgress()).toEqual(guest);
-  expect(storage.has("endless-ai:guest-progress:v1")).toBe(false);
-  // The snapshot is consumed, so a later account without a guest starts empty.
+  // Restore does not consume the snapshot: a repeated clear after another
+  // reload (cross-tab flip, SDK sync) must not wipe the restored guest progress.
+  expect(storage.has("endless-ai:guest-progress:v1")).toBe(true);
+  vi.resetModules();
+  s = await setup();
+  s.clearLocalAccountState({ reason: "signOut" });
+  expect(s.readProgress()).toEqual(guest);
+  // Within one document the clear runs once.
   s.updateProgress({ ...s.EMPTY_PROGRESS, answered: 50 });
   s.clearLocalAccountState({ reason: "signOut" });
-  expect(s.getProgressSnapshot()).toEqual(s.EMPTY_PROGRESS);
+  expect(s.getProgressSnapshot().answered).toBe(50);
 });
 
 it("clears all draw variants, list, counts, profile and session, preserving preferences and parked events", async () => {
@@ -130,6 +136,8 @@ it("flushes before invalidating so a successful send is removed before sign-out"
 
 it("bounds hung flush and auth requests, clears local credentials, and reports parked answers", async () => {
   const s = await setup();
+  const { writeProfileCache } = await import("./quiz/bankCache");
+  writeProfileCache({ displayName: null, handle: "alice", role: "user", isAnonymous: false });
   vi.useFakeTimers();
   try {
     s.enqueueAnswer(queue("alice", "a"));
@@ -198,4 +206,72 @@ it("invalidates replay before reset starts, while preserving state when reset fa
   expect(send).toHaveBeenCalledTimes(1);
   expect(s.readProgress().answered).toBe(20);
   expect(s.getOutboxSnapshot().pending.map(e => e.eventId)).toEqual(["later"]);
+});
+
+it("flushes untagged answers before stamping the remainder with the outgoing handle", async () => {
+  const s = await setup();
+  const { writeProfileCache } = await import("./quiz/bankCache");
+  writeProfileCache({ displayName: null, handle: "alice", role: "user", isAnonymous: false });
+  s.enqueueAnswer(queue(null, "untagged-sent"));
+  s.enqueueAnswer(queue(null, "untagged-stuck"));
+  s.enqueueAnswer(queue("bob", "bobs"));
+  const sent: string[] = [];
+  const parked = await s.signOutAndClear(async () => {}, {
+    drain: () => s.drainOutbox(async (args: { eventId: string }) => {
+      sent.push(args.eventId);
+      if (args.eventId === "untagged-stuck") throw new Error("offline");
+      return { ratingAfter: 1200 };
+    }, "alice"),
+  });
+  expect(sent).toContain("untagged-sent");
+  const pending = s.getOutboxSnapshot().pending;
+  expect(pending.find(e => e.eventId === "untagged-sent")).toBeUndefined();
+  expect(pending.find(e => e.eventId === "untagged-stuck")?.account).toBe("alice");
+  expect(parked).toBe(1); // bob's event is not the outgoing account's
+});
+
+it("keeps untagged answers if sign-out fails before they are stamped away", async () => {
+  const s = await setup();
+  s.enqueueAnswer(queue(null, "untagged"));
+  await expect(s.signOutAndClear(() => Promise.reject(new Error("auth")))).rejects.toThrow("auth");
+  expect(s.getOutboxSnapshot().pending.map(e => e.eventId)).toEqual(["untagged"]);
+});
+
+it("reset and deletion with an unknown handle drop every queued event", async () => {
+  const s = await setup();
+  s.enqueueAnswer(queue("alice", "a"));
+  s.enqueueAnswer(queue(null, "legacy"));
+  s.clearLocalAccountState({ reason: "reset", account: null });
+  expect(s.getOutboxSnapshot().pending).toEqual([]);
+});
+
+it("attributing untagged answers keeps tagged events when localStorage is unavailable", async () => {
+  const s = await setup();
+  s.enqueueAnswer(queue("alice", "a"));
+  vi.stubGlobal("window", { localStorage: {
+    getItem: () => { throw new Error("denied"); },
+    setItem: () => { throw new Error("denied"); },
+    removeItem: () => { throw new Error("denied"); },
+  } });
+  s.discardUntaggedAnswers();
+  expect(s.getOutboxSnapshot().pending.map(e => e.eventId)).toEqual(["a"]);
+});
+
+it("formats the parked-answers notice with correct plurals", async () => {
+  const s = await setup();
+  expect(s.parkedAnswersMessage(1)).toContain("1 unsynced answer remains");
+  expect(s.parkedAnswersMessage(2)).toContain("2 unsynced answers remain");
+});
+
+it("a settled session end clears once and defers to an in-flight sign-out", async () => {
+  const s = await setup();
+  const reload = vi.fn();
+  let finish!: () => void;
+  const out = s.signOutAndClear(() => new Promise<void>(r => { finish = r; }));
+  s.handleSessionEnded(reload);
+  expect(reload).not.toHaveBeenCalled();
+  finish();
+  await out;
+  s.handleSessionEnded(reload);
+  expect(reload).not.toHaveBeenCalled();
 });

@@ -8,7 +8,6 @@ import { useEffect, useRef, useState } from "react";
 
 import { api } from "../../convex/_generated/api";
 import { readProgress, updateProgress } from "@/lib/progress";
-import { writeProfileCache } from "@/lib/quiz/bankCache";
 import { snapshotGuestProgress } from "@/lib/accountState";
 import { useLocalSignOut } from "@/lib/useLocalSignOut";
 import { AccountSlotSkeleton } from "./Skeletons";
@@ -32,10 +31,6 @@ export function Account() {
   const claim = useMutation(api.users.claimProgress);
 
   const profileEnsured = useRef(false);
-
-  useEffect(() => {
-    if (me) writeProfileCache(me);
-  }, [me]);
 
   useEffect(() => {
     if (isAuthenticated && !profileEnsured.current) {

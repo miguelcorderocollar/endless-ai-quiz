@@ -159,14 +159,21 @@ export function enqueueAnswer(event: QueuedAnswer): void {
 export function clearOutbox(account?: string | null): void {
   generation += 1;
   resetReconcile();
-  set(account === undefined ? [] : getOutboxSnapshot().pending.filter(
+  set(account == null ? [] : getOutboxSnapshot().pending.filter(
     (event) => event.account !== account && event.account !== null,
   ));
 }
 
-/** Untagged legacy events have no safe owner after an account boundary. */
+/** Bind legacy events to the outgoing owner, or drop them if ownership is unknown. */
+export function attributeUntaggedAnswers(account: string | null): void {
+  const { pending, retryAt } = getOutboxSnapshot();
+  set(account === null
+    ? pending.filter(event => event.account !== null)
+    : pending.map(event => event.account === null ? { ...event, account } : event), retryAt);
+}
+
 export function discardUntaggedAnswers(): void {
-  set(readOutbox().filter((event) => event.account !== null));
+  attributeUntaggedAnswers(null);
 }
 
 /** Park queued events while preventing a late drain from reconciling progress. */

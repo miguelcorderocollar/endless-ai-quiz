@@ -30,7 +30,7 @@ test(`sign-out clears the guest profile with ${hung ? "a hung" : "a successful"}
   await expect(page.getByText("Private player", { exact: true })).toBeVisible();
   await page.getByRole("button", { name: "sign out", exact: true }).click();
   await page.waitForURL("/");
-  await expect(page.getByText("1 unsynced answers remain on this device for this account. Sign in again to sync them.", { exact: false })).toBeVisible();
+  await expect(page.getByText("2 unsynced answers remain on this device for this account. Sign in again to sync them.", { exact: false })).toBeVisible();
   await page.goto("/profile");
   await expect(page.getByText("Playing as guest", { exact: true })).toBeVisible();
   await expect(page.getByText("Private player", { exact: true })).toHaveCount(0);

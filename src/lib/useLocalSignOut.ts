@@ -6,7 +6,7 @@ import { api } from "../../convex/_generated/api";
 import { drainOutbox } from "./answers/outbox";
 import { readProfileCache } from "./quiz/bankCache";
 import { useState } from "react";
-import { clearLocalAuthTokens, signOutAndClear } from "./accountState";
+import { clearLocalAuthTokens, parkedAnswersMessage, signOutAndClear } from "./accountState";
 
 export function useLocalSignOut() {
   const { signOut } = useAuthActions();
@@ -27,11 +27,11 @@ export function useLocalSignOut() {
       try {
         window.sessionStorage.removeItem("endless-ai:signout-notice");
         if (parked > 0) {
-          window.sessionStorage.setItem("endless-ai:signout-notice", `${parked} unsynced answers remain on this device for this account. Sign in again to sync them.`);
+          window.sessionStorage.setItem("endless-ai:signout-notice", parkedAnswersMessage(parked));
         }
       } catch {
         // Still report parked work if session storage is unavailable.
-        if (parked > 0) window.alert(`${parked} unsynced answers remain on this device. Sign in again to sync them.`);
+        if (parked > 0) window.alert(parkedAnswersMessage(parked));
       }
       // A fresh document also discards mounted query results and pending UI work.
       // eslint-disable-next-line @next/next/no-location-assign-relative-destination -- discard mounted account state after cleanup

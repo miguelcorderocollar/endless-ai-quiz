@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { useConvexAuth, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
-import { clearLocalAccountState, handleAuthTokenRemoval } from "@/lib/accountState";
+import { handleSessionEnded, handleAuthTokenRemoval } from "@/lib/accountState";
 import { writeProfileCache } from "@/lib/quiz/bankCache";
 
 const NOTICE_KEY = "endless-ai:signout-notice";
@@ -26,8 +26,10 @@ export function AccountLifecycle() {
 
   useEffect(() => {
     if (!isLoading && wasAuthenticated.current && !isAuthenticated) {
-      clearLocalAccountState({ reason: "signOut" });
-      window.location.reload();
+      // Expired refresh tokens and server rejection also end a session. Clear
+      // account state on every settled true→false flip so it cannot become guest
+      // progress. Explicit leave() owns navigation while sign-out is in flight.
+      handleSessionEnded(() => window.location.reload());
     }
     if (!isLoading) wasAuthenticated.current = isAuthenticated;
   }, [isAuthenticated, isLoading]);
