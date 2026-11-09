@@ -6,7 +6,7 @@ import { useMutation } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { Popup } from "./Popup";
 import { deletionErrorMessage } from "./deletionError";
-import { clearDeletedAccountStorage } from "./deletionLocal";
+import { clearLocalAccountState } from "@/lib/accountState";
 
 export function DeleteAccount() {
   const deleteAccount = useMutation(api.users.deleteAccount);
@@ -43,7 +43,8 @@ export function DeleteAccount() {
               // The server may already have removed this session.
             }
             try {
-              clearDeletedAccountStorage(window.localStorage);
+              // null drops every queued answer: the account is gone, so none can sync.
+              clearLocalAccountState({ reason: "deletion", account: null });
             } catch {
               setError("Deletion has started. This browser could not clear local data. Clear this site's data in browser settings before sharing this device.");
               return;

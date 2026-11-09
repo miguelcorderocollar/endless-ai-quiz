@@ -25,10 +25,10 @@ and platform logs are outside this cascade; the notice does not promise their
 immediate removal.
 
 The web profile has a separate deletion confirmation next to reset. After the
-request succeeds, it signs out, removes every `endless-ai:*` localStorage key,
-and performs a full navigation to discard memory and pending query state.
-`src/components/deletionLocal.ts` is deliberately deletion-only, pending #62's
-shared cleanup helper. Other tabs/devices can retain local copies, as the notice
+request succeeds, it signs out, calls `clearLocalAccountState({ reason: "deletion",
+account: null })` from `src/lib/accountState.ts` (drops every queued answer,
+cached questions and profile, progress, the guest snapshot), and performs a full
+navigation to discard memory and pending query state. Other tabs/devices can retain local copies, as the notice
 explains. Native screens are not changed in this web issue.
 
 ## Recovery and verification decision
