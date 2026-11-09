@@ -146,7 +146,8 @@ export function enqueueAnswer(event: QueuedAnswer): void {
 }
 
 /**
- * Empties the queue, on disk as well as in memory. Called after a progress
+ * Clears the queue, or one account plus legacy untagged events, on disk and
+ * in memory. Called after a progress
  * reset is confirmed server-side: events queued between the enqueue and the
  * wipe would otherwise drain afterwards and resurrect the history that was
  * just deleted.
@@ -155,10 +156,18 @@ export function enqueueAnswer(event: QueuedAnswer): void {
  * that was already in flight stops before its next send and a stale result
  * resolving afterwards cannot overwrite the fresh 1000.
  */
-export function clearOutbox(): void {
+export function clearOutbox(account?: string | null): void {
   generation += 1;
   resetReconcile();
-  set([]);
+  set(account === undefined ? [] : getOutboxSnapshot().pending.filter(
+    (event) => event.account !== account && event.account !== null,
+  ));
+}
+
+/** Park queued events while preventing a late drain from reconciling progress. */
+export function invalidateOutboxDrains(): void {
+  generation += 1;
+  resetReconcile();
 }
 
 /**

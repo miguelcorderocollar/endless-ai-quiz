@@ -119,3 +119,20 @@ export function clearProfileCache(): void {
     /* cache is a nicety */
   }
 }
+
+/** Clear every filter's draw, plus the profile list and category counts. */
+export function clearQuizCaches(): void {
+  if (typeof window === "undefined") return;
+  try {
+    const keys = Array.from({ length: window.localStorage.length }, (_, i) =>
+      window.localStorage.key(i),
+    );
+    for (const key of keys) {
+      if (key && (key.startsWith(DRAW_PREFIX) || key === LIST_KEY || key === COUNTS_KEY)) {
+        window.localStorage.removeItem(key);
+      }
+    }
+  } catch {
+    /* Storage may be unavailable. In-memory state is cleared separately. */
+  }
+}

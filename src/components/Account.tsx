@@ -8,7 +8,8 @@ import { useEffect, useRef, useState } from "react";
 
 import { api } from "../../convex/_generated/api";
 import { readProgress, updateProgress } from "@/lib/progress";
-import { clearProfileCache } from "@/lib/quiz/bankCache";
+import { snapshotGuestProgress } from "@/lib/accountState";
+import { useLocalSignOut } from "@/lib/useLocalSignOut";
 import { AccountSlotSkeleton } from "./Skeletons";
 
 /**
@@ -23,7 +24,7 @@ import { AccountSlotSkeleton } from "./Skeletons";
  */
 export function Account() {
   const { isLoading, isAuthenticated } = useConvexAuth();
-  const { signOut } = useAuthActions();
+  const { leave, busy, error: signOutError } = useLocalSignOut();
   const convex = useConvex();
   const me = useQuery(api.users.me, isAuthenticated ? {} : "skip");
   const ensureProfile = useMutation(api.users.ensureProfile);
@@ -95,14 +96,13 @@ export function Account() {
       <span className="label text-paper">{me.displayName ?? me.handle ?? "player"}</span>
       <button
         type="button"
-        onClick={() => {
-          clearProfileCache();
-          void signOut();
-        }}
+        onClick={() => void leave()}
+        disabled={busy}
         className="label cursor-pointer text-muted transition-colors hover:text-signal"
       >
         out
       </button>
+      {signOutError ? <span role="alert">{signOutError}</span> : null}
     </span>
   );
 }
@@ -147,6 +147,7 @@ export function SignInForm({
   layout?: "panel" | "page" | "dialog";
 }) {
   const { signIn } = useAuthActions();
+  const { isAuthenticated } = useConvexAuth();
   const [flow, setFlow] = useState<"signIn" | "signUp">("signIn");
   const [error, setError] = useState<string | null>(null);
 
@@ -164,6 +165,7 @@ export function SignInForm({
           event.preventDefault();
           setError(null);
           const formData = new FormData(event.currentTarget);
+          if (!isAuthenticated) snapshotGuestProgress();
           void signIn("password", formData).then(
             () => onDone(),
             (err: unknown) => {

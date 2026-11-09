@@ -34,6 +34,7 @@ import { resolvePick } from "@/lib/questions/resolvePick";
 import { loadFallbackBank } from "@/lib/questions/fallback";
 import { getNetworkSnapshot, subscribeNetwork } from "@/lib/pwa/network";
 import { readProfileCache } from "@/lib/quiz/bankCache";
+import { quizSession, type QuizSession } from "@/lib/quiz/session";
 
 type Phase = "question" | "revealed";
 
@@ -46,18 +47,6 @@ const LETTERS = ["A", "B", "C", "D"] as const;
  * back-navigation must not. Keyed by filter so picking new categories still
  * starts fresh.
  */
-type QuizSession = {
-  filterKey: string;
-  currentId: string;
-  seenIds: string[];
-  phase: Phase;
-  picked: string | null;
-  exhausted: boolean;
-  revealedQuestion?: Question;
-};
-
-let quizSession: QuizSession | null = null;
-
 export function Quiz({
   bank,
   initial,
@@ -79,7 +68,7 @@ export function Quiz({
   // and the retained question still in the bank. Null on first visit, reload,
   // or filter change — then `initial` wins as before.
   const filterKey = [...categories].sort().join(",");
-  const session = quizSession;
+  const session = quizSession.current;
   let restoredQuestion: Question | null = null;
   let restoredSession: QuizSession | null = null;
   if (session !== null && session.filterKey === filterKey) {
@@ -132,7 +121,7 @@ export function Quiz({
 
   // Remember the live spot so client-side navigation back to `/` resumes it.
   useEffect(() => {
-    quizSession = {
+    quizSession.current = {
       filterKey,
       currentId: current?.id ?? initial.id,
       seenIds: [...seen],

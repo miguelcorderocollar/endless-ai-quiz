@@ -3,23 +3,18 @@
 import { rateLimitMessage } from "@/lib/answers/errors";
 
 import Link from "next/link";
-import { useAuthActions } from "@convex-dev/auth/react";
 import { useConvexAuth, useConvex, useMutation, useQuery } from "convex/react";
-import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 
 import { api } from "../../../convex/_generated/api";
 import {
-  EMPTY_PROGRESS,
   getProgressSnapshot,
   getProgressServerSnapshot,
   hydrateProgress,
   subscribeProgress,
-  updateProgress,
 } from "@/lib/progress";
 import {
   type CachedProfile,
-  clearProfileCache,
   readListCache,
   readProfileCache,
   writeListCache,
@@ -31,7 +26,8 @@ import {
   subscribeNetwork,
 } from "@/lib/pwa/network";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
-import { clearOutbox } from "@/lib/answers/outbox";
+import { clearLocalAccountState } from "@/lib/accountState";
+import { useLocalSignOut } from "@/lib/useLocalSignOut";
 import type { Question } from "@/lib/questions/schema";
 import { loadFallbackBank } from "@/lib/questions/fallback";
 import { DoneList } from "@/components/DoneList";
@@ -76,9 +72,8 @@ function ResetIcon() {
 }
 
 export default function ProfilePage() {
-  const router = useRouter();
   const { isLoading, isAuthenticated } = useConvexAuth();
-  const { signOut } = useAuthActions();
+  const { leave, busy: signingOut, error: signOutError } = useLocalSignOut();
   const me = useQuery(api.users.me, isAuthenticated ? {} : "skip");
   const [bank, setBank] = useState<Question[] | undefined>();
   useEffect(() => {
@@ -269,11 +264,8 @@ export default function ProfilePage() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => {
-                    clearProfileCache();
-                    void signOut();
-                    router.push("/");
-                  }}
+                  onClick={() => void leave()}
+                  disabled={signingOut}
                   aria-label="sign out"
                   className="cursor-pointer text-muted transition-colors hover:text-signal"
                 >
@@ -373,6 +365,7 @@ export default function ProfilePage() {
           )}
         </div>
 
+        {signOutError ? <p role="alert">{signOutError}</p> : null}
         <InstallRow />
 
         <Link
@@ -388,11 +381,7 @@ export default function ProfilePage() {
           <SignInForm
             layout="dialog"
             onDone={() => setPopup(null)}
-            onSignOut={() => {
-              clearProfileCache();
-              void signOut();
-              setPopup(null);
-            }}
+            onSignOut={() => void leave()}
           />
         </Popup>
       ) : null}
@@ -411,9 +400,9 @@ export default function ProfilePage() {
           <ResetConfirm
             onCancel={() => setPopup(null)}
             onDone={() => {
-              clearOutbox();
-              updateProgress({ ...EMPTY_PROGRESS });
-              router.push("/");
+              clearLocalAccountState({ reason: "reset", account: displayMe?.handle ?? null });
+              // eslint-disable-next-line @next/next/no-location-assign-relative-destination -- discard mounted account state after reset
+              window.location.assign("/");
             }}
           />
         </Popup>

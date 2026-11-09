@@ -1,15 +1,14 @@
 "use client";
 
-import { useAuthActions } from "@convex-dev/auth/react";
 import { useRouter } from "next/navigation";
 
 import { SignInForm } from "@/components/Account";
 import { Shell } from "@/components/QuizFromConvex";
-import { clearProfileCache } from "@/lib/quiz/bankCache";
+import { useLocalSignOut } from "@/lib/useLocalSignOut";
 
 export default function SignInPage() {
   const router = useRouter();
-  const { signOut } = useAuthActions();
+  const { leave, error } = useLocalSignOut();
 
   return (
     <Shell showElo={false}>
@@ -24,11 +23,9 @@ export default function SignInPage() {
           <SignInForm
             layout="page"
             onDone={() => router.push("/")}
-            onSignOut={() => {
-              clearProfileCache();
-              void signOut();
-            }}
+            onSignOut={() => void leave()}
           />
+          {error ? <p role="alert">{error}</p> : null}
         </div>
       </main>
     </Shell>

@@ -340,7 +340,8 @@ describe("shouldReconcile", () => {
     }, "atlas");
 
     expect(sent).toEqual(["e1"]);
-    expect(result.sent).toBe(1);
+    // An invalidated drain must not reconcile its stale rating after reset.
+    expect(result).toEqual({ sent: 0, lastRating: null, maxAt: null });
     expect(getOutboxSnapshot().pending).toEqual([]);
   });
 
