@@ -2,5 +2,5 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
   "buildCommand": "if [ -n \"$CONVEX_DEPLOY_KEY\" ]; then npx convex deploy --cmd 'npm run build'; elif [ \"$VERCEL_ENV\" = \"production\" ]; then echo 'CONVEX_DEPLOY_KEY is missing in production. Refusing to build a frontend with no backend.'; exit 1; else npm run build; fi",
-  "ignoreCommand": "git diff --quiet \"${VERCEL_GIT_PREVIOUS_SHA:-HEAD^}\" HEAD -- . ':(exclude)docs' ':(exclude)data' ':(exclude)*.md'"
+  "ignoreCommand": "PREV=\"${VERCEL_GIT_PREVIOUS_SHA:-HEAD^}\"; git cat-file -e \"$PREV^{commit}\" 2>/dev/null || exit 1; git diff --quiet \"$PREV\" HEAD -- . ':(exclude)docs' ':(exclude)data' ':(exclude)*.md'"
 }

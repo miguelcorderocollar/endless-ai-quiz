@@ -355,7 +355,9 @@ async function main() {
       process.stdout.write(".");
       if (q.source.kind === "wikipedia") {
         const page = pages.get(q.source.title);
-        checkGrounding(q, page ?? { ok: false, reason: "not checked" });
+        if (!OFFLINE || page?.ok) {
+          checkGrounding(q, page ?? { ok: false, reason: "not checked" });
+        }
       } else if (q.source.kind === "none" && q.explanation.length < 60) {
         err(
           q.id,
@@ -365,7 +367,11 @@ async function main() {
       }
     }
     process.stdout.write("\n");
-    if (!OFFLINE) {
+    if (OFFLINE) {
+      for (const q of misses) {
+        warn(q.id, "weak-grounding", "answer absent from cached lead; full article not checked (offline mode)");
+      }
+    } else {
       await softenMisses();
       await checkUrlSources(questions);
     }

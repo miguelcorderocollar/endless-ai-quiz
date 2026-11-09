@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "npm@11.19.0",
   "engines": {
-    "node": ">=22"
+    "node": "24.x"
   },
   "scripts": {
     "dev": "next dev",
