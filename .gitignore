@@ -35,3 +35,6 @@ data/dupe/embeddings.jsonl
 
 # regenerable by `npm run dupe`; review.mts falls back to no flags without it
 data/dupe/pairs.json
+
+# 1000-question drive tracker (coordinator only, never commit)
+progress-1000.md
