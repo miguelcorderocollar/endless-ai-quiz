@@ -38,6 +38,7 @@ npm run verify            # full gate: validate, typecheck, lint, tests, build, 
 ## Docs
 
 - `AGENTS.md` — commands, content rules, deployment safety.
+- `docs/architecture.md` — the architecture decision and why: guest-only web, ranked Expo app, free-tier budget.
 - `docs/deployment.md` — Convex dev vs prod, publish pipeline.
 - `docs/dataset.md` — question sourcing and grounding rules.
 - `docs/native-parity.md` — web/native gap list.

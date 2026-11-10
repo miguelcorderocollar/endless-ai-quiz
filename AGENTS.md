@@ -2,6 +2,10 @@
 
 Prototype of an endless AI quiz. Start here before changing code or questions.
 
+The target architecture, and the reasons for it, are in `docs/architecture.md`.
+Read it before changing Convex functions, the draw, auth or anything ranked.
+Some code still predates that decision; the roadmap issues track the migration.
+
 ## Commands
 
 - `npm run dev` starts the app.
@@ -144,6 +148,7 @@ four reworded, so check both options before removing an id.
 - Keep the quiz loop simple: no timer, immediate feedback, Learn when a source exists.
 - Elo updates belong in shared quiz code so the UI and backend can reuse them.
 - Prototype progress is local only. Do not present it as an account, leaderboard, or shared result.
+- Follow the invariants in `docs/architecture.md`: guests make zero Convex calls, the web never writes ranked state, nothing scans answer history during play, the server re-grades every pick, and feedback is local and instant.
 
 ## The installed app (PWA)
 
