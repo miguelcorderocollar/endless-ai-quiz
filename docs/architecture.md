@@ -347,6 +347,27 @@ Code review should enforce these.
 6. **One shared core for game logic.** A rule (Elo, draw, grading, outbox)
    exists once and both apps import it.
 
+## Roadmap
+
+The [Endless AI Roadmap](https://github.com/users/miguelcorderocollar/projects/8)
+project tracks the implementation. Each work package is an `epic` issue with
+sub-issues that carry their own acceptance criteria and validation steps. See
+`AGENTS.md` → *Working the roadmap*.
+
+| Phase | Work package | Issue |
+|---|---|---|
+| A | WP0 · Safety net and operations | #94 |
+| A | WP1 · Play on the device: one play path, instant feedback | #95 |
+| A | WP2 · Answer sync v2: batched submits, rollups, no history scans | #96 |
+| A (spike) → B | WP3 · Google sign-in for the app | #97 |
+| B | WP4 · The web becomes guest-only | #98 |
+| B | WP5 · Questions earn ratings from play | #99 |
+| B | WP6 · Leaderboard v1 | #8 |
+| B | WP7 · Ship the Android app | #18 |
+| C | WP8 · Friend groups | #100 |
+
+Closed as superseded by this decision: #34, #44, #47, #50, #51, #56, #89.
+
 ## Revisit when
 
 - Convex usage passes 60% of any free-tier meter: batch harder, prune, or move

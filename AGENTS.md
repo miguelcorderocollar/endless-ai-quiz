@@ -60,6 +60,38 @@ The two generated native assets are committed and checked, not built per build:
 `npm run bundle:bank` for the offline bank (and `npm run validate` fails when it
 drifts) and `npm run assets:grain` for the film grain.
 
+## Working the roadmap
+
+The plan lives on the [Endless AI Roadmap](https://github.com/users/miguelcorderocollar/projects/8)
+project. Its reasoning lives in `docs/architecture.md`.
+
+- **Structure.** Work packages are issues labelled `epic` (WP0–WP8). Their
+  tasks are sub-issues. Milestones are phases (Phase A, B, C, Parked). Order
+  comes from GitHub's *blocked by* relationships, and each issue also lists
+  them under **Dependencies**.
+- **Picking work.** Take an issue with Status `Ready`, the earliest phase, then
+  the highest priority. Before starting, confirm that every *blocked by* issue
+  is closed. `owner-action` issues need the owner for an account, a payment or a
+  setting: prepare everything else, then ask.
+- **Starting.** Run `scripts/roadmap-status.sh <n> "In progress"`, comment the
+  branch name on the issue, and branch as `wp<N>/<issue>-<slug>`.
+- **While working.** Tick the **Scope** checkboxes as you go. If the scope has
+  to change, edit the issue and explain why in a comment. Never drop or weaken
+  an **Acceptance criteria** item silently. If one is wrong, say so on the issue
+  and get it changed first.
+- **Finishing.** Open a PR that says `Closes #<n>`. Its description has a
+  **Validation** section with the evidence for every acceptance criterion, in
+  order: command output, test names, screenshots or device notes, exactly as
+  **How to validate** asks. Run `npm run verify` (and
+  `npm --prefix apps/mobile run typecheck` when `apps/mobile` changed). Move the
+  issue to `In review`, then to `Done` once merged.
+- **Unblocking.** After closing an issue, check what it blocked. Any issue whose
+  blockers are now all closed moves from `Backlog` to `Ready`. When the last
+  sub-issue of an epic closes, verify the epic's **Done when** list and close
+  the epic.
+- **Decisions.** A change to the architecture goes into `docs/architecture.md`
+  first, in its own PR, and the affected issues are updated to match.
+
 ## Before you commit
 
 `npm run verify` is the gate: validate, typecheck, lint, unit tests, build, then
