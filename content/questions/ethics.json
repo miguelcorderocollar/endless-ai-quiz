@@ -1442,7 +1442,7 @@
       "audit"
     ],
     "difficulty": 3,
-    "explanation": "Buolamwini and Gebru, then at the MIT Media Lab, tested systems from IBM, Microsoft and Face++ and found the worst accuracy on darker-skinned women. The Li-Crawford pairing is the tempting miss because both are prominent critics of biased data, but neither ran this audit.",
+    "explanation": "Buolamwini, at the MIT Media Lab, and Gebru, then at Microsoft Research, tested systems from IBM, Microsoft and Face++ and found the worst accuracy on darker-skinned women. The Li-Crawford pairing is the tempting miss because both are prominent critics of biased data, but neither ran this audit.",
     "source": {
       "kind": "wikipedia",
       "title": "Joy Buolamwini",

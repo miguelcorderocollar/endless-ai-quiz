@@ -691,7 +691,7 @@
       "anthropic"
     ],
     "difficulty": 2,
-    "explanation": "Anthropic published Constitutional AI in December 2022 as a method for training a harmless assistant from a written constitution plus AI feedback. June 2023 is when Claude became publicly available, which is the mix-up the distractor targets.",
+    "explanation": "Anthropic published Constitutional AI in December 2022 as a method for training a harmless assistant from a written constitution plus AI feedback. June 2023 is the tempting miss because it sits next to Claude 2 and the public claude.ai launch in July 2023, but the paper came seven months earlier.",
     "source": {
       "kind": "url",
       "url": "https://arxiv.org/abs/2212.08073",
@@ -779,7 +779,7 @@
       "images"
     ],
     "difficulty": 1,
-    "explanation": "Midjourney entered open beta on July 12, 2022, and the company was already profitable by its August 2022 open beta. 2023 is the year of its V5 release, which is the confusion the distractor targets.",
+    "explanation": "Midjourney entered open beta on July 12, 2022. 2023 is the year of its V5 release, which is the confusion the distractor targets.",
     "source": {
       "kind": "wikipedia",
       "title": "Midjourney",
@@ -1148,7 +1148,7 @@
       "knowledge-base"
     ],
     "difficulty": 2,
-    "explanation": "Cyc started at MCC in July 1984 and later became Cycorp, and it is still running. 1990 is when the company was spun out, which is the mix-up the distractor targets.",
+    "explanation": "Cyc started at MCC in July 1984 and was spun out as Cycorp in 1994, and it is still running. 1990 falls in the middle of its MCC years, when Lenat was publishing the project's first big progress reports.",
     "source": {
       "kind": "wikipedia",
       "title": "Cyc",
@@ -2002,7 +2002,7 @@
       "2022"
     ],
     "difficulty": 3,
-    "explanation": "DeepMind's Chinchilla paper in March 2022 argued that for a given compute budget, smaller models trained on more data outperform larger ones trained on less. PaLM is the tempting answer as another 2022 DeepMind model, but PaLM was the large model Chinchilla critiqued.",
+    "explanation": "DeepMind's Chinchilla paper in March 2022 argued that for a given compute budget, smaller models trained on more data outperform larger ones trained on less, and it showed this against DeepMind's own Gopher. PaLM is the tempting answer as another big 2022 model, but it came from Google Research and was itself one of the giant models Chinchilla's argument implied were undertrained.",
     "source": {
       "kind": "wikipedia",
       "title": "Chinchilla (language model)",

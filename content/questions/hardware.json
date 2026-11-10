@@ -704,7 +704,7 @@
       "naming"
     ],
     "difficulty": 1,
-    "explanation": "DDR stands for double data rate: the memory moves data on the rising and falling edges of the clock, so a 100 MHz bus is sold as 1600 MT/s. That is why an advertised module speed is twice the physical clock, and the doubling has nothing to do with cells or banks. DDR5 also happens to have two 32-bit subchannels per module, a separate change that confuses anyone reading a spec sheet.",
+    "explanation": "DDR stands for double data rate: the memory moves data on the rising and falling edges of the clock, so an 800 MHz clock is sold as 1600 MT/s. That is why an advertised module speed is twice the physical clock, and the doubling has nothing to do with cells or banks. DDR5 also happens to have two 32-bit subchannels per module, a separate change that confuses anyone reading a spec sheet.",
     "source": {
       "kind": "wikipedia",
       "title": "DDR SDRAM",
@@ -1143,7 +1143,7 @@
       "npu"
     ],
     "difficulty": 1,
-    "explanation": "The A11 Bionic, shipped in the iPhone 8 and iPhone X in 2017, was Apple's first chip with a Neural Engine, rated at 600 billion operations per second for Face ID and Animoji. The M1 is the tempting miss because it is Apple's most famous AI chip, but the Neural Engine debuted four years earlier in the A11.",
+    "explanation": "The A11 Bionic, shipped in the iPhone 8 and iPhone X in 2017, was Apple's first chip with a Neural Engine, rated at 600 billion operations per second for Face ID and Animoji. The M1 is the tempting miss because it is Apple's most famous AI chip, but the Neural Engine debuted three years earlier in the A11.",
     "source": {
       "kind": "wikipedia",
       "title": "Apple A11",
@@ -1337,9 +1337,9 @@
     "difficulty": 3,
     "explanation": "Amazon bought the data center campus next to Talen's Susquehanna nuclear plant in Pennsylvania for $650 million, with a power purchase agreement for up to 1,920 MW through 2042. Constellation is the tempting miss because it is the company restarting Three Mile Island for Microsoft, but the Susquehanna deal belongs to Talen.",
     "source": {
-      "kind": "url",
-      "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162828025030559/a20250611pressreleasebusin.htm",
-      "label": "Talen Energy press release via SEC EDGAR"
+      "kind": "wikipedia",
+      "title": "Talen Energy",
+      "label": "Talen Energy on Wikipedia"
     },
     "answerAliases": [
       "Talen Energy",
@@ -1448,10 +1448,10 @@
     "options": [
       "Texas Instruments",
       "Cisco",
-      "Intel",
-      "Sun Microsystems"
+      "Sun Microsystems",
+      "LSI Logic"
     ],
-    "answer": "Sun Microsystems",
+    "answer": "LSI Logic",
     "category": "hardware",
     "tags": [
       "jensen-huang",
@@ -1459,7 +1459,7 @@
       "career"
     ],
     "difficulty": 1,
-    "explanation": "Huang left AMD for LSI Logic and then worked with Sun Microsystems, where he met Chris Malachowsky and Curtis Priem; the three founded Nvidia together in 1993. Texas Instruments and Intel were places he was recruited to, but he chose AMD first, and Sun is where the Nvidia founding team met.",
+    "explanation": "Huang designed microprocessors at AMD and then worked at LSI Logic before leaving in 1993 to found Nvidia with Chris Malachowsky and Curtis Priem. Sun Microsystems is the tempting miss because that is where Malachowsky and Priem worked, not Huang.",
     "source": {
       "kind": "wikipedia",
       "title": "Jensen Huang",
@@ -2236,7 +2236,7 @@
       "tensor-core"
     ],
     "difficulty": 3,
-    "explanation": "TensorFloat-32, or TF32, keeps the 8-bit exponent of FP32 but shortens the mantissa, letting tensor cores handle training math with FP32's dynamic range. BF16 is the tempting miss because it is also a training format, but it was introduced on Google's TPU, not with Ampere, and FP8 and INT4 came later.",
+    "explanation": "TensorFloat-32, or TF32, keeps the 8-bit exponent of FP32 but shortens the mantissa, letting tensor cores handle training math with FP32's dynamic range. BF16 is the tempting miss because it is also a training format, but it was introduced on Google's TPU, not with Ampere, INT4 was already on Turing, and FP8 came later with Hopper.",
     "source": {
       "kind": "wikipedia",
       "title": "Ampere (microarchitecture)",
@@ -2444,7 +2444,7 @@
       "Edge TPU",
       "Pixel Neural Core",
       "Tensor G2",
-      "Coral TPU"
+      "Cloud TPU v3"
     ],
     "answer": "Edge TPU",
     "category": "hardware",
@@ -2454,7 +2454,7 @@
       "edge"
     ],
     "difficulty": 1,
-    "explanation": "The Edge TPU, announced in July 2018, is Google's ASIC for running ML models on-device in the Coral products, at 4 trillion operations per second on 2 watts. The Pixel Neural Core is the Edge TPU's name inside the Pixel 4 phone, Tensor G2 is the phone SoC, and Coral is the product brand, not the chip.",
+    "explanation": "The Edge TPU, announced in July 2018, is Google's ASIC for running ML models on-device in the Coral products, at 4 trillion operations per second on 2 watts. The Pixel Neural Core is the Edge TPU's relative inside the Pixel 4 phone, Tensor G2 is a phone SoC, and Cloud TPU v3 is a data-centre chip, not an edge one.",
     "source": {
       "kind": "wikipedia",
       "title": "Tensor Processing Unit",

@@ -855,7 +855,7 @@
       "alignment"
     ],
     "difficulty": 3,
-    "explanation": "The model generates responses, critiques them against a written list of principles, revises them, and those self-revisions become the preference data, a setup later called RLAIF. Crowdworker rankings are the RLHF baseline this replaced, which is exactly why that distractor feels right but describes the old method.",
+    "explanation": "The model generates responses, critiques them against a written list of principles, and revises them for a supervised stage, then an AI model judges pairs of responses against the constitution to make the preference data, a setup called RLAIF. Crowdworker rankings are the RLHF baseline this replaced, which is exactly why that distractor feels right but describes the old method.",
     "source": {
       "kind": "url",
       "url": "https://arxiv.org/abs/2212.08073",
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "pap-0050",
-    "text": "What did the 2022 Perceiver IO paper add on top of the original Perceiver?",
+    "text": "What did the 2021 Perceiver IO paper add on top of the original Perceiver?",
     "options": [
       "A contrastive loss that aligns image and text encoders",
       "A retrieval index that fetches text chunks during generation",
@@ -1216,7 +1216,7 @@
       "decoding"
     ],
     "difficulty": 3,
-    "explanation": "Perceiver IO adds an output query array that cross-attends the latents, so the same encoder can produce a class label, a sentence, optical flow or raw pixels depending on the query. The mixture-of-experts distractor belongs to Switch Transformer, a different scaling story from the year before.",
+    "explanation": "Perceiver IO adds an output query array that cross-attends the latents, so the same encoder can produce a class label, a sentence, optical flow or raw pixels depending on the query. The mixture-of-experts distractor belongs to Switch Transformer, a different scaling story from earlier in 2021.",
     "source": {
       "kind": "url",
       "url": "https://arxiv.org/abs/2107.14795",

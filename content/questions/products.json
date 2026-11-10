@@ -167,9 +167,9 @@
     "difficulty": 3,
     "explanation": "Language Model, which is the only technical term in the product name. The rest of the name describes what the tool does, which is reading your notes back to you with citations, and the abbreviation is a small joke aimed at people who would recognise it.",
     "source": {
-      "kind": "wikipedia",
-      "title": "Gemini Notebook",
-      "label": "Gemini Notebook on Wikipedia"
+      "kind": "url",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/notebooklm-google-ai/",
+      "label": "Google's NotebookLM announcement"
     },
     "answerAliases": [
       "Language Model"

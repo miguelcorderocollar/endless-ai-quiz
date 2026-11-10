@@ -1886,7 +1886,7 @@
   },
   {
     "id": "tec-0065",
-    "text": "What does ORPO remove from the preference-tuning pipeline?",
+    "text": "Which of these describes what ORPO does in the preference-tuning pipeline?",
     "options": [
       "Trains a reward model then runs reinforcement learning",
       "Tunes directly on preferences with no reward model",

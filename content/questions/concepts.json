@@ -883,7 +883,7 @@
       "foundations"
     ],
     "difficulty": 2,
-    "explanation": "Predicting the next word means always producing something, and there is no separate step inside the model that checks whether the something is true, so a fluent wrong answer is indistinguishable from a right one. The database answer is the tempting wrong one, because retrieval genuinely exists, but it is a bolt-on and it is not where a model's own mistakes come from. Meta's Galactica shipped with the warning 'Outputs may be unreliable!' and was pulled two weeks after launch in November 2021.",
+    "explanation": "Predicting the next word means always producing something, and there is no separate step inside the model that checks whether the something is true, so a fluent wrong answer is indistinguishable from a right one. The database answer is the tempting wrong one, because retrieval genuinely exists, but it is a bolt-on and it is not where a model's own mistakes come from. Meta's Galactica shipped with the warning 'Outputs may be unreliable!' and was pulled three days after launch in November 2022.",
     "source": {
       "kind": "wikipedia",
       "title": "Hallucination (artificial intelligence)",
@@ -1024,10 +1024,10 @@
     "options": [
       "The training loss",
       "The model weights",
-      "Attention over previously generated tokens",
+      "Keys and values for previously generated tokens",
       "The tokenizer vocabulary"
     ],
-    "answer": "Attention over previously generated tokens",
+    "answer": "Keys and values for previously generated tokens",
     "category": "concepts",
     "tags": [
       "autoregressive",
@@ -1035,7 +1035,7 @@
       "inference"
     ],
     "difficulty": 3,
-    "explanation": "The cache stores key and value tensors for the prefix, so each new token only computes attention for itself. The vocabulary, loss and weights are not recomputed per token anyway.",
+    "explanation": "The cache stores the key and value tensors computed for every earlier token, so each new token only computes its own query, key and value and then attends over the cached ones. The vocabulary, loss and weights are not recomputed per token anyway.",
     "source": {
       "kind": "wikipedia",
       "title": "Transformer (deep learning)",

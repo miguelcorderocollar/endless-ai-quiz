@@ -861,7 +861,7 @@
       "chips"
     ],
     "difficulty": 2,
-    "explanation": "Xilinx built the first commercially viable FPGA, and buying it gave AMD the programmable logic behind the adaptive-computing parts it now sells against Nvidia. Altera is the tempting miss because it was the other FPGA pioneer, but that company ended up inside Intel, and AMD's attempt to buy Arm instead collapsed in 2022.",
+    "explanation": "Xilinx built the first commercially viable FPGA, and buying it gave AMD the programmable logic behind the adaptive-computing parts it now sells against Nvidia. Altera is the tempting miss because it was the other FPGA pioneer, but that company ended up inside Intel, and the Arm deal that collapsed in 2022 was Nvidia's, not AMD's.",
     "source": {
       "kind": "wikipedia",
       "title": "Xilinx",
@@ -876,7 +876,7 @@
   },
   {
     "id": "ppl-0031",
-    "text": "Microsoft's AI bet began with a $1 billion investment in 2019, made under the CEO who had taken over that year, and the total has since passed $13 billion. Which company has taken the money?",
+    "text": "Microsoft's AI bet began with a $1 billion investment in 2019, and the total has since passed $13 billion. Which company has taken the money?",
     "options": [
       "Cohere",
       "OpenAI",
@@ -920,7 +920,7 @@
       "hiring"
     ],
     "difficulty": 2,
-    "explanation": "Wang built Scale AI out of his Stanford dorm at 19, turning data labelling and model evaluation into the business every frontier lab buys from, and the stake Meta bought valued the company at roughly $14.3 billion. Nat Friedman is the tempting miss because he arrived in the same shake-up, but he ran GitHub and took the product job, not the AI one.",
+    "explanation": "Wang left MIT at 19 to build Scale AI, turning data labelling and model evaluation into the business every frontier lab buys from, and the stake Meta bought cost roughly $14.3 billion and valued the company at about $29 billion. Nat Friedman is the tempting miss because he arrived in the same shake-up, but he ran GitHub and took the product job, not the AI one.",
     "source": {
       "kind": "wikipedia",
       "title": "Meta Superintelligence Labs",
@@ -935,7 +935,7 @@
   },
   {
     "id": "ppl-0033",
-    "text": "After the Nobel Prize, Hassabis turned DeepMind's protein work into a separate Alphabet company that uses AlphaFold to hunt for drug targets. What is that company called?",
+    "text": "Hassabis turned DeepMind's protein work into a separate Alphabet company that uses AlphaFold to hunt for drug targets. What is that company called?",
     "options": [
       "Recursion",
       "Exscientia",
@@ -950,7 +950,7 @@
       "founders"
     ],
     "difficulty": 2,
-    "explanation": "Hassabis co-founded DeepMind in London in 2010 and shared the 2024 Nobel Prize in Chemistry with John Jumper for protein structure prediction. Isomorphic Labs was announced in November 2021 as a DeepMind spin-off that reuses AlphaFold to find drug targets, and he runs it as CEO while chairing DeepMind. Recursion is the tempting miss because it is a well-known AI drug-discovery company, but it grew out of a different lineage.",
+    "explanation": "Hassabis co-founded DeepMind in London in 2010 and shared the 2024 Nobel Prize in Chemistry with John Jumper for protein structure prediction. Isomorphic Labs was announced in November 2021 as a DeepMind spin-off that reuses AlphaFold to find drug targets, and he runs it as CEO while also leading Google DeepMind as its CEO. Recursion is the tempting miss because it is a well-known AI drug-discovery company, but it grew out of a different lineage.",
     "source": {
       "kind": "wikipedia",
       "title": "Demis Hassabis",
@@ -1099,7 +1099,7 @@
       "activism"
     ],
     "difficulty": 2,
-    "explanation": "Buolamwini and Gebru's audit tested commercial systems that police departments were buying, which is what pushed facial-recognition bias into the mainstream. Gebru is the tempting miss because he co-wrote that paper and later founded DAIR after being pushed out of Google, but the Algorithmic Justice League is Buolamwini's, and she frames the problem as an artist as much as a researcher.",
+    "explanation": "Buolamwini and Gebru's audit tested commercial systems that police departments were buying, which is what pushed facial-recognition bias into the mainstream. Gebru is the tempting miss because she co-wrote that paper and later founded DAIR after being pushed out of Google, but the Algorithmic Justice League is Buolamwini's, and she frames the problem as an artist as much as a researcher.",
     "source": {
       "kind": "wikipedia",
       "title": "Joy Buolamwini",

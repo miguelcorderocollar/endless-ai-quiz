@@ -2336,7 +2336,7 @@
       "naming"
     ],
     "difficulty": 2,
-    "explanation": "Since Claude 3, Anthropic has released each generation in three sizes: Haiku (smallest), Sonnet, and Opus (largest). Nano, Pro, and Ultra is the trap because that is Google's Gemini naming scheme, not Anthropic's.",
+    "explanation": "Claude 3 shipped in three sizes, a naming scheme Anthropic kept for later models: Haiku (smallest), Sonnet, and Opus (largest). Nano, Pro, and Ultra is the trap because that is Google's Gemini naming scheme, not Anthropic's.",
     "source": {
       "kind": "wikipedia",
       "title": "Claude (AI)",

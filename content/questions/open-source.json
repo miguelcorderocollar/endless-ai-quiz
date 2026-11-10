@@ -312,7 +312,7 @@
       "open-weights"
     ],
     "difficulty": 2,
-    "explanation": "The Hub is where open model weights get published, which makes it the package registry for AI: install a tool, name a model, and the files come down from there. Hugging Face's own ecosystem list names Ollama, LM Studio and llama.cpp as tools that pull their models straight from it. That is also why who owns the platform gets treated as infrastructure policy rather than just a business.",
+    "explanation": "The Hub is where open model weights get published, which makes it the package registry for AI: install a tool, name a model, and the files come down from there. Hugging Face's own ecosystem list names LM Studio and llama.cpp among the tools that pull their models straight from it. That is also why who owns the platform gets treated as infrastructure policy rather than just a business.",
     "source": {
       "kind": "wikipedia",
       "title": "Hugging Face",
@@ -374,7 +374,7 @@
       "gguf"
     ],
     "difficulty": 1,
-    "explanation": "Ollama bundles the runtime and the weights behind one name you can pull, so the llama.cpp and GGUF plumbing stays out of sight, and it exposes a local REST API on port 11434 for your own programs to call. It does not train models: the weights come from elsewhere, usually the Hugging Face Hub. That is why it became the default answer to how you just run a model on your own machine.",
+    "explanation": "Ollama bundles the runtime and the weights behind one name you can pull, so the llama.cpp and GGUF plumbing stays out of sight, and it exposes a local REST API on port 11434 for your own programs to call. It does not train models: the weights come from elsewhere, from Ollama's own model library, which repackages open releases like Llama and Qwen, or straight from the Hugging Face Hub. That is why it became the default answer to how you just run a model on your own machine.",
     "source": {
       "kind": "wikipedia",
       "title": "Ollama",

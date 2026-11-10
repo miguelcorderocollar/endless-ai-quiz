@@ -1738,28 +1738,28 @@
   },
   {
     "id": "bus-0066",
-    "text": "In which month and year did Nvidia first pass $1 trillion in market value?",
+    "text": "In which year did Nvidia first pass $1 trillion in market value?",
     "options": [
-      "May 2022",
-      "January 2024",
-      "October 2023",
-      "May 2023"
+      "2022",
+      "2024",
+      "2021",
+      "2023"
     ],
-    "answer": "May 2023",
+    "answer": "2023",
     "category": "business",
     "tags": [
       "nvidia",
       "markets"
     ],
     "difficulty": 3,
-    "explanation": "Nvidia crossed $1 trillion in May 2023 on AI chip demand, the first chipmaker to do so. January 2024 is the tempting miss because that was when it passed larger milestones on the way to $3 trillion.",
+    "explanation": "Nvidia crossed $1 trillion on May 30, 2023 on AI chip demand, the first chipmaker to do so. 2024 is the tempting miss because that is the year it raced past $2 trillion and then $3 trillion.",
     "source": {
       "kind": "wikipedia",
       "title": "Nvidia",
       "label": "Nvidia on Wikipedia"
     },
     "answerAliases": [
-      "May 2023"
+      "2023"
     ],
     "status": "draft",
     "addedAt": "2026-10-18"
@@ -1825,7 +1825,7 @@
   },
   {
     "id": "bus-0069",
-    "text": "Which networking company did Nvidia acquire in 2019 for its InfiniBand interconnects?",
+    "text": "Which networking company did Nvidia agree to buy in 2019 for its InfiniBand interconnects?",
     "options": [
       "Arista Networks",
       "Juniper Networks",
@@ -1839,7 +1839,7 @@
       "acquisition"
     ],
     "difficulty": 3,
-    "explanation": "Nvidia bought Mellanox in 2019, gaining the InfiniBand networking that links GPUs in AI clusters. Arista is the tempting miss because it competes in data-center switches, but the InfiniBand deal was Mellanox.",
+    "explanation": "Nvidia agreed to buy Mellanox in 2019 and closed the deal in April 2020, gaining the InfiniBand networking that links GPUs in AI clusters. Arista is the tempting miss because it competes in data-center switches, but the InfiniBand deal was Mellanox.",
     "source": {
       "kind": "wikipedia",
       "title": "Mellanox Technologies",
