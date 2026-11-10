@@ -1171,12 +1171,12 @@
     "id": "pap-0049",
     "text": "The 2021 Perceiver paper set out to handle images, audio and text with one architecture. How did it dodge the quadratic cost of attending over huge inputs?",
     "options": [
-      "It cross-attends the raw input into a small fixed-size latent array, then applies self-attention there",
+      "It cross-attends the input into a small latent array, then self-attends there",
       "It runs full self-attention directly over the raw input bytes of every modality",
       "It trains a separate transformer encoder from scratch for each modality",
       "It downsamples every input to a tiny thumbnail before doing anything else"
     ],
-    "answer": "It cross-attends the raw input into a small fixed-size latent array, then applies self-attention there",
+    "answer": "It cross-attends the input into a small latent array, then self-attends there",
     "category": "papers",
     "tags": [
       "perceiver",
@@ -1205,10 +1205,10 @@
     "options": [
       "A contrastive loss that aligns image and text encoders",
       "A retrieval index that fetches text chunks during generation",
-      "A flexible output query so one model can emit labels, text, pixels or flow fields",
+      "An output query so one model can emit labels, text, pixels or flow",
       "A mixture-of-experts layer that routes tokens to separate specialists"
     ],
-    "answer": "A flexible output query so one model can emit labels, text, pixels or flow fields",
+    "answer": "An output query so one model can emit labels, text, pixels or flow",
     "category": "papers",
     "tags": [
       "perceiver",
@@ -1235,11 +1235,11 @@
     "text": "How does the 2021 RETRO model use its two-trillion-token retrieval database when generating text?",
     "options": [
       "It copies the single closest document verbatim as its answer",
-      "It retrieves relevant chunks and cross-attends to them while predicting the next tokens",
+      "It retrieves relevant chunks and cross-attends to them while predicting",
       "It fine-tunes its weights on the retrieved chunks before each reply",
       "It uses retrieval only to rerank answers after generation finishes"
     ],
-    "answer": "It retrieves relevant chunks and cross-attends to them while predicting the next tokens",
+    "answer": "It retrieves relevant chunks and cross-attends to them while predicting",
     "category": "papers",
     "tags": [
       "retro",
@@ -1269,9 +1269,9 @@
       "Beating grandmasters at StarCraft II with no prior games",
       "Generating images from text better than rival generators",
       "Running on a single consumer graphics card",
-      "Its enormous dense scale, hundreds of billions of parameters, then near the frontier of model size"
+      "Its huge dense scale, with hundreds of billions of parameters"
     ],
-    "answer": "Its enormous dense scale, hundreds of billions of parameters, then near the frontier of model size",
+    "answer": "Its huge dense scale, with hundreds of billions of parameters",
     "category": "papers",
     "tags": [
       "gopher",
@@ -1364,10 +1364,10 @@
     "options": [
       "Training only on labelled sentiment reviews for sharper classifiers",
       "Reinforcement learning from live user thumbs-down clicks",
-      "Multitask training on a large collection of prompted datasets with natural-language instructions",
+      "Multitask training on many datasets phrased as natural-language prompts",
       "Distilling answers from a much larger proprietary teacher model"
     ],
-    "answer": "Multitask training on a large collection of prompted datasets with natural-language instructions",
+    "answer": "Multitask training on many datasets phrased as natural-language prompts",
     "category": "papers",
     "tags": [
       "t0",
@@ -1397,9 +1397,9 @@
       "It contained only English Wikipedia articles from a single year",
       "It was generated entirely by an earlier language model",
       "It held only Python code with no natural language",
-      "Web text gathered across dozens of natural and programming languages by hundreds of researchers"
+      "Web text in dozens of languages, gathered by hundreds of researchers"
     ],
-    "answer": "Web text gathered across dozens of natural and programming languages by hundreds of researchers",
+    "answer": "Web text in dozens of languages, gathered by hundreds of researchers",
     "category": "papers",
     "tags": [
       "bloom",
@@ -1426,12 +1426,12 @@
     "id": "pap-0057",
     "text": "OpenAI's 2022 Whisper paper took an unusual approach to speech-recognition data. What did it train on?",
     "options": [
-      "Hundreds of thousands of hours of audio with transcripts scraped from the web, used with minimal cleaning",
+      "Hundreds of thousands of hours of web audio with its transcripts",
       "A few hundred hours of studio recordings read by voice actors",
       "Only synthetic speech generated by a text-to-speech system",
       "Silent video clips with no audio track at all"
     ],
-    "answer": "Hundreds of thousands of hours of audio with transcripts scraped from the web, used with minimal cleaning",
+    "answer": "Hundreds of thousands of hours of web audio with its transcripts",
     "category": "papers",
     "tags": [
       "whisper",
@@ -1459,11 +1459,11 @@
     "text": "The 2020 NeRF paper represents a 3D scene as what, so that new views can be rendered from any angle?",
     "options": [
       "A hand-modelled mesh sculpted by artists in editing software",
-      "A neural network mapping 3D positions and viewing directions to color and density",
+      "A neural network mapping 3D position and view direction to color and density",
       "A stack of photographs stapled together in angle order",
       "A point cloud captured by an expensive laser scanner"
     ],
-    "answer": "A neural network mapping 3D positions and viewing directions to color and density",
+    "answer": "A neural network mapping 3D position and view direction to color and density",
     "category": "papers",
     "tags": [
       "nerf",
@@ -1525,9 +1525,9 @@
       "Predicting the publication year stamped on each photograph",
       "Reconstructing every pixel of the input image exactly",
       "Classifying each image into one of a thousand fixed categories",
-      "Pulling two augmented views of the same image together while pushing different images apart"
+      "Pulling two views of one image together and pushing other images apart"
     ],
-    "answer": "Pulling two augmented views of the same image together while pushing different images apart",
+    "answer": "Pulling two views of one image together and pushing other images apart",
     "category": "papers",
     "tags": [
       "simclr",
@@ -1555,11 +1555,11 @@
     "text": "The 2019 DistilBERT paper compressed BERT by knowledge distillation. What was the headline trade-off it reported?",
     "options": [
       "Ten times larger than BERT with slightly better accuracy",
-      "About forty percent smaller and sixty percent faster while keeping most of BERT's accuracy",
+      "About 40% smaller and 60% faster, keeping most of BERT's accuracy",
       "Identical size to BERT but trained on ten times more data",
       "A vision model that replaced BERT for image tasks"
     ],
-    "answer": "About forty percent smaller and sixty percent faster while keeping most of BERT's accuracy",
+    "answer": "About 40% smaller and 60% faster, keeping most of BERT's accuracy",
     "category": "papers",
     "tags": [
       "distilbert",
@@ -1652,10 +1652,10 @@
     "options": [
       "It deleted its largest layers before serving",
       "It ran entirely on volunteer laptop CPUs",
-      "Only a small subset of experts activates for each token, so most weights sit idle per prediction",
+      "Only a few experts activate per token, so most weights sit idle",
       "It answered every query from a cache of past responses"
     ],
-    "answer": "Only a small subset of experts activates for each token, so most weights sit idle per prediction",
+    "answer": "Only a few experts activate per token, so most weights sit idle",
     "category": "papers",
     "tags": [
       "glam",
@@ -1714,12 +1714,12 @@
     "id": "pap-0066",
     "text": "DeepMind's 2022 Sparrow paper built a dialogue agent that cites evidence. How did it ground its answers?",
     "options": [
-      "Live web search queries whose results the model must quote as supporting evidence",
+      "Live web searches whose results the model must quote as evidence",
       "A hand-coded rulebook covering every tested science subject",
       "Memorized passages with no live lookup at all",
       "Paid crowdworkers rewriting every wrong answer by hand"
     ],
-    "answer": "Live web search queries whose results the model must quote as supporting evidence",
+    "answer": "Live web searches whose results the model must quote as evidence",
     "category": "papers",
     "tags": [
       "sparrow",
@@ -1749,9 +1749,9 @@
       "The giant base model over the fine-tuned models in every test",
       "A model trained only on code over every dialogue model",
       "Random outputs over any fine-tuned model for creativity",
-      "The small fine-tuned InstructGPT model over the base GPT-3, despite having far fewer parameters"
+      "The small InstructGPT model over the far larger base GPT-3"
     ],
-    "answer": "The small fine-tuned InstructGPT model over the base GPT-3, despite having far fewer parameters",
+    "answer": "The small InstructGPT model over the far larger base GPT-3",
     "category": "papers",
     "tags": [
       "instructgpt",
@@ -1781,10 +1781,10 @@
     "options": [
       "Pretraining on books, then deleting the safety filter",
       "Training a chatbot, then replacing it with a search engine",
-      "Supervised learning from self-revisions, then reinforcement learning on AI-generated preference labels",
+      "Self-revision fine-tuning, then RL on AI-generated preference labels",
       "Collecting user thumbs-downs, then banning those users"
     ],
-    "answer": "Supervised learning from self-revisions, then reinforcement learning on AI-generated preference labels",
+    "answer": "Self-revision fine-tuning, then RL on AI-generated preference labels",
     "category": "papers",
     "tags": [
       "constitutional-ai",
@@ -1843,12 +1843,12 @@
     "id": "pap-0070",
     "text": "Why did OpenAI release GPT-2 in stages in 2019, starting with a small model?",
     "options": [
-      "Concerns about malicious uses such as disinformation, so larger versions followed months later",
+      "Fears of misuse such as disinformation, so bigger versions came later",
       "The larger models had failed every benchmark and were abandoned",
       "A court order banned language models above a fixed size",
       "The team had lost the training code and rebuilt it slowly"
     ],
-    "answer": "Concerns about malicious uses such as disinformation, so larger versions followed months later",
+    "answer": "Fears of misuse such as disinformation, so bigger versions came later",
     "category": "papers",
     "tags": [
       "gpt-2",
@@ -1879,9 +1879,9 @@
       "Only games AlphaGo played against itself from random moves",
       "Hand-coded Go proverbs written by game designers",
       "A database of grandmaster chess openings",
-      "Millions of positions from human expert games, before reinforcement learning self-play refined them"
+      "Millions of positions from human expert games, before self-play"
     ],
-    "answer": "Millions of positions from human expert games, before reinforcement learning self-play refined them",
+    "answer": "Millions of positions from human expert games, before self-play",
     "category": "papers",
     "tags": [
       "alphago",
@@ -1911,10 +1911,10 @@
     "options": [
       "Diffusing pure noise into pictures over hundreds of steps",
       "Copying the closest training image for each prompt",
-      "Compressing images into discrete tokens, then training a transformer to predict them from text",
+      "Turning images into discrete tokens a transformer predicts from text",
       "Rendering 3D meshes with a physics engine, then photographing them"
     ],
-    "answer": "Compressing images into discrete tokens, then training a transformer to predict them from text",
+    "answer": "Turning images into discrete tokens a transformer predicts from text",
     "category": "papers",
     "tags": [
       "dall-e",
@@ -1942,11 +1942,11 @@
     "text": "DeepMind's 2022 Flamingo paper gave a frozen language model visual understanding. How did images feed into the language model?",
     "options": [
       "By converting every picture into a long English caption first",
-      "Through a Perceiver-style resampler whose visual tokens plug into gated cross-attention layers",
+      "Through a resampler feeding visual tokens into gated cross-attention",
       "By retraining the whole language model from scratch on pixels",
       "Through a retrieval index that pastes in similar photos"
     ],
-    "answer": "Through a Perceiver-style resampler whose visual tokens plug into gated cross-attention layers",
+    "answer": "Through a resampler feeding visual tokens into gated cross-attention",
     "category": "papers",
     "tags": [
       "flamingo",

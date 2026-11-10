@@ -504,7 +504,7 @@
   },
   {
     "id": "lab-0019",
-    "text": "In the six days from June 18 to June 24, 2026, four senior Google DeepMind researchers said or were reported to be leaving for rival labs, and three of the four headed for the same company. Which company?",
+    "text": "Between June 18 and June 24, 2026, four senior Google DeepMind researchers said or were reported to be leaving for rival labs, and three of them headed to the same company. Which one?",
     "options": [
       "OpenAI",
       "xAI",
@@ -567,7 +567,7 @@
   },
   {
     "id": "lab-0021",
-    "text": "In August 2026, Nvidia's vice president of AI research left the company after eight years to found a Toronto startup building world models so robots can train inside simulation. Which researcher was that?",
+    "text": "In August 2026 Nvidia's vice president of AI research left after eight years to found a Toronto startup building world models so robots can train in simulation. Who was it?",
     "options": [
       "Huan Ling",
       "Zan Gojcic",
@@ -660,7 +660,7 @@
   },
   {
     "id": "lab-0024",
-    "text": "In August 2026, a Princeton-rooted research lab for scientific computing came out of stealth with a $10.6 million round led by Dimension. Which of its three founders had previously co-founded the Wolfram Physics Project?",
+    "text": "In August 2026 a Princeton-rooted lab for scientific computing came out of stealth with a $10.6 million round led by Dimension. Which co-founder had earlier co-founded the Wolfram Physics Project?",
     "options": [
       "Jonathan Gorard",
       "Khurram Javed",

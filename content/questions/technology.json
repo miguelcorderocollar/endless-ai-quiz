@@ -1638,12 +1638,12 @@
     "id": "tec-0056",
     "text": "How does jailbreaking differ from prompt injection?",
     "options": [
-      "Jailbreaking bypasses safeguards, while injection exploits instruction-data confusion",
+      "Jailbreaks bypass safeguards; injection exploits instruction-data confusion",
       "Jailbreaking trains weights, injection freezes them",
       "Jailbreaking retrieves documents, injection stores them",
       "Jailbreaking needs a GPU, injection needs a CPU"
     ],
-    "answer": "Jailbreaking bypasses safeguards, while injection exploits instruction-data confusion",
+    "answer": "Jailbreaks bypass safeguards; injection exploits instruction-data confusion",
     "category": "technology",
     "tags": [
       "security",

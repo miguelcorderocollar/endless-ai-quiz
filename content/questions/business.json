@@ -485,7 +485,7 @@
   },
   {
     "id": "bus-0017",
-    "text": "In August 2026 Nvidia licensed Poolside's Model Factory and made job offers to 109 of its engineers, in a deal the investor letter insisted was neither an acquisition nor an acquihire. Which open-weight model family would they work on?",
+    "text": "In August 2026 Nvidia licensed Poolside's Model Factory and offered jobs to 109 of its engineers, in a deal it said was not an acquisition. Which open-weight model family would they work on?",
     "options": [
       "Llama",
       "Qwen",
@@ -675,7 +675,7 @@
   },
   {
     "id": "bus-0023",
-    "text": "The EU AI Act's duties for general-purpose AI models have applied since August 2025, but for a year no one could be fined for breaking them. From what date in 2026 did the Commission's enforcement powers start?",
+    "text": "The EU AI Act's duties for general-purpose AI models have applied since August 2025, but no one could be fined for a year. From what date in 2026 could the Commission enforce them?",
     "options": [
       "1 August 2026",
       "2 August 2026",
@@ -1057,7 +1057,7 @@
   },
   {
     "id": "bus-0036",
-    "text": "Microsoft extended its OpenAI partnership in January 2023 with a multiyear, multibillion-dollar deal. About how much had Microsoft put in cumulatively by that point, according to contemporaneous reporting?",
+    "text": "Microsoft extended its OpenAI partnership in January 2023 with a multiyear, multibillion-dollar deal. About how much had it invested in total by then, according to reporting at the time?",
     "options": [
       "About $10 billion",
       "About $13 billion",

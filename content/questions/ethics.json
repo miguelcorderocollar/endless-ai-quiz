@@ -624,7 +624,7 @@
       "digital-replica"
     ],
     "difficulty": 2,
-    "explanation": "Consent and money, written into a US entertainment contract for the first time: clear and express consent well before the scan, at least the day performer rate for being scanned, and a 'reasonably specific description' of what the replica will be used for. The one-time-fee option is the tempting miss because that was roughly the studios' own offer, and paying once for a scan was one of the union's red lines. Reuse is where it got looser: consent survives death unless a contract limits it, and a performer who objects has arbitration rather than a lawsuit.",
+    "explanation": "Consent and money, written into a US entertainment contract for the first time: clear consent well before the scan, at least the day rate for being scanned, and a 'reasonably specific description' of how the replica will be used. The one-time-fee option is the tempting miss because that was roughly the studios' own offer, and paying once for a scan was a union red line. Reuse is looser: consent survives death unless a contract limits it, and objectors get arbitration, not a lawsuit.",
     "source": {
       "kind": "url",
       "url": "https://www.theverge.com/2023/11/18/23962349/sag-aftra-tentative-agreement-generative-artificial-intelligence-vote",
@@ -751,7 +751,7 @@
       "california"
     ],
     "difficulty": 3,
-    "explanation": "Newsom's objection was the trigger, not the goal. He vetoed the bill on 29 September 2024 because it applied the strictest rules to anything expensive to train, even when that model was doing something boring, while a small specialised model could be just as dangerous, which he said gives the public a false sense of security. He agreed with the bill's author that guardrails are needed. The bill had already cleared the Assembly and the Senate, and Silicon Valley split over it: Meta and OpenAI opposed, Elon Musk and xAI backed it.",
+    "explanation": "Newsom's objection was the trigger, not the goal. He vetoed the bill on 29 September 2024 because it applied the strictest rules to anything expensive to train, even a model doing something boring, while a small specialised model could be just as dangerous, which he said gives a false sense of security. He agreed guardrails are needed. The bill had cleared both houses, and Silicon Valley split: Meta and OpenAI opposed it, Elon Musk and xAI backed it.",
     "source": {
       "kind": "wikipedia",
       "title": "Safe and Secure Innovation for Frontier Artificial Intelligence Models Act",
