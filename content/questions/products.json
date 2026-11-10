@@ -1553,7 +1553,7 @@
   },
   {
     "id": "pro-0061",
-    "text": "ElevenLabs was founded by two engineers who previously worked on speech at which company?",
+    "text": "Before co-founding ElevenLabs, Piotr Dabkowski was a machine learning engineer at which company?",
     "options": [
       "Meta",
       "Google",
@@ -1568,7 +1568,7 @@
       "lineage"
     ],
     "difficulty": 3,
-    "explanation": "Founders Piotr Dabkowski and Mateusz Staniszewski both worked on speech at Google. Meta is the tempting miss as another big lab with speech research.",
+    "explanation": "Dabkowski came from Google and his co-founder Mati Staniszewski from Palantir when they started ElevenLabs in 2022. Meta is the tempting miss as another big lab with speech research.",
     "source": {
       "kind": "wikipedia",
       "title": "ElevenLabs",
@@ -2055,7 +2055,7 @@
       "release"
     ],
     "difficulty": 2,
-    "explanation": "Perplexity AI was founded in August 2022. 2023 is the tempting miss because that is when its search engine launched to the public.",
+    "explanation": "Perplexity AI was founded in August 2022. 2023 is the tempting miss because that is when it went mainstream, but its search engine first launched publicly in December 2022.",
     "source": {
       "kind": "wikipedia",
       "title": "Perplexity AI",

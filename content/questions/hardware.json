@@ -1600,7 +1600,7 @@
   },
   {
     "id": "hwr-0053",
-    "text": "How many INT8 operations per clock can one Nvidia tensor core perform?",
+    "text": "How many INT8 operations per clock can one tensor core in an Nvidia Turing GPU perform?",
     "options": [
       "64",
       "256",
@@ -1615,7 +1615,7 @@
       "quantization"
     ],
     "difficulty": 3,
-    "explanation": "Each tensor core does 128 INT8 operations per clock, twice the 64 FP16 operations, because one FP16 multiply-accumulate maps to two INT8 ones at the same width. The 1024 figure is the INT1 rate and 256 is INT4, which is why INT8 is the sweet spot for inference speed on the same silicon.",
+    "explanation": "A Turing tensor core does 1024 bits of multiply-accumulate work per clock, so the narrower the number the more of them fit: 64 FP16, 128 INT8, 256 INT4 or 1024 INT1 operations. That is why the 256 and 1024 options are real figures for the same core, just at INT4 and INT1, and why INT8 became the sweet spot for inference speed on the same silicon.",
     "source": {
       "kind": "wikipedia",
       "title": "Deep Learning Super Sampling",

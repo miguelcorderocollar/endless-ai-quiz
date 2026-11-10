@@ -2056,7 +2056,7 @@
   },
   {
     "id": "bus-0078",
-    "text": "Which small modular reactor developer partnered with Amazon in October 2024 for up to 500 MW of nuclear power?",
+    "text": "Which small modular reactor developer partnered with Amazon in October 2024 to build small reactors in Washington state?",
     "options": [
       "NuScale Power",
       "TerraPower",
@@ -2086,7 +2086,7 @@
   },
   {
     "id": "bus-0079",
-    "text": "Which Illinois nuclear plant did Meta contract with Constellation for 20 years starting in June 2025?",
+    "text": "Which Illinois nuclear plant did Meta sign a 20-year deal with Constellation for in June 2025?",
     "options": [
       "Clinton Clean Energy Center",
       "Braidwood Station",
@@ -2145,7 +2145,7 @@
   },
   {
     "id": "bus-0081",
-    "text": "Which Georgetown research center did OpenAI board member Helen Toner direct during the November 2023 ouster?",
+    "text": "Which Georgetown research center employed OpenAI board member Helen Toner during the November 2023 ouster?",
     "options": [
       "Center for Democracy",
       "Center for Global Health",
@@ -2159,7 +2159,7 @@
       "governance"
     ],
     "difficulty": 3,
-    "explanation": "Toner directed Georgetown's Center for Security and Emerging Technology, whose AI-safety work reportedly strained relations with Altman. The other centers are real Georgetown units, which is why generic-center guessing fails.",
+    "explanation": "Toner was director of strategy at Georgetown's Center for Security and Emerging Technology, which she now leads, whose AI-safety work reportedly strained relations with Altman. The other centers are real Georgetown units, which is why generic-center guessing fails.",
     "source": {
       "kind": "wikipedia",
       "title": "Helen Toner",
@@ -2320,7 +2320,7 @@
   },
   {
     "id": "bus-0087",
-    "text": "Who succeeded Ilya Sutskever as OpenAI chief scientist in June 2024?",
+    "text": "Who succeeded Ilya Sutskever as OpenAI chief scientist in May 2024?",
     "options": [
       "Jakub Pachocki",
       "Wojciech Zaremba",
@@ -2334,7 +2334,7 @@
       "leadership"
     ],
     "difficulty": 3,
-    "explanation": "Jakub Pachocki, who led GPT-4 development, became chief scientist in June 2024. Zaremba is the tempting miss because he is another Polish co-founder, but the promotion went to Pachocki.",
+    "explanation": "Jakub Pachocki, who led GPT-4 development, was named chief scientist on May 14, 2024, the day Sutskever's exit was announced. Zaremba is the tempting miss because he is another Polish co-founder, but the promotion went to Pachocki.",
     "source": {
       "kind": "wikipedia",
       "title": "Jakub Pachocki",

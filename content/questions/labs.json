@@ -520,7 +520,7 @@
       "hires"
     ],
     "difficulty": 3,
-    "explanation": "John Jumper, who shared the 2024 Nobel Prize in Chemistry for AlphaFold, announced first, and Gemini contributors Jonas Adler and Alexander Pritzel followed within days. Gemini co-lead Noam Shazeer was the only one of the four who chose OpenAI, less than two years after Google paid billions to bring him back from Character.AI. Both OpenAI and Anthropic were close to going public, which is what made pre-IPO equity worth swapping a stable job for.",
+    "explanation": "John Jumper, who shared the 2024 Nobel Prize in Chemistry for AlphaFold, announced first, and Gemini contributors Jonas Adler and Alexander Pritzel followed within days. Gemini co-lead Noam Shazeer was the only one of the four who chose OpenAI, less than two years after Google paid billions to bring him back from Character.AI.",
     "source": {
       "kind": "url",
       "url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
@@ -567,7 +567,7 @@
   },
   {
     "id": "lab-0021",
-    "text": "In August 2026 Nvidia's vice president of AI research left after eight years to found a Toronto startup building world models so robots can train in simulation. Who was it?",
+    "text": "At the end of July 2026 Nvidia's vice president of AI research left after eight years to found a Toronto startup building world models so robots can train in simulation. Who was it?",
     "options": [
       "Huan Ling",
       "Zan Gojcic",
@@ -645,7 +645,7 @@
       "new-lab"
     ],
     "difficulty": 2,
-    "explanation": "Sutton, who shared the 2024 Turing Award for founding modern reinforcement learning, started Oak Lab to build agents that keep learning after deployment. His stated target is an agent with a trillion parameters that learns and plans in real time on about 20 watts, roughly human-brain power. Skyfall AI is the tempting wrong answer because it launched from Toronto in the same month, but it came from the Maluuba founders.",
+    "explanation": "Sutton, who shared the 2024 Turing Award for founding modern reinforcement learning, started Oak Lab to build agents that keep learning after deployment. His stated target is an agent with a trillion parameters that learns and plans in real time on about 20 watts, roughly human-brain power. Skyfall AI is the tempting wrong answer because it came out of stealth the same month with a Toronto research hub, but it came from the Maluuba founders.",
     "source": {
       "kind": "url",
       "url": "https://the-decoder.com/turing-award-winner-rich-sutton-founds-oak-lab-to-build-ai-agents-that-learn-on-their-own/",
@@ -1598,7 +1598,7 @@
     "id": "lab-0054",
     "text": "In 2012, which Google research team trained a neural network on 10 million YouTube images that learned to recognize cats without being taught?",
     "options": [
-      "Google X",
+      "Google Health",
       "DeepMind",
       "Google Brain",
       "Google Research"
@@ -1611,7 +1611,7 @@
       "history"
     ],
     "difficulty": 3,
-    "explanation": "The Brain project, then working inside Google X before becoming a named division, trained the network on 10 million YouTube frames and it learned cats on its own, an early landmark of unsupervised learning. Google X is the trap because the project started there, but the team and the result belong to Brain. Google did not acquire DeepMind until 2014.",
+    "explanation": "The Brain project trained the network on 10 million YouTube frames and it learned cats on its own, an early landmark of unsupervised learning. It began inside Google X before becoming a named team, which is why people sometimes credit X. Google did not acquire DeepMind until 2014.",
     "source": {
       "kind": "wikipedia",
       "title": "Google Brain",
