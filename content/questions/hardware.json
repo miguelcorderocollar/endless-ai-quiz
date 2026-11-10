@@ -735,7 +735,7 @@
       "liquid"
     ],
     "difficulty": 2,
-    "explanation": "A pump pushes coolant through a water block bonded to the chip and out to a heat exchanger, which is the same loop a water cooled car engine runs. Water shifts heat far better than air, and AI racks need it because a full rack of accelerators has gone past what fans can move: immersion designs are rated near 100 kW per 19-inch rack where air cooling stops around 23 kW. Liquid metal fills the gap between chip and plate, and boiling coolant belongs to two phase immersion, neither of which is the cold plate loop.",
+    "explanation": "A pump pushes coolant through a water block bonded to the chip and out to a heat exchanger, the same loop a water-cooled car engine runs. Water moves heat far better than air, and AI racks need it because a full rack of accelerators has outgrown what fans can move: immersion designs are rated near 100 kW per rack where air cooling stops around 23 kW. Liquid metal fills the gap between chip and plate, and boiling coolant is two-phase immersion, not the cold plate loop.",
     "source": {
       "kind": "wikipedia",
       "title": "Computer cooling",
@@ -766,7 +766,7 @@
       "data-center"
     ],
     "difficulty": 1,
-    "explanation": "PUE is total facility energy divided by the energy that actually reaches computing equipment, and a perfect building would score 1.0. Anything that is not a server, an accelerator or a network switch counts as overhead, cooling and lighting included, so a PUE of 1.2 means twenty percent extra energy burned on everything else. It says nothing about how well the chips themselves turn power into useful work, which is the gap researchers were complaining about when they proposed compute-centric metrics instead.",
+    "explanation": "PUE is total facility energy divided by the energy that reaches computing equipment, so a perfect building scores 1.0. Anything that is not a server, an accelerator or a network switch counts as overhead, cooling and lighting included, so a PUE of 1.2 means twenty percent extra energy spent on everything else. It says nothing about how well the chips turn power into useful work, which is why researchers proposed compute-centric metrics instead.",
     "source": {
       "kind": "wikipedia",
       "title": "Power usage effectiveness",
@@ -1600,7 +1600,7 @@
   },
   {
     "id": "hwr-0053",
-    "text": "How many INT8 operations per clock can one Nvidia tensor core perform?",
+    "text": "How many INT8 operations per clock can one tensor core in an Nvidia Turing GPU perform?",
     "options": [
       "64",
       "256",
@@ -1615,7 +1615,7 @@
       "quantization"
     ],
     "difficulty": 3,
-    "explanation": "Each tensor core does 128 INT8 operations per clock, twice the 64 FP16 operations, because one FP16 multiply-accumulate maps to two INT8 ones at the same width. The 1024 figure is the INT1 rate and 256 is INT4, which is why INT8 is the sweet spot for inference speed on the same silicon.",
+    "explanation": "A Turing tensor core does 1024 bits of multiply-accumulate work per clock, so the narrower the number the more of them fit: 64 FP16, 128 INT8, 256 INT4 or 1024 INT1 operations. That is why the 256 and 1024 options are real figures for the same core, just at INT4 and INT1, and why INT8 became the sweet spot for inference speed on the same silicon.",
     "source": {
       "kind": "wikipedia",
       "title": "Deep Learning Super Sampling",
@@ -1866,7 +1866,7 @@
       "process-node"
     ],
     "difficulty": 3,
-    "explanation": "TSMC's N7+ was the first commercially available EUV process, used in 2020, before N5, N3 and N2 added more EUV layers. N5 is the tempting miss because it is the most famous EUV node, but N7+ was the first to bring EUV into high-volume production.",
+    "explanation": "TSMC's N7+ was the first commercially available EUV process, in high-volume production from late 2019, before N5, N3 and N2 added more EUV layers. N5 is the tempting miss because it is the most famous EUV node, but N7+ was the first to bring EUV into high-volume production.",
     "source": {
       "kind": "wikipedia",
       "title": "TSMC",
@@ -2143,7 +2143,7 @@
       "ceo"
     ],
     "difficulty": 1,
-    "explanation": "Gelsinger stepped down on December 1, 2024, after 3 years and 10 months as CEO, with David Zinsser and Michelle Johnston Holthaus named interim co-CEOs. Intel's troubles continued after his departure, which is why the 2024 date, not 2025, is the one to remember.",
+    "explanation": "Gelsinger stepped down on December 1, 2024, after nearly four years as CEO, with David Zinsser and Michelle Johnston Holthaus named interim co-CEOs. Intel's troubles continued after his departure, which is why the 2024 date, not 2025, is the one to remember.",
     "source": {
       "kind": "wikipedia",
       "title": "Pat Gelsinger",
@@ -2267,7 +2267,7 @@
       "amd"
     ],
     "difficulty": 3,
-    "explanation": "The MI300A is an APU that pairs 24 Zen 4 CPU cores with four CDNA 3 GPU chiplets and 128 GB of HBM3. Zen 2 and Zen 3 are the tempting misses because they powered the earlier Epyc generations, but the MI300A moved to Zen 4 on the 5 nm node.",
+    "explanation": "The MI300A is an APU that pairs 24 Zen 4 CPU cores with six CDNA 3 GPU chiplets and 128 GB of HBM3. Zen 2 and Zen 3 are the tempting misses because they powered the earlier Epyc generations, but the MI300A moved to Zen 4 on the 5 nm node.",
     "source": {
       "kind": "wikipedia",
       "title": "AMD Instinct",
@@ -2298,7 +2298,7 @@
       "a17"
     ],
     "difficulty": 3,
-    "explanation": "The A17 Pro, in the iPhone 15 Pro and iPad Mini 7 in 2023, was the first widely available 3 nm SoC, fabbed by TSMC on its N3 process with 19 billion transistors. The A15 and A16 are the tempting misses because they are the immediately preceding chips, but both were built on 5 nm, and the M1 was 5 nm as well.",
+    "explanation": "The A17 Pro, launched in the iPhone 15 Pro in 2023 and later used in the 2024 iPad mini, was the first widely available 3 nm SoC, fabbed by TSMC on its N3 process with 19 billion transistors. The A15 and A16 are the tempting misses because they are the immediately preceding chips, but both were built on 5 nm, and the M1 was 5 nm as well.",
     "source": {
       "kind": "wikipedia",
       "title": "Apple A17 Pro",

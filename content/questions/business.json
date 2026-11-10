@@ -485,7 +485,7 @@
   },
   {
     "id": "bus-0017",
-    "text": "In August 2026 Nvidia licensed Poolside's Model Factory and made job offers to 109 of its engineers, in a deal the investor letter insisted was neither an acquisition nor an acquihire. Which open-weight model family would they work on?",
+    "text": "In August 2026 Nvidia licensed Poolside's Model Factory and offered jobs to 109 of its engineers, in a deal it said was not an acquisition. Which open-weight model family would they work on?",
     "options": [
       "Llama",
       "Qwen",
@@ -532,7 +532,7 @@
       "markets"
     ],
     "difficulty": 2,
-    "explanation": "Moonshot AI, the developer of the Kimi models, filed confidentially on 3 September 2026 and is working with Goldman Sachs and CICC on the offering. Z.AI, formerly Zhipu, and MiniMax both listed in Hong Kong earlier in 2026, which makes them the tempting misses, while DeepSeek has never filed.",
+    "explanation": "Moonshot AI, the developer of the Kimi models, filed confidentially on 3 September 2026. Z.AI, formerly Zhipu, and MiniMax both listed in Hong Kong earlier in 2026, which makes them the tempting misses, while DeepSeek has never filed.",
     "source": {
       "kind": "url",
       "url": "https://www.businesstimes.com.sg/companies-markets/chinese-ai-firm-moonshot-files-confidentially-hong-kong-ipo-sources-say",
@@ -675,7 +675,7 @@
   },
   {
     "id": "bus-0023",
-    "text": "The EU AI Act's duties for general-purpose AI models have applied since August 2025, but for a year no one could be fined for breaking them. From what date in 2026 did the Commission's enforcement powers start?",
+    "text": "The EU AI Act's duties for general-purpose AI models have applied since August 2025, but no one could be fined for a year. From what date in 2026 could the Commission enforce them?",
     "options": [
       "1 August 2026",
       "2 August 2026",
@@ -788,7 +788,7 @@
       "energy"
     ],
     "difficulty": 2,
-    "explanation": "The salt is a coolant, not the fuel: Kairos burns TRISO particles held in solid graphite pebbles, so what it is not is the classic liquid-fuel molten salt design. Google's 2024 agreement covers up to 500 MW from six or seven units, the first due around 2030, and none of them has Nuclear Regulatory Commission approval yet.",
+    "explanation": "The salt is a coolant, not the fuel: Kairos burns TRISO particles held in solid graphite pebbles, so what it is not is the classic liquid-fuel molten salt design. Google's 2024 agreement covers up to 500 MW from six or seven units, the first due around 2030, and none is running yet, though the NRC approved a construction permit for Hermes 2, the first, in November 2024.",
     "source": {
       "kind": "wikipedia",
       "title": "Kairos Power",
@@ -1057,7 +1057,7 @@
   },
   {
     "id": "bus-0036",
-    "text": "Microsoft extended its OpenAI partnership in January 2023 with a multiyear, multibillion-dollar deal. About how much had Microsoft put in cumulatively by that point, according to contemporaneous reporting?",
+    "text": "Microsoft extended its OpenAI partnership in January 2023 with a multiyear, multibillion-dollar deal. About how much had it invested in total by then, according to reporting at the time?",
     "options": [
       "About $10 billion",
       "About $13 billion",
@@ -1130,7 +1130,7 @@
       "leadership"
     ],
     "difficulty": 2,
-    "explanation": "The board announced Altman's removal on November 17 2023, saying he had not been consistently candid. November 20 is the tempting miss because that was the weekend's chaotic middle, when Microsoft announced Altman would join it, before his reinstatement on November 22.",
+    "explanation": "The board announced Altman's removal on November 17 2023, saying he had not been consistently candid. November 20 is the tempting miss because that was the weekend's chaotic middle, when Microsoft announced Altman would join it, before his reinstatement days later.",
     "source": {
       "kind": "wikipedia",
       "title": "Sam Altman",
@@ -2056,7 +2056,7 @@
   },
   {
     "id": "bus-0078",
-    "text": "Which small modular reactor developer partnered with Amazon in October 2024 for up to 500 MW of nuclear power?",
+    "text": "Which small modular reactor developer partnered with Amazon in October 2024 to build small reactors in Washington state?",
     "options": [
       "NuScale Power",
       "TerraPower",
@@ -2086,7 +2086,7 @@
   },
   {
     "id": "bus-0079",
-    "text": "Which Illinois nuclear plant did Meta contract with Constellation for 20 years starting in June 2025?",
+    "text": "Which Illinois nuclear plant did Meta sign a 20-year deal with Constellation for in June 2025?",
     "options": [
       "Clinton Clean Energy Center",
       "Braidwood Station",
@@ -2145,7 +2145,7 @@
   },
   {
     "id": "bus-0081",
-    "text": "Which Georgetown research center did OpenAI board member Helen Toner direct during the November 2023 ouster?",
+    "text": "Which Georgetown research center employed OpenAI board member Helen Toner during the November 2023 ouster?",
     "options": [
       "Center for Democracy",
       "Center for Global Health",
@@ -2159,7 +2159,7 @@
       "governance"
     ],
     "difficulty": 3,
-    "explanation": "Toner directed Georgetown's Center for Security and Emerging Technology, whose AI-safety work reportedly strained relations with Altman. The other centers are real Georgetown units, which is why generic-center guessing fails.",
+    "explanation": "Toner was director of strategy at Georgetown's Center for Security and Emerging Technology, which she now leads, whose AI-safety work reportedly strained relations with Altman. The other centers are real Georgetown units, which is why generic-center guessing fails.",
     "source": {
       "kind": "wikipedia",
       "title": "Helen Toner",
@@ -2320,7 +2320,7 @@
   },
   {
     "id": "bus-0087",
-    "text": "Who succeeded Ilya Sutskever as OpenAI chief scientist in June 2024?",
+    "text": "Who succeeded Ilya Sutskever as OpenAI chief scientist in May 2024?",
     "options": [
       "Jakub Pachocki",
       "Wojciech Zaremba",
@@ -2334,7 +2334,7 @@
       "leadership"
     ],
     "difficulty": 3,
-    "explanation": "Jakub Pachocki, who led GPT-4 development, became chief scientist in June 2024. Zaremba is the tempting miss because he is another Polish co-founder, but the promotion went to Pachocki.",
+    "explanation": "Jakub Pachocki, who led GPT-4 development, was named chief scientist on May 14, 2024, the day Sutskever's exit was announced. Zaremba is the tempting miss because he is another Polish co-founder, but the promotion went to Pachocki.",
     "source": {
       "kind": "wikipedia",
       "title": "Jakub Pachocki",

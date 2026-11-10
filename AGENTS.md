@@ -104,6 +104,10 @@ Keep the browser suite worth running:
 - `category` must use the exact schema key, for example `technology`, not `tech`.
 - `answer` must match exactly one option.
 - Every question needs an explanation.
+- Length caps (#49), enforced by `npm run validate` as errors: question text
+  200 characters, each option 80, explanation 500. They keep one question on
+  one phone screen with all four options visible. `LENGTH_CAPS` in
+  `src/lib/questions/schema.ts` is the single place they live.
 - Prefer Wikipedia or primary sources. Use `"kind": "none"` only when no source exists, and make the explanation carry the teaching.
 - Do not ship generated questions without `npm run validate` and a human read.
 - `npm run validate` cannot see a reworded or cross-category repeat. Run

@@ -1199,9 +1199,9 @@
       "About 300 questions",
       "About 800 questions",
       "About 30,000 questions",
-      "About 3,000 questions across a hundred subjects"
+      "About 2,500 questions"
     ],
-    "answer": "About 3,000 questions across a hundred subjects",
+    "answer": "About 2,500 questions",
     "category": "benchmarks",
     "tags": [
       "hle",
@@ -1209,7 +1209,7 @@
       "reasoning"
     ],
     "difficulty": 2,
-    "explanation": "Humanity's Last Exam gathered around three thousand hard closed-ended questions across mathematics, science and humanities. Thirty thousand would be a bulk web scrape, the opposite of its expert-crafted design. Scale AI and the Center for AI Safety filtered thousands of submissions down to that final set.",
+    "explanation": "Humanity's Last Exam settled on 2,500 hard closed-ended questions across dozens of subjects in mathematics, science and the humanities, after early versions counted about 3,000. Thirty thousand would be a bulk web scrape, the opposite of its expert-crafted design. Scale AI and the Center for AI Safety filtered thousands of submissions down to that set.",
     "source": {
       "kind": "url",
       "url": "https://arxiv.org/abs/2501.14249",
@@ -1217,8 +1217,8 @@
     },
     "answerAliases": [
       "Humanity's Last Exam",
-      "3000",
-      "3,000",
+      "2,500",
+      "2500",
       "HLE"
     ],
     "status": "published",
@@ -1390,10 +1390,10 @@
     "options": [
       "The questions cannot be viewed in a web browser",
       "Google paid to keep the questions offline forever",
-      "Domain experts given web access still answer many of them incorrectly",
+      "Skilled non-experts with web access still get most of them wrong",
       "Only Google employees are allowed to answer them"
     ],
-    "answer": "Domain experts given web access still answer many of them incorrectly",
+    "answer": "Skilled non-experts with web access still get most of them wrong",
     "category": "benchmarks",
     "tags": [
       "gpqa",
@@ -1401,7 +1401,7 @@
       "evaluation"
     ],
     "difficulty": 3,
-    "explanation": "GPQA filtered for questions that PhDs outside their specialty get wrong even with unrestricted search, hence Google-proof. An unviewable web page would make evaluation impossible rather than hard. The validation used paid expert annotators, which is why the surviving 448 Diamond questions stay brutal.",
+    "explanation": "GPQA kept questions that skilled validators from other fields got wrong even with unrestricted web search, scoring 34% while domain experts reached 65%, hence Google-proof. An unviewable web page would make evaluation impossible rather than hard. The surviving 198 Diamond questions are the hardest cut.",
     "source": {
       "kind": "url",
       "url": "https://arxiv.org/abs/2311.12022",
@@ -1410,8 +1410,7 @@
     "answerAliases": [
       "GPQA",
       "Google-proof",
-      "Google-Proof",
-      "domain experts"
+      "Google-Proof"
     ],
     "status": "published",
     "addedAt": "2026-10-18"
@@ -1551,9 +1550,9 @@
       "It translated every question into twelve new languages",
       "It replaced text with spoken questions read by actors",
       "It cut the subject count down to a single topic",
-      "It expanded options from four to ten and filtered out the questions models found easy"
+      "It went from four options to ten and dropped the easy questions"
     ],
-    "answer": "It expanded options from four to ten and filtered out the questions models found easy",
+    "answer": "It went from four options to ten and dropped the easy questions",
     "category": "benchmarks",
     "tags": [
       "mmlu-pro",
@@ -1580,12 +1579,12 @@
     "id": "ben-0051",
     "text": "The 2022 MGSM benchmark extends GSM8K to other languages. What does it contain?",
     "options": [
-      "The same grade-school problems translated into ten languages, a few hundred per language",
+      "The same grade-school problems translated into ten languages",
       "Ten thousand new calculus problems in English only",
       "Spoken math dictations recorded by voice actors",
       "University physics exams with no worked solutions"
     ],
-    "answer": "The same grade-school problems translated into ten languages, a few hundred per language",
+    "answer": "The same grade-school problems translated into ten languages",
     "category": "benchmarks",
     "tags": [
       "mgsm",
@@ -1741,10 +1740,10 @@
     "options": [
       "The exact melting point of an obscure alloy",
       "A formal proof of a geometry theorem",
-      "Which of two solutions better achieves an everyday physical goal, like separating egg whites",
+      "Which of two ways better achieves an everyday physical goal",
       "The publication year of a famous physics paper"
     ],
-    "answer": "Which of two solutions better achieves an everyday physical goal, like separating egg whites",
+    "answer": "Which of two ways better achieves an everyday physical goal",
     "category": "benchmarks",
     "tags": [
       "piqa",
@@ -1801,12 +1800,12 @@
     "id": "ben-0058",
     "text": "The 2018 MultiRC benchmark differs from SQuAD-style tests in what way?",
     "options": [
-      "Its questions need reasoning across several sentences, and more than one answer option can be correct",
+      "Questions need reasoning across sentences, and several options can be right",
       "It asks models to output only random numbers",
       "It tests vision models on labeled images",
       "It ranks chatbots through live human votes"
     ],
-    "answer": "Its questions need reasoning across several sentences, and more than one answer option can be correct",
+    "answer": "Questions need reasoning across sentences, and several options can be right",
     "category": "benchmarks",
     "tags": [
       "multirc",
@@ -1836,9 +1835,9 @@
       "Extracting exact answer spans quoted from the passage",
       "Translating passages into twelve new languages",
       "Retrieving evidence and labeling claims supported or refuted",
-      "Perform discrete operations like counting, sorting and arithmetic over the passage"
+      "Counting, sorting and arithmetic over the passage"
     ],
-    "answer": "Perform discrete operations like counting, sorting and arithmetic over the passage",
+    "answer": "Counting, sorting and arithmetic over the passage",
     "category": "benchmarks",
     "tags": [
       "drop",
@@ -1867,10 +1866,10 @@
     "options": [
       "Single questions about isolated trivia facts",
       "Chess puzzles with one forced mate",
-      "Free-form dialogue turns where later questions depend on the conversation history",
+      "Dialogue turns where later questions depend on earlier ones",
       "Python functions to complete from docstrings"
     ],
-    "answer": "Free-form dialogue turns where later questions depend on the conversation history",
+    "answer": "Dialogue turns where later questions depend on earlier ones",
     "category": "benchmarks",
     "tags": [
       "coqa",
@@ -1898,11 +1897,11 @@
     "text": "The 2017 TriviaQA benchmark is distinctive among reading tests for what?",
     "options": [
       "Questions written by models with no human review",
-      "Trivia questions paired with independently gathered evidence documents that share little wording with the questions",
+      "Trivia questions paired with evidence documents gathered separately",
       "Questions about images instead of text",
       "A fixed set of eight questions reused every year"
     ],
-    "answer": "Trivia questions paired with independently gathered evidence documents that share little wording with the questions",
+    "answer": "Trivia questions paired with evidence documents gathered separately",
     "category": "benchmarks",
     "tags": [
       "triviaqa",
@@ -1929,12 +1928,12 @@
     "id": "ben-0062",
     "text": "The 2018 FEVER benchmark tests fact verification. What must a model do for each claim?",
     "options": [
-      "Retrieve Wikipedia evidence and label the claim supported, refuted or not enough info",
+      "Find Wikipedia evidence and label the claim supported, refuted or unclear",
       "Write a poem about the claim's subject",
       "Generate a photorealistic image of the event",
       "Predict the claim's stock-market impact"
     ],
-    "answer": "Retrieve Wikipedia evidence and label the claim supported, refuted or not enough info",
+    "answer": "Find Wikipedia evidence and label the claim supported, refuted or unclear",
     "category": "benchmarks",
     "tags": [
       "fever",
@@ -1963,10 +1962,10 @@
     "options": [
       "Questions written in twelve new languages",
       "Spoken questions read aloud by actors",
-      "Questions that both retrieval and word-co-occurrence baselines answer incorrectly",
+      "Questions both retrieval and word-matching baselines get wrong",
       "Questions with no correct answer at all"
     ],
-    "answer": "Questions that both retrieval and word-co-occurrence baselines answer incorrectly",
+    "answer": "Questions both retrieval and word-matching baselines get wrong",
     "category": "benchmarks",
     "tags": [
       "arc",
@@ -1996,9 +1995,9 @@
       "They must be solved without writing any code",
       "They test only code formatting style",
       "They are single-line completions with no tests",
-      "They demand full programs that parse input, handle edge cases and pass hidden tests under limits"
+      "They need full programs that pass hidden tests within time limits"
     ],
-    "answer": "They demand full programs that parse input, handle edge cases and pass hidden tests under limits",
+    "answer": "They need full programs that pass hidden tests within time limits",
     "category": "benchmarks",
     "tags": [
       "codecontests",

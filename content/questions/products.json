@@ -502,7 +502,7 @@
   },
   {
     "id": "pro-0017",
-    "text": "Black Forest Labs announced FLUX 3 in July 2026, its first model that generates video, and extended the same backbone to predict what a robot should do next. Which carmaker's production network is already testing that action model?",
+    "text": "In July 2026 Black Forest Labs showed FLUX 3 running robots: a video-action model built with mimic robotics that predicts a robot's next move. Which carmaker has it deployed?",
     "options": [
       "BMW",
       "Porsche",
@@ -518,7 +518,7 @@
       "video"
     ],
     "difficulty": 2,
-    "explanation": "The action half is called FLUX 3 Action and was built with mimic robotics, whose robots Black Forest Labs says have been tested and deployed at Audi. BFL is the Freiburg startup behind Stable Diffusion and the FLUX image models, and FLUX 3 is the first time it has shipped video at all. Audi's production lab framed the work as solving flexible, soft-body handling that conventionally programmed robot cells cannot handle economically.",
+    "explanation": "The model is called FLUX-mimic, built with mimic robotics, and Black Forest Labs says it is deployed at Audi. BFL is the Freiburg startup founded by the researchers behind Stable Diffusion, and its pitch is that content creation and physical AI share one foundation, a model that understands the world. Audi's production lab framed the work as solving flexible, soft-body handling that conventionally programmed robot cells cannot do economically.",
     "source": {
       "kind": "url",
       "url": "https://bfl.ai/blog/flux-3-mimic",
@@ -568,7 +568,7 @@
   },
   {
     "id": "pro-0019",
-    "text": "Google launched Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS on September 23, 2026, and put each one into a different Google product on day one. The cheaper, high-volume model landed in which product?",
+    "text": "Google launched Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS on September 23, 2026, each in a different Google product on day one. The cheaper, high-volume model landed in which product?",
     "options": [
       "Google AI Studio",
       "Google Vids",
@@ -601,7 +601,7 @@
   },
   {
     "id": "pro-0020",
-    "text": "Sonos introduced Sonos 27, the next version of its audio operating system, in September 2026, and previewed its first in-house voice assistant alongside it. What was that in-house assistant built to do?",
+    "text": "Sonos introduced Sonos 27, the next version of its audio operating system, in September 2026 and previewed its first in-house voice assistant with it. What was that assistant built to do?",
     "options": [
       "Answer general questions the way Alexa does today",
       "Transcribe and translate speech in real time",
@@ -617,7 +617,7 @@
       "launch"
     ],
     "difficulty": 2,
-    "explanation": "Sonos 27voice is deliberately narrow: Sonos describes its own first assistant as built for music and mood curation, not for handling general requests. The general-question distractor is the tempting miss because a speaker that answers questions is what most people picture, and the same release took the opposite route for everything else, adding Sonos 27mcp so an outside assistant such as OpenAI's ChatGPT could drive the system instead. The announcement also folded the Beam Ultra soundbar and Ace Ultra headphones into the portfolio.",
+    "explanation": "Sonos 27voice is deliberately narrow: Sonos describes its first assistant as built for music and mood curation, not general requests. The general-question distractor is the tempting miss because a speaker that answers questions is what most people picture, and the same release took the opposite route for everything else, adding Sonos 27mcp so an outside assistant such as ChatGPT could drive the system instead.",
     "source": {
       "kind": "url",
       "url": "https://newsroom.sonos.com/269843-sonos-introduces-sonos-27-the-next-generation-of-its-audio-operating-system/",
@@ -636,12 +636,12 @@
     "id": "pro-0021",
     "text": "JetBrains took its AI coding agent Junie out of beta in June 2026. Which protocol did it rebuild the agent's IDE integration on for the general release?",
     "options": [
-      "Agent Communication Protocol",
+      "Agent Client Protocol",
       "Model Context Protocol",
       "Language Server Protocol",
       "Debug Adapter Protocol"
     ],
-    "answer": "Agent Communication Protocol",
+    "answer": "Agent Client Protocol",
     "category": "products",
     "tags": [
       "jetbrains",
@@ -650,14 +650,14 @@
       "protocols"
     ],
     "difficulty": 3,
-    "explanation": "Junie's general release talks to the IDE over ACP, the same protocol Junie CLI already used, so one agent engine sits behind the AI chat, the Junie tool window and the terminal. Model Context Protocol is the tempting miss because it is the other big agent protocol of 2026, but MCP is about handing a model tools, not plugging an agent into an editor. Language Server Protocol is about completions and navigation.",
+    "explanation": "Junie's general release talks to the IDE over ACP, the Agent Client Protocol Zed started and JetBrains adopted, the same protocol Junie CLI already used. JetBrains' own post spells it Agent Communication Protocol, a different IBM project. Model Context Protocol is the tempting miss as the other big agent protocol, but MCP hands a model tools rather than plugging an agent into an editor.",
     "source": {
       "kind": "url",
       "url": "https://blog.jetbrains.com/junie/2026/06/junie-coding-agent-out-of-beta/",
       "label": "JetBrains on Junie leaving beta"
     },
     "answerAliases": [
-      "Agent Communication Protocol",
+      "Agent Client Protocol",
       "ACP",
       "Junie",
       "JetBrains"
@@ -667,7 +667,7 @@
   },
   {
     "id": "pro-0022",
-    "text": "Cursor's Composer 2 and Composer 2.5 coding models were not trained from scratch: Cursor took an open base model from another lab and did its own continued pretraining and reinforcement learning on top. Which lab's open model was that base?",
+    "text": "Cursor did not train its Composer 2 and Composer 2.5 coding models from scratch: it took another lab's open base model and added its own continued pretraining and RL. Whose open model was that base?",
     "options": [
       "Alibaba",
       "Moonshot AI",
@@ -1553,7 +1553,7 @@
   },
   {
     "id": "pro-0061",
-    "text": "ElevenLabs was founded by two engineers who previously worked on speech at which company?",
+    "text": "Before co-founding ElevenLabs, Piotr Dabkowski was a machine learning engineer at which company?",
     "options": [
       "Meta",
       "Google",
@@ -1568,7 +1568,7 @@
       "lineage"
     ],
     "difficulty": 3,
-    "explanation": "Founders Piotr Dabkowski and Mateusz Staniszewski both worked on speech at Google. Meta is the tempting miss as another big lab with speech research.",
+    "explanation": "Dabkowski came from Google and his co-founder Mati Staniszewski from Palantir when they started ElevenLabs in 2022. Meta is the tempting miss as another big lab with speech research.",
     "source": {
       "kind": "wikipedia",
       "title": "ElevenLabs",
@@ -2055,7 +2055,7 @@
       "release"
     ],
     "difficulty": 2,
-    "explanation": "Perplexity AI was founded in August 2022. 2023 is the tempting miss because that is when its search engine launched to the public.",
+    "explanation": "Perplexity AI was founded in August 2022. 2023 is the tempting miss because that is when it went mainstream, but its search engine first launched publicly in December 2022.",
     "source": {
       "kind": "wikipedia",
       "title": "Perplexity AI",

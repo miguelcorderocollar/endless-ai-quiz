@@ -401,7 +401,7 @@
       "deep-blue"
     ],
     "difficulty": 2,
-    "explanation": "Kasparov made the accusation after Game 2, whose move 37 (Be4) he thought was too sophisticated for a machine. IBM denied any human intervention, and Kasparov later said he had overreacted.",
+    "explanation": "Kasparov made the accusation after Game 2, whose move 37 (Be4) he thought was too sophisticated for a machine. IBM denied any human intervention, and Kasparov's view of the match softened in later years.",
     "source": {
       "kind": "wikipedia",
       "title": "Deep Blue versus Garry Kasparov",
@@ -1522,7 +1522,7 @@
       "autonomous-driving"
     ],
     "difficulty": 4,
-    "explanation": "ALVINN, an Autonomous Land Vehicle in a Neural Network, was developed by Dean Pomerleau at Carnegie Mellon in 1989 and drove at up to 19 miles per hour. Stanley, Boss and Junior are later Darpa Grand Challenge vehicles, which is why they tempt people who know self-driving history but not the 1980s.",
+    "explanation": "ALVINN, an Autonomous Land Vehicle in a Neural Network, was developed by Dean Pomerleau at Carnegie Mellon in 1989 and steered the Navlab test vehicle from camera images. Stanley, Boss and Junior are later Darpa Grand Challenge vehicles, which is why they tempt people who know self-driving history but not the 1980s.",
     "source": {
       "kind": "wikipedia",
       "title": "Navlab",
@@ -1847,7 +1847,7 @@
       "2023"
     ],
     "difficulty": 1,
-    "explanation": "Google announced Bard on February 6, 2023, the week before Microsoft's Bing Chat event, as a direct response to ChatGPT. April is the tempting answer because that is when early access opened, but the announcement came in February.",
+    "explanation": "Google announced Bard on February 6, 2023, the week before Microsoft's Bing Chat event, as a direct response to ChatGPT. April is the tempting answer because Bard was still rolling out that spring after early access opened in March, but the announcement came in February.",
     "source": {
       "kind": "wikipedia",
       "title": "Google Gemini",

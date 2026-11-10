@@ -1024,7 +1024,7 @@
   },
   {
     "id": "ppl-0036",
-    "text": "Hugging Face began in New York in 2016 as a chatbot for teenagers and took its name from a hugging-face emoji. Two of its three French co-founders are Julien Chaumond and Thomas Wolf. Who is the third?",
+    "text": "Hugging Face began in New York in 2016 as a chatbot for teenagers, named after the hugging-face emoji. Two of its three French co-founders are Julien Chaumond and Thomas Wolf. Who is the third?",
     "options": [
       "Clément Delangue",
       "Emad Mostaque",
@@ -1424,7 +1424,7 @@
   },
   {
     "id": "ppl-0051",
-    "text": "Which Anthropic researcher led early work on model character and the 2022 Constitutional AI approach?",
+    "text": "Which Anthropic researcher, a co-author of the 2022 Constitutional AI paper, leads the work on shaping Claude's character?",
     "options": [
       "Amanda Askell",
       "Jan Leike",
@@ -1439,7 +1439,7 @@
       "constitutional-ai"
     ],
     "difficulty": 3,
-    "explanation": "Askell drove Anthropic's work on shaping Claude's character and co-authored the Constitutional AI paper that replaced some human feedback with AI feedback. Leike is the tempting miss because he later led superalignment work, but in 2022 he was still at OpenAI, not on the Constitutional AI team.",
+    "explanation": "Askell leads Anthropic's work on Claude's character and co-authored the Constitutional AI paper that replaced some human feedback with AI feedback. Dario Amodei is also on that paper, but as CEO he does not run the character work. Leike is the tempting miss because he later led alignment work, but in 2022 he was still at OpenAI.",
     "source": {
       "kind": "url",
       "url": "https://arxiv.org/abs/2212.08073",

@@ -9,6 +9,7 @@ import {
   CATEGORY_KEYS,
   PREFIX_BY_KEY,
   type Question,
+  lengthViolations,
 } from "../src/lib/questions/schema";
 
 const OFFLINE = process.argv.includes("--offline");
@@ -62,6 +63,8 @@ const VOLATILE = [
  * ------------------------------------------------------------------ */
 
 function checkShape(q: Question, idCount: Map<string, number>) {
+  for (const message of lengthViolations(q)) err(q.id, "too-long", message);
+
   const optionSet = new Set(q.options.map(normalize));
   if (optionSet.size !== q.options.length) {
     err(q.id, "duplicate-option", "two options are identical once normalized");

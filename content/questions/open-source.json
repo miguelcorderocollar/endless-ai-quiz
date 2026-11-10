@@ -1303,7 +1303,7 @@
     "id": "oss-0048",
     "text": "Who introduced the idea of Model Cards for model reporting?",
     "options": [
-      "Timnit Gebru and colleagues",
+      "Fei-Fei Li and colleagues",
       "Yann LeCun and colleagues",
       "Jeff Dean and colleagues",
       "Margaret Mitchell and colleagues"
@@ -1316,7 +1316,7 @@
       "ethics"
     ],
     "difficulty": 3,
-    "explanation": "Model Cards were proposed in a 2019 paper by Mitchell and colleagues to document model performance, intended use and limitations. Timnit Gebru is the tempting miss because she led the related Datasheets for Datasets work.",
+    "explanation": "Model Cards were proposed in a 2019 paper by Margaret Mitchell and colleagues, Timnit Gebru among them, to document a model's performance, intended use and limitations. Fei-Fei Li is the tempting miss as another prominent voice on responsible AI, but she was not on the paper.",
     "source": {
       "kind": "url",
       "url": "https://arxiv.org/abs/1810.03993",
@@ -1574,11 +1574,11 @@
     "text": "Which statement best distinguishes LangChain from LlamaIndex?",
     "options": [
       "LangChain is for hardware design, LlamaIndex is for datasets",
-      "LangChain builds applications around models, LlamaIndex focuses on ingesting and querying data",
+      "LangChain builds apps around models, LlamaIndex handles data",
       "They are identical products",
       "LangChain is a database, LlamaIndex is a model"
     ],
-    "answer": "LangChain builds applications around models, LlamaIndex focuses on ingesting and querying data",
+    "answer": "LangChain builds apps around models, LlamaIndex handles data",
     "category": "open-source",
     "tags": [
       "langchain",
@@ -1983,12 +1983,12 @@
     "id": "oss-0075",
     "text": "What is the difference between open weights and open source?",
     "options": [
-      "Open weights releases the learned parameters; open source also grants the freedoms to use, study, modify and share",
+      "Open weights shares parameters; open source also allows modifying and sharing",
       "Open weights requires a paid licence; open source is free",
       "Open weights includes the training data; open source does not",
       "They are identical concepts"
     ],
-    "answer": "Open weights releases the learned parameters; open source also grants the freedoms to use, study, modify and share",
+    "answer": "Open weights shares parameters; open source also allows modifying and sharing",
     "category": "open-source",
     "tags": [
       "open-weights",

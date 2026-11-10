@@ -76,6 +76,42 @@ export const questionSchema = z.object({
 
 export type Question = z.infer<typeof questionSchema>;
 
+/**
+ * Hard length caps (#49), so one question fits one phone screen with all four
+ * options visible. The quiz never clamps or truncates, so every extra line
+ * pushes the options below the fold.
+ *
+ * Enforced by `npm run validate` as an error, not by `questionSchema`: the
+ * runtime bank parse drops rows that fail the schema, and a row that is merely
+ * long should fail the gate, not vanish from play. The schema's own maxima are
+ * structural ceilings only.
+ *
+ * Counted in code points, so an emoji or a CJK name counts as one character.
+ */
+export const LENGTH_CAPS = { text: 200, option: 80, explanation: 500 } as const;
+
+const codePoints = (s: string) => [...s].length;
+
+/** One message per field over its cap, empty when the question fits. */
+export function lengthViolations(
+  q: Pick<Question, "text" | "options" | "explanation">,
+): string[] {
+  const out: string[] = [];
+  const text = codePoints(q.text);
+  if (text > LENGTH_CAPS.text) out.push(`text is ${text} characters, cap is ${LENGTH_CAPS.text}`);
+  q.options.forEach((option, i) => {
+    const n = codePoints(option);
+    if (n > LENGTH_CAPS.option) {
+      out.push(`option ${"ABCD"[i] ?? i + 1} is ${n} characters, cap is ${LENGTH_CAPS.option}`);
+    }
+  });
+  const explanation = codePoints(q.explanation);
+  if (explanation > LENGTH_CAPS.explanation) {
+    out.push(`explanation is ${explanation} characters, cap is ${LENGTH_CAPS.explanation}`);
+  }
+  return out;
+}
+
 /** The Learn button target, or null when the question has no verifiable source. */
 export function sourceHref(source: QuestionSource): string | null {
   switch (source.kind) {

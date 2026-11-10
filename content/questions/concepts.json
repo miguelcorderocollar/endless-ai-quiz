@@ -719,11 +719,11 @@
     "text": "A lab publishes a model's weights so anyone can download them. What would open source additionally require?",
     "options": [
       "That the weights be published at no charge",
-      "That the training data and code be public too",
+      "That the code and training data details be shared too",
       "That the model run on hardware anyone can buy",
       "That every model the lab has built be public"
     ],
-    "answer": "That the training data and code be public too",
+    "answer": "That the code and training data details be shared too",
     "category": "concepts",
     "tags": [
       "open-weights",
@@ -731,7 +731,7 @@
       "licensing"
     ],
     "difficulty": 3,
-    "explanation": "Open source asks for more than the numbers: the training data, the source code, the evaluation results and the documentation as well. Free to download is the tempting wrong answer, because price and openness are different axes, and a model can sit on a public server under terms that forbid commercial use. The word licence is where the argument usually lands, since whether you may modify, fine-tune or redistribute released weights is set by the terms rather than by the download.",
+    "explanation": "Open source asks for more than the numbers: under the Open Source Initiative's 2024 definition, the code and enough detail about the training data to rebuild a similar system. Free to download is the tempting wrong answer, because price and openness are different axes. The licence is where the argument usually lands, since whether you may modify, fine-tune or redistribute released weights is set by the terms rather than by the download.",
     "source": {
       "kind": "wikipedia",
       "title": "Open weights",
@@ -1904,7 +1904,7 @@
     "explanation": "A lucky sparse mask plus its original initialization can match the full model, which is why pruning after training works better than training small from scratch. The always-wider option states the naive scaling view the hypothesis complicates.",
     "source": {
       "kind": "url",
-      "url": "https://arxiv.org/abs/1903.01611",
+      "url": "https://arxiv.org/abs/1803.03635",
       "label": "Lottery ticket hypothesis paper on arXiv"
     },
     "answerAliases": [
