@@ -188,7 +188,7 @@
    "verdict": "duplicate",
    "resolution": "fixed",
    "note": "Identical question text (xAI founding year -> 2023), only answer slot differed. Genuinely interchangeable. RESOLVED: hst-0044 DELETED, bus-0047 kept (business lineage).",
-   "noul": 1.0
+   "noul": 1
   },
   {
    "a": "hst-0038",
@@ -1037,6 +1037,14 @@
    "verdict": "duplicate",
    "resolution": "fixed",
    "note": "Wave-2 dupe pass: moot — lab-0067 deleted (dup of oss-0020); oss-0053 (UAE) kept."
+  },
+  {
+   "a": "eth-0019",
+   "b": "eth-0047",
+   "noul": 0.74,
+   "verdict": "duplicate",
+   "resolution": "fixed",
+   "note": "Publish pass: same Sky/Johansson incident asked both ways, each gives the other away. eth-0047 (draft) deleted, eth-0019 (published) kept."
   }
  ]
 }

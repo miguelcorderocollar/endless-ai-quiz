@@ -323,7 +323,7 @@
       "Hugging Face platform",
       "models hosted on the Hugging Face Hub"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -354,7 +354,7 @@
       "local inference",
       "run on just a CPU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -385,7 +385,7 @@
       "model-management tools",
       "running and managing large language models on local GPU infrastructure"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -416,7 +416,7 @@
       "BSD-like",
       "MIT License"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -447,7 +447,7 @@
       "GPT-J or GPT-J-6B",
       "developed by EleutherAI in 2021"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -478,7 +478,7 @@
       "case-by-case",
       "Llama 1"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -509,7 +509,7 @@
       "Llama 2 license",
       "openwashing"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -538,7 +538,7 @@
       "Apache 2.0",
       "Apache License 2.0"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -569,7 +569,7 @@
       "TII",
       "Falcon"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -600,7 +600,7 @@
       "Allen Institute for AI",
       "Ai2"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -631,7 +631,7 @@
       "BLOOM",
       "BigScience"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -661,7 +661,7 @@
       "MIT License",
       "Whisper"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -692,7 +692,7 @@
       "Georgi Gerganov",
       "local inference"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -723,7 +723,7 @@
       "GGML Universal File",
       "llama.cpp"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -753,7 +753,7 @@
       "GGUF superseded GGML",
       "GGML"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -783,7 +783,7 @@
       "quantization",
       "Quantization (signal processing)"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -814,7 +814,7 @@
       "port 11434",
       "Ollama"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -845,7 +845,7 @@
       "vLLM",
       "KV cache"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -875,7 +875,7 @@
       "Transformers",
       "Hugging Face Transformers"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -905,7 +905,7 @@
       "datasets",
       "Hugging Face datasets"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -935,7 +935,7 @@
       "Torch",
       "Torch (machine learning)"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -965,7 +965,7 @@
       "Google",
       "Google Brain"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -995,7 +995,7 @@
       "ONNX",
       "Open Neural Network Exchange"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1024,7 +1024,7 @@
     "answerAliases": [
       "LangChain"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1053,7 +1053,7 @@
     "answerAliases": [
       "LlamaIndex"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1083,7 +1083,7 @@
       "RAG",
       "retrieval-augmented generation"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1113,7 +1113,7 @@
       "vector database",
       "vector store"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1144,7 +1144,7 @@
       "Facebook AI Similarity Search",
       "Meta"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1175,7 +1175,7 @@
       "ChromaDB",
       "Apache 2.0"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1205,7 +1205,7 @@
       "Weaviate",
       "BSD 3-Clause"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1235,7 +1235,7 @@
       "Milvus",
       "Zilliz"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1265,7 +1265,7 @@
       "source-available",
       "open weights"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1296,7 +1296,7 @@
       "disclosure",
       "Open Source AI Definition"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1326,7 +1326,7 @@
       "Model Cards",
       "Mitchell et al."
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1356,7 +1356,7 @@
       "performance",
       "intended use"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1387,7 +1387,7 @@
       "LPU",
       "Language Processing Unit"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1416,7 +1416,7 @@
       "BigScience",
       "BLOOM"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1447,7 +1447,7 @@
       "UAE",
       "Abu Dhabi"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1477,7 +1477,7 @@
       "Ai2",
       "OLMo"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1506,7 +1506,7 @@
       "Stability AI",
       "Stable Diffusion"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1535,7 +1535,7 @@
       "OpenAI",
       "Whisper"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1566,7 +1566,7 @@
       "UC Berkeley",
       "Sky Computing Lab"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1596,7 +1596,7 @@
       "LangChain",
       "LlamaIndex"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1625,7 +1625,7 @@
       "2020",
       "retrieval-augmented generation"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1654,7 +1654,7 @@
       "Facebook AI Similarity Search",
       "FAISS"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1683,7 +1683,7 @@
       "San Francisco",
       "Chroma"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1714,7 +1714,7 @@
       "persons or groups",
       "Open Source Definition"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1744,7 +1744,7 @@
       "llama.cpp",
       "GGUF"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1773,7 +1773,7 @@
       "quantization",
       "accuracy"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1801,7 +1801,7 @@
     "answerAliases": [
       "tokenizers"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1831,7 +1831,7 @@
       "continuous batching",
       "vLLM"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1860,7 +1860,7 @@
       "MIT License",
       "llama.cpp"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1889,7 +1889,7 @@
       "Toffee",
       "ONNX"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1918,7 +1918,7 @@
       "Protocol Buffers",
       "protobuf"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1946,7 +1946,7 @@
     "answerAliases": [
       "Pinecone"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1976,7 +1976,7 @@
       "RAIL",
       "Responsible AI License"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2006,7 +2006,7 @@
       "open weights",
       "open source"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2038,7 +2038,7 @@
       "written in Rust",
       "vector similarity search engine"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2070,7 +2070,7 @@
       "create and share",
       "FROM"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2102,7 +2102,7 @@
       "serving engine",
       "vLLM"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2134,7 +2134,7 @@
       "LLaMA",
       "Llama"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   }
 ]

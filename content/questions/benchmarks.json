@@ -458,7 +458,7 @@
       "answer derivations and explanations",
       "MATH"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -490,7 +490,7 @@
       "LLM-as-a-judge",
       "MT-Bench"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -523,7 +523,7 @@
       "metrics",
       "HELM"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -555,7 +555,7 @@
       "stop the competition",
       "Annual Minsky Loebner Prize Revocation Prize 1995 Announcement"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -587,7 +587,7 @@
       "in-context retrieval",
       "Needle In A Haystack"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -619,7 +619,7 @@
       "HumanEval",
       "hidden tests"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -650,7 +650,7 @@
       "HumanEval",
       "OpenAI Codex"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -682,7 +682,7 @@
       "8500",
       "grade school math"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -714,7 +714,7 @@
       "AIME",
       "American Mathematics Competitions"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -745,7 +745,7 @@
       "Measuring Massive Multitask Language Understanding",
       "MMLU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -776,7 +776,7 @@
       "four answer options",
       "MMLU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -808,7 +808,7 @@
       "adversarially filtered",
       "commonsense"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -840,7 +840,7 @@
       "imitative falsehoods",
       "larger models"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -872,7 +872,7 @@
       "ARC",
       "ARC-AGI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -904,7 +904,7 @@
       "$1M",
       "ARC-AGI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -935,7 +935,7 @@
       "Imitation Game",
       "Turing"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -967,7 +967,7 @@
       "BIG-bench",
       "human raters"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -997,7 +997,7 @@
       "General Language Understanding Evaluation",
       "language understanding"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1029,7 +1029,7 @@
       "BERT",
       "human baseline"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1061,7 +1061,7 @@
       "unanswerable",
       "no answer"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1093,7 +1093,7 @@
       "Rajpurkar",
       "SQuAD"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1125,7 +1125,7 @@
       "Center for Research on Foundation Models",
       "Stanford"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1157,7 +1157,7 @@
       "eighty",
       "8 categories"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1189,7 +1189,7 @@
       "second turn",
       "multi-turn"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1221,7 +1221,7 @@
       "3,000",
       "HLE"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1253,7 +1253,7 @@
       "saturation",
       "MMLU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1285,7 +1285,7 @@
       "unpublished",
       "Epoch AI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1317,7 +1317,7 @@
       "tier four",
       "Epoch AI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1349,7 +1349,7 @@
       "PASS_TO_PASS",
       "regression tests"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1381,7 +1381,7 @@
       "pull requests",
       "Python repositories"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1413,7 +1413,7 @@
       "Google-Proof",
       "domain experts"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1445,7 +1445,7 @@
       "New York University",
       "Anthropic"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1477,7 +1477,7 @@
       "lost in the middle",
       "Needle In A Haystack"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1509,7 +1509,7 @@
       "Turing test",
       "judges"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1541,7 +1541,7 @@
       "physics professor",
       "chess"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1573,7 +1573,7 @@
       "harder",
       "MMLU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1605,7 +1605,7 @@
       "GSM8K",
       "grade school math"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1636,7 +1636,7 @@
       "Mostly Basic Python Problems",
       "basic Python"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1668,7 +1668,7 @@
       "NumPy",
       "pandas"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1700,7 +1700,7 @@
       "multiple-choice",
       "crowdsourced"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1732,7 +1732,7 @@
       "pronoun",
       "coreference"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1763,7 +1763,7 @@
       "physical commonsense",
       "physical intuition"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1794,7 +1794,7 @@
       "story endings",
       "fifth sentence"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1826,7 +1826,7 @@
       "multiple correct",
       "reading comprehension"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1858,7 +1858,7 @@
       "counting",
       "arithmetic"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1890,7 +1890,7 @@
       "dialogue",
       "coreference"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1922,7 +1922,7 @@
       "evidence documents",
       "distant supervision"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1954,7 +1954,7 @@
       "supported",
       "refuted"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1986,7 +1986,7 @@
       "Challenge Set",
       "Allen Institute"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2018,7 +2018,7 @@
       "AlphaCode",
       "hidden tests"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   }
 ]

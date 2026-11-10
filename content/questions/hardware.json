@@ -498,7 +498,7 @@
       "supply chain bottleneck",
       "commanding majority in the semiconductor foundry market"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -529,7 +529,7 @@
       "required to manufacture the most advanced semiconductor chips",
       "largest supplier to the semiconductor industry"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -560,7 +560,7 @@
       "run small models",
       "Apple silicon"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -591,7 +591,7 @@
       "supplier of computer networking products",
       "high-performance computing"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -622,7 +622,7 @@
       "builds an AI accelerator application-specific integrated circuit",
       "American artificial intelligence (AI) company that builds"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -653,7 +653,7 @@
       "higher bandwidth than DDR4 or GDDR5",
       "a width of 1024 bits in total"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -684,7 +684,7 @@
       "Hynix",
       "SK Hynix, Samsung Electronics, and Micron Technology"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -715,7 +715,7 @@
       "both the rising and falling clock edges",
       "double data rate"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -746,7 +746,7 @@
       "out to a heat exchanger, typically a radiator",
       "Direct Liquid Cooling (DLC) with cold plates for cooling chips in servers"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -778,7 +778,7 @@
       "IT Equipment Energy",
       "An ideal PUE is 1.0"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -810,7 +810,7 @@
       "fabless semiconductor companies",
       "integrated device manufacturers (IDMs)"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -842,7 +842,7 @@
       "photolithography",
       "photoresist"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -874,7 +874,7 @@
       "Intel",
       "Intel 18A"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -906,7 +906,7 @@
       "new, improved generation of silicon semiconductor chips",
       "3 nanometer"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -939,7 +939,7 @@
       "heterogeneous integration",
       "2.5D ICs"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -970,7 +970,7 @@
       "Tensor Cores",
       "training of neural networks"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1000,7 +1000,7 @@
       "Volta",
       "Volta microarchitecture"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1031,7 +1031,7 @@
       "Turing microarchitecture",
       "RT cores"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1062,7 +1062,7 @@
       "MIG",
       "multi-instance GPU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1093,7 +1093,7 @@
       "PCIe",
       "PCI Express"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1123,7 +1123,7 @@
       "AMD",
       "Advanced Micro Devices"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1155,7 +1155,7 @@
       "A11",
       "Neural Engine"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1186,7 +1186,7 @@
       "neural network inference",
       "first-generation TPU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1217,7 +1217,7 @@
       "second-generation TPU",
       "second generation TPU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1249,7 +1249,7 @@
       "Intelligence Processing Unit",
       "IPU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1282,7 +1282,7 @@
       "US export controls",
       "export restrictions"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1314,7 +1314,7 @@
       "$52.7 billion",
       "chip manufacturing subsidies"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1346,7 +1346,7 @@
       "Talen Energy Corporation",
       "Susquehanna"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1378,7 +1378,7 @@
       "K8 microarchitecture",
       "Athlon 64"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1408,7 +1408,7 @@
       "Tenstorrent",
       "Tenstorrent, Inc."
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1439,7 +1439,7 @@
       "Patrick Gelsinger",
       "Patrick Paul Gelsinger"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1470,7 +1470,7 @@
       "LSI Logic",
       "LSI Corporation"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1502,7 +1502,7 @@
       "Arm Holdings",
       "$40 billion"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1532,7 +1532,7 @@
       "Grace Hopper",
       "Grace Brewster Hopper"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1563,7 +1563,7 @@
       "Grace Hopper Superchip",
       "GH200 Grace Hopper Superchip"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1595,7 +1595,7 @@
       "Nebius",
       "Yandex"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1627,7 +1627,7 @@
       "128 operations per clock",
       "INT8"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1658,7 +1658,7 @@
       "NVIDIA Jetson",
       "Jetson series"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1690,7 +1690,7 @@
       "SambaNova, Inc.",
       "RDU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1722,7 +1722,7 @@
       "Project Dojo",
       "D1"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1753,7 +1753,7 @@
       "SXM",
       "H100 SXM5"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1784,7 +1784,7 @@
       "central switch",
       "32 ports"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1815,7 +1815,7 @@
       "BlueField 3",
       "BlueField-3 DPU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1846,7 +1846,7 @@
       "Nvidia H100",
       "HBM3"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1877,7 +1877,7 @@
       "TSMC N7+",
       "N7 Plus"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1908,7 +1908,7 @@
       "80GB",
       "80 GB of HBM3"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1939,7 +1939,7 @@
       "NVL72",
       "GB200 NVL72 rack"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1969,7 +1969,7 @@
       "Vera Rubin",
       "Rubin"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1999,7 +1999,7 @@
       "CDNA 3",
       "CDNA3"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2030,7 +2030,7 @@
       "192GB",
       "192 GB of HBM3"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2062,7 +2062,7 @@
       "MCM",
       "chiplet design"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2093,7 +2093,7 @@
       "64",
       "64 cores per socket"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2123,7 +2123,7 @@
       "Intel 7",
       "Intel 7 process"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2154,7 +2154,7 @@
       "December 1, 2024",
       "December 2024"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2185,7 +2185,7 @@
       "80 billion transistors",
       "80B"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2216,7 +2216,7 @@
       "208 billion transistors",
       "208B"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2247,7 +2247,7 @@
       "TensorFloat-32",
       "TensorFloat 32"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2278,7 +2278,7 @@
       "24 Zen 4 CPU cores",
       "Zen4"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2309,7 +2309,7 @@
       "A17 Pro",
       "A17"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2340,7 +2340,7 @@
       "Hopper architecture",
       "Transformer Engine"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2372,7 +2372,7 @@
       "ARM architecture",
       "Neoverse"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2403,7 +2403,7 @@
       "1000W",
       "up to 1000 W"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2434,7 +2434,7 @@
       "AWS Trainium",
       "Amazon Trainium"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2465,7 +2465,7 @@
       "EdgeTPU",
       "Coral"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2487,16 +2487,16 @@
     "difficulty": 2,
     "explanation": "Intel launched Gaudi 3 at its Intel Vision event in April 2024, building on the Gaudi 2 it inherited with the Habana Labs acquisition. AMD's answer is the MI300, Nvidia's is the H100, and Qualcomm's is the Cloud AI 100, so Gaudi 3 belongs to Intel.",
     "source": {
-      "kind": "url",
-      "url": "https://www.intel.com/content/www/us/en/newsroom/news/vision-2024-gaudi-3-ai-accelerator.html",
-      "label": "Intel Vision 2024 Gaudi 3 press release"
+      "kind": "wikipedia",
+      "title": "Intel",
+      "label": "Intel on Wikipedia"
     },
     "answerAliases": [
       "Gaudi 3",
       "Intel Gaudi 3",
       "Gaudi"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2527,7 +2527,7 @@
       "Nervana",
       "$408 million"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2559,7 +2559,7 @@
       "Myriad 2",
       "Neural Compute Stick"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2590,7 +2590,7 @@
       "IBM TrueNorth",
       "TrueNorth chip"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2621,7 +2621,7 @@
       "AWS Nitro",
       "Nitro system"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2653,7 +2653,7 @@
       "3GAA",
       "gate-all-around"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2684,7 +2684,7 @@
       "the reticle limit",
       "reticle"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2715,7 +2715,7 @@
       "Hexagon DSP",
       "Qualcomm Hexagon"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2746,7 +2746,7 @@
       "gate-all-around",
       "RibbonFET gate-all-around"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2778,7 +2778,7 @@
       "GeForce 30 series",
       "Samsung 8N"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2809,7 +2809,7 @@
       "Manchester",
       "SpiNNaker"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   }
 ]

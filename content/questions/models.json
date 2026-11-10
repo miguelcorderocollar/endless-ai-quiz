@@ -1849,7 +1849,7 @@
       "Qwen",
       "通义千问"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1880,7 +1880,7 @@
       "ERNIE",
       "Ernie Bot"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1912,7 +1912,7 @@
       "SmolLM2",
       "SmolLM3"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1942,7 +1942,7 @@
       "Bidirectional Encoder Representations from Transformers",
       "bidirectional encoder representations"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1972,7 +1972,7 @@
       "Shanghai",
       "MiniMax"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2003,7 +2003,7 @@
       "Cohere",
       "Command"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2035,7 +2035,7 @@
       "ten million",
       "10M"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2066,7 +2066,7 @@
       "OLMo",
       "Ai2"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2097,7 +2097,7 @@
       "Llama 4",
       "Meta"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2128,7 +2128,7 @@
       "Mistral Large",
       "Mistral AI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2159,7 +2159,7 @@
       "Mixtral",
       "Mixtral 8x7B"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2190,7 +2190,7 @@
       "DeepSeek-V3",
       "DeepSeek V3"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2221,7 +2221,7 @@
       "MIT License",
       "DeepSeek-R1"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2253,7 +2253,7 @@
       "o1-preview",
       "OpenAI o1"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2285,7 +2285,7 @@
       "mobile carrier",
       "OpenAI o3"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2316,7 +2316,7 @@
       "GPT-4o mini",
       "GPT-4o"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2347,7 +2347,7 @@
       "Claude 3",
       "Anthropic"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2378,7 +2378,7 @@
       "Gemini 2.0",
       "Gemini 2.0 Flash"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2410,7 +2410,7 @@
       "xAI",
       "Grok"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2441,7 +2441,7 @@
       "Sora",
       "OpenAI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2472,7 +2472,7 @@
       "Whisper",
       "OpenAI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2503,7 +2503,7 @@
       "sky",
       "sora"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2534,7 +2534,7 @@
       "AlphaZero",
       "DeepMind"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2565,7 +2565,7 @@
       "PaLM",
       "Google"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2597,7 +2597,7 @@
       "1T",
       "1,000,000,000,000"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2628,7 +2628,7 @@
       "OpenAI Codex",
       "GitHub Copilot"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2660,7 +2660,7 @@
       "mixture of experts",
       "Mixtral"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2691,7 +2691,7 @@
       "Mistral 7B",
       "Mistral AI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2722,7 +2722,7 @@
       "DeepSeek-R1",
       "DeepSeek R1"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2753,7 +2753,7 @@
       "GPT-4o",
       "OpenAI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2784,7 +2784,7 @@
       "Claude",
       "Anthropic"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2815,7 +2815,7 @@
       "Grok",
       "xAI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   }
 ]

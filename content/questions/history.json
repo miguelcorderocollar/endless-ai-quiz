@@ -296,7 +296,7 @@
       "Dartmouth College",
       "Dartmouth"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -324,7 +324,7 @@
     "answerAliases": [
       "Deep Thought"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -353,7 +353,7 @@
       "1996",
       "February 1996"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -382,7 +382,7 @@
       "New York City",
       "New York"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -411,7 +411,7 @@
       "Game 2",
       "second game"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -442,7 +442,7 @@
       "Ken Jennings",
       "Brad Rutter"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -471,7 +471,7 @@
       "Thomas J. Watson",
       "Thomas Watson"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -499,7 +499,7 @@
     "answerAliases": [
       "2007"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -528,7 +528,7 @@
     "answerAliases": [
       "AlexNet"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -557,7 +557,7 @@
       "Ian Goodfellow",
       "Goodfellow"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -585,7 +585,7 @@
     "answerAliases": [
       "Seoul"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -613,7 +613,7 @@
     "answerAliases": [
       "2020"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -642,7 +642,7 @@
       "GPT-3.5",
       "GPT 3.5"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -672,7 +672,7 @@
       "RLHF",
       "reinforcement learning from human feedback"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -701,7 +701,7 @@
       "December 2022",
       "2022"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -731,7 +731,7 @@
       "Denoising Diffusion Probabilistic Models",
       "Ho et al."
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -760,7 +760,7 @@
       "2021",
       "January 2021"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -789,7 +789,7 @@
       "2022",
       "July 2022"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -817,7 +817,7 @@
     "answerAliases": [
       "Bletchley Park"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -845,7 +845,7 @@
     "answerAliases": [
       "Seoul"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -874,7 +874,7 @@
       "2024",
       "March 2024"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -903,7 +903,7 @@
       "2017",
       "January 2017"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -931,7 +931,7 @@
     "answerAliases": [
       "London"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -960,7 +960,7 @@
     "answerAliases": [
       "2014"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -988,7 +988,7 @@
     "answerAliases": [
       "2021"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1016,7 +1016,7 @@
     "answerAliases": [
       "2016"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1045,7 +1045,7 @@
       "University of Toronto",
       "Toronto"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1073,7 +1073,7 @@
     "answerAliases": [
       "1958"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1101,7 +1101,7 @@
     "answerAliases": [
       "DOCTOR"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1129,7 +1129,7 @@
     "answerAliases": [
       "SHRDLU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1158,7 +1158,7 @@
       "1984",
       "July 1984"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1187,7 +1187,7 @@
       "Lighthill report",
       "Artificial Intelligence: A General Survey"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1215,7 +1215,7 @@
     "answerAliases": [
       "Japan"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1244,7 +1244,7 @@
       "Digital Equipment Corporation",
       "DEC"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1275,7 +1275,7 @@
       "Rumelhart",
       "1986 Nature paper"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1304,7 +1304,7 @@
       "CASP14",
       "CASP 14"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1332,7 +1332,7 @@
     "answerAliases": [
       "Computing Machinery and Intelligence"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1360,7 +1360,7 @@
     "answerAliases": [
       "1943"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1389,7 +1389,7 @@
       "Perceptrons",
       "Perceptrons: An Introduction to Computational Geometry"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1417,7 +1417,7 @@
     "answerAliases": [
       "Symbolics"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1446,7 +1446,7 @@
       "Stanford University",
       "Stanford"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1475,7 +1475,7 @@
       "DENDRAL",
       "Dendral"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1503,7 +1503,7 @@
     "answerAliases": [
       "Shakey"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1532,7 +1532,7 @@
       "ALVINN",
       "Autonomous Land Vehicle in a Neural Network"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1560,7 +1560,7 @@
     "answerAliases": [
       "BigDog"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1588,7 +1588,7 @@
     "answerAliases": [
       "ASIMO"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1617,7 +1617,7 @@
       "2011",
       "February 2011"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1645,7 +1645,7 @@
     "answerAliases": [
       "2009"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1673,7 +1673,7 @@
     "answerAliases": [
       "2014"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1702,7 +1702,7 @@
       "NeurIPS",
       "NIPS"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1733,7 +1733,7 @@
       "September 2016",
       "WaveNet"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1764,7 +1764,7 @@
       "Gatys",
       "A Neural Algorithm of Artistic Style"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1795,7 +1795,7 @@
       "Auto-GPT",
       "March 2023"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1827,7 +1827,7 @@
       "March 14, 2023",
       "GPT-4"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1859,7 +1859,7 @@
       "February 6, 2023",
       "Bard"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1890,7 +1890,7 @@
       "February 2023",
       "LLaMA"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1921,7 +1921,7 @@
       "StarCraft",
       "AlphaStar"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1951,7 +1951,7 @@
       "MuZero",
       "MuZero (2019)"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1982,7 +1982,7 @@
       "Dota",
       "OpenAI Five"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2013,7 +2013,7 @@
       "March 2022",
       "Chinchilla (language model)"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   }
 ]

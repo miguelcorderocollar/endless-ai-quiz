@@ -636,7 +636,7 @@
       "informed consent",
       "day performer rate"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -667,7 +667,7 @@
       "gain permission to use her voice",
       "rejected"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -699,7 +699,7 @@
       "Bletchley Declaration",
       "International AI Safety Report"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -731,7 +731,7 @@
       "Hiroshima Process International Code of Conduct",
       "Seoul Declaration"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -764,7 +764,7 @@
       "Gavin Newsom",
       "vetoed"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -796,7 +796,7 @@
       "Pacific Grove",
       "Future of Life Institute"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -826,7 +826,7 @@
       "twenty-three principles",
       "23"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -859,7 +859,7 @@
       "Rishi Sunak",
       "Bletchley Park"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -890,7 +890,7 @@
       "28 nations",
       "twenty-eight"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -921,7 +921,7 @@
       "Frontier AI Safety",
       "Seoul"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -953,7 +953,7 @@
       "UK",
       "Korea"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -983,7 +983,7 @@
       "Scott Wiener",
       "Wiener"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1014,7 +1014,7 @@
       "Musk",
       "xAI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1044,7 +1044,7 @@
       "Joe Biden",
       "Biden"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1074,7 +1074,7 @@
       "dual-use foundation models",
       "floating point operations"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1106,7 +1106,7 @@
       "NIST",
       "Bureau of Industry and Security"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1138,7 +1138,7 @@
       "risk levels",
       "unacceptable risk"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1169,7 +1169,7 @@
       "unacceptable risk",
       "prohibited"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1202,7 +1202,7 @@
       "OpenAI",
       "copyright infringement"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1233,7 +1233,7 @@
       "memorization",
       "memorized"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1265,7 +1265,7 @@
       "Stability AI",
       "watermark"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1297,7 +1297,7 @@
       "Stability AI",
       "Andersen"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1328,7 +1328,7 @@
       "118-day",
       "July 14 to November 9"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1360,7 +1360,7 @@
       "cannot be credited",
       "disclose"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1391,38 +1391,7 @@
       "Johansson",
       "Samantha"
     ],
-    "status": "draft",
-    "addedAt": "2026-10-18"
-  },
-  {
-    "id": "eth-0047",
-    "text": "In May 2024 OpenAI paused which ChatGPT voice after comparisons to Scarlett Johansson?",
-    "options": [
-      "Breeze",
-      "Sky",
-      "Cove",
-      "Ember"
-    ],
-    "answer": "Sky",
-    "category": "ethics",
-    "tags": [
-      "sky",
-      "voice",
-      "openai"
-    ],
-    "difficulty": 1,
-    "explanation": "Sky was pulled days after the GPT-4o demo because listeners, including Johansson's family, heard her in it, and Altman had primed the comparison with a one-word post, her. Breeze, Cove and Ember are real ChatGPT voices too, which is why the question only works if you remember which one sounded like Samantha.",
-    "source": {
-      "kind": "wikipedia",
-      "title": "GPT-4o",
-      "label": "GPT-4o on Wikipedia"
-    },
-    "answerAliases": [
-      "Sky",
-      "Johansson",
-      "paused"
-    ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1454,7 +1423,7 @@
       "Gebru",
       "Gender Shades"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1486,7 +1455,7 @@
       "34.7",
       "error rates"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1517,7 +1486,7 @@
       "Northpointe",
       "risk assessment"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1548,7 +1517,7 @@
       "Black defendants",
       "Machine Bias"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1580,7 +1549,7 @@
       "intended use",
       "limitations"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1609,7 +1578,7 @@
     "answerAliases": [
       "Google"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1640,7 +1609,7 @@
       "Datasheets",
       "dataset"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1671,7 +1640,7 @@
       "stochastic parrots",
       "On the Dangers of Stochastic Parrots"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1703,7 +1672,7 @@
       "military",
       "surveillance"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1734,7 +1703,7 @@
       "contract",
       "did not renew"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1765,7 +1734,7 @@
       "weapons",
       "injure"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1798,7 +1767,7 @@
       "open letter",
       "ban"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1830,7 +1799,7 @@
       "autonomous",
       "killer robots"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1861,7 +1830,7 @@
       "ban",
       "2019"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1892,7 +1861,7 @@
       "Biometric Information Privacy Act",
       "BIPA"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1923,7 +1892,7 @@
       "deepfakes",
       "face-swap"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1954,7 +1923,7 @@
       "robocall",
       "Biden"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1982,7 +1951,7 @@
       "Books3",
       "pirated books"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2014,7 +1983,7 @@
       "ImageNet",
       "labels"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2047,7 +2016,7 @@
       "slurs",
       "audit"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2079,7 +2048,7 @@
       "first",
       "November 2023"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2109,7 +2078,7 @@
       "NIST",
       "National Institute of Standards and Technology"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2141,7 +2110,7 @@
       "refund",
       "bereavement fare"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2171,7 +2140,7 @@
       "fair use",
       "Fair use"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2202,7 +2171,7 @@
       "Authors Guild",
       "transformative"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2231,7 +2200,7 @@
     "answerAliases": [
       "Anthropic"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2262,7 +2231,7 @@
       "inner goals",
       "Risks from Learned Optimization"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2293,7 +2262,7 @@
       "Bostrom",
       "paperclip maximizer"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2321,7 +2290,7 @@
       "Eliciting Latent Knowledge",
       "ELK"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2352,7 +2321,7 @@
       "nuclear war",
       "extinction"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2383,7 +2352,7 @@
       "6-month",
       "pause"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2414,7 +2383,7 @@
       "voluntary commitments",
       "July 2023"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2444,7 +2413,7 @@
       "Frontier Model Forum",
       "Anthropic"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2475,7 +2444,7 @@
       "Kristina Kashtanova",
       "human authorship"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2506,7 +2475,7 @@
       "CFO",
       "video call"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   }
 ]

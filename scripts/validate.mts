@@ -148,12 +148,16 @@ function checkVolatility(q: Question) {
 async function checkUrlSources(questions: Question[]) {
   for (const q of questions) {
     if (q.source.kind !== "url") continue;
-    try {
-      const res = await fetch(q.source.url, {
+    const head = () =>
+      fetch(q.source.url, {
         method: "HEAD",
         redirect: "follow",
         headers: { "User-Agent": "EndlessAI-QuestionValidator/0.1 (content QA)" },
       });
+    try {
+      // One retry on a network error only. A real HTTP status is final, but a
+      // single dropped connection should not fail the whole gate.
+      const res = await head().catch(() => head());
       if (!res.ok) err(q.id, "dead-source", `${q.source.url} returned ${res.status}`);
     } catch (fetchErr) {
       err(q.id, "dead-source", `${q.source.url} is unreachable: ${(fetchErr as Error).message}`);

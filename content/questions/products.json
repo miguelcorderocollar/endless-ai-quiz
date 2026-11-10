@@ -396,7 +396,7 @@
       "Muse Secure VM",
       "muse.ai"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -429,7 +429,7 @@
       "BMG",
       "Believe"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -464,7 +464,7 @@
       "wallet",
       "computer"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -497,7 +497,7 @@
       "Jimeng",
       "Seedance 2.5"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -529,7 +529,7 @@
       "Audi AG",
       "Audi Production Lab"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -563,7 +563,7 @@
       "Marissa Mayer",
       "Pictures, Not Prompts"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -596,7 +596,7 @@
       "Gemini 3.8 Flash-Lite TTS",
       "Flash-Lite TTS"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -629,7 +629,7 @@
       "curate music and mood",
       "Sonos 27"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -662,7 +662,7 @@
       "Junie",
       "JetBrains"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -695,7 +695,7 @@
       "Kimi K2.5",
       "Kimi"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -724,7 +724,7 @@
       "OpenAI",
       "OpenAI Inc."
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -754,7 +754,7 @@
       "Artifacts",
       "Claude Artifacts"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -784,7 +784,7 @@
       "multimodal",
       "natively multimodal"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -814,7 +814,7 @@
       "GPT-3",
       "Codex"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -844,7 +844,7 @@
       "2022",
       "general availability"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -874,7 +874,7 @@
       "Leap Motion",
       "David Holz"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -904,7 +904,7 @@
       "Discord",
       "Discord bot"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -935,7 +935,7 @@
       "February 2024",
       "Feb 2024"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -966,7 +966,7 @@
       "Audio Overviews",
       "two hosts"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -997,7 +997,7 @@
       "your documents",
       "sources"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1028,7 +1028,7 @@
       "glue",
       "glue on pizza"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1058,7 +1058,7 @@
       "Google I/O 2024",
       "I/O"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1088,7 +1088,7 @@
       "answer engine",
       "Perplexity"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1119,7 +1119,7 @@
       "sources",
       "inline citations"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1150,7 +1150,7 @@
       "personas",
       "Character.ai"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1180,7 +1180,7 @@
       "Quora",
       "Poe"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1212,7 +1212,7 @@
       "Twitter",
       "X (Twitter)"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1244,7 +1244,7 @@
       "LAM",
       "operate apps"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1274,7 +1274,7 @@
       "HP",
       "Hewlett-Packard"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1303,7 +1303,7 @@
       "swearing",
       "chatbot"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1332,7 +1332,7 @@
       "one dollar",
       "Tahoe"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1363,7 +1363,7 @@
       "Visual Studio Code",
       "Cursor"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1393,7 +1393,7 @@
       "Codeium",
       "Windsurf"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1424,7 +1424,7 @@
       "Suno AI",
       "music"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1454,7 +1454,7 @@
       "Udio",
       "AI music"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1486,7 +1486,7 @@
       "copyright infringement",
       "training data"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1517,7 +1517,7 @@
       "Runway",
       "Runway ML"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1548,7 +1548,7 @@
       "Pika Labs",
       "video"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1578,7 +1578,7 @@
       "Google",
       "ElevenLabs"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1609,7 +1609,7 @@
       "HeyGen",
       "avatar videos"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1640,7 +1640,7 @@
       "workspace",
       "notes"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1671,7 +1671,7 @@
       "Replika",
       "AI companion"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1702,7 +1702,7 @@
       "Roman Mazurenko",
       "Eugenia Kuyda"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1733,7 +1733,7 @@
       "ChatGPT",
       "My AI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1764,7 +1764,7 @@
       "Meta AI",
       "Llama (language model)"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1795,7 +1795,7 @@
       "WWDC 2024",
       "Worldwide Developers Conference"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1826,7 +1826,7 @@
       "ChatGPT",
       "GPT-4o"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1855,7 +1855,7 @@
       "Sky",
       "Sky voice"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1885,7 +1885,7 @@
       "2022",
       "DALL-E 2"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1915,7 +1915,7 @@
       "2021",
       "founded 2021"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1945,7 +1945,7 @@
       "2023",
       "March 2023"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1975,7 +1975,7 @@
       "2023",
       "December 2023"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2005,7 +2005,7 @@
       "Windows 11",
       "Windows"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2035,7 +2035,7 @@
       "Microsoft 365",
       "M365"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2065,7 +2065,7 @@
       "2022",
       "August 2022"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2096,7 +2096,7 @@
       "teen safety",
       "Character.ai"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2128,7 +2128,7 @@
       "Premium subscribers",
       "paid subscribers"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2159,7 +2159,7 @@
       "two hosts",
       "Audio Overviews"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2189,7 +2189,7 @@
       "Johansson",
       "Sky"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2220,7 +2220,7 @@
       "Bark",
       "Suno"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2251,7 +2251,7 @@
       "Lionsgate",
       "Lionsgate Entertainment"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2282,7 +2282,7 @@
       "Tab key",
       "Accept the full suggestion"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2313,7 +2313,7 @@
       "Comet browser",
       "Chromium"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   }
 ]

@@ -841,7 +841,7 @@
       "Denny's",
       "Denny's restaurant"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -871,7 +871,7 @@
       "Xilinx",
       "Xilinx, Inc."
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -900,7 +900,7 @@
     "answerAliases": [
       "OpenAI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -930,7 +930,7 @@
       "Alexandr Wang",
       "Wang"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -959,7 +959,7 @@
     "answerAliases": [
       "Isomorphic Labs"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -989,7 +989,7 @@
       "John Michael Jumper",
       "Jumper"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -1019,7 +1019,7 @@
       "David Holz",
       "Holz"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -1050,7 +1050,7 @@
       "Clément Delangue",
       "Delangue"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -1079,7 +1079,7 @@
     "answerAliases": [
       "Eureka Labs"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -1109,7 +1109,7 @@
       "Joy Adowaa Buolamwini",
       "Buolamwini"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -1140,7 +1140,7 @@
       "Jen-Hsun Huang",
       "Huang"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1174,7 +1174,7 @@
       "Jensen Huang",
       "Lisa Tzwu-Fang Su"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1204,7 +1204,7 @@
       "Satya Nadella",
       "Nadella"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1236,7 +1236,7 @@
       "PayPal",
       "X.com"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1267,7 +1267,7 @@
       "Zuckerberg",
       "Mark Elliot Zuckerberg"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1297,7 +1297,7 @@
       "David Silver",
       "Silver"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1327,7 +1327,7 @@
       "Alec Radford",
       "Radford"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1358,7 +1358,7 @@
       "Francois Chollet",
       "Chollet"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1389,7 +1389,7 @@
       "Howard",
       "fast.ai"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1419,7 +1419,7 @@
       "Jared Kaplan",
       "Kaplan"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1449,7 +1449,7 @@
       "Amanda Askell",
       "Askell"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1479,7 +1479,7 @@
       "Jan Leike",
       "Leike"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1509,7 +1509,7 @@
       "John Schulman",
       "Schulman"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1540,7 +1540,7 @@
       "Gregory Brockman",
       "Brockman"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1570,7 +1570,7 @@
       "Max Tegmark",
       "Tegmark"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1600,7 +1600,7 @@
       "Jaan Tallinn",
       "Tallinn"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1631,7 +1631,7 @@
       "Richard Sutton",
       "Sutton"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1661,7 +1661,7 @@
       "Judea Pearl",
       "Pearl"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1691,7 +1691,7 @@
       "Marvin Minsky",
       "Minsky"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1721,7 +1721,7 @@
       "Emad Mostaque",
       "Mostaque"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1753,7 +1753,7 @@
       "Valenzuela",
       "Runway"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1785,7 +1785,7 @@
       "Théâtre d'Opéra Spatial",
       "Theatre d'Opera Spatial"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1817,7 +1817,7 @@
       "Heart on My Sleeve (ghostwriter song)",
       "Ghostwriter977"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1848,7 +1848,7 @@
       "Fridman",
       "Alexey (Lex) Fridman"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1878,7 +1878,7 @@
       "Meredith Whittaker",
       "Whittaker"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1909,7 +1909,7 @@
       "Kaifu Lee",
       "Lee"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1939,7 +1939,7 @@
       "Morris Chang",
       "Chang"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1970,7 +1970,7 @@
       "James Keller",
       "Keller"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -2000,7 +2000,7 @@
       "Pieter Abbeel",
       "Abbeel"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2030,7 +2030,7 @@
       "Sergey Levine",
       "Levine"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2061,7 +2061,7 @@
       "Finn",
       "MAML"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2091,7 +2091,7 @@
       "Percy Liang",
       "Liang"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2122,7 +2122,7 @@
       "Chris Ré",
       "Ré"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2152,7 +2152,7 @@
       "Matei Zaharia",
       "Zaharia"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2182,7 +2182,7 @@
       "Ion Stoica",
       "Stoica"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2213,7 +2213,7 @@
       "van Rossum",
       "GvR"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   }
 ]

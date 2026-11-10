@@ -570,7 +570,7 @@
       "programming AI-assistant",
       "GitHub Copilot"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -602,7 +602,7 @@
       "reducing precision in the model weights",
       "quantization"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -635,7 +635,7 @@
       "general-purpose processing",
       "Nvidia"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -667,7 +667,7 @@
       "retrieval",
       "RAG"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -699,7 +699,7 @@
       "function arguments",
       "the name of the function and the generated function arguments"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -731,7 +731,7 @@
       "diffusion models",
       "text generation"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -763,7 +763,7 @@
       "speech synthesizer",
       "converts normal language text into speech"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -795,7 +795,7 @@
       "goal-directed behavior",
       "interact with and modify an external environment"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -827,7 +827,7 @@
       "prompt injection",
       "bypass safeguards"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -858,7 +858,7 @@
       "decrease the size of a large model itself",
       "preserves the architecture and the nominal parameter count"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -888,7 +888,7 @@
       "computer use",
       "computer use feature"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -919,7 +919,7 @@
       "software-engineering tasks",
       "SWE-agent"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -950,7 +950,7 @@
       "Model Context Protocol",
       "open standard"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -981,7 +981,7 @@
       "reasoning and acting",
       "reason and act"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1011,7 +1011,7 @@
       "multi-query attention",
       "MQA"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1042,7 +1042,7 @@
       "RoPE",
       "rotary"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1073,7 +1073,7 @@
       "gated linear unit",
       "swish"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1104,7 +1104,7 @@
       "key-value cache",
       "KV"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1135,7 +1135,7 @@
       "IO-aware",
       "Tri Dao"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1166,7 +1166,7 @@
       "quadratic",
       "O(n^2)"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1197,7 +1197,7 @@
       "SFT",
       "instruction tuning"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1228,7 +1228,7 @@
       "instruction tuning",
       "task mixture"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1259,7 +1259,7 @@
       "quantized LoRA",
       "4-bit"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1290,7 +1290,7 @@
       "llama.cpp",
       "quantization"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1322,7 +1322,7 @@
       "student",
       "logits"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1353,7 +1353,7 @@
       "proximal policy optimization",
       "policy gradient"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1384,7 +1384,7 @@
       "draft model",
       "target model"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1415,7 +1415,7 @@
       "draft model",
       "speculative decoding"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1446,7 +1446,7 @@
       "retrieval-augmented generation",
       "retrieval"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1477,7 +1477,7 @@
       "fine tuning",
       "training"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1508,7 +1508,7 @@
       "contrastive language-image pre-training",
       "image and text"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1539,7 +1539,7 @@
       "modalities",
       "multiple types"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1570,7 +1570,7 @@
       "simulation",
       "predict"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1600,7 +1600,7 @@
       "JEPA",
       "joint embedding predictive architecture"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1631,7 +1631,7 @@
       "jailbreaking",
       "bypass safeguards"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1662,7 +1662,7 @@
       "prompt injection",
       "safeguards"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1693,7 +1693,7 @@
       "mixture of experts",
       "MoE"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1724,7 +1724,7 @@
       "SWA",
       "Mistral 7B"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1755,7 +1755,7 @@
       "attention with linear biases",
       "Train Short, Test Long"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1787,7 +1787,7 @@
       "RoPE",
       "context window extension"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1818,7 +1818,7 @@
       "Gloeckle",
       "next-token prediction"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1850,7 +1850,7 @@
       "Claude",
       "cache_control"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1881,7 +1881,7 @@
       "reinforcement learning from AI feedback",
       "AI feedback"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1913,7 +1913,7 @@
       "reference model",
       "monolithic"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1945,7 +1945,7 @@
       "majority",
       "Wang"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1977,7 +1977,7 @@
       "KV cache",
       "paged"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2009,7 +2009,7 @@
       "continuous batching",
       "selective batching"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2040,7 +2040,7 @@
       "GPU programming",
       "OpenAI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2071,7 +2071,7 @@
       "green list",
       "Kirchenbauer"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   }
 ]

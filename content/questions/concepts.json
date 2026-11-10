@@ -680,7 +680,7 @@
       "pre-trained to predict the next word",
       "fine-tuned to follow instructions and to behave as assistants"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -711,7 +711,7 @@
       "refer to a specified set of documents, then respond to user queries",
       "retrieval"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -741,7 +741,7 @@
       "the model's source code, training data, evaluation results, intermediate checkpoints and technical documentation",
       "permission to modify, fine-tune or redistribute it depends on its license"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -772,7 +772,7 @@
       "role assignment",
       "assigning roles to the model"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -802,7 +802,7 @@
       "memory components",
       "memory"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -833,7 +833,7 @@
       "Audio deepfake technology",
       "generate speech that convincingly mimics specific individuals"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -863,7 +863,7 @@
       "takes an input natural language prompt and produces an image matching that description",
       "trained on massive amounts of image and text data scraped from the web"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -893,7 +893,7 @@
       "give a guess",
       "even when they lack information"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -923,7 +923,7 @@
       "fine-tuned to follow instructions and to behave as assistants",
       "pre-trained to predict the next word"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -953,7 +953,7 @@
       "builds an internal representation of an environment",
       "predicts how that environment changes over time in response to actions"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -984,7 +984,7 @@
       "next token",
       "language modeling"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1015,7 +1015,7 @@
       "statistical patterns",
       "pretraining"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1046,7 +1046,7 @@
       "key-value cache",
       "autoregressive"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1077,7 +1077,7 @@
       "one token at a time",
       "left-to-right"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1107,7 +1107,7 @@
       "in-context learning",
       "in context learning"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1138,7 +1138,7 @@
       "zero shot",
       "zero-shot prompting"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1169,7 +1169,7 @@
       "attention",
       "weights"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1200,7 +1200,7 @@
       "permutation-invariant",
       "token order"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1231,7 +1231,7 @@
       "embeddings",
       "vector representation"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1262,7 +1262,7 @@
       "similarity",
       "nearest neighbor"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1293,7 +1293,7 @@
       "pre-training",
       "raw text"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1324,7 +1324,7 @@
       "instruction tuning",
       "human feedback"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1355,7 +1355,7 @@
       "compute-optimal",
       "scaling laws"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1386,7 +1386,7 @@
       "emergence",
       "large language models"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1417,7 +1417,7 @@
       "emergent abilities",
       "metric choice"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1448,7 +1448,7 @@
       "Richard Sutton",
       "scale with compute"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1479,7 +1479,7 @@
       "perception and mobility",
       "sensorimotor"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1510,7 +1510,7 @@
       "measure becomes a target",
       "reward hacking"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1542,7 +1542,7 @@
       "semantics",
       "understanding"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1573,7 +1573,7 @@
       "mesa-optimization",
       "inner alignment"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1604,7 +1604,7 @@
       "scheming",
       "inner alignment"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1635,7 +1635,7 @@
       "sycophantic",
       "flattery"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1666,7 +1666,7 @@
       "nucleus sampling",
       "top-p"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1695,7 +1695,7 @@
       "sampling temperature",
       "deterministic"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1726,7 +1726,7 @@
       "tokenization",
       "token ids"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1757,7 +1757,7 @@
       "BPE",
       "subword"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1788,7 +1788,7 @@
       "tokenization",
       "vocabulary"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1819,7 +1819,7 @@
       "embeddings",
       "vectors"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1850,7 +1850,7 @@
       "delayed generalization",
       "generalization"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1881,7 +1881,7 @@
       "interpolation",
       "Belkin"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1913,7 +1913,7 @@
       "sparse subnetwork",
       "pruning"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1945,7 +1945,7 @@
       "Olsson",
       "Anthropic"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1976,7 +1976,7 @@
       "polysemanticity",
       "toy models of superposition"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2008,7 +2008,7 @@
       "Arditi",
       "residual stream"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2039,7 +2039,7 @@
       "specification gaming",
       "reward hacking"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2071,7 +2071,7 @@
       "Bostrom",
       "self-preservation"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   }
 ]

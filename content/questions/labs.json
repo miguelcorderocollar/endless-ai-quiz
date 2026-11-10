@@ -468,7 +468,7 @@
       "Kavukcuoglu",
       "Koray"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -499,7 +499,7 @@
       "Discovery Loop",
       "DiscoveryLoop"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -531,7 +531,7 @@
       "Anthropic PBC",
       "Anthropic, PBC"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -562,7 +562,7 @@
       "OpenAI",
       "OpenAI, Inc."
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -593,7 +593,7 @@
       "Sanja Fidler",
       "Fidler"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -624,7 +624,7 @@
       "Pragmatik Labs",
       "Pragmatik"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -655,7 +655,7 @@
       "Oak Lab",
       "Oak"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -686,7 +686,7 @@
       "Jonathan Gorard",
       "Gorard"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -717,7 +717,7 @@
       "Micron Technology",
       "Micron"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -748,7 +748,7 @@
       "Prentis",
       "Prentis AI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -778,7 +778,7 @@
       "fish",
       "sakana"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -809,7 +809,7 @@
       "Gym",
       "openai gym"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -840,7 +840,7 @@
       "Wénxīn Yīyán",
       "文心一言"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -870,7 +870,7 @@
       "Tel Aviv",
       "Tel Aviv-Yafo"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -901,7 +901,7 @@
       "Moonshot",
       "Kimi"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -934,7 +934,7 @@
       "ChatGLM",
       "GLM"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -963,7 +963,7 @@
     "answerAliases": [
       "Seattle"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -994,7 +994,7 @@
       "Command R",
       "Command-R"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1026,7 +1026,7 @@
       "Amodei",
       "Anthropic"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1057,7 +1057,7 @@
       "17 July 2023",
       "2023"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1088,7 +1088,7 @@
       "xAI",
       "Grok"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1120,7 +1120,7 @@
       "Mustafa Suleyman",
       "Pi"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1151,7 +1151,7 @@
       "Perplexity",
       "Aravind Srinivas"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1184,7 +1184,7 @@
       "Chaumond",
       "Thomas Wolf"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1217,7 +1217,7 @@
       "Kai-Fu Lee",
       "Kaifu Lee"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1248,7 +1248,7 @@
       "DeepSeek",
       "Alibaba"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1278,7 +1278,7 @@
       "Hassabis",
       "DeepMind"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1309,7 +1309,7 @@
       "Tencent",
       "Hunyuan"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1341,7 +1341,7 @@
       "Doubao",
       "Seed"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1371,7 +1371,7 @@
       "December 2015",
       "OpenAI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1404,7 +1404,7 @@
       "SSI",
       "Sutskever"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1434,7 +1434,7 @@
       "SpaceX",
       "SpaceXAI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1464,7 +1464,7 @@
       "Nvidia",
       "NVIDIA"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1494,7 +1494,7 @@
       "Midjourney",
       "David Holz"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1526,7 +1526,7 @@
       "GPT-J",
       "GPT-NeoX"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1558,7 +1558,7 @@
       "StyleGAN",
       "Karras"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1591,7 +1591,7 @@
       "FAIR",
       "2013"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1622,7 +1622,7 @@
       "Brain",
       "Project Brain"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1655,7 +1655,7 @@
       "Linguee",
       "Cologne"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1685,7 +1685,7 @@
       "Apple Intelligence",
       "Apple Inc."
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1717,7 +1717,7 @@
       "Phi-1",
       "Phi-3"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1748,7 +1748,7 @@
       "DeepMind",
       "Gemma"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1779,7 +1779,7 @@
       "IBM Research",
       "Granite"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1810,7 +1810,7 @@
       "AI21",
       "Jamba"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1841,7 +1841,7 @@
       "Mistral",
       "Mixtral"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1871,7 +1871,7 @@
       "DeepSeek",
       "Hangzhou DeepSeek"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1901,7 +1901,7 @@
       "StepFun",
       "Shanghai Jieyue Xingchen"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1932,7 +1932,7 @@
       "MiniMax Group",
       "abab"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1963,7 +1963,7 @@
       "Baichuan AI",
       "Wang Xiaochuan"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1994,7 +1994,7 @@
       "Sakana",
       "Llion Jones"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2024,7 +2024,7 @@
       "LAION",
       "Large-scale Artificial Intelligence Open Network"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2054,7 +2054,7 @@
       "Databricks",
       "MosaicML"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2085,7 +2085,7 @@
       "High Flyer",
       "DeepSeek"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2116,7 +2116,7 @@
       "southern France",
       "mistral"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -2146,7 +2146,7 @@
       "Tencent",
       "Hunyuan"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   }
 ]

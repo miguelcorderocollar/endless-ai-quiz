@@ -262,7 +262,7 @@
       "dispensing with recurrence and convolutions entirely",
       "Transformer"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -294,7 +294,7 @@
       "utilization of graphics processing units (GPUs) during training",
       "GPU"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -326,7 +326,7 @@
       "human feedback",
       "reinforcement learning from human feedback"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -358,7 +358,7 @@
       "chain-of-thought demonstrations",
       "intermediate reasoning steps"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -390,7 +390,7 @@
       "diffusion probabilistic models",
       "reverse the diffusion process"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-09-30"
   },
   {
@@ -420,7 +420,7 @@
       "2017",
       "June 2017"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -449,7 +449,7 @@
       "Ashish Vaswani",
       "Vaswani"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -479,7 +479,7 @@
       "mask",
       "masked LM"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -509,7 +509,7 @@
       "in-context learning",
       "few-shot"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -539,7 +539,7 @@
       "RoBERTa",
       "robustly optimized BERT"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -569,7 +569,7 @@
       "Text-to-Text Transfer Transformer",
       "T5"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -598,7 +598,7 @@
       "replaced token detection",
       "ELECTRA"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -628,7 +628,7 @@
       "patches",
       "An Image is Worth 16x16 Words"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -657,7 +657,7 @@
       "16x16 Words",
       "16x16"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -688,7 +688,7 @@
       "Contrastive Language-Image Pre-training",
       "CLIP"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -719,7 +719,7 @@
       "Abbeel",
       "Denoising Diffusion Probabilistic Models"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -748,7 +748,7 @@
       "DDIM",
       "Denoising Diffusion Implicit Models"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -778,7 +778,7 @@
       "NormalFloat",
       "NF4"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -807,7 +807,7 @@
       "Tri Dao",
       "Dao"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -836,7 +836,7 @@
       "Proximal Policy Optimization",
       "PPO"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -866,7 +866,7 @@
       "AI feedback",
       "RLAIF"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -896,7 +896,7 @@
       "Thought, Action, Observation",
       "ReAct"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -926,7 +926,7 @@
       "step by step",
       "Kojima"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -955,7 +955,7 @@
       "Toolformer",
       "API calls"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -985,7 +985,7 @@
       "selective state spaces",
       "Mamba"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1014,7 +1014,7 @@
       "Meta",
       "Meta AI"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1044,7 +1044,7 @@
       "sliding window",
       "Mistral 7B"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1074,7 +1074,7 @@
       "reinforcement learning",
       "GRPO"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1105,7 +1105,7 @@
       "671B",
       "DeepSeek-V3"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1134,7 +1134,7 @@
       "Nobel Prize in Chemistry",
       "2024 Nobel Prize in Chemistry"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1164,7 +1164,7 @@
       "environment dynamics",
       "learned model"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-18"
   },
   {
@@ -1196,7 +1196,7 @@
       "cross-attention",
       "iterative attention"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1227,7 +1227,7 @@
       "output query",
       "general-purpose outputs"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1259,7 +1259,7 @@
       "retrieval",
       "chunked cross-attention"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1291,7 +1291,7 @@
       "280 billion",
       "DeepMind"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1323,7 +1323,7 @@
       "540B",
       "540 billion"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1355,7 +1355,7 @@
       "denoisers",
       "span corruption"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1387,7 +1387,7 @@
       "BigScience",
       "prompted datasets"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1419,7 +1419,7 @@
       "BigScience",
       "multilingual corpus"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1451,7 +1451,7 @@
       "weakly supervised",
       "web audio"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1483,7 +1483,7 @@
       "radiance field",
       "view synthesis"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1515,7 +1515,7 @@
       "masking ratio",
       "75 percent"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1547,7 +1547,7 @@
       "augmented views",
       "self-supervised"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1579,7 +1579,7 @@
       "distilled",
       "student model"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1611,7 +1611,7 @@
       "sentence-order prediction",
       "factorized embeddings"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1643,7 +1643,7 @@
       "routing",
       "one expert"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1675,7 +1675,7 @@
       "sparse activation",
       "trillion parameters"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1707,7 +1707,7 @@
       "sensibleness",
       "specificity"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1739,7 +1739,7 @@
       "evidence",
       "citations"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1772,7 +1772,7 @@
       "human feedback",
       "preferred"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1804,7 +1804,7 @@
       "AI feedback",
       "self-critique"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1836,7 +1836,7 @@
       "BERT",
       "sentence pairs"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1869,7 +1869,7 @@
       "gradual release",
       "GPT-2"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1902,7 +1902,7 @@
       "self-play",
       "Monte Carlo tree search"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1934,7 +1934,7 @@
       "discrete tokens",
       "autoregressive"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   },
   {
@@ -1966,7 +1966,7 @@
       "cross-attention",
       "frozen language model"
     ],
-    "status": "draft",
+    "status": "published",
     "addedAt": "2026-10-19"
   }
 ]
