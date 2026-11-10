@@ -1303,7 +1303,7 @@
     "id": "oss-0048",
     "text": "Who introduced the idea of Model Cards for model reporting?",
     "options": [
-      "Timnit Gebru and colleagues",
+      "Fei-Fei Li and colleagues",
       "Yann LeCun and colleagues",
       "Jeff Dean and colleagues",
       "Margaret Mitchell and colleagues"
@@ -1316,7 +1316,7 @@
       "ethics"
     ],
     "difficulty": 3,
-    "explanation": "Model Cards were proposed in a 2019 paper by Mitchell and colleagues to document model performance, intended use and limitations. Timnit Gebru is the tempting miss because she led the related Datasheets for Datasets work.",
+    "explanation": "Model Cards were proposed in a 2019 paper by Margaret Mitchell and colleagues, Timnit Gebru among them, to document a model's performance, intended use and limitations. Fei-Fei Li is the tempting miss as another prominent voice on responsible AI, but she was not on the paper.",
     "source": {
       "kind": "url",
       "url": "https://arxiv.org/abs/1810.03993",

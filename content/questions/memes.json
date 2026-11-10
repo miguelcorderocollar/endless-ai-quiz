@@ -837,7 +837,7 @@
       "viral"
     ],
     "difficulty": 2,
-    "explanation": "Steven Johnson, who wrote Where Do We Come From? and other popular science books, built it with product manager Raiza Martin and computer scientist Adam Bignell. Malcolm Gladwell is the tempting miss as the more famous popular science writer, but the viral podcast tool was Johnson's project. It was designed to behave like a research assistant you can check, which is why every answer it gives cites the page it came from.",
+    "explanation": "Steven Johnson, who wrote Where Good Ideas Come From and other popular science books, built it with product manager Raiza Martin and computer scientist Adam Bignell. Malcolm Gladwell is the tempting miss as the more famous popular science writer, but the viral podcast tool was Johnson's project. It was designed to behave like a research assistant you can check, which is why every answer it gives cites the page it came from.",
     "source": {
       "kind": "wikipedia",
       "title": "Gemini Notebook",

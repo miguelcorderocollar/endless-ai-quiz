@@ -1866,7 +1866,7 @@
       "process-node"
     ],
     "difficulty": 3,
-    "explanation": "TSMC's N7+ was the first commercially available EUV process, used in 2020, before N5, N3 and N2 added more EUV layers. N5 is the tempting miss because it is the most famous EUV node, but N7+ was the first to bring EUV into high-volume production.",
+    "explanation": "TSMC's N7+ was the first commercially available EUV process, in high-volume production from late 2019, before N5, N3 and N2 added more EUV layers. N5 is the tempting miss because it is the most famous EUV node, but N7+ was the first to bring EUV into high-volume production.",
     "source": {
       "kind": "wikipedia",
       "title": "TSMC",
@@ -2143,7 +2143,7 @@
       "ceo"
     ],
     "difficulty": 1,
-    "explanation": "Gelsinger stepped down on December 1, 2024, after 3 years and 10 months as CEO, with David Zinsser and Michelle Johnston Holthaus named interim co-CEOs. Intel's troubles continued after his departure, which is why the 2024 date, not 2025, is the one to remember.",
+    "explanation": "Gelsinger stepped down on December 1, 2024, after nearly four years as CEO, with David Zinsser and Michelle Johnston Holthaus named interim co-CEOs. Intel's troubles continued after his departure, which is why the 2024 date, not 2025, is the one to remember.",
     "source": {
       "kind": "wikipedia",
       "title": "Pat Gelsinger",
@@ -2267,7 +2267,7 @@
       "amd"
     ],
     "difficulty": 3,
-    "explanation": "The MI300A is an APU that pairs 24 Zen 4 CPU cores with four CDNA 3 GPU chiplets and 128 GB of HBM3. Zen 2 and Zen 3 are the tempting misses because they powered the earlier Epyc generations, but the MI300A moved to Zen 4 on the 5 nm node.",
+    "explanation": "The MI300A is an APU that pairs 24 Zen 4 CPU cores with six CDNA 3 GPU chiplets and 128 GB of HBM3. Zen 2 and Zen 3 are the tempting misses because they powered the earlier Epyc generations, but the MI300A moved to Zen 4 on the 5 nm node.",
     "source": {
       "kind": "wikipedia",
       "title": "AMD Instinct",
@@ -2298,7 +2298,7 @@
       "a17"
     ],
     "difficulty": 3,
-    "explanation": "The A17 Pro, in the iPhone 15 Pro and iPad Mini 7 in 2023, was the first widely available 3 nm SoC, fabbed by TSMC on its N3 process with 19 billion transistors. The A15 and A16 are the tempting misses because they are the immediately preceding chips, but both were built on 5 nm, and the M1 was 5 nm as well.",
+    "explanation": "The A17 Pro, launched in the iPhone 15 Pro in 2023 and later used in the 2024 iPad mini, was the first widely available 3 nm SoC, fabbed by TSMC on its N3 process with 19 billion transistors. The A15 and A16 are the tempting misses because they are the immediately preceding chips, but both were built on 5 nm, and the M1 was 5 nm as well.",
     "source": {
       "kind": "wikipedia",
       "title": "Apple A17 Pro",

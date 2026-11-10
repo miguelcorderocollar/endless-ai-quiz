@@ -1199,9 +1199,9 @@
       "About 300 questions",
       "About 800 questions",
       "About 30,000 questions",
-      "About 3,000 questions across a hundred subjects"
+      "About 2,500 questions"
     ],
-    "answer": "About 3,000 questions across a hundred subjects",
+    "answer": "About 2,500 questions",
     "category": "benchmarks",
     "tags": [
       "hle",
@@ -1209,7 +1209,7 @@
       "reasoning"
     ],
     "difficulty": 2,
-    "explanation": "Humanity's Last Exam gathered around three thousand hard closed-ended questions across mathematics, science and humanities. Thirty thousand would be a bulk web scrape, the opposite of its expert-crafted design. Scale AI and the Center for AI Safety filtered thousands of submissions down to that final set.",
+    "explanation": "Humanity's Last Exam settled on 2,500 hard closed-ended questions across dozens of subjects in mathematics, science and the humanities, after early versions counted about 3,000. Thirty thousand would be a bulk web scrape, the opposite of its expert-crafted design. Scale AI and the Center for AI Safety filtered thousands of submissions down to that set.",
     "source": {
       "kind": "url",
       "url": "https://arxiv.org/abs/2501.14249",
@@ -1217,8 +1217,8 @@
     },
     "answerAliases": [
       "Humanity's Last Exam",
-      "3000",
-      "3,000",
+      "2,500",
+      "2500",
       "HLE"
     ],
     "status": "published",
@@ -1390,10 +1390,10 @@
     "options": [
       "The questions cannot be viewed in a web browser",
       "Google paid to keep the questions offline forever",
-      "Domain experts given web access still answer many of them incorrectly",
+      "Skilled non-experts with web access still get most of them wrong",
       "Only Google employees are allowed to answer them"
     ],
-    "answer": "Domain experts given web access still answer many of them incorrectly",
+    "answer": "Skilled non-experts with web access still get most of them wrong",
     "category": "benchmarks",
     "tags": [
       "gpqa",
@@ -1401,7 +1401,7 @@
       "evaluation"
     ],
     "difficulty": 3,
-    "explanation": "GPQA filtered for questions that PhDs outside their specialty get wrong even with unrestricted search, hence Google-proof. An unviewable web page would make evaluation impossible rather than hard. The validation used paid expert annotators, which is why the surviving 448 Diamond questions stay brutal.",
+    "explanation": "GPQA kept questions that skilled validators from other fields got wrong even with unrestricted web search, scoring 34% while domain experts reached 65%, hence Google-proof. An unviewable web page would make evaluation impossible rather than hard. The surviving 198 Diamond questions are the hardest cut.",
     "source": {
       "kind": "url",
       "url": "https://arxiv.org/abs/2311.12022",
@@ -1410,8 +1410,7 @@
     "answerAliases": [
       "GPQA",
       "Google-proof",
-      "Google-Proof",
-      "domain experts"
+      "Google-Proof"
     ],
     "status": "published",
     "addedAt": "2026-10-18"

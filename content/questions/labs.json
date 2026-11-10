@@ -520,7 +520,7 @@
       "hires"
     ],
     "difficulty": 3,
-    "explanation": "John Jumper, who shared the 2024 Nobel Prize in Chemistry for AlphaFold, announced first, and Gemini contributors Jonas Adler and Alexander Pritzel followed within days. Gemini co-lead Noam Shazeer was the only one of the four who chose OpenAI, less than two years after Google paid billions to bring him back from Character.AI.",
+    "explanation": "Gemini co-lead Noam Shazeer went first, to OpenAI, less than two years after Google paid billions to bring him back from Character.AI. A day later John Jumper, who shared the 2024 Nobel Prize in Chemistry for AlphaFold, confirmed he was joining Anthropic, and Gemini contributors Jonas Adler and Alexander Pritzel followed within days. Gemini co-lead Noam Shazeer was the only one of the four who chose OpenAI, less than two years after Google paid billions to bring him back from Character.AI.",
     "source": {
       "kind": "url",
       "url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",

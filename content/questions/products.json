@@ -502,7 +502,7 @@
   },
   {
     "id": "pro-0017",
-    "text": "Black Forest Labs announced FLUX 3 in July 2026, its first video model, and extended the same backbone to predict a robot's next action. Which carmaker is testing that action model?",
+    "text": "In July 2026 Black Forest Labs showed FLUX 3 running robots: a video-action model built with mimic robotics that predicts a robot's next move. Which carmaker has it deployed?",
     "options": [
       "BMW",
       "Porsche",
@@ -518,7 +518,7 @@
       "video"
     ],
     "difficulty": 2,
-    "explanation": "The action half is called FLUX 3 Action and was built with mimic robotics, whose robots Black Forest Labs says have been tested and deployed at Audi. BFL is the Freiburg startup behind Stable Diffusion and the FLUX image models, and FLUX 3 is the first time it has shipped video at all. Audi's production lab framed the work as solving flexible, soft-body handling that conventionally programmed robot cells cannot handle economically.",
+    "explanation": "The model is called FLUX-mimic, built with mimic robotics, and Black Forest Labs says it is deployed at Audi. BFL is the Freiburg startup founded by the researchers behind Stable Diffusion, and its pitch is that content creation and physical AI share one foundation, a model that understands the world. Audi's production lab framed the work as solving flexible, soft-body handling that conventionally programmed robot cells cannot do economically.",
     "source": {
       "kind": "url",
       "url": "https://bfl.ai/blog/flux-3-mimic",
@@ -636,12 +636,12 @@
     "id": "pro-0021",
     "text": "JetBrains took its AI coding agent Junie out of beta in June 2026. Which protocol did it rebuild the agent's IDE integration on for the general release?",
     "options": [
-      "Agent Communication Protocol",
+      "Agent Client Protocol",
       "Model Context Protocol",
       "Language Server Protocol",
       "Debug Adapter Protocol"
     ],
-    "answer": "Agent Communication Protocol",
+    "answer": "Agent Client Protocol",
     "category": "products",
     "tags": [
       "jetbrains",
@@ -650,14 +650,14 @@
       "protocols"
     ],
     "difficulty": 3,
-    "explanation": "Junie's general release talks to the IDE over ACP, the same protocol Junie CLI already used, so one agent engine sits behind the AI chat, the Junie tool window and the terminal. Model Context Protocol is the tempting miss because it is the other big agent protocol of 2026, but MCP is about handing a model tools, not plugging an agent into an editor. Language Server Protocol is about completions and navigation.",
+    "explanation": "Junie's general release talks to the IDE over ACP, the Agent Client Protocol Zed started and JetBrains adopted, the same protocol Junie CLI already used. JetBrains' own post spells it Agent Communication Protocol, a different IBM project. Model Context Protocol is the tempting miss as the other big agent protocol, but MCP hands a model tools rather than plugging an agent into an editor.",
     "source": {
       "kind": "url",
       "url": "https://blog.jetbrains.com/junie/2026/06/junie-coding-agent-out-of-beta/",
       "label": "JetBrains on Junie leaving beta"
     },
     "answerAliases": [
-      "Agent Communication Protocol",
+      "Agent Client Protocol",
       "ACP",
       "Junie",
       "JetBrains"

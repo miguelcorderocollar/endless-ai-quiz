@@ -1097,7 +1097,7 @@
     "explanation": "V3 is a 671-billion-parameter mixture-of-experts model that activates only 37 billion parameters per token, trained for a fraction of the cost of comparable dense flagships. The 46-billion figure is the Mixtral trap, and the active-versus-total split is the detail to remember about every MoE scale claim.",
     "source": {
       "kind": "url",
-      "url": "https://arxiv.org/abs/2412.19478",
+      "url": "https://arxiv.org/abs/2412.19437",
       "label": "DeepSeek-V3 report on arXiv"
     },
     "answerAliases": [
