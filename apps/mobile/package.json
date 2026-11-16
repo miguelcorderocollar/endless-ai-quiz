@@ -16,7 +16,7 @@
     "start:dev": "expo start --dev-client"
   },
   "dependencies": {
-    "@convex-dev/auth": "0.0.96",
+    "@convex-dev/auth": "2.0.0",
     "@expo-google-fonts/ibm-plex-mono": "^0.4.1",
     "@expo-google-fonts/ibm-plex-sans": "^0.4.1",
     "@expo-google-fonts/instrument-serif": "^0.4.1",
